@@ -5,13 +5,13 @@
 using namespace std;
 int main()
 {
-	
+
 	sf::RenderWindow window(sf::VideoMode(1200, 800), "City Traffic Simulator", sf::Style::Close | sf::Style::Titlebar);
 	vector<Car> cars;
 	srand((unsigned)time(NULL));
 
 	for (int i = 0; i < 10; i++) {
-		cars.push_back(Car(rand()%500 + 300, rand() % 500 + 300));
+		cars.push_back(Car(rand() % 500 + 300, rand() % 500 + 300));
 	}
 
 	while (window.isOpen())
@@ -30,6 +30,5 @@ int main()
 		window.clear();
 		window.display();
 	}
-
 	return 0;
 }
