@@ -1,23 +1,2 @@
-﻿  Car.cpp
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(10,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(10,33): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(36,5): warning C4552: '<': result of expression not used
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(46,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(46,33): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
+﻿  main.cpp
   SFML Project.vcxproj -> F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe
