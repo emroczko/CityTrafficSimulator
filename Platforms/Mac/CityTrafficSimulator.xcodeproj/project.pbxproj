@@ -20,6 +20,7 @@
 		52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF525540A9A0093D5DF /* StateMachine.cpp */; };
 		52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCFC25541DEE0093D5DF /* AssetManager.cpp */; };
 		52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD00255421B90093D5DF /* InputManager.cpp */; };
+		52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0825542D450093D5DF /* Simulator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +67,8 @@
 		52D3BCFC25541DEE0093D5DF /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
 		52D3BD00255421B90093D5DF /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
 		52D3BD04255421DD0093D5DF /* InputManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
+		52D3BD0825542D450093D5DF /* Simulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Simulator.cpp; sourceTree = "<group>"; };
+		52D3BD0B25542DB40093D5DF /* Simulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simulator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +96,10 @@
 				52D3BCF4255409AD0093D5DF /* State.h */,
 				52D3BCF525540A9A0093D5DF /* StateMachine.cpp */,
 				52D3BCF925540AB00093D5DF /* StateMachine.h */,
+				52D3BD0B25542DB40093D5DF /* Simulator.h */,
 				52D3BCFB25541DDF0093D5DF /* AssetManager.h */,
 				52D3BD00255421B90093D5DF /* InputManager.cpp */,
+				52D3BD0825542D450093D5DF /* Simulator.cpp */,
 				52D3BD04255421DD0093D5DF /* InputManager.h */,
 				52D3BCFC25541DEE0093D5DF /* AssetManager.cpp */,
 				52804F6A255376A8002A59AD /* Menu.cpp */,
@@ -207,6 +212,7 @@
 				52804F6C255376A8002A59AD /* Menu.cpp in Sources */,
 				52804F6625537553002A59AD /* Car.cpp in Sources */,
 				52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */,
+				52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */,
 				522531A7255232B20035E946 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
