@@ -36,6 +36,7 @@ namespace ZPR{
     void MainMenuState::Update(float dt){
     
     }
+
     void MainMenuState::Draw(float dt){
         this->_data->window.clear();
         this->_data->window.draw(this -> _background);

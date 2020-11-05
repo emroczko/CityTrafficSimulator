@@ -13,59 +13,71 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Vehicles">
+      <UniqueIdentifier>{ad614e12-a1f7-45c7-929b-ba7ac3aecc12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ZPR namespace">
+      <UniqueIdentifier>{f2e99f4a-ef4b-465e-a9c1-188593a6cbb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Vehicles">
+      <UniqueIdentifier>{81b81de2-5ea3-4d9c-8d25-459ae998a579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace">
+      <UniqueIdentifier>{9a723085-a2cb-476b-8a8d-8ae6e9f131fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\Vehicles\Car.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Vehicles</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\AssetManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\InputManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\Simulator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\SplashState.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\StateMachine.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\MainMenuState.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ZPR namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Simulator.cpp">
+      <Filter>Source Files\ZPR namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\SplashState.cpp">
+      <Filter>Source Files\ZPR namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\StateMachine.cpp">
+      <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Vehicles</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\AssetManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Definitions.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\InputManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Simulator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\SplashState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\State.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\StateMachine.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\MainMenuState.h">
+      <Filter>Header Files\ZPR namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Simulator.h">
+      <Filter>Header Files\ZPR namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\SplashState.h">
+      <Filter>Header Files\ZPR namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\State.h">
+      <Filter>Header Files\ZPR namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\StateMachine.h">
+      <Filter>Header Files\ZPR namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Definitions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
