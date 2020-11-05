@@ -146,9 +146,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\main.cpp" />
+    <ClCompile Include="..\..\..\Code\Menu.cpp" />
     <ClCompile Include="..\..\..\Code\Vehicles\Car.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\Code\Menu.h" />
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

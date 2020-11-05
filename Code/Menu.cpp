@@ -1,7 +1,7 @@
 #include "Menu.h"
 
 
-Menu::Menu(float width, float height)
+Menu::Menu(int width, int height)
 {
     if (!font.loadFromFile("/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Resources/BebasNeue-Regular.ttf"))
     {
@@ -11,7 +11,7 @@ Menu::Menu(float width, float height)
     for(int i = 0; i<=2; i++){
         menu[i].setFont(font);
         menu[i].setCharacterSize(80);
-        menu[i].setColor(sf::Color::Red);
+        menu[i].setFillColor(sf::Color::Red);
         menu[i].setPosition(sf::Vector2f(width / 2, height / (MAX_NUMBER_OF_ITEMS + 1) * (i+1)));
         menu[0].setString("Play");
         menu[1].setString("Options");
@@ -38,9 +38,9 @@ void Menu::MoveUp()
 {
     if (selectedItemIndex - 1 >= 0)
     {
-        menu[selectedItemIndex].setColor(sf::Color::White);
+        menu[selectedItemIndex].setFillColor(sf::Color::White);
         selectedItemIndex--;
-        menu[selectedItemIndex].setColor(sf::Color::Red);
+        menu[selectedItemIndex].setFillColor(sf::Color::Red);
     }
 }
 
@@ -48,8 +48,8 @@ void Menu::MoveDown()
 {
     if (selectedItemIndex + 1 < MAX_NUMBER_OF_ITEMS)
     {
-        menu[selectedItemIndex].setColor(sf::Color::White);
+        menu[selectedItemIndex].setFillColor(sf::Color::White);
         selectedItemIndex++;
-        menu[selectedItemIndex].setColor(sf::Color::Red);
+        menu[selectedItemIndex].setFillColor(sf::Color::Red);
     }
 }
