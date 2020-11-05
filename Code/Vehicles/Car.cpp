@@ -6,7 +6,7 @@ Car::Car(int x, int y) {
 	this->y = y;
 	speed = 1;
 	shape.setFillColor(sf::Color(255, 255, 255));
-	shape.setSize(sf::Vector2f(100, 100));
+	shape.setSize(sf::Vector2f(20, 20));
 	shape.setPosition(sf::Vector2f(x, y));
 }
 

@@ -7,6 +7,7 @@ int main()
 {
 
 	sf::RenderWindow window(sf::VideoMode(1200, 800), "City Traffic Simulator", sf::Style::Close | sf::Style::Titlebar);
+	window.setFramerateLimit(30);
 	srand((unsigned)time(NULL));
 
 	Car car(rand() % 500 + 200, rand() % 500 + 200);
@@ -19,7 +20,7 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}
-	
+
 		window.clear();
 		window.draw(car.getShape());
 		car.move();
