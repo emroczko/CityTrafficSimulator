@@ -148,8 +148,7 @@
     <ClCompile Include="..\..\..\Code\AssetManager.cpp" />
     <ClCompile Include="..\..\..\Code\InputManager.cpp" />
     <ClCompile Include="..\..\..\Code\main.cpp" />
-    <ClCompile Include="..\..\..\Code\Menu.cpp" />
-    <ClCompile Include="..\..\..\Code\MenuState.cpp" />
+    <ClCompile Include="..\..\..\Code\MainMenuState.cpp" />
     <ClCompile Include="..\..\..\Code\Simulator.cpp" />
     <ClCompile Include="..\..\..\Code\SplashState.cpp" />
     <ClCompile Include="..\..\..\Code\StateMachine.cpp" />
@@ -159,13 +158,22 @@
     <ClInclude Include="..\..\..\Code\AssetManager.h" />
     <ClInclude Include="..\..\..\Code\Definitions.h" />
     <ClInclude Include="..\..\..\Code\InputManager.h" />
-    <ClInclude Include="..\..\..\Code\Menu.h" />
-    <ClInclude Include="..\..\..\Code\MenuState.h" />
+    <ClInclude Include="..\..\..\Code\MainMenuState.h" />
     <ClInclude Include="..\..\..\Code\Simulator.h" />
     <ClInclude Include="..\..\..\Code\SplashState.h" />
     <ClInclude Include="..\..\..\Code\State.h" />
     <ClInclude Include="..\..\..\Code\StateMachine.h" />
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Release\Resources\background_menu.jpeg" />
+    <Image Include="..\Release\Resources\background_splash.jpeg" />
+    <Image Include="..\Release\Resources\button_create.png" />
+    <Image Include="..\Release\Resources\button_demo.png" />
+    <Image Include="..\Release\Resources\button_load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Release\Resources\BebasNeue-Regular.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

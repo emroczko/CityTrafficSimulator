@@ -21,16 +21,10 @@
     <ClCompile Include="..\..\..\Code\Vehicles\Car.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\Menu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Code\AssetManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\InputManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\MenuState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\Simulator.cpp">
@@ -42,12 +36,12 @@
     <ClCompile Include="..\..\..\Code\StateMachine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\MainMenuState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\AssetManager.h">
@@ -57,9 +51,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\InputManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\MenuState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\Simulator.h">
@@ -74,5 +65,30 @@
     <ClInclude Include="..\..\..\Code\StateMachine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Code\MainMenuState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Release\Resources\background_menu.jpeg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Release\Resources\background_splash.jpeg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Release\Resources\button_create.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Release\Resources\button_demo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Release\Resources\button_load.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Release\Resources\BebasNeue-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
   </ItemGroup>
 </Project>
