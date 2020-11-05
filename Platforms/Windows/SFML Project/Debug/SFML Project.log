@@ -1,4 +1,43 @@
-﻿  Menu.cpp
+﻿  AssetManager.cpp
+  InputManager.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InputManager.cpp(9,90): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InputManager.cpp(9,58): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InputManager.cpp(8,78): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InputManager.cpp(8,54): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  main.cpp
+  Menu.cpp
 F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Menu.cpp(15,88): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
@@ -9,4 +48,9 @@ F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Menu.cpp(15,48): warning C4244: 'argume
           [
               T=float
           ]
+  MenuState.cpp
+  Simulator.cpp
+  SplashState.cpp
+  StateMachine.cpp
+  Generating Code...
   SFML Project.vcxproj -> F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe
