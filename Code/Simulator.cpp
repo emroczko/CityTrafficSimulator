@@ -1,4 +1,5 @@
 #include "Simulator.h"
+#include "SplashState.h"
 
 namespace ZPR{
 
@@ -6,7 +7,7 @@ namespace ZPR{
     Simulator::Simulator(int width, int height, std::string title){
     
         _data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
-        
+        _data->machine.AddState(StateRef(new SplashState(this->_data)));
         
         this-> Run();
     }

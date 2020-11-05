@@ -16,7 +16,7 @@ namespace ZPR{
         sf::RenderWindow window;
         AssetManager assets;
         InputManager input;
-    }
+    };
 
     typedef std::shared_ptr<SimulatorData> SimulatorDataRef;
 
@@ -31,6 +31,6 @@ namespace ZPR{
         SimulatorDataRef _data = std::make_shared<SimulatorData>();
     
         void Run();
-    }
+    };
  
 }
