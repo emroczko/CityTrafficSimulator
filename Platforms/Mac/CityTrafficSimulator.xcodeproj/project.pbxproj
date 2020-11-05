@@ -14,6 +14,8 @@
 		522531B8255234B40035E946 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B3255234B40035E946 /* libsfml-window.2.5.1.dylib */; };
 		522531B9255234B40035E946 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B4255234B40035E946 /* libsfml-system.2.5.1.dylib */; };
 		522531BA255234B40035E946 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B5255234B40035E946 /* libsfml-graphics.2.5.1.dylib */; };
+		52804F6625537553002A59AD /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52804F6425537553002A59AD /* Car.cpp */; };
+		52804F6C255376A8002A59AD /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52804F6A255376A8002A59AD /* Menu.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +48,10 @@
 		522531B3255234B40035E946 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B4255234B40035E946 /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B5255234B40035E946 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
+		52804F6425537553002A59AD /* Car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Car.cpp; path = Vehicles/Car.cpp; sourceTree = "<group>"; };
+		52804F6525537553002A59AD /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = Vehicles/Car.h; sourceTree = "<group>"; };
+		52804F6A255376A8002A59AD /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		52804F6E255376F6002A59AD /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		529FE34E255231B2006D8A78 /* CityTrafficSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CityTrafficSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,7 +74,11 @@
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				52804F6425537553002A59AD /* Car.cpp */,
+				52804F6525537553002A59AD /* Car.h */,
 				522531A6255232B20035E946 /* main.cpp */,
+				52804F6A255376A8002A59AD /* Menu.cpp */,
+				52804F6E255376F6002A59AD /* Menu.h */,
 			);
 			name = Code;
 			path = ../../../Code;
@@ -169,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52804F6C255376A8002A59AD /* Menu.cpp in Sources */,
+				52804F6625537553002A59AD /* Car.cpp in Sources */,
 				522531A7255232B20035E946 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../../External\\ Libraries/Mac/SFML/include\"";
 				LIBRARY_SEARCH_PATHS = "\"${SRCROOT}/../../External\\ Libraries/Mac/SFML/lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,7 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../../External\\ Libraries/Mac/SFML/include\"";
 				LIBRARY_SEARCH_PATHS = "\"${SRCROOT}/../../External\\ Libraries/Mac/SFML/lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
