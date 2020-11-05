@@ -3,7 +3,7 @@
 
 Menu::Menu(int width, int height)
 {
-    if (!font.loadFromFile("/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Resources/BebasNeue-Regular.ttf"))
+    if (!font.loadFromFile("Resources/BebasNeue-Regular.ttf"))
     {
         // handle error
     }
