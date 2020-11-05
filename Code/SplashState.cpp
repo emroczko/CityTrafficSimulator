@@ -3,6 +3,7 @@
 
 #include "Definitions.h"
 #include "SplashState.h"
+#include "MainMenuState.h"
 
 namespace ZPR{
 
@@ -30,7 +31,8 @@ namespace ZPR{
         
         
         if (this->_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME){
-            std::cout<<"go to main menu"<<std::endl;
+            
+            this->_data->machine.AddState(StateRef(new MainMenuState(_data)), true);
             
         }
     }
