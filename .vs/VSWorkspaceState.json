@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    "\\Code"
+    "",
+    "\\Code",
+    "\\Platforms",
+    "\\Platforms\\Windows",
+    "\\Platforms\\Windows\\SFML Project",
+    "\\Platforms\\Windows\\SFML Project test"
   ],
   "PreviewInSolutionExplorer": false
 }
