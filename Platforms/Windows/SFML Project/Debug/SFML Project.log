@@ -1,2 +1,67 @@
-﻿  MainMenuState.cpp
+﻿  AssetManager.cpp
+  InputManager.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InputManager.cpp(9,90): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InputManager.cpp(9,58): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InputManager.cpp(8,78): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InputManager.cpp(8,54): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  main.cpp
+  MainMenuState.cpp
+  Simulator.cpp
+  SplashState.cpp
+  StateMachine.cpp
+  Car.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(10,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(10,33): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(36,5): warning C4552: '<': result of expression not used
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(46,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(46,33): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Generating Code...
   SFML Project.vcxproj -> F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe
