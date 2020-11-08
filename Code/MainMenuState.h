@@ -21,6 +21,7 @@ namespace ZPR{
         SimulatorDataRef _data;
         sf::Sprite _background;
         sf::Sprite _createButton;
+        sf::Sprite _exitButton;
         
     };
 

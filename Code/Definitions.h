@@ -9,5 +9,7 @@
 #define MENU_BACKGROUND_FILEPATH "Resources/background_menu.jpeg"
 
 #define MENU_CREATE_BUTTON_FILEPATH "Resources/button_create.png"
+#define MENU_EXIT_BUTTON_FILEPATH "Resources/button_exit.png"
+
 
 
