@@ -25,6 +25,9 @@
     <Filter Include="Header Files\ZPR namespace">
       <UniqueIdentifier>{9a723085-a2cb-476b-8a8d-8ae6e9f131fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{75d7fad7-27fd-416b-9089-7b9d9abaf227}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\main.cpp">
@@ -50,6 +53,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Code\StateMachine.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>Tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,6 @@ namespace ZPR
         this->_isReplacing = isReplacing;
     
         this->_newState = std::move(newState);
-    
     }
 
     void StateMachine::RemoveState(){
