@@ -1,5 +1,6 @@
 #include "InitCreateState.h"
 #include "Definitions.h"
+#include "MainMenuState.h"
 
 namespace ZPR {
 	InitCreateState::InitCreateState(SimulatorDataRef data) : _data(data) {}
@@ -24,8 +25,15 @@ namespace ZPR {
 		this->_mapHeightText.setFillColor(sf::Color::Red);
 		this->_mapWidthText.setFillColor(sf::Color::Red);
 
-		this->_mapHeightText.setString("Height");
-		this->_mapWidthText.setString("Width");
+		this->_mapHeightText.setString("Enter Map Height");
+		this->_mapWidthText.setString("Enter Map Width");
+
+		this->_mapHeightTextBackground.setFillColor(sf::Color::White);
+		this->_mapWidthTextBackground.setFillColor(sf::Color::White);
+
+		this->_mapHeightTextBackground.setSize(sf::Vector2f(130, 25));
+		this->_mapWidthTextBackground.setSize(sf::Vector2f(130, 25));
+		
 
 		this->_backButton.setPosition((SCREEN_WIDTH / 2) - (this->_backButton.getGlobalBounds().width/2),
 			(SCREEN_HEIGHT / 2) - (this->_backButton.getGlobalBounds().height/2));
@@ -33,11 +41,17 @@ namespace ZPR {
 		this->_createButton.setPosition((SCREEN_WIDTH) - (this->_createButton.getGlobalBounds().width / 2),
 			(SCREEN_HEIGHT / 2) - (this->_createButton.getGlobalBounds().height / 2));
 
-		this->_mapHeightText.setPosition((SCREEN_WIDTH / 3) - (this->_mapHeightText.getGlobalBounds().width / 2),
-			(SCREEN_HEIGHT / 2) - (this->_mapHeightText.getGlobalBounds().height / 3));
+		this->_mapHeightText.setPosition((SCREEN_WIDTH / 2) - (this->_mapHeightText.getGlobalBounds().width / 2),
+			(SCREEN_HEIGHT / 5)- (this->_mapHeightText.getGlobalBounds().height / 2));
 
-		this->_mapWidthText.setPosition((SCREEN_WIDTH / 3) * 2 - (this->_mapWidthText.getGlobalBounds().width / 2),
-			(SCREEN_HEIGHT / 2) - (this->_mapWidthText.getGlobalBounds().height / 3));
+		this->_mapWidthText.setPosition((SCREEN_WIDTH) - (this->_mapWidthText.getGlobalBounds().width / 2),
+			(SCREEN_HEIGHT / 5) - (this->_mapWidthText.getGlobalBounds().height / 2));
+
+		this->_mapHeightTextBackground.setPosition((SCREEN_WIDTH / 2) - 2 - (this->_mapHeightText.getGlobalBounds().width / 2),
+			(SCREEN_HEIGHT / 5) - (this->_mapHeightText.getGlobalBounds().height / 2));
+
+		this->_mapWidthTextBackground.setPosition((SCREEN_WIDTH) - 2 - (this->_mapWidthText.getGlobalBounds().width / 2),
+			(SCREEN_HEIGHT / 5) - (this->_mapWidthText.getGlobalBounds().height / 2));
 	}
 
 	void InitCreateState::HandleInput() {
@@ -46,6 +60,15 @@ namespace ZPR {
 			if (sf::Event::Closed == event.type)
 			{
 				this->_data->window.close();
+			}
+			if (this->_data->input.isSpriteClicked(this->_backButton, sf::Mouse::Left, this->_data->window)) {
+				this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
+			}
+			if (this->_data->input.isSquareClicked(this->_mapHeightTextBackground, sf::Mouse::Left, this->_data->window)) {
+				if (event.type == sf::Event::TextEntered){
+					this->_mapHeightText.setString("|");
+					this->UserInput +=
+				}
 			}
 		}
 	}
@@ -59,6 +82,8 @@ namespace ZPR {
 		this->_data->window.draw(this->_background);
 		this->_data->window.draw(this->_createButton);
 		this->_data->window.draw(this->_backButton);
+		this->_data->window.draw(this->_mapHeightTextBackground);
+		this->_data->window.draw(this->_mapWidthTextBackground);
 		this->_data->window.draw(this->_mapHeightText);
 		this->_data->window.draw(this->_mapWidthText);
 		this->_data->window.display();

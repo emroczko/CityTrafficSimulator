@@ -28,6 +28,8 @@ namespace ZPR {
 		sf::RectangleShape _mapHeightTextBackground;
 		sf::RectangleShape _mapWidthTextBackground;
 
+		sf::String UserInput;
+
 	};
 
 }
