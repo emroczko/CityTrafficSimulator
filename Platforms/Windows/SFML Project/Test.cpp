@@ -12,6 +12,5 @@ struct StateMachineTest :testing::Test
 };
 
 TEST_F(StateMachineTest, AddStateTest) {
-	machine->AddState()
-	
+	EXPECT_EQ(NULL, machine->GetActiveState());
 }

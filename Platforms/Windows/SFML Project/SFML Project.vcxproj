@@ -153,7 +153,6 @@
     <ClCompile Include="..\..\..\Code\SplashState.cpp" />
     <ClCompile Include="..\..\..\Code\StateMachine.cpp" />
     <ClCompile Include="..\..\..\Code\Vehicles\Car.cpp" />
-    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\AssetManager.h" />

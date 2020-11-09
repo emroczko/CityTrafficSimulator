@@ -1,6 +1,19 @@
-#include "pch.h"
+#include "gtest/gtest.h"
+#include "../../../Code/StateMachine.h"
+#include <memory>
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+struct StateMachineTest :testing::Test
+{
+	ZPR::StateMachine* machine;
+	StateMachineTest() {
+		machine = new ZPR::StateMachine();
+	}
+	~StateMachineTest() {
+		delete machine;
+	}
+
+};
+
+TEST_F(StateMachineTest, AddStateTest) {
+	EXPECT_EQ(1, 1);
 }
