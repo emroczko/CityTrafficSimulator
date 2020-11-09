@@ -3,6 +3,6 @@
   <Executable>F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project Test.exe</Executable>
   <TestDurations>
     <TestDuration Test="TestCaseName.TestName" Duration="1" />
-    <TestDuration Test="StateMachineTest.AddStateTest" Duration="1" />
+    <TestDuration Test="StateMachineTest.AddStateTest" Duration="125" />
   </TestDurations>
 </GtaTestDurations>

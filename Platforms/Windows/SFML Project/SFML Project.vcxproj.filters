@@ -51,6 +51,9 @@
     <ClCompile Include="..\..\..\Code\StateMachine.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\InitCreateState.cpp">
+      <Filter>Source Files\ZPR namespace</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h">
@@ -79,6 +82,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Code\Definitions.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\InitCreateState.h">
+      <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

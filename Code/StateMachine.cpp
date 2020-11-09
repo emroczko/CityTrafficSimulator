@@ -48,5 +48,9 @@ namespace ZPR
         return this-> _states.top();
     }
 
+    bool& StateMachine::getIsAdding() {
+        return this->_isAdding;
+    }
+
     
 }

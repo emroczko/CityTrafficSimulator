@@ -17,6 +17,8 @@ namespace ZPR {
             void RemoveState();
     
             void ProcessStateChanges();
+
+            bool& getIsAdding();
     
             StateRef &GetActiveState();
     

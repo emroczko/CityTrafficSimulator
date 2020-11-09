@@ -4,6 +4,7 @@
 #include "MainMenuState.h"
 #include "Definitions.h"
 #include "InputManager.h"
+#include "InitCreateState.h"
 
 namespace ZPR{
 
@@ -37,6 +38,7 @@ namespace ZPR{
             if(this->_data->input.isSpriteClicked(this->_createButton, sf::Mouse::Left, this->_data->window))
             {
                 std::cout<<"go to main menu"<<std::endl;
+                this->_data->machine.AddState(StateRef(new InitCreateState(this->_data)), true);
             }
             
         }
