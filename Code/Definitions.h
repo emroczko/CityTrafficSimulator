@@ -11,6 +11,9 @@
 #define MENU_CREATE_BUTTON_FILEPATH "Resources/button_create.png"
 #define MENU_EXIT_BUTTON_FILEPATH "Resources/button_exit.png"
 #define BACK_BUTTON_FILEPATH "Resources/button_back.png"
+#define SIXTEEN_BUTTON_FILEPATH "Resources/sixteen.png"
+#define THIRTYTWO_BUTTON_FILEPATH "Resources/thirtytwo.png"
+#define SIXTYFOUR_BUTTON_FILEPATH "Resources/sixtyfour.png"
 
 #define TEXT_FONT_FILEPATH "Resources/font.ttf"
 
