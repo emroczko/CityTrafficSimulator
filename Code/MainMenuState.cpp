@@ -21,7 +21,7 @@ namespace ZPR{
         this->_background.setTexture(this->_data->assets.GetTexture("Background"));
         this->_createButton.setTexture(this->_data->assets.GetTexture("Create Button"));
         this->_exitButton.setTexture(this->_data->assets.GetTexture("Exit Button"));
-        
+        this->_background.scale(2.35, 2);
         this->_createButton.setPosition((SCREEN_WIDTH/3) - (this->_createButton.getGlobalBounds().width/3), (SCREEN_HEIGHT/4) - (this->_createButton.getGlobalBounds().height/4));
     
         this->_exitButton.setPosition((SCREEN_WIDTH/2) - (this->_exitButton.getGlobalBounds().width/2), (SCREEN_HEIGHT/2) - (this->_exitButton.getGlobalBounds().height/2));

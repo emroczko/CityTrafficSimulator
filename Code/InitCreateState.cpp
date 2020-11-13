@@ -21,6 +21,7 @@ namespace ZPR {
 		this->_sixteenButton.setTexture(this->_data->assets.GetTexture("Sixteen"));
 		this->_thirtytwoButton.setTexture(this->_data->assets.GetTexture("Thirtytwo"));
 		this->_sixtyfourButton.setTexture(this->_data->assets.GetTexture("Sixtyfour"));
+        this->_background.scale(2.35, 2);
 
 		
 
