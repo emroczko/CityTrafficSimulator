@@ -1,6 +1,7 @@
 #include "InitCreateState.h"
 #include "Definitions.h"
 #include "MainMenuState.h"
+#include "CreatorState.h"
 #include <iostream>
 #include <memory>
 
@@ -33,7 +34,8 @@ namespace ZPR {
 		this->_sixteenButton.setTexture(this->_data->assets.GetTexture("Sixteen"));
 																	   
 		this->_thirtytwoButton.setTexture(this->_data->assets.GetTexture("Thirtytwo"));
-		this->_sixtyfourButton.setTexture(this->_data->assets.GetTexture("Sixtyfour"));*/
+		this->_sixtyfourButton.setTexture(this->_data->assets.GetTexture("Sixtyfour"));
+        this->_background.scale(2.35, 2);
 
 		
 		/*
@@ -60,10 +62,10 @@ namespace ZPR {
 			/*if (this->_data->input.isSpriteClicked(this->_backButton, sf::Mouse::Left, this->_data->window)) {
 				this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
 			}
+
+
 			if (this->_data->input.isSpriteClicked(this->_sixteenButton, sf::Mouse::Left, this->_data->window)) {
-				// Bêdzie siê powtarza³o wiêc trzeba chyba coœ z tym zrobiæ 
-				//Go to game
-				//Save chosen 
+                this->_data->machine.AddState(StateRef(new CreatorState(this->_data)), false);
 			}
 			if (this->_data->input.isSpriteClicked(this->_thirtytwoButton, sf::Mouse::Left, this->_data->window)) {
 				//Go to game
@@ -71,8 +73,9 @@ namespace ZPR {
 			}
 			if (this->_data->input.isSpriteClicked(this->_sixtyfourButton, sf::Mouse::Left, this->_data->window)) {
 				//Go to game
-				//Save chosen 
+				//Save chosen
 			}*/
+			}
 		}
 	}
 

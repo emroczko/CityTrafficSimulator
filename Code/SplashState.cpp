@@ -16,6 +16,7 @@ namespace ZPR{
         
         _background.setTexture(this -> _data->assets.GetTexture("Splash State Background"));
         
+        
     }
     void SplashState::HandleInput(){
         sf::Event event;

@@ -1,7 +1,7 @@
 #pragma once
 
-#define SCREEN_WIDTH 700
-#define SCREEN_HEIGHT 1050
+#define SCREEN_WIDTH 1400
+#define SCREEN_HEIGHT 2440
 
 #define SPLASH_STATE_SHOW_TIME 0.1
 #define SPLASH_SCENE_BACKGROUND_FILEPATH "Resources/background_splash.jpeg"
@@ -13,6 +13,11 @@
 #define BACK_BUTTON_FILEPATH "Resources/button_back.png"
 
 #define BUTTON_FILEPATH "Resources/button.png"
+
+#define SIXTEEN_BUTTON_FILEPATH "Resources/sixteen.png"
+#define THIRTYTWO_BUTTON_FILEPATH "Resources/thirtytwo.png"
+#define SIXTYFOUR_BUTTON_FILEPATH "Resources/sixtyfour.png"
+#define BACKGROUND_TEXTURE_FILEPATH "Resources/background_texture.jpg"
 
 #define TEXT_FONT_FILEPATH "Resources/font.ttf"
 
