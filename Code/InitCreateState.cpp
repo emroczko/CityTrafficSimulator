@@ -67,7 +67,7 @@ namespace ZPR {
 			if (this->_data->input.isSquareClicked(this->_mapHeightTextBackground, sf::Mouse::Left, this->_data->window)) {
 				if (event.type == sf::Event::TextEntered){
 					this->_mapHeightText.setString("|");
-					this->UserInput +=
+					//this->UserInput +=
 				}
 			}
 		}

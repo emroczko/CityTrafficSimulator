@@ -21,6 +21,7 @@
 		52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD00255421B90093D5DF /* InputManager.cpp */; };
 		52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0825542D450093D5DF /* Simulator.cpp */; };
 		52D3BD10255442410093D5DF /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0F255442410093D5DF /* SplashState.cpp */; };
+		52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52EDDC39255A055800CD5101 /* InitCreateState.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +71,8 @@
 		52D3BD0D255440E00093D5DF /* SplashState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashState.h; sourceTree = "<group>"; };
 		52D3BD0E2554413A0093D5DF /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
 		52D3BD0F255442410093D5DF /* SplashState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplashState.cpp; sourceTree = "<group>"; };
+		52EDDC39255A055800CD5101 /* InitCreateState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InitCreateState.cpp; sourceTree = "<group>"; };
+		52EDDC3A255A055800CD5101 /* InitCreateState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitCreateState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				52EDDC39255A055800CD5101 /* InitCreateState.cpp */,
+				52EDDC3A255A055800CD5101 /* InitCreateState.h */,
 				52804F6425537553002A59AD /* Car.cpp */,
 				52804F6525537553002A59AD /* Car.h */,
 				522531A6255232B20035E946 /* main.cpp */,
@@ -214,6 +219,7 @@
 				52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */,
 				52804F6625537553002A59AD /* Car.cpp in Sources */,
 				52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */,
+				52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */,
 				52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */,
 				522531A7255232B20035E946 /* main.cpp in Sources */,
 			);
