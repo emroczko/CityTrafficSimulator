@@ -14,6 +14,7 @@
 #define SIXTEEN_BUTTON_FILEPATH "Resources/sixteen.png"
 #define THIRTYTWO_BUTTON_FILEPATH "Resources/thirtytwo.png"
 #define SIXTYFOUR_BUTTON_FILEPATH "Resources/sixtyfour.png"
+#define BACKGROUND_TEXTURE_FILEPATH "Resources/background_texture.jpg"
 
 #define TEXT_FONT_FILEPATH "Resources/font.ttf"
 
