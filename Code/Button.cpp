@@ -28,9 +28,9 @@ Button::Button(sf::Vector2f position, sf::Vector2f size, sf::String text, sf::Te
 	this->_text.setPosition(position);
 }
 
-bool Button::isClicked(sf::Mouse::Button mouse_button, sf::RenderWindow& window) 
+bool Button::isClicked(sf::Mouse::Button mouseButton, sf::RenderWindow& window)
 {
-	if (sf::Mouse::isButtonPressed(mouse_button)) 
+	if (sf::Mouse::isButtonPressed(mouseButton))
 	{
 		sf::IntRect tempRect(this->_rectangle.getPosition().x, this->_rectangle.getPosition().y, this->_rectangle.getGlobalBounds().width, this->_rectangle.getGlobalBounds().height);
 		if (tempRect.contains(sf::Mouse::getPosition(window))) 
@@ -80,6 +80,16 @@ void Button::setFontSize(unsigned int font_size)
 void Button::setTextColor(sf::Color color)
 {
 	this->_text.setFillColor(color);
+}
+
+void Button::ButtonQuickMaker(sf::String text, sf::Vector2f size, sf::Color fillColor, sf::Font &font, unsigned int fontSize, sf::Color textColor)
+{
+    this->_text.setString(text);
+    this->_rectangle.setSize(size);
+    this->_rectangle.setFillColor(fillColor);
+    this->_text.setFont(font);
+    this->_text.setCharacterSize(fontSize);
+    this->_text.setFillColor(textColor);
 }
 
 sf::String Button::getText()

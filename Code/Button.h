@@ -9,15 +9,19 @@ public:
 	Button(sf::Vector2f position, sf::Vector2f size);
 	Button(sf::Vector2f position, sf::Vector2f size, sf::String text);
 	Button(sf::Vector2f position, sf::Vector2f size, sf::String text, sf::Texture background);
-	bool isClicked(sf::Mouse::Button mouse_button, sf::RenderWindow& window);
+	bool isClicked(sf::Mouse::Button mouseButton, sf::RenderWindow& window);
 	void setPosition(sf::Vector2f position);
+    void setBackground(sf::Texture &background);
+    
 	void setText(sf::String text);
-	void setBackground(sf::Texture &background);
 	void setSize(sf::Vector2f size);
 	void setFillcolor(sf::Color color);
 	void setFont(sf::Font &font);
-	void setFontSize(unsigned int font_size);
+	void setFontSize(unsigned int fontSize);
 	void setTextColor(sf::Color color);
+    
+    void ButtonQuickMaker(sf::String text, sf::Vector2f size, sf::Color fillColor, sf::Font &font, unsigned int fontSize, sf::Color textColor);
+    
 	sf::String getText();
 	virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const;
 	sf::RectangleShape _rectangle;

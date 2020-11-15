@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52166DD82561796400A1AE4E /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52166DD72561796400A1AE4E /* Button.cpp */; };
 		522531A7255232B20035E946 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 522531A6255232B20035E946 /* main.cpp */; };
 		522531AE2552342C0035E946 /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 522531A9255232C10035E946 /* Resources */; };
 		522531B6255234B40035E946 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */; };
@@ -48,6 +49,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		52166DD62561796400A1AE4E /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		52166DD72561796400A1AE4E /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
 		522531A6255232B20035E946 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		522531A9255232C10035E946 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = ../../../Resources; sourceTree = "<group>"; };
 		522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				52EDDC39255A055800CD5101 /* InitCreateState.cpp */,
 				5225663B255EA20400C9BB3C /* CreatorState.h */,
 				5225663C255EA24500C9BB3C /* CreatorState.cpp */,
+				52166DD72561796400A1AE4E /* Button.cpp */,
+				52166DD62561796400A1AE4E /* Button.h */,
 				52EDDC3A255A055800CD5101 /* InitCreateState.h */,
 				52804F6425537553002A59AD /* Car.cpp */,
 				52804F6525537553002A59AD /* Car.h */,
@@ -227,6 +232,7 @@
 				52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */,
 				52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */,
 				5225663D255EA24500C9BB3C /* CreatorState.cpp in Sources */,
+				52166DD82561796400A1AE4E /* Button.cpp in Sources */,
 				522531A7255232B20035E946 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

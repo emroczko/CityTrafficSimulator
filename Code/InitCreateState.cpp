@@ -16,29 +16,36 @@ namespace ZPR {
 		this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
 
 
-		_sixteenButton.setPosition(sf::Vector2f(SCREEN_WIDTH/2, SCREEN_HEIGHT/2));
-		_sixteenButton.setSize(sf::Vector2f(150, 50));
-		_sixteenButton.setFontSize(20);
-		_sixteenButton.setText(sf::String("AAAAAA"));
-		_sixteenButton.setTextColor(sf::Color::White);
-		_sixteenButton.setBackground(this->_data->assets.GetTexture("Button"));
-		_sixteenButton.setFont(this->_data->assets.GetFont("Text font"));
+		_size16Button.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2-(400)));
+        
+        _size16Button.ButtonQuickMaker("16 x 16", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
 
+        _size32Button.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2-(200)));
+        
+        _size32Button.ButtonQuickMaker("32 x 32", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
 
-		
+        _size64Button.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2));
+        
+        _size64Button.ButtonQuickMaker("64 x 64", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
+
+        _backButton.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2+(400)));
+        
+        _backButton.ButtonQuickMaker("BACK", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
+
 
 
 		
 		this->_background.setTexture(this->_data->assets.GetTexture("Background"));
+        this->_background.scale(2.35, 2);
 		/*this->_backButton.setTexture(this->_data->assets.GetTexture("Back button"));	
 		this->_sixteenButton.setTexture(this->_data->assets.GetTexture("Sixteen"));
 																	   
 		this->_thirtytwoButton.setTexture(this->_data->assets.GetTexture("Thirtytwo"));
 		this->_sixtyfourButton.setTexture(this->_data->assets.GetTexture("Sixtyfour"));
-        this->_background.scale(2.35, 2);
+        
 
 		
-		/*
+		
 		this->_sixteenButton.setPosition((SCREEN_WIDTH / 2) + (this->_sixteenButton.getGlobalBounds().width/2),
 			(SCREEN_HEIGHT / 6) - (this->_backButton.getGlobalBounds().height / 2));
 		
@@ -59,6 +66,13 @@ namespace ZPR {
 			{
 				this->_data->window.close();
 			}
+            if (this->_backButton.isClicked(sf::Mouse::Left, this->_data->window)){
+                this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
+            }
+            if (this->_size16Button.isClicked(sf::Mouse::Left, this->_data->window)){
+                this->_data->machine.AddState(StateRef(new CreatorState(this->_data)), false);
+            }
+            
 			/*if (this->_data->input.isSpriteClicked(this->_backButton, sf::Mouse::Left, this->_data->window)) {
 				this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
 			}
@@ -77,7 +91,7 @@ namespace ZPR {
 			}*/
 			}
 		}
-	}
+	
 
 	void InitCreateState::Update(float dt) {
 
@@ -86,8 +100,10 @@ namespace ZPR {
 	void InitCreateState::Draw(float dt) {
 		this->_data->window.clear(sf::Color::Black);
 		this->_data->window.draw(this->_background);
-		//this->_data->window.draw(this->_backButton);
-		this->_data->window.draw(_sixteenButton);
+		this->_data->window.draw(this->_backButton);
+		this->_data->window.draw(_size16Button);
+        this->_data->window.draw(_size32Button);
+        this->_data->window.draw(_size64Button);
 		this->_data->window.display();
 	}
 

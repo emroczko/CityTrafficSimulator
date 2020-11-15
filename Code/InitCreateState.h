@@ -19,10 +19,8 @@ namespace ZPR {
 
 	private:
 		SimulatorDataRef _data;
-		
 		sf::Sprite _background;
-		sf::Sprite _backButton;
-		Button _sixteenButton;
+        Button _size16Button, _size32Button, _size64Button, _backButton;
 	};
 
 }
