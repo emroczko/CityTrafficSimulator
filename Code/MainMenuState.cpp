@@ -38,6 +38,7 @@ namespace ZPR{
             if(this->_data->input.isSpriteClicked(this->_createButton, sf::Mouse::Left, this->_data->window))
             {
                 this->_data->machine.AddState(StateRef(new InitCreateState(this->_data)), false);
+                
             }
             
         }
