@@ -57,6 +57,9 @@
     <ClCompile Include="..\..\..\Code\Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\CreatorState.cpp">
+      <Filter>Source Files\ZPR namespace</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h">
@@ -91,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Code\Button.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\CreatorState.h">
+      <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

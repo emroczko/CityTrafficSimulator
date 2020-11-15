@@ -8,7 +8,8 @@ public:
 	Button(sf::Vector2f position);
 	Button(sf::Vector2f position, sf::Vector2f size);
 	Button(sf::Vector2f position, sf::Vector2f size, sf::String text);
-	Button(sf::Vector2f position, sf::Vector2f size, sf::String text, sf::Texture background);
+	Button(sf::Vector2f position, sf::Vector2f size, sf::String text, sf::Font &font, unsigned int fontSize, sf::Color textColor, sf::Texture &background);
+	
 	bool isClicked(sf::Mouse::Button mouseButton, sf::RenderWindow& window);
 	void setPosition(sf::Vector2f position);
     void setBackground(sf::Texture &background);
@@ -21,13 +22,12 @@ public:
 	void setTextColor(sf::Color color);
     
     void ButtonQuickMaker(sf::String text, sf::Vector2f size, sf::Color fillColor, sf::Font &font, unsigned int fontSize, sf::Color textColor);
-    
-	sf::String getText();
+    sf::String getText();
+
 	virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const;
+	
+private:
 	sf::RectangleShape _rectangle;
 	sf::Text _text;
-private:
-	
-	
 };
 

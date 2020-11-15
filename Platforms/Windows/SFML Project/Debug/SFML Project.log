@@ -1,2 +1,61 @@
-﻿  InitCreateState.cpp
+﻿  Button.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Button.cpp(43,168): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Button.cpp(43,126): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Button.cpp(43,88): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Button.cpp(43,54): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  CreatorState.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(23,76): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(26,73): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(29,77): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+  InitCreateState.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InitCreateState.cpp(39,40): warning C4305: 'argument': truncation from 'double' to 'float'
+  MainMenuState.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(24,40): warning C4305: 'argument': truncation from 'double' to 'float'
+  SplashState.cpp
+  main.cpp
+  Generating Code...
   SFML Project.vcxproj -> F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe

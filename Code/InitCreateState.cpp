@@ -16,7 +16,7 @@ namespace ZPR {
 		this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
 
 
-		_size16Button.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2-(400)));
+		/*_size16Button.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2-(400)));
         
         _size16Button.ButtonQuickMaker("16 x 16", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
 
@@ -31,32 +31,12 @@ namespace ZPR {
         _backButton.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2+(400)));
         
         _backButton.ButtonQuickMaker("BACK", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
-
-
+		*/
+		this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH/2,SCREEN_HEIGHT/2), sf::Vector2f(150, 50), "test", this->_data->assets.GetFont("Text font"), 20, sf::Color::White, this->_data->assets.GetTexture("Button")));
 
 		
 		this->_background.setTexture(this->_data->assets.GetTexture("Background"));
         this->_background.scale(2.35, 2);
-		/*this->_backButton.setTexture(this->_data->assets.GetTexture("Back button"));	
-		this->_sixteenButton.setTexture(this->_data->assets.GetTexture("Sixteen"));
-																	   
-		this->_thirtytwoButton.setTexture(this->_data->assets.GetTexture("Thirtytwo"));
-		this->_sixtyfourButton.setTexture(this->_data->assets.GetTexture("Sixtyfour"));
-        
-
-		
-		
-		this->_sixteenButton.setPosition((SCREEN_WIDTH / 2) + (this->_sixteenButton.getGlobalBounds().width/2),
-			(SCREEN_HEIGHT / 6) - (this->_backButton.getGlobalBounds().height / 2));
-		
-		this->_thirtytwoButton.setPosition((SCREEN_WIDTH / 2 + (this->_thirtytwoButton.getGlobalBounds().width/2)),
-			(SCREEN_HEIGHT * 1.5 / 6) - (this->_thirtytwoButton.getGlobalBounds().height / 2));
-
-		this->_sixtyfourButton.setPosition((SCREEN_WIDTH / 2) + (this->_sixtyfourButton.getGlobalBounds().width/2),
-			(SCREEN_HEIGHT * 2 / 6) - (this->_sixtyfourButton.getGlobalBounds().height / 2));
-		
-		this->_backButton.setPosition((SCREEN_WIDTH *1.04/ 2) + (this->_backButton.getGlobalBounds().width/2),
-			(SCREEN_HEIGHT * 3 / 6) - (this->_backButton.getGlobalBounds().height / 2));*/
 	}
 
 	void InitCreateState::HandleInput() {
@@ -66,12 +46,12 @@ namespace ZPR {
 			{
 				this->_data->window.close();
 			}
-            if (this->_backButton.isClicked(sf::Mouse::Left, this->_data->window)){
+            /*if (this->_backButton.isClicked(sf::Mouse::Left, this->_data->window)){
                 this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
             }
             if (this->_size16Button.isClicked(sf::Mouse::Left, this->_data->window)){
                 this->_data->machine.AddState(StateRef(new CreatorState(this->_data)), false);
-            }
+            }*/
             
 			/*if (this->_data->input.isSpriteClicked(this->_backButton, sf::Mouse::Left, this->_data->window)) {
 				this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
@@ -100,10 +80,9 @@ namespace ZPR {
 	void InitCreateState::Draw(float dt) {
 		this->_data->window.clear(sf::Color::Black);
 		this->_data->window.draw(this->_background);
-		this->_data->window.draw(this->_backButton);
-		this->_data->window.draw(_size16Button);
-        this->_data->window.draw(_size32Button);
-        this->_data->window.draw(_size64Button);
+		for (Button button : this->_buttons) {
+			this->_data->window.draw(button);
+		}
 		this->_data->window.display();
 	}
 

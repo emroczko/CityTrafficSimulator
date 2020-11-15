@@ -1,7 +1,7 @@
 #pragma once
 
-#define SCREEN_WIDTH 1400
-#define SCREEN_HEIGHT 2440
+#define SCREEN_WIDTH 1920
+#define SCREEN_HEIGHT 1080
 
 #define SPLASH_STATE_SHOW_TIME 0.1
 #define SPLASH_SCENE_BACKGROUND_FILEPATH "Resources/background_splash.jpeg"

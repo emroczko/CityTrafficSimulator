@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\AssetManager.cpp" />
     <ClCompile Include="..\..\..\Code\Button.cpp" />
+    <ClCompile Include="..\..\..\Code\CreatorState.cpp" />
     <ClCompile Include="..\..\..\Code\InitCreateState.cpp" />
     <ClCompile Include="..\..\..\Code\InputManager.cpp" />
     <ClCompile Include="..\..\..\Code\main.cpp" />
@@ -159,6 +160,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\AssetManager.h" />
     <ClInclude Include="..\..\..\Code\Button.h" />
+    <ClInclude Include="..\..\..\Code\CreatorState.h" />
     <ClInclude Include="..\..\..\Code\Definitions.h" />
     <ClInclude Include="..\..\..\Code\InitCreateState.h" />
     <ClInclude Include="..\..\..\Code\InputManager.h" />

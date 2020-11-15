@@ -5,7 +5,7 @@
 
 int main()
 {
-    ZPR::Simulator sim(SCREEN_HEIGHT, SCREEN_WIDTH, "CityTrafficSimulator");
+    ZPR::Simulator sim(SCREEN_WIDTH, SCREEN_HEIGHT, "CityTrafficSimulator");
 	return EXIT_SUCCESS;
 }
 

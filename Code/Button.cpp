@@ -22,10 +22,18 @@ Button::Button(sf::Vector2f position, sf::Vector2f size, sf::String text)
 	this->_text.setPosition(position);
 }
 
-Button::Button(sf::Vector2f position, sf::Vector2f size, sf::String text, sf::Texture background)
+Button::Button(sf::Vector2f position, sf::Vector2f size, sf::String text, sf::Font &font, unsigned int fontSize, sf::Color textColor,sf::Texture &background)
 {
-	this->_rectangle.setPosition(position);
-	this->_text.setPosition(position);
+	this->_rectangle.setPosition(sf::Vector2f(position.x - size.x/2, position.y - size.y/2));
+	this->_rectangle.setSize(size);
+	this->_rectangle.setTexture(&background);
+
+	this->_text.setString(text);
+	this->_text.setFont(font);
+	this->_text.setCharacterSize(fontSize);
+	this->_text.setFillColor(textColor);
+	this->_text.setPosition(sf::Vector2f(this->_rectangle.getPosition().x + this->_rectangle.getGlobalBounds().width / 2 - this->_text.getGlobalBounds().width/2,
+		this->_rectangle.getPosition().y + this->_rectangle.getGlobalBounds().height / 2 - this->_text.getGlobalBounds().height));
 }
 
 bool Button::isClicked(sf::Mouse::Button mouseButton, sf::RenderWindow& window)
