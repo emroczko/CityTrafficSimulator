@@ -32,46 +32,49 @@ namespace ZPR {
         
         _backButton.ButtonQuickMaker("BACK", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
 		*/
-		this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH/2,SCREEN_HEIGHT/2), sf::Vector2f(150, 50), "test", this->_data->assets.GetFont("Text font"), 20, sf::Color::White, this->_data->assets.GetTexture("Button")));
 
+		sf::Vector2f buttonSize(150, 66);
+		int fontSize = 30;
+		this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 3 * buttonSize.y), buttonSize, "16x16",
+			this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
 		
+		this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * buttonSize.y), buttonSize, "32x32",
+			this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+		
+		this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 1 * buttonSize.y), buttonSize, "64x64",
+			this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+		
+		this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * buttonSize.y), buttonSize, "Back",
+			this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+
 		this->_background.setTexture(this->_data->assets.GetTexture("Background"));
         this->_background.scale(2.35, 2);
 	}
 
 	void InitCreateState::HandleInput() {
 		sf::Event event;
-		while (this->_data->window.pollEvent(event)) {
+		while (this->_data->window.pollEvent(event)) 
+		{
 			if (sf::Event::Closed == event.type)
 			{
 				this->_data->window.close();
 			}
-            /*if (this->_backButton.isClicked(sf::Mouse::Left, this->_data->window)){
-                this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
-            }
-            if (this->_size16Button.isClicked(sf::Mouse::Left, this->_data->window)){
-                this->_data->machine.AddState(StateRef(new CreatorState(this->_data)), false);
-            }*/
-            
-			/*if (this->_data->input.isSpriteClicked(this->_backButton, sf::Mouse::Left, this->_data->window)) {
-				this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
+			for (Button button : this->_buttons)
+			{
+				if (button.isClicked(sf::Mouse::Left, this->_data->window))
+				{
+					if (button.getText() != "Back")
+					{
+						this->_data->machine.AddState(StateRef(new CreatorState(this->_data)), false);
+					}
+					else
+					{
+						this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
+					}
+				}
 			}
-
-
-			if (this->_data->input.isSpriteClicked(this->_sixteenButton, sf::Mouse::Left, this->_data->window)) {
-                this->_data->machine.AddState(StateRef(new CreatorState(this->_data)), false);
-			}
-			if (this->_data->input.isSpriteClicked(this->_thirtytwoButton, sf::Mouse::Left, this->_data->window)) {
-				//Go to game
-				//Save chosen 
-			}
-			if (this->_data->input.isSpriteClicked(this->_sixtyfourButton, sf::Mouse::Left, this->_data->window)) {
-				//Go to game
-				//Save chosen
-			}*/
-			}
-		}
-	
+        }          
+	}
 
 	void InitCreateState::Update(float dt) {
 
@@ -85,6 +88,5 @@ namespace ZPR {
 		}
 		this->_data->window.display();
 	}
-
 
 }
