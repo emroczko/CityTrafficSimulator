@@ -10,7 +10,7 @@ namespace ZPR {
 
 	void InitCreateState::Init() {
 		this->_data->assets.LoadTexture("Background", MENU_BACKGROUND_FILEPATH);
-		this->_data->assets.LoadTexture("Back button", BACK_BUTTON_FILEPATH);
+		//this->_data->assets.LoadTexture("Back button", BACK_BUTTON_FILEPATH);
 		this->_data->assets.LoadTexture("Button", BUTTON_FILEPATH);
 
 		this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);

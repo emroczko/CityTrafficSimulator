@@ -14,31 +14,49 @@ namespace ZPR{
     }
     void MainMenuState::Init(){
         this->_data->assets.LoadTexture("Background", MENU_BACKGROUND_FILEPATH);
-        this->_data->assets.LoadTexture("Create Button", MENU_CREATE_BUTTON_FILEPATH);
-        this->_data->assets.LoadTexture("Exit Button", MENU_EXIT_BUTTON_FILEPATH);
-        
-    
         this->_background.setTexture(this->_data->assets.GetTexture("Background"));
-        this->_createButton.setTexture(this->_data->assets.GetTexture("Create Button"));
-        this->_exitButton.setTexture(this->_data->assets.GetTexture("Exit Button"));
+        this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
+        this->_data->assets.LoadTexture("Button", BUTTON_FILEPATH);
+
+        sf::Vector2f buttonSize(150, 66);
+        int fontSize = 30;
+        
+        
+        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * buttonSize.y), buttonSize, "Create new city",
+            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+        
+        
+        
+        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * buttonSize.y), buttonSize, "Exit",
+            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+
+        
         this->_background.scale(2.35, 2);
-        this->_createButton.setPosition((SCREEN_WIDTH/3) - (this->_createButton.getGlobalBounds().width/3), (SCREEN_HEIGHT/4) - (this->_createButton.getGlobalBounds().height/4));
-    
-        this->_exitButton.setPosition((SCREEN_WIDTH/2) - (this->_exitButton.getGlobalBounds().width/2), (SCREEN_HEIGHT/2) - (this->_exitButton.getGlobalBounds().height/2));
+       
 }
     void MainMenuState::HandleInput(){
         sf::Event event;
     
         while ( this->_data->window.pollEvent(event))
         {
-            if(sf::Event::Closed == event.type || this->_data->input.isSpriteClicked(this->_exitButton, sf::Mouse::Left, this->_data->window))
+            if(sf::Event::Closed == event.type)
             {
                 this->_data->window.close();
             }
-            if(this->_data->input.isSpriteClicked(this->_createButton, sf::Mouse::Left, this->_data->window))
+            
+            for (Button button : this->_buttons)
             {
-                this->_data->machine.AddState(StateRef(new InitCreateState(this->_data)), false);
-                
+                if (button.isClicked(sf::Mouse::Left, this->_data->window))
+                {
+                    if (button.getText() != "Back")
+                    {
+                        this->_data->machine.AddState(StateRef(new InitCreateState(this->_data)), false);
+                    }
+                    else
+                    {
+                        this->_data->window.close();
+                    }
+                }
             }
             
         }
@@ -50,9 +68,9 @@ namespace ZPR{
     void MainMenuState::Draw(float dt){
         this->_data->window.clear();
         this->_data->window.draw(this -> _background);
-        this->_data->window.draw(this -> _createButton);
-        this->_data->window.draw(this -> _exitButton);
-        
+        for (Button button : this->_buttons) {
+            this->_data->window.draw(button);
+        }
         this->_data->window.display();
     }
 }

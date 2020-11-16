@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "State.h"
 #include "Simulator.h"
+#include "Button.h"
 
 namespace ZPR{
 
@@ -20,10 +21,8 @@ namespace ZPR{
     private:
         SimulatorDataRef _data;
         sf::Sprite _background;
-        sf::Sprite _createButton;
-        sf::Sprite _exitButton;
-        sf::Sprite _loadButton;
-        sf::Sprite _demoButton;
+       
+        std::vector<Button> _buttons;
         
     };
 
