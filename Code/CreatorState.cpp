@@ -11,6 +11,14 @@ namespace ZPR {
         this->_data->assets.LoadTexture("Grass Texture", BACKGROUND_TEXTURE_FILEPATH);
         this->_backgroundTexture.setTexture(this->_data->assets.GetTexture("Grass Texture"));
         this->_data->assets.LoadTexture("Button", BUTTON_FILEPATH);
+
+        this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
+
+        this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
+
+        
+
+
     
         this->_manageCamerasView = sf::View(sf::FloatRect(0.f, 0.f, static_cast<float>((this->_data->window.getSize().x - this->_data->window.getSize().y)/2), static_cast<float>(this->_data->window.getSize().y)));
         this->_manageCamerasView.setViewport(sf::FloatRect(0, 0.f, 0.21875, 1.f));
@@ -26,9 +34,7 @@ namespace ZPR {
         
         _backgroundColor.setFillColor(sf::Color(80, 80, 80));
 
-
         _toolsButtons.push_back(Button(sf::Vector2f(50, 50), sf::Vector2f(50, 50), this->_data->assets.GetTexture("Button")));
-
     }
 
     void CreatorState::HandleInput() {

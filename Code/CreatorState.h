@@ -3,7 +3,10 @@
 #include <SFML/Graphics.hpp>
 #include "State.h"
 #include "Simulator.h"
+#include "Button.h"
+
 #include <vector>
+
 #include "Button.h"
 
 
@@ -26,5 +29,6 @@ namespace ZPR{
         std::vector<Button> _toolsButtons;
         sf::Sprite _grid;
         sf::Sprite _backgroundTexture;
+        std::vector<Button> _buttons;
     };
 }
