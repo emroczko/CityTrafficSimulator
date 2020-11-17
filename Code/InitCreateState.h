@@ -21,7 +21,6 @@ namespace ZPR {
 		SimulatorDataRef _data;
 		sf::Sprite _background;
 		std::vector<Button> _buttons;
-        //Button _size16Button, _size32Button, _size64Button, _backButton;
 	};
 
 }

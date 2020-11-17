@@ -10,28 +10,8 @@ namespace ZPR {
 
 	void InitCreateState::Init() {
 		this->_data->assets.LoadTexture("Background", MENU_BACKGROUND_FILEPATH);
-		//this->_data->assets.LoadTexture("Back button", BACK_BUTTON_FILEPATH);
 		this->_data->assets.LoadTexture("Button", BUTTON_FILEPATH);
-
 		this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
-
-
-		/*_size16Button.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2-(400)));
-        
-        _size16Button.ButtonQuickMaker("16 x 16", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
-
-        _size32Button.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2-(200)));
-        
-        _size32Button.ButtonQuickMaker("32 x 32", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
-
-        _size64Button.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2));
-        
-        _size64Button.ButtonQuickMaker("64 x 64", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
-
-        _backButton.setPosition(sf::Vector2f(SCREEN_HEIGHT/2-(100), SCREEN_WIDTH/2+(400)));
-        
-        _backButton.ButtonQuickMaker("BACK", sf::Vector2f(200, 100), sf::Color::Black, this->_data->assets.GetFont("Text font"), 50, sf::Color::White);
-		*/
 
 		sf::Vector2f buttonSize(150, 66);
 		int fontSize = 30;

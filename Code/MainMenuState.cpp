@@ -48,7 +48,7 @@ namespace ZPR{
             {
                 if (button.isClicked(sf::Mouse::Left, this->_data->window))
                 {
-                    if (button.getText() != "Back")
+                    if (button.getText() != "Exit")
                     {
                         this->_data->machine.AddState(StateRef(new InitCreateState(this->_data)), false);
                     }

@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 #include "State.h"
 #include "Simulator.h"
+#include <vector>
+#include "Button.h"
 
 
 namespace ZPR{

@@ -25,6 +25,12 @@
     <Filter Include="Header Files\ZPR namespace">
       <UniqueIdentifier>{9a723085-a2cb-476b-8a8d-8ae6e9f131fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ZPR namespace\States">
+      <UniqueIdentifier>{9708645a-954a-46ed-8c5b-3cd6cf54e950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\States">
+      <UniqueIdentifier>{319ebf1f-03e0-4fd9-bcdf-c6cdcb733259}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\main.cpp">
@@ -39,26 +45,26 @@
     <ClCompile Include="..\..\..\Code\InputManager.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\MainMenuState.cpp">
-      <Filter>Source Files\ZPR namespace</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Code\Simulator.cpp">
-      <Filter>Source Files\ZPR namespace</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\SplashState.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\StateMachine.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\InitCreateState.cpp">
+    <ClCompile Include="..\..\..\Code\Button.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\Button.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\..\Code\InitCreateState.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\CreatorState.cpp">
-      <Filter>Source Files\ZPR namespace</Filter>
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\SplashState.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\MainMenuState.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -71,13 +77,7 @@
     <ClInclude Include="..\..\..\Code\InputManager.h">
       <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\MainMenuState.h">
-      <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Code\Simulator.h">
-      <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\SplashState.h">
       <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\State.h">
@@ -89,14 +89,20 @@
     <ClInclude Include="..\..\..\Code\Definitions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\InitCreateState.h">
-      <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Code\Button.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\CreatorState.h">
-      <Filter>Header Files\ZPR namespace</Filter>
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\InitCreateState.h">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\MainMenuState.h">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\SplashState.h">
+      <Filter>Header Files\ZPR namespace\States</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
