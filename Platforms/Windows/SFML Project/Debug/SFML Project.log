@@ -1,2 +1,5 @@
 ﻿  CreatorState.cpp
+  InitCreateState.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InitCreateState.cpp(31,40): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
   SFML Project.vcxproj -> F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe

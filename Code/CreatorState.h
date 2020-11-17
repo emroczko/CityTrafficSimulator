@@ -22,7 +22,8 @@ namespace ZPR{
     private:
         SimulatorDataRef _data;
         sf::View _manageCamerasView, _creatorView, _creatorToolsView;
-        sf::RectangleShape _leftBackground, _rightBackground;
+        sf::RectangleShape _backgroundColor;
+        std::vector<Button> _toolsButtons;
         sf::Sprite _grid;
         sf::Sprite _backgroundTexture;
     };
