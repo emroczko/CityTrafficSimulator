@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "State.h"
 #include "Simulator.h"
+#include "Button.h"
 
 #include <vector>
 

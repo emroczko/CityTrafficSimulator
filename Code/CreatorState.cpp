@@ -14,7 +14,10 @@ namespace ZPR {
 
         this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
 
+        this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
+
         
+
 
     
         this->_manageCamerasView = sf::View(sf::FloatRect(0.f, 0.f, static_cast<float>((this->_data->window.getSize().x - this->_data->window.getSize().y)/2), static_cast<float>(this->_data->window.getSize().y)));
@@ -66,11 +69,17 @@ namespace ZPR {
         this->_data->window.clear();
         
         this->_data->window.setView(_manageCamerasView);
+
+        
+        this->_data->window.draw(_leftBackground);
         
         
+
         this->_data->window.draw(_leftBackground);
 
         this->_data->window.setView(_creatorView);
+
+        this->_data->window.draw(_backgroundTexture);
         
         
         this->_data->window.draw(_backgroundTexture);
