@@ -3,10 +3,9 @@
 #include <SFML/Graphics.hpp>
 #include "State.h"
 #include "Simulator.h"
-<<<<<<< Updated upstream
+
 #include <vector>
-=======
->>>>>>> Stashed changes
+
 #include "Button.h"
 
 
