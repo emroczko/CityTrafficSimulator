@@ -11,6 +11,12 @@ namespace ZPR {
         this->_data->assets.LoadTexture("Grass Texture", BACKGROUND_TEXTURE_FILEPATH);
         this->_backgroundTexture.setTexture(this->_data->assets.GetTexture("Grass Texture"));
         this->_data->assets.LoadTexture("Button", BUTTON_FILEPATH);
+<<<<<<< Updated upstream
+=======
+        this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
+
+        
+>>>>>>> Stashed changes
     
         this->_manageCamerasView = sf::View(sf::FloatRect(0.f, 0.f, static_cast<float>((this->_data->window.getSize().x - this->_data->window.getSize().y)/2), static_cast<float>(this->_data->window.getSize().y)));
         this->_manageCamerasView.setViewport(sf::FloatRect(0, 0.f, 0.21875, 1.f));
@@ -29,6 +35,18 @@ namespace ZPR {
         
         _leftBackground.setFillColor(sf::Color(80, 80, 80));
         _rightBackground.setFillColor(sf::Color(80, 80, 80));
+<<<<<<< Updated upstream
+=======
+        
+        sf::Vector2f buttonSize(150, 66);
+        int fontSize = 30;
+        
+        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 3 * buttonSize.y), buttonSize, "Add Camera",
+            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+        
+        
+
+>>>>>>> Stashed changes
     }
 
     void CreatorState::HandleInput() {
@@ -50,12 +68,27 @@ namespace ZPR {
         this->_data->window.clear();
         
         this->_data->window.setView(_manageCamerasView);
+        
+        
         this->_data->window.draw(_leftBackground);
+<<<<<<< Updated upstream
 		
+=======
+        
+        
+        
+>>>>>>> Stashed changes
         this->_data->window.setView(_creatorView);
+        
+        
         this->_data->window.draw(_backgroundTexture);
+<<<<<<< Updated upstream
 		
 
+=======
+       
+        
+>>>>>>> Stashed changes
         this->_data->window.setView(_creatorToolsView);
         this->_data->window.draw(_rightBackground);
         
