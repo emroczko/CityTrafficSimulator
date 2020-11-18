@@ -6,7 +6,7 @@
 #include "InputManager.h"
 
 namespace ZPR {
-    CreatorState::CreatorState(SimulatorDataRef data) : _data(data) { }
+    CreatorState::CreatorState(SimulatorDataRef data, int gridSize) : _data(data), _gridSize(gridSize) { }
     void CreatorState::Init(){
         this->_data->assets.LoadTexture("Grass Texture", BACKGROUND_TEXTURE_FILEPATH);
         this->_backgroundTexture.setTexture(this->_data->assets.GetTexture("Grass Texture"));
@@ -16,10 +16,6 @@ namespace ZPR {
 
         this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
 
-        
-
-
-    
         this->_manageCamerasView = sf::View(sf::FloatRect(0.f, 0.f, static_cast<float>((this->_data->window.getSize().x - this->_data->window.getSize().y)/2), static_cast<float>(this->_data->window.getSize().y)));
         this->_manageCamerasView.setViewport(sf::FloatRect(0, 0.f, 0.21875, 1.f));
         
@@ -37,6 +33,8 @@ namespace ZPR {
         _toolsButtons.push_back(Button(sf::Vector2f(50, 50), sf::Vector2f(50, 50), this->_data->assets.GetTexture("Button")));
     }
 
+    
+
     void CreatorState::HandleInput() {
         sf::Event event;
         while (this->_data->window.pollEvent(event))
@@ -52,6 +50,27 @@ namespace ZPR {
 
     }
 
+	void CreatorState::drawGrid() {
+        GenerateGrid();
+        for (sf::RectangleShape line : _gridLines) {
+            this->_data->window.draw(line);
+        }
+	}
+
+    void CreatorState::GenerateGrid() {
+        int cellSize = this->_creatorView.getSize().x/_gridSize;
+        for (int i = 0; i<=_gridSize; i++)
+        {
+            sf::RectangleShape verticalLine(sf::Vector2f(2 , (_gridSize) * cellSize));
+            verticalLine.setPosition(sf::Vector2f(i * cellSize, 0 + 2 * _gridSize / 16));
+            sf::RectangleShape horizontalLine(sf::Vector2f((_gridSize) * cellSize, 2));
+            horizontalLine.setPosition(sf::Vector2f(0  + 2 * _gridSize / 16, i * cellSize));
+            this->_gridLines.push_back(verticalLine);
+            this->_gridLines.push_back(horizontalLine);
+        }
+    }
+
+
     void CreatorState::Draw(float dt){
         this->_data->window.clear();
         
@@ -60,6 +79,7 @@ namespace ZPR {
 		
         this->_data->window.setView(_creatorView);
         this->_data->window.draw(_backgroundTexture);
+        drawGrid();
 
         this->_data->window.setView(_creatorToolsView);
         this->_data->window.draw(_backgroundColor);

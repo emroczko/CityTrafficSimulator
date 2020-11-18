@@ -18,6 +18,8 @@ namespace ZPR {
         
 
 	private:
+		int GetGridSizeFromButton(Button);
+		int ChangeTextToInt(std::string);
 		SimulatorDataRef _data;
 		sf::Sprite _background;
 		std::vector<Button> _buttons;

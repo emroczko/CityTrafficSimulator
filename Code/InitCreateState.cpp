@@ -45,7 +45,8 @@ namespace ZPR {
 				{
 					if (button.getText() != "Back")
 					{
-						this->_data->machine.AddState(StateRef(new CreatorState(this->_data)), false);
+						int gridSize = GetGridSizeFromButton(button);
+						this->_data->machine.AddState(StateRef(new CreatorState(this->_data, gridSize)), false);
 					}
 					else
 					{
@@ -54,6 +55,18 @@ namespace ZPR {
 				}
 			}
         }          
+	}
+
+	int InitCreateState::GetGridSizeFromButton(Button button)
+	{
+		std::string buttonText = button.getText();
+		std::string textTochange = buttonText.substr(0, 2);
+		return ChangeTextToInt(buttonText);
+	}
+
+	int InitCreateState::ChangeTextToInt(std::string textToChange) 
+	{
+		return std::stoi(textToChange, nullptr);
 	}
 
 	void InitCreateState::Update(float dt) {
@@ -69,4 +82,4 @@ namespace ZPR {
 		this->_data->window.display();
 	}
 
-}
+	}

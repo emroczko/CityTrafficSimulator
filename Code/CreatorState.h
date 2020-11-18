@@ -15,7 +15,7 @@ namespace ZPR{
     class CreatorState: public State{
     
     public:
-        CreatorState (SimulatorDataRef data);
+        CreatorState (SimulatorDataRef data, int gridSize);
         
         void Init();
         
@@ -23,10 +23,14 @@ namespace ZPR{
         void Update(float dt);
         void Draw(float dt);
     private:
+        void drawGrid();
+        void GenerateGrid();
         SimulatorDataRef _data;
+        int _gridSize;
         sf::View _manageCamerasView, _creatorView, _creatorToolsView;
         sf::RectangleShape _backgroundColor;
         std::vector<Button> _toolsButtons;
+        std::vector<sf::RectangleShape> _gridLines;
         sf::Sprite _grid;
         sf::Sprite _backgroundTexture;
         std::vector<Button> _buttons;
