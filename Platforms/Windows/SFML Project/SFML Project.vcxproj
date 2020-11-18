@@ -147,11 +147,16 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\AssetManager.cpp" />
     <ClCompile Include="..\..\..\Code\Button.cpp" />
+    <ClCompile Include="..\..\..\Code\CamerasView.cpp" />
+    <ClCompile Include="..\..\..\Code\Cell.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorState.cpp" />
+    <ClCompile Include="..\..\..\Code\ToolsView.cpp" />
+    <ClCompile Include="..\..\..\Code\Grid.cpp" />
     <ClCompile Include="..\..\..\Code\InitCreateState.cpp" />
     <ClCompile Include="..\..\..\Code\InputManager.cpp" />
     <ClCompile Include="..\..\..\Code\main.cpp" />
     <ClCompile Include="..\..\..\Code\MainMenuState.cpp" />
+    <ClCompile Include="..\..\..\Code\MapView.cpp" />
     <ClCompile Include="..\..\..\Code\Simulator.cpp" />
     <ClCompile Include="..\..\..\Code\SplashState.cpp" />
     <ClCompile Include="..\..\..\Code\StateMachine.cpp" />
@@ -160,11 +165,16 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\AssetManager.h" />
     <ClInclude Include="..\..\..\Code\Button.h" />
+    <ClInclude Include="..\..\..\Code\CamerasView.h" />
+    <ClInclude Include="..\..\..\Code\Cell.h" />
     <ClInclude Include="..\..\..\Code\CreatorState.h" />
+    <ClInclude Include="..\..\..\Code\ToolsView.h" />
     <ClInclude Include="..\..\..\Code\Definitions.h" />
+    <ClInclude Include="..\..\..\Code\Grid.h" />
     <ClInclude Include="..\..\..\Code\InitCreateState.h" />
     <ClInclude Include="..\..\..\Code\InputManager.h" />
     <ClInclude Include="..\..\..\Code\MainMenuState.h" />
+    <ClInclude Include="..\..\..\Code\MapView.h" />
     <ClInclude Include="..\..\..\Code\Simulator.h" />
     <ClInclude Include="..\..\..\Code\SplashState.h" />
     <ClInclude Include="..\..\..\Code\State.h" />

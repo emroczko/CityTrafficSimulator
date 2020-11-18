@@ -8,6 +8,9 @@
 #include <vector>
 
 #include "Button.h"
+#include "MapView.h"
+#include "ToolsView.h"
+#include "CamerasView.h"
 
 
 namespace ZPR{
@@ -23,16 +26,10 @@ namespace ZPR{
         void Update(float dt);
         void Draw(float dt);
     private:
-        void drawGrid();
-        void GenerateGrid();
         SimulatorDataRef _data;
+        std::unique_ptr<MapView> _mapView;
+        std::unique_ptr<ToolsView> _toolsView;
+        std::unique_ptr<CamerasView> _camerasView;
         int _gridSize;
-        sf::View _manageCamerasView, _creatorView, _creatorToolsView;
-        sf::RectangleShape _backgroundColor;
-        std::vector<Button> _toolsButtons;
-        std::vector<sf::RectangleShape> _gridLines;
-        sf::Sprite _grid;
-        sf::Sprite _backgroundTexture;
-        std::vector<Button> _buttons;
     };
 }

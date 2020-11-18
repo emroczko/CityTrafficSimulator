@@ -1,33 +1,38 @@
-﻿  CreatorState.cpp
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(64,24): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(67,74): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+﻿  CamerasView.cpp
+  CreatorState.cpp
+  InitCreateState.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InitCreateState.cpp(31,40): warning C4305: 'argument': truncation from 'double' to 'float'
+  MapView.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(31,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(34,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(68,78): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(35,69): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(68,64): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(35,55): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(69,72): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(36,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(70,78): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(37,69): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(70,53): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(37,44): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
+  Generating Code...
   SFML Project.vcxproj -> F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe

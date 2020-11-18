@@ -31,6 +31,12 @@
     <Filter Include="Header Files\ZPR namespace\States">
       <UniqueIdentifier>{319ebf1f-03e0-4fd9-bcdf-c6cdcb733259}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ZPR namespace\Views">
+      <UniqueIdentifier>{cb00fbc6-2155-44db-ba98-d183c0137779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ZPR namespace\Views">
+      <UniqueIdentifier>{ed9fd230-45b2-4cdb-bb89-9e30251f6f19}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\main.cpp">
@@ -65,6 +71,21 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Code\MainMenuState.cpp">
       <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Cell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\MapView.cpp">
+      <Filter>Source Files\ZPR namespace\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\ToolsView.cpp">
+      <Filter>Source Files\ZPR namespace\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\CamerasView.cpp">
+      <Filter>Source Files\ZPR namespace\Views</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +124,21 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Code\SplashState.h">
       <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\MapView.h">
+      <Filter>Header Files\ZPR namespace\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Cell.h">
+      <Filter>Header Files\ZPR namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Grid.h">
+      <Filter>Header Files\ZPR namespace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\ToolsView.h">
+      <Filter>Header Files\ZPR namespace\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\CamerasView.h">
+      <Filter>Header Files\ZPR namespace\Views</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
