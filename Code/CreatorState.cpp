@@ -6,9 +6,7 @@
 #include "InputManager.h"
 
 namespace ZPR {
-    CreatorState::CreatorState(SimulatorDataRef data, int gridSize) : _data(data), _gridSize(gridSize) { 
-        
-    }
+    CreatorState::CreatorState(SimulatorDataRef data, int gridSize) : _data(data), _gridSize(gridSize) { }
     void CreatorState::Init(){
 		this->_mapView = std::make_unique<MapView>(this->_data, _gridSize);
 		this->_toolsView = std::make_unique<ToolsView>(this->_data);

@@ -3,7 +3,6 @@
 
 namespace ZPR{
 
-
     Simulator::Simulator(int width, int height, std::string title){
     
         _data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
@@ -11,7 +10,6 @@ namespace ZPR{
         
         this-> Run();
     }
-
 
     void Simulator::Run(){
     
