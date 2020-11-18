@@ -58,13 +58,16 @@ namespace ZPR {
 	}
 
     void CreatorState::GenerateGrid() {
-        int cellSize = this->_creatorView.getSize().x/_gridSize;
+        double cellSizeWithPoint = this->_creatorView.getSize().x/_gridSize;
+        int cellSize = (int)cellSizeWithPoint;
+        double theRest = cellSizeWithPoint - cellSize;
+        int drawPrefix = theRest * _gridSize/2;
         for (int i = 0; i<=_gridSize; i++)
         {
             sf::RectangleShape verticalLine(sf::Vector2f(2 , (_gridSize) * cellSize));
-            verticalLine.setPosition(sf::Vector2f(i * cellSize, 0 + 2 * _gridSize / 16));
+            verticalLine.setPosition(sf::Vector2f(i * cellSize + drawPrefix, drawPrefix));
             sf::RectangleShape horizontalLine(sf::Vector2f((_gridSize) * cellSize, 2));
-            horizontalLine.setPosition(sf::Vector2f(0  + 2 * _gridSize / 16, i * cellSize));
+            horizontalLine.setPosition(sf::Vector2f(drawPrefix, i * cellSize + drawPrefix));
             this->_gridLines.push_back(verticalLine);
             this->_gridLines.push_back(horizontalLine);
         }
