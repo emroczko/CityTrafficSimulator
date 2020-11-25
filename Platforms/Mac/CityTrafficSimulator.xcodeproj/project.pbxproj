@@ -28,6 +28,8 @@
 		52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD00255421B90093D5DF /* InputManager.cpp */; };
 		52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0825542D450093D5DF /* Simulator.cpp */; };
 		52D3BD10255442410093D5DF /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0F255442410093D5DF /* SplashState.cpp */; };
+		52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */; };
+		52D56740256F034F0017A7C6 /* CreatorSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */; };
 		52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52EDDC39255A055800CD5101 /* InitCreateState.cpp */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,11 @@
 		52D3BD0D255440E00093D5DF /* SplashState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashState.h; sourceTree = "<group>"; };
 		52D3BD0E2554413A0093D5DF /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
 		52D3BD0F255442410093D5DF /* SplashState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplashState.cpp; sourceTree = "<group>"; };
+		52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorHandler.cpp; sourceTree = "<group>"; };
+		52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorSubject.cpp; sourceTree = "<group>"; };
+		52D5673C256F034F0017A7C6 /* CreatorSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatorSubject.h; sourceTree = "<group>"; };
+		52D5673D256F034F0017A7C6 /* CreatorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatorHandler.h; sourceTree = "<group>"; };
+		52D5673E256F034F0017A7C6 /* CreatorObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatorObserver.h; sourceTree = "<group>"; };
 		52EDDC39255A055800CD5101 /* InitCreateState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InitCreateState.cpp; sourceTree = "<group>"; };
 		52EDDC3A255A055800CD5101 /* InitCreateState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitCreateState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +122,11 @@
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */,
+				52D5673D256F034F0017A7C6 /* CreatorHandler.h */,
+				52D5673E256F034F0017A7C6 /* CreatorObserver.h */,
+				52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */,
+				52D5673C256F034F0017A7C6 /* CreatorSubject.h */,
 				5230E78E2565EB3500F84CF2 /* CamerasView.cpp */,
 				5230E7922565EB3500F84CF2 /* CamerasView.h */,
 				5230E7952565EB3500F84CF2 /* Cell.cpp */,
@@ -249,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5230E79B2565EB3500F84CF2 /* MapView.cpp in Sources */,
+				52D56740256F034F0017A7C6 /* CreatorSubject.cpp in Sources */,
 				52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */,
 				52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */,
 				52D3BD10255442410093D5DF /* SplashState.cpp in Sources */,
@@ -260,6 +273,7 @@
 				5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */,
 				52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */,
 				52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */,
+				52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */,
 				5225663D255EA24500C9BB3C /* CreatorState.cpp in Sources */,
 				52166DD82561796400A1AE4E /* Button.cpp in Sources */,
 				522531A7255232B20035E946 /* main.cpp in Sources */,
