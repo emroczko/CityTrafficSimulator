@@ -79,8 +79,8 @@ namespace ZPR {
 
 	sf::Vector2f MapView::TransformRowColToPixels(sf::Vector2i rowcol)
 	{
-		float x = rowcol.x * _gridSize + CalculatePrefix();
-		float y = rowcol.y * _gridSize + CalculatePrefix();
+		float x = rowcol.x * this->_cellSize + CalculatePrefix();
+		float y = rowcol.y * this->_cellSize + CalculatePrefix();
 		return sf::Vector2f(x, y);
 	}
 
