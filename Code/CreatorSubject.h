@@ -12,7 +12,7 @@ namespace ZPR {
 		void NotifyCells(std::vector<Cell> cells);
 		virtual ~CreatorSubject() {}
 	private:
-		std::vector<std::shared_ptr<CreatorObserver>> _observers;
+		std::vector<std::shared_ptr<CreatorObserver> > _observers;
 	};
 }
 

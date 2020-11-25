@@ -16,7 +16,7 @@ namespace ZPR {
 		{
 			cells.push_back(Cell(i / _gridSize, i % _gridSize));
 		}
-		this->_grid = std::make_unique<Grid>(cells, _gridSize);
+        this->_grid = std::make_unique<Grid>(cells, _gridSize);
 	}
 
 	void CreatorHandler::HandleInput(sf::Vector2i possibleSelectedCell)

@@ -1,0 +1,5 @@
+CXXFLAGS = ['-std=c++14']
+
+Program('CityTrafficSimulator', Glob('*.cpp'), LIBS = ['sfml-window','sfml-system','sfml-graphics', 'GLU', 'GL'], LIBPATH = ['/usr/lib', '/usr/local/lib'])
+
+
