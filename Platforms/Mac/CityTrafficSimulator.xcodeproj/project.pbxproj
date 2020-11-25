@@ -16,6 +16,11 @@
 		522531B9255234B40035E946 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B4255234B40035E946 /* libsfml-system.2.5.1.dylib */; };
 		522531BA255234B40035E946 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B5255234B40035E946 /* libsfml-graphics.2.5.1.dylib */; };
 		5225663D255EA24500C9BB3C /* CreatorState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5225663C255EA24500C9BB3C /* CreatorState.cpp */; };
+		5230E7982565EB3500F84CF2 /* CamerasView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E78E2565EB3500F84CF2 /* CamerasView.cpp */; };
+		5230E7992565EB3500F84CF2 /* ToolsView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E78F2565EB3500F84CF2 /* ToolsView.cpp */; };
+		5230E79A2565EB3500F84CF2 /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7912565EB3500F84CF2 /* Grid.cpp */; };
+		5230E79B2565EB3500F84CF2 /* MapView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7932565EB3500F84CF2 /* MapView.cpp */; };
+		5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7952565EB3500F84CF2 /* Cell.cpp */; };
 		52804F6625537553002A59AD /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52804F6425537553002A59AD /* Car.cpp */; };
 		52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF12553FE0C0093D5DF /* MainMenuState.cpp */; };
 		52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF525540A9A0093D5DF /* StateMachine.cpp */; };
@@ -60,6 +65,16 @@
 		522531B5255234B40035E946 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
 		5225663B255EA20400C9BB3C /* CreatorState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatorState.h; sourceTree = "<group>"; };
 		5225663C255EA24500C9BB3C /* CreatorState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorState.cpp; sourceTree = "<group>"; };
+		5230E78E2565EB3500F84CF2 /* CamerasView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CamerasView.cpp; sourceTree = "<group>"; };
+		5230E78F2565EB3500F84CF2 /* ToolsView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToolsView.cpp; sourceTree = "<group>"; };
+		5230E7902565EB3500F84CF2 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		5230E7912565EB3500F84CF2 /* Grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
+		5230E7922565EB3500F84CF2 /* CamerasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamerasView.h; sourceTree = "<group>"; };
+		5230E7932565EB3500F84CF2 /* MapView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapView.cpp; sourceTree = "<group>"; };
+		5230E7942565EB3500F84CF2 /* ToolsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsView.h; sourceTree = "<group>"; };
+		5230E7952565EB3500F84CF2 /* Cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cell.cpp; sourceTree = "<group>"; };
+		5230E7962565EB3500F84CF2 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		5230E7972565EB3500F84CF2 /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
 		52804F6425537553002A59AD /* Car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Car.cpp; path = Vehicles/Car.cpp; sourceTree = "<group>"; };
 		52804F6525537553002A59AD /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = Vehicles/Car.h; sourceTree = "<group>"; };
 		529FE34E255231B2006D8A78 /* CityTrafficSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CityTrafficSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +115,16 @@
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				5230E78E2565EB3500F84CF2 /* CamerasView.cpp */,
+				5230E7922565EB3500F84CF2 /* CamerasView.h */,
+				5230E7952565EB3500F84CF2 /* Cell.cpp */,
+				5230E7902565EB3500F84CF2 /* Cell.h */,
+				5230E7912565EB3500F84CF2 /* Grid.cpp */,
+				5230E7972565EB3500F84CF2 /* Grid.h */,
+				5230E7932565EB3500F84CF2 /* MapView.cpp */,
+				5230E7962565EB3500F84CF2 /* MapView.h */,
+				5230E78F2565EB3500F84CF2 /* ToolsView.cpp */,
+				5230E7942565EB3500F84CF2 /* ToolsView.h */,
 				52EDDC39255A055800CD5101 /* InitCreateState.cpp */,
 				5225663B255EA20400C9BB3C /* CreatorState.h */,
 				5225663C255EA24500C9BB3C /* CreatorState.cpp */,
@@ -223,17 +248,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5230E79B2565EB3500F84CF2 /* MapView.cpp in Sources */,
 				52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */,
 				52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */,
 				52D3BD10255442410093D5DF /* SplashState.cpp in Sources */,
 				52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */,
+				5230E7992565EB3500F84CF2 /* ToolsView.cpp in Sources */,
+				5230E79A2565EB3500F84CF2 /* Grid.cpp in Sources */,
 				52804F6625537553002A59AD /* Car.cpp in Sources */,
 				52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */,
+				5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */,
 				52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */,
 				52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */,
 				5225663D255EA24500C9BB3C /* CreatorState.cpp in Sources */,
 				52166DD82561796400A1AE4E /* Button.cpp in Sources */,
 				522531A7255232B20035E946 /* main.cpp in Sources */,
+				5230E7982565EB3500F84CF2 /* CamerasView.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
