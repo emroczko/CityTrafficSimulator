@@ -112,15 +112,6 @@ namespace ZPR {
 		return sf::Vector2i(possibleSellectedRow, possibleSellectedCol);
 	}
 
-	bool MapView::isClicked(int mousePositionX)
-	{
-		int left = _mapView.getViewport().left*SCREEN_WIDTH;
-		int right = left + _mapView.getViewport().width * SCREEN_WIDTH;
-		if (mousePositionX > left && mousePositionX<right) {
-			return true;
-		}
-		return false;
-	}
 	sf::View MapView::GetView()
 	{
 		return this->_mapView;

@@ -16,7 +16,6 @@ namespace ZPR {
 		virtual void UpdateCells(std::vector<Cell> cells);
 		void Draw();
 		sf::Vector2i HandleInput(sf::Vector2f mousePosition);
-		bool isClicked(int mousePositionX);
 		sf::View GetView();
 		void init();
 	private:
