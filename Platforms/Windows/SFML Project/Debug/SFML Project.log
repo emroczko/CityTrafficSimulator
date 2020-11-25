@@ -1,2 +1,55 @@
-﻿  CreatorSubject.cpp
+﻿  MapView.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(30,94): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(30,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(51,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(52,76): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(52,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(53,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(54,76): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(54,44): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(63,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(82,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(83,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(117,12): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.cpp(118,13): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
   SFML Project.vcxproj -> F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe

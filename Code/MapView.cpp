@@ -3,6 +3,7 @@
 
 namespace ZPR {
 	MapView::MapView(SimulatorDataRef data, int gridSize): _data(data), _gridSize(gridSize){
+		init();
 	}
 
 	void MapView::init() {
@@ -87,9 +88,8 @@ namespace ZPR {
 	{
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
-		fillCells();
+	    fillCells();
 		DrawGrid();
-
 	}
 
 
