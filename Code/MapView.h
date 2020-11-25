@@ -18,8 +18,8 @@ namespace ZPR {
 		sf::Vector2i HandleInput(sf::Vector2f mousePosition);
 		bool isClicked(int mousePositionX);
 		sf::View GetView();
-	private:
 		void init();
+	private:
 		void LoadAssets();
 		sf::FloatRect CalculateViewPort();
 		void DrawGrid();

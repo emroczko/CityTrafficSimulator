@@ -16,9 +16,9 @@ namespace ZPR {
 
 	void CreatorSubject::NotifyCells(std::vector<Cell> cells)
 	{
-		int a = _observers.size();
-		int b = 0;
-		//obs->UpdateCells(cells);
+		for (std::shared_ptr<CreatorObserver> obs : this->_observers) {
+			obs->UpdateCells(cells);
+		}
 	}
 
 }

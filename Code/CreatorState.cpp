@@ -13,6 +13,7 @@ namespace ZPR {
         this->_camerasView = std::make_unique<CamerasView>(this->_data);
         this->_creatorHandler = std::make_unique<CreatorHandler>(this->_gridSize);
         this->_creatorHandler->add(this->_mapView);
+        this->_creatorHandler->init();
     }
 
     void CreatorState::HandleInput() {
