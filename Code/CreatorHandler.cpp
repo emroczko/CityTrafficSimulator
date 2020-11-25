@@ -1,16 +1,11 @@
 #include "CreatorHandler.h"
 
 namespace ZPR {
-	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize)
-	{
-		this->init();
-	}
+	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1) {}
 
 	void CreatorHandler::init()
 	{
 		this->GenerateBoard();
-		this->_row = -1;
-		this->_col = -1;
 		this->NotifyCells(_grid->_cells);
 	}
 
