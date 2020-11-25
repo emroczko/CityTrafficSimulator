@@ -5,7 +5,7 @@ namespace ZPR {
 	{
 	public:
 		Cell(int row, int column);
-		sf::Vector2f GetPosition();
+		sf::Vector2i GetPosition();
 	private:
 		int _row, _column;
 	};

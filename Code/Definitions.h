@@ -14,4 +14,4 @@
 
 #define TEXT_FONT_FILEPATH "Resources/font.ttf"
 
-
+#define SELECTED_CELL_TEXTURE "Resources/SelectedCell.png"

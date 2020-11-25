@@ -149,7 +149,9 @@
     <ClCompile Include="..\..\..\Code\Button.cpp" />
     <ClCompile Include="..\..\..\Code\CamerasView.cpp" />
     <ClCompile Include="..\..\..\Code\Cell.cpp" />
+    <ClCompile Include="..\..\..\Code\CreatorHandler.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorState.cpp" />
+    <ClCompile Include="..\..\..\Code\CreatorSubject.cpp" />
     <ClCompile Include="..\..\..\Code\ToolsView.cpp" />
     <ClCompile Include="..\..\..\Code\Grid.cpp" />
     <ClCompile Include="..\..\..\Code\InitCreateState.cpp" />
@@ -167,9 +169,12 @@
     <ClInclude Include="..\..\..\Code\Button.h" />
     <ClInclude Include="..\..\..\Code\CamerasView.h" />
     <ClInclude Include="..\..\..\Code\Cell.h" />
+    <ClInclude Include="..\..\..\Code\CreatorHandler.h" />
+    <ClInclude Include="..\..\..\Code\CreatorObserver.h" />
     <ClInclude Include="..\..\..\Code\CreatorState.h" />
-    <ClInclude Include="..\..\..\Code\ToolsView.h" />
+    <ClInclude Include="..\..\..\Code\CreatorSubject.h" />
     <ClInclude Include="..\..\..\Code\Definitions.h" />
+    <ClInclude Include="..\..\..\Code\ToolsView.h" />
     <ClInclude Include="..\..\..\Code\Grid.h" />
     <ClInclude Include="..\..\..\Code\InitCreateState.h" />
     <ClInclude Include="..\..\..\Code\InputManager.h" />
@@ -184,9 +189,6 @@
   <ItemGroup>
     <Image Include="..\Release\Resources\background_menu.jpeg" />
     <Image Include="..\Release\Resources\background_splash.jpeg" />
-    <Image Include="..\Release\Resources\button_create.png" />
-    <Image Include="..\Release\Resources\button_demo.png" />
-    <Image Include="..\Release\Resources\button_load.png" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\Release\Resources\BebasNeue-Regular.ttf" />

@@ -8,9 +8,11 @@
 namespace ZPR {
     CreatorState::CreatorState(SimulatorDataRef data, int gridSize) : _data(data), _gridSize(gridSize) { }
     void CreatorState::Init(){
-		this->_mapView = std::make_unique<MapView>(this->_data, _gridSize);
+		this->_mapView = std::make_shared<MapView>(this->_data, _gridSize);
 		this->_toolsView = std::make_unique<ToolsView>(this->_data);
         this->_camerasView = std::make_unique<CamerasView>(this->_data);
+        this->_creatorHandler = std::make_unique<CreatorHandler>(this->_gridSize);
+        this->_creatorHandler->add(this->_mapView);
     }
 
     void CreatorState::HandleInput() {
@@ -20,6 +22,11 @@ namespace ZPR {
             if (sf::Event::Closed == event.type)
             {
                 this->_data->window.close();
+            }
+            if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+                sf::Vector2i mousePosition = sf::Mouse::getPosition(this->_data->window);
+                sf::Vector2f mousePositionRelativeToView = this->_data->window.mapPixelToCoords(mousePosition, this->_mapView->GetView());
+                this->_creatorHandler->HandleInput(this->_mapView->HandleInput(mousePositionRelativeToView));
             }
         }
     }
@@ -37,4 +44,5 @@ namespace ZPR {
 
         this->_data->window.display();
     }
+
 }

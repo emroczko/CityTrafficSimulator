@@ -10,7 +10,6 @@ namespace ZPR{
 		void Draw();
 	private:
 		sf::FloatRect CalculateViewPort();
-		void DrawButtons();
 		SimulatorDataRef _data;
 		sf::RectangleShape _background;
 		sf::View _camerasView;

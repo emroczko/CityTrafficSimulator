@@ -87,6 +87,12 @@
     <ClCompile Include="..\..\..\Code\CamerasView.cpp">
       <Filter>Source Files\ZPR namespace\Views</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\CreatorHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\CreatorSubject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h">
@@ -106,9 +112,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Code\StateMachine.h">
       <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Definitions.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\Button.h">
       <Filter>Header Files\ZPR namespace</Filter>
@@ -140,21 +143,24 @@
     <ClInclude Include="..\..\..\Code\CamerasView.h">
       <Filter>Header Files\ZPR namespace\Views</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Code\CreatorHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\CreatorObserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\CreatorSubject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\Release\Resources\background_menu.jpeg">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="..\Release\Resources\background_splash.jpeg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\Release\Resources\button_create.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\Release\Resources\button_demo.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\Release\Resources\button_load.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
