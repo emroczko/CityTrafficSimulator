@@ -38,7 +38,13 @@ namespace ZPR {
     }
 
     
+    bool ToolsView::isClicked(sf::Vector2i &mousePosition){
     
+        if (_toolsView.getViewport().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y)))
+            return true;
+        else
+            return false;
+    }
 
 	void ToolsView::DrawButtons()
 	{
@@ -47,5 +53,9 @@ namespace ZPR {
 			this->_data->window.draw(button);
 		}
 	}
+    sf::View ToolsView::GetView()
+    {
+        return this->_toolsView;
+    }
 
 }

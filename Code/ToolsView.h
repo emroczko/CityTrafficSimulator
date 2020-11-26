@@ -11,7 +11,8 @@ namespace ZPR {
 		void Draw();
         void add(std::shared_ptr<ButtonsCreatorObserver> obs);
         void NotifyCreateHandler();
-        void HandleInput();
+        bool isClicked(sf::Vector2i &mousePosition);
+        sf::View GetView();
 	private:
 		sf::FloatRect CalculateViewPort();
 		void DrawButtons();
