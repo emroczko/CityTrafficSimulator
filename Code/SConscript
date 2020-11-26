@@ -1,7 +1,0 @@
-CXXFLAGS = ['-std=c++14']
-
-Program('CityTrafficSimulator', Glob('*.cpp'), LIBS = ['sfml-graphics-2.dll','sfml-window-2.dll','sfml-system-2.dll', 'GLU', 'GL'], LIBPATH = ['Platforms/Windows/Release'])
-
-
-
-
