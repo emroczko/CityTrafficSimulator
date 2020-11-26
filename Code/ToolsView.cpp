@@ -40,10 +40,23 @@ namespace ZPR {
     
     bool ToolsView::isClicked(sf::Vector2i &mousePosition){
     
-        if (_toolsView.getViewport().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y)))
+        if(_toolsView.getViewport().contains(static_cast<float>(mousePosition.x)/SCREEN_WIDTH, static_cast<float>(mousePosition.y)/SCREEN_HEIGHT))
             return true;
         else
             return false;
+    }
+    void ToolsView::HandleInput(sf::Vector2f &mousePosition){
+        for (Button button : this->_buttons)
+        {
+            if (button.isClicked(sf::Mouse::Left, this->_data->window))
+            {
+                if (button.getText() == "Create new street")
+                {
+                    
+                }
+                
+            }
+        }
     }
 
 	void ToolsView::DrawButtons()

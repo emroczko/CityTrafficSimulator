@@ -13,6 +13,7 @@ namespace ZPR {
         void NotifyCreateHandler();
         bool isClicked(sf::Vector2i &mousePosition);
         sf::View GetView();
+        void HandleInput(sf::Vector2f &mousePosition);
 	private:
 		sf::FloatRect CalculateViewPort();
 		void DrawButtons();
