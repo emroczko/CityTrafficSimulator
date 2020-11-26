@@ -26,4 +26,7 @@ namespace ZPR {
 		this->_col = possibleSelectedCell.y;
 		this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
 	}
+    void CreatorHandler::UpdateCreateNewStreets(){
+    
+    }
 }
