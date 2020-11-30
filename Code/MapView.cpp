@@ -19,6 +19,21 @@ namespace ZPR {
 		GenerateGridLines();
 	}
 
+	sf::Vector2i MapView::getRowCol()
+	{
+		return sf::Vector2i(this->_row, this->_col);
+	}
+
+	int MapView::getGridSize()
+	{
+		return this->_gridSize;
+	}
+
+	int MapView::getCellSize()
+	{
+		return this->_gridSize;
+	}
+
 	void MapView::LoadAssets()
 	{
 		this->_data->assets.LoadTexture("Selected Cell", SELECTED_CELL_TEXTURE);

@@ -18,6 +18,9 @@ namespace ZPR {
 		sf::Vector2i HandleInput(sf::Vector2f mousePosition);
 		sf::View GetView();
 		void init();
+		sf::Vector2i getRowCol();
+		int getGridSize();
+		int getCellSize();
 	private:
 		void LoadAssets();
 		sf::FloatRect CalculateViewPort();
