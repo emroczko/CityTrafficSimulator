@@ -1,0 +1,2 @@
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\UnitTest2\Debug UnitTests\UnitTest2.vcxproj.CopyComplete
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\UnitTest\Debug UnitTests\UnitTest2.vcxproj.CopyComplete

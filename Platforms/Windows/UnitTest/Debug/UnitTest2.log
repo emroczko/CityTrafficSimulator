@@ -1,0 +1,3 @@
+﻿  Test.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include\SFML\Graphics\Rect.inl(81,19): error C2589: '(': illegal token on right side of '::'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include\SFML\Graphics\Rect.inl(114,21): error C2589: '(': illegal token on right side of '::'

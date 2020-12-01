@@ -1,5 +1,5 @@
-#define CATCH_CONFIG_MAIN // Add this macro
-#include "catch_amalgamated.hpp"// the file downloaded from the link mentioned above
+#define CATCH_CONFIG_MAIN 
+#include "catch_amalgamated.hpp"
 
 #include "../Simulator.h"
 #include "../MapView.h"
@@ -36,6 +36,8 @@ namespace ZPR {
             REQUIRE(buttons == menuButtonsTest.GetButtonsAmount());
         }
     };
+
+    
 
     
 }
