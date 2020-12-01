@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CityTrafficSimulator.dir/Code/InputManager.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/MainMenuState.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/MapView.cpp.o"
+  "CMakeFiles/CityTrafficSimulator.dir/Code/Road.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Simulator.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/SplashState.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o"

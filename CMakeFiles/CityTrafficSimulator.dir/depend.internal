@@ -10,6 +10,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Button.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Definitions.h
 CMakeFiles/CityTrafficSimulator.dir/Code/CamerasView.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/AssetManager.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Button.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/CamerasView.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/CamerasView.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Definitions.h
@@ -21,6 +22,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Cell.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Cell.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Cell.h
 CMakeFiles/CityTrafficSimulator.dir/Code/CreatorHandler.cpp.o
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/ButtonsCreatorObserver.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Cell.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/CreatorHandler.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/CreatorHandler.h
@@ -30,6 +32,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/CreatorHandler.cpp.o
 CMakeFiles/CityTrafficSimulator.dir/Code/CreatorState.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/AssetManager.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Button.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/ButtonsCreatorObserver.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/CamerasView.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Cell.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/CreatorHandler.h
@@ -57,6 +60,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Grid.cpp.o
 CMakeFiles/CityTrafficSimulator.dir/Code/InitCreateState.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/AssetManager.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Button.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/ButtonsCreatorObserver.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/CamerasView.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Cell.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/CreatorHandler.h
@@ -101,6 +105,8 @@ CMakeFiles/CityTrafficSimulator.dir/Code/MapView.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Simulator.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/State.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/StateMachine.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Road.cpp.o
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Road.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Simulator.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/AssetManager.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/InputManager.h
@@ -127,6 +133,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o
 CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/AssetManager.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Button.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/ButtonsCreatorObserver.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Definitions.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/InputManager.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Simulator.h
