@@ -1,0 +1,1 @@
+Aby skompilować i uruchomić projekt, należy przejść w terminalu do tego folderu, następnie wpisać komendę cmake . ,a następnie make, żeby uruchomić aplikację należy wpisać ./CityTrafficSimulator.
