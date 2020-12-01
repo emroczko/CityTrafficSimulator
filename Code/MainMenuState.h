@@ -17,6 +17,7 @@ namespace ZPR{
         void HandleInput();
         void Update(float dt);
         void Draw(float dt);
+        unsigned long GetButtonsAmount();
         
     private:
         SimulatorDataRef _data;

@@ -70,8 +70,12 @@ namespace ZPR{
         this->_data->window.draw(this -> _background);
         for (Button button : this->_buttons) {
             this->_data->window.draw(button);
+            
         }
         this->_data->window.display();
+    }
+    unsigned long MainMenuState::GetButtonsAmount(){
+        return this->_buttons.size();
     }
 }
 

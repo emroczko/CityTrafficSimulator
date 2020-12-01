@@ -1,0 +1,34 @@
+﻿  AssetManager.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\AssetManager.h(5,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Button.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Button.h(2,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  CamerasView.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Simulator.h(5,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Cell.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Cell.h(2,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  CreatorHandler.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Cell.h(2,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  CreatorState.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\CreatorState.h(3,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  CreatorSubject.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Cell.h(2,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  ToolsView.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Simulator.h(5,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Grid.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Cell.h(2,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  InitCreateState.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InitCreateState.h(3,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  InputManager.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\InputManager.h(3,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  MainMenuState.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MainMenuState.h(3,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  MapView.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\MapView.h(2,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Simulator.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Simulator.h(5,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  SplashState.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\SplashState.h(3,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  StateMachine.cpp
+  Car.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Vehicles\Car.h(2,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Generating Code...
