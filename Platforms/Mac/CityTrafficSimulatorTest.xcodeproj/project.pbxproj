@@ -96,7 +96,6 @@
 		5230E7952565EB3500F84CF2 /* Cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cell.cpp; sourceTree = "<group>"; };
 		5230E7962565EB3500F84CF2 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		5230E7972565EB3500F84CF2 /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
-		523F9D222575BB1100279564 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		523F9D282575C00200279564 /* catch_amalgamated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = catch_amalgamated.cpp; path = ../../../../../../Downloads/catch_amalgamated.cpp; sourceTree = "<group>"; };
 		523F9D292575C00200279564 /* catch_amalgamated.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = catch_amalgamated.hpp; path = ../../../../../../Downloads/catch_amalgamated.hpp; sourceTree = "<group>"; };
 		523F9D2B2575C0E200279564 /* Tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tests.cpp; sourceTree = "<group>"; };
@@ -224,19 +223,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		523F9D212575BB1100279564 /* Testing */ = {
-			isa = PBXGroup;
-			children = (
-				523F9D222575BB1100279564 /* main.cpp */,
-			);
-			path = Testing;
-			sourceTree = "<group>";
-		};
 		529FE345255231B2006D8A78 = {
 			isa = PBXGroup;
 			children = (
 				529FE350255231B2006D8A78 /* CityTrafficSimulator */,
-				523F9D212575BB1100279564 /* Testing */,
 				529FE34F255231B2006D8A78 /* Products */,
 				522531B0255234B40035E946 /* Frameworks */,
 			);
