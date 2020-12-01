@@ -5,7 +5,7 @@ project(CityTrafficSimulator)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SFML_DIR "External Libraries/Windows/SFML/lib/cmake/SFML")
+set(SFML_DIR "cmake/SFML")
 
 find_package(Catch2 REQUIRED)
 
