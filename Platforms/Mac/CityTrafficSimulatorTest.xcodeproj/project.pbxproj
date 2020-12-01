@@ -21,7 +21,7 @@
 		5230E79B2565EB3500F84CF2 /* MapView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7932565EB3500F84CF2 /* MapView.cpp */; };
 		5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7952565EB3500F84CF2 /* Cell.cpp */; };
 		523F9D2A2575C00200279564 /* catch_amalgamated.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 523F9D282575C00200279564 /* catch_amalgamated.cpp */; };
-		523F9D2C2575C0E200279564 /* Test1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 523F9D2B2575C0E200279564 /* Test1.cpp */; };
+		523F9D2C2575C0E200279564 /* Tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 523F9D2B2575C0E200279564 /* Tests.cpp */; };
 		52804F6625537553002A59AD /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52804F6425537553002A59AD /* Car.cpp */; };
 		52B4FFB8256FC12200F1033B /* Road.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FFB7256FC12200F1033B /* Road.cpp */; };
 		52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF12553FE0C0093D5DF /* MainMenuState.cpp */; };
@@ -99,7 +99,7 @@
 		523F9D222575BB1100279564 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		523F9D282575C00200279564 /* catch_amalgamated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = catch_amalgamated.cpp; path = ../../../../../../Downloads/catch_amalgamated.cpp; sourceTree = "<group>"; };
 		523F9D292575C00200279564 /* catch_amalgamated.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = catch_amalgamated.hpp; path = ../../../../../../Downloads/catch_amalgamated.hpp; sourceTree = "<group>"; };
-		523F9D2B2575C0E200279564 /* Test1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test1.cpp; sourceTree = "<group>"; };
+		523F9D2B2575C0E200279564 /* Tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tests.cpp; sourceTree = "<group>"; };
 		52804F6425537553002A59AD /* Car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Car.cpp; path = Vehicles/Car.cpp; sourceTree = "<group>"; };
 		52804F6525537553002A59AD /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = Vehicles/Car.h; sourceTree = "<group>"; };
 		529FE34E255231B2006D8A78 /* CityTrafficSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CityTrafficSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +150,7 @@
 			children = (
 				523F9D282575C00200279564 /* catch_amalgamated.cpp */,
 				523F9D292575C00200279564 /* catch_amalgamated.hpp */,
-				523F9D2B2575C0E200279564 /* Test1.cpp */,
+				523F9D2B2575C0E200279564 /* Tests.cpp */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 				5230E79A2565EB3500F84CF2 /* Grid.cpp in Sources */,
 				52804F6625537553002A59AD /* Car.cpp in Sources */,
 				52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */,
-				523F9D2C2575C0E200279564 /* Test1.cpp in Sources */,
+				523F9D2C2575C0E200279564 /* Tests.cpp in Sources */,
 				5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */,
 				52B4FFB8256FC12200F1033B /* Road.cpp in Sources */,
 				52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */,

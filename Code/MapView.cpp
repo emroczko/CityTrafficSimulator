@@ -31,7 +31,7 @@ namespace ZPR {
 
 	int MapView::getCellSize()
 	{
-		return this->_gridSize;
+		return this->_cellSize;
 	}
 
 	void MapView::LoadAssets()
