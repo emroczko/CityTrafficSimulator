@@ -466,6 +466,33 @@ Code/MapView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/MapView.cpp.s
 .PHONY : Code/MapView.cpp.s
 
+Code/Road.o: Code/Road.cpp.o
+
+.PHONY : Code/Road.o
+
+# target to build an object file
+Code/Road.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Road.cpp.o
+.PHONY : Code/Road.cpp.o
+
+Code/Road.i: Code/Road.cpp.i
+
+.PHONY : Code/Road.i
+
+# target to preprocess a source file
+Code/Road.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Road.cpp.i
+.PHONY : Code/Road.cpp.i
+
+Code/Road.s: Code/Road.cpp.s
+
+.PHONY : Code/Road.s
+
+# target to generate assembly for a file
+Code/Road.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Road.cpp.s
+.PHONY : Code/Road.cpp.s
+
 Code/Simulator.o: Code/Simulator.cpp.o
 
 .PHONY : Code/Simulator.o
@@ -646,6 +673,9 @@ help:
 	@echo "... Code/MapView.o"
 	@echo "... Code/MapView.i"
 	@echo "... Code/MapView.s"
+	@echo "... Code/Road.o"
+	@echo "... Code/Road.i"
+	@echo "... Code/Road.s"
 	@echo "... Code/Simulator.o"
 	@echo "... Code/Simulator.i"
 	@echo "... Code/Simulator.s"

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		52166DD82561796400A1AE4E /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52166DD72561796400A1AE4E /* Button.cpp */; };
-		522531A7255232B20035E946 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 522531A6255232B20035E946 /* main.cpp */; };
 		522531AE2552342C0035E946 /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 522531A9255232C10035E946 /* Resources */; };
 		522531B6255234B40035E946 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */; };
 		522531B7255234B40035E946 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */; };
@@ -21,6 +20,8 @@
 		5230E79A2565EB3500F84CF2 /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7912565EB3500F84CF2 /* Grid.cpp */; };
 		5230E79B2565EB3500F84CF2 /* MapView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7932565EB3500F84CF2 /* MapView.cpp */; };
 		5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7952565EB3500F84CF2 /* Cell.cpp */; };
+		523F9D2A2575C00200279564 /* catch_amalgamated.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 523F9D282575C00200279564 /* catch_amalgamated.cpp */; };
+		523F9D2C2575C0E200279564 /* Test1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 523F9D2B2575C0E200279564 /* Test1.cpp */; };
 		52804F6625537553002A59AD /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52804F6425537553002A59AD /* Car.cpp */; };
 		52B4FFB8256FC12200F1033B /* Road.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FFB7256FC12200F1033B /* Road.cpp */; };
 		52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF12553FE0C0093D5DF /* MainMenuState.cpp */; };
@@ -35,6 +36,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		520A91D62575AD3500C36F5F /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		522531AD255234180035E946 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,9 +68,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		520A91CD2575ACC900C36F5F /* libboost_unit_test_framework.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_unit_test_framework.dylib; path = "../../External Libraries/Mac/SFML/lib/libboost_unit_test_framework.dylib"; sourceTree = "<group>"; };
+		520A91D12575ACD700C36F5F /* libboost_unit_test_framework-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_unit_test_framework-mt.dylib"; path = "../../External Libraries/Mac/SFML/lib/libboost_unit_test_framework-mt.dylib"; sourceTree = "<group>"; };
+		520A91D82575ADBC00C36F5F /* libboost_unit_test_framework-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_unit_test_framework-mt.a"; path = "../../External Libraries/Mac/SFML/lib/libboost_unit_test_framework-mt.a"; sourceTree = "<group>"; };
+		520A91D92575ADBC00C36F5F /* libboost_unit_test_framework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_unit_test_framework.a; path = "../../External Libraries/Mac/SFML/lib/libboost_unit_test_framework.a"; sourceTree = "<group>"; };
+		520A91DC2575B0DC00C36F5F /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_system-mt.a"; path = "../../External Libraries/Mac/SFML/lib/libboost_system-mt.a"; sourceTree = "<group>"; };
+		520A91DD2575B0DC00C36F5F /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = "../../External Libraries/Mac/SFML/lib/libboost_system.a"; sourceTree = "<group>"; };
+		520A91E02575B13D00C36F5F /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "../../External Libraries/Mac/SFML/lib/libboost_system-mt.dylib"; sourceTree = "<group>"; };
+		520A91E12575B13D00C36F5F /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = "../../External Libraries/Mac/SFML/lib/libboost_system.dylib"; sourceTree = "<group>"; };
 		52166DD62561796400A1AE4E /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
 		52166DD72561796400A1AE4E /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
-		522531A6255232B20035E946 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		522531A9255232C10035E946 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = ../../../Resources; sourceTree = "<group>"; };
 		522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -78,6 +96,10 @@
 		5230E7952565EB3500F84CF2 /* Cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cell.cpp; sourceTree = "<group>"; };
 		5230E7962565EB3500F84CF2 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		5230E7972565EB3500F84CF2 /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
+		523F9D222575BB1100279564 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		523F9D282575C00200279564 /* catch_amalgamated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = catch_amalgamated.cpp; path = ../../../../../../Downloads/catch_amalgamated.cpp; sourceTree = "<group>"; };
+		523F9D292575C00200279564 /* catch_amalgamated.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = catch_amalgamated.hpp; path = ../../../../../../Downloads/catch_amalgamated.hpp; sourceTree = "<group>"; };
+		523F9D2B2575C0E200279564 /* Test1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test1.cpp; sourceTree = "<group>"; };
 		52804F6425537553002A59AD /* Car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Car.cpp; path = Vehicles/Car.cpp; sourceTree = "<group>"; };
 		52804F6525537553002A59AD /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = Vehicles/Car.h; sourceTree = "<group>"; };
 		529FE34E255231B2006D8A78 /* CityTrafficSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CityTrafficSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,9 +145,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520A91C92575A8A500C36F5F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				523F9D282575C00200279564 /* catch_amalgamated.cpp */,
+				523F9D292575C00200279564 /* catch_amalgamated.hpp */,
+				523F9D2B2575C0E200279564 /* Test1.cpp */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				520A91C92575A8A500C36F5F /* Tests */,
 				52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */,
 				52D5673D256F034F0017A7C6 /* CreatorHandler.h */,
 				52D5673E256F034F0017A7C6 /* CreatorObserver.h */,
@@ -150,7 +183,6 @@
 				52EDDC3A255A055800CD5101 /* InitCreateState.h */,
 				52804F6425537553002A59AD /* Car.cpp */,
 				52804F6525537553002A59AD /* Car.h */,
-				522531A6255232B20035E946 /* main.cpp */,
 				52D3BD0D255440E00093D5DF /* SplashState.h */,
 				52D3BD0F255442410093D5DF /* SplashState.cpp */,
 				52D3BD0E2554413A0093D5DF /* Definitions.h */,
@@ -175,6 +207,14 @@
 		522531B0255234B40035E946 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				520A91E02575B13D00C36F5F /* libboost_system-mt.dylib */,
+				520A91E12575B13D00C36F5F /* libboost_system.dylib */,
+				520A91DC2575B0DC00C36F5F /* libboost_system-mt.a */,
+				520A91DD2575B0DC00C36F5F /* libboost_system.a */,
+				520A91D82575ADBC00C36F5F /* libboost_unit_test_framework-mt.a */,
+				520A91D92575ADBC00C36F5F /* libboost_unit_test_framework.a */,
+				520A91D12575ACD700C36F5F /* libboost_unit_test_framework-mt.dylib */,
+				520A91CD2575ACC900C36F5F /* libboost_unit_test_framework.dylib */,
 				522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */,
 				522531B5255234B40035E946 /* libsfml-graphics.2.5.1.dylib */,
 				522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */,
@@ -184,10 +224,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		523F9D212575BB1100279564 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				523F9D222575BB1100279564 /* main.cpp */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
 		529FE345255231B2006D8A78 = {
 			isa = PBXGroup;
 			children = (
 				529FE350255231B2006D8A78 /* CityTrafficSimulator */,
+				523F9D212575BB1100279564 /* Testing */,
 				529FE34F255231B2006D8A78 /* Products */,
 				522531B0255234B40035E946 /* Frameworks */,
 			);
@@ -221,6 +270,7 @@
 				529FE34B255231B2006D8A78 /* Frameworks */,
 				529FE34C255231B2006D8A78 /* CopyFiles */,
 				522531AD255234180035E946 /* CopyFiles */,
+				520A91D62575AD3500C36F5F /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -244,7 +294,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 529FE349255231B2006D8A78 /* Build configuration list for PBXProject "CityTrafficSimulator" */;
+			buildConfigurationList = 529FE349255231B2006D8A78 /* Build configuration list for PBXProject "CityTrafficSimulatorTest" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -272,11 +322,13 @@
 				52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */,
 				52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */,
 				52D3BD10255442410093D5DF /* SplashState.cpp in Sources */,
+				523F9D2A2575C00200279564 /* catch_amalgamated.cpp in Sources */,
 				52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */,
 				5230E7992565EB3500F84CF2 /* ToolsView.cpp in Sources */,
 				5230E79A2565EB3500F84CF2 /* Grid.cpp in Sources */,
 				52804F6625537553002A59AD /* Car.cpp in Sources */,
 				52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */,
+				523F9D2C2575C0E200279564 /* Test1.cpp in Sources */,
 				5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */,
 				52B4FFB8256FC12200F1033B /* Road.cpp in Sources */,
 				52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */,
@@ -284,7 +336,6 @@
 				52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */,
 				5225663D255EA24500C9BB3C /* CreatorState.cpp in Sources */,
 				52166DD82561796400A1AE4E /* Button.cpp in Sources */,
-				522531A7255232B20035E946 /* main.cpp in Sources */,
 				5230E7982565EB3500F84CF2 /* CamerasView.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		529FE349255231B2006D8A78 /* Build configuration list for PBXProject "CityTrafficSimulator" */ = {
+		529FE349255231B2006D8A78 /* Build configuration list for PBXProject "CityTrafficSimulatorTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				529FE353255231B2006D8A78 /* Debug */,

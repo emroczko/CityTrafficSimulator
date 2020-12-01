@@ -8,7 +8,8 @@ namespace ZPR {
 	{
 		SimulatorDataRef data = std::make_shared<SimulatorData>();
 		int gridSize = 32;
-		//MapView mapTest(data, gridSize);
-		//BOOST_CHECK_EQUAL(gridSize, mapTest.getGridSize());
+		MapView mapTest(data, gridSize);
+		BOOST_CHECK(gridSize == mapTest.getGridSize());
 	}
 }
+
