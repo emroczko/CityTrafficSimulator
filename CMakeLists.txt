@@ -18,6 +18,7 @@ include_directories(Code/Tests)
 
 
 file(GLOB SOURCES "Code/*.cpp")
+list(FILTER SOURCES EXCLUDE REGEX ".*Main.cpp$")
 file(GLOB TESTS "Code/Tests/*.cpp")
 
 
@@ -27,6 +28,3 @@ target_link_libraries(CityTrafficSimulator sfml-graphics)
 
 target_link_libraries(CityTrafficSimulator Catch2::Catch2)
 
-include(CTest)
-include(Catch)
-catch_discover_tests(CityTrafficSimulator)

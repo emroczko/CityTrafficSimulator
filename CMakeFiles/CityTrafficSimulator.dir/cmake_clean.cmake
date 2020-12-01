@@ -20,7 +20,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o"
   "CityTrafficSimulator"
   "CityTrafficSimulator.pdb"
-  "CityTrafficSimulator_tests-b12d07c.cmake"
 )
 
 # Per-language clean rules from dependency scanning.
