@@ -37,9 +37,6 @@
     <Filter Include="Source Files\ZPR namespace\Views">
       <UniqueIdentifier>{ed9fd230-45b2-4cdb-bb89-9e30251f6f19}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Tests">
-      <UniqueIdentifier>{20859ede-3ece-4ab2-8a92-d4b69aa9637d}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\main.cpp">

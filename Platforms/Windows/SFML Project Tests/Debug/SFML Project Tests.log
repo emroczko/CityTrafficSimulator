@@ -1,4 +1,0 @@
-﻿SFML Project Tests.obj : error LNK2019: unresolved external symbol "public: __thiscall ZPR::MapView::MapView(class std::shared_ptr<struct ZPR::SimulatorData>,int)" (??0MapView@ZPR@@QAE@V?$shared_ptr@USimulatorData@ZPR@@@std@@H@Z) referenced in function "public: void __thiscall ZPR::constructorTest::test_method(void)" (?test_method@constructorTest@ZPR@@QAEXXZ)
-SFML Project Tests.obj : error LNK2019: unresolved external symbol "public: int __thiscall ZPR::MapView::getGridSize(void)" (?getGridSize@MapView@ZPR@@QAEHXZ) referenced in function "public: void __thiscall ZPR::constructorTest::test_method(void)" (?test_method@constructorTest@ZPR@@QAEXXZ)
-MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project Tests.exe : fatal error LNK1120: 3 unresolved externals

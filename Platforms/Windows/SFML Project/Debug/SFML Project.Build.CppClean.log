@@ -4,13 +4,25 @@ f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\car.obj
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\statemachine.obj
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\splashstate.obj
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\simulator.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\mapview.obj
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\mainmenustate.obj
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\main.obj
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\inputmanager.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\initcreatestate.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\grid.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\toolsview.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\creatorsubject.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\creatorstate.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\creatorhandler.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\cell.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\camerasview.obj
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\button.obj
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\assetmanager.obj
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\debug\sfml project.ilk
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\debug\sfml project.exe
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\debug\sfml project.pdb
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\debug\gtest.pdb
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\debug\gtest_main.pdb
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\vcpkg.applocal.log
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\debug\sfml-graphics-d-2.dll
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\debug\sfml-window-d-2.dll
@@ -27,4 +39,5 @@ f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml pr
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\link.command.1.tlog
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\link.read.1.tlog
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\link.write.1.tlog
+f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\sfml project.read.1u.tlog
 f:\c++\zpr\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\sfml project.write.1u.tlog
