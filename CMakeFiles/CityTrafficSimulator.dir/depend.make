@@ -130,6 +130,24 @@ CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o: Code/State.h
 CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o: Code/StateMachine.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o: Code/StateMachine.h
 
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/AssetManager.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/Button.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/Cell.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/CreatorObserver.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/Definitions.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/Grid.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/InputManager.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/MainMenuState.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/MapView.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/Simulator.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/State.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/StateMachine.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/Tests/Tests.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/Tests/catch_amalgamated.hpp
+
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o: Code/Tests/catch_amalgamated.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o: Code/Tests/catch_amalgamated.hpp
+
 CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o: Code/AssetManager.h
 CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o: Code/Button.h
 CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o: Code/ButtonsCreatorObserver.h
@@ -140,12 +158,4 @@ CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o: Code/State.h
 CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o: Code/StateMachine.h
 CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o: Code/ToolsView.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o: Code/ToolsView.h
-
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o: Code/AssetManager.h
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o: Code/Definitions.h
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o: Code/InputManager.h
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o: Code/Simulator.h
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o: Code/State.h
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o: Code/StateMachine.h
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o: Code/main.cpp
 

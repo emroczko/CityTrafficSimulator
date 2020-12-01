@@ -1,0 +1,5 @@
+if(EXISTS "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CityTrafficSimulator_tests-b12d07c.cmake")
+  include("/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CityTrafficSimulator_tests-b12d07c.cmake")
+else()
+  add_test(CityTrafficSimulator_NOT_BUILT-b12d07c CityTrafficSimulator_NOT_BUILT-b12d07c)
+endif()
