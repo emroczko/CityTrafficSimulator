@@ -15,10 +15,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/CityTrafficSimulator.dir/Code/Simulator.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/SplashState.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o"
+  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o"
+  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o"
-  "CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o"
   "CityTrafficSimulator"
   "CityTrafficSimulator.pdb"
+  "CityTrafficSimulator_tests-b12d07c.cmake"
 )
 
 # Per-language clean rules from dependency scanning.

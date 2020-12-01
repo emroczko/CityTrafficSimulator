@@ -297,18 +297,31 @@ CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/ToolsView.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.s
 
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o: Code/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/main.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o: Code/Tests/Tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/Tests.cpp
 
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/main.cpp > CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.i
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/Tests.cpp > CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.i
 
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/main.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.s
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/Tests.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.s
+
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o: Code/Tests/catch_amalgamated.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/catch_amalgamated.cpp
+
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/catch_amalgamated.cpp > CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.i
+
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/catch_amalgamated.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.s
 
 # Object files for target CityTrafficSimulator
 CityTrafficSimulator_OBJECTS = \
@@ -329,7 +342,8 @@ CityTrafficSimulator_OBJECTS = \
 "CMakeFiles/CityTrafficSimulator.dir/Code/SplashState.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o" \
-"CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o"
+"CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o" \
+"CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o"
 
 # External object files for target CityTrafficSimulator
 CityTrafficSimulator_EXTERNAL_OBJECTS =
@@ -351,14 +365,16 @@ CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Simulator.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/SplashState.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o
-CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o
+CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o
+CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/build.make
 CityTrafficSimulator: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 CityTrafficSimulator: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 CityTrafficSimulator: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable CityTrafficSimulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable CityTrafficSimulator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CityTrafficSimulator.dir/link.txt --verbose=$(VERBOSE)
+	/usr/local/Cellar/cmake/3.18.4/bin/cmake -D TEST_TARGET=CityTrafficSimulator -D TEST_EXECUTABLE=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CityTrafficSimulator -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=CityTrafficSimulator_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D CTEST_FILE=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CityTrafficSimulator_tests-b12d07c.cmake -P /usr/local/lib/cmake/Catch2/CatchAddTests.cmake
 
 # Rule to build all files generated by this target.
 CMakeFiles/CityTrafficSimulator.dir/build: CityTrafficSimulator

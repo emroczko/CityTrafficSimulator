@@ -130,6 +130,24 @@ CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/State.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/StateMachine.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/StateMachine.h
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/AssetManager.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Button.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Cell.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/CreatorObserver.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Definitions.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Grid.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/InputManager.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/MainMenuState.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/MapView.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Simulator.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/State.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/StateMachine.h
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/Tests.cpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/catch_amalgamated.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/catch_amalgamated.cpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/catch_amalgamated.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/AssetManager.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Button.h
@@ -141,11 +159,3 @@ CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/StateMachine.h
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/ToolsView.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/ToolsView.h
-CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o
- /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/AssetManager.h
- /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Definitions.h
- /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/InputManager.h
- /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Simulator.h
- /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/State.h
- /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/StateMachine.h
- /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/main.cpp

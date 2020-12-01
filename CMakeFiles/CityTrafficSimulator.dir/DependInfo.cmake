@@ -20,14 +20,16 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Simulator.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Simulator.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/SplashState.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/SplashState.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/StateMachine.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o"
+  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/Tests.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Tests/Tests.cpp.o"
+  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/catch_amalgamated.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Tests/catch_amalgamated.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/ToolsView.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o"
-  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/main.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "Code"
+  "Code/Tests"
   "/Library/Frameworks/SFML.framework"
   )
 
