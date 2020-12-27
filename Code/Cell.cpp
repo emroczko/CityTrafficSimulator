@@ -1,7 +1,7 @@
 #include "Cell.h"
 
 namespace ZPR {
-	Cell::Cell(int row, int column) : _row(row), _column(column) {}
+	Cell::Cell(int row, int column) : _row(row), _column(column), _containsRoad(false){}
 
 	sf::Vector2i Cell::GetPosition()
 	{

@@ -37,6 +37,21 @@
     <Filter Include="Source Files\ZPR namespace\Views">
       <UniqueIdentifier>{ed9fd230-45b2-4cdb-bb89-9e30251f6f19}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ZPR namespace\Observers">
+      <UniqueIdentifier>{ced71712-6796-48d7-b208-1caa040bec78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\Subjects">
+      <UniqueIdentifier>{cf9a57f8-c321-414c-a0e4-e49b76e06e29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\Components">
+      <UniqueIdentifier>{de020e12-1dea-412a-b3f3-974acc9f0cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ZPR namespace\Subjects">
+      <UniqueIdentifier>{5ae82641-2b3a-4ce9-8bc7-7720390469a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ZPR namespace\Components">
+      <UniqueIdentifier>{8a8e89f7-a508-4f5f-b7be-02ff0ec4698a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\main.cpp">
@@ -54,12 +69,6 @@
     <ClCompile Include="..\..\..\Code\Simulator.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\StateMachine.cpp">
-      <Filter>Source Files\ZPR namespace</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\Button.cpp">
-      <Filter>Source Files\ZPR namespace</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Code\InitCreateState.cpp">
       <Filter>Source Files\ZPR namespace\States</Filter>
     </ClCompile>
@@ -71,12 +80,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Code\MainMenuState.cpp">
       <Filter>Source Files\ZPR namespace\States</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\Cell.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\Grid.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\MapView.cpp">
       <Filter>Source Files\ZPR namespace\Views</Filter>
@@ -90,8 +93,23 @@
     <ClCompile Include="..\..\..\Code\CreatorHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\Cell.cpp">
+      <Filter>Source Files\ZPR namespace\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Grid.cpp">
+      <Filter>Source Files\ZPR namespace\Components</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\Code\CreatorSubject.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Button.cpp">
+      <Filter>Source Files\ZPR namespace\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\StateMachine.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\ToolsSubject.cpp">
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -105,15 +123,6 @@
       <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\Simulator.h">
-      <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\State.h">
-      <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\StateMachine.h">
-      <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Button.h">
       <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\CreatorState.h">
@@ -131,12 +140,6 @@
     <ClInclude Include="..\..\..\Code\MapView.h">
       <Filter>Header Files\ZPR namespace\Views</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\Cell.h">
-      <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Grid.h">
-      <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Code\ToolsView.h">
       <Filter>Header Files\ZPR namespace\Views</Filter>
     </ClInclude>
@@ -146,14 +149,35 @@
     <ClInclude Include="..\..\..\Code\CreatorHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\CreatorObserver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\CreatorSubject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Code\Definitions.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\CreatorObserver.h">
+      <Filter>Header Files\ZPR namespace\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\State.h">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\StateMachine.h">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Button.h">
+      <Filter>Header Files\ZPR namespace\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Cell.h">
+      <Filter>Header Files\ZPR namespace\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Grid.h">
+      <Filter>Header Files\ZPR namespace\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\CreatorSubject.h">
+      <Filter>Header Files\ZPR namespace\Subjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\ToolsSubject.h">
+      <Filter>Header Files\ZPR namespace\Subjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\ToolsObserver.h">
+      <Filter>Header Files\ZPR namespace\Observers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

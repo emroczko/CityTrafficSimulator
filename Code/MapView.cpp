@@ -13,7 +13,7 @@ namespace ZPR {
 		this->_cellSize = SCREEN_HEIGHT / this->_gridSize;
 		this->_row = -1;
 		this->_col = -1;
-		this->_selectedCllRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
+		this->_selectedCellRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
 		this->_mapView = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
 		this->_mapView.setViewport(CalculateViewPort());
 		GenerateGridLines();
@@ -34,16 +34,29 @@ namespace ZPR {
 		return this->_cellSize;
 	}
 
+	bool MapView::isClicked(sf::Vector2i& mousePosition)
+	{
+		if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT))
+			return true;
+		else
+			return false;
+	}
+
 	void MapView::LoadAssets()
 	{
 		this->_data->assets.LoadTexture("Selected Cell", SELECTED_CELL_TEXTURE);
 		this->_data->assets.LoadTexture("Background", BACKGROUND_TEXTURE_FILEPATH);
+		this->_data->assets.LoadTexture("Road", STREET_TEXTURE);
+		this->_data->assets.LoadTexture("Turn", TURN_TEXTURE);
+		this->_data->assets.LoadTexture("T_Intersection", T_INTERSECTION_TEXTURE);
+		this->_data->assets.LoadTexture("Intersection", INTERSECTION_TEXTURE);
+		this->_data->assets.LoadTexture("Crossing", CROSSING_TEXTURE);
 	}
 
 	void MapView::setupSelectedCellRect()
 	{
-		this->_selectedCllRect.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
-		this->_selectedCllRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
+		this->_selectedCellRect.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
+		this->_selectedCellRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
 	}
 
 	sf::FloatRect MapView::CalculateViewPort()
@@ -56,6 +69,12 @@ namespace ZPR {
 	void MapView::DrawGrid() {
 		for (sf::RectangleShape line : _gridLines) {
 			this->_data->window.draw(line);
+		}
+	}
+
+	void MapView::DrawRoads(){
+		for (sf::RectangleShape road : this->_roads) {
+			this->_data->window.draw(road);
 		}
 	}
 
@@ -85,9 +104,17 @@ namespace ZPR {
 		for (Cell cell : this->_cells) {
 			int row = cell.GetPosition().x;
 			int col = cell.GetPosition().y;
+			if (cell._containsRoad) {
+				sf::RectangleShape road;
+				road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
+				road.setTexture(&this->_data->assets.GetTexture("Road"));
+				road.setPosition(TransformRowColToPixels(sf::Vector2i(row, col)));
+				this->_roads.push_back(road);
+				
+			}
 			if (row == this->_row && col == this->_col) {
-				this->_selectedCllRect.setPosition(TransformRowColToPixels(sf::Vector2i(row, col)));
-				this->_data->window.draw(this->_selectedCllRect);
+				this->_selectedCellRect.setPosition(TransformRowColToPixels(sf::Vector2i(row, col)));
+				this->_data->window.draw(this->_selectedCellRect);
 			}
 		}
 	}
@@ -103,7 +130,8 @@ namespace ZPR {
 	{
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
-	    fillCells();
+		DrawRoads();
+		fillCells();
 		DrawGrid();
 	}
 
@@ -118,6 +146,11 @@ namespace ZPR {
 	void MapView::UpdateCells(std::vector<Cell> cells)
 	{
 		this->_cells = cells;
+	}
+
+	void MapView::UpdateIsDrawingRoad(bool isDrawingRoad)
+	{
+		this->isDrawingRoad = isDrawingRoad;
 	}
 
 	sf::Vector2i MapView::HandleInput(sf::Vector2f mousePosition)

@@ -33,11 +33,7 @@ namespace ZPR {
 		this->_data->window.draw(this->_background);
 		DrawButtons();
 	}
-    void ToolsView::NotifyCreateHandler(){
-    
-    }
 
-    
     bool ToolsView::isClicked(sf::Vector2i &mousePosition){
     
         if(_toolsView.getViewport().contains(static_cast<float>(mousePosition.x)/SCREEN_WIDTH, static_cast<float>(mousePosition.y)/SCREEN_HEIGHT))
@@ -45,16 +41,15 @@ namespace ZPR {
         else
             return false;
     }
-    void ToolsView::HandleInput(sf::Vector2f &mousePosition){
+    void ToolsView::HandleInput(){
         for (Button button : this->_buttons)
         {
-            if (button.isClicked(sf::Mouse::Left, this->_data->window))
+            if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_toolsView))
             {
                 if (button.getText() == "Create new street")
                 {
-                    
+                    this->NotifyIsDrawingRoad();
                 }
-                
             }
         }
     }

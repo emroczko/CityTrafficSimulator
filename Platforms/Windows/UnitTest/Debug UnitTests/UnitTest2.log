@@ -1,2 +1,52 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug UnitTests\) contains files shared from another project (UnitTest2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  UnitTest2.vcxproj -> F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug UnitTests\UnitTest.exe
+  catch_amalgamated.cpp
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7100,13): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(5118,10): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(730,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7102,13): message : while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, Catch::StringRef)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7106,13): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(5118,10): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(730,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7108,13): message : while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, Catch::StringRef)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7117,13): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(5118,10): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(730,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7119,13): message : while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, Catch::StringRef)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7207,1): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(3063,19): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(776,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7207,1): message : while trying to match the argument list '(std::ostream, Catch::SourceLineInfo)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7214,1): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(5118,10): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(730,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7214,1): message : while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, Catch::StringRef)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7488,1): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(3063,19): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(776,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7488,1): message : while trying to match the argument list '(std::ostream, Catch::SourceLineInfo)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7594,1): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(5118,10): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(730,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7594,1): message : while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, Catch::StringRef)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7884,24): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(3063,19): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(776,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7884,24): message : while trying to match the argument list '(std::ostream, Catch::SourceLineInfo)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(8828,1): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(3063,19): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(776,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(8828,1): message : while trying to match the argument list '(std::ostream, Catch::SourceLineInfo)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(8833,1): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(5118,10): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(730,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(8833,1): message : while trying to match the argument list '(std::ostream, Catch::StringRef)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(8838,1): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(5118,10): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(730,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::StringRef &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(8838,1): message : while trying to match the argument list '(std::basic_ostream<char,std::char_traits<char>>, Catch::StringRef)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(9105,24): error C2593: 'operator <<' is ambiguous
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(3063,19): message : could be 'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)'
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.hpp(776,30): message : or       'std::ostream &Catch::operator <<(std::ostream &,const Catch::SourceLineInfo &)' [found using argument-dependent lookup]
+F:\C++\ZPR\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(9105,24): message : while trying to match the argument list '(std::ostream, Catch::SourceLineInfo)'
+  Tests.cpp
+  Generating Code...

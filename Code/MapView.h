@@ -13,7 +13,8 @@ namespace ZPR {
 	public:
 		MapView(SimulatorDataRef data, int gridSize);
 		void UpdateSelectedCell(sf::Vector2i coords);
-		virtual void UpdateCells(std::vector<Cell> cells);
+		void UpdateCells(std::vector<Cell> cells);
+		void UpdateIsDrawingRoad(bool isDrawingRoad);
 		void Draw();
 		sf::Vector2i HandleInput(sf::Vector2f mousePosition);
 		sf::View GetView();
@@ -21,10 +22,12 @@ namespace ZPR {
 		sf::Vector2i getRowCol();
 		int getGridSize();
 		int getCellSize();
+		bool isClicked(sf::Vector2i &mousePosition);
 	private:
 		void LoadAssets();
 		sf::FloatRect CalculateViewPort();
 		void DrawGrid();
+		void DrawRoads();
 		void GenerateGridLines();
 		int CalculatePrefix();
 		void fillCells();
@@ -34,10 +37,12 @@ namespace ZPR {
 		int _gridSize;
 		int _cellSize;
 		int _row, _col;
-		sf::RectangleShape _selectedCllRect;
+		bool isDrawingRoad;
+		sf::RectangleShape _selectedCellRect;
 		std::vector<sf::RectangleShape> _gridLines;
 		sf::Sprite _backgroundTexture;
 		sf::View _mapView;
+		std::vector<sf::RectangleShape> _roads;
 		std::vector<Cell> _cells;
 	};
 }

@@ -217,6 +217,7 @@
     <ClCompile Include="..\..\..\Code\CreatorHandler.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorState.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorSubject.cpp" />
+    <ClCompile Include="..\..\..\Code\ToolsSubject.cpp" />
     <ClCompile Include="..\..\..\Code\ToolsView.cpp" />
     <ClCompile Include="..\..\..\Code\Grid.cpp" />
     <ClCompile Include="..\..\..\Code\InitCreateState.cpp" />
@@ -239,6 +240,8 @@
     <ClInclude Include="..\..\..\Code\CreatorState.h" />
     <ClInclude Include="..\..\..\Code\CreatorSubject.h" />
     <ClInclude Include="..\..\..\Code\Definitions.h" />
+    <ClInclude Include="..\..\..\Code\ToolsObserver.h" />
+    <ClInclude Include="..\..\..\Code\ToolsSubject.h" />
     <ClInclude Include="..\..\..\Code\ToolsView.h" />
     <ClInclude Include="..\..\..\Code\Grid.h" />
     <ClInclude Include="..\..\..\Code\InitCreateState.h" />

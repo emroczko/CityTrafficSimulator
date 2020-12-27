@@ -15,3 +15,13 @@
 #define TEXT_FONT_FILEPATH "Resources/font.ttf"
 
 #define SELECTED_CELL_TEXTURE "Resources/SelectedCell.png"
+
+#define STREET_TEXTURE "Resources/street.png"
+
+#define INTERSECTION_TEXTURE "Resources/intersect.png"
+
+#define T_INTERSECTION_TEXTURE "Resources/t_intersect.png"
+
+#define TURN_TEXTURE "Resources/turn.png"
+
+# define CROSSING_TEXTURE "Resources/crossing.png"

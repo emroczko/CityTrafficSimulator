@@ -11,6 +11,7 @@ namespace ZPR {
 		Button(sf::Vector2f position, sf::Vector2f size, sf::String text, sf::Font& font, unsigned int fontSize, sf::Color textColor, sf::Texture& background);
 
 		bool isClicked(sf::Mouse::Button mouseButton, sf::RenderWindow& window);
+		bool isClicked(sf::Mouse::Button mouseButton, sf::RenderWindow& window, sf::View view);
 		void setPosition(sf::Vector2f position);
 		void setBackground(sf::Texture& background);
 

@@ -228,7 +228,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Code\Tests\Test.cpp" />
+    <ClCompile Include="..\..\..\Code\Tests\catch_amalgamated.cpp" />
+    <ClCompile Include="..\..\..\Code\Tests\Tests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Code\Tests\catch_amalgamated.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

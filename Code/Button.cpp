@@ -44,6 +44,21 @@ namespace ZPR {
 		return false;
 	}
 
+	bool Button::isClicked(sf::Mouse::Button mouseButton, sf::RenderWindow& window, sf::View view)
+	{
+		if (sf::Mouse::isButtonPressed(mouseButton))
+		{
+			sf::IntRect tempRect(this->_rectangle.getPosition().x, this->_rectangle.getPosition().y, this->_rectangle.getGlobalBounds().width, this->_rectangle.getGlobalBounds().height);
+			sf::Vector2f position = window.mapPixelToCoords(sf::Mouse::getPosition(window), view);
+			sf::Vector2i posint = static_cast<sf::Vector2i>(position);
+			if (tempRect.contains(posint))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
 	void Button::setPosition(sf::Vector2f position)
 	{
 		this->_rectangle.setPosition(position);

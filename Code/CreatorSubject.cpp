@@ -20,5 +20,10 @@ namespace ZPR {
 			obs->UpdateCells(cells);
 		}
 	}
-
+	void CreatorSubject::NotifyIsDrawingRoad(bool isDrawingRoad)
+	{
+		for (std::shared_ptr<CreatorObserver> obs : this->_observers) {
+			obs->UpdateIsDrawingRoad(isDrawingRoad);
+		}
+	}
 }

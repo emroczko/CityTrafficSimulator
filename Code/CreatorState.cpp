@@ -14,6 +14,7 @@ namespace ZPR {
         this->_creatorHandler = std::make_unique<CreatorHandler>(this->_gridSize);
         this->_creatorHandler->add(this->_mapView);
         this->_creatorHandler->init();
+        this->_toolsView->add(this->_creatorHandler);
     }
 
     void CreatorState::HandleInput() {
@@ -27,12 +28,12 @@ namespace ZPR {
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
                 sf::Vector2i mousePosition = sf::Mouse::getPosition(this->_data->window);
                 
-                
-                //sf::Vector2f mousePositionRelativeToMapView = this->_data->window.mapPixelToCoords(mousePosition, this->_toolsView->GetView());
-                
-                if(this->_toolsView->isClicked(mousePosition)){
-                    sf::Vector2f mousePositionRelativeToToolsView = this->_data->window.mapPixelToCoords(mousePosition, this->_toolsView->GetView());
+                if(this->_mapView->isClicked(mousePosition)){
+                    sf::Vector2f mousePositionRelativeToToolsView = this->_data->window.mapPixelToCoords(mousePosition, this->_mapView->GetView());
                     this->_creatorHandler->HandleInput(this->_mapView->HandleInput(mousePositionRelativeToToolsView));
+                }
+                else if (this->_toolsView->isClicked(mousePosition)) {
+                    this->_toolsView->HandleInput();
                 }
             }
         }

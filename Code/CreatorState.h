@@ -31,7 +31,7 @@ namespace ZPR{
         std::shared_ptr<MapView> _mapView;
         std::unique_ptr<ToolsView> _toolsView;
         std::unique_ptr<CamerasView> _camerasView;
-        std::unique_ptr<CreatorHandler> _creatorHandler;
+        std::shared_ptr<CreatorHandler> _creatorHandler;
         int _gridSize;
     };
 }
