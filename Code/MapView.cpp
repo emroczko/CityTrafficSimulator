@@ -105,18 +105,31 @@ namespace ZPR {
 			int row = cell.GetPosition().x;
 			int col = cell.GetPosition().y;
 			if (cell._containsRoad) {
-				sf::RectangleShape road;
-				road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
-				road.setTexture(&this->_data->assets.GetTexture("Road"));
-				road.setPosition(TransformRowColToPixels(sf::Vector2i(row, col)));
-				this->_roads.push_back(road);
-				
+				AddRoad(sf::Vector2i(row, col));
 			}
 			if (row == this->_row && col == this->_col) {
 				this->_selectedCellRect.setPosition(TransformRowColToPixels(sf::Vector2i(row, col)));
 				this->_data->window.draw(this->_selectedCellRect);
 			}
 		}
+	}
+
+	void MapView::AddRoad(sf::Vector2i position)
+	{
+		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+		sf::RectangleShape road;
+		road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
+		road.setTexture(&this->_data->assets.GetTexture("Road"));
+		road.setPosition(TransformRowColToPixels(sf::Vector2i(position.x, position.y)));
+		this->_roads.push_back(road);
+
+	}
+
+	bool MapView::CheckRoadExists(sf::Vector2f position) {
+		for (sf::RectangleShape road : this->_roads) {
+			if (road.getPosition() == position) {return true;}
+		}
+		return false;
 	}
 
 	sf::Vector2f MapView::TransformRowColToPixels(sf::Vector2i rowcol)
