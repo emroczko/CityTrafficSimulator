@@ -129,15 +129,8 @@
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				52A1CEA02599F4450014C907 /* ToolsObserver.h */,
-				52A1CEA12599F4450014C907 /* ToolsSubject.cpp */,
-				52A1CEA22599F4450014C907 /* ToolsSubject.h */,
+				52A1CEA7259A18950014C907 /* Tools View and Creator */,
 				523F9D2E2575D4BE00279564 /* Main.cpp */,
-				52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */,
-				52D5673D256F034F0017A7C6 /* CreatorHandler.h */,
-				52D5673E256F034F0017A7C6 /* CreatorObserver.h */,
-				52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */,
-				52D5673C256F034F0017A7C6 /* CreatorSubject.h */,
 				5230E78E2565EB3500F84CF2 /* CamerasView.cpp */,
 				5230E7922565EB3500F84CF2 /* CamerasView.h */,
 				5230E7952565EB3500F84CF2 /* Cell.cpp */,
@@ -146,8 +139,6 @@
 				5230E7972565EB3500F84CF2 /* Grid.h */,
 				5230E7932565EB3500F84CF2 /* MapView.cpp */,
 				5230E7962565EB3500F84CF2 /* MapView.h */,
-				5230E78F2565EB3500F84CF2 /* ToolsView.cpp */,
-				5230E7942565EB3500F84CF2 /* ToolsView.h */,
 				52EDDC39255A055800CD5101 /* InitCreateState.cpp */,
 				5225663B255EA20400C9BB3C /* CreatorState.h */,
 				5225663C255EA24500C9BB3C /* CreatorState.cpp */,
@@ -213,6 +204,23 @@
 				522531A5255232B20035E946 /* Code */,
 			);
 			path = CityTrafficSimulator;
+			sourceTree = "<group>";
+		};
+		52A1CEA7259A18950014C907 /* Tools View and Creator */ = {
+			isa = PBXGroup;
+			children = (
+				5230E78F2565EB3500F84CF2 /* ToolsView.cpp */,
+				5230E7942565EB3500F84CF2 /* ToolsView.h */,
+				52A1CEA02599F4450014C907 /* ToolsObserver.h */,
+				52A1CEA12599F4450014C907 /* ToolsSubject.cpp */,
+				52A1CEA22599F4450014C907 /* ToolsSubject.h */,
+				52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */,
+				52D5673D256F034F0017A7C6 /* CreatorHandler.h */,
+				52D5673E256F034F0017A7C6 /* CreatorObserver.h */,
+				52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */,
+				52D5673C256F034F0017A7C6 /* CreatorSubject.h */,
+			);
+			name = "Tools View and Creator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -1,5 +1,8 @@
 #pragma once
 
+/**
+ Plik konfiguracyjny zawierający ścieżki do wykorzystywanych plików w programie oraz niektóre zmienne, które można zmienić
+ */
 #define SCREEN_WIDTH 1680
 #define SCREEN_HEIGHT 1000
 

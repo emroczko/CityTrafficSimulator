@@ -7,10 +7,11 @@ namespace ZPR{
     
         _data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
         _data->machine.AddState(StateRef(new SplashState(this->_data)));
-        
         this-> Run();
     }
-
+/**
+ Metoda odpowiadająca za pętle programu oraz przechodzenie między stanami programu
+ */
     void Simulator::Run(){
     
         float newTime, frameTime, interpolation;

@@ -2,19 +2,24 @@
 
 namespace ZPR
 {
-
+/**
+ Metoda odpowiadająca za dodanie stanu programu
+ */
     void StateMachine::AddState(StateRef newState, bool isReplacing){
         this->_isAdding = true;
         this->_isReplacing = isReplacing;
     
         this->_newState = std::move(newState);
     }
-
+/**
+ Metoda odpowiadająca za usunięcie stanu programu
+ */
     void StateMachine::RemoveState(){
         this -> _isRemoving = true;
-    
     }
-
+/**
+ Metoda realizująca przechodzenie pomiędzy stanami programu
+ */
     void StateMachine::ProcessStateChanges(){
         if (this-> _isRemoving && !this-> _states.empty()){
             this->_states.pop();
@@ -32,8 +37,7 @@ namespace ZPR
                 if(this-> _isReplacing){
                     this->_states.pop();
                 }
-                else
-                {
+                else{
                     this-> _states.top()->Pause();
                 }
             }

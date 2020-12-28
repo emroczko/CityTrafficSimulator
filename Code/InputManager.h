@@ -4,7 +4,9 @@
 
 namespace ZPR{
 
-
+/**
+ Klasa realizująca obsługę użytkownika
+ */
     class InputManager {
     public:
         InputManager() { }

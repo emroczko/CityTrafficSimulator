@@ -7,6 +7,9 @@
 
 namespace ZPR{
 
+/**
+ Klasa odpowiadająca za menu główne programu
+ */
     class MainMenuState : public State{
         
     public:

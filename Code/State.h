@@ -2,7 +2,9 @@
 
 namespace ZPR
 {
-
+/**
+ Wirtualna klasa, dziedziczą po niej klasy odpowiadające za poszczególne stany gry
+ */
     class State{
     public:
         virtual ~State() = default;

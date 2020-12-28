@@ -8,10 +8,10 @@
 
 namespace ZPR{
 
-    MainMenuState::MainMenuState(SimulatorDataRef data) : _data(data)
-    {
-
-    }
+    MainMenuState::MainMenuState(SimulatorDataRef data) : _data(data){}
+/**
+ Metoda inicjalizująca obecny stan, załadowanie czcionek, przycisków, tekstur tła
+ */
     void MainMenuState::Init(){
         this->_data->assets.LoadTexture("Background", MENU_BACKGROUND_FILEPATH);
         this->_background.setTexture(this->_data->assets.GetTexture("Background"));
@@ -24,9 +24,7 @@ namespace ZPR{
         
         this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * buttonSize.y), buttonSize, "Create new city",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-        
-        
-        
+    
         this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * buttonSize.y), buttonSize, "Exit",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
 
@@ -34,6 +32,10 @@ namespace ZPR{
         this->_background.scale(2.35, 2);
        
 }
+
+/**
+ Metoda odpowiadająca za obsługę użytkownika
+ */
     void MainMenuState::HandleInput(){
         sf::Event event;
     
@@ -61,16 +63,16 @@ namespace ZPR{
             
         }
     }
-    void MainMenuState::Update(float dt){
-    
-    }
+    void MainMenuState::Update(float dt){}
 
+/**
+ Metoda odpowiadająca za rysowanie obiektów na ekranie
+ */
     void MainMenuState::Draw(float dt){
         this->_data->window.clear();
         this->_data->window.draw(this -> _background);
         for (Button button : this->_buttons) {
             this->_data->window.draw(button);
-            
         }
         this->_data->window.display();
     }
