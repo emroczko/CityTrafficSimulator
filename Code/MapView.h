@@ -15,6 +15,7 @@ namespace ZPR {
 		void UpdateSelectedCell(sf::Vector2i coords);
 		void UpdateCells(std::vector<Cell> cells);
 		void UpdateIsDrawingRoad(bool isDrawingRoad);
+        void UpdateIsDeletingRoad(bool isDeletingRoad);
 		void Draw();
 		sf::Vector2i HandleInput(sf::Vector2f mousePosition);
 		sf::View GetView();
@@ -32,6 +33,7 @@ namespace ZPR {
 		int CalculatePrefix();
 		void fillCells();
 		void AddRoad(sf::Vector2i position);
+        void DeleteRoad(sf::Vector2f position);
 		bool CheckRoadExists(sf::Vector2f position);
 		sf::Vector2f TransformRowColToPixels(sf::Vector2i rowcol);
 		void setupSelectedCellRect();
@@ -40,6 +42,7 @@ namespace ZPR {
 		int _cellSize;
 		int _row, _col;
 		bool isDrawingRoad;
+        bool isDeletingRoad;
 		sf::RectangleShape _selectedCellRect;
 		std::vector<sf::RectangleShape> _gridLines;
 		sf::Sprite _backgroundTexture;

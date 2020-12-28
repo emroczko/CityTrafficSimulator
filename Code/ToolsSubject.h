@@ -9,6 +9,7 @@ namespace ZPR {
 	public:
 		void add(std::shared_ptr<ToolsObserver> obs);
 		void NotifyIsDrawingRoad();
+        void NotifyIsDeletingRoad();
 		virtual ~ToolsSubject() {};
 	private:
 		std::vector<std::shared_ptr<ToolsObserver>> _observers;

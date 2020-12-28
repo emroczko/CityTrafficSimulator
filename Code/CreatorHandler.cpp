@@ -1,13 +1,14 @@
 #include "CreatorHandler.h"
 
 namespace ZPR {
-	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), isDrawingRoad(false) {}
+	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), isDrawingRoad(false), isDeletingRoad(false) {}
 
 	void CreatorHandler::init()
 	{
 		this->GenerateBoard();
 		this->NotifyCells(_grid->_cells);
 		this->NotifyIsDrawingRoad(this->isDrawingRoad);
+        this->NotifyIsDeletingRoad(this->isDeletingRoad);
 	}
 
 	void CreatorHandler::GenerateBoard()
@@ -22,9 +23,16 @@ namespace ZPR {
 
 	void CreatorHandler::UpdateIsDrawingRoad()
 	{
-		this->isDrawingRoad = !this->isDrawingRoad;
+        this->isDrawingRoad = true;//!this->isDrawingRoad;
+        this->isDeletingRoad = false;
 		this->NotifyIsDrawingRoad(this->isDrawingRoad);
 	}
+    void CreatorHandler::UpdateIsDeletingRoad()
+    {
+        this->isDeletingRoad = true;//!this->isDeletingRoad;
+        this->isDrawingRoad = false;
+        this->NotifyIsDeletingRoad(this->isDeletingRoad);
+    }
 
 	void CreatorHandler::HandleInput(sf::Vector2i possibleSelectedCell)
 	{
@@ -33,8 +41,13 @@ namespace ZPR {
 		this->_row = possibleSelectedCell.x;
 		this->_col = possibleSelectedCell.y;
 		if (isDrawingRoad) {
+            this->_grid->GetCell(_row, _col)._toDelete = false;
 			this->_grid->GetCell(_row, _col)._containsRoad = true;
 		}
+        if (isDeletingRoad) {
+            this->_grid->GetCell(_row, _col)._containsRoad = false;
+            this->_grid->GetCell(_row, _col)._toDelete = true;
+        }
 		this->NotifyCells(_grid->_cells);
 		this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
 	}

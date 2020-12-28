@@ -107,6 +107,9 @@ namespace ZPR {
 			if (cell._containsRoad) {
 				AddRoad(sf::Vector2i(row, col));
 			}
+            if (cell._toDelete) {
+                DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
+            }
 			if (row == this->_row && col == this->_col) {
 				this->_selectedCellRect.setPosition(TransformRowColToPixels(sf::Vector2i(row, col)));
 				this->_data->window.draw(this->_selectedCellRect);
@@ -124,6 +127,19 @@ namespace ZPR {
 		this->_roads.push_back(road);
 
 	}
+    void MapView::DeleteRoad(sf::Vector2f position)
+    {
+        int i = 0;
+    if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+        
+    for (sf::RectangleShape road : _roads) {
+        if (road.getPosition() == position){
+            _roads.erase(_roads.begin() + i);
+            road.setTexture(NULL);
+        }
+        i++;
+    }
+}
 
 	bool MapView::CheckRoadExists(sf::Vector2f position) {
 		for (sf::RectangleShape road : this->_roads) {
@@ -164,7 +180,13 @@ namespace ZPR {
 	void MapView::UpdateIsDrawingRoad(bool isDrawingRoad)
 	{
 		this->isDrawingRoad = isDrawingRoad;
+        this->isDeletingRoad = false;
 	}
+    void MapView::UpdateIsDeletingRoad(bool isDeletingRoad)
+    {
+        this->isDeletingRoad = isDeletingRoad;
+        this->isDrawingRoad = false;
+    }
 
 	sf::Vector2i MapView::HandleInput(sf::Vector2f mousePosition)
 	{

@@ -12,4 +12,10 @@ namespace ZPR {
 			obs->UpdateIsDrawingRoad();
 		}
 	}
+    void ToolsSubject::NotifyIsDeletingRoad()
+    {
+        for (std::shared_ptr<ToolsObserver> obs : this->_observers) {
+            obs->UpdateIsDeletingRoad();
+        }
+    }
 }

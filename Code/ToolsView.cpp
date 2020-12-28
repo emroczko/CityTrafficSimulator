@@ -17,6 +17,9 @@ namespace ZPR {
         this->_buttons.push_back(Button(sf::Vector2f(_toolsView.getSize().x/2, 100), buttonSize, "Create new street",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
         
+        this->_buttons.push_back(Button(sf::Vector2f(_toolsView.getSize().x/2, 300), buttonSize, "Delete streets",
+            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+        
 	}
 
 	sf::FloatRect ToolsView::CalculateViewPort()
@@ -49,6 +52,10 @@ namespace ZPR {
                 if (button.getText() == "Create new street")
                 {
                     this->NotifyIsDrawingRoad();
+                }
+                if (button.getText() == "Delete streets")
+                {
+                    this->NotifyIsDeletingRoad();
                 }
             }
         }

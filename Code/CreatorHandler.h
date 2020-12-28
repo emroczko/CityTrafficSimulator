@@ -12,12 +12,14 @@ namespace ZPR {
 		void init();
 		void GenerateBoard();
 		void UpdateIsDrawingRoad();
+        void UpdateIsDeletingRoad();
 		void HandleInput(sf::Vector2i possibleSelectedCell);
 	private:
 		std::unique_ptr<Grid> _grid;
 		int _row, _col;
 		int _gridSize;
 		bool isDrawingRoad;
+        bool isDeletingRoad;
 	};
 }
 

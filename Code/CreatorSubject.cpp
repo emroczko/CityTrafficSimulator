@@ -26,4 +26,10 @@ namespace ZPR {
 			obs->UpdateIsDrawingRoad(isDrawingRoad);
 		}
 	}
+    void CreatorSubject::NotifyIsDeletingRoad(bool isDeletingRoad)
+    {
+        for (std::shared_ptr<CreatorObserver> obs : this->_observers) {
+            obs->UpdateIsDeletingRoad(isDeletingRoad);
+        }
+    }
 }
