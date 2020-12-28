@@ -11,6 +11,7 @@ namespace ZPR {
 		CreatorHandler(int gridSize);
 		void init();
 		void GenerateBoard();
+		//void AddCellsRef(std::vector<Cell>* cells);
 		void UpdateIsDrawingRoad();
         void UpdateIsDeletingRoad();
 		void HandleInput(sf::Vector2i possibleSelectedCell);

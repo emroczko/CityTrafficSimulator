@@ -5,12 +5,16 @@ namespace ZPR {
 	{
 	public:
 		Cell(int row, int column);
+		Cell();
 		sf::Vector2i GetPosition();
         bool _containsRoad, _toDelete;
-        bool north, east, south, west;
+		/*WskaŸniki do komórek góra, dó³, prawo lewo
+		std::shared_ptr<Cell> north;
+		std::shared_ptr<Cell> south;
+		std::shared_ptr<Cell> east;
+		std::shared_ptr<Cell> west;*/
 	private:
 		int _row, _column;
-        
 	};
 }
 

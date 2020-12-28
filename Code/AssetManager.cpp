@@ -9,7 +9,6 @@ namespace ZPR {
         if (tex.loadFromFile(fileName))
         {
             this-> _textures[name] = tex;
-        
         }
     }
 

@@ -21,14 +21,14 @@ namespace ZPR {
 		void setFont(sf::Font& font);
 		void setFontSize(unsigned int fontSize);
 		void setTextColor(sf::Color color);
-
-		void ButtonQuickMaker(sf::String text, sf::Vector2f size, sf::Color fillColor, sf::Font& font, unsigned int fontSize, sf::Color textColor);
+		bool& GetIsPressed();
+		
 		sf::String getText();
-
 		virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
-
+		bool isPressed;
 	private:
 		sf::RectangleShape _rectangle;
 		sf::Text _text;
+		
 	};
 }
