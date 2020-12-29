@@ -168,7 +168,7 @@ void MapView::FillCellsWithBlue(){
 		centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2;
 		centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
 		road.setPosition(centeredPositionInPixels);
-        this->_tempRoad.push_back(road);
+        this->_roads.push_back(road);
 		CheckWhichRoadToAdd(position);
 	}
     void MapView::AddBlueRoad(sf::Vector2i position)

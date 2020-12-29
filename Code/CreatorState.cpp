@@ -36,6 +36,9 @@ namespace ZPR {
                 else if (this->_toolsView->isClicked(mousePosition)) {
                     this->_toolsView->HandleInput();
                 }
+                else if (this->_camerasView->isClicked(mousePosition)) {
+                    this->_camerasView->HandleInput();
+                }
             }
             /*if (event.type == sf::Event::MouseButtonReleased ) {
                 if (event.mouseButton.button == sf::Mouse::Left)

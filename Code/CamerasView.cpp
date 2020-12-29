@@ -13,6 +13,9 @@ namespace ZPR {
         this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 100), buttonSize, "Add Camera",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
         
+        this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 800), buttonSize, "Start simulation",
+            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+        
 	}
 
 	sf::FloatRect CamerasView::CalculateViewPort()
@@ -23,6 +26,13 @@ namespace ZPR {
         
 	}
 
+    bool CamerasView::isClicked(sf::Vector2i &mousePosition){
+
+        if(_camerasView.getViewport().contains(static_cast<float>(mousePosition.x)/SCREEN_WIDTH, static_cast<float>(mousePosition.y)/SCREEN_HEIGHT))
+        return true;
+     else
+        return false;
+    }
 	void CamerasView::Draw()
 	{
 		this->_data->window.setView(this->_camerasView);
@@ -36,4 +46,7 @@ namespace ZPR {
             this->_data->window.draw(button);
         }
 }
+    void CamerasView::HandleInput(){
+    
+    }
 }
