@@ -13,6 +13,7 @@ namespace ZPR {
 		std::shared_ptr<Cell> south;
 		std::shared_ptr<Cell> east;
 		std::shared_ptr<Cell> west;*/
+        bool _north, _south, _east, _west;
 	private:
 		int _row, _column;
 	};

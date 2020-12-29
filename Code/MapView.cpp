@@ -17,6 +17,7 @@ namespace ZPR {
 		this->_mapView = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
 		this->_mapView.setViewport(CalculateViewPort());
 		GenerateGridLines();
+        _buffer = sf::Vector2i(0,0);
 	}
 
 	sf::Vector2i MapView::getRowCol()
@@ -107,6 +108,7 @@ namespace ZPR {
 			int col = cell.GetPosition().y;
 			if (cell._containsRoad) {
 				AddRoad(sf::Vector2i(row, col));
+                //CellBuffer(sf::Vector2i(row, col), cell);
 			}
             if (cell._toDelete) {
                 DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
@@ -129,6 +131,36 @@ namespace ZPR {
 		this->_roads.push_back(road);
 		CheckWhichRoadToAdd(position);
 	}
+
+    void MapView::CellBuffer(sf::Vector2i position, Cell &cell){
+        int x, y;
+        x = position.x - _buffer.x;
+        y = position.y - _buffer.y;
+        
+        if (x > 0){
+            cell._east = true;
+        }
+        else if(x < 0){
+            cell._west = true;
+        }
+        else {
+            cell._east = false;
+            cell._west = false;
+        }
+        
+        if (y > 0){
+            cell._south = true;
+        }
+        else if(x < 0){
+            cell._north = true;
+        }
+        else {
+            cell._north = false;
+            cell._south = false;
+        }
+        _buffer.x = position.x;
+        _buffer.y = position.y;
+    }
 
 	
 	void MapView::CheckWhichRoadToAdd(sf::Vector2i position) {
@@ -199,6 +231,7 @@ namespace ZPR {
 		DrawGrid();
 	}
 
+    
 
 	void MapView::UpdateSelectedCell(sf::Vector2i coords)
 	{

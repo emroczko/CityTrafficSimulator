@@ -26,6 +26,7 @@ namespace ZPR {
 		bool isClicked(sf::Vector2i &mousePosition);
 	private:
 		void LoadAssets();
+        void CellBuffer(sf::Vector2i position, Cell &cell);
 		sf::FloatRect CalculateViewPort();
 		void DrawGrid();
 		void DrawRoads();
@@ -44,6 +45,7 @@ namespace ZPR {
 		int _row, _col;
 		bool isDrawingRoad;
         bool isDeletingRoad;
+        sf::Vector2i _buffer;
 		sf::RectangleShape _selectedCellRect;
 		std::vector<sf::RectangleShape> _gridLines;
 		sf::Sprite _backgroundTexture;
