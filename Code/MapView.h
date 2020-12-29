@@ -24,6 +24,7 @@ namespace ZPR {
 		int getGridSize();
 		int getCellSize();
 		bool isClicked(sf::Vector2i &mousePosition);
+        bool isReleased(sf::Vector2i &mousePosition);
 	private:
 		void LoadAssets();
         void CellBuffer(sf::Vector2i position, Cell &cell);
@@ -50,7 +51,7 @@ namespace ZPR {
 		std::vector<sf::RectangleShape> _gridLines;
 		sf::Sprite _backgroundTexture;
 		sf::View _mapView;
-		std::vector<sf::RectangleShape> _roads;
+		std::vector<sf::RectangleShape> _roads, _tempRoad;
 		std::vector<Cell> _cells;
 	};
 }

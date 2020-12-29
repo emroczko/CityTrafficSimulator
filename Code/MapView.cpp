@@ -42,6 +42,22 @@ namespace ZPR {
 		else
 			return false;
 	}
+    bool MapView::isReleased(sf::Vector2i& mousePosition)
+    {
+        fillCells();
+        if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT)){
+            if (_tempRoad.size() == 1){
+                _tempRoad[0].setTexture(NULL);
+                _tempRoad.clear();
+            }
+            _roads.insert(_roads.end(), _tempRoad.begin(), _tempRoad.end());
+            _tempRoad.clear();
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
 	/*Wczytuje wszystkie potrzebne assety*/
 	void MapView::LoadAssets()
@@ -103,6 +119,7 @@ namespace ZPR {
 	void MapView::fillCells()
 	{
 		int drawPrefix = CalculatePrefix();
+        
 		for (Cell cell : this->_cells) {
 			int row = cell.GetPosition().x;
 			int col = cell.GetPosition().y;
@@ -118,6 +135,8 @@ namespace ZPR {
 				this->_data->window.draw(this->_selectedCellRect);
 			}
 		}
+        
+        
 	}
 
 	/*Dodaje drogê*/
@@ -128,8 +147,8 @@ namespace ZPR {
 		road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
 		road.setTexture(&this->_data->assets.GetTexture("Road"));
 		road.setPosition(TransformRowColToPixels(sf::Vector2i(position.x, position.y)));
-		this->_roads.push_back(road);
-		CheckWhichRoadToAdd(position);
+		this->_tempRoad.push_back(road);
+		
 	}
 
     void MapView::CellBuffer(sf::Vector2i position, Cell &cell){
@@ -284,7 +303,7 @@ namespace ZPR {
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
 		DrawRoads();
-		fillCells();
+		
 		DrawGrid();
 	}
 
