@@ -103,11 +103,13 @@ namespace ZPR {
 	void MapView::fillCells()
 	{
 		int drawPrefix = CalculatePrefix();
-		for (Cell cell : this->_cells) {
+		for (Cell& cell : this->_cells) {
 			int row = cell.GetPosition().x;
 			int col = cell.GetPosition().y;
-			if (cell._containsRoad) {
+			if (cell._containsRoad && !cell._roadDrawn) {
+				cell._roadDrawn = true;
 				AddRoad(sf::Vector2i(row, col));
+				
                 //CellBuffer(sf::Vector2i(row, col), cell);
 			}
             if (cell._toDelete) {
@@ -127,7 +129,11 @@ namespace ZPR {
 		sf::RectangleShape road;
 		road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
 		road.setTexture(&this->_data->assets.GetTexture("Road"));
-		road.setPosition(TransformRowColToPixels(sf::Vector2i(position.x, position.y)));
+		road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
+		sf::Vector2f centeredPositionInPixels = TransformRowColToPixels(sf::Vector2i(position.x, position.y));
+		centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2;
+		centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
+		road.setPosition(centeredPositionInPixels);
 		this->_roads.push_back(road);
 		CheckWhichRoadToAdd(position);
 	}
@@ -164,84 +170,88 @@ namespace ZPR {
 
 	
 	void MapView::CheckWhichRoadToAdd(sf::Vector2i position) {
-		Cell north;
-		Cell south;
-		Cell east;
-		Cell west;
 		for (sf::RectangleShape& road : this->_roads) {
+			std::shared_ptr<sf::RectangleShape> north = nullptr;
+			std::shared_ptr<sf::RectangleShape> south = nullptr;
+			std::shared_ptr<sf::RectangleShape> east = nullptr;
+			std::shared_ptr<sf::RectangleShape> west = nullptr;
 			int row = road.getPosition().y / this->_cellSize;
 			int col = road.getPosition().x / this->_cellSize;
-			_cells.at((row + 1) * this->_gridSize + col);
-			if (col != this->_gridSize - 1) { east = this->_cells.at(row * this->_gridSize + col + 1); }
-			if (col != 0) { west = this->_cells.at(row * this->_gridSize + col - 1); }
-			if (row != this->_gridSize - 1) { south = this->_cells.at((row + 1) * this->_gridSize + col); }
-			if (row != 0) { north = this->_cells.at((row - 1) * this->_gridSize + col); }
-
-			road.setTexture(&this->_data->assets.GetTexture("Road"));
-			if (north._containsRoad)
-			{
-				if (east._containsRoad)
+			if (row >= this->_row - 1 && row <= this->_row + 1 && col >= this->_col - 1 && col <= this->_col + 1) {
+				for (sf::RectangleShape& neighbouring_road : this->_roads) {
+					int neighbouring_row = neighbouring_road.getPosition().y / this->_cellSize;
+					int neighbouring_col = neighbouring_road.getPosition().x / this->_cellSize;
+					if (row == neighbouring_row) {
+						if (col + 1 == neighbouring_col) { east = std::make_shared<sf::RectangleShape>(neighbouring_road); }
+						if (col - 1 == neighbouring_col) { west = std::make_shared<sf::RectangleShape>(neighbouring_road); }
+					}
+					if (col == neighbouring_col) {
+						if (row + 1 == neighbouring_row) { south = std::make_shared<sf::RectangleShape>(neighbouring_road); }
+						if (row - 1 == neighbouring_row) { north = std::make_shared<sf::RectangleShape>(neighbouring_road); }
+					}
+				}
+				road.setTexture(&this->_data->assets.GetTexture("Road"));
+				if (north)
 				{
-					road.setTexture(&this->_data->assets.GetTexture("Turn"));
+					if (east)
+					{
+						road.setTexture(&this->_data->assets.GetTexture("Turn"));
+					}
+					else if (west)
+					{
+						road.setTexture(&this->_data->assets.GetTexture("Turn"));
+						road.rotate(90.f);
+					}
+					else if (west && east) {
+						road.setTexture(&this->_data->assets.GetTexture("T_Intersection"));
+						road.rotate(90.f);
+					}
+					else {
+						road.setTexture(&this->_data->assets.GetTexture("Road"));
+						road.rotate(90.f);
+					}
 				}
-				else if (west._containsRoad)
+				if (east)
 				{
-					road.setTexture(&this->_data->assets.GetTexture("Turn"));
-					road.rotate(90.f);
+					if (south)
+					{
+						road.setTexture(&this->_data->assets.GetTexture("Turn"));
+						road.rotate(270.f);
+					}
+					else if (south && north) {
+						road.setTexture(&this->_data->assets.GetTexture("T_Intersection"));
+					}
+					else {
+						road.setTexture(&this->_data->assets.GetTexture("Road"));
+					}
 				}
-				else if (west._containsRoad && east._containsRoad) {
-					road.setTexture(&this->_data->assets.GetTexture("T_intercection"));
-					road.rotate(90.f);
-				}
-				else {
-					road.setTexture(&this->_data->assets.GetTexture("Road"));
-					road.rotate(90.f);
-				}
-			}
-			if (east._containsRoad)
-			{
-				if (south._containsRoad)
+				if (south)
 				{
-					road.setTexture(&this->_data->assets.GetTexture("Turn"));
-					road.rotate(270.f);
+					if (west)
+					{
+						road.setTexture(&this->_data->assets.GetTexture("Turn"));
+						road.rotate(180.f);
+					}
+					else if (west && east) {
+						road.setTexture(&this->_data->assets.GetTexture("T_Intersection"));
+						road.rotate(270.f);
+					}
+					else {
+						road.setTexture(&this->_data->assets.GetTexture("Road"));
+						road.setRotation(90.f);
+					}
 				}
-				else if (south._containsRoad && north._containsRoad) {
-					road.setTexture(&this->_data->assets.GetTexture("T_intercection"));
-				}
-				else {
-					road.setTexture(&this->_data->assets.GetTexture("Road"));
-				}
-			}
-			if (south._containsRoad)
-			{
-				if (west._containsRoad)
+				if (west)
 				{
-					road.setTexture(&this->_data->assets.GetTexture("Turn"));
-					road.rotate(180.f);
+					if (south && north)
+					{
+						road.setTexture(&this->_data->assets.GetTexture("T_Intersection"));
+						road.rotate(180.f);
+					}
 				}
-				else if (west._containsRoad && east._containsRoad)
-				{
-					road.setTexture(&this->_data->assets.GetTexture("T_intersection"));
-					road.rotate(270.f);
+				if (north && south && east && west) {
+					road.setTexture(&this->_data->assets.GetTexture("Intersection"));
 				}
-				else {
-					road.setTexture(&this->_data->assets.GetTexture("Road"));
-					road.rotate(90.f);
-				}
-			}
-			if (west._containsRoad)
-			{
-				if (south._containsRoad && north._containsRoad)
-				{
-					road.setTexture(&this->_data->assets.GetTexture("T_intersection"));
-					road.rotate(180.f);
-				}
-				else {
-					road.setTexture(&this->_data->assets.GetTexture("Road"));
-				}
-			}
-			if (north._containsRoad && south._containsRoad && east._containsRoad && west._containsRoad) {
-				road.setTexture(&this->_data->assets.GetTexture("Intersection"));
 			}
 		}
 	}
