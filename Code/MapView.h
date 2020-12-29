@@ -38,7 +38,13 @@ namespace ZPR {
         void FillCellsWithBlue();
 		void AddRoad(sf::Vector2i position);
         void AddBlueRoad(sf::Vector2i position);
-		void CheckWhichRoadToAdd(sf::Vector2i position);
+		void CheckWhichRoadToAdd();
+		void ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
+			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
+		void ChoseRoadWithTwoNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
+			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
+		void ChoseRoadWithThreeNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
+			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
         void DeleteRoad(sf::Vector2f position);
 		bool CheckRoadExists(sf::Vector2f position);
 		sf::Vector2f TransformRowColToPixels(sf::Vector2i rowcol);

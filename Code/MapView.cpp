@@ -168,8 +168,8 @@ void MapView::FillCellsWithBlue(){
 		centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2;
 		centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
 		road.setPosition(centeredPositionInPixels);
-        this->_tempRoad.push_back(road);
-		CheckWhichRoadToAdd(position);
+        this->_roads.push_back(road);
+		CheckWhichRoadToAdd();
 	}
     void MapView::AddBlueRoad(sf::Vector2i position)
     {
@@ -211,91 +211,94 @@ void MapView::FillCellsWithBlue(){
         _buffer.y = position.y;
     }
 
-	
-	void MapView::CheckWhichRoadToAdd(sf::Vector2i position) {
+	void MapView::CheckWhichRoadToAdd() {
 		for (sf::RectangleShape& road : this->_roads) {
 			std::shared_ptr<sf::RectangleShape> north = nullptr;
 			std::shared_ptr<sf::RectangleShape> south = nullptr;
 			std::shared_ptr<sf::RectangleShape> east = nullptr;
 			std::shared_ptr<sf::RectangleShape> west = nullptr;
+			std::vector<std::shared_ptr<sf::RectangleShape>> neighbouringRoadsPtr;
 			int row = road.getPosition().y / this->_cellSize;
 			int col = road.getPosition().x / this->_cellSize;
-			if (row >= this->_row - 1 && row <= this->_row + 1 && col >= this->_col - 1 && col <= this->_col + 1) {
-				for (sf::RectangleShape& neighbouring_road : this->_roads) {
-					int neighbouring_row = neighbouring_road.getPosition().y / this->_cellSize;
-					int neighbouring_col = neighbouring_road.getPosition().x / this->_cellSize;
-					if (row == neighbouring_row) {
-						if (col + 1 == neighbouring_col) { east = std::make_shared<sf::RectangleShape>(neighbouring_road); }
-						if (col - 1 == neighbouring_col) { west = std::make_shared<sf::RectangleShape>(neighbouring_road); }
+			for (sf::RectangleShape& neighbouringRoad : this->_roads) {
+				int neighbouring_row = neighbouringRoad.getPosition().y / this->_cellSize;
+				int neighbouring_col = neighbouringRoad.getPosition().x / this->_cellSize;
+				if (row == neighbouring_row) {
+					if (col + 1 == neighbouring_col) {
+						east = std::make_shared<sf::RectangleShape>(neighbouringRoad);
+						neighbouringRoadsPtr.push_back(east);
 					}
-					if (col == neighbouring_col) {
-						if (row + 1 == neighbouring_row) { south = std::make_shared<sf::RectangleShape>(neighbouring_road); }
-						if (row - 1 == neighbouring_row) { north = std::make_shared<sf::RectangleShape>(neighbouring_road); }
-					}
-				}
-				road.setTexture(&this->_data->assets.GetTexture("Road"));
-				if (north)
-				{
-					if (east)
-					{
-						road.setTexture(&this->_data->assets.GetTexture("Turn"));
-					}
-					else if (west)
-					{
-						road.setTexture(&this->_data->assets.GetTexture("Turn"));
-						road.rotate(90.f);
-					}
-					else if (west && east) {
-						road.setTexture(&this->_data->assets.GetTexture("T_Intersection"));
-						road.rotate(90.f);
-					}
-					else {
-						road.setTexture(&this->_data->assets.GetTexture("Road"));
-						road.rotate(90.f);
+					if (col - 1 == neighbouring_col) {
+						west = std::make_shared<sf::RectangleShape>(neighbouringRoad);
+						neighbouringRoadsPtr.push_back(west);
 					}
 				}
-				if (east)
-				{
-					if (south)
-					{
-						road.setTexture(&this->_data->assets.GetTexture("Turn"));
-						road.rotate(270.f);
+				if (col == neighbouring_col) {
+					if (row + 1 == neighbouring_row) {
+						south = std::make_shared<sf::RectangleShape>(neighbouringRoad);
+						neighbouringRoadsPtr.push_back(south);
 					}
-					else if (south && north) {
-						road.setTexture(&this->_data->assets.GetTexture("T_Intersection"));
+					if (row - 1 == neighbouring_row) {
+						north = std::make_shared<sf::RectangleShape>(neighbouringRoad);
+						neighbouringRoadsPtr.push_back(north);
 					}
-					else {
-						road.setTexture(&this->_data->assets.GetTexture("Road"));
-					}
-				}
-				if (south)
-				{
-					if (west)
-					{
-						road.setTexture(&this->_data->assets.GetTexture("Turn"));
-						road.rotate(180.f);
-					}
-					else if (west && east) {
-						road.setTexture(&this->_data->assets.GetTexture("T_Intersection"));
-						road.rotate(270.f);
-					}
-					else {
-						road.setTexture(&this->_data->assets.GetTexture("Road"));
-						road.setRotation(90.f);
-					}
-				}
-				if (west)
-				{
-					if (south && north)
-					{
-						road.setTexture(&this->_data->assets.GetTexture("T_Intersection"));
-						road.rotate(180.f);
-					}
-				}
-				if (north && south && east && west) {
-					road.setTexture(&this->_data->assets.GetTexture("Intersection"));
 				}
 			}
+			switch (neighbouringRoadsPtr.size()) {
+			case 0: road.setTexture(&this->_data->assets.GetTexture("Road")); break;
+			case 1: ChoseRoadWithOneNeighbour(road, north, south, east, west); break;
+			case 2: ChoseRoadWithTwoNeighbours(road, north, south, east, west); break;
+			case 3: ChoseRoadWithThreeNeighbours(road, north, south, east, west); break;
+			case 4: road.setTexture(&this->_data->assets.GetTexture("Intersection")); break;
+			}
+		}
+	}
+
+	void MapView::ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
+	{
+		road.setTexture(&this->_data->assets.GetTexture("Road"));
+		if (north) {
+			road.setRotation(90.f);
+		}
+		else if (south) {
+			road.setRotation(90.f);
+		}
+	}
+
+	void MapView::ChoseRoadWithTwoNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
+	{
+		road.setTexture(&this->_data->assets.GetTexture("Turn"));
+		if (north && east) { road.setRotation(0); }
+		else if (north && west) {
+			road.setRotation(270.f);
+		}
+		else if (south && east) {
+			road.setRotation(90.f);
+		}
+		else if (south && west) {
+			road.setRotation(180.f);
+		}
+		else if (north && south) {
+			road.setTexture(&this->_data->assets.GetTexture("Road"));
+			road.setRotation(90.f);
+		}
+		else if (east && west) {
+			road.setTexture(&this->_data->assets.GetTexture("Road"));
+		}
+	}
+
+	void MapView::ChoseRoadWithThreeNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
+	{
+		road.setTexture(&this->_data->assets.GetTexture("T_Intersection"));
+		if (north && south && east) { road.setRotation(0.f); }
+		else if (north && south && west) {
+			road.setRotation(180.f);
+		}
+		else if (north && east && west) {
+			road.setRotation(270.f);
+		}
+		else if (south && east && west) {
+			road.setRotation(90.f);
 		}
 	}
 
@@ -311,6 +314,7 @@ void MapView::FillCellsWithBlue(){
 			}
 			i++;
 		}
+		CheckWhichRoadToAdd();
 	}
 	/*Sprawdza czy droga na podanej pozycji istnieje*/
 	bool MapView::CheckRoadExists(sf::Vector2f position) {
