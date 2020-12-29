@@ -130,8 +130,8 @@ namespace ZPR {
 		CheckWhichRoadToAdd(position);
 	}
 
-	
-	void MapView::CheckWhichRoadToAdd(sf::Vector2i position) {
+	void MapView::CheckWhichRoadToAdd(sf::Vector2i position)
+	{
 		Cell north;
 		Cell south;
 		Cell east;
@@ -139,10 +139,13 @@ namespace ZPR {
 		for (sf::RectangleShape& road : this->_roads) {
 			int row = road.getPosition().y / this->_cellSize;
 			int col = road.getPosition().x / this->_cellSize;
-			east = this->_cells.at(row * this->_gridSize + col + 1);
-			west = this->_cells.at(row * this->_gridSize + col - 1);
-			south = this->_cells.at((row + 1) * this->_gridSize + col);
-			north = this->_cells.at((row - 1) * this->_gridSize + col);
+			_cells.at((row + 1) * this->_gridSize + col);
+			if (col != this->_gridSize - 1) { east = this->_cells.at(row * this->_gridSize + col + 1); }
+			if (col != 0) { west = this->_cells.at(row * this->_gridSize + col - 1); }
+			if (row != this->_gridSize - 1) { south = this->_cells.at((row + 1) * this->_gridSize + col); }
+			if (row != 0) { north = this->_cells.at((row - 1) * this->_gridSize + col); }
+
+			road.setTexture(&this->_data->assets.GetTexture("Road"));
 			if (north._containsRoad)
 			{
 				if (east._containsRoad)
@@ -152,18 +155,72 @@ namespace ZPR {
 				else if (west._containsRoad)
 				{
 					road.setTexture(&this->_data->assets.GetTexture("Turn"));
-					road.setScale(-1.f, 1.f);
+					road.rotate(90.f);
 				}
-
+				else if (west._containsRoad && east._containsRoad) {
+					road.setTexture(&this->_data->assets.GetTexture("T_intercection"));
+					road.rotate(90.f);
+				}
+				else {
+					road.setTexture(&this->_data->assets.GetTexture("Road"));
+					road.rotate(90.f);
+				}
+			}
+			if (east._containsRoad)
+			{
+				if (south._containsRoad)
+				{
+					road.setTexture(&this->_data->assets.GetTexture("Turn"));
+					road.rotate(270.f);
+				}
+				else if (south._containsRoad && north._containsRoad) {
+					road.setTexture(&this->_data->assets.GetTexture("T_intercection"));
+				}
+				else {
+					road.setTexture(&this->_data->assets.GetTexture("Road"));
+				}
+			}
+			if (south._containsRoad)
+			{
+				if (west._containsRoad)
+				{
+					road.setTexture(&this->_data->assets.GetTexture("Turn"));
+					road.rotate(180.f);
+				}
+				else if (west._containsRoad && east._containsRoad)
+				{
+					road.setTexture(&this->_data->assets.GetTexture("T_intersection"));
+					road.rotate(270.f);
+				}
+				else {
+					road.setTexture(&this->_data->assets.GetTexture("Road"));
+					road.rotate(90.f);
+				}
+			}
+			if (west._containsRoad)
+			{
+				if (south._containsRoad && north._containsRoad)
+				{
+					road.setTexture(&this->_data->assets.GetTexture("T_intersection"));
+					road.rotate(180.f);
+				}
+				else {
+					road.setTexture(&this->_data->assets.GetTexture("Road"));
+				}
+			}
+			if (north._containsRoad && south._containsRoad && east._containsRoad && west._containsRoad) {
+				road.setTexture(&this->_data->assets.GetTexture("Intersection"));
 			}
 		}
-		return;
 	}
+
+	
+	
 
 
     void MapView::DeleteRoad(sf::Vector2f position)
     {
-			int i = 0;
+		int i = 0;
 		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
         
 		for (sf::RectangleShape road : _roads) {

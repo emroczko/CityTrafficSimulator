@@ -32,8 +32,8 @@ namespace ZPR {
 		void GenerateGridLines();
 		int CalculatePrefix();
 		void fillCells();
-		void CheckWhichRoadToAdd(sf::Vector2i position);
 		void AddRoad(sf::Vector2i position);
+		void CheckWhichRoadToAdd(sf::Vector2i position);
         void DeleteRoad(sf::Vector2f position);
 		bool CheckRoadExists(sf::Vector2f position);
 		sf::Vector2f TransformRowColToPixels(sf::Vector2i rowcol);
