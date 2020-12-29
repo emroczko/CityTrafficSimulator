@@ -26,6 +26,7 @@ namespace ZPR {
 		bool isClicked(sf::Vector2i &mousePosition);
         //bool isReleased(sf::Vector2i &mousePosition);
 	private:
+        bool clicked;
 		void LoadAssets();
         void CellBuffer(sf::Vector2i position, Cell &cell);
 		sf::FloatRect CalculateViewPort();
@@ -34,7 +35,9 @@ namespace ZPR {
 		void GenerateGridLines();
 		int CalculatePrefix();
 		void fillCells();
+        void FillCellsWithBlue();
 		void AddRoad(sf::Vector2i position);
+        void AddBlueRoad(sf::Vector2i position);
 		void CheckWhichRoadToAdd(sf::Vector2i position);
         void DeleteRoad(sf::Vector2f position);
 		bool CheckRoadExists(sf::Vector2f position);
@@ -51,7 +54,7 @@ namespace ZPR {
 		std::vector<sf::RectangleShape> _gridLines;
 		sf::Sprite _backgroundTexture;
 		sf::View _mapView;
-		std::vector<sf::RectangleShape> _roads, _tempRoad;
+		std::vector<sf::RectangleShape> _roads, _tempRoad, _blueRoads;
 		std::vector<Cell> _cells;
 	};
 }
