@@ -25,7 +25,7 @@
 
 #define INTERSECTION_TEXTURE "Resources/intersect.png"
 
-#define T_INTERSECTION_TEXTURE "Resources/Tintersect.png"
+#define T_INTERSECTION_TEXTURE "Resources/T_intersect.png"
 
 #define TURN_TEXTURE "Resources/turn.png"
 

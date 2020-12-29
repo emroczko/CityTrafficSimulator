@@ -1,4 +1,83 @@
-﻿  MapView.cpp
+﻿  Button.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(40,169): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(40,127): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(40,89): warning C4244: "argument": konwersja z "const T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(40,55): warning C4244: "argument": konwersja z "const T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(53,169): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(53,127): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(53,89): warning C4244: "argument": konwersja z "const T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(53,55): warning C4244: "argument": konwersja z "const T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  CamerasView.cpp
+  CreatorState.cpp
+  InitCreateState.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\InitCreateState.cpp(31,40): warning C4305: "argument": obcięcie z "double" do "float"
+  MainMenuState.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(32,40): warning C4305: "argument": obcięcie z "double" do "float"
+  MapView.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(84,95): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
@@ -100,4 +179,8 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(312,68): warning 
           ]
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(334,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(335,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+  SplashState.cpp
+  ToolsView.cpp
+  main.cpp
+  Generowanie kodu...
   SFML Project.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug UnitTests\SFML Project.exe
