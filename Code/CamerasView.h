@@ -2,10 +2,10 @@
 #include "Simulator.h"
 #include "Definitions.h"
 #include "Button.h"
+#include "CamerasSubject.h"
 
 namespace ZPR{
-	class CamerasView
-	{
+class CamerasView : public CamerasSubject{
 	public:
 		CamerasView(SimulatorDataRef data);
 		void Draw();

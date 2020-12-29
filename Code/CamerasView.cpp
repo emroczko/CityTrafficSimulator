@@ -47,6 +47,25 @@ namespace ZPR {
         }
 }
     void CamerasView::HandleInput(){
-    
+        for (Button& button : this->_buttons){
+            if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_camerasView)){
+                if (button.getText() == "Start simulation") {
+                    if (this->_buttons.at(1).isPressed) {
+                        this->_buttons.at(1).setBackground(this->_data->assets.GetTexture("Button"));
+                    }
+                    this->_buttons.at(1).isPressed = false;
+                    //this->NotifyIsSimulating();
+                }
+
+                //Tu doda≥em øeby siÍ zmienia≥ bg przycisku jak siÍ kliknie i odkliknie //
+                button.isPressed = !button.isPressed;
+                if (button.isPressed) {
+                    button.setBackground(this->_data->assets.GetTexture("Button_pressed"));
+                }
+                else {
+                    button.setBackground(this->_data->assets.GetTexture("Button"));
+                }
+            }
+        }
     }
 }

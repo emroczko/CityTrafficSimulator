@@ -6,9 +6,10 @@
 #include "Definitions.h"
 #include <vector>
 #include "CreatorObserver.h"
+#include "CamerasObserver.h"
 
 namespace ZPR {
-	class MapView : public CreatorObserver
+	class MapView : public CreatorObserver//, public CamerasObserver
 	{
 	public:
 		MapView(SimulatorDataRef data, int gridSize);
@@ -16,6 +17,7 @@ namespace ZPR {
 		void UpdateCells(std::vector<Cell> cells);
 		void UpdateIsDrawingRoad(bool isDrawingRoad);
         void UpdateIsDeletingRoad(bool isDeletingRoad);
+        //void UpdateIsSimulating();
 		void Draw();
 		sf::Vector2i HandleInput(sf::Vector2f mousePosition);
 		sf::View GetView();
