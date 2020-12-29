@@ -42,6 +42,22 @@ namespace ZPR {
 		else
 			return false;
 	}
+    bool MapView::isReleased(sf::Vector2i& mousePosition)
+    {
+        fillCells();
+        if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT)){
+            if (_tempRoad.size() == 1){
+                _tempRoad[0].setTexture(NULL);
+                _tempRoad.clear();
+            }
+            _roads.insert(_roads.end(), _tempRoad.begin(), _tempRoad.end());
+            _tempRoad.clear();
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
 	/*Wczytuje wszystkie potrzebne assety*/
 	void MapView::LoadAssets()
@@ -103,13 +119,13 @@ namespace ZPR {
 	void MapView::fillCells()
 	{
 		int drawPrefix = CalculatePrefix();
+
 		for (Cell& cell : this->_cells) {
 			int row = cell.GetPosition().x;
 			int col = cell.GetPosition().y;
 			if (cell._containsRoad && !cell._roadDrawn) {
 				cell._roadDrawn = true;
 				AddRoad(sf::Vector2i(row, col));
-				
                 //CellBuffer(sf::Vector2i(row, col), cell);
 			}
             if (cell._toDelete) {
@@ -120,6 +136,8 @@ namespace ZPR {
 				this->_data->window.draw(this->_selectedCellRect);
 			}
 		}
+        
+        
 	}
 
 	/*Dodaje drogê*/
@@ -294,7 +312,7 @@ namespace ZPR {
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
 		DrawRoads();
-		fillCells();
+		
 		DrawGrid();
 	}
 

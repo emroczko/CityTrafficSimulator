@@ -25,15 +25,23 @@ namespace ZPR {
             {
                 this->_data->window.close();
             }
+            sf::Vector2i mousePosition = sf::Mouse::getPosition(this->_data->window);
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
-                sf::Vector2i mousePosition = sf::Mouse::getPosition(this->_data->window);
+                
                 
                 if(this->_mapView->isClicked(mousePosition)){
                     sf::Vector2f mousePositionRelativeToToolsView = this->_data->window.mapPixelToCoords(mousePosition, this->_mapView->GetView());
                     this->_creatorHandler->HandleInput(this->_mapView->HandleInput(mousePositionRelativeToToolsView));
                 }
+                
                 else if (this->_toolsView->isClicked(mousePosition)) {
                     this->_toolsView->HandleInput();
+                }
+            }
+            if (event.type == sf::Event::MouseButtonReleased ) {
+                if (event.mouseButton.button == sf::Mouse::Left)
+                    {
+                        this->_mapView->isReleased(mousePosition);
                 }
             }
         }
