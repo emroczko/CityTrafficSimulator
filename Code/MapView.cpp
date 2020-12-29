@@ -42,7 +42,7 @@ namespace ZPR {
 		else
 			return false;
 	}
-    bool MapView::isReleased(sf::Vector2i& mousePosition)
+    /*bool MapView::isReleased(sf::Vector2i& mousePosition)
     {
         fillCells();
         if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT)){
@@ -57,7 +57,7 @@ namespace ZPR {
         else{
             return false;
         }
-    }
+    }*/
 
 	/*Wczytuje wszystkie potrzebne assety*/
 	void MapView::LoadAssets()
@@ -274,17 +274,13 @@ namespace ZPR {
 		}
 	}
 
-	
-	
-
-
     void MapView::DeleteRoad(sf::Vector2f position)
     {
 		int i = 0;
 		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
         
 		for (sf::RectangleShape road : _roads) {
-			if (road.getPosition() == position){
+			if (road.getPosition().x - this->_cellSize / 2 == position.x && road.getPosition().y - this->_cellSize / 2 == position.y){
 				_roads.erase(_roads.begin() + i);
 				road.setTexture(NULL);
 			}
@@ -294,7 +290,7 @@ namespace ZPR {
 	/*Sprawdza czy droga na podanej pozycji istnieje*/
 	bool MapView::CheckRoadExists(sf::Vector2f position) {
 		for (sf::RectangleShape road : this->_roads) {
-			if (road.getPosition() == position) {return true;}
+			if (road.getPosition().x -this->_cellSize/2 == position.x && road.getPosition().y - this->_cellSize/2 == position.y) {return true;}
 		}
 		return false;
 	}
@@ -311,8 +307,8 @@ namespace ZPR {
 	{
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
+		fillCells();
 		DrawRoads();
-		
 		DrawGrid();
 	}
 

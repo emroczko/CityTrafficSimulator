@@ -24,7 +24,7 @@ namespace ZPR {
 		int getGridSize();
 		int getCellSize();
 		bool isClicked(sf::Vector2i &mousePosition);
-        bool isReleased(sf::Vector2i &mousePosition);
+        //bool isReleased(sf::Vector2i &mousePosition);
 	private:
 		void LoadAssets();
         void CellBuffer(sf::Vector2i position, Cell &cell);
