@@ -7,6 +7,7 @@ namespace ZPR {
 	}
 
 	void MapView::init() {
+        this->clicked = false;
 		LoadAssets();
 		setupSelectedCellRect();
 		this->_backgroundTexture.setTexture(this->_data->assets.GetTexture("Background"));
@@ -37,8 +38,10 @@ namespace ZPR {
 
 	bool MapView::isClicked(sf::Vector2i& mousePosition)
 	{
-		if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT))
+        if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT)){
+            clicked = true;
 			return true;
+        }
 		else
 			return false;
 	}
@@ -46,6 +49,11 @@ namespace ZPR {
     {
         fillCells();
         if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT)){
+            clicked  =false;
+            for (sf::RectangleShape& rect : this->_blueRoads){
+                rect.setTexture(NULL);
+            }
+            _blueRoads.clear();
             if (_tempRoad.size() == 1){
                 _tempRoad[0].setTexture(NULL);
                 _tempRoad.clear();
@@ -131,14 +139,22 @@ namespace ZPR {
             if (cell._toDelete) {
                 DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
             }
-			if (row == this->_row && col == this->_col) {
-				this->_selectedCellRect.setPosition(TransformRowColToPixels(sf::Vector2i(row, col)));
-				this->_data->window.draw(this->_selectedCellRect);
-			}
+			
 		}
         
         
 	}
+void MapView::FillCellsWithBlue(){
+    for (Cell& cell : this->_cells) {
+        int row = cell.GetPosition().x;
+        int col = cell.GetPosition().y;
+        if (cell._containsRoad && !cell._roadDrawn) {
+            cell._roadDrawn = true;
+            AddBlueRoad(sf::Vector2i(row, col));
+        }
+        
+    }
+}
 
 	/*Dodaje drogê*/
 	void MapView::AddRoad(sf::Vector2i position)
@@ -152,9 +168,18 @@ namespace ZPR {
 		centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2;
 		centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
 		road.setPosition(centeredPositionInPixels);
-		this->_roads.push_back(road);
+        this->_tempRoad.push_back(road);
 		CheckWhichRoadToAdd(position);
 	}
+    void MapView::AddBlueRoad(sf::Vector2i position)
+    {
+    if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+    sf::RectangleShape road;
+    road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
+    road.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
+    this->_blueRoads.push_back(road);
+    
+}
 
     void MapView::CellBuffer(sf::Vector2i position, Cell &cell){
         int x, y;
@@ -312,7 +337,8 @@ namespace ZPR {
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
 		DrawRoads();
-		
+        FillCellsWithBlue();
+        
 		DrawGrid();
 	}
 
