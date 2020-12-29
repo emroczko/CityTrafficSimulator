@@ -138,6 +138,7 @@ namespace ZPR {
 			}
             if (cell._toDelete) {
                 DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
+				cell._toDelete = false;
             }
 			
 		}
@@ -257,6 +258,7 @@ void MapView::FillCellsWithBlue(){
 	void MapView::ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		road.setTexture(&this->_data->assets.GetTexture("Road"));
+		road.setRotation(0);
 		if (north) {
 			road.setRotation(90.f);
 		}
@@ -268,6 +270,7 @@ void MapView::FillCellsWithBlue(){
 	void MapView::ChoseRoadWithTwoNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		road.setTexture(&this->_data->assets.GetTexture("Turn"));
+		
 		if (north && east) { road.setRotation(0); }
 		else if (north && west) {
 			road.setRotation(270.f);
@@ -284,6 +287,7 @@ void MapView::FillCellsWithBlue(){
 		}
 		else if (east && west) {
 			road.setTexture(&this->_data->assets.GetTexture("Road"));
+			road.setRotation(0);
 		}
 	}
 
