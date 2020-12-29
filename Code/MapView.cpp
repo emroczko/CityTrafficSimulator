@@ -42,6 +42,7 @@ namespace ZPR {
 			return false;
 	}
 
+	/*Wczytuje wszystkie potrzebne assety*/
 	void MapView::LoadAssets()
 	{
 		this->_data->assets.LoadTexture("Selected Cell", SELECTED_CELL_TEXTURE);
@@ -117,6 +118,7 @@ namespace ZPR {
 		}
 	}
 
+	/*Dodaje drogê*/
 	void MapView::AddRoad(sf::Vector2i position)
 	{
 		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
@@ -125,22 +127,54 @@ namespace ZPR {
 		road.setTexture(&this->_data->assets.GetTexture("Road"));
 		road.setPosition(TransformRowColToPixels(sf::Vector2i(position.x, position.y)));
 		this->_roads.push_back(road);
-
+		CheckWhichRoadToAdd(position);
 	}
+
+	
+	void MapView::CheckWhichRoadToAdd(sf::Vector2i position) {
+		Cell north;
+		Cell south;
+		Cell east;
+		Cell west;
+		for (sf::RectangleShape& road : this->_roads) {
+			int row = road.getPosition().y / this->_cellSize;
+			int col = road.getPosition().x / this->_cellSize;
+			east = this->_cells.at(row * this->_gridSize + col + 1);
+			west = this->_cells.at(row * this->_gridSize + col - 1);
+			south = this->_cells.at((row + 1) * this->_gridSize + col);
+			north = this->_cells.at((row - 1) * this->_gridSize + col);
+			if (north._containsRoad)
+			{
+				if (east._containsRoad)
+				{
+					road.setTexture(&this->_data->assets.GetTexture("Turn"));
+				}
+				else if (west._containsRoad)
+				{
+					road.setTexture(&this->_data->assets.GetTexture("Turn"));
+					road.setScale(-1.f, 1.f);
+				}
+
+			}
+		}
+		return;
+	}
+
+
     void MapView::DeleteRoad(sf::Vector2f position)
     {
-        int i = 0;
-    if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+			int i = 0;
+		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
         
-    for (sf::RectangleShape road : _roads) {
-        if (road.getPosition() == position){
-            _roads.erase(_roads.begin() + i);
-            road.setTexture(NULL);
-        }
-        i++;
-    }
-}
-
+		for (sf::RectangleShape road : _roads) {
+			if (road.getPosition() == position){
+				_roads.erase(_roads.begin() + i);
+				road.setTexture(NULL);
+			}
+			i++;
+		}
+	}
+	/*Sprawdza czy droga na podanej pozycji istnieje*/
 	bool MapView::CheckRoadExists(sf::Vector2f position) {
 		for (sf::RectangleShape road : this->_roads) {
 			if (road.getPosition() == position) {return true;}
@@ -148,6 +182,7 @@ namespace ZPR {
 		return false;
 	}
 
+	/*Zmiania koordynaty wiarsz-kolumna z siatki na koordynaty w pixelach*/
 	sf::Vector2f MapView::TransformRowColToPixels(sf::Vector2i rowcol)
 	{
 		float x = rowcol.x * this->_cellSize + CalculatePrefix();
@@ -182,6 +217,7 @@ namespace ZPR {
 		this->isDrawingRoad = isDrawingRoad;
         this->isDeletingRoad = false;
 	}
+
     void MapView::UpdateIsDeletingRoad(bool isDeletingRoad)
     {
         this->isDeletingRoad = isDeletingRoad;

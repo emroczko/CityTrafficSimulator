@@ -2,9 +2,9 @@
 #include "Definitions.h"
 #include <iostream>
 namespace ZPR {
-	Button::Button() {}
+	Button::Button() { this->isPressed = false; }
 
-	Button::Button(sf::Vector2f position)
+	Button::Button(sf::Vector2f position) : isPressed(false)
 	{
 		this->_rectangle.setPosition(position);
 		this->_text.setPosition(position);
@@ -15,6 +15,7 @@ namespace ZPR {
 		this->_rectangle.setPosition(sf::Vector2f(position.x - size.x / 2, position.y - size.y / 2));
 		this->_rectangle.setSize(size);
 		this->_rectangle.setTexture(&background);
+		this->isPressed = false;
 	}
 
 	Button::Button(sf::Vector2f position, sf::Vector2f size, sf::String text, sf::Font& font, unsigned int fontSize, sf::Color textColor, sf::Texture& background)
@@ -29,6 +30,7 @@ namespace ZPR {
 		this->_text.setFillColor(textColor);
 		this->_text.setPosition(sf::Vector2f(this->_rectangle.getPosition().x + this->_rectangle.getGlobalBounds().width / 2 - this->_text.getGlobalBounds().width / 2,
 			this->_rectangle.getPosition().y + this->_rectangle.getGlobalBounds().height / 2 - this->_text.getGlobalBounds().height));
+		this->isPressed = false;
 	}
 
 	bool Button::isClicked(sf::Mouse::Button mouseButton, sf::RenderWindow& window)
@@ -100,14 +102,9 @@ namespace ZPR {
 		this->_text.setFillColor(color);
 	}
 
-	void Button::ButtonQuickMaker(sf::String text, sf::Vector2f size, sf::Color fillColor, sf::Font& font, unsigned int fontSize, sf::Color textColor)
+	bool& Button::GetIsPressed()
 	{
-		this->_text.setString(text);
-		this->_rectangle.setSize(size);
-		this->_rectangle.setFillColor(fillColor);
-		this->_text.setFont(font);
-		this->_text.setCharacterSize(fontSize);
-		this->_text.setFillColor(textColor);
+		return this->isPressed;
 	}
 
 	sf::String Button::getText()

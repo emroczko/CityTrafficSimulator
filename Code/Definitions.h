@@ -13,6 +13,8 @@
 
 #define BUTTON_FILEPATH "Resources/button.png"
 
+#define BUTTON_PRESSED_FILEPATH "Resources/button_pressed.png"
+
 #define BACKGROUND_TEXTURE_FILEPATH "Resources/background_texture.jpg"
 
 #define TEXT_FONT_FILEPATH "Resources/font.ttf"
