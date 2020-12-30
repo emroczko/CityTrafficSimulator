@@ -59,6 +59,12 @@ namespace ZPR {
         this->isDrawingRoad = false;
         this->NotifyIsDeletingRoad(this->isDeletingRoad);
     }
+    void CreatorHandler::UpdateIsSimulating(bool isSimulating)
+    {
+        this->isDeletingRoad = false;
+        this->isDrawingRoad = false;
+    }
+
 	/*Zajmuje sie obs³ug¹ zdarzeñ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie dróg)*/
 	void CreatorHandler::HandleInput(sf::Vector2i possibleSelectedCell)
 	{

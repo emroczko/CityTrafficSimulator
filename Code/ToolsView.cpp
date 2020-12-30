@@ -4,7 +4,6 @@ namespace ZPR {
 	ToolsView::ToolsView(SimulatorDataRef data) : _data(data)
 	{
         
-        //this->isSimulating = true;
 		this->_toolsView = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
 		this->_toolsView.setViewport(CalculateViewPort());
 		this->_background.setPosition(0, 0);
@@ -47,7 +46,14 @@ namespace ZPR {
     }
     void ToolsView::HandleInput(){
         for (Button& button : this->_buttons){
+                if (isSimulating){
+                    button.isPressed = false;
+                    button.setBackground(this->_data->assets.GetTexture("Button"));
+                }
             if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_toolsView)){
+                
+                
+                
                 if (button.getText() == "Create new street") {
                     if (this->_buttons.at(1).isPressed) {
                         this->_buttons.at(1).setBackground(this->_data->assets.GetTexture("Button"));
@@ -72,11 +78,14 @@ namespace ZPR {
                 else {
                     button.setBackground(this->_data->assets.GetTexture("Button"));
                 }
+               
             }
         }
     }
     void ToolsView::UpdateIsSimulating(bool isSimulating){
         this->isSimulating = isSimulating;
+        this->HandleInput();
+        
     }
 
 	void ToolsView::DrawButtons()

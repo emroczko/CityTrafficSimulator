@@ -54,15 +54,17 @@ namespace ZPR {
                     if (this->_buttons.at(1).isPressed) {
                         this->_buttons.at(1).setBackground(this->_data->assets.GetTexture("Button"));
                         button.setText("Start simulation");
+                        //this->NotifyIsSimulating(false);
                     }
                     else{
                         this->_buttons.at(1).setBackground(this->_data->assets.GetTexture("Button_pressed"));
                         button.setText("Stop simulation");
+                        //this->NotifyIsSimulating(true);
                     }
                     
                     //this->_buttons.at(1).isPressed = false;
+                    
                     this->NotifyIsSimulating();
-                
                     
                     
                 }
