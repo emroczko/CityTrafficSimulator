@@ -11,13 +11,14 @@ namespace ZPR {
 		LoadAssets();
 		setupSelectedCellRect();
 		this->_backgroundTexture.setTexture(this->_data->assets.GetTexture("Background"));
+		this->_backgroundTexture.setOrigin(sf::Vector2f(800, 800));
+		this->_backgroundTexture.setPosition(this->_mapView.getCenter());
 		this->_cellSize = (SCREEN_HEIGHT / this->_gridSize);
 		this->_row = -1;
 		this->_col = -1;
 		this->_selectedCellRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
 		this->_mapView = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
 		this->_mapView.setViewport(CalculateViewPort());
-        
 		GenerateGridLines();
         _buffer = sf::Vector2i(0,0);
 	}
