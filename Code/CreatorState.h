@@ -27,7 +27,10 @@ namespace ZPR{
         void HandleInput();
         void Update(float dt);
         void Draw(float dt);
+        
     private:
+       
+        
         SimulatorDataRef _data;
         std::shared_ptr<MapView> _mapView;
         std::shared_ptr<ToolsView> _toolsView;
