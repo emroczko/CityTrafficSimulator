@@ -166,9 +166,10 @@ void MapView::FillCellsWithBlue(){
 		road.setTexture(&this->_data->assets.GetTexture("Road"));
 		road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
 		sf::Vector2f centeredPositionInPixels = TransformRowColToPixels(sf::Vector2i(position.x, position.y));
-		centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2;
-		centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
+		centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2 ;
+		centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2 ;
 		road.setPosition(centeredPositionInPixels);
+		std::cout <<road.getPosition().x << "   " <<road.getPosition().y<< std::endl;;
         this->_roads.push_back(road);
 		CheckWhichRoadToAdd();
 	}
@@ -343,7 +344,7 @@ void MapView::FillCellsWithBlue(){
 		fillCells();
 		DrawRoads();
         //FillCellsWithBlue();
-		DrawGrid();
+		//DrawGrid();
 	}
 
     
