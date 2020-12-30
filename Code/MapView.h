@@ -6,9 +6,10 @@
 #include "Definitions.h"
 #include <vector>
 #include "CreatorObserver.h"
+#include "SimulationObserver.h"
 
 namespace ZPR {
-	class MapView : public CreatorObserver
+	class MapView : public CreatorObserver, public SimulationObserver
 	{
 	public:
 		MapView(SimulatorDataRef data, int gridSize);
@@ -16,6 +17,7 @@ namespace ZPR {
 		void UpdateCells(std::vector<Cell> cells);
 		void UpdateIsDrawingRoad(bool isDrawingRoad);
         void UpdateIsDeletingRoad(bool isDeletingRoad);
+        void UpdateIsSimulating(bool isSimulating);
 		void Draw();
 		sf::Vector2i HandleInput(sf::Vector2f mousePosition);
 		sf::View GetView();
@@ -24,7 +26,7 @@ namespace ZPR {
 		int getGridSize();
 		int getCellSize();
 		bool isClicked(sf::Vector2i &mousePosition);
-        //bool isReleased(sf::Vector2i &mousePosition);
+       
 	private:
         bool clicked;
 		void LoadAssets();
@@ -34,7 +36,7 @@ namespace ZPR {
 		void DrawRoads();
 		void GenerateGridLines();
 		int CalculatePrefix();
-		void fillCells();
+		void FillCells();
         void FillCellsWithBlue();
 		void AddRoad(sf::Vector2i position);
         void AddBlueRoad(sf::Vector2i position);
@@ -55,6 +57,7 @@ namespace ZPR {
 		int _row, _col;
 		bool isDrawingRoad;
         bool isDeletingRoad;
+        bool isSimulating;
         sf::Vector2i _buffer;
 		sf::RectangleShape _selectedCellRect;
 		std::vector<sf::RectangleShape> _gridLines;

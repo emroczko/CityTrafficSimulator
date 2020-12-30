@@ -3,6 +3,8 @@
 namespace ZPR {
 	ToolsView::ToolsView(SimulatorDataRef data) : _data(data)
 	{
+        
+        //this->isSimulating = true;
 		this->_toolsView = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
 		this->_toolsView.setViewport(CalculateViewPort());
 		this->_background.setPosition(0, 0);
@@ -73,13 +75,18 @@ namespace ZPR {
             }
         }
     }
+    void ToolsView::UpdateIsSimulating(bool isSimulating){
+        this->isSimulating = isSimulating;
+    }
 
 	void ToolsView::DrawButtons()
 	{
-		for (Button button: _buttons)
-		{
-			this->_data->window.draw(button);
-		}
+        if (!this->isSimulating){
+            for (Button button: _buttons)
+            {
+                this->_data->window.draw(button);
+            }
+        }
 	}
     sf::View ToolsView::GetView()
     {

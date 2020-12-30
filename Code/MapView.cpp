@@ -45,28 +45,7 @@ namespace ZPR {
 		else
 			return false;
 	}
-    /*bool MapView::isReleased(sf::Vector2i& mousePosition)
-    {
-        fillCells();
-        if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT)){
-            clicked  =false;
-            for (sf::RectangleShape& rect : this->_blueRoads){
-                rect.setTexture(NULL);
-            }
-            _blueRoads.clear();
-            if (_tempRoad.size() == 1){
-                _tempRoad[0].setTexture(NULL);
-                _tempRoad.clear();
-            }
-            _roads.insert(_roads.end(), _tempRoad.begin(), _tempRoad.end());
-            _tempRoad.clear();
-            return true;
-        }
-        else{
-            return false;
-        }
-    }*/
-
+   
 	/*Wczytuje wszystkie potrzebne assety*/
 	void MapView::LoadAssets()
 	{
@@ -93,9 +72,11 @@ namespace ZPR {
 	}
 
 	void MapView::DrawGrid() {
-		for (sf::RectangleShape line : _gridLines) {
-			this->_data->window.draw(line);
-		}
+        if(!isSimulating){
+            for (sf::RectangleShape line : _gridLines) {
+                this->_data->window.draw(line);
+            }
+        }
 	}
 
 	void MapView::DrawRoads(){
@@ -124,7 +105,7 @@ namespace ZPR {
 		return drawPrefix;
 	}
 
-	void MapView::fillCells()
+	void MapView::FillCells()
 	{
 		int drawPrefix = CalculatePrefix();
 
@@ -134,7 +115,6 @@ namespace ZPR {
 			if (cell._containsRoad && !cell._roadDrawn) {
 				cell._roadDrawn = true;
 				AddRoad(sf::Vector2i(row, col));
-                //CellBuffer(sf::Vector2i(row, col), cell);
 			}
             if (cell._toDelete) {
                 DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
@@ -142,20 +122,7 @@ namespace ZPR {
             }
 			
 		}
-        
-        
 	}
-void MapView::FillCellsWithBlue(){
-    for (Cell& cell : this->_cells) {
-        int row = cell.GetPosition().x;
-        int col = cell.GetPosition().y;
-        if (cell._containsRoad && !cell._roadDrawn) {
-            cell._roadDrawn = true;
-            AddBlueRoad(sf::Vector2i(row, col));
-        }
-        
-    }
-}
 
 	/*Dodaje drogê*/
 	void MapView::AddRoad(sf::Vector2i position)
@@ -182,36 +149,6 @@ void MapView::FillCellsWithBlue(){
     this->_blueRoads.push_back(road);
     
 }
-
-    void MapView::CellBuffer(sf::Vector2i position, Cell &cell){
-        int x, y;
-        x = position.x - _buffer.x;
-        y = position.y - _buffer.y;
-        
-        if (x > 0){
-            cell._east = true;
-        }
-        else if(x < 0){
-            cell._west = true;
-        }
-        else {
-            cell._east = false;
-            cell._west = false;
-        }
-        
-        if (y > 0){
-            cell._south = true;
-        }
-        else if(x < 0){
-            cell._north = true;
-        }
-        else {
-            cell._north = false;
-            cell._south = false;
-        }
-        _buffer.x = position.x;
-        _buffer.y = position.y;
-    }
 
 	void MapView::CheckWhichRoadToAdd() {
 		for (sf::RectangleShape& road : this->_roads) {
@@ -341,7 +278,7 @@ void MapView::FillCellsWithBlue(){
 	{
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
-		fillCells();
+		FillCells();
 		DrawRoads();
         //FillCellsWithBlue();
 		//DrawGrid();
@@ -365,12 +302,19 @@ void MapView::FillCellsWithBlue(){
 	{
 		this->isDrawingRoad = isDrawingRoad;
         this->isDeletingRoad = false;
+        this->isSimulating = false;
 	}
 
     void MapView::UpdateIsDeletingRoad(bool isDeletingRoad)
     {
         this->isDeletingRoad = isDeletingRoad;
         this->isDrawingRoad = false;
+        this->isSimulating = false;
+    }
+    void MapView::UpdateIsSimulating(bool isSimulating){
+        this->isSimulating = isSimulating;
+        this->isDrawingRoad = false;
+        this->isDeletingRoad = false;
     }
 
 	sf::Vector2i MapView::HandleInput(sf::Vector2f mousePosition)

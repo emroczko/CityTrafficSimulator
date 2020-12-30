@@ -12,6 +12,7 @@
 #include "ToolsView.h"
 #include "CamerasView.h"
 #include "CreatorHandler.h"
+#include "SimulationHandler.h"
 
 
 namespace ZPR{
@@ -29,9 +30,10 @@ namespace ZPR{
     private:
         SimulatorDataRef _data;
         std::shared_ptr<MapView> _mapView;
-        std::unique_ptr<ToolsView> _toolsView;
+        std::shared_ptr<ToolsView> _toolsView;
         std::unique_ptr<CamerasView> _camerasView;
         std::shared_ptr<CreatorHandler> _creatorHandler;
+        std::shared_ptr<SimulationHandler> _simulationHandler;
         int _gridSize;
     };
 }
