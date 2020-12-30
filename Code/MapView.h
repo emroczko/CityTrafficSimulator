@@ -25,22 +25,21 @@ namespace ZPR {
 		sf::Vector2i getRowCol();
 		int getGridSize();
 		int getCellSize();
+
 		bool isClicked(sf::Vector2i &mousePosition);
         void zoomViewAt(sf::Vector2i pixel, float zoom);
+
 	private:
         bool clicked;
 		void LoadAssets();
-        void CellBuffer(sf::Vector2i position, Cell &cell);
 		sf::FloatRect CalculateViewPort();
 		void DrawGrid();
 		void DrawRoads();
 		void GenerateGridLines();
 		int CalculatePrefix();
 		void FillCells();
-        void FillCellsWithBlue();
 		void AddRoad(sf::Vector2i position);
-        void AddBlueRoad(sf::Vector2i position);
-		void CheckWhichRoadToAdd();
+		void CheckRoadsTexture();
 		void ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
 			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
 		void ChoseRoadWithTwoNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,

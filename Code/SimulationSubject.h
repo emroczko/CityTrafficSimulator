@@ -1,5 +1,6 @@
 #pragma once
 #include "SimulationObserver.h"
+#include <memory>
 #include <vector>
 
 namespace ZPR {

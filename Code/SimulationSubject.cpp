@@ -1,6 +1,5 @@
 #include "SimulationSubject.h"
 
-
 namespace ZPR {
     void SimulationSubject::add(std::shared_ptr<SimulationObserver> obs)
     {
