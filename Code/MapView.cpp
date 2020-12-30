@@ -11,7 +11,7 @@ namespace ZPR {
 		LoadAssets();
 		setupSelectedCellRect();
 		this->_backgroundTexture.setTexture(this->_data->assets.GetTexture("Background"));
-		this->_cellSize = SCREEN_HEIGHT / this->_gridSize;
+		this->_cellSize = (SCREEN_HEIGHT / this->_gridSize);
 		this->_row = -1;
 		this->_col = -1;
 		this->_selectedCellRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
@@ -24,6 +24,14 @@ namespace ZPR {
 	sf::Vector2i MapView::getRowCol()
 	{
 		return sf::Vector2i(this->_row, this->_col);
+	}
+
+	bool MapView::isClicked(sf::Vector2i mousePosition) {
+
+		if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT))
+			return true;
+		else
+			return false;
 	}
 
 	int MapView::getGridSize()

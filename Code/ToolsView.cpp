@@ -37,7 +37,7 @@ namespace ZPR {
 		DrawButtons();
 	}
 
-    bool ToolsView::isClicked(sf::Vector2i &mousePosition){
+    bool ToolsView::isClicked(sf::Vector2i mousePosition){
     
         if(_toolsView.getViewport().contains(static_cast<float>(mousePosition.x)/SCREEN_WIDTH, static_cast<float>(mousePosition.y)/SCREEN_HEIGHT))
             return true;

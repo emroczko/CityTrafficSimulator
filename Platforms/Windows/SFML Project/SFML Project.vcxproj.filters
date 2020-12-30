@@ -127,7 +127,7 @@
       <Filter>Source Files\ZPR namespace\Vehicles</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\Vehicles\VehicleFactory.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ZPR namespace\Vehicles</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

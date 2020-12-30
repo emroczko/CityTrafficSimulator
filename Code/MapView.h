@@ -23,6 +23,7 @@ namespace ZPR {
 		sf::View GetView();
 		void init();
 		sf::Vector2i getRowCol();
+		bool isClicked(sf::Vector2i mousePosition);
 		int getGridSize();
 		int getCellSize();
        

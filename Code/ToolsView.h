@@ -10,7 +10,7 @@ namespace ZPR {
 	public:
 		ToolsView(SimulatorDataRef data);
 		void Draw();
-        bool isClicked(sf::Vector2i &mousePosition);
+        bool isClicked(sf::Vector2i mousePosition);
         sf::View GetView();
         void HandleInput();
         void UpdateIsSimulating(bool isSimulating);
