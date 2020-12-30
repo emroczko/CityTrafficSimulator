@@ -281,7 +281,7 @@ namespace ZPR {
 		FillCells();
 		DrawRoads();
         //FillCellsWithBlue();
-		//DrawGrid();
+		DrawGrid();
 	}
 
     
