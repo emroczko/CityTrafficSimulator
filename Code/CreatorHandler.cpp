@@ -18,32 +18,8 @@ namespace ZPR {
 		{
 			cells.push_back(Cell(i / _gridSize, i % _gridSize));
 		}
-		//AddCellsRef(&cells);																					//*****
         this->_grid = std::make_unique<Grid>(cells, _gridSize);
 	}
-
-	/*Dodaje komórkom wskaŸniki do s¹siaduj¹cych komórek														*****
-	void CreatorHandler::AddCellsRef(std::vector<Cell>* cells)
-	{
-		for (int i = 0; i < cells->size(); i++) {
-			if (i / _gridSize != 0) {
-				cells->at(i).north = std::make_unique<Cell>(cells->at(i - _gridSize));
-				cells->at(i).north;
-			}
-			if (i / _gridSize != _gridSize - 1) {
-				cells->at(i).south = std::make_unique<Cell>(cells->at(i + _gridSize));
-				cells->at(i).south;
-			}
-			if (i%_gridSize != 0) {
-				cells->at(i).west = std::make_unique<Cell>(cells->at(i - 1));
-				cells->at(i).west;
-			}
-			if (i%_gridSize != _gridSize -1) {
-				cells->at(i).east = std::make_unique<Cell>(cells->at(i + 1));
-				cells->at(i).east;
-			}
-		}
-	}*/
 
 	/*Ustawia tryb rysowania drogi na w³¹czony lub wy³¹czony*/
 	void CreatorHandler::UpdateIsDrawingRoad()

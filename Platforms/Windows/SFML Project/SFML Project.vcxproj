@@ -212,11 +212,14 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\AssetManager.cpp" />
     <ClCompile Include="..\..\..\Code\Button.cpp" />
+    <ClCompile Include="..\..\..\Code\CamerasSubject.cpp" />
     <ClCompile Include="..\..\..\Code\CamerasView.cpp" />
     <ClCompile Include="..\..\..\Code\Cell.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorHandler.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorState.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorSubject.cpp" />
+    <ClCompile Include="..\..\..\Code\SimulationHandler.cpp" />
+    <ClCompile Include="..\..\..\Code\SimulationSubject.cpp" />
     <ClCompile Include="..\..\..\Code\ToolsSubject.cpp" />
     <ClCompile Include="..\..\..\Code\ToolsView.cpp" />
     <ClCompile Include="..\..\..\Code\Grid.cpp" />
@@ -229,10 +232,15 @@
     <ClCompile Include="..\..\..\Code\SplashState.cpp" />
     <ClCompile Include="..\..\..\Code\StateMachine.cpp" />
     <ClCompile Include="..\..\..\Code\Vehicles\Car.cpp" />
+    <ClCompile Include="..\..\..\Code\Vehicles\Truck.cpp" />
+    <ClCompile Include="..\..\..\Code\Vehicles\Vehicle.cpp" />
+    <ClCompile Include="..\..\..\Code\Vehicles\VehicleFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\AssetManager.h" />
     <ClInclude Include="..\..\..\Code\Button.h" />
+    <ClInclude Include="..\..\..\Code\CamerasObserver.h" />
+    <ClInclude Include="..\..\..\Code\CamerasSubject.h" />
     <ClInclude Include="..\..\..\Code\CamerasView.h" />
     <ClInclude Include="..\..\..\Code\Cell.h" />
     <ClInclude Include="..\..\..\Code\CreatorHandler.h" />
@@ -240,6 +248,9 @@
     <ClInclude Include="..\..\..\Code\CreatorState.h" />
     <ClInclude Include="..\..\..\Code\CreatorSubject.h" />
     <ClInclude Include="..\..\..\Code\Definitions.h" />
+    <ClInclude Include="..\..\..\Code\SimulationHandler.h" />
+    <ClInclude Include="..\..\..\Code\SimulationObserver.h" />
+    <ClInclude Include="..\..\..\Code\SimulationSubject.h" />
     <ClInclude Include="..\..\..\Code\ToolsObserver.h" />
     <ClInclude Include="..\..\..\Code\ToolsSubject.h" />
     <ClInclude Include="..\..\..\Code\ToolsView.h" />
@@ -253,6 +264,9 @@
     <ClInclude Include="..\..\..\Code\State.h" />
     <ClInclude Include="..\..\..\Code\StateMachine.h" />
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h" />
+    <ClInclude Include="..\..\..\Code\Vehicles\Truck.h" />
+    <ClInclude Include="..\..\..\Code\Vehicles\Vehicle.h" />
+    <ClInclude Include="..\..\..\Code\Vehicles\VehicleFactory.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\Release\Resources\background_menu.jpeg" />

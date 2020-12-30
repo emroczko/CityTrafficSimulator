@@ -13,14 +13,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Vehicles">
-      <UniqueIdentifier>{ad614e12-a1f7-45c7-929b-ba7ac3aecc12}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ZPR namespace">
       <UniqueIdentifier>{f2e99f4a-ef4b-465e-a9c1-188593a6cbb7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Vehicles">
-      <UniqueIdentifier>{81b81de2-5ea3-4d9c-8d25-459ae998a579}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\ZPR namespace">
       <UniqueIdentifier>{9a723085-a2cb-476b-8a8d-8ae6e9f131fc}</UniqueIdentifier>
@@ -52,13 +46,19 @@
     <Filter Include="Source Files\ZPR namespace\Components">
       <UniqueIdentifier>{8a8e89f7-a508-4f5f-b7be-02ff0ec4698a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ZPR namespace\Vehicles">
+      <UniqueIdentifier>{81b81de2-5ea3-4d9c-8d25-459ae998a579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ZPR namespace\Vehicles">
+      <UniqueIdentifier>{ad614e12-a1f7-45c7-929b-ba7ac3aecc12}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\Vehicles\Car.cpp">
-      <Filter>Source Files\Vehicles</Filter>
+      <Filter>Source Files\ZPR namespace\Vehicles</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\AssetManager.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
@@ -111,10 +111,28 @@
     <ClCompile Include="..\..\..\Code\ToolsSubject.cpp">
       <Filter>Source Files\ZPR namespace\Subjects</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\SimulationHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\CamerasSubject.cpp">
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\SimulationSubject.cpp">
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Vehicles\Vehicle.cpp">
+      <Filter>Source Files\ZPR namespace\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Vehicles\Truck.cpp">
+      <Filter>Source Files\ZPR namespace\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Vehicles\VehicleFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h">
-      <Filter>Header Files\Vehicles</Filter>
+      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\AssetManager.h">
       <Filter>Header Files\ZPR namespace</Filter>
@@ -178,6 +196,30 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Code\ToolsObserver.h">
       <Filter>Header Files\ZPR namespace\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\CamerasObserver.h">
+      <Filter>Header Files\ZPR namespace\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\CamerasSubject.h">
+      <Filter>Header Files\ZPR namespace\Subjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\SimulationHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\SimulationObserver.h">
+      <Filter>Header Files\ZPR namespace\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\SimulationSubject.h">
+      <Filter>Header Files\ZPR namespace\Subjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Vehicles\Truck.h">
+      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Vehicles\Vehicle.h">
+      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Vehicles\VehicleFactory.h">
+      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

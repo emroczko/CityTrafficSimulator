@@ -1,51 +1,44 @@
 #include "Car.h"
 #include <iostream>
-
-Car::Car(int x, int y) {
-	this->x = x;
-	this->y = y;
-	speed = 1;
-	shape.setFillColor(sf::Color(255, 255, 255));
-	shape.setSize(sf::Vector2f(20, 20));
-	shape.setPosition(sf::Vector2f(x, y));
-}
-
-Car::~Car() {
-
-}
-
-void Car::move() {
-	srand((unsigned)time(NULL));
-	switch (rand()%4)
-	{
-		case 0: x += speed; break;
-		case 1: x -= speed; break;
-		case 2: y += speed; break;
-		case 3: y -= speed; break;
+namespace ZPR {
+	Car::Car(int x, int y) {
+		this->_x = x;
+		this->_y = y;
+		_speed = 1;
+		this->_shape.setFillColor(sf::Color(255, 0, 0));
+		this->_shape.setSize(sf::Vector2f(15, 15));
+		this->_shape.setPosition(sf::Vector2f(x, y));
 	}
-	if (x>1200)
-	{
-		x = 1100;
-	}
-	if (y>800)
-	{
-		y = 700;
-	}
-	if (x<0)
-	{
-		x < 0;
-	}
-	if (y<0)
-	{
-		y = 0;
-	}
-	updatePosition();
-}
 
-void Car::updatePosition() {
-	shape.setPosition(sf::Vector2f(x, y));
-}
-
-sf::RectangleShape Car::getShape() {
-	return shape;
+	void Car::move() {
+		srand((unsigned)time(NULL));
+		switch (rand() % 4)
+		{
+		case 0: _x += _speed; break;
+		case 1: _x -= _speed; break;
+		case 2: _y += _speed; break;
+		case 3: _y -= _speed; break;
+		}
+		if (_x > 1200)
+		{
+			_x = 1100;
+		}
+		if (_y > 800)
+		{
+			_y = 700;
+		}
+		if (_x < 0)
+		{
+			_x < 0;
+		}
+		if (_y < 0)
+		{
+			_y = 0;
+		}
+		updatePosition();
+	}
+	sf::RectangleShape Car::getShape()
+	{
+		return this->_shape;
+	}
 }
