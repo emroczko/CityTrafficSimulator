@@ -2,10 +2,11 @@
 #include "CreatorSubject.h"
 #include "Grid.h"
 #include "ToolsObserver.h"
+#include "SimulationObserver.h"
 #include <memory>
 
 namespace ZPR {
-	class CreatorHandler : public CreatorSubject, public ToolsObserver
+	class CreatorHandler : public CreatorSubject, public ToolsObserver, public SimulationObserver
 	{
 	public:
 		CreatorHandler(int gridSize);
@@ -14,6 +15,7 @@ namespace ZPR {
 		//void AddCellsRef(std::vector<Cell>* cells);
 		void UpdateIsDrawingRoad();
         void UpdateIsDeletingRoad();
+        void UpdateIsSimulating(bool isSimulating);
 		void HandleInput(sf::Vector2i possibleSelectedCell);
 	private:
 		std::unique_ptr<Grid> _grid;
@@ -21,6 +23,7 @@ namespace ZPR {
 		int _gridSize;
 		bool isDrawingRoad;
         bool isDeletingRoad;
+        bool isSimulating;
 	};
 }
 

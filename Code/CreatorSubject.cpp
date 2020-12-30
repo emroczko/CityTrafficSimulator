@@ -32,4 +32,10 @@ namespace ZPR {
             obs->UpdateIsDeletingRoad(isDeletingRoad);
         }
     }
+    void CreatorSubject::NotifyIsSimulating(bool isSimulating)
+    {
+        for (std::shared_ptr<CreatorObserver> obs : this->_observers) {
+            obs->UpdateIsSimulating(isSimulating);
+        }
+    }
 }

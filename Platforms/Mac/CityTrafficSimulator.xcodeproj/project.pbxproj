@@ -24,6 +24,9 @@
 		52804F6625537553002A59AD /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52804F6425537553002A59AD /* Car.cpp */; };
 		52A1CEA32599F4450014C907 /* ToolsSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52A1CEA12599F4450014C907 /* ToolsSubject.cpp */; };
 		52B4FFB8256FC12200F1033B /* Road.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FFB7256FC12200F1033B /* Road.cpp */; };
+		52D0C272259B9808000871D0 /* CamerasSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C271259B9808000871D0 /* CamerasSubject.cpp */; };
+		52D0C277259B9C4A000871D0 /* SimulationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C276259B9C4A000871D0 /* SimulationHandler.cpp */; };
+		52D0C284259C072C000871D0 /* SimulationSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C282259C072C000871D0 /* SimulationSubject.cpp */; };
 		52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF12553FE0C0093D5DF /* MainMenuState.cpp */; };
 		52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF525540A9A0093D5DF /* StateMachine.cpp */; };
 		52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCFC25541DEE0093D5DF /* AssetManager.cpp */; };
@@ -87,6 +90,14 @@
 		52A1CEA22599F4450014C907 /* ToolsSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsSubject.h; sourceTree = "<group>"; };
 		52B4FFB7256FC12200F1033B /* Road.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Road.cpp; sourceTree = "<group>"; };
 		52B4FFBA256FC13D00F1033B /* Road.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Road.h; sourceTree = "<group>"; };
+		52D0C271259B9808000871D0 /* CamerasSubject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CamerasSubject.cpp; sourceTree = "<group>"; };
+		52D0C273259B981B000871D0 /* CamerasSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamerasSubject.h; sourceTree = "<group>"; };
+		52D0C274259B9A95000871D0 /* CamerasObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamerasObserver.h; sourceTree = "<group>"; };
+		52D0C275259B9C2D000871D0 /* SimulationHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulationHandler.h; sourceTree = "<group>"; };
+		52D0C276259B9C4A000871D0 /* SimulationHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimulationHandler.cpp; sourceTree = "<group>"; };
+		52D0C278259BEC28000871D0 /* SimulationObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulationObserver.h; sourceTree = "<group>"; };
+		52D0C282259C072C000871D0 /* SimulationSubject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimulationSubject.cpp; sourceTree = "<group>"; };
+		52D0C283259C072C000871D0 /* SimulationSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulationSubject.h; sourceTree = "<group>"; };
 		52D3BCF02553FDF40093D5DF /* MainMenuState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuState.h; sourceTree = "<group>"; };
 		52D3BCF12553FE0C0093D5DF /* MainMenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuState.cpp; sourceTree = "<group>"; };
 		52D3BCF4255409AD0093D5DF /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
@@ -129,12 +140,13 @@
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				52A1CEA7259A18950014C907 /* Tools View and Creator */,
+				52A1CEA7259A18950014C907 /* Tools */,
 				523F9D2E2575D4BE00279564 /* Main.cpp */,
-				5230E78E2565EB3500F84CF2 /* CamerasView.cpp */,
-				5230E7922565EB3500F84CF2 /* CamerasView.h */,
+				52D0C27B259BF2BA000871D0 /* Cameras */,
 				5230E7952565EB3500F84CF2 /* Cell.cpp */,
 				5230E7902565EB3500F84CF2 /* Cell.h */,
+				52D0C285259C07FF000871D0 /* Creator */,
+				52D0C281259C06F1000871D0 /* Simulation */,
 				5230E7912565EB3500F84CF2 /* Grid.cpp */,
 				5230E7972565EB3500F84CF2 /* Grid.h */,
 				5230E7932565EB3500F84CF2 /* MapView.cpp */,
@@ -206,7 +218,7 @@
 			path = CityTrafficSimulator;
 			sourceTree = "<group>";
 		};
-		52A1CEA7259A18950014C907 /* Tools View and Creator */ = {
+		52A1CEA7259A18950014C907 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				5230E78F2565EB3500F84CF2 /* ToolsView.cpp */,
@@ -214,13 +226,44 @@
 				52A1CEA02599F4450014C907 /* ToolsObserver.h */,
 				52A1CEA12599F4450014C907 /* ToolsSubject.cpp */,
 				52A1CEA22599F4450014C907 /* ToolsSubject.h */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		52D0C27B259BF2BA000871D0 /* Cameras */ = {
+			isa = PBXGroup;
+			children = (
+				52D0C271259B9808000871D0 /* CamerasSubject.cpp */,
+				5230E7922565EB3500F84CF2 /* CamerasView.h */,
+				52D0C273259B981B000871D0 /* CamerasSubject.h */,
+				5230E78E2565EB3500F84CF2 /* CamerasView.cpp */,
+				52D0C274259B9A95000871D0 /* CamerasObserver.h */,
+			);
+			name = Cameras;
+			sourceTree = "<group>";
+		};
+		52D0C281259C06F1000871D0 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				52D0C282259C072C000871D0 /* SimulationSubject.cpp */,
+				52D0C283259C072C000871D0 /* SimulationSubject.h */,
+				52D0C275259B9C2D000871D0 /* SimulationHandler.h */,
+				52D0C276259B9C4A000871D0 /* SimulationHandler.cpp */,
+				52D0C278259BEC28000871D0 /* SimulationObserver.h */,
+			);
+			name = Simulation;
+			sourceTree = "<group>";
+		};
+		52D0C285259C07FF000871D0 /* Creator */ = {
+			isa = PBXGroup;
+			children = (
 				52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */,
 				52D5673D256F034F0017A7C6 /* CreatorHandler.h */,
 				52D5673E256F034F0017A7C6 /* CreatorObserver.h */,
 				52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */,
 				52D5673C256F034F0017A7C6 /* CreatorSubject.h */,
 			);
-			name = "Tools View and Creator";
+			name = Creator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +293,7 @@
 		529FE346255231B2006D8A78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					529FE34D255231B2006D8A78 = {
 						CreatedOnToolsVersion = 12.1;
@@ -284,10 +327,12 @@
 				52D56740256F034F0017A7C6 /* CreatorSubject.cpp in Sources */,
 				52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */,
 				52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */,
+				52D0C272259B9808000871D0 /* CamerasSubject.cpp in Sources */,
 				52D3BD10255442410093D5DF /* SplashState.cpp in Sources */,
 				52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */,
 				52A1CEA32599F4450014C907 /* ToolsSubject.cpp in Sources */,
 				5230E7992565EB3500F84CF2 /* ToolsView.cpp in Sources */,
+				52D0C277259B9C4A000871D0 /* SimulationHandler.cpp in Sources */,
 				5230E79A2565EB3500F84CF2 /* Grid.cpp in Sources */,
 				52804F6625537553002A59AD /* Car.cpp in Sources */,
 				52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */,
@@ -297,6 +342,7 @@
 				52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */,
 				52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */,
 				52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */,
+				52D0C284259C072C000871D0 /* SimulationSubject.cpp in Sources */,
 				5225663D255EA24500C9BB3C /* CreatorState.cpp in Sources */,
 				52166DD82561796400A1AE4E /* Button.cpp in Sources */,
 				5230E7982565EB3500F84CF2 /* CamerasView.cpp in Sources */,
@@ -422,6 +468,7 @@
 		529FE356255231B2006D8A78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../../External\\ Libraries/Mac/SFML/include\"";
@@ -433,6 +480,7 @@
 		529FE357255231B2006D8A78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../../External\\ Libraries/Mac/SFML/include\"";

@@ -12,6 +12,7 @@ namespace ZPR {
 		void NotifyCells(std::vector<Cell> cells);
 		void NotifyIsDrawingRoad(bool isDrawingRoad);
         void NotifyIsDeletingRoad(bool isDeletingRoad);
+        void NotifyIsSimulating(bool isSimulating);
 		virtual ~CreatorSubject() {}
 	private:
 		std::vector<std::shared_ptr<CreatorObserver> > _observers;
