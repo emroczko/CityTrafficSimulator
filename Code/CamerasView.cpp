@@ -54,7 +54,7 @@ namespace ZPR {
                         this->_buttons.at(1).setBackground(this->_data->assets.GetTexture("Button"));
                     }
                     this->_buttons.at(1).isPressed = false;
-                    //this->NotifyIsSimulating();
+                    this->NotifyIsSimulating();
                 }
 
                 //Tu doda≥em øeby siÍ zmienia≥ bg przycisku jak siÍ kliknie i odkliknie //

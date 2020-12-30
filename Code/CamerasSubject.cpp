@@ -9,7 +9,7 @@ namespace ZPR {
     void CamerasSubject::NotifyIsSimulating()
     {
         for (std::shared_ptr<CamerasObserver> obs : this->_observers) {
-            obs->UpdateIsDrawingRoad();
+            obs->UpdateIsSimulating();
         }
     }
    

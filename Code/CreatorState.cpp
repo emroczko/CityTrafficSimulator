@@ -14,7 +14,12 @@ namespace ZPR {
         this->_creatorHandler = std::make_unique<CreatorHandler>(this->_gridSize);
         this->_creatorHandler->add(this->_mapView);
         this->_creatorHandler->init();
+        this->_simulationHandler = std::make_unique<SimulationHandler>();
+        this->_simulationHandler->add(this->_mapView);
+        this->_simulationHandler->add(this->_toolsView);
+        this->_simulationHandler->init();
         this->_toolsView->add(this->_creatorHandler);
+        this->_camerasView->add(this->_simulationHandler);
     }
 
     void CreatorState::HandleInput() {
