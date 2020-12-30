@@ -1,6 +1,6 @@
 #include "CamerasView.h"
 namespace ZPR {
-	CamerasView::CamerasView(SimulatorDataRef data) : _data(data)
+	CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(false)
 	{
 		this->_camerasView = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
 		this->_camerasView.setViewport(CalculateViewPort());
@@ -15,6 +15,7 @@ namespace ZPR {
         
         this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 800), buttonSize, "Start simulation",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+        
         
 	}
 
@@ -49,22 +50,33 @@ namespace ZPR {
     void CamerasView::HandleInput(){
         for (Button& button : this->_buttons){
             if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_camerasView)){
-                if (button.getText() == "Start simulation") {
+                if (button.getText() == "Start simulation" || button.getText() == "Stop simulation"  ) {
                     if (this->_buttons.at(1).isPressed) {
                         this->_buttons.at(1).setBackground(this->_data->assets.GetTexture("Button"));
+                        button.setText("Start simulation");
                     }
-                    this->_buttons.at(1).isPressed = false;
+                    else{
+                        this->_buttons.at(1).setBackground(this->_data->assets.GetTexture("Button_pressed"));
+                        button.setText("Stop simulation");
+                    }
+                    
+                    //this->_buttons.at(1).isPressed = false;
                     this->NotifyIsSimulating();
+                
+                    
+                    
                 }
-
+               
                 //Tu doda≥em øeby siÍ zmienia≥ bg przycisku jak siÍ kliknie i odkliknie //
                 button.isPressed = !button.isPressed;
-                if (button.isPressed) {
-                    button.setBackground(this->_data->assets.GetTexture("Button_pressed"));
-                }
-                else {
-                    button.setBackground(this->_data->assets.GetTexture("Button"));
-                }
+//                if (button.isPressed) {
+//                    button.setBackground(this->_data->assets.GetTexture("Button_pressed"));
+//
+//                }
+//                else {
+//                    button.setBackground(this->_data->assets.GetTexture("Button"));
+//
+//                }
             }
         }
     }

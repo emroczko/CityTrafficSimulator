@@ -18,6 +18,7 @@ class CamerasView : public CamerasSubject{
 		SimulatorDataRef _data;
 		sf::RectangleShape _background;
 		sf::View _camerasView;
+        bool _isSimulating;
 	};
 };
 
