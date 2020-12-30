@@ -17,6 +17,7 @@ namespace ZPR {
 		this->_selectedCellRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
 		this->_mapView = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
 		this->_mapView.setViewport(CalculateViewPort());
+        
 		GenerateGridLines();
         _buffer = sf::Vector2i(0,0);
 	}
@@ -283,7 +284,17 @@ namespace ZPR {
         //FillCellsWithBlue();
 		DrawGrid();
 	}
-
+    void MapView::zoomViewAt(sf::Vector2i pixel, float zoom)
+    {
+    const sf::Vector2f beforeCoord{_data->window.mapPixelToCoords(pixel) };
+    //sf::View view{ window.getView() };
+    _mapView.zoom(zoom);
+    //_data->window.setView(_mapView);
+    const sf::Vector2f afterCoord{ _data->window.mapPixelToCoords(pixel) };
+    const sf::Vector2f offsetCoords{ beforeCoord - afterCoord };
+    _mapView.move(offsetCoords);
+    //_data->window.setView(_mapView);
+    }
     
 
 	void MapView::UpdateSelectedCell(sf::Vector2i coords)

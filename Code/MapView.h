@@ -26,7 +26,7 @@ namespace ZPR {
 		int getGridSize();
 		int getCellSize();
 		bool isClicked(sf::Vector2i &mousePosition);
-       
+        void zoomViewAt(sf::Vector2i pixel, float zoom);
 	private:
         bool clicked;
 		void LoadAssets();

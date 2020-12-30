@@ -46,6 +46,19 @@ namespace ZPR {
                     this->_camerasView->HandleInput();
                 }
             }
+            if (event.type == sf::Event::MouseWheelScrolled) {
+                if (event.mouseWheelScroll.delta > 0)
+                    {
+                        
+                        this->_mapView->zoomViewAt({ event.mouseWheelScroll.x, event.mouseWheelScroll.y },  (1.f / 1.3f));
+                        
+                }
+                if (event.mouseWheelScroll.delta < 0)
+                {
+                    this->_mapView->zoomViewAt({ event.mouseWheelScroll.x, event.mouseWheelScroll.y }, (1.3f));
+                    
+            }
+            }
             /*if (event.type == sf::Event::MouseButtonReleased ) {
                 if (event.mouseButton.button == sf::Mouse::Left)
                     {
@@ -54,6 +67,7 @@ namespace ZPR {
             }*/
         }
     }
+    
 
     void CreatorState::Update(float dt){
 
