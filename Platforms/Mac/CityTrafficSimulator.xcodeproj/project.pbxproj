@@ -36,6 +36,9 @@
 		52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */; };
 		52D56740256F034F0017A7C6 /* CreatorSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */; };
 		52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52EDDC39255A055800CD5101 /* InitCreateState.cpp */; };
+		52F5565D259D17DD00ECEED3 /* VehicleFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F55659259D17DC00ECEED3 /* VehicleFactory.cpp */; };
+		52F5565E259D17DD00ECEED3 /* Truck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F5565A259D17DD00ECEED3 /* Truck.cpp */; };
+		52F5565F259D17DD00ECEED3 /* Vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F5565C259D17DD00ECEED3 /* Vehicle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,6 +122,12 @@
 		52D5673E256F034F0017A7C6 /* CreatorObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatorObserver.h; sourceTree = "<group>"; };
 		52EDDC39255A055800CD5101 /* InitCreateState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InitCreateState.cpp; sourceTree = "<group>"; };
 		52EDDC3A255A055800CD5101 /* InitCreateState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitCreateState.h; sourceTree = "<group>"; };
+		52F55656259D17DC00ECEED3 /* Truck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Truck.h; path = Vehicles/Truck.h; sourceTree = "<group>"; };
+		52F55657259D17DC00ECEED3 /* VehicleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleFactory.h; path = Vehicles/VehicleFactory.h; sourceTree = "<group>"; };
+		52F55659259D17DC00ECEED3 /* VehicleFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VehicleFactory.cpp; path = Vehicles/VehicleFactory.cpp; sourceTree = "<group>"; };
+		52F5565A259D17DD00ECEED3 /* Truck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Truck.cpp; path = Vehicles/Truck.cpp; sourceTree = "<group>"; };
+		52F5565B259D17DD00ECEED3 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vehicle.h; path = Vehicles/Vehicle.h; sourceTree = "<group>"; };
+		52F5565C259D17DD00ECEED3 /* Vehicle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vehicle.cpp; path = Vehicles/Vehicle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +149,12 @@
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				52F5565A259D17DD00ECEED3 /* Truck.cpp */,
+				52F55656259D17DC00ECEED3 /* Truck.h */,
+				52F5565C259D17DD00ECEED3 /* Vehicle.cpp */,
+				52F5565B259D17DD00ECEED3 /* Vehicle.h */,
+				52F55659259D17DC00ECEED3 /* VehicleFactory.cpp */,
+				52F55657259D17DC00ECEED3 /* VehicleFactory.h */,
 				52A1CEA7259A18950014C907 /* Tools */,
 				523F9D2E2575D4BE00279564 /* Main.cpp */,
 				52D0C27B259BF2BA000871D0 /* Cameras */,
@@ -323,8 +338,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F5565F259D17DD00ECEED3 /* Vehicle.cpp in Sources */,
 				5230E79B2565EB3500F84CF2 /* MapView.cpp in Sources */,
 				52D56740256F034F0017A7C6 /* CreatorSubject.cpp in Sources */,
+				52F5565E259D17DD00ECEED3 /* Truck.cpp in Sources */,
 				52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */,
 				52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */,
 				52D0C272259B9808000871D0 /* CamerasSubject.cpp in Sources */,
@@ -334,6 +351,7 @@
 				5230E7992565EB3500F84CF2 /* ToolsView.cpp in Sources */,
 				52D0C277259B9C4A000871D0 /* SimulationHandler.cpp in Sources */,
 				5230E79A2565EB3500F84CF2 /* Grid.cpp in Sources */,
+				52F5565D259D17DD00ECEED3 /* VehicleFactory.cpp in Sources */,
 				52804F6625537553002A59AD /* Car.cpp in Sources */,
 				52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */,
 				5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */,

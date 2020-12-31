@@ -258,7 +258,15 @@ namespace ZPR {
 		}
 		return false;
 	}
-
+    bool MapView::isClicked(sf::Vector2i& mousePosition)
+     {
+         if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT)){
+             clicked = true;
+             return true;
+         }
+         else
+             return false;
+     }
 	/*Zmiania koordynaty wiarsz-kolumna z siatki na koordynaty w pixelach*/
 	sf::Vector2f MapView::TransformRowColToPixels(sf::Vector2i rowcol)
 	{
@@ -278,14 +286,14 @@ namespace ZPR {
 
     void MapView::zoomViewAt(sf::Vector2i pixel, float zoom)
     {
-    const sf::Vector2f beforeCoord{_data->window.mapPixelToCoords(pixel) };
-    //sf::View view{ window.getView() };
-    _mapView.zoom(zoom);
-    //_data->window.setView(_mapView);
-    const sf::Vector2f afterCoord{ _data->window.mapPixelToCoords(pixel) };
-    const sf::Vector2f offsetCoords{ beforeCoord - afterCoord };
-    _mapView.move(offsetCoords);
-    //_data->window.setView(_mapView);
+        //const sf::Vector2f beforeCoord{_data->window.mapPixelToCoords(pixel) };
+        //sf::View view{ window.getView() };
+        _mapView.zoom(zoom);
+        //_data->window.setView(_mapView);
+        //const sf::Vector2f afterCoord{ _data->window.mapPixelToCoords(pixel) };
+       // const sf::Vector2f offsetCoords{ beforeCoord - afterCoord };
+        //_mapView.move(offsetCoords);
+        //_data->window.setView(_mapView);
     }
     
 
