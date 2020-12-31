@@ -5,7 +5,7 @@ namespace ZPR {
 	MapView::MapView(SimulatorDataRef data, int gridSize): _data(data), _gridSize(gridSize){
 		init();
 	}
-
+	/*Inicjuje wyszystkie elementy potrzebne do poprawnego dzia³ania mapy*/
 	void MapView::init() {
         this->clicked = false;
 		LoadAssets();
@@ -37,17 +37,16 @@ namespace ZPR {
 		else
 			return false;
 	}
-
+	/*Zwraca rozmiar siatki mapy*/
 	int MapView::getGridSize()
 	{
 		return this->_gridSize;
 	}
-
+	/*Zwraca rozmiar pojedyñczej komórki w pikselach */
 	int MapView::getCellSize()
 	{
 		return this->_cellSize;
 	}
-
 	/*Wczytuje wszystkie potrzebne assety*/
 	void MapView::LoadAssets()
 	{
@@ -99,14 +98,13 @@ namespace ZPR {
 			this->_gridLines.push_back(horizontalLine);
 		}
 	}
-
+	/*Oblicza iloœæ pixeli o jak¹ musimy przesun¹æ siatkê aby by³a ona wyœrodkowana*/
 	int MapView::CalculatePrefix() {
 		double cellSizeWithPoint = (double)SCREEN_HEIGHT / _gridSize;
 		double theRest = cellSizeWithPoint - this->_cellSize;
 		int drawPrefix = theRest * _gridSize / 2;
 		return drawPrefix;
 	}
-
 	/*Zajmuje siê wype³nianiem komórek w odpowiedni sposób (dodawanie do niej drogi lub usuwanie drogi)*/
 	void MapView::FillCells()
 	{
@@ -126,7 +124,6 @@ namespace ZPR {
 			
 		}
 	}
-
 	/*Dodaje drogê*/
 	void MapView::AddRoad(sf::Vector2i position)
 	{
@@ -143,7 +140,7 @@ namespace ZPR {
         this->_roads.push_back(road);
 		CheckRoadsTexture();
 	}
-	/*Sprawdza czy drogi maja ustawione odpowiednia textury tak aby rysowana droga wyg¹da³a na ci¹g³¹ i spujn¹*/
+	/*Sprawdza czy drogi maja ustawione odpowiednia textury tak aby rysowana droga wyg¹da³a na ci¹g³a i spujna*/
 	void MapView::CheckRoadsTexture() {
 		for (sf::RectangleShape& road : this->_roads) {
 			std::shared_ptr<sf::RectangleShape> north = nullptr;
@@ -186,7 +183,6 @@ namespace ZPR {
 			}
 		}
 	}
-
 	/*Ustawia drodze odpowiedni¹ teksturê w przypadku w którym droga ma tylko jedn¹ s¹siaduj¹c¹ drogê*/
 	void MapView::ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
@@ -289,11 +285,7 @@ namespace ZPR {
         //_mapView.move(offsetCoords);
         //_data->window.setView(_mapView);
     }
-    
-
-
 	/*Odœwierza wartosæ koordynatów obecnie klikniêtego pola*/
-
 	void MapView::UpdateSelectedCell(sf::Vector2i coords)
 	{
 		int a = this->_cells.size();
@@ -305,38 +297,39 @@ namespace ZPR {
 	{
 		this->_cells = cells;
 	}
-	/*Odœwierza wartosc zminnej decyduj¹cej o tym czy jestesmy w trybie rysowania drogi*/
+	/*Uaktualnia wartosc zminnej decyduj¹cej o tym czy jestesmy w trybie rysowania drogi*/
 	void MapView::UpdateIsDrawingRoad(bool isDrawingRoad)
 	{
 		this->isDrawingRoad = isDrawingRoad;
         this->isDeletingRoad = false;
         this->isSimulating = false;
 	}
-
+	/*Uaktualnia wartoœc zmiennej decydojacej o tym czy jesteœmy w trybie usuwania drogi*/
     void MapView::UpdateIsDeletingRoad(bool isDeletingRoad)
     {
         this->isDeletingRoad = isDeletingRoad;
         this->isDrawingRoad = false;
         this->isSimulating = false;
     }
+	/*Uaktualnia wartoœc zmiennej decydojacej o tym czy jesteœmy w trybie symulacji*/
     void MapView::UpdateIsSimulating(bool isSimulating){
         this->isSimulating = isSimulating;
         this->isDrawingRoad = false;
         this->isDeletingRoad = false;
     }
-
+	/*Uaktualnia listê samochodów znajduj¹cych siê na ulicach*/
 	void MapView::UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)
 	{
 		this->_vehicles = vehicles;
 	}
-
+	/*Zajmuje siê wstepn¹ obs³ug¹ zdarzenia klikniêcia na mapê*/
 	sf::Vector2i MapView::HandleInput(sf::Vector2f mousePosition)
 	{
 		int possibleSellectedRow= (int)(mousePosition.x / this->_cellSize);
 		int possibleSellectedCol = (int)(mousePosition.y / this->_cellSize);
 		return sf::Vector2i(possibleSellectedRow, possibleSellectedCol);
 	}
-
+	/*Zwraca obiekt typu View reprezentujacy mapê*/
 	sf::View MapView::GetView()
 	{
 		return this->_mapView;

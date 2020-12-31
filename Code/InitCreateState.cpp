@@ -7,7 +7,7 @@
 
 namespace ZPR {
 	InitCreateState::InitCreateState(SimulatorDataRef data) : _data(data){}
-
+	/*Metoda inicjuj¹ca wszystkie elementy potrzebne do poprawnego dzia³ania obiektu*/
 	void InitCreateState::Init() {
 		this->_data->assets.LoadTexture("Background", MENU_BACKGROUND_FILEPATH);
 		this->_data->assets.LoadTexture("Button", BUTTON_FILEPATH);
@@ -30,7 +30,7 @@ namespace ZPR {
 		this->_background.setTexture(this->_data->assets.GetTexture("Background"));
         this->_background.scale(2.35, 2);
 	}
-
+	/*Obs³uga zdarzeñ w oknie*/
 	void InitCreateState::HandleInput() {
 		sf::Event event;
 		while (this->_data->window.pollEvent(event)) 
@@ -56,14 +56,14 @@ namespace ZPR {
 			}
         }          
 	}
-
+	/*Zrwaca wielkoœæ siatki w zaleznoœci od wybranego przycisku*/
 	int InitCreateState::GetGridSizeFromButton(Button button)
 	{
 		std::string buttonText = button.getText();
 		std::string textTochange = buttonText.substr(0, 2);
 		return ChangeTextToInt(buttonText);
 	}
-
+	/*Zwraca wartoœæ tekstu z przycisku zmienion¹ na wartoœæ liczbow¹*/
 	int InitCreateState::ChangeTextToInt(std::string textToChange) 
 	{
 		return std::stoi(textToChange, nullptr);
@@ -72,7 +72,7 @@ namespace ZPR {
 	void InitCreateState::Update(float dt) {
 
 	}
-
+	/*Rysuje elementy okna*/
 	void InitCreateState::Draw(float dt) {
 		this->_data->window.clear(sf::Color::Black);
 		this->_data->window.draw(this->_background);

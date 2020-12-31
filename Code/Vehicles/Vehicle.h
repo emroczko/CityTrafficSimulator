@@ -11,7 +11,6 @@ namespace ZPR {
 		void updatePosition();
 		int _x, _y, _speed;
 		sf::RectangleShape _shape;
-		
 	};
 }
 

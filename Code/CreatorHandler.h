@@ -19,7 +19,7 @@ namespace ZPR {
 		void HandleInput(sf::Vector2i possibleSelectedCell);
 	private:
 		std::unique_ptr<Grid> _grid;
-		std::vector<std::unique_ptr<Vehicle>> _vehicles;
+		std::vector<std::shared_ptr<Vehicle>> _vehicles;
 		int _row, _col;
 		int _gridSize;
 		bool isDrawingRoad;

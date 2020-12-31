@@ -7,6 +7,7 @@
 
 namespace ZPR {
     CreatorState::CreatorState(SimulatorDataRef data, int gridSize) : _data(data), _gridSize(gridSize) { }
+    /*Metoda inicjuj¹ca wszystkie elementy potrzebne do poprawnego dzia³ania obiektu*/
     void CreatorState::Init(){
 		this->_mapView = std::make_shared<MapView>(this->_data, _gridSize);
 		this->_toolsView = std::make_unique<ToolsView>(this->_data);
@@ -22,7 +23,7 @@ namespace ZPR {
         this->_toolsView->add(this->_creatorHandler);
         this->_camerasView->add(this->_simulationHandler);
     }
-
+    /*Obs³uga zdarzeñ w oknie*/
     void CreatorState::HandleInput() {
         sf::Event event;
         while (this->_data->window.pollEvent(event))
@@ -57,22 +58,15 @@ namespace ZPR {
                 {
                     this->_mapView->zoomViewAt({ event.mouseWheelScroll.x, event.mouseWheelScroll.y }, (1.3f));
                     
-            }
-            }
-            /*if (event.type == sf::Event::MouseButtonReleased ) {
-                if (event.mouseButton.button == sf::Mouse::Left)
-                    {
-                        this->_mapView->isReleased(mousePosition);
                 }
-            }*/
+            }
         }
     }
-    
-
+   
     void CreatorState::Update(float dt){
 
     }
-
+    /*Rysuje elementy okna*/
     void CreatorState::Draw(float dt){
         this->_data->window.clear();
         

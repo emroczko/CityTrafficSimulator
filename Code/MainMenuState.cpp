@@ -65,9 +65,9 @@ namespace ZPR{
     }
     void MainMenuState::Update(float dt){}
 
-/**
- Metoda odpowiadająca za rysowanie obiektów na ekranie
- */
+    /**
+    Metoda odpowiadająca za rysowanie obiektów na ekranie
+    */
     void MainMenuState::Draw(float dt){
         this->_data->window.clear();
         this->_data->window.draw(this -> _background);
