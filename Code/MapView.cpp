@@ -22,16 +22,18 @@ namespace ZPR {
 		GenerateGridLines();
         _buffer = sf::Vector2i(0,0);
 	}
-
+	/*Zwraca wartoœci kolumny i wiersza obecnie zaznaczonej komórki*/
 	sf::Vector2i MapView::getRowCol()
 	{
 		return sf::Vector2i(this->_row, this->_col);
 	}
-
-	bool MapView::isClicked(sf::Vector2i mousePosition) {
-
-		if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT))
+	/*Sprawdza czy klikniete miejsce w oknie programu jest wewn¹trz segmentu mapy*/
+	bool MapView::isClicked(sf::Vector2i mousePosition)
+	{
+		if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT)) {
+			clicked = true;
 			return true;
+		}
 		else
 			return false;
 	}
@@ -258,15 +260,7 @@ namespace ZPR {
 		}
 		return false;
 	}
-    bool MapView::isClicked(sf::Vector2i& mousePosition)
-     {
-         if (_mapView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT)){
-             clicked = true;
-             return true;
-         }
-         else
-             return false;
-     }
+   
 	/*Zmiania koordynaty wiarsz-kolumna z siatki na koordynaty w pixelach*/
 	sf::Vector2f MapView::TransformRowColToPixels(sf::Vector2i rowcol)
 	{
@@ -330,6 +324,11 @@ namespace ZPR {
         this->isDrawingRoad = false;
         this->isDeletingRoad = false;
     }
+
+	void MapView::UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)
+	{
+		this->_vehicles = vehicles;
+	}
 
 	sf::Vector2i MapView::HandleInput(sf::Vector2f mousePosition)
 	{

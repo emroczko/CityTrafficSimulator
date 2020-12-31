@@ -38,4 +38,10 @@ namespace ZPR {
             obs->UpdateIsSimulating(isSimulating);
         }
     }
+	void CreatorSubject::NotifyVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)
+	{
+		for (std::shared_ptr<CreatorObserver> obs : this->_observers) {
+			obs->UpdateVehicles(vehicles);
+		}
+	}
 }
