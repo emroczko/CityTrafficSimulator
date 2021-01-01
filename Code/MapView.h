@@ -19,6 +19,7 @@ namespace ZPR {
 		void UpdateIsDrawingRoad(bool isDrawingRoad);
         void UpdateIsDeletingRoad(bool isDeletingRoad);
         void UpdateIsSimulating(bool isSimulating);
+		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
 		void Draw();
 		sf::Vector2i HandleInput(sf::Vector2f mousePosition);
 		sf::View GetView();
@@ -72,9 +73,11 @@ namespace ZPR {
         std::vector<sf::RectangleShape> _enterGridLines;
 		sf::Sprite _backgroundTexture;
 		sf::View _mapView;
-		std::vector<sf::RectangleShape> _roads, _tempRoad, _blueRoads;
+		std::vector<sf::RectangleShape> _roads;
 		std::vector<Cell> _cells;
         std::vector<Cell> _enterCells;
+		std::vector<std::shared_ptr<Vehicle>> _vehicles;
+
 	};
 }
 

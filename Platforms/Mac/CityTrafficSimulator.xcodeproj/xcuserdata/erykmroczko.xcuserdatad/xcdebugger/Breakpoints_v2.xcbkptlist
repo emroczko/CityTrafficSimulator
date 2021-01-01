@@ -432,7 +432,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "204"
             endingLineNumber = "204"
-            landmarkName = "MapView::CheckRoadsTexture()"
+            landmarkName = "MapView::AddEnterRoad(position)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

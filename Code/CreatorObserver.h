@@ -1,5 +1,6 @@
 #pragma once
 #include "Cell.h"
+#include "Vehicles/Vehicle.h"
 namespace ZPR {
 	class CreatorObserver
 	{
@@ -9,6 +10,7 @@ namespace ZPR {
 		virtual void UpdateIsDrawingRoad(bool isDrawingRoad) = 0;
         virtual void UpdateIsDeletingRoad(bool isDeletingRoad) = 0;
         virtual void UpdateIsSimulating(bool isSimulating) = 0;
+		virtual void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) = 0;
 		virtual ~CreatorObserver() {}
 	};
 }
