@@ -50,7 +50,7 @@ namespace ZPR {
                 if (event.mouseWheelScroll.delta > 0)
                     {
                         
-                        this->_mapView->zoomViewAt({ event.mouseWheelScroll.x, event.mouseWheelScroll.y },  (1.f / 1.3f));
+                        this->_mapView->zoomViewAt({ event.mouseWheelScroll.x, event.mouseWheelScroll.y },  (-1.3f));
                         
                 }
                 if (event.mouseWheelScroll.delta < 0)

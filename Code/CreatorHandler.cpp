@@ -1,7 +1,7 @@
 #include "CreatorHandler.h"
 
 namespace ZPR {
-	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), isDrawingRoad(false), isDeletingRoad(false) {}
+	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), isDrawingRoad(false), isDeletingRoad(false), _enterGridHeight(2) {}
 
 	void CreatorHandler::init()
 	{
@@ -20,6 +20,7 @@ namespace ZPR {
 		}
         this->_grid = std::make_unique<Grid>(cells, _gridSize);
 	}
+    
 
 	/*Ustawia tryb rysowania drogi na w³¹czony lub wy³¹czony*/
 	void CreatorHandler::UpdateIsDrawingRoad()

@@ -15,6 +15,7 @@ namespace ZPR {
 		MapView(SimulatorDataRef data, int gridSize);
 		void UpdateSelectedCell(sf::Vector2i coords);
 		void UpdateCells(std::vector<Cell> cells);
+        
 		void UpdateIsDrawingRoad(bool isDrawingRoad);
         void UpdateIsDeletingRoad(bool isDeletingRoad);
         void UpdateIsSimulating(bool isSimulating);
@@ -29,15 +30,22 @@ namespace ZPR {
         void zoomViewAt(sf::Vector2i pixel, float zoom);
 
 	private:
+        std::unique_ptr<Grid> _enterGrid;
+        int _maximumZoom;
         bool clicked;
 		void LoadAssets();
 		sf::FloatRect CalculateViewPort();
 		void DrawGrid();
+        void DrawEnterGrid();
 		void DrawRoads();
 		void GenerateGridLines();
+        void GenerateEnterGridLines();
+        void GenerateEnterBoard();
 		int CalculatePrefix();
 		void FillCells();
+        void FillEnterCells();
 		void AddRoad(sf::Vector2i position);
+        void AddEnterRoad(sf::Vector2i position);
 		void CheckRoadsTexture();
 		void ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
 			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
@@ -53,16 +61,20 @@ namespace ZPR {
 		int _gridSize;
 		int _cellSize;
 		int _row, _col;
+        int _enterGridHeight;
+        int _enterGridWidth;
 		bool isDrawingRoad;
         bool isDeletingRoad;
         bool isSimulating;
         sf::Vector2i _buffer;
 		sf::RectangleShape _selectedCellRect;
 		std::vector<sf::RectangleShape> _gridLines;
+        std::vector<sf::RectangleShape> _enterGridLines;
 		sf::Sprite _backgroundTexture;
 		sf::View _mapView;
 		std::vector<sf::RectangleShape> _roads, _tempRoad, _blueRoads;
 		std::vector<Cell> _cells;
+        std::vector<Cell> _enterCells;
 	};
 }
 

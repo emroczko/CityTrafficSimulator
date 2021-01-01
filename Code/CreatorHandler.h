@@ -18,9 +18,10 @@ namespace ZPR {
         void UpdateIsSimulating(bool isSimulating);
 		void HandleInput(sf::Vector2i possibleSelectedCell);
 	private:
-		std::unique_ptr<Grid> _grid;
+        std::unique_ptr<Grid> _grid;
 		int _row, _col;
 		int _gridSize;
+        int _enterGridHeight;
 		bool isDrawingRoad;
         bool isDeletingRoad;
         bool isSimulating;
