@@ -25,6 +25,7 @@ namespace ZPR {
         GenerateEnterGridLines();
         GenerateEnterBoard();
         this->_mapView.zoom(1.4f);
+        FillEnterCells();
         
 	}
 	/*Zwraca wartoœci kolumny i wiersza obecnie zaznaczonej komórki*/
@@ -82,7 +83,7 @@ namespace ZPR {
         std::vector<Cell> enterCells;
         for (int i = 0; i < this->_enterGridHeight * this->_gridSize; i++)
         {
-            enterCells.push_back(Cell( i % _gridSize, i / _gridSize));
+            enterCells.push_back(Cell( i % _gridSize, (-i / _gridSize)-1));
         }
         this->_enterGrid = std::make_unique<Grid>(enterCells, _gridSize, _enterGridHeight);
         this->_enterCells = _enterGrid->_cells;
@@ -165,7 +166,7 @@ namespace ZPR {
     {
         for (Cell& cell : this->_enterCells) {
             int col = cell.GetPosition().x;
-            int row = cell.GetPosition().y-2;
+            int row = cell.GetPosition().y;
             if(row == -2)
                 AddEnterRoad(sf::Vector2i(col, row));
             else if(row == -1 && col == 4)
@@ -333,7 +334,7 @@ namespace ZPR {
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
 		FillCells();
-        FillEnterCells();
+        
 		DrawRoads();
 		DrawGrid();
         //DrawEnterGrid();
