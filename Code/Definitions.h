@@ -29,4 +29,6 @@
 
 #define TURN_TEXTURE "Resources/turn.png"
 
-# define CROSSING_TEXTURE "Resources/crossing.png"
+#define CROSSING_TEXTURE "Resources/crossing.png"
+
+#define ENTRY_TEXTURE "Resources/entry.png"

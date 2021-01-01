@@ -45,7 +45,9 @@ namespace ZPR {
 		int CalculatePrefix();
 		void FillCells();
         void FillEnterCells();
-		void AddRoad(sf::Vector2i position);
+        void AddRoad(std::string fileName, sf::Vector2i position);
+		void AddUserRoad(sf::Vector2i position);
+        void AddGarage(sf::Vector2i position);
         void AddEnterRoad(sf::Vector2i position);
 		void CheckRoadsTexture();
 		void ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
