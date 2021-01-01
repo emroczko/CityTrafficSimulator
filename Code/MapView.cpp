@@ -27,6 +27,7 @@ namespace ZPR {
         this->_mapView.zoom(1.4f);
         FillEnterCells();
         
+        
 	}
 	/*Zwraca wartoœci kolumny i wiersza obecnie zaznaczonej komórki*/
 	sf::Vector2i MapView::getRowCol()
@@ -84,7 +85,7 @@ namespace ZPR {
         std::vector<Cell> enterCells;
         for (int i = 0; i < this->_enterGridHeight * this->_gridSize; i++)
         {
-            enterCells.push_back(Cell( i % _gridSize, (-i / _gridSize)-1));
+            enterCells.push_back(Cell(((i / _gridSize)-2), i % _gridSize));
         }
         this->_enterGrid = std::make_unique<Grid>(enterCells, _gridSize, _enterGridHeight);
         this->_enterCells = _enterGrid->_cells;
@@ -108,6 +109,11 @@ namespace ZPR {
 			this->_data->window.draw(road);
 		}
 	}
+    void MapView::DrawEntryRoads(){
+        for (sf::RectangleShape road : this->_entryRoad) {
+            this->_data->window.draw(road);
+        }
+    }
 	/*Tworzy linie reprezentuj¹ce siatkê na mapie*/
 	void MapView::GenerateGridLines() {
 		int drawPrefix = CalculatePrefix();
@@ -166,15 +172,16 @@ namespace ZPR {
     void MapView::FillEnterCells()
     {
         for (Cell& cell : this->_enterCells) {
-            int col = cell.GetPosition().x;
-            int row = cell.GetPosition().y;
-            if(row == -2)
+            int row = cell.GetPosition().x;
+            int col = cell.GetPosition().y;
+            if(row == -2 && col != 0 && col != _gridSize-1)
                 AddEnterRoad(sf::Vector2i(col, row));
             else if(row == -1 && col == 4)
                 AddEnterRoad(sf::Vector2i(col, row));
     }
         AddGarage(sf::Vector2i(0, -2));
         AddGarage(sf::Vector2i(15, -2));
+        
 }
 
     void MapView::AddRoad(std::string fileName, sf::Vector2i position){
@@ -186,7 +193,9 @@ namespace ZPR {
         centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2 ;
         centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2 ;
         road.setPosition(centeredPositionInPixels);
-        std::cout <<road.getPosition().x << "   " <<road.getPosition().y<< std::endl;;
+        std::cout <<road.getPosition().x << "   " <<road.getPosition().y<< std::endl;
+        std::cout <<TransformPixelsToRowCol(road.getPosition().x)<< "   " <<TransformPixelsToRowCol(road.getPosition().y)<< std::endl;
+        
         this->_roads.push_back(road);
     }
 	/*Dodaje drogê*/
@@ -202,6 +211,18 @@ namespace ZPR {
     }
     void MapView::AddGarage(sf::Vector2i position){
         AddRoad("Entry", position);
+        
+        
+    }
+    int MapView::TransformPixelsToRowCol(double pixels){
+        int result;
+        
+        if(pixels < 0){
+            result = floor(pixels / this->_cellSize);
+        }else{
+            result = pixels / this->_cellSize;
+        }
+        return result;
     }
 	/*Sprawdza czy drogi maja ustawione odpowiednia textury tak aby rysowana droga wyg¹da³a na ci¹g³¹ i spujn¹*/
 	void MapView::CheckRoadsTexture() {
@@ -211,11 +232,11 @@ namespace ZPR {
 			std::shared_ptr<sf::RectangleShape> east = nullptr;
 			std::shared_ptr<sf::RectangleShape> west = nullptr;
 			std::vector<std::shared_ptr<sf::RectangleShape>> neighbouringRoadsPtr;
-			int row = road.getPosition().y / this->_cellSize;
-			int col = road.getPosition().x / this->_cellSize;
+            int row = TransformPixelsToRowCol(road.getPosition().y);
+            int col = TransformPixelsToRowCol(road.getPosition().x);
 			for (sf::RectangleShape& neighbouringRoad : this->_roads) {
-				int neighbouring_row = neighbouringRoad.getPosition().y / this->_cellSize;
-				int neighbouring_col = neighbouringRoad.getPosition().x / this->_cellSize;
+                int neighbouring_row = TransformPixelsToRowCol(neighbouringRoad.getPosition().y);
+                int neighbouring_col = TransformPixelsToRowCol(neighbouringRoad.getPosition().x);
 				if (row == neighbouring_row) {
 					if (col + 1 == neighbouring_col) {
 						east = std::make_shared<sf::RectangleShape>(neighbouringRoad);
@@ -238,8 +259,8 @@ namespace ZPR {
 				}
 			}
 			switch (neighbouringRoadsPtr.size()) {
-			case 0: road.setTexture(&this->_data->assets.GetTexture("Road")); break;
-			case 1: ChoseRoadWithOneNeighbour(road, north, south, east, west); break;
+            case 0: road.setTexture(&this->_data->assets.GetTexture("Road")); break;
+			case 1: ChoseRoadWithOneNeighbour(road, north, south, east, west, row, col); break;
 			case 2: ChoseRoadWithTwoNeighbours(road, north, south, east, west); break;
 			case 3: ChoseRoadWithThreeNeighbours(road, north, south, east, west); break;
 			case 4: road.setTexture(&this->_data->assets.GetTexture("Intersection")); break;
@@ -248,9 +269,11 @@ namespace ZPR {
 	}
 
 	/*Ustawia drodze odpowiedni¹ teksturê w przypadku w którym droga ma tylko jedn¹ s¹siaduj¹c¹ drogê*/
-	void MapView::ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
+	void MapView::ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west, int row, int col)
 	{
-		road.setTexture(&this->_data->assets.GetTexture("Road"));
+        if (row != -2 && (col != 0 || col != _gridSize-1))
+            road.setTexture(&this->_data->assets.GetTexture("Road"));
+        
 		road.setRotation(0);
 		if (north) {
 			road.setRotation(90.f);
@@ -258,6 +281,7 @@ namespace ZPR {
 		else if (south) {
 			road.setRotation(90.f);
 		}
+        
 	}
 	/*Ustawia drodze odpowiedni¹ teksturê w przypadku w którym droga ma dwie s¹siaduj¹ce drogi*/
 	void MapView::ChoseRoadWithTwoNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)

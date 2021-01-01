@@ -39,6 +39,7 @@ namespace ZPR {
 		void DrawGrid();
         void DrawEnterGrid();
 		void DrawRoads();
+        void DrawEntryRoads();
 		void GenerateGridLines();
         void GenerateEnterGridLines();
         void GenerateEnterBoard();
@@ -51,7 +52,7 @@ namespace ZPR {
         void AddEnterRoad(sf::Vector2i position);
 		void CheckRoadsTexture();
 		void ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
-			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
+			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west, int row, int col);
 		void ChoseRoadWithTwoNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
 			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
 		void ChoseRoadWithThreeNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
@@ -59,6 +60,7 @@ namespace ZPR {
         void DeleteRoad(sf::Vector2f position);
 		bool CheckRoadExists(sf::Vector2f position);
 		sf::Vector2f TransformRowColToPixels(sf::Vector2i rowcol);
+        int TransformPixelsToRowCol(double pixels);
 		void setupSelectedCellRect();
 		SimulatorDataRef _data;
 		int _gridSize;
@@ -75,7 +77,7 @@ namespace ZPR {
         std::vector<sf::RectangleShape> _enterGridLines;
 		sf::Sprite _backgroundTexture;
 		sf::View _mapView;
-		std::vector<sf::RectangleShape> _roads;
+        std::vector<sf::RectangleShape> _roads, _entryRoad;
 		std::vector<Cell> _cells;
         std::vector<Cell> _enterCells;
 		std::vector<std::shared_ptr<Vehicle>> _vehicles;
