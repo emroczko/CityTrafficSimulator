@@ -369,13 +369,21 @@ namespace ZPR {
         //const sf::Vector2f beforeCoord{_data->window.mapPixelToCoords(pixel) };
         //sf::View view{ window.getView() };
         
+        
+        
         if (zoom < 0){
-            this->_mapView.zoom(1.f/zoom);
+            
+            this->_mapView.zoom(1.f/abs(zoom));
              
         }
         else{
+            
             this->_mapView.zoom(zoom);
         }
+        
+
+        
+        //_data->window.setView(_data->window.getDefaultView());
         _data->window.setView(_mapView);
         //const sf::Vector2f afterCoord{ _data->window.mapPixelToCoords(pixel) };
        // const sf::Vector2f offsetCoords{ beforeCoord - afterCoord };
