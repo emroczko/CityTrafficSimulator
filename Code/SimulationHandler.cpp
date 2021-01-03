@@ -50,9 +50,12 @@ namespace ZPR {
     }
     void SimulationHandler::SimulateCars()
     {
+        float newTime, frameTime, interpolation;
+        float currentTime = this-> _clock.getElapsedTime().asSeconds();
+        float accumulator = 0.0f;
         int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize/2;
         int y_start = CalculatePrefix() + _cellSize * STARTING_CELL_ROW + ROAD_IMAGE_SIZE / 2;
-        while (this->isSimulating) {
+        
             std::random_device rng;
             std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
             std::uniform_int_distribution<> dist(1, 100);
@@ -65,8 +68,24 @@ namespace ZPR {
             else {
                 this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start));
             }
-            this->NotifyVehicles(this->_vehicles);
-            this->MoveVehicles();
+        this->NotifyVehicles(this->_vehicles);
+        while (this->isSimulating) {
+            newTime = this-> _clock.getElapsedTime().asSeconds();
+            frameTime = newTime - currentTime;
+        
+            if (frameTime > 0.25f){
+                frameTime = 0.25f;
+            }
+            currentTime = newTime;
+            accumulator += frameTime;
+        
+            while (accumulator >= dt)
+            {
+                this->MoveVehicles();
+                accumulator -= dt;
+            }
+            
+            
         }
     }
     void SimulationHandler::MoveVehicles()
