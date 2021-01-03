@@ -206,6 +206,14 @@ namespace ZPR {
         
         
     }
+
+    /*Dodaje drogê*/
+    void MapView::AddUserRoad(sf::Vector2i position)
+    {
+        if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+        AddRoad("Road", position);
+        CheckRoadsTexture();
+    }
     int MapView::TransformPixelsToRowCol(double pixels){
         int result;
         
