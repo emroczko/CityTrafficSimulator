@@ -180,7 +180,7 @@ namespace ZPR {
                 AddEnterRoad(sf::Vector2i(col, row));
     }
         AddGarage(sf::Vector2i(0, -2));
-        AddGarage(sf::Vector2i(15, -2));
+        AddGarage(sf::Vector2i(_gridSize-1, -2));
         
 }
 
@@ -364,12 +364,8 @@ namespace ZPR {
         //DrawEnterGrid();
 	}
 
-    void MapView::zoomViewAt(sf::Vector2i pixel, float zoom)
+    void MapView::zoomViewAt(sf::Vector2f pixel, float zoom)
     {
-        //const sf::Vector2f beforeCoord{_data->window.mapPixelToCoords(pixel) };
-        //sf::View view{ window.getView() };
-        
-        
         
         if (zoom < 0){
             
@@ -380,17 +376,23 @@ namespace ZPR {
             
             this->_mapView.zoom(zoom);
         }
-        
 
-        
-        //_data->window.setView(_data->window.getDefaultView());
-        _data->window.setView(_mapView);
-        //const sf::Vector2f afterCoord{ _data->window.mapPixelToCoords(pixel) };
-       // const sf::Vector2f offsetCoords{ beforeCoord - afterCoord };
-        //_mapView.move(offsetCoords);
-        //_data->window.setView(_mapView);
     }
     
+    void MapView::Move(keysEnum key){
+        
+        switch (key){
+        case LEFT: this->_mapView.move(-90.f, 0);
+            break;
+        case RIGHT: this->_mapView.move(90.f, 0);
+            break;
+        case UP: this->_mapView.move(0, -90.f);
+            break;
+        case DOWN: this->_mapView.move(0, 90.f);
+            break;
+            
+        }
+    }
 
 
 	/*Odœwierza wartosæ koordynatów obecnie klikniêtego pola*/

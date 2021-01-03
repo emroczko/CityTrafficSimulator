@@ -7,6 +7,7 @@
 #include <vector>
 #include "CreatorObserver.h"
 #include "SimulationObserver.h"
+#include "KeysEnum.h"
 
 namespace ZPR {
 	class MapView : public CreatorObserver, public SimulationObserver
@@ -26,9 +27,10 @@ namespace ZPR {
 		void init();
 		sf::Vector2i getRowCol();
 		bool isClicked(sf::Vector2i mousePosition);
+        void Move(keysEnum key);
 		int getGridSize();
 		int getCellSize();
-        void zoomViewAt(sf::Vector2i pixel, float zoom);
+        void zoomViewAt(sf::Vector2f pixel, float zoom);
 
 	private:
         std::unique_ptr<Grid> _enterGrid;

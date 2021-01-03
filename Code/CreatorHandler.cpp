@@ -52,13 +52,19 @@ namespace ZPR {
 		if (isDrawingRoad) {
             this->_grid->GetCell(_row, _col)._toDelete = false;
 			this->_grid->GetCell(_row, _col)._containsRoad = true;
+            this->NotifyCells(_grid->_cells);
+            this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
 		}
         if (isDeletingRoad) {
             this->_grid->GetCell(_row, _col)._containsRoad = false;
             this->_grid->GetCell(_row, _col)._toDelete = true;
+            this->NotifyCells(_grid->_cells);
+            this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
         }
-		this->NotifyCells(_grid->_cells);
-		this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
+        else {
+            //this->
+        }
+		
 	}
 
 }

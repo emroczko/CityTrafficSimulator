@@ -37,6 +37,7 @@ namespace ZPR {
                 if(this->_mapView->isClicked(mousePosition)){
                     sf::Vector2f mousePositionRelativeToToolsView = this->_data->window.mapPixelToCoords(mousePosition, this->_mapView->GetView());
                     this->_creatorHandler->HandleInput(this->_mapView->HandleInput(mousePositionRelativeToToolsView));
+                    
                 }
                 
                 else if (this->_toolsView->isClicked(mousePosition)) {
@@ -50,21 +51,39 @@ namespace ZPR {
                 if (event.mouseWheelScroll.delta > 0)
                     {
                         
-                        this->_mapView->zoomViewAt({ event.mouseWheelScroll.x, event.mouseWheelScroll.y },  (-1.3f));
+                        this->_mapView->zoomViewAt({ static_cast<float>(event.mouseWheelScroll.x), static_cast<float>(event.mouseWheelScroll.y) },  (-1.3f));
                         
                 }
                 if (event.mouseWheelScroll.delta < 0)
                 {
-                    this->_mapView->zoomViewAt({ event.mouseWheelScroll.x, event.mouseWheelScroll.y }, (1.3f));
+                    this->_mapView->zoomViewAt({ static_cast<float>(event.mouseWheelScroll.x), static_cast<float>(event.mouseWheelScroll.y) }, (1.3f));
                     
-            }
-            }
-            /*if (event.type == sf::Event::MouseButtonReleased ) {
-                if (event.mouseButton.button == sf::Mouse::Left)
-                    {
-                        this->_mapView->isReleased(mousePosition);
                 }
-            }*/
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
+                this->_mapView->Move(keysEnum::LEFT);
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
+                this->_mapView->Move(keysEnum::RIGHT);
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
+                this->_mapView->Move(keysEnum::UP);
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
+                this->_mapView->Move(keysEnum::DOWN);
+            }
+//            if (event.type == sf::Event::MouseButtonReleased ) {
+//                if (event.mouseButton.button == sf::Mouse::Left)
+//                    {
+//
+//                        sf::Vector2i releasedPosition =  sf::Mouse::getPosition(this->_data->window);
+//                        std::cout<<"x1:"<<mousePosition.x<<std::endl;
+//                        std::cout<<"x2:"<<releasedPosition.x<<std::endl;
+//                        std::cout<<"y1:"<<mousePosition.y<<std::endl;
+//                        std::cout<<"y2:"<<releasedPosition.y<<std::endl;
+//                        //this->_mapView->Move(mousePosition, releasedPosition);
+//                }
+//            }
         }
     }
     
