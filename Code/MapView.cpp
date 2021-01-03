@@ -94,6 +94,10 @@ namespace ZPR {
             for (sf::RectangleShape line : _gridLines) {
                 this->_data->window.draw(line);
             }
+        }else{
+            for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+                vehicle->move();
+            }
         }
 	}
     void MapView::DrawEnterGrid() {
@@ -114,10 +118,12 @@ namespace ZPR {
     }
 	void MapView::DrawVehicles()
 	{
+        
 		for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
 			this->_data->window.draw(*vehicle);
 		}
 	}
+    
 	/*Tworzy linie reprezentuj¹ce siatkê na mapie*/
 	void MapView::GenerateGridLines() {
 		int drawPrefix = CalculatePrefix();
@@ -393,7 +399,6 @@ namespace ZPR {
 	/*Odœwierza wartosæ koordynatów obecnie klikniêtego pola*/
 	void MapView::UpdateSelectedCell(sf::Vector2i coords)
 	{
-		int a = this->_cells.size();
 		this->_row = coords.x;
 		this->_col = coords.y;
 	}

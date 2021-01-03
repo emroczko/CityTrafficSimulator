@@ -5,7 +5,7 @@
 #include <mutex>
 
 namespace ZPR {
-    SimulationHandler::SimulationHandler(int gridSize) : isSimulating(false), isRunning(false), _gridSize(gridSize) { init(); }
+    SimulationHandler::SimulationHandler(int gridSize) : isSimulating(false), _gridSize(gridSize) { init(); }
 
     void SimulationHandler::init()
     {
@@ -20,10 +20,10 @@ namespace ZPR {
     void SimulationHandler::UpdateIsSimulating()
     {
         this->isSimulating = !this->isSimulating;
-        if (isSimulating == false) {
-            isRunning = false;
+        if (isSimulating){
+        SimulateCars();
         }
-        this->Run();
+        this->NotifyIsSimulating(this->isSimulating);
     }
     void SimulationHandler::UpdateCells(std::vector<Cell> cells)
     {
@@ -40,15 +40,7 @@ namespace ZPR {
         int drawPrefix = theRest * _gridSize / 2;
         return drawPrefix;
     }
-    void SimulationHandler::Run()
-    {
-        if (this->isSimulating && !this->isRunning) {
-            this->isRunning = true;
-            //std::thread simulation(&SimulationHandler::SimulateCars, this);
-            sf::Thread thread(&SimulationHandler::SimulateCars, this);
-            thread.launch();
-        }
-    }
+   
     void SimulationHandler::SimulateCars()
     {
         int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize/2;
@@ -61,7 +53,7 @@ namespace ZPR {
             
             if (num > 0 && num < 20) {
                 if (num > 15) {
-                    this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start));
+                this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start));
                 }
             }
             else {

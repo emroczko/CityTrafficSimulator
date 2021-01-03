@@ -21,12 +21,10 @@ namespace ZPR {
         
         void HandleInput();
     private:
-        const float dt = 1.0f / 30.0f;
-        sf::Clock _clock;
         int CalculatePrefix();
         void SimulateCars();
         void MoveVehicles();
-        bool isSimulating, isRunning;
+        bool isSimulating;
         int _gridSize, _cellSize;
         int _roadSize, _sidewalkSize, _roadStripesSize;
         std::vector<Cell> _cells;

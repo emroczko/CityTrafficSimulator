@@ -10,6 +10,7 @@ namespace ZPR {
     public:
         void add(std::shared_ptr<SimulationObserver> obs);
         void NotifyVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
+        void NotifyIsSimulating(bool isSimulating);
         virtual ~SimulationSubject() {}
     private:
         std::vector<std::shared_ptr<SimulationObserver> > _observers;
