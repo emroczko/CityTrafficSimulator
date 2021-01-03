@@ -7,7 +7,6 @@ namespace ZPR {
 		this->_direction = "South";
 		this->_shape.setFillColor(sf::Color(0, 0, 255));
 		this->_shape.setSize(sf::Vector2f(15, 20));
-		this->_shape.setOrigin(sf::Vector2f(_x / 2, _y / 2));
 		this->_shape.setPosition(sf::Vector2f(x, y));
 		
 	}
