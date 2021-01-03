@@ -94,6 +94,10 @@ namespace ZPR {
             for (sf::RectangleShape line : _gridLines) {
                 this->_data->window.draw(line);
             }
+        }else{
+            for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+                vehicle->move();
+            }
         }
 	}
     void MapView::DrawEnterGrid() {

@@ -19,8 +19,9 @@ namespace ZPR {
     void SimulationHandler::UpdateIsSimulating()
     {
         this->isSimulating = !this->isSimulating;
-        //if (isSimulating)
-          //  SimulateCars();
+        if (isSimulating){
+        SimulateCars();
+        }
         this->NotifyIsSimulating(this->isSimulating);
     }
     void SimulationHandler::UpdateCells(std::vector<Cell> cells)
@@ -60,7 +61,7 @@ namespace ZPR {
         
         
             this->NotifyVehicles(this->_vehicles);
-            this->MoveVehicles();
+            //this->MoveVehicles();
             
         
     }
