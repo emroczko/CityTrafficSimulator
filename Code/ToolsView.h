@@ -14,7 +14,7 @@ namespace ZPR {
         sf::View GetView();
         void HandleInput();
         void UpdateIsSimulating(bool isSimulating);
-        
+		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
         
 	private:
 		sf::FloatRect CalculateViewPort();

@@ -8,7 +8,6 @@ namespace ZPR {
 	{
 	public:
 		Truck(int x, int y);
-		void move();
 		sf::RectangleShape getShape();
 	};
 

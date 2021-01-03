@@ -3,11 +3,12 @@
 #include "Grid.h"
 #include "ToolsObserver.h"
 #include "SimulationObserver.h"
+#include "CamerasObserver.h"
 #include <memory>
 #include "Vehicles/Vehicle.h"
 
 namespace ZPR {
-	class CreatorHandler : public CreatorSubject, public ToolsObserver, public SimulationObserver
+	class CreatorHandler : public CreatorSubject, public ToolsObserver, public CamerasObserver
 	{
 	public:
 		CreatorHandler(int gridSize);
@@ -15,11 +16,11 @@ namespace ZPR {
 		void GenerateBoard();
 		void UpdateIsDrawingRoad();
         void UpdateIsDeletingRoad();
-        void UpdateIsSimulating(bool isSimulating);
+        void UpdateIsSimulating();
 		void HandleInput(sf::Vector2i possibleSelectedCell);
+		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
 	private:
 		std::unique_ptr<Grid> _grid;
-		std::vector<std::shared_ptr<Vehicle>> _vehicles;
 		int _row, _col;
 		int _gridSize;
         int _enterGridHeight;

@@ -13,7 +13,6 @@ namespace ZPR {
 		void NotifyIsDrawingRoad(bool isDrawingRoad);
         void NotifyIsDeletingRoad(bool isDeletingRoad);
         void NotifyIsSimulating(bool isSimulating);
-		void NotifyVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
 		virtual ~CreatorSubject() {}
 	private:
 		std::vector<std::shared_ptr<CreatorObserver> > _observers;

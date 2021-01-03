@@ -7,7 +7,6 @@ namespace ZPR {
 	{
 	public:
 		Car(int x, int y);
-		void move();
 		sf::RectangleShape getShape();
 	};
 }

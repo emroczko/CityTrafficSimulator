@@ -22,7 +22,6 @@ namespace ZPR {
 		this->_mapView = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
 		this->_mapView.setViewport(CalculateViewPort());
 		GenerateGridLines();
-        //GenerateEnterGridLines();
         GenerateEnterBoard();
         this->_mapView.zoom(1.4f);
         FillEnterCells();
@@ -144,7 +143,6 @@ namespace ZPR {
             this->_enterGridLines.push_back(horizontalLine);
         }
     }
-
 	int MapView::CalculatePrefix() {
 		double cellSizeWithPoint = (double)SCREEN_HEIGHT / _gridSize;
 		double theRest = cellSizeWithPoint - this->_cellSize;
@@ -165,7 +163,6 @@ namespace ZPR {
                 DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
 				cell._toDelete = false;
             }
-			
 		}
 	}
     void MapView::FillEnterCells()
@@ -192,9 +189,6 @@ namespace ZPR {
         centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2 ;
         centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2 ;
         road.setPosition(centeredPositionInPixels);
-        std::cout <<road.getPosition().x << "   " <<road.getPosition().y<< std::endl;
-        std::cout <<TransformPixelsToRowCol(road.getPosition().x)<< "   " <<TransformPixelsToRowCol(road.getPosition().y)<< std::endl;
-        
         this->_roads.push_back(road);
     }
     void MapView::AddEnterRoad(sf::Vector2i position){
@@ -203,9 +197,14 @@ namespace ZPR {
     }
     void MapView::AddGarage(sf::Vector2i position){
         AddRoad("Entry", position);
-        
-        
     }
+	/*Dodaje drogê*/
+	void MapView::AddUserRoad(sf::Vector2i position)
+	{
+		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+		AddRoad("Road", position);
+		CheckRoadsTexture();
+	}
     int MapView::TransformPixelsToRowCol(double pixels){
         int result;
         

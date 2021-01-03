@@ -6,10 +6,11 @@ namespace ZPR {
     {
         this->_observers.push_back(obs);
     }
-    void SimulationSubject::NotifyIsSimulating(bool isSimulating)
+    void SimulationSubject::NotifyVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)
     {
         for (std::shared_ptr<SimulationObserver> obs : this->_observers) {
-            obs->UpdateIsSimulating(isSimulating);
+            obs->UpdateVehicles(vehicles);
         }
     }
+    
 }

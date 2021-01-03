@@ -35,18 +35,4 @@ namespace ZPR {
             obs->UpdateIsDeletingRoad(isDeletingRoad);
         }
     }
-	/*Powiadamia obserwatorów o zmianie stanu symulacji (w³¹czona/wy³¹czona)*/
-    void CreatorSubject::NotifyIsSimulating(bool isSimulating)
-    {
-        for (std::shared_ptr<CreatorObserver> obs : this->_observers) {
-            obs->UpdateIsSimulating(isSimulating);
-        }
-    }
-	/*Powiadamia obserwatorów o zmianie stanu kontenera zawieraj¹cego pojazdy*/
-	void CreatorSubject::NotifyVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)
-	{
-		for (std::shared_ptr<CreatorObserver> obs : this->_observers) {
-			obs->UpdateVehicles(vehicles);
-		}
-	}
 }

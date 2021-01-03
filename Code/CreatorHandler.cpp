@@ -18,6 +18,7 @@ namespace ZPR {
 		{
 			cells.push_back(Cell(i / _gridSize, i % _gridSize));
 		}
+		cells.at(4).isStartingCell = true;
         this->_grid = std::make_unique<Grid>(cells, _gridSize);
 	}
 	/*Ustawia tryb rysowania drogi na w³¹czony lub wy³¹czony*/
@@ -35,7 +36,7 @@ namespace ZPR {
         this->NotifyIsDeletingRoad(this->isDeletingRoad);
     }
 	/*Ustawia tryb symulacji*/
-    void CreatorHandler::UpdateIsSimulating(bool isSimulating)
+    void CreatorHandler::UpdateIsSimulating()
     {
         this->isDeletingRoad = false;
         this->isDrawingRoad = false;
@@ -60,7 +61,7 @@ namespace ZPR {
             this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
         }
         else {
-            //this->
+           
         }
 		
 	}
