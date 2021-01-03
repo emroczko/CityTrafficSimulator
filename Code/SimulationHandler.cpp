@@ -43,8 +43,9 @@ namespace ZPR {
     {
         if (this->isSimulating && !this->isRunning) {
             this->isRunning = true;
-            sf::Thread simulation(&SimulationHandler::SimulateCars, this);
-            simulation.launch();
+            //std::thread simulation(&SimulationHandler::SimulateCars, this);
+            sf::Thread thread(&SimulationHandler::SimulateCars, this);
+            thread.launch();
         }
     }
     void SimulationHandler::SimulateCars()

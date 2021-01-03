@@ -4,6 +4,7 @@
 #include "CreatorObserver.h"
 #include "Vehicles/VehicleFactory.h"
 #include <memory>
+#include <thread>
 #include "Cell.h"
 
 namespace ZPR {
