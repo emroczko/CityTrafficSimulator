@@ -198,13 +198,14 @@ namespace ZPR {
     void MapView::AddGarage(sf::Vector2i position){
         AddRoad("Entry", position);
     }
-	/*Dodaje drogê*/
-	void MapView::AddUserRoad(sf::Vector2i position)
-	{
-		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-		AddRoad("Road", position);
-		CheckRoadsTexture();
-	}
+
+    /*Dodaje drogê*/
+    void MapView::AddUserRoad(sf::Vector2i position)
+    {
+        if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+        AddRoad("Road", position);
+        CheckRoadsTexture();
+    }
     int MapView::TransformPixelsToRowCol(double pixels){
         int result;
         
