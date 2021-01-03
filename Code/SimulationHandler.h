@@ -17,7 +17,6 @@ namespace ZPR {
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
         void Run();
         void HandleInput();
-        
     private:
         bool isSimulating;
         std::vector<Cell> _cells;

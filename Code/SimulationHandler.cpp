@@ -24,7 +24,9 @@ namespace ZPR {
     }
     void SimulationHandler::Run()
     {
+        if () {
 
+        }
     }
     /*Zajmuje sie obs≥ugπ zdarzeÒ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie drÛg)*/
     void SimulationHandler::HandleInput()
