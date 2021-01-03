@@ -16,11 +16,18 @@ namespace ZPR {
 		this->_cellSize = (SCREEN_HEIGHT / this->_gridSize);
 		this->_row = -1;
 		this->_col = -1;
+        this->_enterGridWidth = this->_gridSize;
+        this->_enterGridHeight = 2;
 		this->_selectedCellRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
 		this->_mapView = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
 		this->_mapView.setViewport(CalculateViewPort());
 		GenerateGridLines();
-        _buffer = sf::Vector2i(0,0);
+        //GenerateEnterGridLines();
+        GenerateEnterBoard();
+        this->_mapView.zoom(1.4f);
+        FillEnterCells();
+        
+        
 	}
 	/*Zwraca wartoœci kolumny i wiersza obecnie zaznaczonej komórki*/
 	sf::Vector2i MapView::getRowCol()
@@ -57,6 +64,7 @@ namespace ZPR {
 		this->_data->assets.LoadTexture("T_Intersection", T_INTERSECTION_TEXTURE);
 		this->_data->assets.LoadTexture("Intersection", INTERSECTION_TEXTURE);
 		this->_data->assets.LoadTexture("Crossing", CROSSING_TEXTURE);
+        this->_data->assets.LoadTexture("Entry", ENTRY_TEXTURE);
 	}
 	/*Ustawia podstawowe parametry kwadratu reprezentuj¹cego zaznaczone pole na mapie*/
 	void MapView::setupSelectedCellRect()
@@ -67,10 +75,20 @@ namespace ZPR {
 	/*Oblicza po³o¿enie obiektu typu sf::View*/
 	sf::FloatRect MapView::CalculateViewPort()
 	{
-		float rectWidth = (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH;
+        float rectWidth = (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH;
 		float rectLeft = (1.f - rectWidth)/2;
 		return sf::FloatRect(rectLeft, 0.f, rectWidth, 1.f);
 	}
+    void MapView::GenerateEnterBoard()
+    {
+        std::vector<Cell> enterCells;
+        for (int i = 0; i < this->_enterGridHeight * this->_gridSize; i++)
+        {
+            enterCells.push_back(Cell(((i / _gridSize)-2), i % _gridSize));
+        }
+        this->_enterGrid = std::make_unique<Grid>(enterCells, _gridSize, _enterGridHeight);
+        this->_enterCells = _enterGrid->_cells;
+    }
 	/*Rysuje siatke na mapie*/
 	void MapView::DrawGrid() {
         if(!isSimulating){
@@ -79,12 +97,22 @@ namespace ZPR {
             }
         }
 	}
+    void MapView::DrawEnterGrid() {
+            for (sf::RectangleShape line : _enterGridLines) {
+                this->_data->window.draw(line);
+            }
+    }
 	/*Rysuje wszystkie drogi*/
 	void MapView::DrawRoads(){
 		for (sf::RectangleShape road : this->_roads) {
 			this->_data->window.draw(road);
 		}
 	}
+    void MapView::DrawEntryRoads(){
+        for (sf::RectangleShape road : this->_entryRoad) {
+            this->_data->window.draw(road);
+        }
+    }
 	/*Tworzy linie reprezentuj¹ce siatkê na mapie*/
 	void MapView::GenerateGridLines() {
 		int drawPrefix = CalculatePrefix();
@@ -99,6 +127,24 @@ namespace ZPR {
 		}
 	}
 	/*Oblicza iloœæ pixeli o jak¹ musimy przesun¹æ siatkê aby by³a ona wyœrodkowana*/
+    void MapView::GenerateEnterGridLines() {
+        int drawPrefix = CalculatePrefix();
+        for (int i = 0; i <= _enterGridWidth; i++)
+        {
+            sf::RectangleShape verticalLine(sf::Vector2f(2, (_enterGridHeight)*this->_cellSize));
+            verticalLine.setPosition(sf::Vector2f(i * this->_cellSize + drawPrefix, drawPrefix- 2*this->_cellSize));
+            
+            this->_enterGridLines.push_back(verticalLine);
+            
+        }
+        for (int i = 1; i <= _enterGridHeight; i++){
+            
+            sf::RectangleShape horizontalLine(sf::Vector2f((_enterGridWidth)*this->_cellSize, 2));
+            horizontalLine.setPosition(sf::Vector2f(drawPrefix, -i * this->_cellSize + drawPrefix));
+            this->_enterGridLines.push_back(horizontalLine);
+        }
+    }
+
 	int MapView::CalculatePrefix() {
 		double cellSizeWithPoint = (double)SCREEN_HEIGHT / _gridSize;
 		double theRest = cellSizeWithPoint - this->_cellSize;
@@ -108,14 +154,12 @@ namespace ZPR {
 	/*Zajmuje siê wype³nianiem komórek w odpowiedni sposób (dodawanie do niej drogi lub usuwanie drogi)*/
 	void MapView::FillCells()
 	{
-		int drawPrefix = CalculatePrefix();
-
 		for (Cell& cell : this->_cells) {
 			int row = cell.GetPosition().x;
 			int col = cell.GetPosition().y;
 			if (cell._containsRoad && !cell._roadDrawn) {
 				cell._roadDrawn = true;
-				AddRoad(sf::Vector2i(row, col));
+				AddUserRoad(sf::Vector2i(row, col));
 			}
             if (cell._toDelete) {
                 DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
@@ -124,23 +168,55 @@ namespace ZPR {
 			
 		}
 	}
-	/*Dodaje drogê*/
-	void MapView::AddRoad(sf::Vector2i position)
-	{
-		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-		sf::RectangleShape road;
-		road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
-		road.setTexture(&this->_data->assets.GetTexture("Road"));
-		road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
-		sf::Vector2f centeredPositionInPixels = TransformRowColToPixels(sf::Vector2i(position.x, position.y));
-		centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2 ;
-		centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2 ;
-		road.setPosition(centeredPositionInPixels);
-		std::cout <<road.getPosition().x << "   " <<road.getPosition().y<< std::endl;;
-        this->_roads.push_back(road);
-		CheckRoadsTexture();
+    void MapView::FillEnterCells()
+    {
+        for (Cell& cell : this->_enterCells) {
+            int row = cell.GetPosition().x;
+            int col = cell.GetPosition().y;
+            if(row == -2 && col != 0 && col != _gridSize-1)
+                AddEnterRoad(sf::Vector2i(col, row));
+            else if(row == -1 && col == 4)
+                AddEnterRoad(sf::Vector2i(col, row));
+		}
+        AddGarage(sf::Vector2i(0, -2));
+        AddGarage(sf::Vector2i(_gridSize-1, -2));
+        
 	}
-	/*Sprawdza czy drogi maja ustawione odpowiednia textury tak aby rysowana droga wyg¹da³a na ci¹g³a i spujna*/
+	/*Dodaje drogê*/
+    void MapView::AddRoad(std::string fileName, sf::Vector2i position){
+        sf::RectangleShape road;
+        road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
+        road.setTexture(&this->_data->assets.GetTexture(fileName));
+        road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
+        sf::Vector2f centeredPositionInPixels = TransformRowColToPixels(sf::Vector2i(position.x, position.y));
+        centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2 ;
+        centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2 ;
+        road.setPosition(centeredPositionInPixels);
+        std::cout <<road.getPosition().x << "   " <<road.getPosition().y<< std::endl;
+        std::cout <<TransformPixelsToRowCol(road.getPosition().x)<< "   " <<TransformPixelsToRowCol(road.getPosition().y)<< std::endl;
+        
+        this->_roads.push_back(road);
+    }
+    void MapView::AddEnterRoad(sf::Vector2i position){
+        AddRoad("Road", position);
+        CheckRoadsTexture();
+    }
+    void MapView::AddGarage(sf::Vector2i position){
+        AddRoad("Entry", position);
+        
+        
+    }
+    int MapView::TransformPixelsToRowCol(double pixels){
+        int result;
+        
+        if(pixels < 0){
+            result = floor(pixels / this->_cellSize);
+        }else{
+            result = pixels / this->_cellSize;
+        }
+        return result;
+    }
+	/*Sprawdza czy drogi maja ustawione odpowiednia textury tak aby rysowana droga wyg¹da³a na ci¹g³¹ i spujn¹*/
 	void MapView::CheckRoadsTexture() {
 		for (sf::RectangleShape& road : this->_roads) {
 			std::shared_ptr<sf::RectangleShape> north = nullptr;
@@ -148,11 +224,11 @@ namespace ZPR {
 			std::shared_ptr<sf::RectangleShape> east = nullptr;
 			std::shared_ptr<sf::RectangleShape> west = nullptr;
 			std::vector<std::shared_ptr<sf::RectangleShape>> neighbouringRoadsPtr;
-			int row = road.getPosition().y / this->_cellSize;
-			int col = road.getPosition().x / this->_cellSize;
+            int row = TransformPixelsToRowCol(road.getPosition().y);
+            int col = TransformPixelsToRowCol(road.getPosition().x);
 			for (sf::RectangleShape& neighbouringRoad : this->_roads) {
-				int neighbouring_row = neighbouringRoad.getPosition().y / this->_cellSize;
-				int neighbouring_col = neighbouringRoad.getPosition().x / this->_cellSize;
+                int neighbouring_row = TransformPixelsToRowCol(neighbouringRoad.getPosition().y);
+                int neighbouring_col = TransformPixelsToRowCol(neighbouringRoad.getPosition().x);
 				if (row == neighbouring_row) {
 					if (col + 1 == neighbouring_col) {
 						east = std::make_shared<sf::RectangleShape>(neighbouringRoad);
@@ -175,8 +251,8 @@ namespace ZPR {
 				}
 			}
 			switch (neighbouringRoadsPtr.size()) {
-			case 0: road.setTexture(&this->_data->assets.GetTexture("Road")); break;
-			case 1: ChoseRoadWithOneNeighbour(road, north, south, east, west); break;
+            case 0: road.setTexture(&this->_data->assets.GetTexture("Road")); break;
+			case 1: ChoseRoadWithOneNeighbour(road, north, south, east, west, row, col); break;
 			case 2: ChoseRoadWithTwoNeighbours(road, north, south, east, west); break;
 			case 3: ChoseRoadWithThreeNeighbours(road, north, south, east, west); break;
 			case 4: road.setTexture(&this->_data->assets.GetTexture("Intersection")); break;
@@ -184,9 +260,11 @@ namespace ZPR {
 		}
 	}
 	/*Ustawia drodze odpowiedni¹ teksturê w przypadku w którym droga ma tylko jedn¹ s¹siaduj¹c¹ drogê*/
-	void MapView::ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
+	void MapView::ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west, int row, int col)
 	{
-		road.setTexture(&this->_data->assets.GetTexture("Road"));
+        if (row != -2 && (col != 0 || col != _gridSize-1))
+            road.setTexture(&this->_data->assets.GetTexture("Road"));
+        
 		road.setRotation(0);
 		if (north) {
 			road.setRotation(90.f);
@@ -194,6 +272,7 @@ namespace ZPR {
 		else if (south) {
 			road.setRotation(90.f);
 		}
+        
 	}
 	/*Ustawia drodze odpowiedni¹ teksturê w przypadku w którym droga ma dwie s¹siaduj¹ce drogi*/
 	void MapView::ChoseRoadWithTwoNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
@@ -256,7 +335,7 @@ namespace ZPR {
 		}
 		return false;
 	}
-   
+
 	/*Zmiania koordynaty wiarsz-kolumna z siatki na koordynaty w pixelach*/
 	sf::Vector2f MapView::TransformRowColToPixels(sf::Vector2i rowcol)
 	{
@@ -270,20 +349,39 @@ namespace ZPR {
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
 		FillCells();
+        
 		DrawRoads();
 		DrawGrid();
+        //DrawEnterGrid();
 	}
 
-    void MapView::zoomViewAt(sf::Vector2i pixel, float zoom)
+    void MapView::zoomViewAt(sf::Vector2f pixel, float zoom)
     {
-        //const sf::Vector2f beforeCoord{_data->window.mapPixelToCoords(pixel) };
-        //sf::View view{ window.getView() };
-        _mapView.zoom(zoom);
-        //_data->window.setView(_mapView);
-        //const sf::Vector2f afterCoord{ _data->window.mapPixelToCoords(pixel) };
-       // const sf::Vector2f offsetCoords{ beforeCoord - afterCoord };
-        //_mapView.move(offsetCoords);
-        //_data->window.setView(_mapView);
+        
+        if (zoom < 0){
+            
+            this->_mapView.zoom(1.f/abs(zoom));
+             
+        }
+        else{
+            
+            this->_mapView.zoom(zoom);
+        }
+
+    }
+    void MapView::Move(keysEnum key){
+        
+        switch (key){
+        case LEFT: this->_mapView.move(-90.f, 0);
+            break;
+        case RIGHT: this->_mapView.move(90.f, 0);
+            break;
+        case UP: this->_mapView.move(0, -90.f);
+            break;
+        case DOWN: this->_mapView.move(0, 90.f);
+            break;
+            
+        }
     }
 	/*Odœwierza wartosæ koordynatów obecnie klikniêtego pola*/
 	void MapView::UpdateSelectedCell(sf::Vector2i coords)
@@ -297,7 +395,7 @@ namespace ZPR {
 	{
 		this->_cells = cells;
 	}
-	/*Uaktualnia wartosc zminnej decyduj¹cej o tym czy jestesmy w trybie rysowania drogi*/
+	/*Odœwierza wartosc zminnej decyduj¹cej o tym czy jestesmy w trybie rysowania drogi*/
 	void MapView::UpdateIsDrawingRoad(bool isDrawingRoad)
 	{
 		this->isDrawingRoad = isDrawingRoad;

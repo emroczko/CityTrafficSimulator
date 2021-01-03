@@ -74,6 +74,7 @@
 		522531B5255234B40035E946 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
 		5225663B255EA20400C9BB3C /* CreatorState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatorState.h; sourceTree = "<group>"; };
 		5225663C255EA24500C9BB3C /* CreatorState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorState.cpp; sourceTree = "<group>"; };
+		522FCDAB25A169620006A5AB /* KeysEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeysEnum.h; sourceTree = "<group>"; };
 		5230E78E2565EB3500F84CF2 /* CamerasView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CamerasView.cpp; sourceTree = "<group>"; };
 		5230E78F2565EB3500F84CF2 /* ToolsView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToolsView.cpp; sourceTree = "<group>"; };
 		5230E7902565EB3500F84CF2 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 				5230E7912565EB3500F84CF2 /* Grid.cpp */,
 				5230E7972565EB3500F84CF2 /* Grid.h */,
 				5230E7932565EB3500F84CF2 /* MapView.cpp */,
+				522FCDAB25A169620006A5AB /* KeysEnum.h */,
 				5230E7962565EB3500F84CF2 /* MapView.h */,
 				52EDDC39255A055800CD5101 /* InitCreateState.cpp */,
 				5225663B255EA20400C9BB3C /* CreatorState.h */,

@@ -1,7 +1,7 @@
 #include "CreatorHandler.h"
 
 namespace ZPR {
-	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), isDrawingRoad(false), isDeletingRoad(false) {}
+	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), isDrawingRoad(false), isDeletingRoad(false), _enterGridHeight(2) {}
 
 	void CreatorHandler::init()
 	{
@@ -50,12 +50,18 @@ namespace ZPR {
 		if (isDrawingRoad) {
             this->_grid->GetCell(_row, _col)._toDelete = false;
 			this->_grid->GetCell(_row, _col)._containsRoad = true;
+            this->NotifyCells(_grid->_cells);
+            this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
 		}
         if (isDeletingRoad) {
             this->_grid->GetCell(_row, _col)._containsRoad = false;
             this->_grid->GetCell(_row, _col)._toDelete = true;
+            this->NotifyCells(_grid->_cells);
+            this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
         }
-		this->NotifyCells(_grid->_cells);
-		this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
+        else {
+            //this->
+        }
+		
 	}
 }

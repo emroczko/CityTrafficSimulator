@@ -22,6 +22,7 @@ namespace ZPR {
 		std::vector<std::shared_ptr<Vehicle>> _vehicles;
 		int _row, _col;
 		int _gridSize;
+        int _enterGridHeight;
 		bool isDrawingRoad;
         bool isDeletingRoad;
         bool isSimulating;

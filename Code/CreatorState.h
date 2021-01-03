@@ -13,6 +13,7 @@
 #include "CamerasView.h"
 #include "CreatorHandler.h"
 #include "SimulationHandler.h"
+#include "KeysEnum.h"
 
 
 namespace ZPR{
