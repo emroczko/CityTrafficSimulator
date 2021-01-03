@@ -38,6 +38,7 @@ namespace ZPR{
         std::unique_ptr<CamerasView> _camerasView;
         std::shared_ptr<CreatorHandler> _creatorHandler;
         std::shared_ptr<SimulationHandler> _simulationHandler;
+        std::shared_ptr<CamerasSubject> _camerasSubject;
         int _gridSize;
     };
 }

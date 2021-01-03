@@ -12,5 +12,11 @@ namespace ZPR {
             obs->UpdateVehicles(vehicles);
         }
     }
+    void SimulationSubject::NotifyIsSimulating(bool isSimulating)
+     {
+         for (std::shared_ptr<SimulationObserver> obs : this->_observers) {
+             obs->UpdateIsSimulating(isSimulating);
+         }
+     }
     
 }

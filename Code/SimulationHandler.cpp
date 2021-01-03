@@ -4,7 +4,7 @@
 #include "Definitions.h"
 
 namespace ZPR {
-    SimulationHandler::SimulationHandler(int gridSize) : isSimulating(false), isRunning(false), _gridSize(gridSize) { init(); }
+    SimulationHandler::SimulationHandler(int gridSize) : isSimulating(false), _gridSize(gridSize) { init(); }
 
     void SimulationHandler::init()
     {
@@ -19,10 +19,9 @@ namespace ZPR {
     void SimulationHandler::UpdateIsSimulating()
     {
         this->isSimulating = !this->isSimulating;
-        if (isSimulating == false) {
-            isRunning = false;
-        }
-        this->Run();
+        //if (isSimulating)
+          //  SimulateCars();
+        this->NotifyIsSimulating(this->isSimulating);
     }
     void SimulationHandler::UpdateCells(std::vector<Cell> cells)
     {
@@ -39,20 +38,10 @@ namespace ZPR {
         int drawPrefix = theRest * _gridSize / 2;
         return drawPrefix;
     }
-    void SimulationHandler::Run()
-    {
-        if (this->isSimulating && !this->isRunning) {
-            this->isRunning = true;
-            //std::thread simulation(&SimulationHandler::SimulateCars, this);
-            sf::Thread thread(&SimulationHandler::SimulateCars, this);
-            thread.launch();
-        }
-    }
+   
     void SimulationHandler::SimulateCars()
     {
-        float newTime, frameTime, interpolation;
-        float currentTime = this-> _clock.getElapsedTime().asSeconds();
-        float accumulator = 0.0f;
+        
         int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize/2;
         int y_start = CalculatePrefix() + _cellSize * STARTING_CELL_ROW + ROAD_IMAGE_SIZE / 2;
         
@@ -62,31 +51,18 @@ namespace ZPR {
             int num = dist(eng);
             if (num > 0 && num < 20) {
                 if (num > 15) {
-                    this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start));
+                this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start));
                 }
             }
             else {
                 this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start));
             }
-        this->NotifyVehicles(this->_vehicles);
-        while (this->isSimulating) {
-            newTime = this-> _clock.getElapsedTime().asSeconds();
-            frameTime = newTime - currentTime;
         
-            if (frameTime > 0.25f){
-                frameTime = 0.25f;
-            }
-            currentTime = newTime;
-            accumulator += frameTime;
         
-            while (accumulator >= dt)
-            {
-                this->MoveVehicles();
-                accumulator -= dt;
-            }
+            this->NotifyVehicles(this->_vehicles);
+            this->MoveVehicles();
             
-            
-        }
+        
     }
     void SimulationHandler::MoveVehicles()
     {

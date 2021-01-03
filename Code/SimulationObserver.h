@@ -5,6 +5,7 @@ namespace ZPR {
     {
     public:
         virtual void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) = 0;
+        virtual void UpdateIsSimulating(bool isSimulating) = 0;
         virtual ~SimulationObserver() {}
     };
 }

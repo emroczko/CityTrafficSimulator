@@ -60,9 +60,7 @@ namespace ZPR {
             this->NotifyCells(_grid->_cells);
             this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
         }
-        else {
-           
-        }
+        
 		
 	}
 }
