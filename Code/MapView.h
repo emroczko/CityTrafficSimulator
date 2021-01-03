@@ -42,6 +42,7 @@ namespace ZPR {
         void DrawEnterGrid();
 		void DrawRoads();
         void DrawEntryRoads();
+		void DrawVehicles();
 		void GenerateGridLines();
         void GenerateEnterGridLines();
         void GenerateEnterBoard();

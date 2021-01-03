@@ -27,4 +27,8 @@ namespace ZPR {
 	{
 		this->_direction = direction;
 	}
+	void Vehicle::draw(sf::RenderTarget& target, sf::RenderStates states) const
+	{
+		target.draw(this->_shape, states);
+	}
 }
