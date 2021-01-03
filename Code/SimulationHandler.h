@@ -21,6 +21,8 @@ namespace ZPR {
         
         void HandleInput();
     private:
+        const float dt = 1.0f / 60.0f;
+        sf::Clock _clock;
         int CalculatePrefix();
         void SimulateCars();
         void MoveVehicles();
