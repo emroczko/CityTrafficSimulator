@@ -576,7 +576,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "397"
             endingLineNumber = "397"
-            landmarkName = "MapView::Move(key)"
+            landmarkName = "MapView::UpdateSelectedCell(coords)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -592,7 +592,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "404"
             endingLineNumber = "404"
-            landmarkName = "MapView::UpdateSelectedCell(coords)"
+            landmarkName = "MapView::UpdateCells(cells)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -608,7 +608,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "402"
             endingLineNumber = "402"
-            landmarkName = "MapView::UpdateSelectedCell(coords)"
+            landmarkName = "MapView::UpdateCells(cells)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -624,7 +624,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "401"
             endingLineNumber = "401"
-            landmarkName = "MapView::UpdateSelectedCell(coords)"
+            landmarkName = "MapView::UpdateCells(cells)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -640,8 +640,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "399"
             endingLineNumber = "399"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "MapView::UpdateSelectedCell(coords)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -720,7 +720,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "403"
             endingLineNumber = "403"
-            landmarkName = "MapView::UpdateSelectedCell(coords)"
+            landmarkName = "MapView::UpdateCells(cells)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -736,7 +736,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
             endingLineNumber = "46"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -752,7 +752,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -768,7 +768,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -784,7 +784,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -800,7 +800,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -816,7 +816,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -832,7 +832,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
             endingLineNumber = "55"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -848,7 +848,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
             endingLineNumber = "59"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -864,7 +864,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
             endingLineNumber = "60"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -880,7 +880,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
             endingLineNumber = "71"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::MoveVehicles()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -912,7 +912,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::MoveVehicles()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -928,7 +928,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::SimulateCars()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -960,8 +960,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "425"
             endingLineNumber = "425"
-            landmarkName = "MapView::UpdateIsSimulating(isSimulating)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1008,7 +1008,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "426"
             endingLineNumber = "426"
-            landmarkName = "MapView::UpdateIsSimulating(isSimulating)"
+            landmarkName = "MapView::UpdateVehicles(vehicles)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1024,7 +1024,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "427"
             endingLineNumber = "427"
-            landmarkName = "MapView::UpdateIsSimulating(isSimulating)"
+            landmarkName = "MapView::UpdateVehicles(vehicles)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1040,7 +1040,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "428"
             endingLineNumber = "428"
-            landmarkName = "MapView::UpdateIsSimulating(isSimulating)"
+            landmarkName = "MapView::UpdateVehicles(vehicles)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1104,8 +1104,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

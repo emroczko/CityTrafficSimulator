@@ -45,7 +45,7 @@ namespace ZPR {
     {
         int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize/4;
         int y_start = CalculatePrefix() + _cellSize * STARTING_CELL_ROW + ROAD_IMAGE_SIZE / 2;
-        while (this->isSimulating) {
+        
             std::random_device rng;
             std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
             std::uniform_int_distribution<> dist(1, 100);
@@ -61,7 +61,7 @@ namespace ZPR {
             }
             this->NotifyVehicles(this->_vehicles);
             this->MoveVehicles();
-        }
+        
     }
     void SimulationHandler::MoveVehicles()
     {
