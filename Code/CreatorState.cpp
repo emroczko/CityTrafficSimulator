@@ -19,6 +19,7 @@ namespace ZPR {
         this->_simulationHandler->add(this->_mapView);
         this->_simulationHandler->add(this->_toolsView);
         this->_simulationHandler->init();
+        this->_creatorHandler->add(this->_simulationHandler);
         this->_toolsView->add(this->_creatorHandler);
         this->_camerasView->add(this->_simulationHandler);
     }

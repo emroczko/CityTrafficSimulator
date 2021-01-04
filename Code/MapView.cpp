@@ -1,5 +1,6 @@
 #include "MapView.h"
 #include <iostream>
+#include <random>
 
 namespace ZPR {
 	MapView::MapView(SimulatorDataRef data, int gridSize): _data(data), _gridSize(gridSize){
@@ -25,8 +26,12 @@ namespace ZPR {
         GenerateEnterBoard();
         this->_mapView.zoom(1.4f);
         FillEnterCells();
-        
-        
+
+		//////////////////////////////////
+		this->_sidewalkSize = round(SIDEWALK_SIZE * _cellSize / ROAD_IMAGE_SIZE);
+		this->_roadSize = round(ROAD_SIZE * _cellSize / ROAD_IMAGE_SIZE);
+		this->_roadStripesSize = round(ROAD_STRIPES_SIZE * _cellSize / ROAD_IMAGE_SIZE);
+		/////////////////////////////////
 	}
 	/*Zwraca wartoœci kolumny i wiersza obecnie zaznaczonej komórki*/
 	sf::Vector2i MapView::getRowCol()
@@ -95,9 +100,16 @@ namespace ZPR {
                 this->_data->window.draw(line);
             }
         }else{
+            /// <summary>
+            /// ///////////////////////////////////
+            /// </summary>
+			addVehicle();
             for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+				vehicle->CheckOnWhichCell(CalculatePrefix());
+				vehicle->CheckTurn();
                 vehicle->move();
             }
+			///////////////////////////////////
         }
 	}
     void MapView::DrawEnterGrid() {
@@ -191,6 +203,29 @@ namespace ZPR {
         AddGarage(sf::Vector2i(_gridSize-1, -2));
         
 	}
+
+	/// <summary>
+	/// ///////////////
+	/// </summary>
+	void MapView::addVehicle()
+	{
+		int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize / 4;
+		int y_start = CalculatePrefix() + _cellSize * STARTING_CELL_ROW + ROAD_IMAGE_SIZE / 2;
+		std::random_device rng;
+		std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
+		std::uniform_int_distribution<> dist(1, 100);
+		int num = dist(eng);
+		if (num > 0 && num < 20) {
+			if (num > 15) {
+				this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start, this->_cellSize, this->_roads));
+			}
+		}
+		else {
+			this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start, this->_cellSize, this->_roads));
+		}
+	}
+	////////////////////
+
 	/*Dodaje drogê*/
     void MapView::AddRoad(std::string fileName, sf::Vector2i position){
         sf::RectangleShape road;

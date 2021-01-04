@@ -7,6 +7,7 @@
 #include <vector>
 #include "CreatorObserver.h"
 #include "SimulationObserver.h"
+#include "SimulationHandler.h"
 #include "KeysEnum.h"
 
 namespace ZPR {
@@ -49,6 +50,11 @@ namespace ZPR {
 		int CalculatePrefix();
 		void FillCells();
         void FillEnterCells();
+		//
+		void addVehicle();
+		int _sidewalkSize, _roadSize, _roadStripesSize;
+
+		//
         void AddRoad(std::string fileName, sf::Vector2i position);
 		void AddUserRoad(sf::Vector2i position);
         void AddGarage(sf::Vector2i position);

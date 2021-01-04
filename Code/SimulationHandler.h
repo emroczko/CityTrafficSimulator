@@ -4,7 +4,7 @@
 #include "CreatorObserver.h"
 #include "Vehicles/VehicleFactory.h"
 #include <memory>
-#include <thread>
+#include <chrono>
 #include "Cell.h"
 
 namespace ZPR {
@@ -17,12 +17,12 @@ namespace ZPR {
         void UpdateCells(std::vector<Cell> cells);
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
-        void Run();
-        
+        void SimulateCars();
         void HandleInput();
     private:
+        void SeparateRoadsFromCells();
         int CalculatePrefix();
-        void SimulateCars();
+    
         void MoveVehicles();
         bool isSimulating;
         int _gridSize, _cellSize;
