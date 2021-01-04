@@ -54,7 +54,7 @@ namespace ZPR {
                 
                 
                 
-                if (button.getText() == "Create new street") {
+                if (button.getText() == "Create new street" && !isSimulating) {
                     if (this->_buttons.at(1).isPressed) {
                         this->_buttons.at(1).setBackground(this->_data->assets.GetTexture("Button"));
                     }
@@ -62,7 +62,7 @@ namespace ZPR {
                     this->NotifyIsDrawingRoad();
                 }
 
-                if (button.getText() == "Delete streets") {
+                if (button.getText() == "Delete streets" && !isSimulating) {
                     if (this->_buttons.at(0).isPressed) {
                         this->_buttons.at(0).setBackground(this->_data->assets.GetTexture("Button"));
                     }
