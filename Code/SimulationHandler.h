@@ -18,6 +18,7 @@ namespace ZPR {
         void UpdateCells(std::vector<Cell> cells);
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
+        void SeparateRoadsFromCells();
         void HandleInput();
     private:
         Timer timer;

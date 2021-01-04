@@ -734,9 +734,9 @@
             filePath = "../../Code/SimulationHandler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "SimulationHandler::SimulateCars()"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -750,9 +750,9 @@
             filePath = "../../Code/SimulationHandler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "SimulationHandler::SimulateCars()"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -766,9 +766,9 @@
             filePath = "../../Code/SimulationHandler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "SimulationHandler::SimulateCars()"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -782,8 +782,8 @@
             filePath = "../../Code/SimulationHandler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "SimulationHandler::MoveVehicles()"
             landmarkType = "7">
          </BreakpointContent>
@@ -800,7 +800,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7"
             endingLineNumber = "7"
-            landmarkName = "Vehicle::move()"
+            landmarkName = "Vehicle::getShape()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -814,9 +814,9 @@
             filePath = "../../Code/SimulationHandler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "SimulationHandler::MoveVehicles()"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -830,8 +830,8 @@
             filePath = "../../Code/SimulationHandler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
             <Locations>
@@ -1040,8 +1040,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1102,8 +1102,8 @@
             filePath = "../../Code/SimulationHandler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "SimulationHandler::UpdateIsSimulating()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1143,22 +1143,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "771127A8-D4E3-413F-98C4-BD86791F382F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Code/SimulationHandler.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "SimulationHandler::AddCarsToSimulate()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7D4C3CFC-9DE9-4FAE-B19D-C30EFBC3656D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -1166,8 +1150,8 @@
             filePath = "../../Code/SimulationHandler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>

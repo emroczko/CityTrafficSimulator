@@ -29,6 +29,9 @@ namespace ZPR {
            
         }
         else{
+            this->_roads.clear();
+            this->_vehicles.clear();
+            NotifyVehicles(this->_vehicles);
         }
         
     }
@@ -67,13 +70,12 @@ namespace ZPR {
             if (num > 15) {
             this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start, this->_cellSize, this->_roads));
             }
+            else {
+                this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start, this->_cellSize, this->_roads));
+            }
         }
-        else {
-            this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start, this->_cellSize, this->_roads));
-        }
-        
         this->NotifyVehicles(this->_vehicles);
-        
+        this->MoveVehicles();
         if(!isSimulating){
             timer.stopTimer();
         }
