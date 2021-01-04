@@ -43,7 +43,7 @@ namespace ZPR {
    
     void SimulationHandler::SimulateCars()
     {
-        int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize/2;
+        int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize/4;
         int y_start = CalculatePrefix() + _cellSize * STARTING_CELL_ROW + ROAD_IMAGE_SIZE / 2;
         while (this->isSimulating) {
             std::random_device rng;

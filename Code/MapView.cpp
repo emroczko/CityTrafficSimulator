@@ -360,24 +360,19 @@ namespace ZPR {
 	{
 		this->_data->window.setView(this->_mapView);
 		this->_data->window.draw(_backgroundTexture);
-		FillCells();
-        
+		FillCells(); 
 		DrawRoads();
 		DrawGrid();
 		DrawVehicles();
-        //DrawEnterGrid();
 	}
 
     void MapView::zoomViewAt(sf::Vector2f pixel, float zoom)
     {
-        
         if (zoom < 0){
             
             this->_mapView.zoom(1.f/abs(zoom));
-             
         }
         else{
-            
             this->_mapView.zoom(zoom);
         }
 
