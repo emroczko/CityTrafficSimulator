@@ -20,14 +20,17 @@ namespace ZPR {
     {
         this->isSimulating = !this->isSimulating;
         if (isSimulating){
+            SeparateRoadsFromCells();
             this->timer.setInterval([&]() {
                 AddCarsToSimulate();
+                this->MoveVehicles();
+                this->NotifyIsSimulating(this->isSimulating);
             }, 1000);
-            this->MoveVehicles();
+           
         }
         else{
         }
-        this->NotifyIsSimulating(this->isSimulating);
+        
     }
     void SimulationHandler::UpdateCells(std::vector<Cell> cells)
     {
@@ -62,11 +65,11 @@ namespace ZPR {
         
         if (num > 0 && num < 20) {
             if (num > 15) {
-            this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start));
+            this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start, this->_cellSize, this->_roads));
             }
         }
         else {
-            this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start));
+            this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start, this->_cellSize, this->_roads));
         }
         
         this->NotifyVehicles(this->_vehicles);

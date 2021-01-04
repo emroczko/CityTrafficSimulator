@@ -18,12 +18,12 @@ namespace ZPR {
         void UpdateCells(std::vector<Cell> cells);
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
-        void SimulateCars();
         void HandleInput();
     private:
         Timer timer;
         int CalculatePrefix();
         void AddCarsToSimulate();
+        void SeparateRoadsFromCells();
         void MoveVehicles();
         bool isSimulating;
         int _gridSize, _cellSize;

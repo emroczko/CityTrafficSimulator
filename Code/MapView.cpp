@@ -28,9 +28,11 @@ namespace ZPR {
         FillEnterCells();
 
 		//////////////////////////////////
+		/*
 		this->_sidewalkSize = round(SIDEWALK_SIZE * _cellSize / ROAD_IMAGE_SIZE);
 		this->_roadSize = round(ROAD_SIZE * _cellSize / ROAD_IMAGE_SIZE);
 		this->_roadStripesSize = round(ROAD_STRIPES_SIZE * _cellSize / ROAD_IMAGE_SIZE);
+		*/
 		/////////////////////////////////
 	}
 	/*Zwraca wartoœci kolumny i wiersza obecnie zaznaczonej komórki*/
@@ -103,12 +105,13 @@ namespace ZPR {
             /// <summary>
             /// ///////////////////////////////////
             /// </summary>
+			/*
 			addVehicle();
             for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
 				vehicle->CheckOnWhichCell(CalculatePrefix());
 				vehicle->CheckTurn();
                 vehicle->move();
-            }
+            }*/
 			///////////////////////////////////
         }
 	}
@@ -207,6 +210,7 @@ namespace ZPR {
 	/// <summary>
 	/// ///////////////
 	/// </summary>
+	/*
 	void MapView::addVehicle()
 	{
 		int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize / 4;
@@ -223,7 +227,7 @@ namespace ZPR {
 		else {
 			this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start, this->_cellSize, this->_roads));
 		}
-	}
+	}*/
 	////////////////////
 
 	/*Dodaje drogê*/
@@ -465,8 +469,8 @@ namespace ZPR {
 	/*Zajmuje siê wstepn¹ obs³ug¹ zdarzenia klikniêcia na mapê*/
 	sf::Vector2i MapView::HandleInput(sf::Vector2f mousePosition)
 	{
-		int possibleSellectedRow= (int)(mousePosition.x / this->_cellSize);
-		int possibleSellectedCol = (int)(mousePosition.y / this->_cellSize);
+		int possibleSellectedRow = (int)(mousePosition.y / this->_cellSize);
+		int possibleSellectedCol = (int)(mousePosition.x / this->_cellSize);
 		return sf::Vector2i(possibleSellectedRow, possibleSellectedCol);
 	}
 	/*Zwraca obiekt typu View reprezentujacy mapê*/

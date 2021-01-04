@@ -40,6 +40,7 @@ namespace ZPR {
     {
         this->isDeletingRoad = false;
         this->isDrawingRoad = false;
+		this->NotifyCells(_grid->_cells);
     }
 	/*Zajmuje sie obs³ug¹ zdarzeñ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie dróg)*/
 	void CreatorHandler::HandleInput(sf::Vector2i possibleSelectedCell)
