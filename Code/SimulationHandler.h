@@ -4,8 +4,9 @@
 #include "CreatorObserver.h"
 #include "Vehicles/VehicleFactory.h"
 #include <memory>
-#include <thread>
+#include "Timer.h"
 #include "Cell.h"
+
 
 namespace ZPR {
     class SimulationHandler : public SimulationSubject, public CamerasObserver, public CreatorObserver{
@@ -21,8 +22,9 @@ namespace ZPR {
         
         void HandleInput();
     private:
+        Timer timer;
         int CalculatePrefix();
-        void SimulateCars();
+        void AddCarsToSimulate();
         void MoveVehicles();
         bool isSimulating;
         int _gridSize, _cellSize;

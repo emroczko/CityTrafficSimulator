@@ -1,9 +1,10 @@
 #pragma once
 
-#include "SFML/Graphics.hpp"
+#include <SFML/Graphics.hpp>
 #include "State.h"
 #include "Simulator.h"
 #include "Button.h"
+
 
 
 namespace ZPR {
