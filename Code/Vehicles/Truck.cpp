@@ -8,7 +8,7 @@ namespace ZPR {
 		this->_cellSize = cellSize;
 		this->_direction = "South";
 		this->_shape.setFillColor(sf::Color(0, 0, 255));
-		this->_shape.setSize(sf::Vector2f(std::round(15 * cellSize/ROAD_IMAGE_SIZE), std::round(20 * cellSize / ROAD_IMAGE_SIZE)));
+        this->_shape.setSize(sf::Vector2f(round(15 * cellSize/ROAD_IMAGE_SIZE), round(20 * cellSize / ROAD_IMAGE_SIZE)));
 		this->_shape.setPosition(sf::Vector2f(x, y));
 	}
 	sf::RectangleShape Truck::getShape()

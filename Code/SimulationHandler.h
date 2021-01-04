@@ -19,6 +19,7 @@ namespace ZPR {
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
         void SimulateCars();
+        void SeparateRoadsFromCells();
         void HandleInput();
     private:
         Timer timer;
