@@ -5,6 +5,7 @@
 #include "Definitions.h"
 #include "InputManager.h"
 
+
 namespace ZPR {
     CreatorState::CreatorState(SimulatorDataRef data, int gridSize) : _data(data), _gridSize(gridSize) { }
     /*Metoda inicjuj¹ca wszystkie elementy potrzebne do poprawnego dzia³ania obiektu*/

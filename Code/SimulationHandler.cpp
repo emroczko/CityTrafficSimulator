@@ -7,6 +7,7 @@ namespace ZPR {
 
     void SimulationHandler::init()
     {
+        this->timer = Timer();
         this->_cellSize = (SCREEN_HEIGHT / this->_gridSize);
         this->_sidewalkSize = round(SIDEWALK_SIZE * _cellSize / ROAD_IMAGE_SIZE);
         this->_roadSize = round(ROAD_SIZE * _cellSize / ROAD_IMAGE_SIZE);
@@ -19,12 +20,12 @@ namespace ZPR {
     {
         this->isSimulating = !this->isSimulating;
         if (isSimulating){
-            //SeparateRoadsFromCells();
+            this->timer.setInterval([&]() {
+                AddCarsToSimulate();
+            }, 1000);
+            this->MoveVehicles();
         }
-        else {
-            this->_roads.clear();
-            this->_vehicles.clear();
-            NotifyVehicles(this->_vehicles);
+        else{
         }
         this->NotifyIsSimulating(this->isSimulating);
     }
@@ -49,25 +50,31 @@ namespace ZPR {
         return drawPrefix;
     }
    
-    void SimulationHandler::SimulateCars()
+    void SimulationHandler::AddCarsToSimulate()
     {
         int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize/4;
         int y_start = CalculatePrefix() + _cellSize * STARTING_CELL_ROW + ROAD_IMAGE_SIZE / 2;
+
         std::random_device rng;
         std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
         std::uniform_int_distribution<> dist(1, 100);
         int num = dist(eng);
-            
+        
         if (num > 0 && num < 20) {
-           if (num > 15) {
-               this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start, this->_cellSize, this->_roads));
-           }
+            if (num > 15) {
+            this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start));
+            }
         }
         else {
-            this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start, this->_cellSize, this->_roads));
+            this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start));
         }
+        
         this->NotifyVehicles(this->_vehicles);
-        this->MoveVehicles();  
+        
+        if(!isSimulating){
+            timer.stopTimer();
+        }
+
         
     }
     void SimulationHandler::MoveVehicles()
