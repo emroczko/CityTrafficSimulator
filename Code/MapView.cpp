@@ -194,17 +194,20 @@ namespace ZPR {
 	}
     void MapView::FillEnterCells()
     {
+        
         for (Cell& cell : this->_enterCells) {
             int row = cell.GetPosition().x;
             int col = cell.GetPosition().y;
-            if(row == -2 && col != 0 && col != _gridSize-1)
+            if(row == -2 && col != 0 && col != _gridSize-1){
                 AddEnterRoad(sf::Vector2i(col, row));
-            else if(row == -1 && col == 4)
+            }
+            else if(row == -1 && col == 4){
                 AddEnterRoad(sf::Vector2i(col, row));
+            }
+            
 		}
         AddGarage(sf::Vector2i(0, -2));
         AddGarage(sf::Vector2i(_gridSize-1, -2));
-        
 	}
 
 	/// <summary>
@@ -439,7 +442,7 @@ namespace ZPR {
 	/*Odswierza wszystkie komórki znajduj¹ce siê na mapie*/
 	void MapView::UpdateCells(std::vector<Cell> cells)
 	{
-		this->_cells = cells;
+        this->_cells = cells;
 	}
 	/*Odœwierza wartosc zminnej decyduj¹cej o tym czy jestesmy w trybie rysowania drogi*/
 	void MapView::UpdateIsDrawingRoad(bool isDrawingRoad)

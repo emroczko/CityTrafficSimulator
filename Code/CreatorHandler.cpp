@@ -47,8 +47,8 @@ namespace ZPR {
 	{
 		if (possibleSelectedCell.x == -1 || possibleSelectedCell.y ==-1) { return; }
 		else if (possibleSelectedCell.x > this->_gridSize-1 || possibleSelectedCell.y > this->_gridSize-1) { return; }
-		this->_row = possibleSelectedCell.x;
-		this->_col = possibleSelectedCell.y;
+		this->_row = possibleSelectedCell.y;
+		this->_col = possibleSelectedCell.x;
 		if (isDrawingRoad) {
             this->_grid->GetCell(_row, _col)._toDelete = false;
 			this->_grid->GetCell(_row, _col)._containsRoad = true;

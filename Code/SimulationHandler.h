@@ -24,13 +24,13 @@ namespace ZPR {
         Timer timer;
         int CalculatePrefix();
         void AddCarsToSimulate();
-        void SeparateRoadsFromCells();
         void MoveVehicles();
         bool isSimulating;
         int _gridSize, _cellSize;
         int _roadSize, _sidewalkSize, _roadStripesSize;
         std::vector<Cell> _cells;
         std::vector<Cell> _roads;
+        
         std::vector<std::shared_ptr<Vehicle>> _vehicles;
     };
 }
