@@ -26,12 +26,14 @@ namespace ZPR {
         void AddCarsToSimulate();
         void AddStartingRoad();
         void MoveVehicles();
+        bool StartingCellFree();
+        void DeleteVehicles();
         bool isSimulating;
         int _gridSize, _cellSize;
         int _roadSize, _sidewalkSize, _roadStripesSize;
+        sf::RectangleShape _cityExitSite;
         std::vector<Cell> _cells;
         std::vector<sf::RectangleShape> _roads;
-        
         std::vector<std::shared_ptr<Vehicle>> _vehicles;
     };
 }

@@ -12,6 +12,13 @@ namespace ZPR {
         this->_sidewalkSize = round(SIDEWALK_SIZE * _cellSize / ROAD_IMAGE_SIZE);
         this->_roadSize = round(ROAD_SIZE * _cellSize / ROAD_IMAGE_SIZE);
         this->_roadStripesSize = round(ROAD_STRIPES_SIZE * _cellSize / ROAD_IMAGE_SIZE);
+  
+        this->_cityExitSite.setSize(sf::Vector2f((SCREEN_HEIGHT / this->_gridSize) / 2, SCREEN_HEIGHT / this->_gridSize));
+        this->_cityExitSite.setOrigin(sf::Vector2f(this->_cityExitSite.getSize().x / 2, this->_cityExitSite.getSize().y / 2));
+        sf::Vector2f centeredPositionInPixels = sf::Vector2f(STARTING_CELL_COL * this->_cellSize + CalculatePrefix() + this->_cellSize / 2 , STARTING_CELL_ROW * this->_cellSize + CalculatePrefix());
+        centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 4;
+        centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
+        this->_cityExitSite.setPosition(centeredPositionInPixels);
     }
     /**
     Ustawia tryb symulacji
@@ -24,8 +31,10 @@ namespace ZPR {
             this->timer.setInterval([&]() {
                 AddCarsToSimulate();
                 this->MoveVehicles();
+                this->DeleteVehicles();
+                this->NotifyVehicles(this->_vehicles);
                 this->NotifyIsSimulating(this->isSimulating);
-            }, 250);
+            }, 50);
            
         }
         else{
@@ -84,7 +93,7 @@ namespace ZPR {
         std::uniform_int_distribution<> dist(1, 100);
         int num = dist(eng);
         
-        if (num > 0 && num < 100 && this->_vehicles.size() < 1) {
+        if (StartingCellFree() && num > 0 && num < 7) {
             if (num > 4) {
             this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start, this->_cellSize, this->_roads));
             }
@@ -92,7 +101,6 @@ namespace ZPR {
                 this->_vehicles.push_back(VehicleFactory::CreateCar(x_start, y_start, this->_cellSize, this->_roads));
             }
         }
-        this->NotifyVehicles(this->_vehicles);
         if(!isSimulating){
             timer.stopTimer();
         }
@@ -106,6 +114,26 @@ namespace ZPR {
             vehicle->CheckTurn();
             vehicle->move();
             
+        }
+    }
+    bool SimulationHandler::StartingCellFree()
+    {
+        for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+            if (this->_roads.back().getGlobalBounds().contains(vehicle->getShape().getPosition())) {
+                return false;
+            }   
+        }
+        return true;
+    }
+    void SimulationHandler::DeleteVehicles()
+    {
+        int i = 0;
+        for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+            if (this->_cityExitSite.getGlobalBounds().contains(vehicle->getShape().getPosition())) {
+                this->_vehicles.erase(_vehicles.begin() + i);
+                return;
+            }
+            i++;
         }
     }
     /*Zajmuje sie obs≥ugπ zdarzeÒ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie drÛg)*/

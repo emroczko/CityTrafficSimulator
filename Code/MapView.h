@@ -50,10 +50,6 @@ namespace ZPR {
 		int CalculatePrefix();
 		void FillCells();
         void FillEnterCells();
-		/*
-		void addVehicle();
-		int _sidewalkSize, _roadSize, _roadStripesSize;
-		*/
         void AddRoad(std::string fileName, sf::Vector2i position);
 		void AddUserRoad(sf::Vector2i position);
         void AddGarage(sf::Vector2i position);

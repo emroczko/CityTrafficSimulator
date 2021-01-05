@@ -75,7 +75,7 @@ namespace ZPR {
 								south = std::make_shared<sf::RectangleShape>(road);
 								neighbouringRoads.push_back(south);
 							}
-							else if (road.getPosition().x == this->_currentRoad->getPosition().x - this->_cellSize) {
+							else if (road.getPosition().y == this->_currentRoad->getPosition().y - this->_cellSize) {
 								north = std::make_shared<sf::RectangleShape>(road);
 								neighbouringRoads.push_back(north);
 							}
@@ -83,6 +83,7 @@ namespace ZPR {
 					}
 				}
 				switch (neighbouringRoads.size()) {
+				case 0: TurnBack(); break;
 				case 1: ChoseFromOneRoads(north, south, east, west); break;
 				case 2: ChoseFromTwoRoads(north, south, east, west); break;
 				case 3: ChoseFromThreeRoads(north, south, east, west); break;
@@ -91,7 +92,20 @@ namespace ZPR {
 			}
 		}
 	}
-
+	void Vehicle::TurnBack() {
+		if (this->_direction == "North") {
+			this->_direction = "South";
+		}
+		else if (this->_direction == "South") {
+			this->_direction = "North";
+		}
+		else if (this->_direction == "East") {
+			this->_direction = "West";
+		}
+		else if (this->_direction == "West") {
+			this->_direction = "East";
+		}
+	}
 	void Vehicle::ChoseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 
