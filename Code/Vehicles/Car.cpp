@@ -1,11 +1,11 @@
 #include "Car.h"
 #include <iostream>
 namespace ZPR {
-	Car::Car(int x, int y, int cellSize, std::vector<Cell> roads) {
+	Car::Car(int x, int y, int cellSize, std::vector<sf::RectangleShape> roads) {
 		this->_x = x;
 		this->_y = y;
 		_speed = 1;
-		this->_roads = roads;
+        this->_roads = roads;
 		this->_cellSize = cellSize;
 		this->_direction = "South";
 		this->_shape.setFillColor(sf::Color(255, 0, 0));

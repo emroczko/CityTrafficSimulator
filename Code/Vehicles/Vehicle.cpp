@@ -26,13 +26,13 @@ namespace ZPR {
 	}
 	void Vehicle::CheckOnWhichCell(int drawPrefix)
 	{
-		std::shared_ptr<Cell> tempCell = nullptr;
+		std::shared_ptr<sf::RectangleShape> tempCell = nullptr;
 		if (this->_roads.size() != 0) {
-			for (Cell road : this->_roads) {
+			for (sf::RectangleShape road : this->_roads) {
 				//if (this->_shape.getRotation() == 0) {
-				if ((this->_x > drawPrefix + road.GetPosition().y * this->_cellSize) && (this->_x < drawPrefix + (road.GetPosition().y + 1) * this->_cellSize)) {
-					if ((this->_y > drawPrefix + road.GetPosition().x * this->_cellSize) && (this->_y < drawPrefix + ((road.GetPosition().x + 1) * this->_cellSize))) {
-						tempCell = std::make_shared<Cell>(road);
+				if ((this->_x > drawPrefix + road.getPosition().y * this->_cellSize) && (this->_x < drawPrefix + (road.getPosition().y + 1) * this->_cellSize)) {
+					if ((this->_y > drawPrefix + road.getPosition().x * this->_cellSize) && (this->_y < drawPrefix + ((road.getPosition().x + 1) * this->_cellSize))) {
+						tempCell = std::make_shared<sf::RectangleShape>(road);
 						this->_previousCell = this->_currentCell;
 						this->_currentCell = tempCell;
 					}
@@ -44,32 +44,32 @@ namespace ZPR {
 	}
 	void Vehicle::CheckTurn()
 	{
-		if (this->_currentCell->GetPosition() != this->_previousCell->GetPosition())
+		if (this->_currentCell->getPosition() != this->_previousCell->getPosition())
 		{
-			std::shared_ptr<Cell> north = nullptr;
-			std::shared_ptr<Cell> south = nullptr;
-			std::shared_ptr<Cell> east = nullptr;
-			std::shared_ptr<Cell> west = nullptr;
-			std::vector<std::shared_ptr<Cell>> neighbouringRoads;
-			for (Cell road : this->_roads) {
-				if (road.GetPosition().x != this->_previousCell->GetPosition().x && road.GetPosition().y != this->_previousCell->GetPosition().y) {
-					if (road.GetPosition().y == this->_currentCell->GetPosition().y) {
-						if (road.GetPosition().x == this->_currentCell->GetPosition().x + 1) {
-							east = std::make_shared<Cell>(road);
+			std::shared_ptr<sf::RectangleShape> north = nullptr;
+			std::shared_ptr<sf::RectangleShape> south = nullptr;
+			std::shared_ptr<sf::RectangleShape> east = nullptr;
+			std::shared_ptr<sf::RectangleShape> west = nullptr;
+			std::vector<std::shared_ptr<sf::RectangleShape>> neighbouringRoads;
+			for (sf::RectangleShape road : this->_roads) {
+				if (road.getPosition().x != this->_previousCell->getPosition().x && road.getPosition().y != this->_previousCell->getPosition().y) {
+					if (road.getPosition().y == this->_currentCell->getPosition().y) {
+						if (road.getPosition().x == this->_currentCell->getPosition().x + 1) {
+							east = std::make_shared<sf::RectangleShape>(road);
 							neighbouringRoads.push_back(east);
 						}
-						else if (road.GetPosition().x == this->_currentCell->GetPosition().x - 1) {
-							west = std::make_shared<Cell>(road);
+						else if (road.getPosition().x == this->_currentCell->getPosition().x - 1) {
+							west = std::make_shared<sf::RectangleShape>(road);
 							neighbouringRoads.push_back(west);
 						}
 					}
-					else if (road.GetPosition().x == this->_currentCell->GetPosition().x) {
-						if (road.GetPosition().y == this->_currentCell->GetPosition().y + 1) {
-							south = std::make_shared<Cell>(road);
+					else if (road.getPosition().x == this->_currentCell->getPosition().x) {
+						if (road.getPosition().y == this->_currentCell->getPosition().y + 1) {
+							south = std::make_shared<sf::RectangleShape>(road);
 							neighbouringRoads.push_back(south);
 						}
-						else if (road.GetPosition().x == this->_currentCell->GetPosition().x - 1) {
-							north = std::make_shared<Cell>(road);
+						else if (road.getPosition().x == this->_currentCell->getPosition().x - 1) {
+							north = std::make_shared<sf::RectangleShape>(road);
 							neighbouringRoads.push_back(north);
 						}
 					}
@@ -84,7 +84,7 @@ namespace ZPR {
 		}
 	}
 
-	void Vehicle::ChoseFromOneRoads(std::shared_ptr<Cell> north, std::shared_ptr<Cell> south, std::shared_ptr<Cell> east, std::shared_ptr<Cell> west)
+	void Vehicle::ChoseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		if (north) {
 			this->UpdateDirection("North");
@@ -100,7 +100,7 @@ namespace ZPR {
 		}
 	}
 
-	void Vehicle::ChoseFromTwoRoads(std::shared_ptr<Cell> north, std::shared_ptr<Cell> south, std::shared_ptr<Cell> east, std::shared_ptr<Cell> west)
+	void Vehicle::ChoseFromTwoRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		std::random_device rng;
 		std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
@@ -150,7 +150,7 @@ namespace ZPR {
 		}
 	}
 
-	void Vehicle::ChoseFromThreeRoads(std::shared_ptr<Cell> north, std::shared_ptr<Cell> south, std::shared_ptr<Cell> east, std::shared_ptr<Cell> west)
+	void Vehicle::ChoseFromThreeRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		std::random_device rng;
 		std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());

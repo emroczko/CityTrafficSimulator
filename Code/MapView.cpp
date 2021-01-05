@@ -444,6 +444,10 @@ namespace ZPR {
 	{
         this->_cells = cells;
 	}
+    void MapView::UpdateRoads(std::vector<sf::RectangleShape> roads)
+    {
+        this->_roads = roads;
+    }
 	/*Odœwierza wartosc zminnej decyduj¹cej o tym czy jestesmy w trybie rysowania drogi*/
 	void MapView::UpdateIsDrawingRoad(bool isDrawingRoad)
 	{

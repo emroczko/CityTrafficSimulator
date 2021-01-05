@@ -39,14 +39,18 @@ namespace ZPR {
     {
         this->_cells = cells;
     }
+    void SimulationHandler::UpdateRoads(std::vector<sf::RectangleShape> roads)
+    {
+        this->_roads = roads;
+    }
 
     void SimulationHandler::SeparateRoadsFromCells()
     {
-        for (Cell cell : _cells) {
-            if (cell._containsRoad) {
-                _roads.push_back(cell);
-            }
-        }
+//        for (sf::RectangleShape cell : _cells) {
+//            if (cell._containsRoad) {
+//                _roads.push_back(cell);
+//            }
+//        }
     }
 
     int SimulationHandler::CalculatePrefix() {

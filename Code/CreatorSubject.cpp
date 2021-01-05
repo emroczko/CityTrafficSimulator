@@ -19,8 +19,10 @@ namespace ZPR {
 	{
 		for (std::shared_ptr<CreatorObserver> obs : this->_observers) {
 			obs->UpdateCells(cells);
+
 		}
 	}
+   
 	/*Powiadamia obserwatorów o zmianie stanu rysowania drogi (w³¹czony/wy³¹czony)*/
 	void CreatorSubject::NotifyIsDrawingRoad(bool isDrawingRoad)
 	{

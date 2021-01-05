@@ -17,7 +17,7 @@ namespace ZPR {
 		MapView(SimulatorDataRef data, int gridSize);
 		void UpdateSelectedCell(sf::Vector2i coords);
 		void UpdateCells(std::vector<Cell> cells);
-        
+        void UpdateRoads(std::vector<sf::RectangleShape> roads);
 		void UpdateIsDrawingRoad(bool isDrawingRoad);
         void UpdateIsDeletingRoad(bool isDeletingRoad);
         void UpdateIsSimulating(bool isSimulating);

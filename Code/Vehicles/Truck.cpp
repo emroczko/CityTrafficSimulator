@@ -1,6 +1,6 @@
 #include "Truck.h"
 namespace ZPR {
-	Truck::Truck(int x, int y, int cellSize, std::vector<Cell> roads) {
+	Truck::Truck(int x, int y, int cellSize, std::vector<sf::RectangleShape> roads) {
 		this->_x = x;
 		this->_y = y;
 		_speed = 1;
