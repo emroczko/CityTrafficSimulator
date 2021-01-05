@@ -25,7 +25,7 @@ namespace ZPR {
                 AddCarsToSimulate();
                 this->MoveVehicles();
                 this->NotifyIsSimulating(this->isSimulating);
-            }, 1000);
+            }, 250);
            
         }
         else{
@@ -39,18 +39,32 @@ namespace ZPR {
     {
         this->_cells = cells;
     }
-    void SimulationHandler::UpdateRoads(std::vector<sf::RectangleShape> roads)
-    {
-        this->_roads = roads;
-    }
 
     void SimulationHandler::SeparateRoadsFromCells()
     {
-//        for (sf::RectangleShape cell : _cells) {
-//            if (cell._containsRoad) {
-//                _roads.push_back(cell);
-//            }
-//        }
+        for (Cell cell : _cells) {
+            if (cell._containsRoad) {
+                sf::RectangleShape road;
+                road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
+                road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
+                sf::Vector2f centeredPositionInPixels = sf::Vector2f(cell.GetPosition().x * this->_cellSize + CalculatePrefix(), cell.GetPosition().y * this->_cellSize + CalculatePrefix());
+                centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2;
+                centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
+                road.setPosition(centeredPositionInPixels);
+                this->_roads.push_back(road);
+            }    
+        }
+        AddStartingRoad();
+    }
+    void SimulationHandler::AddStartingRoad() {
+        sf::RectangleShape road;
+        road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
+        road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
+        sf::Vector2f centeredPositionInPixels = sf::Vector2f(STARTING_CELL_COL * this->_cellSize + CalculatePrefix(), STARTING_CELL_ROW * this->_cellSize + CalculatePrefix());
+        centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2;
+        centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
+        road.setPosition(centeredPositionInPixels);
+        this->_roads.push_back(road);
     }
 
     int SimulationHandler::CalculatePrefix() {
@@ -70,8 +84,8 @@ namespace ZPR {
         std::uniform_int_distribution<> dist(1, 100);
         int num = dist(eng);
         
-        if (num > 0 && num < 20) {
-            if (num > 15) {
+        if (num > 0 && num < 100 && this->_vehicles.size() < 1) {
+            if (num > 4) {
             this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start, this->_cellSize, this->_roads));
             }
             else {
@@ -79,7 +93,6 @@ namespace ZPR {
             }
         }
         this->NotifyVehicles(this->_vehicles);
-        this->MoveVehicles();
         if(!isSimulating){
             timer.stopTimer();
         }
@@ -89,9 +102,10 @@ namespace ZPR {
     void SimulationHandler::MoveVehicles()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
-            vehicle->move();
             vehicle->CheckOnWhichCell(this->CalculatePrefix());
             vehicle->CheckTurn();
+            vehicle->move();
+            
         }
     }
     /*Zajmuje sie obs≥ugπ zdarzeÒ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie drÛg)*/

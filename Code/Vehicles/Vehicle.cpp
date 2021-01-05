@@ -8,15 +8,23 @@ namespace ZPR {
 	void Vehicle::move()
 	{
 		if (_direction == "North") {
+			this->_shape.setRotation(0);
+			this->_x = this->_currentRoad->getPosition().x + this->_roadSize / 2 + this->_roadStripesSize;
 			this->_y -= this->_speed;
 		}
 		else if (_direction == "South") {
+			this->_shape.setRotation(0);
+			this->_x = this->_currentRoad->getPosition().x - this->_roadSize / 2 - this->_roadStripesSize;
 			this->_y += this->_speed;
 		}
 		else if (_direction == "East") {
+			this->_shape.setRotation(90);
+			this->_y = this->_currentRoad->getPosition().y + this->_roadSize / 2 + this->_roadStripesSize;
 			this->_x += this->_speed;
 		}
 		else if (_direction == "West") {
+			this->_shape.setRotation(90);
+			this->_y = this->_currentRoad->getPosition().y - this->_roadSize / 2 - this->_roadStripesSize;
 			this->_x -= this->_speed;
 		}
 		UpdatePosition();
@@ -28,64 +36,65 @@ namespace ZPR {
 	{
 		std::shared_ptr<sf::RectangleShape> tempCell = nullptr;
 		if (this->_roads.size() != 0) {
-			for (sf::RectangleShape road : this->_roads) {
-				//if (this->_shape.getRotation() == 0) {
-				if ((this->_x > drawPrefix + road.getPosition().y * this->_cellSize) && (this->_x < drawPrefix + (road.getPosition().y + 1) * this->_cellSize)) {
-					if ((this->_y > drawPrefix + road.getPosition().x * this->_cellSize) && (this->_y < drawPrefix + ((road.getPosition().x + 1) * this->_cellSize))) {
+			if (!_previousRoad || this->_currentRoad->getPosition() == this->_previousRoad->getPosition()) {
+				for (sf::RectangleShape road : this->_roads) {
+					if (road.getGlobalBounds().contains(this->_shape.getPosition())) {
 						tempCell = std::make_shared<sf::RectangleShape>(road);
-						this->_previousCell = this->_currentCell;
-						this->_currentCell = tempCell;
+						this->_previousRoad = this->_currentRoad;
+						this->_currentRoad = tempCell;
 					}
 				}
-				//}
 			}
 		}
 
 	}
 	void Vehicle::CheckTurn()
 	{
-		if (this->_currentCell->getPosition() != this->_previousCell->getPosition())
-		{
-			std::shared_ptr<sf::RectangleShape> north = nullptr;
-			std::shared_ptr<sf::RectangleShape> south = nullptr;
-			std::shared_ptr<sf::RectangleShape> east = nullptr;
-			std::shared_ptr<sf::RectangleShape> west = nullptr;
-			std::vector<std::shared_ptr<sf::RectangleShape>> neighbouringRoads;
-			for (sf::RectangleShape road : this->_roads) {
-				if (road.getPosition().x != this->_previousCell->getPosition().x && road.getPosition().y != this->_previousCell->getPosition().y) {
-					if (road.getPosition().y == this->_currentCell->getPosition().y) {
-						if (road.getPosition().x == this->_currentCell->getPosition().x + 1) {
-							east = std::make_shared<sf::RectangleShape>(road);
-							neighbouringRoads.push_back(east);
+		if (_previousRoad) {
+			if (this->_currentRoad->getPosition() != this->_previousRoad->getPosition())
+			{
+				std::shared_ptr<sf::RectangleShape> north = nullptr;
+				std::shared_ptr<sf::RectangleShape> south = nullptr;
+				std::shared_ptr<sf::RectangleShape> east = nullptr;
+				std::shared_ptr<sf::RectangleShape> west = nullptr;
+				std::vector<std::shared_ptr<sf::RectangleShape>> neighbouringRoads;
+				for (sf::RectangleShape road : this->_roads) {
+					if (road.getGlobalBounds() != this->_previousRoad->getGlobalBounds()) {
+						if (road.getPosition().y == this->_currentRoad->getPosition().y) {
+							if (road.getPosition().x == this->_currentRoad->getPosition().x + this->_cellSize) {
+								east = std::make_shared<sf::RectangleShape>(road);
+								neighbouringRoads.push_back(east);
+							}
+							else if (road.getPosition().x == this->_currentRoad->getPosition().x - this->_cellSize) {
+								west = std::make_shared<sf::RectangleShape>(road);
+								neighbouringRoads.push_back(west);
+							}
 						}
-						else if (road.getPosition().x == this->_currentCell->getPosition().x - 1) {
-							west = std::make_shared<sf::RectangleShape>(road);
-							neighbouringRoads.push_back(west);
-						}
-					}
-					else if (road.getPosition().x == this->_currentCell->getPosition().x) {
-						if (road.getPosition().y == this->_currentCell->getPosition().y + 1) {
-							south = std::make_shared<sf::RectangleShape>(road);
-							neighbouringRoads.push_back(south);
-						}
-						else if (road.getPosition().x == this->_currentCell->getPosition().x - 1) {
-							north = std::make_shared<sf::RectangleShape>(road);
-							neighbouringRoads.push_back(north);
+						else if (road.getPosition().x == this->_currentRoad->getPosition().x) {
+							if (road.getPosition().y == this->_currentRoad->getPosition().y + this->_cellSize) {
+								south = std::make_shared<sf::RectangleShape>(road);
+								neighbouringRoads.push_back(south);
+							}
+							else if (road.getPosition().x == this->_currentRoad->getPosition().x - this->_cellSize) {
+								north = std::make_shared<sf::RectangleShape>(road);
+								neighbouringRoads.push_back(north);
+							}
 						}
 					}
 				}
+				switch (neighbouringRoads.size()) {
+				case 1: ChoseFromOneRoads(north, south, east, west); break;
+				case 2: ChoseFromTwoRoads(north, south, east, west); break;
+				case 3: ChoseFromThreeRoads(north, south, east, west); break;
+				}
+				this->_previousRoad = this->_currentRoad;
 			}
-			switch (neighbouringRoads.size()) {
-			case 1: ChoseFromOneRoads(north, south, east, west); break;
-			case 2: ChoseFromTwoRoads(north, south, east, west); break;
-			case 3: ChoseFromThreeRoads(north, south, east, west); break;
-			}
-			this->_previousCell = this->_currentCell;
 		}
 	}
 
 	void Vehicle::ChoseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
+
 		if (north) {
 			this->UpdateDirection("North");
 		}

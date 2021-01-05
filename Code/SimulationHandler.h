@@ -16,7 +16,6 @@ namespace ZPR {
         void UpdateIsSimulating();
         void UpdateSelectedCell(sf::Vector2i coords) {};
         void UpdateCells(std::vector<Cell> cells);
-        void UpdateRoads(std::vector<sf::RectangleShape> cells);
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
         void SeparateRoadsFromCells();
@@ -25,6 +24,7 @@ namespace ZPR {
         Timer timer;
         int CalculatePrefix();
         void AddCarsToSimulate();
+        void AddStartingRoad();
         void MoveVehicles();
         bool isSimulating;
         int _gridSize, _cellSize;
