@@ -5,6 +5,7 @@
 #include "Definitions.h"
 #include "InputManager.h"
 #include "InitCreateState.h"
+#include "LoadState.h"
 
 namespace ZPR{
 
@@ -59,6 +60,10 @@ namespace ZPR{
                     if (button.getText() == "Create new city")
                     {
                         this->_data->machine.AddState(StateRef(new InitCreateState(this->_data)), false);
+                    }
+                    if (button.getText() == "Load city from file")
+                    {
+                        this->_data->machine.AddState(StateRef(new LoadState(this->_data)), false);
                     }
                     if (button.getText() == "Exit")
                     {

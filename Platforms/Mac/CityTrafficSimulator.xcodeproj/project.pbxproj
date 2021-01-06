@@ -34,6 +34,8 @@
 		52D3BD10255442410093D5DF /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0F255442410093D5DF /* SplashState.cpp */; };
 		52D4E57825A5D8EB00102FB0 /* SaveState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E57725A5D8EB00102FB0 /* SaveState.cpp */; };
 		52D4E58525A614D700102FB0 /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 522531A9255232C10035E946 /* Resources */; };
+		52D4E58925A6163900102FB0 /* LoadState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E58825A6163900102FB0 /* LoadState.cpp */; };
+		52D4E58D25A619E400102FB0 /* FileFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E58C25A619E400102FB0 /* FileFinder.cpp */; };
 		52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */; };
 		52D56740256F034F0017A7C6 /* CreatorSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */; };
 		52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52EDDC39255A055800CD5101 /* InitCreateState.cpp */; };
@@ -120,6 +122,11 @@
 		52D3BD0F255442410093D5DF /* SplashState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplashState.cpp; sourceTree = "<group>"; };
 		52D4E57625A5D8EB00102FB0 /* SaveState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveState.h; sourceTree = "<group>"; };
 		52D4E57725A5D8EB00102FB0 /* SaveState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveState.cpp; sourceTree = "<group>"; };
+		52D4E58725A615F900102FB0 /* LoadState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadState.h; sourceTree = "<group>"; };
+		52D4E58825A6163900102FB0 /* LoadState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoadState.cpp; sourceTree = "<group>"; };
+		52D4E58B25A619C100102FB0 /* FileFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileFinder.h; sourceTree = "<group>"; };
+		52D4E58C25A619E400102FB0 /* FileFinder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileFinder.cpp; sourceTree = "<group>"; };
+		52D4E58F25A61A3E00102FB0 /* SlotsEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotsEnum.h; sourceTree = "<group>"; };
 		52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorHandler.cpp; sourceTree = "<group>"; };
 		52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorSubject.cpp; sourceTree = "<group>"; };
 		52D5673C256F034F0017A7C6 /* CreatorSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatorSubject.h; sourceTree = "<group>"; };
@@ -199,6 +206,11 @@
 				52B4FFB7256FC12200F1033B /* Road.cpp */,
 				52B4FFBA256FC13D00F1033B /* Road.h */,
 				5244338325A3796B00CD4055 /* Timer.h */,
+				52D4E58725A615F900102FB0 /* LoadState.h */,
+				52D4E58825A6163900102FB0 /* LoadState.cpp */,
+				52D4E58B25A619C100102FB0 /* FileFinder.h */,
+				52D4E58C25A619E400102FB0 /* FileFinder.cpp */,
+				52D4E58F25A61A3E00102FB0 /* SlotsEnum.h */,
 			);
 			name = Code;
 			path = ../../../Code;
@@ -374,6 +386,8 @@
 				5225663D255EA24500C9BB3C /* CreatorState.cpp in Sources */,
 				52166DD82561796400A1AE4E /* Button.cpp in Sources */,
 				5230E7982565EB3500F84CF2 /* CamerasView.cpp in Sources */,
+				52D4E58925A6163900102FB0 /* LoadState.cpp in Sources */,
+				52D4E58D25A619E400102FB0 /* FileFinder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
