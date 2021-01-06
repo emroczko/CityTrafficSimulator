@@ -430,7 +430,7 @@ namespace ZPR {
         this->isDeletingRoad = false;
     }
     void MapView::SaveToFile(){
-        this->_data->machine.AddState(StateRef(new SaveState(this->_data, *this)), false);
+        this->_data->machine.AddState(StateRef(new SaveState(this->_data, _cells, _gridSize)), false);
     }
 	/*Uaktualnia listê samochodów znajduj¹cych siê na ulicach*/
 	void MapView::UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)

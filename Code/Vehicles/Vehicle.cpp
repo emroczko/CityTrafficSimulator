@@ -1,4 +1,3 @@
-#pragma once
 #include "Vehicle.h"
 #include <random>
 namespace ZPR {

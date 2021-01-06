@@ -1,4 +1,3 @@
-#pragma once
 #include "SaveState.h"
 #include "Definitions.h"
 #include "CreatorState.h"
@@ -8,18 +7,13 @@
 
 
 namespace ZPR {
-    SaveState::SaveState(SimulatorDataRef data, MapView& mapView) : _data(data), _mapView(mapView){}
+    SaveState::SaveState(SimulatorDataRef data, std::vector<Cell> cells, int gridsize) : _data(data), _cells(cells), _gridsize(gridsize){}
     /*Metoda inicjujπca wszystkie elementy potrzebne do poprawnego dzia≥ania obiektu*/
     void SaveState::Init() {
         this->_data->assets.LoadTexture("Background", MENU_BACKGROUND_FILEPATH);
         this->_data->assets.LoadTexture("Button", BUTTON_FILEPATH);
         this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
-        
-        
         this->ButtonsInit();
-       
-        
-
         this->_background.setTexture(this->_data->assets.GetTexture("Background"));
         this->_background.scale(2.35, 2);
         
@@ -40,21 +34,21 @@ namespace ZPR {
                 {
                     if (button.getText() == "Back")
                     {
-                        this->_data->machine.AddState(StateRef(new CreatorState(this->_data, this->_mapView.getGridSize(), this->_mapView.GetCells())), false);
+                        this->_data->machine.AddState(StateRef(new CreatorState(this->_data, this->_gridsize, this->_cells)), false);
                     }
-                    if (button.getText() == "Slot 1")
+                    if (button.getText() == _slots[0])
                     {
                         this->SaveToFile(1);
                     }
-                    if (button.getText() == "Slot 2")
+                    if (button.getText() == _slots[1])
                     {
                         this->SaveToFile(2);
                     }
-                    if (button.getText() == "Slot 3")
+                    if (button.getText() == _slots[2])
                     {
                         this->SaveToFile(3);
                     }
-                    if (button.getText() == "Slot 4")
+                    if (button.getText() == _slots[3])
                     {
                         this->SaveToFile(4);
                     }
@@ -62,6 +56,8 @@ namespace ZPR {
             }
         }
     }
+                                                      
+                                                      
     void SaveState::ButtonsInit(){
         this-> CheckSlots();
         sf::Vector2f buttonSize(150, 66);
@@ -89,7 +85,9 @@ namespace ZPR {
     void SaveState::SaveToFile(int number){
         std::ofstream file;
         file.open("Map"+std::to_string(number)+".txt");
-        file << this->_mapView;
+        for (Cell& cell : _cells){
+            file << cell;
+        }
         file.close();
         this->ButtonsInit();
     }
@@ -105,5 +103,6 @@ namespace ZPR {
         }
         this->_data->window.display();
     }
+}
 
-    }
+                                                     
