@@ -19,7 +19,10 @@ namespace ZPR {
         this->_buttons.push_back(Button(sf::Vector2f(_toolsView.getSize().x/2, 100), buttonSize, "Create new street",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
    
-        this->_buttons.push_back(Button(sf::Vector2f(_toolsView.getSize().x/2, 300), buttonSize, "Delete streets",
+        this->_buttons.push_back(Button(sf::Vector2f(_toolsView.getSize().x/2, 250), buttonSize, "Delete streets",
+            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+        
+        this->_buttons.push_back(Button(sf::Vector2f(_toolsView.getSize().x/2, 800), buttonSize, "Save to file",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
 	}
 
@@ -68,6 +71,13 @@ namespace ZPR {
                     }
                     this->_buttons.at(0).isPressed = false;
                     this->NotifyIsDeletingRoad();
+                }
+                if (button.getText() == "Save to file" && !isSimulating) {
+                    if (this->_buttons.at(0).isPressed) {
+                        this->_buttons.at(0).setBackground(this->_data->assets.GetTexture("Button"));
+                    }
+                    this->_buttons.at(0).isPressed = false;
+                    this->NotifySave();
                 }
 
                 //Tu doda³em ¿eby siê zmienia³ bg przycisku jak siê kliknie i odkliknie //

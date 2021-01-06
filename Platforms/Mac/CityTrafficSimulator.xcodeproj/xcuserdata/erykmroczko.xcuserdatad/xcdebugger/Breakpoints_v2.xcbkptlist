@@ -14,9 +14,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "245"
-            endingLineNumber = "245"
-            landmarkName = "MapView::AddRoad(fileName, position)"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "MapView::CheckRoadsTexture()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -30,10 +30,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "MapView::AddUserRoad(position)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,10 +46,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "MapView::AddUserRoad(position)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,9 +62,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "252"
-            endingLineNumber = "252"
-            landmarkName = "MapView::AddGarage(position)"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "MapView::CheckRoadsTexture()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -78,9 +78,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
-            landmarkName = "MapView::AddGarage(position)"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "MapView::CheckRoadsTexture()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -94,10 +94,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "MapView::AddUserRoad(position)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -110,9 +110,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "254"
-            endingLineNumber = "254"
-            landmarkName = "MapView::AddGarage(position)"
+            startingLineNumber = "255"
+            endingLineNumber = "255"
+            landmarkName = "MapView::CheckRoadsTexture()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -158,10 +158,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "255"
-            endingLineNumber = "255"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "256"
+            endingLineNumber = "256"
+            landmarkName = "MapView::CheckRoadsTexture()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -174,10 +174,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "256"
-            endingLineNumber = "256"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "257"
+            endingLineNumber = "257"
+            landmarkName = "MapView::CheckRoadsTexture()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -190,9 +190,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
-            landmarkName = "MapView::AddUserRoad(position)"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
+            landmarkName = "MapView::CheckRoadsTexture()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -206,9 +206,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
-            landmarkName = "MapView::AddUserRoad(position)"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "MapView::CheckRoadsTexture()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -222,9 +222,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
-            landmarkName = "MapView::TransformPixelsToRowCol(pixels)"
+            startingLineNumber = "268"
+            endingLineNumber = "268"
+            landmarkName = "MapView::CheckRoadsTexture()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -238,9 +238,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "268"
-            endingLineNumber = "268"
-            landmarkName = "MapView::TransformPixelsToRowCol(pixels)"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
+            landmarkName = "MapView::CheckRoadsTexture()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -254,10 +254,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "272"
-            endingLineNumber = "272"
-            landmarkName = "MapView::TransformPixelsToRowCol(pixels)"
-            landmarkType = "7">
+            startingLineNumber = "273"
+            endingLineNumber = "273"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -270,9 +270,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "258"
-            endingLineNumber = "258"
-            landmarkName = "MapView::AddUserRoad(position)"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
+            landmarkName = "MapView::CheckRoadsTexture()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -286,9 +286,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "279"
-            endingLineNumber = "279"
-            landmarkName = "MapView::CheckRoadsTexture()"
+            startingLineNumber = "280"
+            endingLineNumber = "280"
+            landmarkName = "MapView::ChoseRoadWithOneNeighbour(road, north, south, east, west, row, col)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -302,9 +302,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
-            landmarkName = "MapView::CheckRoadsTexture()"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "MapView::ChoseRoadWithOneNeighbour(road, north, south, east, west, row, col)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -318,9 +318,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "281"
-            endingLineNumber = "281"
-            landmarkName = "MapView::CheckRoadsTexture()"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "MapView::ChoseRoadWithOneNeighbour(road, north, south, east, west, row, col)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -334,9 +334,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
-            landmarkName = "MapView::CheckRoadsTexture()"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
+            landmarkName = "MapView::ChoseRoadWithOneNeighbour(road, north, south, east, west, row, col)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -350,9 +350,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "283"
-            endingLineNumber = "283"
-            landmarkName = "MapView::CheckRoadsTexture()"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "MapView::ChoseRoadWithOneNeighbour(road, north, south, east, west, row, col)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -366,8 +366,8 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "MapView::GenerateEnterBoard()"
             landmarkType = "7">
          </BreakpointContent>
@@ -382,9 +382,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "MapView::GenerateEnterBoard()"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "MapView::DrawGrid()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -430,9 +430,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "MapView::FillCells()"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "MapView::FillEnterCells()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -446,9 +446,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "MapView::FillCells()"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "MapView::FillEnterCells()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -462,10 +462,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "MapView::CheckRoadsTexture()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -478,9 +478,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
-            landmarkName = "MapView::FillCells()"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "MapView::FillEnterCells()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -494,10 +494,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "MapView::FillCells()"
-            landmarkType = "7">
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -510,9 +510,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "MapView::FillEnterCells()"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "MapView::AddEnterRoad(position)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -526,9 +526,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "389"
-            endingLineNumber = "389"
-            landmarkName = "MapView::CheckRoadExists(position)"
+            startingLineNumber = "390"
+            endingLineNumber = "390"
+            landmarkName = "MapView::Move(key)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -574,10 +574,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "400"
-            endingLineNumber = "400"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "401"
+            endingLineNumber = "401"
+            landmarkName = "MapView::UpdateCells(cells)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -590,10 +590,10 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "407"
-            endingLineNumber = "407"
-            landmarkName = "MapView::Draw()"
-            landmarkType = "7">
+            startingLineNumber = "408"
+            endingLineNumber = "408"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -606,9 +606,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "405"
-            endingLineNumber = "405"
-            landmarkName = "MapView::Draw()"
+            startingLineNumber = "406"
+            endingLineNumber = "406"
+            landmarkName = "MapView::UpdateRoads(roads)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -622,9 +622,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "404"
-            endingLineNumber = "404"
-            landmarkName = "MapView::Draw()"
+            startingLineNumber = "405"
+            endingLineNumber = "405"
+            landmarkName = "MapView::UpdateRoads(roads)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -638,9 +638,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "402"
-            endingLineNumber = "402"
-            landmarkName = "MapView::Draw()"
+            startingLineNumber = "403"
+            endingLineNumber = "403"
+            landmarkName = "MapView::UpdateCells(cells)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -718,9 +718,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "406"
-            endingLineNumber = "406"
-            landmarkName = "MapView::Draw()"
+            startingLineNumber = "407"
+            endingLineNumber = "407"
+            landmarkName = "MapView::UpdateRoads(roads)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -736,7 +736,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
             endingLineNumber = "60"
-            landmarkName = "SimulationHandler::CalculatePrefix()"
+            landmarkName = "SimulationHandler::SeparateRoadsFromCells()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -752,8 +752,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "SimulationHandler::SeparateRoadsFromCells()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -768,7 +768,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
             endingLineNumber = "61"
-            landmarkName = "SimulationHandler::CalculatePrefix()"
+            landmarkName = "SimulationHandler::SeparateRoadsFromCells()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -784,7 +784,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
             endingLineNumber = "89"
-            landmarkName = "SimulationHandler::MoveVehicles()"
+            landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -816,7 +816,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
             endingLineNumber = "84"
-            landmarkName = "SimulationHandler::AddCarsToSimulate()"
+            landmarkName = "SimulationHandler::CalculatePrefix()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -832,7 +832,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "SimulationHandler::AddCarsToSimulate()"
+            landmarkName = "SimulationHandler::CalculatePrefix()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -878,9 +878,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "MapView::GenerateEnterBoard()"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "MapView::DrawGrid()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -894,9 +894,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "428"
-            endingLineNumber = "428"
-            landmarkName = "MapView::Move(key)"
+            startingLineNumber = "435"
+            endingLineNumber = "435"
+            landmarkName = "MapView::UpdateVehicles(vehicles)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -910,9 +910,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "MapView::GenerateEnterBoard()"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "MapView::DrawGrid()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -928,7 +928,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
             endingLineNumber = "22"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -942,9 +942,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "429"
-            endingLineNumber = "429"
-            landmarkName = "MapView::Move(key)"
+            startingLineNumber = "436"
+            endingLineNumber = "436"
+            landmarkName = "MapView::UpdateVehicles(vehicles)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -958,9 +958,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "430"
-            endingLineNumber = "430"
-            landmarkName = "MapView::Move(key)"
+            startingLineNumber = "437"
+            endingLineNumber = "437"
+            landmarkName = "MapView::UpdateVehicles(vehicles)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -974,9 +974,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "431"
-            endingLineNumber = "431"
-            landmarkName = "MapView::Move(key)"
+            startingLineNumber = "438"
+            endingLineNumber = "438"
+            landmarkName = "MapView::UpdateVehicles(vehicles)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1040,7 +1040,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1056,8 +1056,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1070,9 +1070,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "MapView::DrawGrid()"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "MapView::DrawEnterGrid()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1088,40 +1088,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "33049BCD-D187-48CF-87BD-795BC8EBCE5C - e401538a8b19fe91"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZPR::SimulationHandler::UpdateIsSimulating()"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/SimulationHandler.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "55">
-               </Location>
-               <Location
-                  uuid = "33049BCD-D187-48CF-87BD-795BC8EBCE5C - 2f112793dbeb5ddb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZPR::SimulationHandler::UpdateIsSimulating()::$_0::operator()() const"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/SimulationHandler.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1168,7 +1136,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
+            landmarkName = "SimulationHandler::init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1184,7 +1152,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
-            landmarkName = "SimulationHandler::AddCarsToSimulate()"
+            landmarkName = "SimulationHandler::CalculatePrefix()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1200,7 +1168,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "SimulationHandler::UpdateCells(cells)"
+            landmarkName = "SimulationHandler::UpdateIsSimulating()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1216,7 +1184,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "SimulationHandler::SeparateRoadsFromCells()"
+            landmarkName = "SimulationHandler::UpdateCells(cells)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1232,7 +1200,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "SimulationHandler::SeparateRoadsFromCells()"
+            landmarkName = "SimulationHandler::UpdateCells(cells)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1248,7 +1216,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
-            landmarkName = "SimulationHandler::SeparateRoadsFromCells()"
+            landmarkName = "SimulationHandler::UpdateCells(cells)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1264,8 +1232,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
-            landmarkName = "SimulationHandler::SeparateRoadsFromCells()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1278,9 +1246,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "MapView::DrawGrid()"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "MapView::DrawEnterGrid()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1288,15 +1256,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "ACA2484D-D5E2-41A4-B188-577FD3A68846"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "443"
-            endingLineNumber = "443"
-            landmarkName = "MapView::UpdateCells(cells)"
+            startingLineNumber = "450"
+            endingLineNumber = "450"
+            landmarkName = "MapView::GetView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1344,7 +1312,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "Vehicle::UpdatePosition()"
+            landmarkName = "Vehicle::move()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1360,7 +1328,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
             endingLineNumber = "92"
-            landmarkName = "SimulationHandler::MoveVehicles()"
+            landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1376,7 +1344,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "SimulationHandler::MoveVehicles()"
+            landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1392,7 +1360,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
-            landmarkName = "SimulationHandler::MoveVehicles()"
+            landmarkName = "SimulationHandler::AddCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1408,7 +1376,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "Vehicle::CheckTurn()"
+            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1424,8 +1392,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "Vehicle::CheckTurn()"
+            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2261A5F7-DFBE-40E7-BAE5-6D915F75B85C - 7dfddec028a1335f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "620">
+               </Location>
+               <Location
+                  uuid = "2261A5F7-DFBE-40E7-BAE5-6D915F75B85C - 7dfddec028a1335f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1472,8 +1472,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
-            landmarkName = "Vehicle::CheckTurn()"
+            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "81F0D735-D8D3-45B8-BA53-AAAD8117C5E9 - 7dfddec028a1335f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "620">
+               </Location>
+               <Location
+                  uuid = "81F0D735-D8D3-45B8-BA53-AAAD8117C5E9 - 7dfddec028a1335f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1504,7 +1536,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
+            landmarkName = "Vehicle::UpdatePosition()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1536,40 +1568,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
+            landmarkName = "Vehicle::move()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6274D00B-FE67-463D-85C1-8CA019AE6936 - 7dfddec028a131c2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "6274D00B-FE67-463D-85C1-8CA019AE6936 - 7dfddec028a131c2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "150">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1584,7 +1584,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
+            landmarkName = "Vehicle::UpdatePosition()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1598,9 +1598,9 @@
             filePath = "../../Code/MapView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
-            landmarkName = "MapView::FillEnterCells()"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "MapView::AddRoad(fileName, position)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -1648,7 +1648,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "SimulationHandler::UpdateRoads(roads)"
+            landmarkName = "SimulationHandler::UpdateIsSimulating()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1664,8 +1664,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "SimulationHandler::UpdateIsSimulating()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1696,8 +1696,264 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
-            landmarkName = "SimulationHandler::AddCarsToSimulate()"
+            landmarkName = "SimulationHandler::AddStartingRoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77E5F10E-D810-451E-8FB4-E963F0CD212C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "453"
+            endingLineNumber = "453"
+            landmarkName = "operator&lt;&lt;(os, currentMapView)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EBA3372-C788-44A8-96CE-5D508B041673"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "430"
+            endingLineNumber = "430"
+            landmarkName = "MapView::SaveToFile()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DE0B819-82DC-47DC-BB8A-67D8CCB6A74A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "431"
+            endingLineNumber = "431"
+            landmarkName = "MapView::SaveToFile()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6092B98-86F9-460E-94B0-1AD8BEBB455A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "429"
+            endingLineNumber = "429"
+            landmarkName = "MapView::SaveToFile()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C68FAA5A-96A5-4856-B842-FA0CAB2399C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "432"
+            endingLineNumber = "432"
+            landmarkName = "MapView::SaveToFile()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A78AD0A-549C-4AAE-947A-E636F19C83A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "452"
+            endingLineNumber = "452"
+            landmarkName = "operator&lt;&lt;(os, currentMapView)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0A78AD0A-549C-4AAE-947A-E636F19C83A0 - dc45487c4e407228"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZPR::operator&lt;&lt;(std::__1::basic_ofstream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;, ZPR::MapView const&amp;)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/MapView.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "452"
+                  endingLineNumber = "452"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "0A78AD0A-549C-4AAE-947A-E636F19C83A0 - dc45487c4e407228"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZPR::operator&lt;&lt;(std::__1::basic_ofstream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;, ZPR::MapView const&amp;)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/MapView.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "452"
+                  endingLineNumber = "452"
+                  offsetFromSymbolStart = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E06B3221-4F32-4093-9975-DBFAB836851E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "451"
+            endingLineNumber = "451"
+            landmarkName = "operator&lt;&lt;(os, currentMapView)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD639F12-D63B-497B-8836-B12B20AF2AA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "454"
+            endingLineNumber = "454"
+            landmarkName = "operator&lt;&lt;(os, currentMapView)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFD39FF7-1DA6-4643-A775-40B8E436681E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "456"
+            endingLineNumber = "456"
+            landmarkName = "operator&lt;&lt;(os, currentMapView)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "777F1046-8700-470A-95BB-12AD33AD0DD4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "457"
+            endingLineNumber = "457"
+            landmarkName = "operator&lt;&lt;(os, currentMapView)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "777F1046-8700-470A-95BB-12AD33AD0DD4 - dea8879e003813b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZPR::operator&lt;&lt;(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;, ZPR::MapView const&amp;)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/MapView.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "457"
+                  endingLineNumber = "457"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "777F1046-8700-470A-95BB-12AD33AD0DD4 - dea8879e003813b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZPR::operator&lt;&lt;(std::__1::basic_ostream&lt;char, std::__1::char_traits&lt;char&gt; &gt;&amp;, ZPR::MapView const&amp;)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/MapView.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "457"
+                  endingLineNumber = "457"
+                  offsetFromSymbolStart = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76DDF331-9B8E-4059-B405-BFF2A6FF41C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "458"
+            endingLineNumber = "458"
+            landmarkName = "operator&lt;&lt;(os, currentMapView)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C51948B6-AF7C-4C2C-9658-3F19FCF0CA1A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/MapView.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "459"
+            endingLineNumber = "459"
+            landmarkName = "operator&lt;&lt;(os, currentMapView)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

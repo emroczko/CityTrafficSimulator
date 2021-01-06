@@ -6,6 +6,7 @@ namespace ZPR {
 	MapView::MapView(SimulatorDataRef data, int gridSize): _data(data), _gridSize(gridSize){
 		init();
 	}
+//MapView::MapView(const MapView& mapView): _data(mapView._data), _gridSize(mapView._gridSize), _roads(mapView._roads){}
 	/*Inicjuje wyszystkie elementy potrzebne do poprawnego dzia³ania mapy*/
 	void MapView::init() {
         this->clicked = false;
@@ -424,6 +425,12 @@ namespace ZPR {
         this->isDrawingRoad = false;
         this->isDeletingRoad = false;
     }
+    void MapView::SaveToFile(){
+        std::ofstream file;
+        file.open ("Map1.txt");
+        file << *this;
+        file.close();
+    }
 	/*Uaktualnia listê samochodów znajduj¹cych siê na ulicach*/
 	void MapView::UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)
 	{
@@ -441,4 +448,14 @@ namespace ZPR {
 	{
 		return this->_mapView;
 	}
+    std::ofstream& operator<< (std::ofstream& os, const MapView& currentMapView){
+        for(auto p : currentMapView._roads)
+            os << p.getPosition().x<<" & "<< p.getPosition().y<<std::endl;
+        return os;
+    }
+    std::ostream& operator<< (std::ostream& os, const MapView& currentMapView){
+        for(auto p : currentMapView._roads)
+            os << p.getPosition().x<<"&"<< p.getPosition().y<<std::endl;
+        return os;
+    }
 }

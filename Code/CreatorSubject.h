@@ -10,6 +10,7 @@ namespace ZPR {
 		void add(std::shared_ptr<CreatorObserver> obs);
 		void NotifySelectedCell(sf::Vector2i coords);
 		void NotifyCells(std::vector<Cell> cells);
+        void NotifySave();
 		void NotifyIsDrawingRoad(bool isDrawingRoad);
         void NotifyIsDeletingRoad(bool isDeletingRoad);
         void NotifyIsSimulating(bool isSimulating);

@@ -35,6 +35,9 @@ namespace ZPR {
         this->isDrawingRoad = false;
         this->NotifyIsDeletingRoad(this->isDeletingRoad);
     }
+    void CreatorHandler::SaveToFile(){
+        this->NotifySave();
+    }
 	/*Ustawia tryb symulacji*/
     void CreatorHandler::UpdateIsSimulating()
     {

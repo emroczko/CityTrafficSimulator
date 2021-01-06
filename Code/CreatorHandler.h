@@ -17,6 +17,7 @@ namespace ZPR {
 		void UpdateIsDrawingRoad();
         void UpdateIsDeletingRoad();
         void UpdateIsSimulating();
+        void SaveToFile();
 		void HandleInput(sf::Vector2i possibleSelectedCell);
 		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
 	private:

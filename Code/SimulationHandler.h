@@ -16,6 +16,7 @@ namespace ZPR {
         void UpdateIsSimulating();
         void UpdateSelectedCell(sf::Vector2i coords) {};
         void UpdateCells(std::vector<Cell> cells);
+        void SaveToFile();
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
         void SeparateRoadsFromCells();

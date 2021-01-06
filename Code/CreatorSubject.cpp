@@ -37,4 +37,10 @@ namespace ZPR {
             obs->UpdateIsDeletingRoad(isDeletingRoad);
         }
     }
+    void CreatorSubject::NotifySave()
+    {
+        for (std::shared_ptr<CreatorObserver> obs : this->_observers) {
+            obs->SaveToFile();
+        }
+    }
 }
