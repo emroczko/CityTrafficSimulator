@@ -22,7 +22,6 @@
 		523F9D2F2575D4BF00279564 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 523F9D2E2575D4BE00279564 /* Main.cpp */; };
 		52804F6625537553002A59AD /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52804F6425537553002A59AD /* Car.cpp */; };
 		52A1CEA32599F4450014C907 /* ToolsSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52A1CEA12599F4450014C907 /* ToolsSubject.cpp */; };
-		52B4FFB8256FC12200F1033B /* Road.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B4FFB7256FC12200F1033B /* Road.cpp */; };
 		52D0C272259B9808000871D0 /* CamerasSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C271259B9808000871D0 /* CamerasSubject.cpp */; };
 		52D0C277259B9C4A000871D0 /* SimulationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C276259B9C4A000871D0 /* SimulationHandler.cpp */; };
 		52D0C284259C072C000871D0 /* SimulationSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C282259C072C000871D0 /* SimulationSubject.cpp */; };
@@ -96,8 +95,6 @@
 		52A1CEA02599F4450014C907 /* ToolsObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsObserver.h; sourceTree = "<group>"; };
 		52A1CEA12599F4450014C907 /* ToolsSubject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToolsSubject.cpp; sourceTree = "<group>"; };
 		52A1CEA22599F4450014C907 /* ToolsSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsSubject.h; sourceTree = "<group>"; };
-		52B4FFB7256FC12200F1033B /* Road.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Road.cpp; sourceTree = "<group>"; };
-		52B4FFBA256FC13D00F1033B /* Road.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Road.h; sourceTree = "<group>"; };
 		52D0C271259B9808000871D0 /* CamerasSubject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CamerasSubject.cpp; sourceTree = "<group>"; };
 		52D0C273259B981B000871D0 /* CamerasSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamerasSubject.h; sourceTree = "<group>"; };
 		52D0C274259B9A95000871D0 /* CamerasObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamerasObserver.h; sourceTree = "<group>"; };
@@ -203,8 +200,6 @@
 				52D3BCFC25541DEE0093D5DF /* AssetManager.cpp */,
 				52D3BCF02553FDF40093D5DF /* MainMenuState.h */,
 				52D3BCF12553FE0C0093D5DF /* MainMenuState.cpp */,
-				52B4FFB7256FC12200F1033B /* Road.cpp */,
-				52B4FFBA256FC13D00F1033B /* Road.h */,
 				5244338325A3796B00CD4055 /* Timer.h */,
 				52D4E58725A615F900102FB0 /* LoadState.h */,
 				52D4E58825A6163900102FB0 /* LoadState.cpp */,
@@ -378,7 +373,6 @@
 				52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */,
 				5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */,
 				523F9D2F2575D4BF00279564 /* Main.cpp in Sources */,
-				52B4FFB8256FC12200F1033B /* Road.cpp in Sources */,
 				52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */,
 				52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */,
 				52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */,
