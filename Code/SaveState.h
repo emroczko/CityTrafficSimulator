@@ -1,26 +1,18 @@
 #pragma once
-
 #include "SFML/Graphics.hpp"
+//#include "MapView.h"
 #include <iostream>
 #include <fstream>
 #include "State.h"
 #include "Simulator.h"
 #include "Button.h"
-#include "MapView.h"
-
-
-
-
 
 namespace ZPR {
-
-    
 
     class SaveState : public State{
         public:
         SaveState(SimulatorDataRef data, MapView& mapView);
-        
-        
+
         void Init();
         
         void HandleInput();
@@ -33,5 +25,5 @@ namespace ZPR {
         std::vector<Button> _buttons;
         MapView _mapView;
     
-};
+    };
 }

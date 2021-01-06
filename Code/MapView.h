@@ -9,9 +9,6 @@
 #include "SimulationObserver.h"
 #include "SimulationHandler.h"
 #include "KeysEnum.h"
-//#include "FileHandler.h"
-#include <fstream>
-#include <iostream>
 
 namespace ZPR {
 	class MapView : public CreatorObserver, public SimulationObserver

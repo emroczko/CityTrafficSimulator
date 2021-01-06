@@ -121,8 +121,17 @@ namespace ZPR {
     void SimulationHandler::VehilcesColision()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+            int colisionCounter = 0;
             for (std::shared_ptr<Vehicle> colider : this->_vehicles) {
-                vehicle->CheckColision(colider);
+                if (vehicle->CheckColision(colider)) {
+                    colisionCounter++;
+                }
+            }
+            if (colisionCounter > 0) {
+                vehicle->StopVehicle();
+            }
+            else {
+                vehicle->NoColision();
             }
         }
     }

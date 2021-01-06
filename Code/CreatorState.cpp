@@ -41,9 +41,7 @@ namespace ZPR {
                 if(this->_mapView->isClicked(mousePosition)){
                     sf::Vector2f mousePositionRelativeToToolsView = this->_data->window.mapPixelToCoords(mousePosition, this->_mapView->GetView());
                     this->_creatorHandler->HandleInput(this->_mapView->HandleInput(mousePositionRelativeToToolsView));
-                    
                 }
-                
                 else if (this->_toolsView->isClicked(mousePosition)) {
                     this->_toolsView->HandleInput();
                 }
@@ -54,9 +52,7 @@ namespace ZPR {
             if (event.type == sf::Event::MouseWheelScrolled) {
                 if (event.mouseWheelScroll.delta > 0)
                     {
-                        
                         this->_mapView->zoomViewAt({ static_cast<float>(event.mouseWheelScroll.x), static_cast<float>(event.mouseWheelScroll.y) },  (-1.3f));
-                        
                 }
                 if (event.mouseWheelScroll.delta < 0)
                 {

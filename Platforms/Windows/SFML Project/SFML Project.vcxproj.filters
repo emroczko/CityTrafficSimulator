@@ -52,6 +52,9 @@
     <Filter Include="Source Files\ZPR namespace\Vehicles">
       <UniqueIdentifier>{ad614e12-a1f7-45c7-929b-ba7ac3aecc12}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ZPR namespace\Macros">
+      <UniqueIdentifier>{968c4253-b541-4c84-8d31-021d4c14d5bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\main.cpp">
@@ -129,6 +132,9 @@
     <ClCompile Include="..\..\..\Code\Vehicles\VehicleFactory.cpp">
       <Filter>Source Files\ZPR namespace\Vehicles</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\SaveState.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h">
@@ -165,9 +171,6 @@
       <Filter>Header Files\ZPR namespace\Views</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\CreatorHandler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Definitions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\CreatorObserver.h">
@@ -220,6 +223,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Code\Vehicles\VehicleFactory.h">
       <Filter>Header Files\ZPR namespace\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\SaveState.h">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Timer.h">
+      <Filter>Header Files\ZPR namespace\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\KeysEnum.h">
+      <Filter>Header Files\ZPR namespace\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Definitions.h">
+      <Filter>Header Files\ZPR namespace\Macros</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

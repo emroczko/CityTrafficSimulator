@@ -218,6 +218,7 @@
     <ClCompile Include="..\..\..\Code\CreatorHandler.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorState.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorSubject.cpp" />
+    <ClCompile Include="..\..\..\Code\SaveState.cpp" />
     <ClCompile Include="..\..\..\Code\SimulationHandler.cpp" />
     <ClCompile Include="..\..\..\Code\SimulationSubject.cpp" />
     <ClCompile Include="..\..\..\Code\ToolsSubject.cpp" />
@@ -248,9 +249,12 @@
     <ClInclude Include="..\..\..\Code\CreatorState.h" />
     <ClInclude Include="..\..\..\Code\CreatorSubject.h" />
     <ClInclude Include="..\..\..\Code\Definitions.h" />
+    <ClInclude Include="..\..\..\Code\KeysEnum.h" />
+    <ClInclude Include="..\..\..\Code\SaveState.h" />
     <ClInclude Include="..\..\..\Code\SimulationHandler.h" />
     <ClInclude Include="..\..\..\Code\SimulationObserver.h" />
     <ClInclude Include="..\..\..\Code\SimulationSubject.h" />
+    <ClInclude Include="..\..\..\Code\Timer.h" />
     <ClInclude Include="..\..\..\Code\ToolsObserver.h" />
     <ClInclude Include="..\..\..\Code\ToolsSubject.h" />
     <ClInclude Include="..\..\..\Code\ToolsView.h" />

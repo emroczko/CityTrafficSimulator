@@ -1,5 +1,4 @@
 #pragma once
-
 #include "Vehicle.h"
 #include <memory>
 #include "Car.h"

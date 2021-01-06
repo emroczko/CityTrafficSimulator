@@ -10,10 +10,11 @@ namespace ZPR {
 		virtual ~Vehicle() {};
 		virtual sf::RectangleShape getShape();
 		void move();
-		
 		void CheckOnWhichCell(int drawPrefix);
 		void CheckTurn();
-		void CheckColision(std::shared_ptr<Vehicle> vehicle);
+		void StopVehicle();
+		void NoColision();
+		bool CheckColision(std::shared_ptr<Vehicle> vehicle);
 		virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 		int _x, _y, _speed;
 		int _roadSize, _sidewalkSize, _roadStripesSize;

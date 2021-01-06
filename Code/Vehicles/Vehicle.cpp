@@ -1,3 +1,4 @@
+#pragma once
 #include "Vehicle.h"
 #include <random>
 namespace ZPR {
@@ -67,15 +68,12 @@ namespace ZPR {
 		}
 	}
 	//Sprawdza czy przed pojadem znajduje siê inny pojazd i je¿eli tak sie stanie to zatrzymuje go w miejscu					//
-	void Vehicle::CheckColision(std::shared_ptr<Vehicle> vehicle){
+	bool Vehicle::CheckColision(std::shared_ptr<Vehicle> vehicle){
 		bool colision = this->_colisionBox.getGlobalBounds().intersects(vehicle->getShape().getGlobalBounds());
 		if (colision){
-			this->_speed = 0;
+			return true;
 		}
-		//else {
-			//this->_speed = 3;
-		//}
-		
+		return false;
 	}
 
 	void Vehicle::CheckTurn()
@@ -121,6 +119,14 @@ namespace ZPR {
 				this->_previousRoad = this->_currentRoad;
 			}
 		}
+	}
+	void Vehicle::StopVehicle()
+	{
+		this->_speed = 0;
+	}
+	void Vehicle::NoColision()
+	{
+		this->_speed = 3;
 	}
 	void Vehicle::TurnBack() {
 		if (this->_direction == "North") {
