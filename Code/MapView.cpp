@@ -2,7 +2,7 @@
 #include "MapView.h"
 #include <iostream>
 #include <random>
-#include "SaveState.h"
+//#include "SaveState.h"
 
 namespace ZPR {
 	MapView::MapView(SimulatorDataRef data, int gridSize): _data(data), _gridSize(gridSize){
