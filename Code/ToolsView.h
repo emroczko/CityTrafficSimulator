@@ -5,6 +5,7 @@
 #include "ToolsSubject.h"
 #include "SimulationObserver.h"
 
+
 namespace ZPR {
     class ToolsView : public ToolsSubject, public SimulationObserver{
 	public:

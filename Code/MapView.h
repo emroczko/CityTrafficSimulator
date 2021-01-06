@@ -18,7 +18,8 @@ namespace ZPR {
 	{
 	public:
 		MapView(SimulatorDataRef data, int gridSize);
-        //MapView(const MapView& mapView);
+        MapView(SimulatorDataRef data, int gridSize, std::vector<Cell> Cells);
+        MapView(const MapView& mapView);
 		void UpdateSelectedCell(sf::Vector2i coords);
 		void UpdateCells(std::vector<Cell> cells);
         void UpdateRoads(std::vector<sf::RectangleShape> roads);
@@ -36,6 +37,7 @@ namespace ZPR {
         void Move(keysEnum key);
 		int getGridSize();
 		int getCellSize();
+        std::vector<Cell> GetCells();
         void zoomViewAt(sf::Vector2f pixel, float zoom);
         friend std::ofstream& operator<< (std::ofstream& ,const MapView&);
         friend std::ostream& operator<< (std::ostream& ,const MapView&);

@@ -1,12 +1,16 @@
 #include "MapView.h"
 #include <iostream>
 #include <random>
+#include "SaveState.h"
 
 namespace ZPR {
 	MapView::MapView(SimulatorDataRef data, int gridSize): _data(data), _gridSize(gridSize){
 		init();
 	}
-//MapView::MapView(const MapView& mapView): _data(mapView._data), _gridSize(mapView._gridSize), _roads(mapView._roads){}
+    
+    MapView::MapView(const MapView& mapView): _data(mapView._data), _gridSize(mapView._gridSize), _cells(mapView._cells){
+        
+    }
 	/*Inicjuje wyszystkie elementy potrzebne do poprawnego dzia³ania mapy*/
 	void MapView::init() {
         this->clicked = false;
@@ -426,16 +430,17 @@ namespace ZPR {
         this->isDeletingRoad = false;
     }
     void MapView::SaveToFile(){
-        std::ofstream file;
-        file.open ("Map1.txt");
-        file << *this;
-        file.close();
+        this->_data->machine.AddState(StateRef(new SaveState(this->_data, *this)), false);
     }
 	/*Uaktualnia listê samochodów znajduj¹cych siê na ulicach*/
 	void MapView::UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)
 	{
 		this->_vehicles = vehicles;
 	}
+
+    std::vector<Cell> MapView::GetCells(){
+        return _cells;
+    }
 	/*Zajmuje siê wstepn¹ obs³ug¹ zdarzenia klikniêcia na mapê*/
 	sf::Vector2i MapView::HandleInput(sf::Vector2f mousePosition)
 	{
@@ -449,13 +454,15 @@ namespace ZPR {
 		return this->_mapView;
 	}
     std::ofstream& operator<< (std::ofstream& os, const MapView& currentMapView){
-        for(auto p : currentMapView._roads)
-            os << p.getPosition().x<<" & "<< p.getPosition().y<<std::endl;
+        os<< currentMapView._gridSize << std::endl;
+        for(auto p : currentMapView._cells)
+            os << p.GetPosition().x<<" & "<< p.GetPosition().y<<" % "<<p._containsRoad<<std::endl;
         return os;
     }
     std::ostream& operator<< (std::ostream& os, const MapView& currentMapView){
-        for(auto p : currentMapView._roads)
-            os << p.getPosition().x<<"&"<< p.getPosition().y<<std::endl;
+        os<< currentMapView._gridSize << std::endl;
+        for(auto p : currentMapView._cells)
+            os << p.GetPosition().x<<"&"<< p.GetPosition().y<<" % "<<p._containsRoad<<std::endl;
         return os;
     }
 }

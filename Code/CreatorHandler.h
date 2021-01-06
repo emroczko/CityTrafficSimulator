@@ -12,8 +12,10 @@ namespace ZPR {
 	{
 	public:
 		CreatorHandler(int gridSize);
+        CreatorHandler(int gridSize, std::vector<Cell> cells);
 		void init();
 		void GenerateBoard();
+        void ClearRoads();
 		void UpdateIsDrawingRoad();
         void UpdateIsDeletingRoad();
         void UpdateIsSimulating();
@@ -22,6 +24,7 @@ namespace ZPR {
 		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
 	private:
 		std::unique_ptr<Grid> _grid;
+        std::vector<Cell> _cells;
 		int _row, _col;
 		int _gridSize;
         int _enterGridHeight;

@@ -1,4 +1,5 @@
 #include "ToolsView.h"
+#include "SaveState.h"
 
 namespace ZPR {
 	ToolsView::ToolsView(SimulatorDataRef data) : _data(data)

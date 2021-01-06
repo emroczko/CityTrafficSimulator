@@ -2,10 +2,16 @@
 
 namespace ZPR {
 	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), isDrawingRoad(false), isDeletingRoad(false), _enterGridHeight(2) {}
+    CreatorHandler::CreatorHandler(int gridSize, std::vector<Cell> cells): _gridSize(gridSize), _cells(cells), _row(-1), _col(-1), isDrawingRoad(false), isDeletingRoad(false), _enterGridHeight(2) {}
 
 	void CreatorHandler::init()
 	{
-		this->GenerateBoard();
+        if (_cells.empty())
+            this->GenerateBoard();
+        
+        else
+            this->ClearRoads();
+        
 		this->NotifyCells(_grid->_cells);
 		this->NotifyIsDrawingRoad(this->isDrawingRoad);
         this->NotifyIsDeletingRoad(this->isDeletingRoad);
@@ -21,6 +27,12 @@ namespace ZPR {
 		cells.at(4).isStartingCell = true;
         this->_grid = std::make_unique<Grid>(cells, _gridSize);
 	}
+    void CreatorHandler::ClearRoads(){
+        for (Cell& cell: _cells){
+            cell._roadDrawn = false;
+        }
+        this->_grid = std::make_unique<Grid>(_cells, _gridSize);
+    }
 	/*Ustawia tryb rysowania drogi na w³¹czony lub wy³¹czony*/
 	void CreatorHandler::UpdateIsDrawingRoad()
 	{
