@@ -10,12 +10,12 @@
 #include "SimulationHandler.h"
 #include "KeysEnum.h"
 
+
 namespace ZPR {
 	class MapView : public CreatorObserver, public SimulationObserver
 	{
 	public:
 		MapView(SimulatorDataRef data, int gridSize);
-        MapView(SimulatorDataRef data, int gridSize, std::vector<Cell> Cells);
         MapView(const MapView& mapView);
 		void UpdateSelectedCell(sf::Vector2i coords);
 		void UpdateCells(std::vector<Cell> cells);

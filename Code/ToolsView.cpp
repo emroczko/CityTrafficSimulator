@@ -56,8 +56,6 @@ namespace ZPR {
                 }
             if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_toolsView)){
                 
-                
-                
                 if (button.getText() == "Create new street" && !isSimulating) {
                     if (this->_buttons.at(1).isPressed) {
                         this->_buttons.at(1).setBackground(this->_data->assets.GetTexture("Button"));

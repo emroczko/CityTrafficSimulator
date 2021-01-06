@@ -1,1 +1,121 @@
-﻿  SFML Project.vcxproj -> F:\C++\ZPR\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe
+﻿  MapView.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(76,95): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(76,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(132,63): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(133,76): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(133,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(134,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(135,76): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(135,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(145,79): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(146,95): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(146,71): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(153,77): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(154,86): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(154,53): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(161,18): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(201,82): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(201,49): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(229,27): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(231,29): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(336,80): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(336,68): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(358,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(359,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(434,61): error C2061: błąd składniowy: identyfikator „SaveState”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(434,101): error C2143: błąd składniowy: brakuje „;” przed „)”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(434,101): error C2059: błąd składniowy: „)”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(458,40): error C2679: dwuargumentowy "<<": nie znaleziono żadnego operatora, który przyjmuje prawostronny operand typu "const int" (lub nie istnieje akceptowalna konwersja)
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(457,20): message : może to być „std::ofstream &ZPR::operator <<(std::ofstream &,const ZPR::MapView &)”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(458,40): message : podczas próby dopasowania listy argumentów "(std::ofstream, const int)"
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(460,37): error C2679: dwuargumentowy "<<": nie znaleziono żadnego operatora, który przyjmuje prawostronny operand typu "T" (lub nie istnieje akceptowalna konwersja)
+          with
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(457,20): message : może to być „std::ofstream &ZPR::operator <<(std::ofstream &,const ZPR::MapView &)”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(460,37): message : podczas próby dopasowania listy argumentów "(std::ofstream, T)"
+          with
+          [
+              T=int
+          ]
