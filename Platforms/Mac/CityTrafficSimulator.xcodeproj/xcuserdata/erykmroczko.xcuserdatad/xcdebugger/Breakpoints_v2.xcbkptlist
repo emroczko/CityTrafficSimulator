@@ -798,8 +798,8 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7"
-            endingLineNumber = "7"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
             landmarkName = "Vehicle::getShape()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1278,8 +1278,8 @@
             filePath = "../../Code/Cell.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "8"
-            endingLineNumber = "8"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
             landmarkName = "Cell::GetPosition()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1294,8 +1294,8 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
             landmarkName = "Vehicle::move()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1310,8 +1310,8 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "Vehicle::move()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1374,9 +1374,9 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "Vehicle::UpdateColisionBoxPosition()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1390,42 +1390,10 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "Vehicle::UpdateColisionBoxPosition()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2261A5F7-DFBE-40E7-BAE5-6D915F75B85C - 7dfddec028a1335f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "620">
-               </Location>
-               <Location
-                  uuid = "2261A5F7-DFBE-40E7-BAE5-6D915F75B85C - 7dfddec028a1335f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "632">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1438,9 +1406,9 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "Vehicle::CheckTurn()"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "Vehicle::UpdateColisionBoxPosition()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1454,9 +1422,9 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "Vehicle::CheckTurn()"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "Vehicle::UpdateColisionBoxPosition()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1470,42 +1438,10 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "Vehicle::UpdateColisionBoxPosition()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "81F0D735-D8D3-45B8-BA53-AAAD8117C5E9 - 7dfddec028a1335f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "620">
-               </Location>
-               <Location
-                  uuid = "81F0D735-D8D3-45B8-BA53-AAAD8117C5E9 - 7dfddec028a1335f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ZPR::Vehicle::CheckOnWhichCell(int)"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/Vehicle.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "632">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1518,9 +1454,9 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "Vehicle::UpdatePosition()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1534,9 +1470,9 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "Vehicle::UpdatePosition()"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "Vehicle::move()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1550,9 +1486,9 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "Vehicle::CheckOnWhichCell(drawPrefix)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "Vehicle::move()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1566,8 +1502,8 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "Vehicle::move()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1582,9 +1518,9 @@
             filePath = "../../Code/Vehicles/Vehicle.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "Vehicle::UpdatePosition()"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "Vehicle::move()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1950,8 +1886,8 @@
             filePath = "../../Code/SaveState.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "SaveState::HandleInput()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2014,8 +1950,8 @@
             filePath = "../../Code/SaveState.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
             landmarkName = "unknown"
             landmarkType = "0">
             <Locations>
@@ -2424,14 +2360,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A10BEC70-6233-43D0-90C6-209CF4E162AD"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/SaveState.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "SaveState::SaveToFile(number)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2446,8 +2382,8 @@
             filePath = "../../Code/SaveState.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "SaveState::HandleInput()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2456,14 +2392,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "50615C90-64E9-4175-9846-0B94A3F772EB"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/SaveState.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "SaveState::SaveToFile(number)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2472,14 +2408,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2F400A44-F3C6-49E4-AABD-11F937109F4B"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/SaveState.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "SaveState::SaveToFile(number)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2488,14 +2424,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DDFDABCB-3532-404B-B70E-64BFE7251EC2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/SaveState.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "SaveState::ButtonsInit()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2504,14 +2440,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C1A8EA07-F8CB-4487-B97E-BF8E12CB88E5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/SaveState.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "SaveState::CheckSlots()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2520,14 +2456,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DAC59B98-55C6-4EB1-8C53-1BD498F89B3E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/SaveState.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "SaveState::CheckSlots()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2558,8 +2494,8 @@
             filePath = "../../Code/FileFinder.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "FileFinder::CheckIfFileExist(name, number)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2574,8 +2510,8 @@
             filePath = "../../Code/FileFinder.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "FileFinder::CheckIfFileExist(name, number)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2590,8 +2526,8 @@
             filePath = "../../Code/FileFinder.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "FileFinder::CheckIfFileExist(name, number)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2609,6 +2545,54 @@
             startingLineNumber = "11"
             endingLineNumber = "11"
             landmarkName = "FileFinder::CheckIfFileExist(name, number)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A3D7F82-3EC4-425A-B629-5567DD75A66D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/SaveState.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "SaveState::ButtonsInit()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "254B9E94-B730-47EE-B119-3F515B14A0F0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/SaveState.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "SaveState::SaveToFile(number)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6540DB0A-9AFD-4A24-B4F5-9BE8B0F7D3BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/SaveState.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "SaveState::SaveToFile(number)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

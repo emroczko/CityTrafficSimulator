@@ -91,7 +91,7 @@ namespace ZPR {
 		std::vector<Cell> _cells;
         std::vector<Cell> _enterCells;
 		std::vector<std::shared_ptr<Vehicle>> _vehicles;
-        //FileHandler _fileHandler;
+        
         
 	};
 }

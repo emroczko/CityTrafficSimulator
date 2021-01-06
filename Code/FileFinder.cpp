@@ -12,9 +12,10 @@ namespace ZPR{
         
         struct stat buffer;
         
-        if (stat (name.c_str(), &buffer) == 0)
+        if (stat (name.c_str(), &buffer) == 0){
+            auto mod_time = buffer.st_mtime;
             return name;
-        
+        }
         else
             return "Slot "+std::to_string(number);
     }
