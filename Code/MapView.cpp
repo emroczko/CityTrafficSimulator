@@ -3,7 +3,6 @@
 #include <random>
 #include "SaveState.h"
 
-
 namespace ZPR {
 	MapView::MapView(SimulatorDataRef data, int gridSize): _data(data), _gridSize(gridSize){
 		init();
