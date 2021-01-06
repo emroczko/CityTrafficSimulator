@@ -1,4 +1,3 @@
-#pragma once
 #include "MapView.h"
 #include <iostream>
 #include <random>
