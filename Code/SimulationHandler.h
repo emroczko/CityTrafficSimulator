@@ -11,7 +11,7 @@
 namespace ZPR {
     class SimulationHandler : public SimulationSubject, public CamerasObserver, public CreatorObserver{
     public:
-        SimulationHandler(int gridSize);
+        SimulationHandler(int gridSize, std::vector<Cell> cells);
         void init();
         void UpdateIsSimulating();
         void UpdateSelectedCell(sf::Vector2i coords) {};

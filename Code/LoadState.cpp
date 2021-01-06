@@ -93,12 +93,14 @@ namespace ZPR {
         std::ifstream myfile;
         myfile.open (_slots[number-1]);
         myfile >> _gridSize;
+        int howMany = 0;
         while (myfile >> _tempCell)
         {
             _cells.emplace_back(_tempCell);
-            std::cout<<_tempCell<<std::endl;
+            howMany++;
         }
         myfile.close();
+        std::cout<<howMany<<std::endl;
         this->_data->machine.AddState(StateRef(new CreatorState(this->_data, this->_gridSize, this->_cells)), false);
     }
     void LoadState::Update(float dt) {
