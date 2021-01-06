@@ -20,4 +20,10 @@ namespace ZPR {
             obs->UpdateIsDeletingRoad();
         }
     }
+    void ToolsSubject::NotifySave()
+    {
+        for (std::shared_ptr<ToolsObserver> obs : this->_observers) {
+            obs->SaveToFile();
+        }
+    }
 }

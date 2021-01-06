@@ -6,14 +6,14 @@
 #include "Button.h"
 
 #include <vector>
-
-#include "Button.h"
 #include "MapView.h"
 #include "ToolsView.h"
 #include "CamerasView.h"
 #include "CreatorHandler.h"
 #include "KeysEnum.h"
 #include "SimulationHandler.h"
+#include "Cell.h"
+
 
 
 namespace ZPR{
@@ -22,6 +22,7 @@ namespace ZPR{
     
     public:
         CreatorState (SimulatorDataRef data, int gridSize);
+        CreatorState (SimulatorDataRef data, int gridSize, std::vector<Cell> Cells);
         
         void Init();
         
@@ -40,5 +41,6 @@ namespace ZPR{
         std::shared_ptr<SimulationHandler> _simulationHandler;
         std::shared_ptr<CamerasSubject> _camerasSubject;
         int _gridSize;
+        std::vector<Cell> _cells;
     };
 }

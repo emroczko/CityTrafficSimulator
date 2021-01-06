@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		52166DD82561796400A1AE4E /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52166DD72561796400A1AE4E /* Button.cpp */; };
-		522531AE2552342C0035E946 /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 522531A9255232C10035E946 /* Resources */; };
 		522531B6255234B40035E946 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */; };
 		522531B7255234B40035E946 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */; };
 		522531B8255234B40035E946 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B3255234B40035E946 /* libsfml-window.2.5.1.dylib */; };
@@ -33,6 +32,8 @@
 		52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD00255421B90093D5DF /* InputManager.cpp */; };
 		52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0825542D450093D5DF /* Simulator.cpp */; };
 		52D3BD10255442410093D5DF /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0F255442410093D5DF /* SplashState.cpp */; };
+		52D4E57825A5D8EB00102FB0 /* SaveState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E57725A5D8EB00102FB0 /* SaveState.cpp */; };
+		52D4E58525A614D700102FB0 /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 522531A9255232C10035E946 /* Resources */; };
 		52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */; };
 		52D56740256F034F0017A7C6 /* CreatorSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */; };
 		52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52EDDC39255A055800CD5101 /* InitCreateState.cpp */; };
@@ -44,11 +45,11 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		522531AD255234180035E946 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				522531AE2552342C0035E946 /* Resources in CopyFiles */,
+				52D4E58525A614D700102FB0 /* Resources in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +118,8 @@
 		52D3BD0D255440E00093D5DF /* SplashState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashState.h; sourceTree = "<group>"; };
 		52D3BD0E2554413A0093D5DF /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
 		52D3BD0F255442410093D5DF /* SplashState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplashState.cpp; sourceTree = "<group>"; };
+		52D4E57625A5D8EB00102FB0 /* SaveState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveState.h; sourceTree = "<group>"; };
+		52D4E57725A5D8EB00102FB0 /* SaveState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveState.cpp; sourceTree = "<group>"; };
 		52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorHandler.cpp; sourceTree = "<group>"; };
 		52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorSubject.cpp; sourceTree = "<group>"; };
 		52D5673C256F034F0017A7C6 /* CreatorSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatorSubject.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				52D4E57725A5D8EB00102FB0 /* SaveState.cpp */,
+				52D4E57625A5D8EB00102FB0 /* SaveState.h */,
 				52F5565A259D17DD00ECEED3 /* Truck.cpp */,
 				52F55656259D17DC00ECEED3 /* Truck.h */,
 				52F5565C259D17DD00ECEED3 /* Vehicle.cpp */,
@@ -349,6 +354,7 @@
 				52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */,
 				52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */,
 				52D0C272259B9808000871D0 /* CamerasSubject.cpp in Sources */,
+				52D4E57825A5D8EB00102FB0 /* SaveState.cpp in Sources */,
 				52D3BD10255442410093D5DF /* SplashState.cpp in Sources */,
 				52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */,
 				52A1CEA32599F4450014C907 /* ToolsSubject.cpp in Sources */,

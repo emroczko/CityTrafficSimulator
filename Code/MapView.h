@@ -9,18 +9,24 @@
 #include "SimulationObserver.h"
 #include "SimulationHandler.h"
 #include "KeysEnum.h"
+//#include "FileHandler.h"
+#include <fstream>
+#include <iostream>
 
 namespace ZPR {
 	class MapView : public CreatorObserver, public SimulationObserver
 	{
 	public:
 		MapView(SimulatorDataRef data, int gridSize);
+        MapView(SimulatorDataRef data, int gridSize, std::vector<Cell> Cells);
+        MapView(const MapView& mapView);
 		void UpdateSelectedCell(sf::Vector2i coords);
 		void UpdateCells(std::vector<Cell> cells);
         void UpdateRoads(std::vector<sf::RectangleShape> roads);
 		void UpdateIsDrawingRoad(bool isDrawingRoad);
         void UpdateIsDeletingRoad(bool isDeletingRoad);
         void UpdateIsSimulating(bool isSimulating);
+        void SaveToFile();
 		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
 		void Draw();
 		sf::Vector2i HandleInput(sf::Vector2f mousePosition);
@@ -31,9 +37,12 @@ namespace ZPR {
         void Move(keysEnum key);
 		int getGridSize();
 		int getCellSize();
+        std::vector<Cell> GetCells();
         void zoomViewAt(sf::Vector2f pixel, float zoom);
-
+        friend std::ofstream& operator<< (std::ofstream& ,const MapView&);
+        friend std::ostream& operator<< (std::ostream& ,const MapView&);
 	private:
+        
         std::unique_ptr<Grid> _enterGrid;
         int _maximumZoom;
         bool clicked;
@@ -85,7 +94,8 @@ namespace ZPR {
 		std::vector<Cell> _cells;
         std::vector<Cell> _enterCells;
 		std::vector<std::shared_ptr<Vehicle>> _vehicles;
-
+        //FileHandler _fileHandler;
+        
 	};
 }
 
