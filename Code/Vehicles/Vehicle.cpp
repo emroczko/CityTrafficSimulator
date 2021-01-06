@@ -27,11 +27,30 @@ namespace ZPR {
 			this->_y = this->_currentRoad->getPosition().y - this->_roadSize / 2 - this->_roadStripesSize;
 			this->_x -= this->_speed;
 		}
+		else if (_direction == "Stop") {
+
+		}
 		UpdatePosition();
+		UpdateColisionBoxPosition();
 	}
 	void Vehicle::UpdatePosition() {
 		this->_shape.setPosition(sf::Vector2f(_x, _y));
 	}
+	void Vehicle::UpdateColisionBoxPosition() {
+		if (this->_direction == "South") {
+			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y + (this->_colisionBox.getSize().y / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize)));
+		}
+		else if (this->_direction == "North") {
+			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y - (this->_colisionBox.getSize().y / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize)));
+		}
+		else if (this->_direction == "East"){
+			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x + (this->_colisionBox.getSize().x / 2 + this->_shape.getSize().x / 2 + this->_roadStripesSize), this->_shape.getPosition().y));
+		}
+		else {
+			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x - (this->_colisionBox.getSize().x / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize), this->_shape.getPosition().y));
+		}
+	}
+
 	void Vehicle::CheckOnWhichCell(int drawPrefix)
 	{
 		std::shared_ptr<sf::RectangleShape> tempCell = nullptr;
@@ -46,8 +65,19 @@ namespace ZPR {
 				}
 			}
 		}
-
 	}
+	//Sprawdza czy przed pojadem znajduje siê inny pojazd i je¿eli tak sie stanie to zatrzymuje go w miejscu					//
+	void Vehicle::CheckColision(std::shared_ptr<Vehicle> vehicle){
+		bool colision = this->_colisionBox.getGlobalBounds().intersects(vehicle->getShape().getGlobalBounds());
+		if (colision){
+			this->_speed = 0;
+		}
+		//else {
+			//this->_speed = 3;
+		//}
+		
+	}
+
 	void Vehicle::CheckTurn()
 	{
 		if (_previousRoad) {
@@ -216,5 +246,6 @@ namespace ZPR {
 	void Vehicle::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	{
 		target.draw(this->_shape, states);
+		target.draw(this->_colisionBox, states);
 	}
 }

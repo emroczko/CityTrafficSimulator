@@ -93,7 +93,7 @@ namespace ZPR {
         std::uniform_int_distribution<> dist(1, 100);
         int num = dist(eng);
         
-        if (StartingCellFree() && num > 0 && num < 7) {
+        if (StartingCellFree() && num > 0 && num < 5 && _vehicles.size()<10) {
             if (num > 4) {
             this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start, this->_cellSize, this->_roads));
             }
@@ -110,10 +110,20 @@ namespace ZPR {
     void SimulationHandler::MoveVehicles()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
-            vehicle->CheckOnWhichCell(this->CalculatePrefix());
-            vehicle->CheckTurn();
-            vehicle->move();
             
+            
+            vehicle->CheckOnWhichCell(this->CalculatePrefix());
+            VehilcesColision();
+            vehicle->move();
+            vehicle->CheckTurn();
+        }
+    }
+    void SimulationHandler::VehilcesColision()
+    {
+        for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+            for (std::shared_ptr<Vehicle> colider : this->_vehicles) {
+                vehicle->CheckColision(colider);
+            }
         }
     }
     bool SimulationHandler::StartingCellFree()

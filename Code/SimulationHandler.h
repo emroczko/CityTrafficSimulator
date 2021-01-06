@@ -26,6 +26,7 @@ namespace ZPR {
         void AddCarsToSimulate();
         void AddStartingRoad();
         void MoveVehicles();
+        void VehilcesColision();
         bool StartingCellFree();
         void DeleteVehicles();
         bool isSimulating;
