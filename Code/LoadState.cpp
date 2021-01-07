@@ -8,6 +8,8 @@
 
 namespace ZPR {
     LoadState::LoadState(SimulatorDataRef data) : _data(data){}
+
+    
     /*Metoda inicjujπca wszystkie elementy potrzebne do poprawnego dzia≥ania obiektu*/
     void LoadState::Init() {
         this->_data->assets.LoadTexture("Background", MENU_BACKGROUND_FILEPATH);

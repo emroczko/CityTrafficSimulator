@@ -17,4 +17,13 @@ namespace ZPR{
         else
             return "Slot "+std::to_string(number);
     }
-}
+    bool FileFinder::CheckIfFileExist(const std::string& name){
+        
+        struct stat buffer;
+                if (stat (name.c_str(), &buffer) == 0){
+            return true;
+        }
+        else
+            return false;
+    }
+    }

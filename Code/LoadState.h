@@ -15,8 +15,7 @@ namespace ZPR{
     class LoadState: public State{
         public:
     
-        LoadState(SimulatorDataRef data);
-        
+        LoadState(SimulatorDataRef data);        
         
         void Init();
         
@@ -29,6 +28,7 @@ namespace ZPR{
         void LoadFromFile(int number);
         
         private:
+        bool _isDemo;
         void CheckIfFileExist(int number);
         SimulatorDataRef _data;
         sf::Sprite _background;

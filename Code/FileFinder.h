@@ -16,7 +16,7 @@ namespace ZPR {
     public:
         FileFinder();
         std::string CheckIfFileExist(const std::string& name, int number);
-        
+        bool CheckIfFileExist(const std::string& name);
     private:
     };
 }

@@ -6,10 +6,12 @@
 #include "InputManager.h"
 #include "InitCreateState.h"
 #include "LoadState.h"
+#include "CreatorState.h"
 
 namespace ZPR{
 
-    MainMenuState::MainMenuState(SimulatorDataRef data) : _data(data){}
+    MainMenuState::MainMenuState(SimulatorDataRef data) : _data(data){
+    }
 /**
  Metoda inicjalizująca obecny stan, załadowanie czcionek, przycisków, tekstur tła
  */
@@ -65,6 +67,11 @@ namespace ZPR{
                     {
                         this->_data->machine.AddState(StateRef(new LoadState(this->_data)), false);
                     }
+                    if (button.getText() == "Open demo project")
+                    {
+                        LoadDemo();
+                        
+                    }
                     if (button.getText() == "Exit")
                     {
                         this->_data->window.close();
@@ -92,6 +99,27 @@ namespace ZPR{
     }
     unsigned long MainMenuState::GetButtonsAmount(){
         return this->_buttons.size();
+    }
+
+    void MainMenuState::LoadDemo(){
+        std::string fileName = "Demo.txt";
+        std::ifstream myfile;
+        if (_fileFinder.CheckIfFileExist(fileName)){
+        myfile.open ("Demo.txt");
+        myfile >> _gridSize;
+        int howMany = 0;
+        while (myfile >> this->_tempCell)
+        {
+            _cells.emplace_back(_tempCell);
+            howMany++;
+        }
+        myfile.close();
+        std::cout<<howMany<<std::endl;
+        this->_data->machine.AddState(StateRef(new CreatorState(this->_data, this->_gridSize, this->_cells)), false);
+        }
+        else{
+            std::cout<<"Can't open demo file"<<std::endl;
+        }
     }
 }
 
