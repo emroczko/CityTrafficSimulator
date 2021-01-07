@@ -3,7 +3,7 @@
 #include "Definitions.h"
 
 namespace ZPR {
-    SimulationHandler::SimulationHandler(int gridSize) : isSimulating(false), _gridSize(gridSize) { init(); }
+    SimulationHandler::SimulationHandler(int gridSize, std::vector<Cell> cells) : isSimulating(false), _gridSize(gridSize), _cells(cells) { init(); }
 
     void SimulationHandler::init()
     {

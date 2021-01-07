@@ -85,6 +85,7 @@ namespace ZPR {
     void SaveState::SaveToFile(int number){
         std::ofstream file;
         file.open("Map"+std::to_string(number)+".txt");
+        file << _gridsize <<std::endl;
         for (Cell& cell : _cells){
             file << cell;
         }
