@@ -9,6 +9,9 @@
 #include "SimulationObserver.h"
 #include "SimulationHandler.h"
 #include "KeysEnum.h"
+#include "SaveState.h"
+#include <iostream>
+#include <fstream>
 
 
 namespace ZPR {
@@ -37,7 +40,7 @@ namespace ZPR {
         std::vector<Cell> GetCells();
         void zoomViewAt(sf::Vector2f pixel, float zoom);
         friend std::ofstream& operator<< (std::ofstream& ,const MapView&);
-        friend std::ostream& operator<< (std::ostream& ,const MapView&);
+        //friend std::ostream& operator<< (std::ostream& ,const MapView&);
 	private:
         
         std::unique_ptr<Grid> _enterGrid;
@@ -46,7 +49,6 @@ namespace ZPR {
 		void LoadAssets();
 		sf::FloatRect CalculateViewPort();
 		void DrawGrid();
-        void DrawEnterGrid();
 		void DrawRoads();
         void DrawEntryRoads();
 		void DrawVehicles();

@@ -135,6 +135,12 @@
     <ClCompile Include="..\..\..\Code\SaveState.cpp">
       <Filter>Source Files\ZPR namespace\States</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\LoadState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\FileFinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\Vehicles\Car.h">
@@ -235,6 +241,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Code\Definitions.h">
       <Filter>Header Files\ZPR namespace\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\LoadState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\FileFinder.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

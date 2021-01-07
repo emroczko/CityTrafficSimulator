@@ -9,12 +9,12 @@ namespace ZPR {
         if (_cells.empty())
             this->GenerateBoard();
         
-        else
+        else {
             this->ClearRoads();
-        
-		this->NotifyCells(_grid->_cells);
-		this->NotifyIsDrawingRoad(this->isDrawingRoad);
-        this->NotifyIsDeletingRoad(this->isDeletingRoad);
+            this->NotifyCells(_grid->_cells);
+            this->NotifyIsDrawingRoad(this->isDrawingRoad);
+            this->NotifyIsDeletingRoad(this->isDeletingRoad);
+        }
 	}
 	/*Generuje siatkê zawierajac¹ komórki o wybranej wielkoœci*/
 	void CreatorHandler::GenerateBoard()
@@ -76,7 +76,5 @@ namespace ZPR {
             this->NotifyCells(_grid->_cells);
             this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
         }
-        
-		
 	}
 }

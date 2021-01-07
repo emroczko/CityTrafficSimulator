@@ -19,13 +19,14 @@ namespace ZPR {
         void SaveToFile();
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
-        void SeparateRoadsFromCells();
         void HandleInput();
     private:
         Timer timer;
+        void SeparateRoadsFromCells();
         int CalculatePrefix();
         void AddCarsToSimulate();
         void AddStartingRoad();
+        void CheckIfRoadIsBlocked();
         void MoveVehicles();
         void VehilcesColision();
         bool StartingCellFree();

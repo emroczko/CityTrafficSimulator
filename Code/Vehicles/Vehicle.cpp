@@ -44,10 +44,10 @@ namespace ZPR {
 			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y - (this->_colisionBox.getSize().y / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize)));
 		}
 		else if (this->_direction == "East"){
-			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x + (this->_colisionBox.getSize().x / 2 + this->_shape.getSize().x / 2 + this->_roadStripesSize), this->_shape.getPosition().y));
+			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x + (this->_colisionBox.getSize().x / 2 + ceil(this->_shape.getSize().x / 2) + this->_roadStripesSize), this->_shape.getPosition().y));
 		}
 		else {
-			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x - (this->_colisionBox.getSize().x / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize), this->_shape.getPosition().y));
+			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x - (this->_colisionBox.getSize().x / 2 + ceil(this->_shape.getSize().y / 2) + this->_roadStripesSize), this->_shape.getPosition().y));
 		}
 	}
 
@@ -113,7 +113,7 @@ namespace ZPR {
 				case 0: TurnBack(); break;
 				case 1: ChoseFromOneRoads(north, south, east, west); break;
 				case 2: ChoseFromTwoRoads(north, south, east, west); break;
-				case 3: ChoseFromThreeRoads(north, south, east, west); break;
+				case 3: ChoseFromThreeRoads(north, south, east, west);  break;
 				}
 				this->_previousRoad = this->_currentRoad;
 			}
@@ -123,9 +123,43 @@ namespace ZPR {
 	{
 		this->_speed = 0;
 	}
+	void Vehicle::CheckIsStopped()
+	{
+		if (this->_stopTimeCounter > 1000) {
+			Unblock();
+		}
+		if (this->_speed == 0) {
+			this->_stopTimeCounter++;
+		}
+	}
+	void Vehicle::Unblock() {
+		if (CheckIfCanTurnBack()) {
+			TurnBack();
+			this->_speed = 3;
+		}
+	}
+	bool Vehicle::CheckIfCanTurnBack()
+	{
+		for (sf::RectangleShape road : this->_roads) {
+			if (this->_direction == "East" && road.getGlobalBounds().contains(sf::Vector2f(this->_shape.getPosition().x - this->_cellSize, this->_shape.getPosition().y))) {
+				return true;
+			}
+			else if (this->_direction == "West" && road.getGlobalBounds().contains(sf::Vector2f(this->_shape.getPosition().x + this->_cellSize, this->_shape.getPosition().y))) {
+				return true;
+			}
+			else if (this->_direction == "South" && road.getGlobalBounds().contains(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y - this->_cellSize))) {
+				return true;
+			}
+			else if (this->_direction == "North" && road.getGlobalBounds().contains(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y + this->_cellSize))) {
+				return true;
+			}
+		}
+		return false;
+	}
 	void Vehicle::NoColision()
 	{
 		this->_speed = 3;
+		this->_stopTimeCounter = 0;
 	}
 	void Vehicle::TurnBack() {
 		if (this->_direction == "North") {
@@ -248,9 +282,9 @@ namespace ZPR {
 	{
 		this->_direction = direction;
 	}
+
 	void Vehicle::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	{
 		target.draw(this->_shape, states);
-		target.draw(this->_colisionBox, states);
 	}
 }

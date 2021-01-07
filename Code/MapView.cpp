@@ -1,7 +1,6 @@
 #include "MapView.h"
-#include <iostream>
 #include <random>
-#include "SaveState.h"
+
 
 namespace ZPR {
 	MapView::MapView(SimulatorDataRef data, int gridSize): _data(data), _gridSize(gridSize){
@@ -9,7 +8,6 @@ namespace ZPR {
 	}
     
     MapView::MapView(const MapView& mapView): _data(mapView._data), _gridSize(mapView._gridSize), _cells(mapView._cells){
-        
     }
 	/*Inicjuje wyszystkie elementy potrzebne do poprawnego dzia³ania mapy*/
 	void MapView::init() {
@@ -100,11 +98,6 @@ namespace ZPR {
             }
         }
 	}
-    void MapView::DrawEnterGrid() {
-            for (sf::RectangleShape line : _enterGridLines) {
-                this->_data->window.draw(line);
-            }
-    }
 	/*Rysuje wszystkie drogi*/
 	void MapView::DrawRoads(){
 		for (sf::RectangleShape road : this->_roads) {
@@ -454,9 +447,9 @@ namespace ZPR {
 		return this->_mapView;
 	}
     std::ofstream& operator<< (std::ofstream& os, const MapView& currentMapView){
-        os << currentMapView._gridSize << std::endl;
-        for(auto p : currentMapView._cells)
-            os << p.GetPosition().x <<" & "<< p.GetPosition().y<<" % "<<p._containsRoad<<std::endl;
+        //os << currentMapView._gridSize << std::endl;
+        //for(auto p : currentMapView._cells)
+            //os << p.GetPosition().x <<" & "<< p.GetPosition().y<<" % "<<p._containsRoad<<std::endl;
         return os;
     }
 }

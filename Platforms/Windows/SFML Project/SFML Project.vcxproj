@@ -127,6 +127,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)/../../External Libraries/Windows/SFML/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -159,6 +160,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)/../../External Libraries/Windows/SFML/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -218,6 +220,8 @@
     <ClCompile Include="..\..\..\Code\CreatorHandler.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorState.cpp" />
     <ClCompile Include="..\..\..\Code\CreatorSubject.cpp" />
+    <ClCompile Include="..\..\..\Code\FileFinder.cpp" />
+    <ClCompile Include="..\..\..\Code\LoadState.cpp" />
     <ClCompile Include="..\..\..\Code\SaveState.cpp" />
     <ClCompile Include="..\..\..\Code\SimulationHandler.cpp" />
     <ClCompile Include="..\..\..\Code\SimulationSubject.cpp" />
@@ -249,7 +253,9 @@
     <ClInclude Include="..\..\..\Code\CreatorState.h" />
     <ClInclude Include="..\..\..\Code\CreatorSubject.h" />
     <ClInclude Include="..\..\..\Code\Definitions.h" />
+    <ClInclude Include="..\..\..\Code\FileFinder.h" />
     <ClInclude Include="..\..\..\Code\KeysEnum.h" />
+    <ClInclude Include="..\..\..\Code\LoadState.h" />
     <ClInclude Include="..\..\..\Code\SaveState.h" />
     <ClInclude Include="..\..\..\Code\SimulationHandler.h" />
     <ClInclude Include="..\..\..\Code\SimulationObserver.h" />

@@ -76,6 +76,13 @@ namespace ZPR {
         this->_roads.push_back(road);
     }
 
+    void SimulationHandler::CheckIfRoadIsBlocked()
+    {
+        for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+            vehicle->CheckIsStopped();
+        }
+    }
+
     int SimulationHandler::CalculatePrefix() {
         double cellSizeWithPoint = (double)SCREEN_HEIGHT / _gridSize;
         double theRest = cellSizeWithPoint - this->_cellSize;
@@ -93,7 +100,7 @@ namespace ZPR {
         std::uniform_int_distribution<> dist(1, 100);
         int num = dist(eng);
         
-        if (StartingCellFree() && num > 0 && num < 5 && _vehicles.size()<10) {
+        if (StartingCellFree() && num > 0 && num < 7 && this->_vehicles.size() < this->_roads.size()/2) {
             if (num > 4) {
             this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start, this->_cellSize, this->_roads));
             }
@@ -110,10 +117,9 @@ namespace ZPR {
     void SimulationHandler::MoveVehicles()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
-            
-            
             vehicle->CheckOnWhichCell(this->CalculatePrefix());
             VehilcesColision();
+            CheckIfRoadIsBlocked();
             vehicle->move();
             vehicle->CheckTurn();
         }
