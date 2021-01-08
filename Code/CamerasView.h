@@ -14,9 +14,9 @@ class CamerasView : public CamerasSubject, public SimulationObserver, public Cre
         void DrawButtons();
         bool isClicked(sf::Vector2i &mousePosition);
         void HandleInput();
-        //void CamerasLabels(std::string text, int yPosition);
-        //void AddButtons();
-        //void ButtonsHandler(Button button, std::string label, int position, int labelPosition);
+        void CamerasLabels(std::string text, int yPosition);
+        void AddButtons();
+        void ButtonsHandler(Button button, std::string label, int position, int labelPosition);
         void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {}
         void UpdateIsSimulating(bool isSimulating) {}
         
