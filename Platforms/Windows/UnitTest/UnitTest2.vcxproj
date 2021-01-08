@@ -133,13 +133,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/../../External Libraries/Windows/SFML/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\C++\ZPR\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)/SFML Project/Debug;$(SolutionDir)/../../External Libraries/Windows/SFML/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-system-d.lib;sfml-network-d.lib;%(AdditionalDependencies);AssetManager.obj;Button.obj;CamerasSubject.obj;CamerasView.obj;Car.obj;Cell.obj;CreatorHandler.obj;CreatorState.obj;CreatorSubject.obj;FileFinder.obj;Grid.obj;InitCreateState.obj;InputManager.obj;LoadDemo.obj;LoadState.obj;MainMenuState.obj;MapView.obj;SaveState.obj;SimulationHandler.obj;SimulationSubject.obj;Simulator.obj;SplashState.obj;StateMachine.obj;ToolsSubject.obj;ToolsView.obj;Truck.obj;Vehicle.obj;VehicleFactory.obj</AdditionalDependencies>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-system-d.lib;sfml-network-d.lib;%(AdditionalDependencies);Simulator.obj;MapView.obj;AssetManager.obj;Button.obj;CamerasView.obj;Car.obj;Cell.obj;CreatorHandler.obj;CreatorState.obj;CreatorSubject.obj;Grid.obj;InitCreateState.obj;InputManager.obj;MainMenuState.obj;SplashState.obj;StateMachine.obj;ToolsView.obj</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug UnitTests|Win32'">
@@ -228,11 +228,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="cpp.hint" />
+    <ClCompile Include="..\..\..\Code\Tests\catch_amalgamated.cpp" />
+    <ClCompile Include="..\..\..\Code\Tests\Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Code\Tests\BoostTest\CreatorHandlerTest.cpp" />
-    <ClCompile Include="..\..\..\Code\Tests\BoostTest\MapViewTest.cpp" />
+    <ClInclude Include="..\..\..\Code\Tests\catch_amalgamated.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,6 +3,7 @@
 #include "CamerasObserver.h"
 #include "CreatorObserver.h"
 #include "Vehicles/VehicleFactory.h"
+#include <SFML/Graphics.hpp>
 #include <memory>
 #include "Timer.h"
 #include "Cell.h"
@@ -19,10 +20,6 @@ namespace ZPR {
         void SaveToFile();
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera) {};
-        void UpdateIsAddingCamera(int whichCamera) {}
-        void UpdateIsDeletingCamera(int whichCamera) {}
-        void UpdateCameraIsAdded(bool isAddingCamera, int whichCamera) {}
         void SeparateRoadsFromCells();
         void HandleInput();
     private:

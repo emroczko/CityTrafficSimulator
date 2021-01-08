@@ -21,9 +21,6 @@
     <ClCompile Include="..\..\..\Code\Tests\Tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\Tests\BoostTest\CreatorHandlerTest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Code\Tests\catch_amalgamated.hpp">

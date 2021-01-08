@@ -206,9 +206,6 @@
     <ClInclude Include="..\..\..\Code\CamerasSubject.h">
       <Filter>Header Files\ZPR namespace\Subjects</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\SimulationHandler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Code\SimulationObserver.h">
       <Filter>Header Files\ZPR namespace\Observers</Filter>
     </ClInclude>
@@ -235,6 +232,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Code\Definitions.h">
       <Filter>Header Files\ZPR namespace\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\SimulationHandler.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
