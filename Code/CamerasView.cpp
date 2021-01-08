@@ -15,7 +15,20 @@ namespace ZPR {
         
         this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 800), buttonSize, "Start simulation",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+
 	}
+
+
+    
+    void CamerasView::CamerasLabels(std::string text, int yPosition){
+        sf::Text tempLabel;
+        tempLabel.setFont(this->_data->assets.GetFont("Text font"));
+        tempLabel.setCharacterSize(30);
+        tempLabel.setString(text);
+        tempLabel.setPosition(_camerasView.getSize().x/6, yPosition);
+        this->_camerasLabels.push_back(tempLabel);
+        
+    }
 
 	sf::FloatRect CamerasView::CalculateViewPort()
 	{

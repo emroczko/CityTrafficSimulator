@@ -80,7 +80,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
             endingLineNumber = "76"
-            landmarkName = "CreatorHandler::HandleInput(possibleSelectedCell)"
+            landmarkName = "CreatorHandler::UpdateIsDeletingCamera(whichCamera)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -128,7 +128,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
-            landmarkName = "CreatorHandler::UpdateIsSimulating()"
+            landmarkName = "CreatorHandler::UpdateIsAddingCamera(whichCamera)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -144,8 +144,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
             endingLineNumber = "53"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "CreatorHandler::UpdateIsAddingCamera(whichCamera)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -160,7 +160,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
             endingLineNumber = "54"
-            landmarkName = "CreatorHandler::UpdateIsSimulating()"
+            landmarkName = "CreatorHandler::UpdateIsAddingCamera(whichCamera)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -495,7 +495,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
-            endingLineNumber = "109">
+            endingLineNumber = "109"
+            landmarkName = "CreatorHandler::HandleInput(possibleSelectedCell)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -509,7 +511,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "110"
-            endingLineNumber = "110">
+            endingLineNumber = "110"
+            landmarkName = "CreatorHandler::HandleInput(possibleSelectedCell)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -523,7 +527,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "112"
-            endingLineNumber = "112">
+            endingLineNumber = "112"
+            landmarkName = "CreatorHandler::HandleInput(possibleSelectedCell)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -537,7 +543,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "111"
-            endingLineNumber = "111">
+            endingLineNumber = "111"
+            landmarkName = "CreatorHandler::HandleInput(possibleSelectedCell)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -551,7 +559,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "114"
-            endingLineNumber = "114">
+            endingLineNumber = "114"
+            landmarkName = "CreatorHandler::HandleInput(possibleSelectedCell)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -565,7 +575,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
-            endingLineNumber = "113">
+            endingLineNumber = "113"
+            landmarkName = "CreatorHandler::HandleInput(possibleSelectedCell)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -580,7 +592,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
-            landmarkName = "CreatorHandler::HandleInput(possibleSelectedCell)"
+            landmarkName = "CreatorHandler::UpdateIsDeletingCamera(whichCamera)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

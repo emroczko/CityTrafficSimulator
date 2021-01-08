@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug UnitTests|Win32">
+      <Configuration>Debug UnitTests</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug UnitTests|x64">
+      <Configuration>Debug UnitTests</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
@@ -18,86 +26,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\Code\AssetManager.cpp" />
-    <ClCompile Include="..\..\..\Code\Button.cpp" />
-    <ClCompile Include="..\..\..\Code\CamerasSubject.cpp" />
-    <ClCompile Include="..\..\..\Code\CamerasView.cpp" />
-    <ClCompile Include="..\..\..\Code\Cell.cpp" />
-    <ClCompile Include="..\..\..\Code\CreatorHandler.cpp" />
-    <ClCompile Include="..\..\..\Code\CreatorState.cpp" />
-    <ClCompile Include="..\..\..\Code\CreatorSubject.cpp" />
-    <ClCompile Include="..\..\..\Code\FileFinder.cpp" />
-    <ClCompile Include="..\..\..\Code\Grid.cpp" />
-    <ClCompile Include="..\..\..\Code\InitCreateState.cpp" />
-    <ClCompile Include="..\..\..\Code\InputManager.cpp" />
-    <ClCompile Include="..\..\..\Code\LoadDemo.cpp" />
-    <ClCompile Include="..\..\..\Code\LoadState.cpp" />
-    <ClCompile Include="..\..\..\Code\Main.cpp" />
-    <ClCompile Include="..\..\..\Code\MainMenuState.cpp" />
-    <ClCompile Include="..\..\..\Code\MapView.cpp" />
-    <ClCompile Include="..\..\..\Code\SaveState.cpp" />
-    <ClCompile Include="..\..\..\Code\SimulationHandler.cpp" />
-    <ClCompile Include="..\..\..\Code\SimulationSubject.cpp" />
-    <ClCompile Include="..\..\..\Code\Simulator.cpp" />
-    <ClCompile Include="..\..\..\Code\SplashState.cpp" />
-    <ClCompile Include="..\..\..\Code\StateMachine.cpp" />
-    <ClCompile Include="..\..\..\Code\ToolsSubject.cpp" />
-    <ClCompile Include="..\..\..\Code\ToolsView.cpp" />
-    <ClCompile Include="..\..\..\Code\Vehicles\Car.cpp" />
-    <ClCompile Include="..\..\..\Code\Vehicles\Truck.cpp" />
-    <ClCompile Include="..\..\..\Code\Vehicles\Vehicle.cpp" />
-    <ClCompile Include="..\..\..\Code\Vehicles\VehicleFactory.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\Code\AssetManager.h" />
-    <ClInclude Include="..\..\..\Code\Button.h" />
-    <ClInclude Include="..\..\..\Code\CamerasObserver.h" />
-    <ClInclude Include="..\..\..\Code\CamerasSubject.h" />
-    <ClInclude Include="..\..\..\Code\CamerasView.h" />
-    <ClInclude Include="..\..\..\Code\Cell.h" />
-    <ClInclude Include="..\..\..\Code\CreatorHandler.h" />
-    <ClInclude Include="..\..\..\Code\CreatorObserver.h" />
-    <ClInclude Include="..\..\..\Code\CreatorState.h" />
-    <ClInclude Include="..\..\..\Code\CreatorSubject.h" />
-    <ClInclude Include="..\..\..\Code\Definitions.h" />
-    <ClInclude Include="..\..\..\Code\FileFinder.h" />
-    <ClInclude Include="..\..\..\Code\Grid.h" />
-    <ClInclude Include="..\..\..\Code\InitCreateState.h" />
-    <ClInclude Include="..\..\..\Code\InputManager.h" />
-    <ClInclude Include="..\..\..\Code\KeysEnum.h" />
-    <ClInclude Include="..\..\..\Code\LoadDemo.h" />
-    <ClInclude Include="..\..\..\Code\LoadState.h" />
-    <ClInclude Include="..\..\..\Code\MainMenuState.h" />
-    <ClInclude Include="..\..\..\Code\MapView.h" />
-    <ClInclude Include="..\..\..\Code\SaveState.h" />
-    <ClInclude Include="..\..\..\Code\SimulationHandler.h" />
-    <ClInclude Include="..\..\..\Code\SimulationObserver.h" />
-    <ClInclude Include="..\..\..\Code\SimulationSubject.h" />
-    <ClInclude Include="..\..\..\Code\Simulator.h" />
-    <ClInclude Include="..\..\..\Code\SlotsEnum.h" />
-    <ClInclude Include="..\..\..\Code\SplashState.h" />
-    <ClInclude Include="..\..\..\Code\State.h" />
-    <ClInclude Include="..\..\..\Code\StateMachine.h" />
-    <ClInclude Include="..\..\..\Code\Timer.h" />
-    <ClInclude Include="..\..\..\Code\ToolsObserver.h" />
-    <ClInclude Include="..\..\..\Code\ToolsSubject.h" />
-    <ClInclude Include="..\..\..\Code\ToolsView.h" />
-    <ClInclude Include="..\..\..\Code\Vehicles\Car.h" />
-    <ClInclude Include="..\..\..\Code\Vehicles\Truck.h" />
-    <ClInclude Include="..\..\..\Code\Vehicles\Vehicle.h" />
-    <ClInclude Include="..\..\..\Code\Vehicles\VehicleFactory.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ADA30755-5996-4AC5-88CA-ABF20214830B}</ProjectGuid>
-    <RootNamespace>Project1</RootNamespace>
+    <ProjectGuid>{ada30755-5996-4ac5-88ca-abf20214830b}</ProjectGuid>
+    <RootNamespace>SFMLProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>SFML Project</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug UnitTests|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
@@ -111,6 +54,12 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug UnitTests|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
@@ -132,11 +81,19 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="PropertySheet.props" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug UnitTests|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug UnitTests|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="PropertySheet.props" />
   </ImportGroup>
@@ -148,16 +105,37 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug UnitTests|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug UnitTests|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)/../../External Libraries/Windows/SFML/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)/../../External Libraries/Windows/SFML/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-system-d.lib;sfml-network-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug UnitTests|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
@@ -203,6 +181,18 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug UnitTests|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -219,7 +209,86 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Code\AssetManager.cpp" />
+    <ClCompile Include="..\..\..\Code\Button.cpp" />
+    <ClCompile Include="..\..\..\Code\CamerasSubject.cpp" />
+    <ClCompile Include="..\..\..\Code\CamerasView.cpp" />
+    <ClCompile Include="..\..\..\Code\Cell.cpp" />
+    <ClCompile Include="..\..\..\Code\CreatorHandler.cpp" />
+    <ClCompile Include="..\..\..\Code\CreatorState.cpp" />
+    <ClCompile Include="..\..\..\Code\CreatorSubject.cpp" />
+    <ClCompile Include="..\..\..\Code\SaveState.cpp" />
+    <ClCompile Include="..\..\..\Code\SimulationHandler.cpp" />
+    <ClCompile Include="..\..\..\Code\SimulationSubject.cpp" />
+    <ClCompile Include="..\..\..\Code\ToolsSubject.cpp" />
+    <ClCompile Include="..\..\..\Code\ToolsView.cpp" />
+    <ClCompile Include="..\..\..\Code\Grid.cpp" />
+    <ClCompile Include="..\..\..\Code\InitCreateState.cpp" />
+    <ClCompile Include="..\..\..\Code\InputManager.cpp" />
+    <ClCompile Include="..\..\..\Code\main.cpp" />
+    <ClCompile Include="..\..\..\Code\MainMenuState.cpp" />
+    <ClCompile Include="..\..\..\Code\MapView.cpp" />
+    <ClCompile Include="..\..\..\Code\Simulator.cpp" />
+    <ClCompile Include="..\..\..\Code\SplashState.cpp" />
+    <ClCompile Include="..\..\..\Code\StateMachine.cpp" />
+    <ClCompile Include="..\..\..\Code\Vehicles\Car.cpp" />
+    <ClCompile Include="..\..\..\Code\Vehicles\Truck.cpp" />
+    <ClCompile Include="..\..\..\Code\Vehicles\Vehicle.cpp" />
+    <ClCompile Include="..\..\..\Code\Vehicles\VehicleFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Code\AssetManager.h" />
+    <ClInclude Include="..\..\..\Code\Button.h" />
+    <ClInclude Include="..\..\..\Code\CamerasObserver.h" />
+    <ClInclude Include="..\..\..\Code\CamerasSubject.h" />
+    <ClInclude Include="..\..\..\Code\CamerasView.h" />
+    <ClInclude Include="..\..\..\Code\Cell.h" />
+    <ClInclude Include="..\..\..\Code\CreatorHandler.h" />
+    <ClInclude Include="..\..\..\Code\CreatorObserver.h" />
+    <ClInclude Include="..\..\..\Code\CreatorState.h" />
+    <ClInclude Include="..\..\..\Code\CreatorSubject.h" />
+    <ClInclude Include="..\..\..\Code\Definitions.h" />
+    <ClInclude Include="..\..\..\Code\KeysEnum.h" />
+    <ClInclude Include="..\..\..\Code\SaveState.h" />
+    <ClInclude Include="..\..\..\Code\SimulationHandler.h" />
+    <ClInclude Include="..\..\..\Code\SimulationObserver.h" />
+    <ClInclude Include="..\..\..\Code\SimulationSubject.h" />
+    <ClInclude Include="..\..\..\Code\Timer.h" />
+    <ClInclude Include="..\..\..\Code\ToolsObserver.h" />
+    <ClInclude Include="..\..\..\Code\ToolsSubject.h" />
+    <ClInclude Include="..\..\..\Code\ToolsView.h" />
+    <ClInclude Include="..\..\..\Code\Grid.h" />
+    <ClInclude Include="..\..\..\Code\InitCreateState.h" />
+    <ClInclude Include="..\..\..\Code\InputManager.h" />
+    <ClInclude Include="..\..\..\Code\MainMenuState.h" />
+    <ClInclude Include="..\..\..\Code\MapView.h" />
+    <ClInclude Include="..\..\..\Code\Simulator.h" />
+    <ClInclude Include="..\..\..\Code\SplashState.h" />
+    <ClInclude Include="..\..\..\Code\State.h" />
+    <ClInclude Include="..\..\..\Code\StateMachine.h" />
+    <ClInclude Include="..\..\..\Code\Vehicles\Car.h" />
+    <ClInclude Include="..\..\..\Code\Vehicles\Truck.h" />
+    <ClInclude Include="..\..\..\Code\Vehicles\Vehicle.h" />
+    <ClInclude Include="..\..\..\Code\Vehicles\VehicleFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Release\Resources\background_menu.jpeg" />
+    <Image Include="..\Release\Resources\background_splash.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Release\Resources\BebasNeue-Regular.ttf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\gtest.1.7.0\build\native\gtest.targets" Condition="Exists('..\packages\gtest.1.7.0\build\native\gtest.targets')" />
+    <Import Project="..\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.3\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets" Condition="Exists('..\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.3\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\gtest.1.7.0\build\native\gtest.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\gtest.1.7.0\build\native\gtest.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.3\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.3\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets'))" />
+  </Target>
 </Project>
