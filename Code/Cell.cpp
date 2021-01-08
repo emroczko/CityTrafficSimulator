@@ -5,8 +5,9 @@
  
 
 namespace ZPR {
-	Cell::Cell(int row, int column) : _row(row), _column(column), _containsRoad(false), _toDelete(false), _roadDrawn(false), isStartingCell(false){}
-    Cell::Cell(): _row(0), _column(0), _containsRoad(false), _toDelete(false), _roadDrawn(false), isStartingCell(false){}
+    Cell::Cell(int row, int column) : _row(row), _column(column), _containsRoad(false), _toDelete(false), _roadDrawn(false), isStartingCell(false), _containsCamera(false), _cameraDrawn(false), _cameraToDelete(false), _whichCamera(0){}
+    Cell::Cell(): _row(0), _column(0), _containsRoad(false), _toDelete(false), _roadDrawn(false), isStartingCell(false), _containsCamera(false), _cameraDrawn(false),_cameraToDelete(false), _whichCamera(0){}
+
 
 	/*Zwraca pozycjê komórki reprezentowan¹ za pomoca numeru wiersza i kolumny*/
 	sf::Vector2i Cell::GetPosition()
