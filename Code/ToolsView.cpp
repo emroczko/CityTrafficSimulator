@@ -105,7 +105,7 @@ namespace ZPR {
 
 	void ToolsView::DrawButtons()
 	{
-        if (!this->isSimulating){
+        if (!this->isSimulating || !this->isAddingCameras){
             for (Button button: _buttons)
             {
                 this->_data->window.draw(button);

@@ -186,6 +186,7 @@ namespace ZPR {
             }
             if (cell._cameraToDelete) {
                 DeleteCamera(TransformRowColToPixels(sf::Vector2i(row, col)));
+                cell._cameraToDelete = false;
             }
 		}
 	}

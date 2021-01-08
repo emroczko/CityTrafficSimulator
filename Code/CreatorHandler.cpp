@@ -68,6 +68,7 @@ namespace ZPR {
                 this->_grid->GetCell(_row, _col)._containsCamera = false;
                 this->_grid->GetCell(_row, _col)._whichCamera = 0;
                 this->_grid->GetCell(_row, _col)._cameraToDelete = true;
+                //this->_grid->GetCell(_row, _col)._cameraDrawn = false;
                 this->NotifyCells(_grid->_cells);
                 this->NotifySelectedCell(sf::Vector2i(row, col));
             }
