@@ -8,7 +8,7 @@ namespace ZPR {
 	{
 	public:
 		Truck(int x, int y, int cellSize, std::vector<sf::RectangleShape> roads);
-		//sf::RectangleShape getShape();
+		sf::RectangleShape getShape();
 	};
 
 }

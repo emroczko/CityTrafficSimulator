@@ -20,15 +20,16 @@ namespace ZPR {
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
         void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera) {};
-        void UpdateIsDeletingCamera(int whichCamera) {};
+        void UpdateIsAddingCamera(int whichCamera) {}
+        void UpdateIsDeletingCamera(int whichCamera) {}
+        void UpdateCameraIsAdded(bool isAddingCamera, int whichCamera) {}
+        void SeparateRoadsFromCells();
         void HandleInput();
     private:
         Timer timer;
-        void SeparateRoadsFromCells();
         int CalculatePrefix();
         void AddCarsToSimulate();
         void AddStartingRoad();
-        void CheckIfRoadIsBlocked();
         void MoveVehicles();
         void VehilcesColision();
         bool StartingCellFree();

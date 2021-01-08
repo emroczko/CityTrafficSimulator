@@ -1,0 +1,121 @@
+﻿  CreatorState.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.h(15,18): error C2061: błąd składniowy: identyfikator „MapView”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.h(29,25): error C3646: "_mapView": nieznany specyfikator przesłonięcia
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.h(29,25): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+  SaveState.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(24,40): warning C4305: "argument": obcięcie z "double" do "float"
+  ToolsView.cpp
+  InitCreateState.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.h(15,18): error C2061: błąd składniowy: identyfikator „MapView”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.h(29,25): error C3646: "_mapView": nieznany specyfikator przesłonięcia
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.h(29,25): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\InitCreateState.cpp(31,40): warning C4305: "argument": obcięcie z "double" do "float"
+  MapView.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.h(15,18): error C2061: błąd składniowy: identyfikator „MapView”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.h(29,25): error C3646: "_mapView": nieznany specyfikator przesłonięcia
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.h(29,25): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(76,95): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(76,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(132,63): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(133,76): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(133,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(134,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(135,76): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(135,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(145,79): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(146,95): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(146,71): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(153,77): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(154,86): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(154,53): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(161,18): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(201,82): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(201,49): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(229,27): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(231,29): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(336,80): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(336,68): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(358,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(359,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(434,81): error C2661: "ZPR::SaveState::SaveState": brak przeciążonej funkcji przyjmującej 2 argumenty
+  Generowanie kodu...
