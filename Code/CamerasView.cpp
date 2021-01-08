@@ -44,6 +44,7 @@ namespace ZPR {
         this->_camerasLabels.push_back(tempLabel);
         
     }
+
 	sf::FloatRect CamerasView::CalculateViewPort()
 	{
         float rectWidth = (1.f - (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH)/2;

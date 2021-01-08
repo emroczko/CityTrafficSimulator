@@ -3,7 +3,6 @@
 #include <memory>
 #include <string>
 #include <SFML/Graphics.hpp>
-
 #include "StateMachine.h"
 #include "AssetManager.h"
 #include "InputManager.h"

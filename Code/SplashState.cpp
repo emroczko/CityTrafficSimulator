@@ -1,6 +1,5 @@
 #include <sstream>
 #include <iostream>
-
 #include "Definitions.h"
 #include "SplashState.h"
 #include "MainMenuState.h"

@@ -1,7 +1,7 @@
+#pragma once
 #include "SaveState.h"
 #include "Definitions.h"
 #include "CreatorState.h"
-#include <iostream>
 #include <memory>
 #include <string>
 

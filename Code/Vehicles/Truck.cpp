@@ -6,6 +6,7 @@ namespace ZPR {
 		_speed = 3;
 		this->_roads = roads;
 		this->_cellSize = cellSize;
+		this->_stopTimeCounter = 0;
 		this->_sidewalkSize = round(SIDEWALK_SIZE * _cellSize / ROAD_IMAGE_SIZE);
 		this->_roadSize = round(ROAD_SIZE * _cellSize / ROAD_IMAGE_SIZE);
 		this->_roadStripesSize = round(ROAD_STRIPES_SIZE * _cellSize / ROAD_IMAGE_SIZE);
@@ -14,12 +15,7 @@ namespace ZPR {
         this->_shape.setSize(sf::Vector2f(round(14 * cellSize/ROAD_IMAGE_SIZE), round(20 * cellSize / ROAD_IMAGE_SIZE)));
 		this->_shape.setOrigin(this->_shape.getSize().x / 2, this->_shape.getSize().y / 2);
 		this->_shape.setPosition(sf::Vector2f(x, y));
-		this->_colisionBox.setFillColor(sf::Color::Yellow);
 		this->_colisionBox.setSize(sf::Vector2f(round(14 * cellSize / ROAD_IMAGE_SIZE), round(14 * cellSize / ROAD_IMAGE_SIZE)));
 		this->_colisionBox.setOrigin(this->_colisionBox.getSize().x / 2, this->_colisionBox.getSize().y / 2);
-	}
-	sf::RectangleShape Truck::getShape()
-	{
-		return this->_shape;
 	}
 }

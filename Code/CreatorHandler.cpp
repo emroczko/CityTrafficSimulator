@@ -1,20 +1,20 @@
 #include "CreatorHandler.h"
 
 namespace ZPR {
-	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), _isDrawingRoad(false), _isDeletingRoad(false), _isAddingCameras(false), _enterGridHeight(2) {}
-    CreatorHandler::CreatorHandler(int gridSize, std::vector<Cell> cells): _gridSize(gridSize), _cells(cells), _row(-1), _col(-1), _isDrawingRoad(false), _isDeletingRoad(false), _isAddingCameras(false), _enterGridHeight(2) {}
+	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), isDrawingRoad(false), isDeletingRoad(false), _enterGridHeight(2) {}
+    CreatorHandler::CreatorHandler(int gridSize, std::vector<Cell> cells): _gridSize(gridSize), _cells(cells), _row(-1), _col(-1), isDrawingRoad(false), isDeletingRoad(false), _enterGridHeight(2) {}
 
 	void CreatorHandler::init()
 	{
         if (_cells.empty())
             this->GenerateBoard();
         
-        else
+        else {
             this->ClearRoads();
-        
-		this->NotifyCells(_grid->_cells);
-		this->NotifyIsDrawingRoad(this->_isDrawingRoad);
-        this->NotifyIsDeletingRoad(this->_isDeletingRoad);
+            this->NotifyCells(_grid->_cells);
+            this->NotifyIsDrawingRoad(this->isDrawingRoad);
+            this->NotifyIsDeletingRoad(this->isDeletingRoad);
+        }
 	}
 	/*Generuje siatkê zawierajac¹ komórki o wybranej wielkoœci*/
 	void CreatorHandler::GenerateBoard()
@@ -36,46 +36,16 @@ namespace ZPR {
 	/*Ustawia tryb rysowania drogi na w³¹czony lub wy³¹czony*/
 	void CreatorHandler::UpdateIsDrawingRoad()
 	{
-        this->_isDrawingRoad = !this->_isDrawingRoad;
-        this->_isDeletingRoad = false;
-		this->NotifyIsDrawingRoad(this->_isDrawingRoad);
+        this->isDrawingRoad = !this->isDrawingRoad;
+        this->isDeletingRoad = false;
+		this->NotifyIsDrawingRoad(this->isDrawingRoad);
 	}
 	/*Ustawia tryb usuwania drogi na w³¹czony lub wy³¹czony w zale¿noœci od obecnego stanu*/
     void CreatorHandler::UpdateIsDeletingRoad()
     {
-        this->_isDeletingRoad = !this->_isDeletingRoad;
-        this->_isDrawingRoad = false;
-        this->NotifyIsDeletingRoad(this->_isDeletingRoad);
-    }
-    void CreatorHandler::UpdateIsAddingCamera(int whichCamera)
-    {
-        this->_whichCamera = whichCamera;
-        this->_isAddingCameras = !this->_isAddingCameras;
-        this->_isDeletingRoad = false;
-        this->_isDrawingRoad = false;
-        this->NotifyIsAddingCamera(this->_isAddingCameras, this->_whichCamera);
-    }
-    void CreatorHandler::UpdateIsDeletingCamera(int whichCamera)
-    {
-        int row, col;
-        //this->_isAddingCameras = false;
-        this->_whichCamera = whichCamera;
-        this->NotifyIsDeletingCamera(this->_whichCamera);
-        for (Cell& cell : _grid->_cells){
-            if (cell._containsCamera == true && cell._whichCamera == whichCamera){
-                row = cell.GetPosition().x;
-                col = cell.GetPosition().y;
-                this->_grid->GetCell(_row, _col)._containsCamera = false;
-                this->_grid->GetCell(_row, _col)._whichCamera = 0;
-                this->_grid->GetCell(_row, _col)._cameraToDelete = true;
-                //this->_grid->GetCell(_row, _col)._cameraDrawn = false;
-                this->NotifyCells(_grid->_cells);
-                this->NotifySelectedCell(sf::Vector2i(row, col));
-            }
-        }
-        
-        
-        
+        this->isDeletingRoad = !this->isDeletingRoad;
+        this->isDrawingRoad = false;
+        this->NotifyIsDeletingRoad(this->isDeletingRoad);
     }
     void CreatorHandler::SaveToFile(){
         this->NotifySave();
@@ -83,8 +53,8 @@ namespace ZPR {
 	/*Ustawia tryb symulacji*/
     void CreatorHandler::UpdateIsSimulating()
     {
-        this->_isDeletingRoad = false;
-        this->_isDrawingRoad = false;
+        this->isDeletingRoad = false;
+        this->isDrawingRoad = false;
 		this->NotifyCells(_grid->_cells);
     }
 	/*Zajmuje sie obs³ug¹ zdarzeñ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie dróg)*/
@@ -94,27 +64,17 @@ namespace ZPR {
 		else if (possibleSelectedCell.x > this->_gridSize-1 || possibleSelectedCell.y > this->_gridSize-1) { return; }
 		this->_row = possibleSelectedCell.y;
 		this->_col = possibleSelectedCell.x;
-		if (_isDrawingRoad) {
+		if (isDrawingRoad) {
             this->_grid->GetCell(_row, _col)._toDelete = false;
 			this->_grid->GetCell(_row, _col)._containsRoad = true;
             this->NotifyCells(_grid->_cells);
             this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
 		}
-        if (_isDeletingRoad) {
+        if (isDeletingRoad) {
             this->_grid->GetCell(_row, _col)._containsRoad = false;
             this->_grid->GetCell(_row, _col)._toDelete = true;
             this->NotifyCells(_grid->_cells);
             this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
         }
-        if (_isAddingCameras && this->_grid->GetCell(_row, _col)._toDelete == false && this->_grid->GetCell(_row, _col)._containsRoad == true){
-            this->_grid->GetCell(_row, _col)._containsCamera = true;
-            this->_grid->GetCell(_row, _col)._whichCamera = this->_whichCamera;
-            this->NotifyCells(_grid->_cells);
-            this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
-            this->_isAddingCameras = false;
-            this->NotifyIsAddingCamera(_isAddingCameras, _whichCamera);
-        }
-        
-		
 	}
 }
