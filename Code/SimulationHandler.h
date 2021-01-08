@@ -19,6 +19,8 @@ namespace ZPR {
         void SaveToFile();
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera) {};
+        void UpdateIsDeletingCamera(int whichCamera) {};
         void HandleInput();
     private:
         Timer timer;

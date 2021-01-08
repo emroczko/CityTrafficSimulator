@@ -14,7 +14,7 @@ struct MapViewTestFixture {
 	}
 	ZPR::SimulatorDataRef data;
 	std::unique_ptr<ZPR::MapView> mapView;
-	~MapViewTestFixture() {}
+	~MapViewTestFixture() = default;
 };
 
 BOOST_FIXTURE_TEST_SUITE(MapViewTest, MapViewTestFixture)

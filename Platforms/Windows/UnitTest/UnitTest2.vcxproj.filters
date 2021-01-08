@@ -21,5 +21,8 @@
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\MapViewTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\CreatorHandlerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
