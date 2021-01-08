@@ -12,5 +12,17 @@ namespace ZPR {
             obs->UpdateIsSimulating();
         }
     }
+    void CamerasSubject::NotifyIsAddingCamera(int whichCamera)
+    {
+        for (std::shared_ptr<CamerasObserver> obs : this->_observers) {
+            obs->UpdateIsAddingCamera(whichCamera);
+        }
+    }
+    void CamerasSubject::NotifyIsDeletingCamera(int whichCamera)
+    {
+        for (std::shared_ptr<CamerasObserver> obs : this->_observers) {
+            obs->UpdateIsDeletingCamera(whichCamera);
+        }
+    }
    
 }
