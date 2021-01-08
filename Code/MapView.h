@@ -9,6 +9,9 @@
 #include "SimulationObserver.h"
 #include "SimulationHandler.h"
 #include "KeysEnum.h"
+#include "SaveState.h"
+#include <iostream>
+#include <fstream>
 
 
 namespace ZPR {
@@ -48,7 +51,6 @@ namespace ZPR {
 		void LoadAssets();
 		sf::FloatRect CalculateViewPort();
 		void DrawGrid();
-        void DrawEnterGrid();
 		void DrawRoads();
         void DrawEntryRoads();
 		void DrawVehicles();
