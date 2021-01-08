@@ -16,6 +16,7 @@ namespace ZPR {
         this->clicked = false;
 		LoadAssets();
 		setupSelectedCellRect();
+        this->_whichCamera = 0;
 		this->_backgroundTexture.setTexture(this->_data->assets.GetTexture("Background"));
 		this->_backgroundTexture.setOrigin(sf::Vector2f(800, 800));
 		this->_backgroundTexture.setPosition(this->_mapView.getCenter());
@@ -30,8 +31,15 @@ namespace ZPR {
 		GenerateGridLines();
         GenerateEnterBoard();
         this->_mapView.zoom(1.4f);
+        this->InitializeCameras();
         FillEnterCells();
 	}
+    void MapView::InitializeCameras(){
+        sf::RectangleShape temp;
+        for(int i = 0; i < 2; i++){
+            _cameras.push_back(temp);
+        }
+    }
 	/*Zwraca wartoœci kolumny i wiersza obecnie zaznaczonej komórki*/
 	sf::Vector2i MapView::getRowCol()
 	{
@@ -229,7 +237,10 @@ namespace ZPR {
         centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2 ;
         centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2 ;
         camera.setPosition(centeredPositionInPixels);
-        this->_cameras.push_back(camera);
+        //int cam = _whichCamera;
+        auto itPos = _cameras.begin() + _whichCamera;
+        this->_cameras.insert(itPos, camera);
+        //emplace(_cameras.begin()+_whichCamera, camera);
     }
     
     void MapView::AddEnterRoad(sf::Vector2i position){
@@ -477,6 +488,8 @@ namespace ZPR {
         this->isAddingCamera = isAddingCamera;
         this->isDrawingRoad = false;
         this->isDeletingRoad = false;
+        this->_whichCamera = whichCamera;
+        
     }
     void MapView::SaveToFile(){
         this->_data->machine.AddState(StateRef(new SaveState(this->_data, _cells, _gridSize)), false);
