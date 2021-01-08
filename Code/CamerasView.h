@@ -3,9 +3,11 @@
 #include "Definitions.h"
 #include "Button.h"
 #include "CamerasSubject.h"
+#include "SimulationObserver.h"
+#include "CreatorObserver.h"
 
 namespace ZPR{
-class CamerasView : public CamerasSubject{
+class CamerasView : public CamerasSubject, public SimulationObserver, public CreatorObserver{
 	public:
 		CamerasView(SimulatorDataRef data);
 		void Draw();
@@ -15,6 +17,18 @@ class CamerasView : public CamerasSubject{
         void CamerasLabels(std::string text, int yPosition);
         void AddButtons();
         void ButtonsHandler(Button button, std::string label, int position, int labelPosition);
+        void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {}
+        void UpdateIsSimulating(bool isSimulating) {}
+        
+        void UpdateIsDeletingCamera(int whichCamera);
+        
+        void UpdateSelectedCell(sf::Vector2i coords) {}
+        void UpdateCells(std::vector<Cell> cells) {}
+        void SaveToFile()  {}
+        void UpdateIsDrawingRoad(bool isDrawingRoad) {}
+        void UpdateIsDeletingRoad(bool isDeletingRoad) {}
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
+    
 	private:
         std::vector<Button> _buttons;
 		sf::FloatRect CalculateViewPort();
@@ -23,6 +37,7 @@ class CamerasView : public CamerasSubject{
 		sf::View _camerasView;
         std::vector<sf::Text> _camerasLabels;
         bool _isSimulating;
+        std::vector<bool> _camerasOn;
 	};
 };
 

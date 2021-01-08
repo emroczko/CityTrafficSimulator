@@ -68,6 +68,7 @@ namespace ZPR {
 		this->_data->assets.LoadTexture("Intersection", INTERSECTION_TEXTURE);
 		this->_data->assets.LoadTexture("Crossing", CROSSING_TEXTURE);
         this->_data->assets.LoadTexture("Entry", ENTRY_TEXTURE);
+        this->_data->assets.LoadTexture("Camera", CAMERA_TEXTURE);
 	}
 	/*Ustawia podstawowe parametry kwadratu reprezentuj¹cego zaznaczone pole na mapie*/
 	void MapView::setupSelectedCellRect()
@@ -122,6 +123,11 @@ namespace ZPR {
 			this->_data->window.draw(*vehicle);
 		}
 	}
+    void MapView::DrawCameras(){
+        for (sf::RectangleShape camera : this->_cameras) {
+            this->_data->window.draw(camera);
+        }
+    }
     
 	/*Tworzy linie reprezentuj¹ce siatkê na mapie*/
 	void MapView::GenerateGridLines() {
@@ -174,6 +180,13 @@ namespace ZPR {
                 DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
 				cell._toDelete = false;
             }
+            if (cell._containsCamera && !cell._cameraDrawn) {
+                cell._cameraDrawn = true;
+                AddCamera((sf::Vector2i(row, col)));
+            }
+            if (cell._cameraToDelete) {
+                DeleteCamera(TransformRowColToPixels(sf::Vector2i(row, col)));
+            }
 		}
 	}
     void MapView::FillEnterCells()
@@ -206,6 +219,18 @@ namespace ZPR {
         road.setPosition(centeredPositionInPixels);
         this->_roads.push_back(road);
     }
+    void MapView::AddCamera(sf::Vector2i position){
+        sf::RectangleShape camera;
+        camera.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
+        camera.setTexture(&this->_data->assets.GetTexture("Camera"));
+        camera.setOrigin(sf::Vector2f(camera.getSize().x / 2, camera.getSize().y / 2));
+        sf::Vector2f centeredPositionInPixels = TransformRowColToPixels(sf::Vector2i(position.x, position.y));
+        centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2 ;
+        centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2 ;
+        camera.setPosition(centeredPositionInPixels);
+        this->_cameras.push_back(camera);
+    }
+    
     void MapView::AddEnterRoad(sf::Vector2i position){
         AddRoad("Road", position);
         CheckRoadsTexture();
@@ -343,6 +368,23 @@ namespace ZPR {
 		}
 		CheckRoadsTexture();
 	}
+    void MapView::UpdateIsDeletingCamera(int whichCamera){
+        
+    }
+    void MapView::DeleteCamera(sf::Vector2f position){
+        int i = 0;
+        for (sf::RectangleShape camera : _cameras) {
+            if (camera.getPosition().x - this->_cellSize / 2 == position.x && camera.getPosition().y - this->_cellSize / 2 == position.y){
+                _cameras.erase(_cameras.begin() + i);
+                camera.setTexture(NULL);
+            }
+            i++;
+        }
+        
+//        _cameras.at(whichCamera-1).setTexture(NULL);
+//        _cameras.erase(_roads.begin() + whichCamera-1);
+//        CheckRoadsTexture();
+    }
 	/*Sprawdza czy droga na podanej pozycji istnieje*/
 	bool MapView::CheckRoadExists(sf::Vector2f position) {
 		for (sf::RectangleShape road : this->_roads) {
@@ -367,6 +409,7 @@ namespace ZPR {
 		DrawRoads();
 		DrawGrid();
 		DrawVehicles();
+        DrawCameras();
 	}
 
     void MapView::zoomViewAt(sf::Vector2f pixel, float zoom)
@@ -426,6 +469,11 @@ namespace ZPR {
 	/*Uaktualnia wartoœc zmiennej decydojacej o tym czy jesteœmy w trybie symulacji*/
     void MapView::UpdateIsSimulating(bool isSimulating){
         this->isSimulating = isSimulating;
+        this->isDrawingRoad = false;
+        this->isDeletingRoad = false;
+    }
+    void MapView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera){
+        this->isAddingCamera = isAddingCamera;
         this->isDrawingRoad = false;
         this->isDeletingRoad = false;
     }

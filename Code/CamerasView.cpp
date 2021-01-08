@@ -15,18 +15,17 @@ namespace ZPR {
         this->CamerasLabels("Camera 2: Disabled", 280);
         this->CamerasLabels("Camera 3: Disabled", 510);
         
+        for (int i = 0; i<3; i++){
+            this->_camerasOn.push_back(false);
+        }
+        
 	}
     void CamerasView::AddButtons(){
         sf::Vector2f buttonSize(150, 66);
         int fontSize = 30;
         for ( int i = 1; i<4; i++){
-        this->_buttons.push_back(Button(sf::Vector2f(2*_camerasView.getSize().x/8, 230*i), buttonSize, "Add camera",
+        this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 230*i), buttonSize, "Add camera "+std::to_string(i),
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-            
-            
-        this->_buttons.push_back(Button(sf::Vector2f(6*_camerasView.getSize().x/8, 230*i), buttonSize, "Rotate",
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-            //std::cout<<"Button "<<i<<" position Y: "<<_buttons.at(i-1).getPosition().y<<std::endl;
         }
         for (Button& button : _buttons){
             std::cout<<"Button position Y: "<<button.getPosition().y<<std::endl;
@@ -77,18 +76,28 @@ namespace ZPR {
             this->_data->window.draw(label);
         }
 }
-    void CamerasView::ButtonsHandler(Button button, std::string label, int position, int labelPosition){
-        if (this->_buttons.at(position).isPressed) {
-            this->_buttons.at(position).setBackground(this->_data->assets.GetTexture("Button"));
-            button.setText("Add camera");
-            _camerasLabels.at(labelPosition).setString(label+"Disabled");
-        }
-        else{
-            this->_buttons.at(position).setBackground(this->_data->assets.GetTexture("Button_pressed"));
-            button.setText("Remove camera");
-            _camerasLabels.at(labelPosition).setString(label+"Enabled");
+    
+            
+        
+    
+    
+    void CamerasView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera){
+        if(!isAddingCamera){
+            this->_camerasOn.at(whichCamera-1) = true;
+            this->_buttons.at(whichCamera-1).setText("Remove camera "+std::to_string(whichCamera));
+            this->_buttons.at(whichCamera-1).setBackground(this->_data->assets.GetTexture("Button"));
+            _camerasLabels.at(whichCamera-1).setString("Camera "+std::to_string(whichCamera)+": Enabled");
+        }else{
+            this->_buttons.at(whichCamera-1).setBackground(this->_data->assets.GetTexture("Button_pressed"));
         }
     }
+    void CamerasView::UpdateIsDeletingCamera(int whichCamera){
+        this->_camerasOn.at(whichCamera-1) = false;
+        this->_buttons.at(whichCamera-1).setText("Add camera "+std::to_string(whichCamera));
+        this->_buttons.at(whichCamera-1).setBackground(this->_data->assets.GetTexture("Button"));
+        _camerasLabels.at(whichCamera-1).setString("Camera "+std::to_string(whichCamera)+": Disabled");
+    }
+    
     void CamerasView::HandleInput(){
         for (Button& button : this->_buttons){
             if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_camerasView)){
@@ -96,6 +105,7 @@ namespace ZPR {
                     if (this->_buttons.at(6).isPressed) {
                         this->_buttons.at(6).setBackground(this->_data->assets.GetTexture("Button"));
                         button.setText("Start simulation");
+                        
                     }
                     else{
                         this->_buttons.at(6).setBackground(this->_data->assets.GetTexture("Button_pressed"));
@@ -103,26 +113,36 @@ namespace ZPR {
                     }
                     
                     this->NotifyIsSimulating();
-                }
-                if (button.getPosition().x == 27 && button.getPosition().y == 209) {
-                    this->ButtonsHandler(button, "Camera 1: ", 0, 0);
-                }
-                if (button.getPosition().x == 27 && button.getPosition().y == 439) {
-                    this->ButtonsHandler(button, "Camera 2: ", 2, 1);
-                }
-                if (button.getPosition().x == 27 && button.getPosition().y == 669) {
-                    this->ButtonsHandler(button, "Camera 3: ", 4, 2);
-                }
-                if (button.getPosition().x == 220.5 && button.getPosition().y == 209) {
                     
                 }
-                if (button.getPosition().x == 220.5 && button.getPosition().y == 439) {
+                if (button.getText() == "Add camera 1") {
+                    //this->ButtonsHandler(button, "Camera 1: ", 0, 0);
+                    this->NotifyIsAddingCamera(1);
                     
                 }
-                if (button.getPosition().x == 220.5 && button.getPosition().y == 669) {
+                if (button.getText() == "Add camera 2") {
+                   // this->ButtonsHandler(button, "Camera 2: ", 1, 1);
+                    this->NotifyIsAddingCamera(2);
+                }
+                if (button.getText() == "Add camera 3") {
+                    //this->ButtonsHandler(button, "Camera 3: ", 2, 2);
+                    this->NotifyIsAddingCamera(3);
+                }
+                if (button.getText() == "Remove camera 1") {
+                    //this->ButtonsHandler(button, "Camera 1: ", 0, 0);
+                    this->NotifyIsDeletingCamera(1);
                     
+                }
+                if (button.getText() == "Remove camera 2") {
+                   // this->ButtonsHandler(button, "Camera 2: ", 1, 1);
+                    this->NotifyIsDeletingCamera(2);
+                }
+                if (button.getText() == "Remove camera 3") {
+                    //this->ButtonsHandler(button, "Camera 3: ", 2, 2);
+                    this->NotifyIsDeletingCamera(3);
                 }
                 button.isPressed = !button.isPressed;
+                
             }
         }
     }
