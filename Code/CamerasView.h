@@ -8,9 +8,9 @@
 
 namespace ZPR{
 class CamerasView : public CamerasSubject, public SimulationObserver, public CreatorObserver{
-	public:
-		CamerasView(SimulatorDataRef data);
-		void Draw();
+    public:
+        CamerasView(SimulatorDataRef data);
+        void Draw();
         void DrawButtons();
         bool isClicked(sf::Vector2i &mousePosition);
         void HandleInput();
@@ -29,15 +29,14 @@ class CamerasView : public CamerasSubject, public SimulationObserver, public Cre
         void UpdateIsDeletingRoad(bool isDeletingRoad) {}
         void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
     
-	private:
+    private:
         std::vector<Button> _buttons;
-		sf::FloatRect CalculateViewPort();
-		SimulatorDataRef _data;
-		sf::RectangleShape _background;
-		sf::View _camerasView;
+        sf::FloatRect CalculateViewPort();
+        SimulatorDataRef _data;
+        sf::RectangleShape _background;
+        sf::View _camerasView;
         std::vector<sf::Text> _camerasLabels;
         bool _isSimulating;
         std::vector<bool> _camerasOn;
-	};
+    };
 };
-

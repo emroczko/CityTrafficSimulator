@@ -1,13 +1,13 @@
 #include "CamerasView.h"
 #include <iostream>
 namespace ZPR {
-	CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(false)
-	{
-		this->_camerasView = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
-		this->_camerasView.setViewport(CalculateViewPort());
-		this->_background.setPosition(0, 0);
-		this->_background.setSize(this->_camerasView.getSize());
-		this->_background.setFillColor(sf::Color(80, 80, 80));
+    CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(false)
+    {
+        this->_camerasView = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
+        this->_camerasView.setViewport(CalculateViewPort());
+        this->_background.setPosition(0, 0);
+        this->_background.setSize(this->_camerasView.getSize());
+        this->_background.setFillColor(sf::Color(80, 80, 80));
         
         
         this->AddButtons();
@@ -19,7 +19,7 @@ namespace ZPR {
             this->_camerasOn.push_back(false);
         }
         
-	}
+    }
     void CamerasView::AddButtons(){
         sf::Vector2f buttonSize(150, 66);
         int fontSize = 30;
@@ -44,13 +44,13 @@ namespace ZPR {
         this->_camerasLabels.push_back(tempLabel);
         
     }
-	sf::FloatRect CamerasView::CalculateViewPort()
-	{
+    sf::FloatRect CamerasView::CalculateViewPort()
+    {
         float rectWidth = (1.f - (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH)/2;
         float rectLeft = 0.f;
         return sf::FloatRect(rectLeft, 0.f, rectWidth, 1.f);
         
-	}
+    }
 
     bool CamerasView::isClicked(sf::Vector2i &mousePosition){
 
@@ -59,12 +59,12 @@ namespace ZPR {
      else
         return false;
     }
-	void CamerasView::Draw()
-	{
-		this->_data->window.setView(this->_camerasView);
-		this->_data->window.draw(this->_background);
+    void CamerasView::Draw()
+    {
+        this->_data->window.setView(this->_camerasView);
+        this->_data->window.draw(this->_background);
         DrawButtons();
-	}
+    }
     void CamerasView::DrawButtons()
     {
         for (Button button: _buttons)
