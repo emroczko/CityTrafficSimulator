@@ -44,7 +44,7 @@ namespace ZPR {
         friend std::ofstream& operator<< (std::ofstream& ,const MapView&);
         friend std::ostream& operator<< (std::ostream& ,const MapView&);
 	private:
-        void InitializeCameras();
+        
         std::unique_ptr<Grid> _enterGrid;
         int _maximumZoom;
         bool clicked;
@@ -89,7 +89,6 @@ namespace ZPR {
         bool isDeletingRoad;
         bool isSimulating;
         bool isAddingCamera;
-        
         sf::Vector2i _buffer;
 		sf::RectangleShape _selectedCellRect;
 		std::vector<sf::RectangleShape> _gridLines;
@@ -97,7 +96,6 @@ namespace ZPR {
 		sf::Sprite _backgroundTexture;
 		sf::View _mapView;
         std::vector<sf::RectangleShape> _roads, _entryRoad, _cameras;
-        int _whichCamera;
 		std::vector<Cell> _cells;
         std::vector<Cell> _enterCells;
 		std::vector<std::shared_ptr<Vehicle>> _vehicles;
