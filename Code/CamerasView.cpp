@@ -15,8 +15,6 @@ namespace ZPR {
         
         this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 800), buttonSize, "Start simulation",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-        
-        
 	}
 
 	sf::FloatRect CamerasView::CalculateViewPort()

@@ -4,7 +4,7 @@
 
 namespace ZPR {
     SimulationHandler::SimulationHandler(int gridSize, std::vector<Cell> cells) : isSimulating(false), _gridSize(gridSize), _cells(cells) { init(); }
-
+    //Inicjuje elementy potrzebne do poprawnego działania obiektu
     void SimulationHandler::init()
     {
         this->timer = Timer();
@@ -44,11 +44,12 @@ namespace ZPR {
         }
         
     }
+    //Uaktualni wektor komórek
     void SimulationHandler::UpdateCells(std::vector<Cell> cells)
     {
         this->_cells = cells;
     }
-
+    //Oddziela komórki posiadające na sobie droge od reszty
     void SimulationHandler::SeparateRoadsFromCells()
     {
         for (Cell cell : _cells) {
@@ -65,6 +66,7 @@ namespace ZPR {
         }
         AddStartingRoad();
     }
+    //Dodaje do wektora dróg droge startową 
     void SimulationHandler::AddStartingRoad() {
         sf::RectangleShape road;
         road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
@@ -75,21 +77,21 @@ namespace ZPR {
         road.setPosition(centeredPositionInPixels);
         this->_roads.push_back(road);
     }
-
+    //Sprawdza które samochody są zatrzymane
     void SimulationHandler::CheckIfRoadIsBlocked()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
             vehicle->CheckIsStopped();
         }
     }
-
+    //Obliczna 
     int SimulationHandler::CalculatePrefix() {
         double cellSizeWithPoint = (double)SCREEN_HEIGHT / _gridSize;
         double theRest = cellSizeWithPoint - this->_cellSize;
         int drawPrefix = theRest * _gridSize / 2;
         return drawPrefix;
     }
-   
+    //Dodaje do symulacji kolejne pojazdy
     void SimulationHandler::AddCarsToSimulate()
     {
         int x_start = CalculatePrefix() + _cellSize * STARTING_CELL_COL + this->_sidewalkSize + this->_roadSize/4;
@@ -111,9 +113,8 @@ namespace ZPR {
         if(!isSimulating){
             timer.stopTimer();
         }
-
-        
     }
+    //Porusza samochody
     void SimulationHandler::MoveVehicles()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
@@ -124,6 +125,7 @@ namespace ZPR {
             vehicle->CheckTurn();
         }
     }
+    //Sprawdza czy przed pojazdem znajduje się inny pojazda i zaptrzymuje go jeśli jest taka potrzeba
     void SimulationHandler::VehilcesColision()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
@@ -141,6 +143,7 @@ namespace ZPR {
             }
         }
     }
+    //Sprawdza czy komórka startowa jest wolna w celu dodania do niej dodać nowego pojazdu
     bool SimulationHandler::StartingCellFree()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
@@ -150,6 +153,7 @@ namespace ZPR {
         }
         return true;
     }
+    //Usuwa pojzad wjeżdżający na pole wyjściowe miasta
     void SimulationHandler::DeleteVehicles()
     {
         int i = 0;

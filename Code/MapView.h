@@ -40,7 +40,7 @@ namespace ZPR {
         std::vector<Cell> GetCells();
         void zoomViewAt(sf::Vector2f pixel, float zoom);
         friend std::ofstream& operator<< (std::ofstream& ,const MapView&);
-        //friend std::ostream& operator<< (std::ostream& ,const MapView&);
+        friend std::ostream& operator<< (std::ostream& ,const MapView&);
 	private:
         
         std::unique_ptr<Grid> _enterGrid;

@@ -447,9 +447,13 @@ namespace ZPR {
 		return this->_mapView;
 	}
     std::ofstream& operator<< (std::ofstream& os, const MapView& currentMapView){
-        //os << currentMapView._gridSize << std::endl;
-        //for(auto p : currentMapView._cells)
-            //os << p.GetPosition().x <<" & "<< p.GetPosition().y<<" % "<<p._containsRoad<<std::endl;
+        os << currentMapView._gridSize << std::endl;
+        for(auto p : currentMapView._cells)
+            os << p.GetPosition().x <<" & "<< p.GetPosition().y<<" % "<<p._containsRoad<<std::endl;
         return os;
     }
+	std::ostream& operator<<(std::ostream& os, const MapView&)
+	{
+		return os;
+	}
 }

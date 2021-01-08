@@ -1,10 +1,12 @@
 #include "Vehicle.h"
 #include <random>
 namespace ZPR {
+	//Zwraca kszta³t jakim reprezentowany jest pojazd
 	sf::RectangleShape Vehicle::getShape()
 	{
 		return this->_shape;
 	}
+	//Przemieszcza pojazd w zale¿noœci od jego kierunku poruszania
 	void Vehicle::move()
 	{
 		if (_direction == "North") {
@@ -33,9 +35,11 @@ namespace ZPR {
 		UpdatePosition();
 		UpdateColisionBoxPosition();
 	}
+	//Uaktualnia pozycjê pojazdu
 	void Vehicle::UpdatePosition() {
 		this->_shape.setPosition(sf::Vector2f(_x, _y));
 	}
+	//Uaktualnia pozycjê kszta³tu odpowiadaj¹cego za wykrywanie czy przed pojzadam znajduje sie inny pojazd
 	void Vehicle::UpdateColisionBoxPosition() {
 		if (this->_direction == "South") {
 			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y + (this->_colisionBox.getSize().y / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize)));
@@ -50,7 +54,7 @@ namespace ZPR {
 			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x - (this->_colisionBox.getSize().x / 2 + ceil(this->_shape.getSize().y / 2) + this->_roadStripesSize), this->_shape.getPosition().y));
 		}
 	}
-
+	//Sprawdza na której drodze znajduje sie pojazd
 	void Vehicle::CheckOnWhichCell(int drawPrefix)
 	{
 		std::shared_ptr<sf::RectangleShape> tempCell = nullptr;
@@ -74,7 +78,7 @@ namespace ZPR {
 		}
 		return false;
 	}
-
+	//Sprawdza ile mo¿liwoœci poruszania sie ma pojazd wchodz¹cy na nowe pole z drog¹ i wybiera jedn¹ z nich
 	void Vehicle::CheckTurn()
 	{
 		if (_previousRoad) {
@@ -119,10 +123,12 @@ namespace ZPR {
 			}
 		}
 	}
+	//Zatrzymuje pojzd
 	void Vehicle::StopVehicle()
 	{
 		this->_speed = 0;
 	}
+	//Sprawdza czy pojzd jest zatrzymany i odblokowuje go jezeli za d³ugo stoi w miejscu
 	void Vehicle::CheckIsStopped()
 	{
 		if (this->_stopTimeCounter > 1000) {
@@ -132,12 +138,14 @@ namespace ZPR {
 			this->_stopTimeCounter++;
 		}
 	}
+	//Sprawia ¿e pojzd zawraca w momencie w którym jest zablokowany
 	void Vehicle::Unblock() {
 		if (CheckIfCanTurnBack()) {
 			TurnBack();
 			this->_speed = 3;
 		}
 	}
+	//Sprawdza czy pole na którym znajduje sie pojazd umozliwia mu zawrócenie
 	bool Vehicle::CheckIfCanTurnBack()
 	{
 		for (sf::RectangleShape road : this->_roads) {
@@ -156,11 +164,13 @@ namespace ZPR {
 		}
 		return false;
 	}
+	//Funkcja ustawiaj¹ca zmienne do domyslinych wartoœci wykonywana je¿eli przed pojazdem nie znajduje siê przeszkoda
 	void Vehicle::NoColision()
 	{
 		this->_speed = 3;
 		this->_stopTimeCounter = 0;
 	}
+	//Funkcja Zmieniaj¹ca kierunek ruchu pojazdu tak aby wykonaæ manewr zawracania
 	void Vehicle::TurnBack() {
 		if (this->_direction == "North") {
 			this->_direction = "South";
@@ -175,6 +185,7 @@ namespace ZPR {
 			this->_direction = "East";
 		}
 	}
+	//Funkcja wybieraj¹ca kierunek poruszania sie je¿eli droga na które siê znajdujemy ma tylko jedn¹ s¹siadujac¹ drogê (pomijamy drogê z której przyjechaliœmy)
 	void Vehicle::ChoseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 
@@ -191,7 +202,7 @@ namespace ZPR {
 			this->UpdateDirection("West");
 		}
 	}
-
+	//Funkcja wybieraj¹ca kierunek poruszania sie je¿eli droga na które siê znajdujemy ma dwie s¹siadujace drogi (pomijamy drogê z której przyjechaliœmy)
 	void Vehicle::ChoseFromTwoRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		std::random_device rng;
@@ -241,7 +252,7 @@ namespace ZPR {
 			}
 		}
 	}
-
+	//Funkcja wybieraj¹ca kierunek poruszania sie je¿eli droga na które siê znajdujemy ma trzy s¹siadujace drogi (pomijamy drogê z której przyjechaliœmy)
 	void Vehicle::ChoseFromThreeRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		std::random_device rng;
@@ -277,12 +288,12 @@ namespace ZPR {
 			}
 		}
 	}
-
+	//Uaktualnia kierunek poruszania sie pojazdu
 	void Vehicle::UpdateDirection(std::string direction)
 	{
 		this->_direction = direction;
 	}
-
+	//Rysuje pojazd
 	void Vehicle::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	{
 		target.draw(this->_shape, states);
