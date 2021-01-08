@@ -21,13 +21,13 @@ class CamerasView : public CamerasSubject, public SimulationObserver, public Cre
         void UpdateIsSimulating(bool isSimulating) {}
         
         void UpdateIsDeletingCamera(int whichCamera);
-        
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
         void UpdateSelectedCell(sf::Vector2i coords) {}
         void UpdateCells(std::vector<Cell> cells) {}
         void SaveToFile()  {}
         void UpdateIsDrawingRoad(bool isDrawingRoad) {}
         void UpdateIsDeletingRoad(bool isDeletingRoad) {}
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
+       
     
 	private:
         std::vector<Button> _buttons;
