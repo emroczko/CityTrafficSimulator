@@ -24,6 +24,7 @@ namespace ZPR {
 		bool& GetIsPressed();
 		
 		sf::String getText();
+        sf::Vector2f getPosition();
 		virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 		bool isPressed;
 	private:

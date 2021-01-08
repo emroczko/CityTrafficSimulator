@@ -20,13 +20,20 @@ namespace ZPR {
         void SaveToFile();
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
+<<<<<<< HEAD
         void SeparateRoadsFromCells();
+=======
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera) {};
+        void UpdateIsDeletingCamera(int whichCamera) {};
+>>>>>>> parent of 6541e9a... Merge branch 'main' of https://github.com/emroczko/CityTrafficSimulator_ZPR into main
         void HandleInput();
     private:
         Timer timer;
+        void SeparateRoadsFromCells();
         int CalculatePrefix();
         void AddCarsToSimulate();
         void AddStartingRoad();
+        void CheckIfRoadIsBlocked();
         void MoveVehicles();
         void VehilcesColision();
         bool StartingCellFree();

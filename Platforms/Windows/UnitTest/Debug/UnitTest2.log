@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (UnitTest2.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
   catch_amalgamated.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(7100,13): error C2593: "operator <<" jest niejednoznaczny
@@ -51,3 +52,7 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Tests\catch_amalgamated.cpp(9
   Tests.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Simulator.h(5,10): fatal error C1083: Nie można otworzyć pliku dołącz: 'SFML/Graphics.hpp': No such file or directory
   Generowanie kodu...
+=======
+﻿  MapViewTest.cpp
+  UnitTest2.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\UnitTest.exe
+>>>>>>> parent of 6541e9a... Merge branch 'main' of https://github.com/emroczko/CityTrafficSimulator_ZPR into main

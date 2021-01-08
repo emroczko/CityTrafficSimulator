@@ -9,6 +9,9 @@
 #include "SimulationObserver.h"
 #include "SimulationHandler.h"
 #include "KeysEnum.h"
+#include "SaveState.h"
+#include <iostream>
+#include <fstream>
 
 
 namespace ZPR {
@@ -23,6 +26,8 @@ namespace ZPR {
 		void UpdateIsDrawingRoad(bool isDrawingRoad);
         void UpdateIsDeletingRoad(bool isDeletingRoad);
         void UpdateIsSimulating(bool isSimulating);
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
+        void UpdateIsDeletingCamera(int whichCamera);
         void SaveToFile();
 		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
 		void Draw();
@@ -46,10 +51,10 @@ namespace ZPR {
 		void LoadAssets();
 		sf::FloatRect CalculateViewPort();
 		void DrawGrid();
-        void DrawEnterGrid();
 		void DrawRoads();
         void DrawEntryRoads();
 		void DrawVehicles();
+        void DrawCameras();
 		void GenerateGridLines();
         void GenerateEnterGridLines();
         void GenerateEnterBoard();
@@ -60,6 +65,7 @@ namespace ZPR {
 		void AddUserRoad(sf::Vector2i position);
         void AddGarage(sf::Vector2i position);
         void AddEnterRoad(sf::Vector2i position);
+        void AddCamera(sf::Vector2i position);
 		void CheckRoadsTexture();
 		void ChoseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
 			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west, int row, int col);
@@ -68,6 +74,7 @@ namespace ZPR {
 		void ChoseRoadWithThreeNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
 			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
         void DeleteRoad(sf::Vector2f position);
+        void DeleteCamera(sf::Vector2f position);
 		bool CheckRoadExists(sf::Vector2f position);
 		sf::Vector2f TransformRowColToPixels(sf::Vector2i rowcol);
         int TransformPixelsToRowCol(double pixels);
@@ -81,13 +88,14 @@ namespace ZPR {
 		bool isDrawingRoad;
         bool isDeletingRoad;
         bool isSimulating;
+        bool isAddingCamera;
         sf::Vector2i _buffer;
 		sf::RectangleShape _selectedCellRect;
 		std::vector<sf::RectangleShape> _gridLines;
         std::vector<sf::RectangleShape> _enterGridLines;
 		sf::Sprite _backgroundTexture;
 		sf::View _mapView;
-        std::vector<sf::RectangleShape> _roads, _entryRoad;
+        std::vector<sf::RectangleShape> _roads, _entryRoad, _cameras;
 		std::vector<Cell> _cells;
         std::vector<Cell> _enterCells;
 		std::vector<std::shared_ptr<Vehicle>> _vehicles;

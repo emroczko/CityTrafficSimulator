@@ -12,8 +12,8 @@ namespace ZPR {
     }
     /*Metoda inicjuj¹ca wszystkie elementy potrzebne do poprawnego dzia³ania obiektu*/
     void CreatorState::Init(){
-        this->_mapView = std::make_shared<MapView>(this->_data, this->_gridSize);
-        this->_toolsView = std::make_unique<ToolsView>(this->_data);
+		this->_mapView = std::make_shared<MapView>(this->_data, this->_gridSize);
+		this->_toolsView = std::make_unique<ToolsView>(this->_data);
         this->_camerasView = std::make_unique<CamerasView>(this->_data);
         this->_creatorHandler = std::make_unique<CreatorHandler>(this->_gridSize, this->_cells);
         this->_creatorHandler->add(this->_mapView);
@@ -29,6 +29,7 @@ namespace ZPR {
         this->_toolsView->add(this->_creatorHandler);
         this->_camerasView->add(this->_simulationHandler);
         this->_camerasView->add(this->_creatorHandler);
+        
     }
     /*Obs³uga zdarzeñ w oknie*/
     void CreatorState::HandleInput() {
