@@ -40,5 +40,3 @@
 #define CROSSING_TEXTURE "Resources/crossing.png"
 
 #define ENTRY_TEXTURE "Resources/entry.png"
-
-#define CAMERA_TEXTURE "Resources/camera.png"
