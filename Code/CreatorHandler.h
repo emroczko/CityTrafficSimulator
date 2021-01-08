@@ -1,6 +1,7 @@
 #pragma once
 #include "CreatorSubject.h"
 #include "Grid.h"
+#include "Cell.h"
 #include "ToolsObserver.h"
 #include "SimulationObserver.h"
 #include "CamerasObserver.h"

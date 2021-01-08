@@ -1,15 +1,15 @@
 #include "CreatorHandler.h"
 
-namespace ZPR {
+namespace ZPR{
 	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), _isDrawingRoad(false), _isDeletingRoad(false), _isAddingCameras(false), _enterGridHeight(2) {}
     CreatorHandler::CreatorHandler(int gridSize, std::vector<Cell> cells): _gridSize(gridSize), _cells(cells), _row(-1), _col(-1), _isDrawingRoad(false), _isDeletingRoad(false), _isAddingCameras(false), _enterGridHeight(2) {}
 
 	void CreatorHandler::init()
 	{
-        if (_cells.empty())
+        if (_cells.empty()) {
             this->GenerateBoard();
-        
-        else
+        }
+        else{
             this->ClearRoads();
             this->NotifyCells(_grid->_cells);
             this->NotifyIsDrawingRoad(this->_isDrawingRoad);
@@ -119,3 +119,4 @@ namespace ZPR {
 		
 	}
 }
+
