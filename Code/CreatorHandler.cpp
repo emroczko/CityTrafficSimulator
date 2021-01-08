@@ -38,6 +38,7 @@ namespace ZPR {
 	{
         this->_isDrawingRoad = !this->_isDrawingRoad;
         this->_isDeletingRoad = false;
+        this->_isAddingCameras = false;
 		this->NotifyIsDrawingRoad(this->_isDrawingRoad);
 	}
 	/*Ustawia tryb usuwania drogi na w³¹czony lub wy³¹czony w zale¿noœci od obecnego stanu*/
@@ -45,6 +46,7 @@ namespace ZPR {
     {
         this->_isDeletingRoad = !this->_isDeletingRoad;
         this->_isDrawingRoad = false;
+        this->_isAddingCameras = false;
         this->NotifyIsDeletingRoad(this->_isDeletingRoad);
     }
     void CreatorHandler::UpdateIsAddingCamera(int whichCamera)
