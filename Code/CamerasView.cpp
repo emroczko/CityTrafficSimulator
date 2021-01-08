@@ -1,7 +1,7 @@
 #include "CamerasView.h"
 #include <iostream>
 namespace ZPR {
-    CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(false)
+CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(false), _isAddingCamera(false)
     {
         this->_camerasView = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
         this->_camerasView.setViewport(CalculateViewPort());
@@ -14,6 +14,13 @@ namespace ZPR {
         this->CamerasLabels("Camera 1: Disabled", 50);
         this->CamerasLabels("Camera 2: Disabled", 280);
         this->CamerasLabels("Camera 3: Disabled", 510);
+        this->CamerasLabels("Cars passed: ", 100);
+        this->CamerasLabels("Cars passed: ", 330);
+        this->CamerasLabels("Cars passed: ", 560);
+        this->CamerasLabels("Trucks passed: ", 150);
+        this->CamerasLabels("Trucks passed: ", 380);
+        this->CamerasLabels("Trucks passed: ", 610);
+        
 
         for (int i = 0; i < 3; i++) {
             this->_camerasOn.push_back(false);
@@ -24,7 +31,9 @@ namespace ZPR {
         sf::Vector2f buttonSize(150, 66);
         int fontSize = 30;
         for (int i = 1; i < 4; i++) {
-            this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x / 2, 230 * i), buttonSize, "Add camera " + std::to_string(i),
+            this->_buttons.push_back(Button(sf::Vector2f(2*_camerasView.getSize().x / 8, 230 * i), buttonSize, "Add camera " + std::to_string(i),
+                this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+            this->_removeButtons.push_back(Button(sf::Vector2f(6*_camerasView.getSize().x / 8, 230 * i), buttonSize, "Remove camera " + std::to_string(i),
                 this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
         }
         for (Button& button : _buttons) {
@@ -67,13 +76,32 @@ namespace ZPR {
     }
     void CamerasView::DrawButtons()
     {
-        for (Button button : _buttons)
+        for (int i = 0; i<3; i++)
         {
-            this->_data->window.draw(button);
+            if(!_camerasOn.at(i)){
+                this->_data->window.draw(_buttons.at(i));
+            }
         }
-        for (sf::Text label : _camerasLabels)
+        
+        for (int i = 0; i<3; i++)
         {
-            this->_data->window.draw(label);
+            if(_camerasOn.at(i) && !_isAddingCamera){
+                this->_data->window.draw(_removeButtons.at(i));
+            }
+        }
+        this->_data->window.draw(_buttons.at(3));
+        
+        
+        for (int i = 0; i<3; i++)
+        {
+            this->_data->window.draw(_camerasLabels.at(i));
+        }
+        for (int i = 3; i<6; i++)
+        {
+            if(_camerasOn.at(i-3)){
+                this->_data->window.draw(_camerasLabels.at(i));
+                this->_data->window.draw(_camerasLabels.at(i+3));
+            }
         }
     }
 
@@ -82,9 +110,11 @@ namespace ZPR {
 
 
     void CamerasView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera) {
+        this->_isAddingCamera = isAddingCamera;
         if (!isAddingCamera) {
+            
             this->_camerasOn.at(whichCamera - 1) = true;
-            this->_buttons.at(whichCamera - 1).setText("Remove camera " + std::to_string(whichCamera));
+            
             this->_buttons.at(whichCamera - 1).setBackground(this->_data->assets.GetTexture("Button"));
             _camerasLabels.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Enabled");
         }
@@ -113,9 +143,7 @@ namespace ZPR {
 
                         button.setText("Stop simulation");
                     }
-
                     this->NotifyIsSimulating();
-
                 }
                 if (button.getText() == "Add camera 1") {
                     //this->ButtonsHandler(button, "Camera 1: ", 0, 0);
@@ -130,6 +158,14 @@ namespace ZPR {
                     //this->ButtonsHandler(button, "Camera 3: ", 2, 2);
                     this->NotifyIsAddingCamera(3);
                 }
+                button.isPressed = !button.isPressed;
+
+            }
+        }
+    
+        for (Button& button : this->_removeButtons){
+            if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_camerasView)){
+                
                 if (button.getText() == "Remove camera 1") {
                     //this->ButtonsHandler(button, "Camera 1: ", 0, 0);
                     this->NotifyIsDeletingCamera(1);
@@ -147,5 +183,6 @@ namespace ZPR {
 
             }
         }
+       
     }
 }
