@@ -102,13 +102,13 @@ namespace ZPR {
         for (Button& button : this->_buttons){
             if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_camerasView)){
                 if (button.getText() == "Start simulation" || button.getText() == "Stop simulation"  ) {
-                    if (this->_buttons.at(6).isPressed) {
-                        this->_buttons.at(6).setBackground(this->_data->assets.GetTexture("Button"));
+                    if (this->_buttons.at(3).isPressed) {
+                        this->_buttons.at(3).setBackground(this->_data->assets.GetTexture("Button"));
                         button.setText("Start simulation");
                         
                     }
                     else{
-                        this->_buttons.at(6).setBackground(this->_data->assets.GetTexture("Button_pressed"));
+                        this->_buttons.at(3).setBackground(this->_data->assets.GetTexture("Button_pressed"));
                         button.setText("Stop simulation");
                     }
                     
