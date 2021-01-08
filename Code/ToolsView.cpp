@@ -4,7 +4,8 @@
 namespace ZPR {
 	ToolsView::ToolsView(SimulatorDataRef data) : _data(data)
 	{
-        
+        this->isSimulating = false;
+        this->isAddingCameras = false;
 		this->_toolsView = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
 		this->_toolsView.setViewport(CalculateViewPort());
 		this->_background.setPosition(0, 0);
@@ -50,7 +51,7 @@ namespace ZPR {
     }
     void ToolsView::HandleInput(){
         for (Button& button : this->_buttons){
-                if (isSimulating){
+                if (isSimulating || isAddingCameras){
                     button.isPressed = false;
                     button.setBackground(this->_data->assets.GetTexture("Button"));
                 }
@@ -94,12 +95,17 @@ namespace ZPR {
     void ToolsView::UpdateIsSimulating(bool isSimulating){
         this->isSimulating = isSimulating;
         this->HandleInput();
-        
+    }
+    void ToolsView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera){
+        this->isAddingCameras = isAddingCamera;
+        if(isAddingCamera){
+            this->HandleInput();
+        }
     }
 
 	void ToolsView::DrawButtons()
 	{
-        if (!this->isSimulating){
+        if (!this->isSimulating || !this->isAddingCameras){
             for (Button button: _buttons)
             {
                 this->_data->window.draw(button);

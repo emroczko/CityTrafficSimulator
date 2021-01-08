@@ -75,300 +75,14 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(53,55): warning C4
           ]
   CamerasSubject.cpp
   CamerasView.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(15,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(19,9): error C2059: błąd składniowy: „this”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(24,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(28,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(32,13): error C2059: błąd składniowy: „this”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(32,123): error C2059: błąd składniowy: „)”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(32,124): error C2059: błąd składniowy: „)”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(35,16): error C2653: "CamerasView": nie jest nazwą klasa lub nazwą przestrzeni nazw
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(43,10): error C2653: "CamerasView": nie jest nazwą klasa lub nazwą przestrzeni nazw
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(45,12): error C2065: "_camerasView": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(50,7): error C2653: "CamerasView": nie jest nazwą klasa lub nazwą przestrzeni nazw
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(52,3): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(52,31): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(53,3): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(53,28): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(54,9): error C3861: "DrawButtons": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(56,10): error C2653: "CamerasView": nie jest nazwą klasa lub nazwą przestrzeni nazw
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(58,14): error C2065: "Button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(58,21): error C2146: błąd składniowy: brakuje „;” przed identyfikatorem „button”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(58,27): error C2143: błąd składniowy: brakuje „;” przed „:”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(58,27): error C2143: błąd składniowy: brakuje „)” przed „:”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(58,27): error C2059: błąd składniowy: „:”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(58,37): error C2059: błąd składniowy: „)”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(59,9): error C2143: błąd składniowy: brakuje „;” przed „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(60,13): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(60,38): error C2065: "button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(63,10): error C2653: "CamerasView": nie jest nazwą klasa lub nazwą przestrzeni nazw
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(64,14): error C2065: "Button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(64,22): error C2065: "button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(64,29): error C2143: błąd składniowy: brakuje „;” przed „:”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(64,31): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(64,45): error C2143: błąd składniowy: brakuje „;” przed „)”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(65,17): error C2065: "button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(65,51): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(65,72): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(66,21): error C2065: "button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(66,63): error C2065: "button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(67,25): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(68,25): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(68,60): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(69,25): error C2065: "button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(72,25): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(72,60): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(73,25): error C2065: "button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(75,21): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(77,17): error C2065: "button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(77,37): error C2065: "button": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(81,1): error C2059: błąd składniowy: „}”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(81,1): error C2143: błąd składniowy: brakuje „;” przed „}”
   Cell.cpp
   CreatorHandler.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CreatorHandler.cpp(3,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CreatorHandler.cpp(4,14): error C2143: błąd składniowy: brakuje „;” przed „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CreatorHandler.cpp(4,14): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CreatorHandler.cpp(93,1): fatal error C1004: napotkano nieoczekiwany znacznik końca pliku
   CreatorState.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(23,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(24,38): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(25,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(26,73): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,1): error C2059: błąd składniowy: „>>”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,58): error C2334: nieoczekiwany(e) token(y) poprzedzające ":"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,6): error C2236: nieoczekiwany token "enum". Zapomnialeś ';'?
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2059: błąd składniowy: „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2143: błąd składniowy: brakuje „;” przed „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(51,73): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(51,91): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(52,76): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(52,94): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(55,83): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(55,101): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(157,30): error C3861: "basic_streambuf": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(789): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „ZPR::std::basic_filebuf<_Elem,_Traits>” klasy klasa szablon
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(157,45): error C2143: błąd składniowy: brakuje „,” przed „<”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(159,1): error C2061: błąd składniowy: identyfikator „basic_streambuf”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(160,1): error C2061: błąd składniowy: identyfikator „codecvt”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(160,21): error C2059: błąd składniowy: „>”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(184,43): error C2065: "_Noinit": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(184,19): error C2460: "ZPR::std::basic_filebuf<_Elem,_Traits>::_Uninitialized": używa "ZPR::std::basic_filebuf<_Elem,_Traits>", który jest definiowany
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(262,1): error C7582: „_Uninitialized”: domyślne inicjatory składowej dla pól bitowych wymagają co najmniej elementu „/std:c++latest”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(275,48): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(275,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(291,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(291,37): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(297,48): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(297,1): error C2061: błąd składniowy: identyfikator „open_mode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(297,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const char *)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(275): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(302,51): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(302,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(318,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(318,38): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(318,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(291): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(326,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(326,26): error C2988: nierozpoznana deklaracja/definicja szablonu
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(326,26): error C2143: błąd składniowy: brakuje „,” przed „<”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(342,51): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(342,1): error C2061: błąd składniowy: identyfikator „open_mode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(342,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const wchar_t *)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(302): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(350,42): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(350,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(367,58): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(367,1): error C2061: błąd składniowy: identyfikator „open_mode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(367,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const unsigned short *)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(349): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,1): error C3646: "xsgetn": nieznany specyfikator przesłonięcia
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,57): error C2065: "_Ptr": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,63): error C2065: "streamsize": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,74): error C2146: błąd składniowy: brakuje „)” przed identyfikatorem „_Count”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,1): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(596,1): error C3646: "xsputn": nieznany specyfikator przesłonięcia
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(596,1): error C2059: błąd składniowy: „const”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(596,1): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(627,64): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(627,1): error C2061: błąd składniowy: identyfikator „seekdir”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(648,24): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(648,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,18): error C2143: błąd składniowy: brakuje „;” przed „*”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,1): error C2433: "ZPR::std::basic_filebuf<_Elem,_Traits>::_Mysb": "virtual" nie jest dozwolone w deklaracjach danych
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,1): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(688,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(688,55): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(756,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(756,29): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(766,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(766,15): error C2143: błąd składniowy: brakuje „;” przed „*”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(766,1): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(162,23): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(166,49): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(281,47): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(281,54): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(287,39): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(293,21): error C3861: "_Str": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(293,35): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(293,42): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(298,44): error C7510: openmode”: Użycie zależnej nazwy typ musi być poprzedzone wartością „typename”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(308,47): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(308,54): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(314,39): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(320,21): error C3861: "_Str": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(320,35): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(320,42): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,21): error C3861: "_Path": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,21): message : Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,36): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,36): message : Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,43): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,43): message : Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(344,44): error C7510: openmode”: Użycie zależnej nazwy typ musi być poprzedzone wartością „typename”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(356,47): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(356,54): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(362,39): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(369,44): error C7510: openmode”: Użycie zależnej nazwy typ musi być poprzedzone wartością „typename”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(411,13): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(411,30): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(411,46): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(412,14): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(421,14): error C2065: "_Pcvt": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(421,14): error C3861: "_Pcvt": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(431,17): error C3861: "_Pcvt": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(433,14): error C3861: "codecvt_base": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(434,14): error C3861: "codecvt_base": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(448,14): error C3861: "codecvt_base": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(459,13): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(459,30): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(459,47): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(461,62): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(463,13): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(789,1): fatal error C1003: Licznik błędów przekracza 100; zatrzymywanie kompilacji
   CreatorSubject.cpp
   FileFinder.cpp
   Grid.cpp
   InitCreateState.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(23,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(24,38): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(25,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(26,73): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,1): error C2059: błąd składniowy: „>>”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,58): error C2334: nieoczekiwany(e) token(y) poprzedzające ":"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,6): error C2236: nieoczekiwany token "enum". Zapomnialeś ';'?
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2059: błąd składniowy: „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2143: błąd składniowy: brakuje „;” przed „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(51,73): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(51,91): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(52,76): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(52,94): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(55,83): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(55,101): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(157,30): error C3861: "basic_streambuf": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(789): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „ZPR::std::basic_filebuf<_Elem,_Traits>” klasy klasa szablon
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(157,45): error C2143: błąd składniowy: brakuje „,” przed „<”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(159,1): error C2061: błąd składniowy: identyfikator „basic_streambuf”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(160,1): error C2061: błąd składniowy: identyfikator „codecvt”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(160,21): error C2059: błąd składniowy: „>”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(184,43): error C2065: "_Noinit": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(184,19): error C2460: "ZPR::std::basic_filebuf<_Elem,_Traits>::_Uninitialized": używa "ZPR::std::basic_filebuf<_Elem,_Traits>", który jest definiowany
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(262,1): error C7582: „_Uninitialized”: domyślne inicjatory składowej dla pól bitowych wymagają co najmniej elementu „/std:c++latest”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(275,48): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(275,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(291,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(291,37): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(297,48): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(297,1): error C2061: błąd składniowy: identyfikator „open_mode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(297,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const char *)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(275): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(302,51): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(302,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(318,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(318,38): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(318,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(291): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(326,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(326,26): error C2988: nierozpoznana deklaracja/definicja szablonu
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(326,26): error C2143: błąd składniowy: brakuje „,” przed „<”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(342,51): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(342,1): error C2061: błąd składniowy: identyfikator „open_mode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(342,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const wchar_t *)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(302): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(350,42): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(350,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(367,58): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(367,1): error C2061: błąd składniowy: identyfikator „open_mode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(367,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const unsigned short *)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(349): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,1): error C3646: "xsgetn": nieznany specyfikator przesłonięcia
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,57): error C2065: "_Ptr": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,63): error C2065: "streamsize": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,74): error C2146: błąd składniowy: brakuje „)” przed identyfikatorem „_Count”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,1): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(596,1): error C3646: "xsputn": nieznany specyfikator przesłonięcia
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(596,1): error C2059: błąd składniowy: „const”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(596,1): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(627,64): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(627,1): error C2061: błąd składniowy: identyfikator „seekdir”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(648,24): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(648,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,18): error C2143: błąd składniowy: brakuje „;” przed „*”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,1): error C2433: "ZPR::std::basic_filebuf<_Elem,_Traits>::_Mysb": "virtual" nie jest dozwolone w deklaracjach danych
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,1): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(688,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(688,55): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(756,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(756,29): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(766,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(766,15): error C2143: błąd składniowy: brakuje „;” przed „*”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(766,1): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(162,23): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(166,49): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(281,47): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(281,54): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(287,39): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(293,21): error C3861: "_Str": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(293,35): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(293,42): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(298,44): error C7510: openmode”: Użycie zależnej nazwy typ musi być poprzedzone wartością „typename”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(308,47): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(308,54): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(314,39): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(320,21): error C3861: "_Str": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(320,35): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(320,42): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,21): error C3861: "_Path": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,21): message : Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,36): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,36): message : Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,43): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,43): message : Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(344,44): error C7510: openmode”: Użycie zależnej nazwy typ musi być poprzedzone wartością „typename”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(356,47): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(356,54): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(362,39): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(369,44): error C7510: openmode”: Użycie zależnej nazwy typ musi być poprzedzone wartością „typename”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(411,13): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(411,30): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(411,46): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(412,14): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(421,14): error C2065: "_Pcvt": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(421,14): error C3861: "_Pcvt": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(431,17): error C3861: "_Pcvt": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(433,14): error C3861: "codecvt_base": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(434,14): error C3861: "codecvt_base": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(448,14): error C3861: "codecvt_base": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(459,13): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(459,30): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(459,47): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(461,62): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(463,13): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(789,1): fatal error C1003: Licznik błędów przekracza 100; zatrzymywanie kompilacji
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\InitCreateState.cpp(31,40): warning C4305: "argument": obcięcie z "double" do "float"
   InputManager.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\InputManager.cpp(11,90): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
           with
@@ -407,354 +121,197 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\InputManager.cpp(10,54): warn
               T=int
           ]
   LoadDemo.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(23,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(24,38): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(25,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(26,73): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,1): error C2059: błąd składniowy: „>>”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,58): error C2334: nieoczekiwany(e) token(y) poprzedzające ":"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,6): error C2236: nieoczekiwany token "enum". Zapomnialeś ';'?
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2059: błąd składniowy: „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2143: błąd składniowy: brakuje „;” przed „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.h(37,28): error C2061: błąd składniowy: identyfikator „keysEnum”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadDemo.cpp(9,47): error C2888: "ZPR::LoadDemo::LoadDemo(ZPR::SimulatorDataRef)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadDemo.cpp(12,34): error C2888: "void ZPR::LoadDemo::LoadFromFile(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadDemo.cpp(36,1): fatal error C1004: napotkano nieoczekiwany znacznik końca pliku
   LoadState.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(23,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(24,38): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(25,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(26,73): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,1): error C2059: błąd składniowy: „>>”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,58): error C2334: nieoczekiwany(e) token(y) poprzedzające ":"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,6): error C2236: nieoczekiwany token "enum". Zapomnialeś ';'?
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2059: błąd składniowy: „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2143: błąd składniowy: brakuje „;” przed „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.h(37,28): error C2061: błąd składniowy: identyfikator „keysEnum”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(10,49): error C2888: "ZPR::LoadState::LoadState(ZPR::SimulatorDataRef)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(14,28): error C2888: "void ZPR::LoadState::Init(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(39,40): warning C4305: "argument": obcięcie z "double" do "float"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(44,33): error C2888: "void ZPR::LoadState::CheckSlots(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(50,35): error C2888: "void ZPR::LoadState::HandleInput(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(86,44): error C2888: "void ZPR::LoadState::LoadHandler(int)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(94,45): error C2888: "void ZPR::LoadState::LoadFromFile(int)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(108,38): error C2888: "void ZPR::LoadState::Update(float)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(112,36): error C2888: "void ZPR::LoadState::Draw(float)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(123,1): fatal error C1004: napotkano nieoczekiwany znacznik końca pliku
   Main.cpp
   MainMenuState.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(23,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(24,38): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(25,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(26,73): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,1): error C2059: błąd składniowy: „>>”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,58): error C2334: nieoczekiwany(e) token(y) poprzedzające ":"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,6): error C2236: nieoczekiwany token "enum". Zapomnialeś ';'?
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2059: błąd składniowy: „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2143: błąd składniowy: brakuje „;” przed „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.h(37,28): error C2061: błąd składniowy: identyfikator „keysEnum”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(13,57): error C2888: "ZPR::MainMenuState::MainMenuState(ZPR::SimulatorDataRef)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(18,31): error C2888: "void ZPR::MainMenuState::Init(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(41,40): warning C4305: "argument": obcięcie z "double" do "float"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(48,38): error C2888: "void ZPR::MainMenuState::HandleInput(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(87,41): error C2888: "void ZPR::MainMenuState::Update(float)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(92,39): error C2888: "void ZPR::MainMenuState::Draw(float)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(100,52): error C2888: "unsigned long ZPR::MainMenuState::GetButtonsAmount(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(104,35): error C2888: "void ZPR::MainMenuState::LoadDemo(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(126,1): fatal error C1004: napotkano nieoczekiwany znacznik końca pliku
   MapView.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(23,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(24,38): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(25,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(26,73): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,1): error C2059: błąd składniowy: „>>”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,58): error C2334: nieoczekiwany(e) token(y) poprzedzające ":"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,6): error C2236: nieoczekiwany token "enum". Zapomnialeś ';'?
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2059: błąd składniowy: „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2143: błąd składniowy: brakuje „;” przed „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(51,73): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(51,91): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(52,76): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(52,94): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(55,83): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(55,101): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(157,30): error C3861: "basic_streambuf": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(789): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „ZPR::std::basic_filebuf<_Elem,_Traits>” klasy klasa szablon
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(157,45): error C2143: błąd składniowy: brakuje „,” przed „<”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(159,1): error C2061: błąd składniowy: identyfikator „basic_streambuf”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(160,1): error C2061: błąd składniowy: identyfikator „codecvt”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(160,21): error C2059: błąd składniowy: „>”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(184,43): error C2065: "_Noinit": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(184,19): error C2460: "ZPR::std::basic_filebuf<_Elem,_Traits>::_Uninitialized": używa "ZPR::std::basic_filebuf<_Elem,_Traits>", który jest definiowany
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(262,1): error C7582: „_Uninitialized”: domyślne inicjatory składowej dla pól bitowych wymagają co najmniej elementu „/std:c++latest”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(275,48): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(275,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(291,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(291,37): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(297,48): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(297,1): error C2061: błąd składniowy: identyfikator „open_mode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(297,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const char *)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(275): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(302,51): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(302,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(318,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(318,38): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(318,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(291): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(326,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(326,26): error C2988: nierozpoznana deklaracja/definicja szablonu
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(326,26): error C2143: błąd składniowy: brakuje „,” przed „<”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(342,51): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(342,1): error C2061: błąd składniowy: identyfikator „open_mode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(342,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const wchar_t *)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(302): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(350,42): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(350,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(367,58): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(367,1): error C2061: błąd składniowy: identyfikator „open_mode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(367,1): error C2535: „ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const unsigned short *)”: Funkcja składowa już zdefiniowana lub zadeklarowana
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(349): message : zobacz deklarację „ZPR::std::basic_filebuf<_Elem,_Traits>::open”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,1): error C3646: "xsgetn": nieznany specyfikator przesłonięcia
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,57): error C2065: "_Ptr": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,63): error C2065: "streamsize": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,74): error C2146: błąd składniowy: brakuje „)” przed identyfikatorem „_Count”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(548,1): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(596,1): error C3646: "xsputn": nieznany specyfikator przesłonięcia
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(596,1): error C2059: błąd składniowy: „const”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(596,1): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(627,64): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(627,1): error C2061: błąd składniowy: identyfikator „seekdir”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(648,24): error C2653: "ios_base": nie jest nazwą klasa lub nazwą przestrzeni nazw
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(648,1): error C2061: błąd składniowy: identyfikator „openmode”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,18): error C2143: błąd składniowy: brakuje „;” przed „*”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,1): error C2433: "ZPR::std::basic_filebuf<_Elem,_Traits>::_Mysb": "virtual" nie jest dozwolone w deklaracjach danych
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(661,1): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(688,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(688,55): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(756,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(756,29): error C2143: błąd składniowy: brakuje „,” przed „&”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(766,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(766,15): error C2143: błąd składniowy: brakuje „;” przed „*”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(766,1): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(162,23): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(166,49): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(281,47): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(281,54): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(287,39): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(293,21): error C3861: "_Str": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(293,35): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(293,42): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(298,44): error C7510: openmode”: Użycie zależnej nazwy typ musi być poprzedzone wartością „typename”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(308,47): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(308,54): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(314,39): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(320,21): error C3861: "_Str": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(320,35): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(320,42): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,21): error C3861: "_Path": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,21): message : Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,36): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,36): message : Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,43): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(328,43): message : Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "ZPR::std::basic_filebuf<_Elem,_Traits> *ZPR::std::basic_filebuf<_Elem,_Traits>::open(const int)"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(344,44): error C7510: openmode”: Użycie zależnej nazwy typ musi być poprzedzone wartością „typename”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(356,47): error C3861: "_Mode": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(356,54): error C3861: "_Prot": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(362,39): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(369,44): error C7510: openmode”: Użycie zależnej nazwy typ musi być poprzedzone wartością „typename”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(411,13): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(411,30): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(411,46): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(412,14): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(421,14): error C2065: "_Pcvt": niezadeklarowany identyfikator
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(421,14): error C3861: "_Pcvt": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(431,17): error C3861: "_Pcvt": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(433,14): error C3861: "codecvt_base": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(434,14): error C3861: "codecvt_base": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(448,14): error C3861: "codecvt_base": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(459,13): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(459,30): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(459,47): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(461,62): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(463,13): error C3861: "_Mysb": identyfikatora nie odnaleziono
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(789,1): fatal error C1003: Licznik błędów przekracza 100; zatrzymywanie kompilacji
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(76,95): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(76,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(137,63): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(138,76): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(138,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(139,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(140,76): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(140,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(150,79): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(151,95): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(151,71): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(158,77): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(159,86): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(159,53): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(166,18): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(214,82): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(214,49): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(225,84): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(225,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(254,27): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(256,29): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(361,80): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(361,68): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(400,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(401,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
   SaveState.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(23,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(24,38): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(25,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(26,73): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,1): error C2059: błąd składniowy: „>>”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,58): error C2334: nieoczekiwany(e) token(y) poprzedzające ":"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,6): error C2236: nieoczekiwany token "enum". Zapomnialeś ';'?
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2059: błąd składniowy: „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2143: błąd składniowy: brakuje „;” przed „{”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\KeysEnum.h(4,15): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.h(37,28): error C2061: błąd składniowy: identyfikator „keysEnum”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(10,88): error C2888: "ZPR::SaveState::SaveState(ZPR::SimulatorDataRef,std::vector<ZPR::Cell,std::allocator<ZPR::Cell>>,int)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(12,28): error C2888: "void ZPR::SaveState::Init(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(18,40): warning C4305: "argument": obcięcie z "double" do "float"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(23,35): error C2888: "void ZPR::SaveState::HandleInput(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(61,34): error C2888: "void ZPR::SaveState::ButtonsInit(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(80,33): error C2888: "void ZPR::SaveState::CheckSlots(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(85,43): error C2888: "void ZPR::SaveState::SaveToFile(int)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(95,38): error C2888: "void ZPR::SaveState::Update(float)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(99,36): error C2888: "void ZPR::SaveState::Draw(float)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(110,1): fatal error C1004: napotkano nieoczekiwany znacznik końca pliku
   SimulationHandler.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(23,1): error C2059: błąd składniowy: „<<”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(24,38): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(25,1): error C2059: błąd składniowy: „==”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(26,73): error C2334: nieoczekiwany(e) token(y) poprzedzające "{"; pomijanie treści widocznych funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,1): error C2059: błąd składniowy: „>>”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(28,58): error C2334: nieoczekiwany(e) token(y) poprzedzające ":"; pomijanie treści widocznych funkcji
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\random(27,1): error C2059: błąd składniowy: „namespace”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\random(27,1): error C2143: błąd składniowy: brakuje „;” przed „{”
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\random(27,1): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(6,81): error C2888: "ZPR::SimulationHandler::SimulationHandler(int,std::vector<ZPR::Cell,std::allocator<ZPR::Cell>>)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(6,83): error C2614: „ZPR::SimulationHandler”: Niedozwolone inicjowanie składowej: „isSimulating” nie jest obiektem bazowym ani składową
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(6,104): error C2614: „ZPR::SimulationHandler”: Niedozwolone inicjowanie składowej: „_gridSize” nie jest obiektem bazowym ani składową
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(6,125): error C2614: „ZPR::SimulationHandler”: Niedozwolone inicjowanie składowej: „_cells” nie jest obiektem bazowym ani składową
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(9,5): error C2888: "void ZPR::SimulationHandler::init(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(10,15): error C2039: „timer”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(11,15): error C2039: „_cellSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(11,50): error C2039: „_gridSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(12,15): error C2039: „_sidewalkSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(12,53): error C2065: "_cellSize": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(13,15): error C2039: „_roadSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(13,45): error C2065: "_cellSize": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(14,15): error C2039: „_roadStripesSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(14,60): error C2065: "_cellSize": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(16,15): error C2039: „_cityExitSite”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(16,73): error C2039: „_gridSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(16,111): error C2039: „_gridSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(17,15): error C2039: „_cityExitSite”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(17,58): error C2039: „_cityExitSite”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(17,95): error C2039: „_cityExitSite”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(18,88): error C2039: „_cellSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(18,100): error C3861: "CalculatePrefix": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(18,126): error C2039: „_cellSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(18,168): error C2039: „_cellSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(18,180): error C3861: "CalculatePrefix": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(19,73): error C2039: „_cellSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(20,73): error C2039: „_cellSize”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(21,15): error C2039: „_cityExitSite”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(27,5): error C2888: "void ZPR::SimulationHandler::UpdateIsSimulating(void)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(28,15): error C2039: „isSimulating”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(28,37): error C2039: „isSimulating”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(29,13): error C2065: "isSimulating": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(30,13): error C3861: "SeparateRoadsFromCells": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(31,19): error C2039: „timer”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(37,13): error C2888: "ZPR::SimulationHandler::UpdateIsSimulating::<lambda_6047b108734448ea55d4a7ec601e289d>": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(32,17): error C3861: "AddCarsToSimulate": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(33,23): error C2039: „MoveVehicles”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(33,1): error C2039: „__this”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(34,23): error C2039: „DeleteVehicles”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(34,1): error C2039: „__this”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(35,44): error C2039: „_vehicles”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(35,1): error C2039: „__this”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(36,48): error C2039: „isSimulating”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(36,1): error C2039: „__this”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(41,19): error C2039: „_roads”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(42,19): error C2039: „_vehicles”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(43,34): error C2039: „_vehicles”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(49,5): error C2888: "void ZPR::SimulationHandler::UpdateCells(std::vector<ZPR::Cell,std::allocator<ZPR::Cell>>)": symbol nie może być zdefiniowany w ramach przestrzeni nazw "ZPR"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(50,15): error C2039: „_cells”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(53,29): error C2039: „SeparateRoadsFromCells”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,26): error C2065: "_cells": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,26): error C2672: „begin”: nie znaleziono zgodnej przeciążonej funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): error C2893: Specjalizacja szablonu funkcji „unknown-type std::begin(_Container &)” nie powiodła się
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xutility(2169): message : zobacz deklarację „std::begin”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): message : Z następującymi argumentami szablonu:
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): message : "_Container=unknown-type"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): error C2784: "const _Elem *std::begin(std::initializer_list<_Elem>) noexcept": nie może wywnioskować argumentu szablon dla "std::initializer_list<_Elem>" z "unknown-type"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\initializer_list(57): message : zobacz deklarację „std::begin”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,26): error C2672: „end”: nie znaleziono zgodnej przeciążonej funkcji
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): error C2893: Specjalizacja szablonu funkcji „unknown-type std::end(_Container &)” nie powiodła się
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xutility(2179): message : zobacz deklarację „std::end”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): message : Z następującymi argumentami szablonu:
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): message : "_Container=unknown-type"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): error C2784: "const _Elem *std::end(std::initializer_list<_Elem>) noexcept": nie może wywnioskować argumentu szablon dla "std::initializer_list<_Elem>" z "unknown-type"
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\initializer_list(63): message : zobacz deklarację „std::end”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): error C3536: "<begin>$L0" : nie można użyć, zanim zostanie zainicjowany
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): error C3536: "<end>$L0" : nie można użyć, zanim zostanie zainicjowany
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,32): error C2100: niedozwolony operator pośredni
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): error C2440: "inicjowanie": nie można konwertować z "int" na "ZPR::Cell"
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(55,34): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(58,59): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(58,92): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(60,93): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(60,111): error C3861: "CalculatePrefix": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(60,153): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(60,171): error C3861: "CalculatePrefix": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(61,75): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(62,75): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(64,17): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(67,9): error C3861: "AddStartingRoad": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(70,29): error C2039: „AddStartingRoad”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(72,51): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(72,84): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(74,82): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(74,100): error C3861: "CalculatePrefix": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(74,139): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(74,157): error C3861: "CalculatePrefix": identyfikatora nie odnaleziono
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(75,67): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(76,67): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(78,9): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(81,29): error C2039: „CheckIfRoadIsBlocked”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(83,49): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(83,47): error C2143: błąd składniowy: brakuje „;” przed „:”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(83,64): error C2143: błąd składniowy: brakuje „;” przed „)”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(88,28): error C2039: „CalculatePrefix”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(89,60): error C2065: "_gridSize": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(90,46): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(91,36): error C2065: "_gridSize": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(95,29): error C2039: „AddCarsToSimulate”: nie jest składową elementu „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.h(13): message : zobacz deklarację „ZPR::SimulationHandler”
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(97,43): error C2065: "_cellSize": niezadeklarowany identyfikator
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(97,75): error C2355: „this”: Można tworzyć odwołania wyłącznie wewnątrz niestatycznych funkcji składowych lub niestatycznych inicjatorów składowych danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(97,75): fatal error C1003: Licznik błędów przekracza 100; zatrzymywanie kompilacji
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(12,36): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(13,32): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(14,39): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(16,103): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(16,84): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(18,178): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(18,118): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(57,90): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(57,57): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(59,169): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(59,109): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(70,82): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(70,49): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(72,155): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(72,98): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(82,24): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(92,92): warning C4244: "argument": konwersja z "_Rep" do "unsigned int", możliwa utrata danych
+          with
+          [
+              _Rep=__int64
+          ]
   SimulationSubject.cpp
   Generowanie kodu...
   Trwa kompilowanie...
@@ -764,25 +321,25 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(97,75):
   ToolsSubject.cpp
   ToolsView.cpp
   Car.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(11,30): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(12,26): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(13,33): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(16,84): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(10,30): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(11,26): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(12,33): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(15,84): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(16,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(15,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(18,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(17,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(18,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(17,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
@@ -798,25 +355,25 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(19,48): warn
               T=float
           ]
   Truck.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(10,30): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(11,26): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(12,33): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(15,86): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(9,30): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(10,26): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(11,33): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(14,86): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(15,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(14,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(17,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(16,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(17,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(16,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
@@ -832,45 +389,46 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(18,48): wa
               T=float
           ]
   Vehicle.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(14,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(12,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(19,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(17,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(24,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(22,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(29,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(27,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(40,45): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(37,45): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(40,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(37,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(209,86): warning C4244: "argument": konwersja z "_Rep" do "unsigned int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(164,86): warning C4244: "argument": konwersja z "_Rep" do "unsigned int", możliwa utrata danych
           with
           [
               _Rep=__int64
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(259,86): warning C4244: "argument": konwersja z "_Rep" do "unsigned int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(214,86): warning C4244: "argument": konwersja z "_Rep" do "unsigned int", możliwa utrata danych
           with
           [
               _Rep=__int64
           ]
   VehicleFactory.cpp
   Generowanie kodu...
+  SFML Project.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe

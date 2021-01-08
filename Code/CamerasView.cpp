@@ -12,26 +12,10 @@ namespace ZPR {
         int fontSize = 30;
         this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 100), buttonSize, "Add Camera",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        }
-        this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 900), buttonSize, "Start simulation",
-=======
         
         this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 800), buttonSize, "Start simulation",
->>>>>>> parent of 88eff35... Merge branch 'main' of https://github.com/emroczko/CityTrafficSimulator_ZPR into main
-=======
-        
-        this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 800), buttonSize, "Start simulation",
->>>>>>> parent of 88eff35... Merge branch 'main' of https://github.com/emroczko/CityTrafficSimulator_ZPR into main
-=======
-        
-        this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x/2, 800), buttonSize, "Start simulation",
->>>>>>> parent of 88eff35... Merge branch 'main' of https://github.com/emroczko/CityTrafficSimulator_ZPR into main
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
 	}
-
 	sf::FloatRect CamerasView::CalculateViewPort()
 	{
         float rectWidth = (1.f - (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH)/2;
@@ -77,5 +61,12 @@ namespace ZPR {
                 button.isPressed = !button.isPressed;
             }
         }
+    }
+
+    void CamerasView::UpdateIsDeletingCamera(int whichCamera)
+    {
+    }
+    void CamerasView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera)
+    {
     }
 }
