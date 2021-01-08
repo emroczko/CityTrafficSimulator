@@ -4,11 +4,10 @@
 #include "Definitions.h"
 #include "ToolsSubject.h"
 #include "SimulationObserver.h"
-#include "CreatorObserver.h"
 
 
 namespace ZPR {
-    class ToolsView : public ToolsSubject, public SimulationObserver, public CreatorObserver{
+    class ToolsView : public ToolsSubject, public SimulationObserver{
 	public:
 		ToolsView(SimulatorDataRef data);
 		void Draw();
@@ -16,16 +15,8 @@ namespace ZPR {
         sf::View GetView();
         void HandleInput();
         void UpdateIsSimulating(bool isSimulating);
-        void UpdateIsAddingCameras(bool isAddingCamera);
 		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
         
-        void UpdateSelectedCell(sf::Vector2i coords) {}
-        void UpdateCells(std::vector<Cell> cells) {}
-        void SaveToFile() {}
-        void UpdateIsDrawingRoad(bool isDrawingRoad) {}
-        void UpdateIsDeletingRoad(bool isDeletingRoad) {}
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
-        void UpdateIsDeletingCamera(int whichCamera) {}
 	private:
 		sf::FloatRect CalculateViewPort();
 		void DrawButtons();
@@ -33,7 +24,7 @@ namespace ZPR {
 		std::vector<Button> _buttons;
 		sf::RectangleShape _background;
 		sf::View _toolsView;
-        bool isSimulating, isAddingCameras;
+        bool isSimulating;
 	};
 
 }

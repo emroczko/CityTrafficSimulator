@@ -36,7 +36,7 @@ namespace ZPR{
         SimulatorDataRef _data;
         std::shared_ptr<MapView> _mapView;
         std::shared_ptr<ToolsView> _toolsView;
-        std::shared_ptr<CamerasView> _camerasView;
+        std::unique_ptr<CamerasView> _camerasView;
         std::shared_ptr<CreatorHandler> _creatorHandler;
         std::shared_ptr<SimulationHandler> _simulationHandler;
         std::shared_ptr<CamerasSubject> _camerasSubject;

@@ -111,9 +111,6 @@ namespace ZPR {
 	{
 		return this->_text.getString();
 	}
-    sf::Vector2f Button::getPosition(){
-        return this->_text.getPosition();
-    }
 	/*Rysuje przycisk*/
 	void Button::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	{

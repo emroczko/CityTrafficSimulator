@@ -9,8 +9,7 @@ namespace ZPR {
 		Cell(int row, int column);
         Cell();
 		sf::Vector2i GetPosition();
-        bool _containsRoad, _toDelete, _roadDrawn, isStartingCell, _containsCamera, _cameraDrawn, _cameraToDelete;
-        int _whichCamera;
+        bool _containsRoad, _toDelete, _roadDrawn, isStartingCell;
         std::istream& load(std::istream& is);
         friend std::istream& operator>> (std::istream&, Cell&);
         friend std::ofstream& operator<< (std::ofstream&, const Cell&);

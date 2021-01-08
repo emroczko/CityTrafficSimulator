@@ -12,8 +12,6 @@ namespace ZPR {
 		void NotifyCells(std::vector<Cell> cells);
         void NotifySave();
 		void NotifyIsDrawingRoad(bool isDrawingRoad);
-        void NotifyIsAddingCamera(bool isAddingCamera, int whichCamera);
-        void NotifyIsDeletingCamera(int whichCamera);
         void NotifyIsDeletingRoad(bool isDeletingRoad);
         void NotifyIsSimulating(bool isSimulating);
 		virtual ~CreatorSubject() {}

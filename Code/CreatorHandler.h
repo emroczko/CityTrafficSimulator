@@ -9,7 +9,7 @@
 #include "Vehicles/Vehicle.h"
 
 namespace ZPR {
-	class CreatorHandler : public CamerasObserver, public CreatorSubject, public ToolsObserver
+	class CreatorHandler : public CreatorSubject, public ToolsObserver, public CamerasObserver
 	{
 	public:
 		CreatorHandler(int gridSize);
@@ -20,8 +20,6 @@ namespace ZPR {
 		void UpdateIsDrawingRoad();
         void UpdateIsDeletingRoad();
         void UpdateIsSimulating();
-        void UpdateIsAddingCamera(int whichCamera);
-        void UpdateIsDeletingCamera(int whichCamera);
         void SaveToFile();
 		void HandleInput(sf::Vector2i possibleSelectedCell);
 		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
@@ -31,12 +29,9 @@ namespace ZPR {
 		int _row, _col;
 		int _gridSize;
         int _enterGridHeight;
-        int _whichCamera;
-		bool _isDrawingRoad;
-        bool _isDeletingRoad;
-        bool _isSimulating;
-        bool _isAddingCameras;
-        
+		bool isDrawingRoad;
+        bool isDeletingRoad;
+        bool isSimulating;
 	};
 }
 
