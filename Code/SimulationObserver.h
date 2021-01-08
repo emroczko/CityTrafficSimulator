@@ -1,5 +1,6 @@
 #pragma once
 #include "Vehicles/Vehicle.h"
+
 namespace ZPR {
     class SimulationObserver
     {
