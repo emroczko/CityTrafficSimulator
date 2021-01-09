@@ -23,7 +23,6 @@ namespace ZPR {
 		std::string _direction, _previousDirection;
 		sf::RectangleShape _shape, _colisionBox;
 	private:
-		
 		void UpdatePosition();
 		void UpdateColisionBoxPosition();
 		void TurnBack();
