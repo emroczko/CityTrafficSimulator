@@ -25,6 +25,8 @@ namespace ZPR {
         void UpdateIsSimulating(bool isSimulating);
         void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
         void UpdateIsDeletingCamera(int whichCamera);
+        void UpdateCarsLabel(int whichLabel){}
+        void UpdateTrucksLabel(int whichLabel){}
         void SaveToFile();
 		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
 		void Draw();

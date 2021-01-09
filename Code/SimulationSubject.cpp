@@ -18,5 +18,16 @@ namespace ZPR {
              obs->UpdateIsSimulating(isSimulating);
          }
      }
-    
+    void SimulationSubject::NotifyCarsLabel(int whichLabel)
+     {
+         for (std::shared_ptr<SimulationObserver> obs : this->_observers) {
+             obs->UpdateCarsLabel(whichLabel);
+         }
+     }
+    void SimulationSubject::NotifyTrucksLabel(int whichLabel)
+     {
+         for (std::shared_ptr<SimulationObserver> obs : this->_observers) {
+             obs->UpdateTrucksLabel(whichLabel);
+         }
+     }
 }

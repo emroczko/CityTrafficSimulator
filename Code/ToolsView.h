@@ -18,7 +18,8 @@ namespace ZPR {
         void UpdateIsSimulating(bool isSimulating);
         void UpdateIsAddingCameras(bool isAddingCamera);
 		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
-        
+        void UpdateCarsLabel(int whichLabel){}
+        void UpdateTrucksLabel(int whichLabel){}
         void UpdateSelectedCell(sf::Vector2i coords) {}
         void UpdateCells(std::vector<Cell> cells) {}
         void SaveToFile() {}
