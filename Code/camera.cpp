@@ -5,7 +5,7 @@ namespace ZPR {
 
     bool Camera::CheckColision(std::shared_ptr<Vehicle> vehicle)
     {
-        if (this->_cameraDetectionBox.getGlobalBounds().contains(vehicle->getShape().getPosition()) && vehicle->_seenByCamera == false) {
+        if (this->_cameraDetectionBox.getGlobalBounds().contains(vehicle->getShape().getPosition())) {
             return true;
         }
         else {

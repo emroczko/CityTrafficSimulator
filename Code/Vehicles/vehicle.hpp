@@ -19,7 +19,7 @@ namespace ZPR {
 		int _x, _y, _speed;
 		int _roadSize, _sidewalkSize, _roadStripesSize;
 		int _cellSize;
-		bool _seenByCamera;
+		bool _seenByCamera[3];
 		std::vector<sf::RectangleShape> _roads;
 		std::string _direction, _previousDirection;
 		sf::RectangleShape _shape, _colisionBox;

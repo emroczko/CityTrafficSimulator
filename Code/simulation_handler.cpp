@@ -126,8 +126,6 @@ namespace ZPR {
     void SimulationHandler::MoveVehicles()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
-            
-            
             vehicle->CheckOnWhichCell(this->CalculatePrefix());
             VehilcesColision();
             vehicle->move();
@@ -161,24 +159,26 @@ namespace ZPR {
 
     void SimulationHandler::CheckCameraColision(Camera camera)
     {
-        for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+        for (std::shared_ptr<Vehicle>& vehicle : this->_vehicles) {
             if (camera.CheckColision(vehicle)) {
-                vehicle->_seenByCamera = true;
                 CheckVehicleTypeAndNotify(vehicle, camera._cameraNumber);
+                vehicle->_seenByCamera[camera._cameraNumber-1] = true;
             }
             else {
-                vehicle->_seenByCamera = false;
+                vehicle->_seenByCamera[camera._cameraNumber-1] = false;
             }
         }
     }
 
     void SimulationHandler::CheckVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int cameraNumber)
     {
-        if (vehicle->getShape().getSize().x == vehicle->getShape().getSize().y) {
-            this->NotifyCarsLabel(cameraNumber);
-        }
-        else {
-            this->NotifyTrucksLabel(cameraNumber);
+        if (!vehicle->_seenByCamera[cameraNumber-1]) {
+            if (vehicle->getShape().getSize().x == vehicle->getShape().getSize().y) {
+                this->NotifyCarsLabel(cameraNumber);
+            }
+            else {
+                this->NotifyTrucksLabel(cameraNumber);
+            }
         }
     }
 
