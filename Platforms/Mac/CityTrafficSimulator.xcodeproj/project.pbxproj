@@ -7,41 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52166DD82561796400A1AE4E /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52166DD72561796400A1AE4E /* Button.cpp */; };
+		52166DD82561796400A1AE4E /* button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52166DD72561796400A1AE4E /* button.cpp */; };
 		522531B6255234B40035E946 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */; };
 		522531B7255234B40035E946 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */; };
 		522531B8255234B40035E946 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B3255234B40035E946 /* libsfml-window.2.5.1.dylib */; };
 		522531B9255234B40035E946 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B4255234B40035E946 /* libsfml-system.2.5.1.dylib */; };
 		522531BA255234B40035E946 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B5255234B40035E946 /* libsfml-graphics.2.5.1.dylib */; };
-		5225663D255EA24500C9BB3C /* CreatorState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5225663C255EA24500C9BB3C /* CreatorState.cpp */; };
-		5230E7982565EB3500F84CF2 /* CamerasView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E78E2565EB3500F84CF2 /* CamerasView.cpp */; };
-		5230E7992565EB3500F84CF2 /* ToolsView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E78F2565EB3500F84CF2 /* ToolsView.cpp */; };
-		5230E79A2565EB3500F84CF2 /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7912565EB3500F84CF2 /* Grid.cpp */; };
-		5230E79B2565EB3500F84CF2 /* MapView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7932565EB3500F84CF2 /* MapView.cpp */; };
-		5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7952565EB3500F84CF2 /* Cell.cpp */; };
-		523F9D2F2575D4BF00279564 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 523F9D2E2575D4BE00279564 /* Main.cpp */; };
-		52804F6625537553002A59AD /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52804F6425537553002A59AD /* Car.cpp */; };
-		52A1CEA32599F4450014C907 /* ToolsSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52A1CEA12599F4450014C907 /* ToolsSubject.cpp */; };
-		52D0C272259B9808000871D0 /* CamerasSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C271259B9808000871D0 /* CamerasSubject.cpp */; };
-		52D0C277259B9C4A000871D0 /* SimulationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C276259B9C4A000871D0 /* SimulationHandler.cpp */; };
-		52D0C284259C072C000871D0 /* SimulationSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C282259C072C000871D0 /* SimulationSubject.cpp */; };
-		52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF12553FE0C0093D5DF /* MainMenuState.cpp */; };
-		52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF525540A9A0093D5DF /* StateMachine.cpp */; };
-		52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCFC25541DEE0093D5DF /* AssetManager.cpp */; };
-		52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD00255421B90093D5DF /* InputManager.cpp */; };
-		52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0825542D450093D5DF /* Simulator.cpp */; };
-		52D3BD10255442410093D5DF /* SplashState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0F255442410093D5DF /* SplashState.cpp */; };
-		52D4E57825A5D8EB00102FB0 /* SaveState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E57725A5D8EB00102FB0 /* SaveState.cpp */; };
+		5225663D255EA24500C9BB3C /* creator_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5225663C255EA24500C9BB3C /* creator_state.cpp */; };
+		522F8FB125AA103E00210D3A /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 522F8FB025AA103E00210D3A /* camera.cpp */; };
+		5230E7982565EB3500F84CF2 /* cameras_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E78E2565EB3500F84CF2 /* cameras_view.cpp */; };
+		5230E7992565EB3500F84CF2 /* tools_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E78F2565EB3500F84CF2 /* tools_view.cpp */; };
+		5230E79A2565EB3500F84CF2 /* grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7912565EB3500F84CF2 /* grid.cpp */; };
+		5230E79B2565EB3500F84CF2 /* map_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7932565EB3500F84CF2 /* map_view.cpp */; };
+		5230E79C2565EB3500F84CF2 /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230E7952565EB3500F84CF2 /* cell.cpp */; };
+		523F9D2F2575D4BF00279564 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 523F9D2E2575D4BE00279564 /* main.cpp */; };
+		52804F6625537553002A59AD /* car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52804F6425537553002A59AD /* car.cpp */; };
+		52A1CEA32599F4450014C907 /* tools_subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52A1CEA12599F4450014C907 /* tools_subject.cpp */; };
+		52D0C272259B9808000871D0 /* cameras_subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C271259B9808000871D0 /* cameras_subject.cpp */; };
+		52D0C277259B9C4A000871D0 /* simulation_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C276259B9C4A000871D0 /* simulation_handler.cpp */; };
+		52D0C284259C072C000871D0 /* simulation_subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D0C282259C072C000871D0 /* simulation_subject.cpp */; };
+		52D3BCF22553FE0C0093D5DF /* main_menu_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF12553FE0C0093D5DF /* main_menu_state.cpp */; };
+		52D3BCF625540A9A0093D5DF /* state_machine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF525540A9A0093D5DF /* state_machine.cpp */; };
+		52D3BCFD25541DEE0093D5DF /* asset_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCFC25541DEE0093D5DF /* asset_manager.cpp */; };
+		52D3BD01255421B90093D5DF /* input_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD00255421B90093D5DF /* input_manager.cpp */; };
+		52D3BD0925542D450093D5DF /* simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0825542D450093D5DF /* simulator.cpp */; };
+		52D3BD10255442410093D5DF /* splash_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0F255442410093D5DF /* splash_state.cpp */; };
+		52D4E57825A5D8EB00102FB0 /* save_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E57725A5D8EB00102FB0 /* save_state.cpp */; };
 		52D4E58525A614D700102FB0 /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 522531A9255232C10035E946 /* Resources */; };
-		52D4E58925A6163900102FB0 /* LoadState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E58825A6163900102FB0 /* LoadState.cpp */; };
-		52D4E58D25A619E400102FB0 /* FileFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E58C25A619E400102FB0 /* FileFinder.cpp */; };
-		52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */; };
-		52D56740256F034F0017A7C6 /* CreatorSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */; };
-		52E3A88025A677120076A2AB /* LoadDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52E3A87F25A677120076A2AB /* LoadDemo.cpp */; };
-		52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52EDDC39255A055800CD5101 /* InitCreateState.cpp */; };
-		52F5565D259D17DD00ECEED3 /* VehicleFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F55659259D17DC00ECEED3 /* VehicleFactory.cpp */; };
-		52F5565E259D17DD00ECEED3 /* Truck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F5565A259D17DD00ECEED3 /* Truck.cpp */; };
-		52F5565F259D17DD00ECEED3 /* Vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F5565C259D17DD00ECEED3 /* Vehicle.cpp */; };
+		52D4E58925A6163900102FB0 /* load_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E58825A6163900102FB0 /* load_state.cpp */; };
+		52D4E58D25A619E400102FB0 /* file_finder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E58C25A619E400102FB0 /* file_finder.cpp */; };
+		52D5673F256F034F0017A7C6 /* creator_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673A256F034F0017A7C6 /* creator_handler.cpp */; };
+		52D56740256F034F0017A7C6 /* creator_subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D5673B256F034F0017A7C6 /* creator_subject.cpp */; };
+		52E3A88025A677120076A2AB /* load_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52E3A87F25A677120076A2AB /* load_demo.cpp */; };
+		52EDDC3B255A055800CD5101 /* init_create_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52EDDC39255A055800CD5101 /* init_create_state.cpp */; };
+		52F5565D259D17DD00ECEED3 /* vehicle_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F55659259D17DC00ECEED3 /* vehicle_factory.cpp */; };
+		52F5565E259D17DD00ECEED3 /* truck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F5565A259D17DD00ECEED3 /* truck.cpp */; };
+		52F5565F259D17DD00ECEED3 /* vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F5565C259D17DD00ECEED3 /* vehicle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,79 +68,81 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		52166DD62561796400A1AE4E /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
-		52166DD72561796400A1AE4E /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
+		52166DD62561796400A1AE4E /* button.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = button.hpp; sourceTree = "<group>"; };
+		52166DD72561796400A1AE4E /* button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = button.cpp; sourceTree = "<group>"; };
 		522531A9255232C10035E946 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = ../../../Resources; sourceTree = "<group>"; };
 		522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B3255234B40035E946 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B4255234B40035E946 /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B5255234B40035E946 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
-		5225663B255EA20400C9BB3C /* CreatorState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatorState.h; sourceTree = "<group>"; };
-		5225663C255EA24500C9BB3C /* CreatorState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorState.cpp; sourceTree = "<group>"; };
-		522FCDAB25A169620006A5AB /* KeysEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeysEnum.h; sourceTree = "<group>"; };
-		5230E78E2565EB3500F84CF2 /* CamerasView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CamerasView.cpp; sourceTree = "<group>"; };
-		5230E78F2565EB3500F84CF2 /* ToolsView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToolsView.cpp; sourceTree = "<group>"; };
-		5230E7902565EB3500F84CF2 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
-		5230E7912565EB3500F84CF2 /* Grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
-		5230E7922565EB3500F84CF2 /* CamerasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamerasView.h; sourceTree = "<group>"; };
-		5230E7932565EB3500F84CF2 /* MapView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapView.cpp; sourceTree = "<group>"; };
-		5230E7942565EB3500F84CF2 /* ToolsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsView.h; sourceTree = "<group>"; };
-		5230E7952565EB3500F84CF2 /* Cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cell.cpp; sourceTree = "<group>"; };
-		5230E7962565EB3500F84CF2 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
-		5230E7972565EB3500F84CF2 /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
-		523F9D2E2575D4BE00279564 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
-		5244338325A3796B00CD4055 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
-		52804F6425537553002A59AD /* Car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Car.cpp; path = Vehicles/Car.cpp; sourceTree = "<group>"; };
-		52804F6525537553002A59AD /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = Vehicles/Car.h; sourceTree = "<group>"; };
+		5225663B255EA20400C9BB3C /* creator_state.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = creator_state.hpp; sourceTree = "<group>"; };
+		5225663C255EA24500C9BB3C /* creator_state.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = creator_state.cpp; sourceTree = "<group>"; };
+		522F8FAF25AA103E00210D3A /* camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = camera.hpp; sourceTree = "<group>"; };
+		522F8FB025AA103E00210D3A /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		522FCDAB25A169620006A5AB /* keys_enum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = keys_enum.hpp; sourceTree = "<group>"; };
+		5230E78E2565EB3500F84CF2 /* cameras_view.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cameras_view.cpp; sourceTree = "<group>"; };
+		5230E78F2565EB3500F84CF2 /* tools_view.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tools_view.cpp; sourceTree = "<group>"; };
+		5230E7902565EB3500F84CF2 /* cell.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cell.hpp; sourceTree = "<group>"; };
+		5230E7912565EB3500F84CF2 /* grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = grid.cpp; sourceTree = "<group>"; };
+		5230E7922565EB3500F84CF2 /* cameras_view.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cameras_view.hpp; sourceTree = "<group>"; };
+		5230E7932565EB3500F84CF2 /* map_view.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = map_view.cpp; sourceTree = "<group>"; };
+		5230E7942565EB3500F84CF2 /* tools_view.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tools_view.hpp; sourceTree = "<group>"; };
+		5230E7952565EB3500F84CF2 /* cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cell.cpp; sourceTree = "<group>"; };
+		5230E7962565EB3500F84CF2 /* map_view.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = map_view.hpp; sourceTree = "<group>"; };
+		5230E7972565EB3500F84CF2 /* grid.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = grid.hpp; sourceTree = "<group>"; };
+		523F9D2E2575D4BE00279564 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5244338325A3796B00CD4055 /* timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = timer.hpp; sourceTree = "<group>"; };
+		52804F6425537553002A59AD /* car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = car.cpp; path = Vehicles/car.cpp; sourceTree = "<group>"; };
+		52804F6525537553002A59AD /* car.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = car.hpp; path = Vehicles/car.hpp; sourceTree = "<group>"; };
 		529FE34E255231B2006D8A78 /* CityTrafficSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CityTrafficSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
-		52A1CEA02599F4450014C907 /* ToolsObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsObserver.h; sourceTree = "<group>"; };
-		52A1CEA12599F4450014C907 /* ToolsSubject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToolsSubject.cpp; sourceTree = "<group>"; };
-		52A1CEA22599F4450014C907 /* ToolsSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsSubject.h; sourceTree = "<group>"; };
-		52D0C271259B9808000871D0 /* CamerasSubject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CamerasSubject.cpp; sourceTree = "<group>"; };
-		52D0C273259B981B000871D0 /* CamerasSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamerasSubject.h; sourceTree = "<group>"; };
-		52D0C274259B9A95000871D0 /* CamerasObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamerasObserver.h; sourceTree = "<group>"; };
-		52D0C275259B9C2D000871D0 /* SimulationHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulationHandler.h; sourceTree = "<group>"; };
-		52D0C276259B9C4A000871D0 /* SimulationHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimulationHandler.cpp; sourceTree = "<group>"; };
-		52D0C278259BEC28000871D0 /* SimulationObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulationObserver.h; sourceTree = "<group>"; };
-		52D0C282259C072C000871D0 /* SimulationSubject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimulationSubject.cpp; sourceTree = "<group>"; };
-		52D0C283259C072C000871D0 /* SimulationSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulationSubject.h; sourceTree = "<group>"; };
-		52D3BCF02553FDF40093D5DF /* MainMenuState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuState.h; sourceTree = "<group>"; };
-		52D3BCF12553FE0C0093D5DF /* MainMenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuState.cpp; sourceTree = "<group>"; };
-		52D3BCF4255409AD0093D5DF /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
-		52D3BCF525540A9A0093D5DF /* StateMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
-		52D3BCF925540AB00093D5DF /* StateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
-		52D3BCFB25541DDF0093D5DF /* AssetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetManager.h; sourceTree = "<group>"; };
-		52D3BCFC25541DEE0093D5DF /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
-		52D3BD00255421B90093D5DF /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
-		52D3BD04255421DD0093D5DF /* InputManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
-		52D3BD0825542D450093D5DF /* Simulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Simulator.cpp; sourceTree = "<group>"; };
-		52D3BD0B25542DB40093D5DF /* Simulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simulator.h; sourceTree = "<group>"; };
-		52D3BD0D255440E00093D5DF /* SplashState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashState.h; sourceTree = "<group>"; };
-		52D3BD0E2554413A0093D5DF /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
-		52D3BD0F255442410093D5DF /* SplashState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplashState.cpp; sourceTree = "<group>"; };
-		52D4E57625A5D8EB00102FB0 /* SaveState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveState.h; sourceTree = "<group>"; };
-		52D4E57725A5D8EB00102FB0 /* SaveState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveState.cpp; sourceTree = "<group>"; };
-		52D4E58725A615F900102FB0 /* LoadState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadState.h; sourceTree = "<group>"; };
-		52D4E58825A6163900102FB0 /* LoadState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoadState.cpp; sourceTree = "<group>"; };
-		52D4E58B25A619C100102FB0 /* FileFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileFinder.h; sourceTree = "<group>"; };
-		52D4E58C25A619E400102FB0 /* FileFinder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileFinder.cpp; sourceTree = "<group>"; };
-		52D4E58F25A61A3E00102FB0 /* SlotsEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotsEnum.h; sourceTree = "<group>"; };
-		52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorHandler.cpp; sourceTree = "<group>"; };
-		52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatorSubject.cpp; sourceTree = "<group>"; };
-		52D5673C256F034F0017A7C6 /* CreatorSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatorSubject.h; sourceTree = "<group>"; };
-		52D5673D256F034F0017A7C6 /* CreatorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatorHandler.h; sourceTree = "<group>"; };
-		52D5673E256F034F0017A7C6 /* CreatorObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatorObserver.h; sourceTree = "<group>"; };
-		52E3A87E25A677090076A2AB /* LoadDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadDemo.h; sourceTree = "<group>"; };
-		52E3A87F25A677120076A2AB /* LoadDemo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoadDemo.cpp; sourceTree = "<group>"; };
-		52EDDC39255A055800CD5101 /* InitCreateState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InitCreateState.cpp; sourceTree = "<group>"; };
-		52EDDC3A255A055800CD5101 /* InitCreateState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitCreateState.h; sourceTree = "<group>"; };
-		52F55656259D17DC00ECEED3 /* Truck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Truck.h; path = Vehicles/Truck.h; sourceTree = "<group>"; };
-		52F55657259D17DC00ECEED3 /* VehicleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VehicleFactory.h; path = Vehicles/VehicleFactory.h; sourceTree = "<group>"; };
-		52F55659259D17DC00ECEED3 /* VehicleFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VehicleFactory.cpp; path = Vehicles/VehicleFactory.cpp; sourceTree = "<group>"; };
-		52F5565A259D17DD00ECEED3 /* Truck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Truck.cpp; path = Vehicles/Truck.cpp; sourceTree = "<group>"; };
-		52F5565B259D17DD00ECEED3 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vehicle.h; path = Vehicles/Vehicle.h; sourceTree = "<group>"; };
-		52F5565C259D17DD00ECEED3 /* Vehicle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vehicle.cpp; path = Vehicles/Vehicle.cpp; sourceTree = "<group>"; };
+		52A1CEA02599F4450014C907 /* tools_observer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tools_observer.hpp; sourceTree = "<group>"; };
+		52A1CEA12599F4450014C907 /* tools_subject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tools_subject.cpp; sourceTree = "<group>"; };
+		52A1CEA22599F4450014C907 /* tools_subject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tools_subject.hpp; sourceTree = "<group>"; };
+		52D0C271259B9808000871D0 /* cameras_subject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cameras_subject.cpp; sourceTree = "<group>"; };
+		52D0C273259B981B000871D0 /* cameras_subject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cameras_subject.hpp; sourceTree = "<group>"; };
+		52D0C274259B9A95000871D0 /* cameras_observer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cameras_observer.hpp; sourceTree = "<group>"; };
+		52D0C275259B9C2D000871D0 /* simulation_handler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simulation_handler.hpp; sourceTree = "<group>"; };
+		52D0C276259B9C4A000871D0 /* simulation_handler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulation_handler.cpp; sourceTree = "<group>"; };
+		52D0C278259BEC28000871D0 /* simulation_observer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simulation_observer.hpp; sourceTree = "<group>"; };
+		52D0C282259C072C000871D0 /* simulation_subject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulation_subject.cpp; sourceTree = "<group>"; };
+		52D0C283259C072C000871D0 /* simulation_subject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simulation_subject.hpp; sourceTree = "<group>"; };
+		52D3BCF02553FDF40093D5DF /* main_menu_state.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main_menu_state.hpp; sourceTree = "<group>"; };
+		52D3BCF12553FE0C0093D5DF /* main_menu_state.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main_menu_state.cpp; sourceTree = "<group>"; };
+		52D3BCF4255409AD0093D5DF /* state.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = state.hpp; sourceTree = "<group>"; };
+		52D3BCF525540A9A0093D5DF /* state_machine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = state_machine.cpp; sourceTree = "<group>"; };
+		52D3BCF925540AB00093D5DF /* state_machine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = state_machine.hpp; sourceTree = "<group>"; };
+		52D3BCFB25541DDF0093D5DF /* asset_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = asset_manager.hpp; sourceTree = "<group>"; };
+		52D3BCFC25541DEE0093D5DF /* asset_manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = asset_manager.cpp; sourceTree = "<group>"; };
+		52D3BD00255421B90093D5DF /* input_manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = input_manager.cpp; sourceTree = "<group>"; };
+		52D3BD04255421DD0093D5DF /* input_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = input_manager.hpp; sourceTree = "<group>"; };
+		52D3BD0825542D450093D5DF /* simulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulator.cpp; sourceTree = "<group>"; };
+		52D3BD0B25542DB40093D5DF /* simulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simulator.hpp; sourceTree = "<group>"; };
+		52D3BD0D255440E00093D5DF /* splash_state.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = splash_state.hpp; sourceTree = "<group>"; };
+		52D3BD0E2554413A0093D5DF /* definitions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = definitions.hpp; sourceTree = "<group>"; };
+		52D3BD0F255442410093D5DF /* splash_state.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = splash_state.cpp; sourceTree = "<group>"; };
+		52D4E57625A5D8EB00102FB0 /* save_state.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = save_state.hpp; sourceTree = "<group>"; };
+		52D4E57725A5D8EB00102FB0 /* save_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = save_state.cpp; sourceTree = "<group>"; };
+		52D4E58725A615F900102FB0 /* load_state.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = load_state.hpp; sourceTree = "<group>"; };
+		52D4E58825A6163900102FB0 /* load_state.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = load_state.cpp; sourceTree = "<group>"; };
+		52D4E58B25A619C100102FB0 /* file_finder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = file_finder.hpp; sourceTree = "<group>"; };
+		52D4E58C25A619E400102FB0 /* file_finder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = file_finder.cpp; sourceTree = "<group>"; };
+		52D4E58F25A61A3E00102FB0 /* slots_enum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = slots_enum.hpp; sourceTree = "<group>"; };
+		52D5673A256F034F0017A7C6 /* creator_handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = creator_handler.cpp; sourceTree = "<group>"; };
+		52D5673B256F034F0017A7C6 /* creator_subject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = creator_subject.cpp; sourceTree = "<group>"; };
+		52D5673C256F034F0017A7C6 /* creator_subject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = creator_subject.hpp; sourceTree = "<group>"; };
+		52D5673D256F034F0017A7C6 /* creator_handler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = creator_handler.hpp; sourceTree = "<group>"; };
+		52D5673E256F034F0017A7C6 /* creator_observer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = creator_observer.hpp; sourceTree = "<group>"; };
+		52E3A87E25A677090076A2AB /* load_demo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = load_demo.hpp; sourceTree = "<group>"; };
+		52E3A87F25A677120076A2AB /* load_demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = load_demo.cpp; sourceTree = "<group>"; };
+		52EDDC39255A055800CD5101 /* init_create_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = init_create_state.cpp; sourceTree = "<group>"; };
+		52EDDC3A255A055800CD5101 /* init_create_state.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = init_create_state.hpp; sourceTree = "<group>"; };
+		52F55656259D17DC00ECEED3 /* truck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = truck.hpp; path = Vehicles/truck.hpp; sourceTree = "<group>"; };
+		52F55657259D17DC00ECEED3 /* vehicle_factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vehicle_factory.hpp; path = Vehicles/vehicle_factory.hpp; sourceTree = "<group>"; };
+		52F55659259D17DC00ECEED3 /* vehicle_factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vehicle_factory.cpp; path = Vehicles/vehicle_factory.cpp; sourceTree = "<group>"; };
+		52F5565A259D17DD00ECEED3 /* truck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = truck.cpp; path = Vehicles/truck.cpp; sourceTree = "<group>"; };
+		52F5565B259D17DD00ECEED3 /* vehicle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vehicle.hpp; path = Vehicles/vehicle.hpp; sourceTree = "<group>"; };
+		52F5565C259D17DD00ECEED3 /* vehicle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vehicle.cpp; path = Vehicles/vehicle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,56 +164,58 @@
 		522531A5255232B20035E946 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				52D4E57725A5D8EB00102FB0 /* SaveState.cpp */,
-				52D4E57625A5D8EB00102FB0 /* SaveState.h */,
-				52F5565A259D17DD00ECEED3 /* Truck.cpp */,
-				52F55656259D17DC00ECEED3 /* Truck.h */,
-				52F5565C259D17DD00ECEED3 /* Vehicle.cpp */,
-				52F5565B259D17DD00ECEED3 /* Vehicle.h */,
-				52F55659259D17DC00ECEED3 /* VehicleFactory.cpp */,
-				52F55657259D17DC00ECEED3 /* VehicleFactory.h */,
+				522F8FB025AA103E00210D3A /* camera.cpp */,
+				522F8FAF25AA103E00210D3A /* camera.hpp */,
+				52D4E57725A5D8EB00102FB0 /* save_state.cpp */,
+				52D4E57625A5D8EB00102FB0 /* save_state.hpp */,
+				52F5565A259D17DD00ECEED3 /* truck.cpp */,
+				52F55656259D17DC00ECEED3 /* truck.hpp */,
+				52F5565C259D17DD00ECEED3 /* vehicle.cpp */,
+				52F5565B259D17DD00ECEED3 /* vehicle.hpp */,
+				52F55659259D17DC00ECEED3 /* vehicle_factory.cpp */,
+				52F55657259D17DC00ECEED3 /* vehicle_factory.hpp */,
 				52A1CEA7259A18950014C907 /* Tools */,
-				523F9D2E2575D4BE00279564 /* Main.cpp */,
+				523F9D2E2575D4BE00279564 /* main.cpp */,
 				52D0C27B259BF2BA000871D0 /* Cameras */,
-				5230E7952565EB3500F84CF2 /* Cell.cpp */,
-				5230E7902565EB3500F84CF2 /* Cell.h */,
+				5230E7952565EB3500F84CF2 /* cell.cpp */,
+				5230E7902565EB3500F84CF2 /* cell.hpp */,
 				52D0C285259C07FF000871D0 /* Creator */,
 				52D0C281259C06F1000871D0 /* Simulation */,
-				5230E7912565EB3500F84CF2 /* Grid.cpp */,
-				5230E7972565EB3500F84CF2 /* Grid.h */,
-				5230E7932565EB3500F84CF2 /* MapView.cpp */,
-				522FCDAB25A169620006A5AB /* KeysEnum.h */,
-				5230E7962565EB3500F84CF2 /* MapView.h */,
-				52EDDC39255A055800CD5101 /* InitCreateState.cpp */,
-				5225663B255EA20400C9BB3C /* CreatorState.h */,
-				5225663C255EA24500C9BB3C /* CreatorState.cpp */,
-				52166DD72561796400A1AE4E /* Button.cpp */,
-				52166DD62561796400A1AE4E /* Button.h */,
-				52EDDC3A255A055800CD5101 /* InitCreateState.h */,
-				52804F6425537553002A59AD /* Car.cpp */,
-				52804F6525537553002A59AD /* Car.h */,
-				52D3BD0D255440E00093D5DF /* SplashState.h */,
-				52D3BD0F255442410093D5DF /* SplashState.cpp */,
-				52D3BD0E2554413A0093D5DF /* Definitions.h */,
-				52D3BCF4255409AD0093D5DF /* State.h */,
-				52D3BCF525540A9A0093D5DF /* StateMachine.cpp */,
-				52D3BCF925540AB00093D5DF /* StateMachine.h */,
-				52D3BD0B25542DB40093D5DF /* Simulator.h */,
-				52D3BCFB25541DDF0093D5DF /* AssetManager.h */,
-				52D3BD00255421B90093D5DF /* InputManager.cpp */,
-				52D3BD0825542D450093D5DF /* Simulator.cpp */,
-				52D3BD04255421DD0093D5DF /* InputManager.h */,
-				52D3BCFC25541DEE0093D5DF /* AssetManager.cpp */,
-				52D3BCF02553FDF40093D5DF /* MainMenuState.h */,
-				52D3BCF12553FE0C0093D5DF /* MainMenuState.cpp */,
-				5244338325A3796B00CD4055 /* Timer.h */,
-				52D4E58725A615F900102FB0 /* LoadState.h */,
-				52D4E58825A6163900102FB0 /* LoadState.cpp */,
-				52D4E58B25A619C100102FB0 /* FileFinder.h */,
-				52D4E58C25A619E400102FB0 /* FileFinder.cpp */,
-				52D4E58F25A61A3E00102FB0 /* SlotsEnum.h */,
-				52E3A87E25A677090076A2AB /* LoadDemo.h */,
-				52E3A87F25A677120076A2AB /* LoadDemo.cpp */,
+				5230E7912565EB3500F84CF2 /* grid.cpp */,
+				5230E7972565EB3500F84CF2 /* grid.hpp */,
+				5230E7932565EB3500F84CF2 /* map_view.cpp */,
+				522FCDAB25A169620006A5AB /* keys_enum.hpp */,
+				5230E7962565EB3500F84CF2 /* map_view.hpp */,
+				52EDDC39255A055800CD5101 /* init_create_state.cpp */,
+				5225663B255EA20400C9BB3C /* creator_state.hpp */,
+				5225663C255EA24500C9BB3C /* creator_state.cpp */,
+				52166DD72561796400A1AE4E /* button.cpp */,
+				52166DD62561796400A1AE4E /* button.hpp */,
+				52EDDC3A255A055800CD5101 /* init_create_state.hpp */,
+				52804F6425537553002A59AD /* car.cpp */,
+				52804F6525537553002A59AD /* car.hpp */,
+				52D3BD0D255440E00093D5DF /* splash_state.hpp */,
+				52D3BD0F255442410093D5DF /* splash_state.cpp */,
+				52D3BD0E2554413A0093D5DF /* definitions.hpp */,
+				52D3BCF4255409AD0093D5DF /* state.hpp */,
+				52D3BCF525540A9A0093D5DF /* state_machine.cpp */,
+				52D3BCF925540AB00093D5DF /* state_machine.hpp */,
+				52D3BD0B25542DB40093D5DF /* simulator.hpp */,
+				52D3BCFB25541DDF0093D5DF /* asset_manager.hpp */,
+				52D3BD00255421B90093D5DF /* input_manager.cpp */,
+				52D3BD0825542D450093D5DF /* simulator.cpp */,
+				52D3BD04255421DD0093D5DF /* input_manager.hpp */,
+				52D3BCFC25541DEE0093D5DF /* asset_manager.cpp */,
+				52D3BCF02553FDF40093D5DF /* main_menu_state.hpp */,
+				52D3BCF12553FE0C0093D5DF /* main_menu_state.cpp */,
+				5244338325A3796B00CD4055 /* timer.hpp */,
+				52D4E58725A615F900102FB0 /* load_state.hpp */,
+				52D4E58825A6163900102FB0 /* load_state.cpp */,
+				52D4E58B25A619C100102FB0 /* file_finder.hpp */,
+				52D4E58C25A619E400102FB0 /* file_finder.cpp */,
+				52D4E58F25A61A3E00102FB0 /* slots_enum.hpp */,
+				52E3A87E25A677090076A2AB /* load_demo.hpp */,
+				52E3A87F25A677120076A2AB /* load_demo.cpp */,
 			);
 			name = Code;
 			path = ../../../Code;
@@ -257,11 +262,11 @@
 		52A1CEA7259A18950014C907 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				5230E78F2565EB3500F84CF2 /* ToolsView.cpp */,
-				5230E7942565EB3500F84CF2 /* ToolsView.h */,
-				52A1CEA02599F4450014C907 /* ToolsObserver.h */,
-				52A1CEA12599F4450014C907 /* ToolsSubject.cpp */,
-				52A1CEA22599F4450014C907 /* ToolsSubject.h */,
+				5230E78F2565EB3500F84CF2 /* tools_view.cpp */,
+				5230E7942565EB3500F84CF2 /* tools_view.hpp */,
+				52A1CEA02599F4450014C907 /* tools_observer.hpp */,
+				52A1CEA12599F4450014C907 /* tools_subject.cpp */,
+				52A1CEA22599F4450014C907 /* tools_subject.hpp */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -269,11 +274,11 @@
 		52D0C27B259BF2BA000871D0 /* Cameras */ = {
 			isa = PBXGroup;
 			children = (
-				52D0C271259B9808000871D0 /* CamerasSubject.cpp */,
-				5230E7922565EB3500F84CF2 /* CamerasView.h */,
-				52D0C273259B981B000871D0 /* CamerasSubject.h */,
-				5230E78E2565EB3500F84CF2 /* CamerasView.cpp */,
-				52D0C274259B9A95000871D0 /* CamerasObserver.h */,
+				52D0C271259B9808000871D0 /* cameras_subject.cpp */,
+				5230E7922565EB3500F84CF2 /* cameras_view.hpp */,
+				52D0C273259B981B000871D0 /* cameras_subject.hpp */,
+				5230E78E2565EB3500F84CF2 /* cameras_view.cpp */,
+				52D0C274259B9A95000871D0 /* cameras_observer.hpp */,
 			);
 			name = Cameras;
 			sourceTree = "<group>";
@@ -281,11 +286,11 @@
 		52D0C281259C06F1000871D0 /* Simulation */ = {
 			isa = PBXGroup;
 			children = (
-				52D0C282259C072C000871D0 /* SimulationSubject.cpp */,
-				52D0C283259C072C000871D0 /* SimulationSubject.h */,
-				52D0C275259B9C2D000871D0 /* SimulationHandler.h */,
-				52D0C276259B9C4A000871D0 /* SimulationHandler.cpp */,
-				52D0C278259BEC28000871D0 /* SimulationObserver.h */,
+				52D0C282259C072C000871D0 /* simulation_subject.cpp */,
+				52D0C283259C072C000871D0 /* simulation_subject.hpp */,
+				52D0C275259B9C2D000871D0 /* simulation_handler.hpp */,
+				52D0C276259B9C4A000871D0 /* simulation_handler.cpp */,
+				52D0C278259BEC28000871D0 /* simulation_observer.hpp */,
 			);
 			name = Simulation;
 			sourceTree = "<group>";
@@ -293,11 +298,11 @@
 		52D0C285259C07FF000871D0 /* Creator */ = {
 			isa = PBXGroup;
 			children = (
-				52D5673A256F034F0017A7C6 /* CreatorHandler.cpp */,
-				52D5673D256F034F0017A7C6 /* CreatorHandler.h */,
-				52D5673E256F034F0017A7C6 /* CreatorObserver.h */,
-				52D5673B256F034F0017A7C6 /* CreatorSubject.cpp */,
-				52D5673C256F034F0017A7C6 /* CreatorSubject.h */,
+				52D5673A256F034F0017A7C6 /* creator_handler.cpp */,
+				52D5673D256F034F0017A7C6 /* creator_handler.hpp */,
+				52D5673E256F034F0017A7C6 /* creator_observer.hpp */,
+				52D5673B256F034F0017A7C6 /* creator_subject.cpp */,
+				52D5673C256F034F0017A7C6 /* creator_subject.hpp */,
 			);
 			name = Creator;
 			sourceTree = "<group>";
@@ -359,35 +364,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F5565F259D17DD00ECEED3 /* Vehicle.cpp in Sources */,
-				5230E79B2565EB3500F84CF2 /* MapView.cpp in Sources */,
-				52E3A88025A677120076A2AB /* LoadDemo.cpp in Sources */,
-				52D56740256F034F0017A7C6 /* CreatorSubject.cpp in Sources */,
-				52F5565E259D17DD00ECEED3 /* Truck.cpp in Sources */,
-				52D3BCFD25541DEE0093D5DF /* AssetManager.cpp in Sources */,
-				52D3BCF22553FE0C0093D5DF /* MainMenuState.cpp in Sources */,
-				52D0C272259B9808000871D0 /* CamerasSubject.cpp in Sources */,
-				52D4E57825A5D8EB00102FB0 /* SaveState.cpp in Sources */,
-				52D3BD10255442410093D5DF /* SplashState.cpp in Sources */,
-				52D3BCF625540A9A0093D5DF /* StateMachine.cpp in Sources */,
-				52A1CEA32599F4450014C907 /* ToolsSubject.cpp in Sources */,
-				5230E7992565EB3500F84CF2 /* ToolsView.cpp in Sources */,
-				52D0C277259B9C4A000871D0 /* SimulationHandler.cpp in Sources */,
-				5230E79A2565EB3500F84CF2 /* Grid.cpp in Sources */,
-				52F5565D259D17DD00ECEED3 /* VehicleFactory.cpp in Sources */,
-				52804F6625537553002A59AD /* Car.cpp in Sources */,
-				52D3BD01255421B90093D5DF /* InputManager.cpp in Sources */,
-				5230E79C2565EB3500F84CF2 /* Cell.cpp in Sources */,
-				523F9D2F2575D4BF00279564 /* Main.cpp in Sources */,
-				52EDDC3B255A055800CD5101 /* InitCreateState.cpp in Sources */,
-				52D3BD0925542D450093D5DF /* Simulator.cpp in Sources */,
-				52D5673F256F034F0017A7C6 /* CreatorHandler.cpp in Sources */,
-				52D0C284259C072C000871D0 /* SimulationSubject.cpp in Sources */,
-				5225663D255EA24500C9BB3C /* CreatorState.cpp in Sources */,
-				52166DD82561796400A1AE4E /* Button.cpp in Sources */,
-				5230E7982565EB3500F84CF2 /* CamerasView.cpp in Sources */,
-				52D4E58925A6163900102FB0 /* LoadState.cpp in Sources */,
-				52D4E58D25A619E400102FB0 /* FileFinder.cpp in Sources */,
+				52F5565F259D17DD00ECEED3 /* vehicle.cpp in Sources */,
+				5230E79B2565EB3500F84CF2 /* map_view.cpp in Sources */,
+				52E3A88025A677120076A2AB /* load_demo.cpp in Sources */,
+				52D56740256F034F0017A7C6 /* creator_subject.cpp in Sources */,
+				52F5565E259D17DD00ECEED3 /* truck.cpp in Sources */,
+				52D3BCFD25541DEE0093D5DF /* asset_manager.cpp in Sources */,
+				52D3BCF22553FE0C0093D5DF /* main_menu_state.cpp in Sources */,
+				52D0C272259B9808000871D0 /* cameras_subject.cpp in Sources */,
+				52D4E57825A5D8EB00102FB0 /* save_state.cpp in Sources */,
+				52D3BD10255442410093D5DF /* splash_state.cpp in Sources */,
+				52D3BCF625540A9A0093D5DF /* state_machine.cpp in Sources */,
+				52A1CEA32599F4450014C907 /* tools_subject.cpp in Sources */,
+				5230E7992565EB3500F84CF2 /* tools_view.cpp in Sources */,
+				52D0C277259B9C4A000871D0 /* simulation_handler.cpp in Sources */,
+				5230E79A2565EB3500F84CF2 /* grid.cpp in Sources */,
+				52F5565D259D17DD00ECEED3 /* vehicle_factory.cpp in Sources */,
+				52804F6625537553002A59AD /* car.cpp in Sources */,
+				52D3BD01255421B90093D5DF /* input_manager.cpp in Sources */,
+				5230E79C2565EB3500F84CF2 /* cell.cpp in Sources */,
+				523F9D2F2575D4BF00279564 /* main.cpp in Sources */,
+				52EDDC3B255A055800CD5101 /* init_create_state.cpp in Sources */,
+				52D3BD0925542D450093D5DF /* simulator.cpp in Sources */,
+				522F8FB125AA103E00210D3A /* camera.cpp in Sources */,
+				52D5673F256F034F0017A7C6 /* creator_handler.cpp in Sources */,
+				52D0C284259C072C000871D0 /* simulation_subject.cpp in Sources */,
+				5225663D255EA24500C9BB3C /* creator_state.cpp in Sources */,
+				52166DD82561796400A1AE4E /* button.cpp in Sources */,
+				5230E7982565EB3500F84CF2 /* cameras_view.cpp in Sources */,
+				52D4E58925A6163900102FB0 /* load_state.cpp in Sources */,
+				52D4E58D25A619E400102FB0 /* file_finder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
