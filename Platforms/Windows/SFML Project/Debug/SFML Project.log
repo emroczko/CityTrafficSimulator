@@ -1,4 +1,192 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (Project1.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
+  AssetManager.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\AssetManager.cpp': No such file or directory
+  Button.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(40,169): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(40,127): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(40,89): warning C4244: "argument": konwersja z "const T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(40,55): warning C4244: "argument": konwersja z "const T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(53,169): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(53,127): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(53,89): warning C4244: "argument": konwersja z "const T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Button.cpp(53,55): warning C4244: "argument": konwersja z "const T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  Camera.cpp
+  CamerasSubject.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\CamerasSubject.cpp': No such file or directory
+  CamerasView.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\CamerasView.cpp': No such file or directory
+  Cell.cpp
+  CreatorHandler.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\CreatorHandler.cpp': No such file or directory
+  CreatorState.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\CreatorState.cpp': No such file or directory
+  CreatorSubject.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\CreatorSubject.cpp': No such file or directory
+  FileFinder.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\FileFinder.cpp': No such file or directory
+  Grid.cpp
+  InitCreateState.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\InitCreateState.cpp': No such file or directory
+  InputManager.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\InputManager.cpp': No such file or directory
+  LoadDemo.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\LoadDemo.cpp': No such file or directory
+  LoadState.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\LoadState.cpp': No such file or directory
+  Main.cpp
+  MainMenuState.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\MainMenuState.cpp': No such file or directory
+  MapView.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\MapView.cpp': No such file or directory
+  SaveState.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\SaveState.cpp': No such file or directory
+  SimulationHandler.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\SimulationHandler.cpp': No such file or directory
+  Generowanie kodu...
+  Trwa kompilowanie...
+  SimulationSubject.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\SimulationSubject.cpp': No such file or directory
+  Simulator.cpp
+  SplashState.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\SplashState.cpp': No such file or directory
+  StateMachine.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\StateMachine.cpp': No such file or directory
+  ToolsSubject.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\ToolsSubject.cpp': No such file or directory
+  ToolsView.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\ToolsView.cpp': No such file or directory
+  Car.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(10,30): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(11,26): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(12,33): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(18,84): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(18,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(20,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(20,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(22,88): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(22,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+  Truck.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(9,30): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(10,26): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(11,33): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(17,86): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(17,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(19,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(19,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(21,88): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(21,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
   Vehicle.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(13,74): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
           with
@@ -40,4 +228,6 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(230,86):
           [
               _Rep=__int64
           ]
-  SFML Project.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe
+  VehicleFactory.cpp
+c1xx : fatal error C1083: Nie można otworzyć pliku źródło: '..\..\..\Code\Vehicles\VehicleFactory.cpp': No such file or directory
+  Generowanie kodu...
