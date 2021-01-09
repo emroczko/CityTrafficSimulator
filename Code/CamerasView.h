@@ -11,14 +11,12 @@ class CamerasView : public CamerasSubject, public SimulationObserver, public Cre
 	public:
 		CamerasView(SimulatorDataRef data);
 		void Draw();
-        
         bool isClicked(sf::Vector2i &mousePosition);
         void HandleInput();
         void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {}
         void UpdateIsSimulating(bool isSimulating);
-        
         void UpdateIsDeletingCamera(int whichCamera);
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col);
         void UpdateSelectedCell(sf::Vector2i coords) {}
         void UpdateCells(std::vector<Cell> cells) {}
         void SaveToFile()  {}
@@ -26,7 +24,6 @@ class CamerasView : public CamerasSubject, public SimulationObserver, public Cre
         void UpdateIsDeletingRoad(bool isDeletingRoad) {}
         void UpdateCarsLabel(int whichLabel);
         void UpdateTrucksLabel(int whichLabel);
-    
 	private:
         void InitializeVehiclesCounters();
         void AddButtons();

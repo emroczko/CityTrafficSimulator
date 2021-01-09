@@ -127,14 +127,14 @@ CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(fal
             this->InitializeVehiclesCounters();
         }
     }
-    void CamerasView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera) {
+    void CamerasView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col) {
         this->_isAddingCamera = isAddingCamera;
         if (!isAddingCamera) {
             
             this->_camerasOn.at(whichCamera - 1) = true;
             
             this->_buttons.at(whichCamera - 1).setBackground(this->_data->assets.GetTexture("Button"));
-            _camerasLabels.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Enabled");
+            _camerasLabels.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Row: "+ std::to_string(col+1)+" Col: "+std::to_string(row+1));
         }
         else {
             this->_buttons.at(whichCamera - 1).setBackground(this->_data->assets.GetTexture("Button_pressed"));

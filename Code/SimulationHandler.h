@@ -19,10 +19,9 @@ namespace ZPR {
         void SaveToFile();
         void UpdateIsDrawingRoad(bool isDrawingRoad) {};
         void UpdateIsDeletingRoad(bool isDeletingRoad) {};
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera) {};
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col) {};
         void UpdateIsAddingCamera(int whichCamera) {}
         void UpdateIsDeletingCamera(int whichCamera) {}
-        void UpdateCameraIsAdded(bool isAddingCamera, int whichCamera) {}
         void SeparateRoadsFromCells();
         void HandleInput();
     private:
