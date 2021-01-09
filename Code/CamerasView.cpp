@@ -115,7 +115,7 @@ CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(fal
 
     void CamerasView::UpdateCarsLabel(int whichLabel){
         ++_numberOfCars[whichLabel];
-        this->_camerasLabels.at(whichLabel+3).setString("Cars passed: "+std::to_string(_numberOfCars[whichLabel]));
+        this->_camerasLabels.at(whichLabel+2).setString("Cars passed: "+std::to_string(_numberOfCars[whichLabel]));
     }
     
     void CamerasView::UpdateTrucksLabel(int whichLabel){

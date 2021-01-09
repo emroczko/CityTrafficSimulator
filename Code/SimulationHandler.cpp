@@ -28,6 +28,7 @@ namespace ZPR {
         this->isSimulating = !this->isSimulating;
         if (isSimulating){
             SeparateRoadsFromCells();
+            SeparateCamerasFromCells();
             this->timer.setInterval([&]() {
                 AddCarsToSimulate();
                 this->MoveVehicles();
@@ -51,19 +52,31 @@ namespace ZPR {
 
     void SimulationHandler::SeparateRoadsFromCells()
     {
-        for (Cell cell : _cells) {
+        for (Cell& cell : _cells) {
             if (cell._containsRoad) {
-                sf::RectangleShape road;
-                road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
-                road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
-                sf::Vector2f centeredPositionInPixels = sf::Vector2f(cell.GetPosition().x * this->_cellSize + CalculatePrefix(), cell.GetPosition().y * this->_cellSize + CalculatePrefix());
-                centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2;
-                centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
-                road.setPosition(centeredPositionInPixels);
-                this->_roads.push_back(road);
+                this->_roads.push_back(ConvertCellToCenteredRectShape(cell));
             }    
         }
         AddStartingRoad();
+    }
+    void SimulationHandler::SeparateCamerasFromCells()
+    {
+        for (Cell& cell : this->_cells) {
+            if (cell._containsCamera) {
+                this->_cameras.push_back(Camera(cell._whichCamera, ConvertCellToCenteredRectShape(cell)));
+            }
+        }
+    }
+    sf::RectangleShape SimulationHandler::ConvertCellToCenteredRectShape(Cell cell)
+    {
+        sf::RectangleShape rectShape;
+        rectShape.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
+        rectShape.setOrigin(sf::Vector2f(rectShape.getSize().x / 2, rectShape.getSize().y / 2));
+        sf::Vector2f centeredPositionInPixels = sf::Vector2f(cell.GetPosition().x * this->_cellSize + CalculatePrefix(), cell.GetPosition().y * this->_cellSize + CalculatePrefix());
+        centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2;
+        centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2;
+        rectShape.setPosition(centeredPositionInPixels);
+        return rectShape;
     }
     void SimulationHandler::AddStartingRoad() {
         sf::RectangleShape road;
@@ -93,7 +106,7 @@ namespace ZPR {
         std::uniform_int_distribution<> dist(1, 100);
         int num = dist(eng);
         
-        if (StartingCellFree() && num > 0 && num < 5 && _vehicles.size()<10) {
+        if (StartingCellFree() && num > 0 && num < 7 && _vehicles.size()<10) {
             if (num > 4) {
             this->_vehicles.push_back(VehicleFactory::CreateTruck(x_start, y_start, this->_cellSize, this->_roads));
             }
@@ -116,6 +129,7 @@ namespace ZPR {
             VehilcesColision();
             vehicle->move();
             vehicle->CheckTurn();
+            CheckCameraVision();
         }
     }
     void SimulationHandler::VehilcesColision()
@@ -135,6 +149,32 @@ namespace ZPR {
             }
         }
     }
+    void SimulationHandler::CheckCameraVision()
+    {
+        for (Camera camera : this->_cameras) {
+            CheckCameraColision(camera);
+        }
+    }
+
+    void SimulationHandler::CheckCameraColision(Camera camera)
+    {
+        for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
+            if (camera.CheckColision(vehicle)) {
+                CheckVehicleTypeAndNotify(vehicle, camera._cameraNumber);
+            }
+        }
+    }
+
+    void SimulationHandler::CheckVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int cameraNumber)
+    {
+        if (vehicle->getShape().getSize().x == vehicle->getShape().getSize().y) {
+            this->NotifyCarsLabel(cameraNumber);
+        }
+        else {
+            this->NotifyTrucksLabel(cameraNumber);
+        }
+    }
+
     bool SimulationHandler::StartingCellFree()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {

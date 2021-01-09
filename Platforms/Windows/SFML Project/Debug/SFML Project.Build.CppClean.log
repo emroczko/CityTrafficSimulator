@@ -1,43 +1,40 @@
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\vc142.pdb
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\vc142.idb
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\vehiclefactory.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\simulator.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\toolsview.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\savestate.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\assetmanager.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\mapview.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\initcreatestate.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\creatorstate.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\vehicle.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\truck.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\car.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\simulationsubject.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\simulationhandler.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\savestate.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\mapview.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\mainmenustate.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\main.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\loadstate.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\loaddemo.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\inputmanager.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\initcreatestate.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\grid.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\filefinder.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\creatorsubject.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\creatorstate.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\creatorhandler.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\cell.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\main.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\inputmanager.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\toolssubject.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\camerasview.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\camerassubject.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\button.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\assetmanager.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\vehiclefactory.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\vehicle.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\truck.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\car.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\toolsview.obj
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\toolssubject.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\statemachine.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\splashstate.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\mainmenustate.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\loadstate.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\loaddemo.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\filefinder.obj
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\debug\sfml project.ilk
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\simulator.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\debug\sfml project.exe
+h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\debug\sfml project.ilk
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\debug\sfml project.pdb
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\źródło.obj
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\cl.command.1.tlog
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\cl.read.1.tlog
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\cl.write.1.tlog
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\copylocal.read.1u.tlog
-h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\copylocal.write.1u.tlog
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\link.command.1.tlog
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\link.read.1.tlog
 h:\programowanie\c++\citytrafficsimulator_zpr\platforms\windows\sfml project\debug\sfml project.tlog\link.write.1.tlog

@@ -44,10 +44,10 @@ namespace ZPR {
 			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y - (this->_colisionBox.getSize().y / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize)));
 		}
 		else if (this->_direction == "East"){
-			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x + (this->_colisionBox.getSize().x / 2 + this->_shape.getSize().x / 2 + this->_roadStripesSize), this->_shape.getPosition().y));
+			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x + (this->_colisionBox.getSize().x / 2 + ceil(this->_shape.getSize().x / 2) + this->_roadStripesSize), this->_shape.getPosition().y));
 		}
 		else {
-			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x - (this->_colisionBox.getSize().x / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize), this->_shape.getPosition().y));
+			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x - (this->_colisionBox.getSize().x / 2 + ceil(this->_shape.getSize().y / 2) + this->_roadStripesSize), this->_shape.getPosition().y));
 		}
 	}
 
@@ -65,6 +65,7 @@ namespace ZPR {
 				}
 			}
 		}
+		CheckIfSeenByCamera();
 	}
 	//Sprawdza czy przed pojadem znajduje siê inny pojazd i je¿eli tak sie stanie to zatrzymuje go w miejscu					//
 	bool Vehicle::CheckColision(std::shared_ptr<Vehicle> vehicle){
@@ -73,6 +74,16 @@ namespace ZPR {
 			return true;
 		}
 		return false;
+	}
+
+	void Vehicle::CheckIfSeenByCamera()
+	{
+		if (this->_currentRoad == this->_previousRoad) {
+			this->_seenByCamera = true;
+		}
+		else {
+			this->_seenByCamera = false;
+		}
 	}
 
 	void Vehicle::CheckTurn()
