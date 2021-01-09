@@ -22,6 +22,7 @@ namespace ZPR {
 		std::vector<sf::RectangleShape> _roads;
 		std::string _direction, _previousDirection;
 		sf::RectangleShape _shape, _colisionBox;
+		std::shared_ptr<sf::RectangleShape> _currentRoad, _previousRoad;
 	private:
 		void UpdatePosition();
 		void UpdateColisionBoxPosition();
@@ -30,8 +31,6 @@ namespace ZPR {
 		void ChoseFromTwoRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
 		void ChoseFromThreeRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
 		void UpdateDirection(std::string direction);
-		
-		std::shared_ptr<sf::RectangleShape> _currentRoad, _previousRoad;
 	};
 }
 

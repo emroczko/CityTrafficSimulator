@@ -1,34 +1,310 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (Project1.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
+  CamerasView.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(34,94): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(36,100): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.cpp(52,61): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  CreatorHandler.cpp
+  CreatorState.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(2007,9): error C2259: „ZPR::MapView”: nie można utworzyć wystąpienia klasy abstrakcyjnej
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.h(15): message : zobacz deklarację „ZPR::MapView”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(2007,9): message : z powodu następujących składowych:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(2007,9): message : "void ZPR::SimulationObserver::UpdateCarsLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(10): message : zobacz deklarację „ZPR::SimulationObserver::UpdateCarsLabel”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(2007,9): message : "void ZPR::SimulationObserver::UpdateTrucksLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(11): message : zobacz deklarację „ZPR::SimulationObserver::UpdateTrucksLabel”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(1576): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::_Wrap<_Ty>” klasy klasa szablon
+          with
+          [
+              _Ty=ZPR::MapView
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2207): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::_Ref_count_obj2<_Ty>” klasy klasa szablon
+          with
+          [
+              _Ty=ZPR::MapView
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(15): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::shared_ptr<ZPR::MapView> std::make_shared<ZPR::MapView,ZPR::SimulatorDataRef&,int&>(ZPR::SimulatorDataRef &,int &)” funkcji szablon
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2832): error C2259: „ZPR::ToolsView”: nie można utworzyć wystąpienia klasy abstrakcyjnej
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\ToolsView.h(11): message : zobacz deklarację „ZPR::ToolsView”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2832): message : z powodu następujących składowych:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2832): message : "void ZPR::SimulationObserver::UpdateCarsLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(10): message : zobacz deklarację „ZPR::SimulationObserver::UpdateCarsLabel”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2832): message : "void ZPR::SimulationObserver::UpdateTrucksLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(11): message : zobacz deklarację „ZPR::SimulationObserver::UpdateTrucksLabel”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(16): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::unique_ptr<ZPR::ToolsView,std::default_delete<ZPR::ToolsView>> std::make_unique<ZPR::ToolsView,ZPR::SimulatorDataRef&,0>(ZPR::SimulatorDataRef &)” funkcji szablon
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2833,35): error C2259: „ZPR::ToolsView”: nie można utworzyć wystąpienia klasy abstrakcyjnej
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\ToolsView.h(11): message : zobacz deklarację „ZPR::ToolsView”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2833,35): message : z powodu następujących składowych:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2833,35): message : "void ZPR::SimulationObserver::UpdateCarsLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(10): message : zobacz deklarację „ZPR::SimulationObserver::UpdateCarsLabel”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2833,35): message : "void ZPR::SimulationObserver::UpdateTrucksLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(11): message : zobacz deklarację „ZPR::SimulationObserver::UpdateTrucksLabel”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2832): error C2259: „ZPR::CamerasView”: nie można utworzyć wystąpienia klasy abstrakcyjnej
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.h(10): message : zobacz deklarację „ZPR::CamerasView”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2832): message : z powodu następujących składowych:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2832): message : "void ZPR::SimulationObserver::UpdateCarsLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(10): message : zobacz deklarację „ZPR::SimulationObserver::UpdateCarsLabel”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2832): message : "void ZPR::SimulationObserver::UpdateTrucksLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(11): message : zobacz deklarację „ZPR::SimulationObserver::UpdateTrucksLabel”
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CreatorState.cpp(17): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::unique_ptr<ZPR::CamerasView,std::default_delete<ZPR::CamerasView>> std::make_unique<ZPR::CamerasView,ZPR::SimulatorDataRef&,0>(ZPR::SimulatorDataRef &)” funkcji szablon
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2833,35): error C2259: „ZPR::CamerasView”: nie można utworzyć wystąpienia klasy abstrakcyjnej
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\CamerasView.h(10): message : zobacz deklarację „ZPR::CamerasView”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2833,35): message : z powodu następujących składowych:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2833,35): message : "void ZPR::SimulationObserver::UpdateCarsLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(10): message : zobacz deklarację „ZPR::SimulationObserver::UpdateCarsLabel”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory(2833,35): message : "void ZPR::SimulationObserver::UpdateTrucksLabel(void)": jest abstrakcyjna
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationObserver.h(11): message : zobacz deklarację „ZPR::SimulationObserver::UpdateTrucksLabel”
+  CreatorSubject.cpp
+  InitCreateState.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\InitCreateState.cpp(31,40): warning C4305: "argument": obcięcie z "double" do "float"
+  LoadDemo.cpp
+  LoadState.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\LoadState.cpp(39,40): warning C4305: "argument": obcięcie z "double" do "float"
+  MainMenuState.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MainMenuState.cpp(41,40): warning C4305: "argument": obcięcie z "double" do "float"
+  MapView.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(83,95): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(83,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(144,63): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(145,76): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(145,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(146,62): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(147,76): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(147,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(157,79): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(158,95): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(158,71): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(165,77): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(166,86): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(166,53): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(173,18): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(214,82): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(214,49): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(227,84): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(227,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(257,27): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(259,29): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(365,80): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(365,68): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(388,88): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(388,76): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(419,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\MapView.cpp(420,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+  SaveState.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SaveState.cpp(18,40): warning C4305: "argument": obcięcie z "double" do "float"
+  SimulationHandler.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(12,36): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(13,32): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(14,39): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(16,103): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(16,84): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(18,178): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(18,118): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(57,90): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(57,57): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(59,169): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(59,109): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(70,82): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(70,49): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(72,155): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(72,98): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(82,24): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\SimulationHandler.cpp(92,92): warning C4244: "argument": konwersja z "_Rep" do "unsigned int", możliwa utrata danych
+          with
+          [
+              _Rep=__int64
+          ]
+  SimulationSubject.cpp
+  ToolsView.cpp
   Car.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(10,30): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(11,26): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(12,33): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(15,84): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(18,84): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(15,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(18,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(17,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(20,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(17,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(20,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(19,88): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(22,88): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(19,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(22,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
           with
           [
               T=float
@@ -37,35 +313,76 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Car.cpp(19,48): warn
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(9,30): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(10,26): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(11,33): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(14,86): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(17,86): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(14,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(17,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(16,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(19,44): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(16,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(19,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(18,88): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(21,88): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(18,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Truck.cpp(21,48): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
+  Vehicle.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(12,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(17,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(22,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(27,73): warning C4244: "=": konwersja z "T" do "int", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(37,45): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(37,41): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(164,86): warning C4244: "argument": konwersja z "_Rep" do "unsigned int", możliwa utrata danych
+          with
+          [
+              _Rep=__int64
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\Vehicle.cpp(214,86): warning C4244: "argument": konwersja z "_Rep" do "unsigned int", możliwa utrata danych
+          with
+          [
+              _Rep=__int64
+          ]
+  VehicleFactory.cpp
   Generowanie kodu...
-  SFML Project.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe

@@ -11,6 +11,9 @@ namespace ZPR {
 		this->_roadSize = round(ROAD_SIZE * _cellSize / ROAD_IMAGE_SIZE);
 		this->_roadStripesSize = round(ROAD_STRIPES_SIZE * _cellSize / ROAD_IMAGE_SIZE);
 		this->_direction = "South";
+		this->_previousDirection = "";
+		this->_currentRoad = nullptr;
+		this->_previousRoad = nullptr;
 		this->_shape.setFillColor(sf::Color(255, 0, 0));
 		this->_shape.setSize(sf::Vector2f(14 * cellSize / ROAD_IMAGE_SIZE, 14 * cellSize / ROAD_IMAGE_SIZE));
 		this->_shape.setOrigin(this->_shape.getSize().x / 2, this->_shape.getSize().y / 2);

@@ -67,6 +67,8 @@ BOOST_AUTO_TEST_CASE(Vhicle_RoadSizesTest) {
 BOOST_AUTO_TEST_CASE(Vhicle_DirectionTest) {
 	BOOST_CHECK_EQUAL("South", Car->_direction);
 	BOOST_CHECK_EQUAL("South", Truck->_direction);
+	BOOST_CHECK_EQUAL("", Car->_previousDirection);
+	BOOST_CHECK_EQUAL("", Truck->_previousDirection);
 }
 
 BOOST_AUTO_TEST_CASE(Vehicle_SizeTest) {
@@ -103,7 +105,16 @@ BOOST_AUTO_TEST_CASE(Vehicle_GoFromStopTest) {
 	BOOST_CHECK_EQUAL(3, Truck->_speed);
 }
 
-/*BOOST_AUTO_TEST_CASE(Vhicle_MoveTest) {
+BOOST_AUTO_TEST_CASE(Vehicle_ConstructorCurrntPreviousRoad) {
+	BOOST_CHECK_EQUAL(nullptr, Car->_currentRoad);
+	BOOST_CHECK_EQUAL(nullptr, Car->_previousRoad);
+	BOOST_CHECK_EQUAL(nullptr, Truck->_currentRoad);
+	BOOST_CHECK_EQUAL(nullptr, Truck->_previousRoad);
+}
+
+BOOST_AUTO_TEST_CASE(Vhicle_MoveTest) {
+	Car->_currentRoad = std::make_shared<sf::RectangleShape>(roads.at(0));
+	Truck->_currentRoad = std::make_shared<sf::RectangleShape>(roads.at(0));
 	BOOST_CHECK_EQUAL(20, Car->_x);
 	BOOST_CHECK_EQUAL(20, Car->_y);
 	BOOST_CHECK_EQUAL(20, Truck->_x);
@@ -118,5 +129,5 @@ BOOST_AUTO_TEST_CASE(Vehicle_GoFromStopTest) {
 	Car->move();
 	BOOST_CHECK_EQUAL(23, Car->_x);
 	BOOST_CHECK_EQUAL(20, Car->_y);
-}*/
+}
 BOOST_AUTO_TEST_SUITE_END()
