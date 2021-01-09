@@ -30,14 +30,15 @@ class CamerasView : public CamerasSubject, public SimulationObserver, public Cre
        
     
 	private:
-        std::vector<Button> _buttons;
+        std::vector<Button> _buttons, _removeButtons;
 		sf::FloatRect CalculateViewPort();
 		SimulatorDataRef _data;
 		sf::RectangleShape _background;
 		sf::View _camerasView;
         std::vector<sf::Text> _camerasLabels;
-        bool _isSimulating;
+        bool _isSimulating, _isAddingCamera;
         std::vector<bool> _camerasOn;
+    
 	};
 };
 

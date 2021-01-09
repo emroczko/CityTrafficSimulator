@@ -30,8 +30,15 @@ namespace ZPR {
 		GenerateGridLines();
         GenerateEnterBoard();
         this->_mapView.zoom(1.4f);
+        this->InitializeCameras();
         FillEnterCells();
 	}
+    void MapView::InitializeCameras(){
+            sf::RectangleShape temp;
+            for(int i = 0; i < 2; i++){
+                _camerasT[i] = temp;
+            }
+    }
 	/*Zwraca wartoœci kolumny i wiersza obecnie zaznaczonej komórki*/
 	sf::Vector2i MapView::getRowCol()
 	{
@@ -124,7 +131,7 @@ namespace ZPR {
 		}
 	}
     void MapView::DrawCameras(){
-        for (sf::RectangleShape camera : this->_cameras) {
+        for (sf::RectangleShape camera : this->_camerasT) {
             this->_data->window.draw(camera);
         }
     }
@@ -180,14 +187,7 @@ namespace ZPR {
                 DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
 				cell._toDelete = false;
             }
-            if (cell._containsCamera && !cell._cameraDrawn) {
-                cell._cameraDrawn = true;
-                AddCamera((sf::Vector2i(row, col)));
-            }
-            if (cell._cameraToDelete) {
-                DeleteCamera(TransformRowColToPixels(sf::Vector2i(row, col)));
-                cell._cameraToDelete = false;
-            }
+
 		}
 	}
     void MapView::FillEnterCells()
@@ -221,6 +221,8 @@ namespace ZPR {
         this->_roads.push_back(road);
     }
     void MapView::AddCamera(sf::Vector2i position){
+        if (CheckCameraExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+        
         sf::RectangleShape camera;
         camera.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
         camera.setTexture(&this->_data->assets.GetTexture("Camera"));
@@ -229,7 +231,8 @@ namespace ZPR {
         centeredPositionInPixels.x = centeredPositionInPixels.x + this->_cellSize / 2 ;
         centeredPositionInPixels.y = centeredPositionInPixels.y + this->_cellSize / 2 ;
         camera.setPosition(centeredPositionInPixels);
-        this->_cameras.push_back(camera);
+       // this->_cameras.insert(_cameras.begin() + _whichCamera-1, camera);
+        this->_camerasT[_whichCamera-1] = camera;
     }
     
     void MapView::AddEnterRoad(sf::Vector2i position){
@@ -357,12 +360,14 @@ namespace ZPR {
 	/*Usuwa drogê z mapy*/
     void MapView::DeleteRoad(sf::Vector2f position)
     {
+        
 		int i = 0;
 		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
         
 		for (sf::RectangleShape road : _roads) {
 			if (road.getPosition().x - this->_cellSize / 2 == position.x && road.getPosition().y - this->_cellSize / 2 == position.y){
 				_roads.erase(_roads.begin() + i);
+                
 				road.setTexture(NULL);
 			}
 			i++;
@@ -370,13 +375,22 @@ namespace ZPR {
 		CheckRoadsTexture();
 	}
     void MapView::UpdateIsDeletingCamera(int whichCamera){
+        this->_whichCamera = whichCamera;
         
+        DeleteCamera(sf::Vector2f(_camerasT[whichCamera-1].getPosition().x, _camerasT[whichCamera-1].getPosition().y));
+        
+        this->isAddingCamera = false;
     }
     void MapView::DeleteCamera(sf::Vector2f position){
         int i = 0;
-        for (sf::RectangleShape camera : _cameras) {
-            if (camera.getPosition().x - this->_cellSize / 2 == position.x && camera.getPosition().y - this->_cellSize / 2 == position.y){
-                _cameras.erase(_cameras.begin() + i);
+        sf::RectangleShape temp;
+        
+        if (CheckCameraExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+        for (sf::RectangleShape camera : _camerasT) {
+            if (camera.getPosition().x == position.x && camera.getPosition().y == position.y){
+               // _cameras.erase(_cameras.begin() + i);
+                _camerasT[_whichCamera-1] = temp;
+                //std::replace(_cameras.begin(), _cameras.end(), camera, temp);
                 camera.setTexture(NULL);
             }
             i++;
@@ -393,7 +407,12 @@ namespace ZPR {
 		}
 		return false;
 	}
-
+    bool MapView::CheckCameraExists(sf::Vector2f position) {
+        for (sf::RectangleShape camera : this->_camerasT) {
+            if (camera.getPosition().x -this->_cellSize/2 == position.x && camera.getPosition().y - this->_cellSize/2 == position.y) {return true;}
+        }
+        return false;
+    }
 	/*Zmiania koordynaty wiarsz-kolumna z siatki na koordynaty w pixelach*/
 	sf::Vector2f MapView::TransformRowColToPixels(sf::Vector2i rowcol)
 	{
@@ -451,6 +470,7 @@ namespace ZPR {
 	}
     void MapView::UpdateRoads(std::vector<sf::RectangleShape> roads)
     {
+        
         this->_roads = roads;
     }
 	/*Odœwierza wartosc zminnej decyduj¹cej o tym czy jestesmy w trybie rysowania drogi*/
@@ -472,11 +492,27 @@ namespace ZPR {
         this->isSimulating = isSimulating;
         this->isDrawingRoad = false;
         this->isDeletingRoad = false;
+        
     }
     void MapView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera){
         this->isAddingCamera = isAddingCamera;
         this->isDrawingRoad = false;
         this->isDeletingRoad = false;
+        this->_whichCamera = whichCamera;
+        //AddCamera((sf::Vector2i(row, col)));
+        for (Cell& cell : this->_cells) {
+            int row = cell.GetPosition().x;
+            int col = cell.GetPosition().y;
+            
+            if (cell._containsCamera && !cell._cameraDrawn) {
+                cell._cameraDrawn = true;
+                AddCamera((sf::Vector2i(row, col)));
+            }
+//            if (cell._cameraToDelete) {
+//
+//                cell._cameraToDelete = false;
+//            }
+        }
     }
     void MapView::SaveToFile(){
         this->_data->machine.AddState(StateRef(new SaveState(this->_data, _cells, _gridSize)), false);

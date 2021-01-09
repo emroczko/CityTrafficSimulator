@@ -38,6 +38,7 @@ namespace ZPR {
 	{
         this->_isDrawingRoad = !this->_isDrawingRoad;
         this->_isDeletingRoad = false;
+        this->_isAddingCameras = false;
 		this->NotifyIsDrawingRoad(this->_isDrawingRoad);
 	}
 	/*Ustawia tryb usuwania drogi na w³¹czony lub wy³¹czony w zale¿noœci od obecnego stanu*/
@@ -45,6 +46,7 @@ namespace ZPR {
     {
         this->_isDeletingRoad = !this->_isDeletingRoad;
         this->_isDrawingRoad = false;
+        this->_isAddingCameras = false;
         this->NotifyIsDeletingRoad(this->_isDeletingRoad);
     }
     void CreatorHandler::UpdateIsAddingCamera(int whichCamera)
@@ -67,8 +69,7 @@ namespace ZPR {
                 col = cell.GetPosition().y;
                 this->_grid->GetCell(_row, _col)._containsCamera = false;
                 this->_grid->GetCell(_row, _col)._whichCamera = 0;
-                this->_grid->GetCell(_row, _col)._cameraToDelete = true;
-                //this->_grid->GetCell(_row, _col)._cameraDrawn = false;
+                this->_grid->GetCell(_row, _col)._cameraToDelete = false;
                 this->NotifyCells(_grid->_cells);
                 this->NotifySelectedCell(sf::Vector2i(row, col));
             }
