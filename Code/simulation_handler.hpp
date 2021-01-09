@@ -15,13 +15,14 @@ namespace ZPR {
         SimulationHandler(int gridSize, std::vector<Cell> cells);
         void init();
         void UpdateIsSimulating();
-        void UpdateSelectedCell(sf::Vector2i coords) {};
+        void UpdateSelectedCell(sf::Vector2i coords) {}
         void UpdateCells(std::vector<Cell> cells);
         void SaveToFile();
-        void UpdateIsDrawingRoad(bool isDrawingRoad) {};
-        void UpdateIsDeletingRoad(bool isDeletingRoad) {};
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col) {};
+        void UpdateIsDrawingRoad(bool isDrawingRoad) {}
+        void UpdateIsDeletingRoad(bool isDeletingRoad) {}
         void UpdateIsAddingCamera(int whichCamera) {}
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera) {}
+        void UpdateCameraAdded(int whichCamera, int row, int col) {}
         void UpdateIsDeletingCamera(int whichCamera) {}
         void HandleInput();
     private:

@@ -16,8 +16,7 @@ namespace ZPR {
         sf::View GetView();
         void HandleInput();
         void UpdateIsSimulating(bool isSimulating);
-        void UpdateIsAddingCameras(bool isAddingCamera);
-		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
+		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {}
         void UpdateCarsLabel(int whichLabel){}
         void UpdateTrucksLabel(int whichLabel){}
         void UpdateSelectedCell(sf::Vector2i coords) {}
@@ -25,7 +24,8 @@ namespace ZPR {
         void SaveToFile() {}
         void UpdateIsDrawingRoad(bool isDrawingRoad) {}
         void UpdateIsDeletingRoad(bool isDeletingRoad) {}
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col);
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
+        void UpdateCameraAdded(int whichCamera, int row, int col) {}
         void UpdateIsDeletingCamera(int whichCamera) {}
 	private:
 		sf::FloatRect CalculateViewPort();

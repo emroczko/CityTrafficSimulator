@@ -23,7 +23,9 @@ namespace ZPR {
 		void UpdateIsDrawingRoad(bool isDrawingRoad);
         void UpdateIsDeletingRoad(bool isDeletingRoad);
         void UpdateIsSimulating(bool isSimulating);
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col);
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
+		void UpdateCameraAdded(int whichCamera, int row, int col);
+		void UpdateIsAddingCamera(int whichCamera);
         void UpdateIsDeletingCamera(int whichCamera);
         void UpdateCarsLabel(int whichLabel){}
         void UpdateTrucksLabel(int whichLabel){}

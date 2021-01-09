@@ -4,7 +4,6 @@
 #include "state.hpp"
 #include "simulator.hpp"
 #include "button.hpp"
-
 #include <vector>
 #include "map_view.hpp"
 #include "tools_view.hpp"
@@ -14,8 +13,6 @@
 #include "simulation_handler.hpp"
 #include "cell.hpp"
 
-
-
 namespace ZPR{
     
     class CreatorState: public State{
@@ -23,16 +20,11 @@ namespace ZPR{
     public:
         CreatorState (SimulatorDataRef data, int gridSize);
         CreatorState (SimulatorDataRef data, int gridSize, std::vector<Cell> Cells);
-        
-        void Init();
-        
+        void Init();  
         void HandleInput();
         void Update(float dt);
         void Draw(float dt);
-        
     private:
-       
-        
         SimulatorDataRef _data;
         std::shared_ptr<MapView> _mapView;
         std::shared_ptr<ToolsView> _toolsView;

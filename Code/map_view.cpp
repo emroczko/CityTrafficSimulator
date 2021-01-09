@@ -15,7 +15,7 @@ namespace ZPR {
 	void MapView::init() {
         this->clicked = false;
 		LoadAssets();
-		setupSelectedCellRect();
+		//setupSelectedCellRect();
 		this->_backgroundTexture.setTexture(this->_data->assets.GetTexture("Background"));
 		this->_backgroundTexture.setOrigin(sf::Vector2f(800, 800));
 		this->_backgroundTexture.setPosition(this->_mapView.getCenter());
@@ -24,7 +24,7 @@ namespace ZPR {
 		this->_col = -1;
         this->_enterGridWidth = this->_gridSize;
         this->_enterGridHeight = 2;
-		this->_selectedCellRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
+		//this->_selectedCellRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
 		this->_mapView = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
 		this->_mapView.setViewport(CalculateViewPort());
 		GenerateGridLines();
@@ -67,7 +67,7 @@ namespace ZPR {
 	/*Wczytuje wszystkie potrzebne assety*/
 	void MapView::LoadAssets()
 	{
-		this->_data->assets.LoadTexture("Selected Cell", SELECTED_CELL_TEXTURE);
+		//this->_data->assets.LoadTexture("Selected Cell", SELECTED_CELL_TEXTURE);
 		this->_data->assets.LoadTexture("Background", BACKGROUND_TEXTURE_FILEPATH);
 		this->_data->assets.LoadTexture("Road", STREET_TEXTURE);
 		this->_data->assets.LoadTexture("Turn", TURN_TEXTURE);
@@ -78,11 +78,11 @@ namespace ZPR {
         this->_data->assets.LoadTexture("Camera", CAMERA_TEXTURE);
 	}
 	/*Ustawia podstawowe parametry kwadratu reprezentuj¹cego zaznaczone pole na mapie*/
-	void MapView::setupSelectedCellRect()
+	/*void MapView::setupSelectedCellRect()
 	{
 		this->_selectedCellRect.setSize(sf::Vector2f(SCREEN_HEIGHT / this->_gridSize, SCREEN_HEIGHT / this->_gridSize));
 		this->_selectedCellRect.setTexture(&this->_data->assets.GetTexture("Selected Cell"));
-	}
+	}*/
 	/*Oblicza po³o¿enie obiektu typu sf::View*/
 	sf::FloatRect MapView::CalculateViewPort()
 	{
@@ -187,7 +187,6 @@ namespace ZPR {
                 DeleteRoad(TransformRowColToPixels(sf::Vector2i(row, col)));
 				cell._toDelete = false;
             }
-
 		}
 	}
     void MapView::FillEnterCells()
@@ -360,14 +359,11 @@ namespace ZPR {
 	/*Usuwa drogê z mapy*/
     void MapView::DeleteRoad(sf::Vector2f position)
     {
-        
 		int i = 0;
 		if (CheckRoadExists(TransformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-        
 		for (sf::RectangleShape road : _roads) {
 			if (road.getPosition().x - this->_cellSize / 2 == position.x && road.getPosition().y - this->_cellSize / 2 == position.y){
 				_roads.erase(_roads.begin() + i);
-                
 				road.setTexture(NULL);
 			}
 			i++;
@@ -391,7 +387,7 @@ namespace ZPR {
                // _cameras.erase(_cameras.begin() + i);
                 _camerasT[_whichCamera-1] = temp;
                 //std::replace(_cameras.begin(), _cameras.end(), camera, temp);
-                camera.setTexture(NULL);
+                //camera.setTexture(NULL);
             }
             i++;
         }
@@ -494,26 +490,23 @@ namespace ZPR {
         this->isDeletingRoad = false;
         
     }
-    void MapView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col){
+    void MapView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera){
         this->isAddingCamera = isAddingCamera;
         this->isDrawingRoad = false;
-        this->isDeletingRoad = false;
-        this->_whichCamera = whichCamera;
-        //AddCamera((sf::Vector2i(row, col)));
-        for (Cell& cell : this->_cells) {
+        this->isDeletingRoad = false;        
+    }
+	void MapView::UpdateCameraAdded(int whichCamera, int row, int col)
+	{
+		this->_whichCamera = whichCamera;
+		for (Cell& cell : this->_cells) {
             int row = cell.GetPosition().x;
             int col = cell.GetPosition().y;
-            
             if (cell._containsCamera && !cell._cameraDrawn) {
                 cell._cameraDrawn = true;
                 AddCamera((sf::Vector2i(row, col)));
             }
-//            if (cell._cameraToDelete) {
-//
-//                cell._cameraToDelete = false;
-//            }
         }
-    }
+	}
     void MapView::SaveToFile(){
         this->_data->machine.AddState(StateRef(new SaveState(this->_data, _cells, _gridSize)), false);
     }

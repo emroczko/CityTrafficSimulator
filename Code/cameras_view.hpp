@@ -16,7 +16,8 @@ class CamerasView : public CamerasSubject, public SimulationObserver, public Cre
         void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {}
         void UpdateIsSimulating(bool isSimulating);
         void UpdateIsDeletingCamera(int whichCamera);
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col);
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
+        void UpdateCameraAdded(int whichCamera, int row, int col);
         void UpdateSelectedCell(sf::Vector2i coords) {}
         void UpdateCells(std::vector<Cell> cells) {}
         void SaveToFile()  {}
@@ -28,7 +29,7 @@ class CamerasView : public CamerasSubject, public SimulationObserver, public Cre
         void InitializeVehiclesCounters();
         void AddButtons();
         void CamerasLabels(std::string text, int yPosition);
-        void ButtonsHandler(Button button, std::string label, int position, int labelPosition);
+        //void ButtonsHandler(Button button, std::string label, int position, int labelPosition);
         void DrawButtons();
         std::vector<Button> _buttons, _removeButtons;
 		sf::FloatRect CalculateViewPort();
