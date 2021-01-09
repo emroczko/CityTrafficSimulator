@@ -2,29 +2,15 @@ cmake_minimum_required(VERSION 3.1)
 
 project(CityTrafficSimulator)
 
+option(BUILD_TESTS "Build test programs" OFF)
 
-set(CMAKE_CXX_STANDARD 14)
+if(BUILD_TESTS)
+include("cmakeTest.txt")
+else()
+include("cmakeRun.txt")
 
-set(SFML_DIR "External Libraries/Windows/SFML/lib/cmake/SFML")
+endif(BUILD_TESTS)
 
-find_package(Catch2 REQUIRED)
+unset(BUILD_TESTS)
 
-
-find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
-
-
-include_directories(Code)
-include_directories(Code/Tests)
-
-
-file(GLOB SOURCES "Code/*.cpp")
-list(FILTER SOURCES EXCLUDE REGEX ".*Main.cpp$")
-file(GLOB TESTS "Code/Tests/*.cpp")
-
-
-add_executable(CityTrafficSimulator ${SOURCES} ${TESTS})
-
-target_link_libraries(CityTrafficSimulator sfml-graphics)
-
-target_link_libraries(CityTrafficSimulator Catch2::Catch2)
 

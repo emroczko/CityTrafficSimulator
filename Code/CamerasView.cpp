@@ -44,10 +44,7 @@ CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(fal
             this->_removeButtons.push_back(Button(sf::Vector2f(6*_camerasView.getSize().x / 8, 230 * i), buttonSize, "Remove camera " + std::to_string(i),
                 this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
         }
-        for (Button& button : _buttons) {
-            std::cout << "Button position Y: " << button.getPosition().y << std::endl;
-            std::cout << "Button position X: " << button.getPosition().x << std::endl;
-        }
+        
 
         this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x / 2, 900), buttonSize, "Start simulation",
             this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
