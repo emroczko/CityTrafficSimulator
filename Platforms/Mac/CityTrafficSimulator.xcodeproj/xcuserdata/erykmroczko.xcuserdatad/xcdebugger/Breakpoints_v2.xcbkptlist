@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
             endingLineNumber = "128"
-            landmarkName = "CamerasView::UpdateIsSimulating(isSimulating)"
+            landmarkName = "CamerasView::UpdateIsAddingCamera(isAddingCamera, whichCamera, row, col)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
