@@ -163,7 +163,11 @@ namespace ZPR {
     {
         for (std::shared_ptr<Vehicle> vehicle : this->_vehicles) {
             if (camera.CheckColision(vehicle)) {
+                vehicle->_seenByCamera = true;
                 CheckVehicleTypeAndNotify(vehicle, camera._cameraNumber);
+            }
+            else {
+                vehicle->_seenByCamera = false;
             }
         }
     }

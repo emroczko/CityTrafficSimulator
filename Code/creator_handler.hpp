@@ -35,7 +35,6 @@ namespace ZPR {
         bool _isDeletingRoad;
         bool _isSimulating;
         bool _isAddingCameras;
-        
 	};
 }
 

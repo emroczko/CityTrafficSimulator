@@ -6,6 +6,7 @@ namespace ZPR {
 		_speed = 3;
 		this->_roads = roads;
 		this->_cellSize = cellSize;
+		this->_seenByCamera = false;
 		this->_sidewalkSize = round(SIDEWALK_SIZE * _cellSize / ROAD_IMAGE_SIZE);
 		this->_roadSize = round(ROAD_SIZE * _cellSize / ROAD_IMAGE_SIZE);
 		this->_roadStripesSize = round(ROAD_STRIPES_SIZE * _cellSize / ROAD_IMAGE_SIZE);

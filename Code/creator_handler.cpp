@@ -60,7 +60,6 @@ namespace ZPR {
     void CreatorHandler::UpdateIsDeletingCamera(int whichCamera)
     {
         int row, col;
-        //this->_isAddingCameras = false;
         this->_whichCamera = whichCamera;
         this->NotifyIsDeletingCamera(this->_whichCamera);
         for (Cell& cell : _grid->_cells){
