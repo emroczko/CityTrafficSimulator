@@ -33,6 +33,8 @@ CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(fal
         for (int i = 0; i < 3; i++) {
             _numberOfCars[i] = 0;
             _numberOfTrucks[i] = 0;
+            this->_camerasLabels.at(i + 3).setString("Cars passed: " + std::to_string(this->_numberOfCars[i]));
+            this->_camerasLabels.at(i + 6).setString("Trucks passed: " + std::to_string(this->_numberOfTrucks[i]));
         }
     }
     void CamerasView::AddButtons() {
@@ -86,26 +88,19 @@ CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(fal
             if(!_camerasOn.at(i)){
                 this->_data->window.draw(_buttons.at(i));
             }
-        }
-        
-        for (int i = 0; i<3; i++)
-        {
             if(_camerasOn.at(i) && !_isAddingCamera){
                 this->_data->window.draw(_removeButtons.at(i));
             }
-        }
-        this->_data->window.draw(_buttons.at(3));
-        
-        
-        for (int i = 0; i<3; i++)
-        {
             this->_data->window.draw(_camerasLabels.at(i));
-        }
-        for (int i = 3; i<6; i++)
+        } 
+        
+        this->_data->window.draw(_buttons.at(3));
+            
+        for (int i = 3; i < 6; i++)
         {
-            if(_camerasOn.at(i-3)){
+            if (_camerasOn.at(i - 3)) {
                 this->_data->window.draw(_camerasLabels.at(i));
-                this->_data->window.draw(_camerasLabels.at(i+3));
+                this->_data->window.draw(_camerasLabels.at(i + 3));
             }
         }
     }
@@ -117,7 +112,7 @@ CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(fal
     
     void CamerasView::UpdateTrucksLabel(int whichLabel){
         ++_numberOfTrucks[whichLabel];
-        this->_camerasLabels.at(whichLabel+3).setString("Trucks passed: "+std::to_string(_numberOfTrucks[whichLabel]));
+        this->_camerasLabels.at(whichLabel+5).setString("Trucks passed: "+std::to_string(_numberOfTrucks[whichLabel]));
     }
     void CamerasView::UpdateIsSimulating(bool isSimulating){
         if(!isSimulating){

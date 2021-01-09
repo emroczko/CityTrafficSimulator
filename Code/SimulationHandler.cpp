@@ -40,6 +40,7 @@ namespace ZPR {
         }
         else{
             this->_roads.clear();
+            this->_cameras.clear();
             this->_vehicles.clear();
             NotifyVehicles(this->_vehicles);
         }
@@ -48,6 +49,7 @@ namespace ZPR {
     void SimulationHandler::UpdateCells(std::vector<Cell> cells)
     {
         this->_cells = cells;
+        SeparateCamerasFromCells();
     }
 
     void SimulationHandler::SeparateRoadsFromCells()
@@ -61,6 +63,7 @@ namespace ZPR {
     }
     void SimulationHandler::SeparateCamerasFromCells()
     {
+        this->_cameras.clear();
         for (Cell& cell : this->_cells) {
             if (cell._containsCamera) {
                 this->_cameras.push_back(Camera(cell._whichCamera, ConvertCellToCenteredRectShape(cell)));
@@ -195,6 +198,7 @@ namespace ZPR {
             i++;
         }
     }
+
     /*Zajmuje sie obs≥ugπ zdarzeÒ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie drÛg)*/
     void SimulationHandler::HandleInput()
     {

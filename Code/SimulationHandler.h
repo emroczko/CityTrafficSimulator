@@ -36,6 +36,7 @@ namespace ZPR {
         void CheckVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int cameraNumber);
         bool StartingCellFree();
         void DeleteVehicles();
+        void DeleteCameras();
         void SeparateRoadsFromCells();
         void SeparateCamerasFromCells();
         sf::RectangleShape ConvertCellToCenteredRectShape(Cell cell);

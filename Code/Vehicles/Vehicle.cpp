@@ -7,31 +7,36 @@ namespace ZPR {
 	}
 	void Vehicle::move()
 	{
-		if (_direction == "North") {
-			this->_shape.setRotation(0);
-			this->_x = this->_currentRoad->getPosition().x + this->_roadSize / 2 + this->_roadStripesSize;
-			this->_y -= this->_speed;
-		}
-		else if (_direction == "South") {
-			this->_shape.setRotation(0);
-			this->_x = this->_currentRoad->getPosition().x - this->_roadSize / 2 - this->_roadStripesSize;
-			this->_y += this->_speed;
-		}
-		else if (_direction == "East") {
-			this->_shape.setRotation(90);
-			this->_y = this->_currentRoad->getPosition().y + this->_roadSize / 2 + this->_roadStripesSize;
-			this->_x += this->_speed;
-		}
-		else if (_direction == "West") {
-			this->_shape.setRotation(90);
-			this->_y = this->_currentRoad->getPosition().y - this->_roadSize / 2 - this->_roadStripesSize;
-			this->_x -= this->_speed;
-		}
-		else if (_direction == "Stop") {
+		try {
+			if (_direction == "North") {
+				this->_shape.setRotation(0);
+				this->_x = this->_currentRoad->getPosition().x + this->_roadSize / 2 + this->_roadStripesSize;
+				this->_y -= this->_speed;
+			}
+			else if (_direction == "South") {
+				this->_shape.setRotation(0);
+				this->_x = this->_currentRoad->getPosition().x - this->_roadSize / 2 - this->_roadStripesSize;
+				this->_y += this->_speed;
+			}
+			else if (_direction == "East") {
+				this->_shape.setRotation(90);
+				this->_y = this->_currentRoad->getPosition().y + this->_roadSize / 2 + this->_roadStripesSize;
+				this->_x += this->_speed;
+			}
+			else if (_direction == "West") {
+				this->_shape.setRotation(90);
+				this->_y = this->_currentRoad->getPosition().y - this->_roadSize / 2 - this->_roadStripesSize;
+				this->_x -= this->_speed;
+			}
+			else if (_direction == "Stop") {
 
+			}
+			UpdatePosition();
+			UpdateColisionBoxPosition();
 		}
-		UpdatePosition();
-		UpdateColisionBoxPosition();
+		catch (const std::exception& e) {
+			std::cout << e.what() << std::endl;
+		}
 	}
 	void Vehicle::UpdatePosition() {
 		this->_shape.setPosition(sf::Vector2f(_x, _y));
