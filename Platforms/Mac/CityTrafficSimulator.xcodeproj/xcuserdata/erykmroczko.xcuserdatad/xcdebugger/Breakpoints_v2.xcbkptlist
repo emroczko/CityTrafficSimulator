@@ -14,9 +14,9 @@
             filePath = "../../Code/CamerasView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "CamerasView::UpdateIsAddingCamera(isAddingCamera, whichCamera)"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "CamerasView::UpdateIsAddingCamera(isAddingCamera, whichCamera, row, col)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -30,8 +30,8 @@
             filePath = "../../Code/CamerasView.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "CamerasView::HandleInput()"
             landmarkType = "7">
          </BreakpointContent>

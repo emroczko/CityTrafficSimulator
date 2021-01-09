@@ -18,13 +18,14 @@ namespace ZPR {
         void UpdateIsSimulating(bool isSimulating);
         void UpdateIsAddingCameras(bool isAddingCamera);
 		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
-        
+        void UpdateCarsLabel(int whichLabel){}
+        void UpdateTrucksLabel(int whichLabel){}
         void UpdateSelectedCell(sf::Vector2i coords) {}
         void UpdateCells(std::vector<Cell> cells) {}
         void SaveToFile() {}
         void UpdateIsDrawingRoad(bool isDrawingRoad) {}
         void UpdateIsDeletingRoad(bool isDeletingRoad) {}
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera);
+        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col);
         void UpdateIsDeletingCamera(int whichCamera) {}
 	private:
 		sf::FloatRect CalculateViewPort();

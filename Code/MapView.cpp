@@ -494,7 +494,7 @@ namespace ZPR {
         this->isDeletingRoad = false;
         
     }
-    void MapView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera){
+    void MapView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col){
         this->isAddingCamera = isAddingCamera;
         this->isDrawingRoad = false;
         this->isDeletingRoad = false;

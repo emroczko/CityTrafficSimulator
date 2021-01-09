@@ -8,24 +8,32 @@ CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(fal
         this->_background.setPosition(0, 0);
         this->_background.setSize(this->_camerasView.getSize());
         this->_background.setFillColor(sf::Color(80, 80, 80));
-
+        
 
         this->AddButtons();
         this->CamerasLabels("Camera 1: Disabled", 50);
         this->CamerasLabels("Camera 2: Disabled", 280);
         this->CamerasLabels("Camera 3: Disabled", 510);
-        this->CamerasLabels("Cars passed: ", 100);
-        this->CamerasLabels("Cars passed: ", 330);
-        this->CamerasLabels("Cars passed: ", 560);
-        this->CamerasLabels("Trucks passed: ", 150);
-        this->CamerasLabels("Trucks passed: ", 380);
-        this->CamerasLabels("Trucks passed: ", 610);
+        this->CamerasLabels("Cars passed: 0", 100);
+        this->CamerasLabels("Cars passed: 0", 330);
+        this->CamerasLabels("Cars passed: 0", 560);
+        this->CamerasLabels("Trucks passed: 0", 150);
+        this->CamerasLabels("Trucks passed: 0", 380);
+        this->CamerasLabels("Trucks passed: 0", 610);
         
 
         for (int i = 0; i < 3; i++) {
             this->_camerasOn.push_back(false);
         }
+        
+        this->InitializeVehiclesCounters();
+    }
 
+    void CamerasView::InitializeVehiclesCounters(){
+        for (int i = 0; i < 3; i++) {
+            _numberOfCars[i] = 0;
+            _numberOfTrucks[i] = 0;
+        }
     }
     void CamerasView::AddButtons() {
         sf::Vector2f buttonSize(150, 66);
@@ -105,18 +113,28 @@ CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(fal
         }
     }
 
-
-
-
-
-    void CamerasView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera) {
+    void CamerasView::UpdateCarsLabel(int whichLabel){
+        ++_numberOfCars[whichLabel];
+        this->_camerasLabels.at(whichLabel+3).setString("Cars passed: "+std::to_string(_numberOfCars[whichLabel]));
+    }
+    
+    void CamerasView::UpdateTrucksLabel(int whichLabel){
+        ++_numberOfTrucks[whichLabel];
+        this->_camerasLabels.at(whichLabel+3).setString("Trucks passed: "+std::to_string(_numberOfTrucks[whichLabel]));
+    }
+    void CamerasView::UpdateIsSimulating(bool isSimulating){
+        if(!isSimulating){
+            this->InitializeVehiclesCounters();
+        }
+    }
+    void CamerasView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col) {
         this->_isAddingCamera = isAddingCamera;
         if (!isAddingCamera) {
             
             this->_camerasOn.at(whichCamera - 1) = true;
             
             this->_buttons.at(whichCamera - 1).setBackground(this->_data->assets.GetTexture("Button"));
-            _camerasLabels.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Enabled");
+            _camerasLabels.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Row: "+ std::to_string(col+1)+" Col: "+std::to_string(row+1));
         }
         else {
             this->_buttons.at(whichCamera - 1).setBackground(this->_data->assets.GetTexture("Button_pressed"));

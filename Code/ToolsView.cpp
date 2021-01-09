@@ -96,11 +96,10 @@ namespace ZPR {
         this->isSimulating = isSimulating;
         this->HandleInput();
     }
-    void ToolsView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera){
+    void ToolsView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col){
         this->isAddingCameras = isAddingCamera;
-        if(isAddingCamera){
-            this->HandleInput();
-        }
+        this->HandleInput();
+        
     }
 
 	void ToolsView::DrawButtons()

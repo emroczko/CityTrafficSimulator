@@ -55,7 +55,7 @@ namespace ZPR {
         this->_isAddingCameras = !this->_isAddingCameras;
         this->_isDeletingRoad = false;
         this->_isDrawingRoad = false;
-        this->NotifyIsAddingCamera(this->_isAddingCameras, this->_whichCamera);
+        this->NotifyIsAddingCamera(this->_isAddingCameras, this->_whichCamera, this->_row, this->_col);
     }
     void CreatorHandler::UpdateIsDeletingCamera(int whichCamera)
     {
@@ -113,7 +113,7 @@ namespace ZPR {
             this->NotifyCells(_grid->_cells);
             this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
             this->_isAddingCameras = false;
-            this->NotifyIsAddingCamera(_isAddingCameras, _whichCamera);
+            this->NotifyIsAddingCamera(_isAddingCameras, _whichCamera, this->_row, this->_col);
         }
         
 		
