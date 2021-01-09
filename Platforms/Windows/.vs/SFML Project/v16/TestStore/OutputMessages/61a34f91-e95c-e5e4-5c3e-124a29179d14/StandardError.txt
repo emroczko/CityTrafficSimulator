@@ -1,0 +1,613 @@
+unknown location(0): exception in "Vhicle_MoveTest": memory access violation occurred at address 0x00000010, while attempting to  read inaccessible data
+VehicleTest.cpp(110): last checkpoint: 
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7444, Leak size: 8 bytes
+ Data: < 2x     > 14 32 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7443, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7442, Leak size: 8 bytes
+ Data: < 1x     > FC 31 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7441, Leak size: 8 bytes
+ Data: < 0x     > F0 30 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7440, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7439, Leak size: 8 bytes
+ Data: < 0x     > D8 30 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7438, Leak size: 8 bytes
+ Data: < /x     > CC 2F 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7437, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7436, Leak size: 8 bytes
+ Data: < /x     > B4 2F 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7435, Leak size: 8 bytes
+ Data: < .x     > A8 2E 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7434, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7433, Leak size: 8 bytes
+ Data: < .x     > 90 2E 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7432, Leak size: 8 bytes
+ Data: < -x     > 84 2D 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7431, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7430, Leak size: 8 bytes
+ Data: <l-x     > 6C 2D 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7429, Leak size: 8 bytes
+ Data: <`,x     > 60 2C 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7428, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7427, Leak size: 8 bytes
+ Data: <H,x     > 48 2C 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7426, Leak size: 8 bytes
+ Data: <<+x     > 3C 2B 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7425, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7424, Leak size: 8 bytes
+ Data: <$+x     > 24 2B 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7423, Leak size: 8 bytes
+ Data: < *x     > 18 2A 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7422, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7421, Leak size: 8 bytes
+ Data: < *x     > 00 2A 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7420, Leak size: 8 bytes
+ Data: < (x     > F4 28 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7419, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7418, Leak size: 8 bytes
+ Data: < (x     > DC 28 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7417, Leak size: 8 bytes
+ Data: < 'x     > D0 27 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7416, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7415, Leak size: 8 bytes
+ Data: < 'x     > B8 27 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7414, Leak size: 8 bytes
+ Data: < &x     > AC 26 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7413, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7412, Leak size: 8 bytes
+ Data: < &x     > 94 26 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7411, Leak size: 8 bytes
+ Data: < %x     > 88 25 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7410, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7409, Leak size: 8 bytes
+ Data: <p%x     > 70 25 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7408, Leak size: 8 bytes
+ Data: <d$x     > 64 24 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7407, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7406, Leak size: 8 bytes
+ Data: <L$x     > 4C 24 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7405, Leak size: 8 bytes
+ Data: <@#x     > 40 23 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7404, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7403, Leak size: 8 bytes
+ Data: <(#x     > 28 23 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7402, Leak size: 8 bytes
+ Data: < "x     > 1C 22 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7401, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7400, Leak size: 8 bytes
+ Data: < "x     > 04 22 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7399, Leak size: 8 bytes
+ Data: <  x     > F8 20 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7398, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7397, Leak size: 8 bytes
+ Data: <  x     > E0 20 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7396, Leak size: 8 bytes
+ Data: <  x     > D4 1F 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7395, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7394, Leak size: 8 bytes
+ Data: <  x     > BC 1F 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7393, Leak size: 8 bytes
+ Data: <  x     > B0 1E 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7392, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7391, Leak size: 8 bytes
+ Data: <  x     > 98 1E 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7390, Leak size: 8 bytes
+ Data: <  x     > 8C 1D 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7389, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7388, Leak size: 8 bytes
+ Data: <t x     > 74 1D 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7387, Leak size: 8 bytes
+ Data: <h x     > 68 1C 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7386, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7385, Leak size: 8 bytes
+ Data: <P x     > 50 1C 78 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7384, Leak size: 5879 bytes
+ Data: <                > CD CD CD CD CD CD CD CD CD CD CD CD CD CD CD CD 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7383, Leak size: 120 bytes
+ Data: <   @   @        > 00 00 E0 40 00 00 E0 40 FF FF 00 FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7382, Leak size: 8 bytes
+ Data: < @w     > C4 40 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7381, Leak size: 8 bytes
+ Data: < @w     > AC 40 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7380, Leak size: 120 bytes
+ Data: <   @   A        > 00 00 E0 40 00 00 20 41 00 00 FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7379, Leak size: 8 bytes
+ Data: < ?w     > A0 3F 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7378, Leak size: 8 bytes
+ Data: < ?w     > 88 3F 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7377, Leak size: 8 bytes
+ Data: < >w     > 9C 3E 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7376, Leak size: 8 bytes
+ Data: < >w     > 80 3E 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7375, Leak size: 8 bytes
+ Data: <p>w     > 70 3E 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7312, Leak size: 704 bytes
+ Data: <                > 14 C3 99 00 14 00 00 00 14 00 00 00 03 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7311, Leak size: 8 bytes
+ Data: <  t     > 14 D9 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7310, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7309, Leak size: 8 bytes
+ Data: <  t     > FC D8 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7308, Leak size: 8 bytes
+ Data: <  t     > F0 D7 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7307, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7306, Leak size: 8 bytes
+ Data: <  t     > D8 D7 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7305, Leak size: 8 bytes
+ Data: <  t     > CC D6 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7304, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7303, Leak size: 8 bytes
+ Data: <  t     > B4 D6 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7302, Leak size: 8 bytes
+ Data: <  t     > A8 D5 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7301, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7300, Leak size: 8 bytes
+ Data: <  t     > 90 D5 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7299, Leak size: 8 bytes
+ Data: <  t     > 84 D4 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7298, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7297, Leak size: 8 bytes
+ Data: <l t     > 6C D4 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7296, Leak size: 8 bytes
+ Data: <` t     > 60 D3 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7295, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7294, Leak size: 8 bytes
+ Data: <H t     > 48 D3 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7293, Leak size: 8 bytes
+ Data: << t     > 3C D2 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7292, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7291, Leak size: 8 bytes
+ Data: <$ t     > 24 D2 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7290, Leak size: 8 bytes
+ Data: <  t     > 18 D1 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7289, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7288, Leak size: 8 bytes
+ Data: <  t     > 00 D1 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7287, Leak size: 8 bytes
+ Data: <  t     > F4 CF 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7286, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7285, Leak size: 8 bytes
+ Data: <  t     > DC CF 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7284, Leak size: 8 bytes
+ Data: <  t     > D0 CE 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7283, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7282, Leak size: 8 bytes
+ Data: <  t     > B8 CE 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7281, Leak size: 8 bytes
+ Data: <  t     > AC CD 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7280, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7279, Leak size: 8 bytes
+ Data: <  t     > 94 CD 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7278, Leak size: 8 bytes
+ Data: <  t     > 88 CC 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7277, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7276, Leak size: 8 bytes
+ Data: <p t     > 70 CC 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7275, Leak size: 8 bytes
+ Data: <d t     > 64 CB 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7274, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7273, Leak size: 8 bytes
+ Data: <L t     > 4C CB 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7272, Leak size: 8 bytes
+ Data: <@ t     > 40 CA 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7271, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7270, Leak size: 8 bytes
+ Data: <( t     > 28 CA 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7269, Leak size: 8 bytes
+ Data: <  t     > 1C C9 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7268, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7267, Leak size: 8 bytes
+ Data: <  t     > 04 C9 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7266, Leak size: 8 bytes
+ Data: <  t     > F8 C7 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7265, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7264, Leak size: 8 bytes
+ Data: <  t     > E0 C7 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7263, Leak size: 8 bytes
+ Data: <  t     > D4 C6 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7262, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7261, Leak size: 8 bytes
+ Data: <  t     > BC C6 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7260, Leak size: 8 bytes
+ Data: <  t     > B0 C5 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7259, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7258, Leak size: 8 bytes
+ Data: <  t     > 98 C5 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7257, Leak size: 8 bytes
+ Data: <  t     > 8C C4 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7256, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7255, Leak size: 8 bytes
+ Data: <t t     > 74 C4 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7254, Leak size: 8 bytes
+ Data: <h t     > 68 C3 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7253, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7252, Leak size: 8 bytes
+ Data: <P t     > 50 C3 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7251, Leak size: 5879 bytes
+ Data: <    x t         > FA FA FA FA 78 C2 74 00 B8 A6 99 00 D0 A6 99 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7250, Leak size: 120 bytes
+ Data: <   @   @        > 00 00 E0 40 00 00 E0 40 FF FF 00 FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7249, Leak size: 8 bytes
+ Data: < =w     > D4 3D 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7248, Leak size: 8 bytes
+ Data: < =w     > BC 3D 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7247, Leak size: 120 bytes
+ Data: <   @   @        > 00 00 E0 40 00 00 E0 40 FF 00 00 FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7246, Leak size: 8 bytes
+ Data: < <w     > B0 3C 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7245, Leak size: 8 bytes
+ Data: < <w     > 98 3C 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7244, Leak size: 8 bytes
+ Data: < ;w     > AC 3B 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7243, Leak size: 8 bytes
+ Data: < ;w     > 90 3B 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7242, Leak size: 8 bytes
+ Data: < ;w     > 80 3B 77 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7179, Leak size: 704 bytes
+ Data: <                > F0 A6 99 00 14 00 00 00 14 00 00 00 03 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7178, Leak size: 8 bytes
+ Data: <  t     > B0 97 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7177, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7176, Leak size: 8 bytes
+ Data: <  t     > 98 97 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7175, Leak size: 8 bytes
+ Data: <  t     > 8C 96 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7174, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7173, Leak size: 8 bytes
+ Data: <t t     > 74 96 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7172, Leak size: 8 bytes
+ Data: <h t     > 68 95 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7171, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7170, Leak size: 8 bytes
+ Data: <P t     > 50 95 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7169, Leak size: 8 bytes
+ Data: <D t     > 44 94 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7168, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7167, Leak size: 8 bytes
+ Data: <, t     > 2C 94 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7166, Leak size: 8 bytes
+ Data: <  t     > 20 93 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7165, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7164, Leak size: 8 bytes
+ Data: <  t     > 08 93 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7163, Leak size: 8 bytes
+ Data: <  t     > FC 91 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7162, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7161, Leak size: 8 bytes
+ Data: <  t     > E4 91 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7160, Leak size: 8 bytes
+ Data: <  t     > D8 90 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7159, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7158, Leak size: 8 bytes
+ Data: <  t     > C0 90 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7157, Leak size: 8 bytes
+ Data: <  t     > B4 8F 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7156, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7155, Leak size: 8 bytes
+ Data: <  t     > 9C 8F 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7154, Leak size: 8 bytes
+ Data: <  t     > 90 8E 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7153, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7152, Leak size: 8 bytes
+ Data: <x t     > 78 8E 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7151, Leak size: 8 bytes
+ Data: <l t     > 6C 8D 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7150, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7149, Leak size: 8 bytes
+ Data: <T t     > 54 8D 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7148, Leak size: 8 bytes
+ Data: <H t     > 48 8C 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7147, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7146, Leak size: 8 bytes
+ Data: <0 t     > 30 8C 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7145, Leak size: 8 bytes
+ Data: <$ t     > 24 8B 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7144, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7143, Leak size: 8 bytes
+ Data: <  t     > 0C 8B 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7142, Leak size: 8 bytes
+ Data: <  t     > 00 8A 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7141, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7140, Leak size: 8 bytes
+ Data: <  t     > E8 89 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7139, Leak size: 8 bytes
+ Data: <  t     > DC 88 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7138, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7137, Leak size: 8 bytes
+ Data: <  t     > C4 88 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7136, Leak size: 8 bytes
+ Data: <  t     > B8 87 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7135, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7134, Leak size: 8 bytes
+ Data: <  t     > A0 87 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7133, Leak size: 8 bytes
+ Data: <  t     > 94 86 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7132, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7131, Leak size: 8 bytes
+ Data: <| t     > 7C 86 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7130, Leak size: 8 bytes
+ Data: <p t     > 70 85 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7129, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7128, Leak size: 8 bytes
+ Data: <X t     > 58 85 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7127, Leak size: 8 bytes
+ Data: <L t     > 4C 84 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7126, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7125, Leak size: 8 bytes
+ Data: <4 t     > 34 84 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7124, Leak size: 8 bytes
+ Data: <( t     > 28 83 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7123, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7122, Leak size: 8 bytes
+ Data: <  t     > 10 83 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7121, Leak size: 8 bytes
+ Data: <  t     > D4 98 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7120, Leak size: 120 bytes
+ Data: <   A   A        > 00 00 CC 41 00 00 CC 41 FF FF FF FF 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7119, Leak size: 8 bytes
+ Data: <  t     > BC 98 74 00 00 00 00 00 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 7118, Leak size: 8215 bytes
+ Data: <                > CD CD CD CD CD CD CD CD CD CD CD CD CD CD CD CD 
+
+memory leak in "Vhicle_MoveTest", Memory allocation number: 6878, Leak size: 8 bytes
+ Data: <  S     > 20 E2 53 00 00 00 00 00 

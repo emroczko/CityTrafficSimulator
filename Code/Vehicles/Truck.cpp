@@ -17,9 +17,6 @@ namespace ZPR {
 		this->_colisionBox.setFillColor(sf::Color::Yellow);
 		this->_colisionBox.setSize(sf::Vector2f(round(14 * cellSize / ROAD_IMAGE_SIZE), round(14 * cellSize / ROAD_IMAGE_SIZE)));
 		this->_colisionBox.setOrigin(this->_colisionBox.getSize().x / 2, this->_colisionBox.getSize().y / 2);
-	}
-	sf::RectangleShape Truck::getShape()
-	{
-		return this->_shape;
+		this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y + (this->_colisionBox.getSize().y / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize)));
 	}
 }
