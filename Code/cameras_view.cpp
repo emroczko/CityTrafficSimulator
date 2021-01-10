@@ -1,9 +1,17 @@
+/**
+ * cameras_view.cpp
+ * Implementation of CamerasView class.
+ */
+
 #include "cameras_view.hpp"
 #include <iostream>
 
-
 namespace zpr {
 
+    /**
+     * Parametrized constructor of CamerasView class.
+     * @param data - Struct containing data of current application. (eg. window, assets).
+     */
     CamerasView::CamerasView(SimulatorDataRef data) : data_(data), isSimulating_(false), isAddingCamera_(false)
     {
         this->camerasView_ = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));

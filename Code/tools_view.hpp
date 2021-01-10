@@ -1,3 +1,9 @@
+/**
+ * tools_view.hpp
+ * Header of ToolsView class.
+ */
+
+
 #pragma once
 #include "simulator.hpp"
 #include "button.hpp"
@@ -8,6 +14,11 @@
 
 
 namespace zpr {
+
+    /**
+     * Class responsible for drawing create, delete, and save buttons, and handle actions from and to that buttons in the
+     * right window of the main application window.
+     */
     class ToolsView : public ToolsSubject, public SimulationObserver, public CreatorObserver{
 	public:
 		ToolsView(SimulatorDataRef data);
@@ -27,7 +38,7 @@ namespace zpr {
         void updateIsDeletingRoad(bool is_deleting_road) {}
         void updateIsAddingCamera(bool is_adding_camera, int which_camera);
         void updateIsDeletingCamera(int which_camera) {}
-        void updateCameraAdded(int whichCamera, int row, int col) {}
+        void updateCameraAdded(int which_camera, int row, int col) {}
 
 	private:
 		sf::FloatRect calculateViewPort();

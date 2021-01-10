@@ -1,9 +1,18 @@
+/**
+ * cameras_subject.hpp
+ * Header of CamerasSubject class.
+ */
+
 #pragma once
 #include "cameras_observer.hpp"
 #include <vector>
 #include <memory>
 
 namespace zpr {
+
+    /**
+     * Class responsible for notifying the observers.
+     */
     class CamerasSubject
     {
     public:

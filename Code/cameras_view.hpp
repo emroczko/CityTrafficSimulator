@@ -1,3 +1,7 @@
+/**
+ * cameras_view.hpp
+ * Header of CamerasView class.
+ */
 #pragma once
 #include "simulator.hpp"
 #include "definitions.hpp"
@@ -7,6 +11,11 @@
 #include "creator_observer.hpp"
 
 namespace zpr{
+
+    /**
+     * Class responsible for drawing create, delete, and save buttons, and handle actions from and to that buttons and labels
+     * in the left window of the main application window.
+     */
     class CamerasView : public CamerasSubject, public SimulationObserver, public CreatorObserver{
 	public:
 		CamerasView(SimulatorDataRef data);
@@ -29,7 +38,6 @@ namespace zpr{
         void initializeVehiclesCounters();
         void addButtons();
         void camerasLabels(std::string text, int y_position);
-        //void buttonsHandler(Button button, std::string label, int position, int label_position);
         void drawButtons();
         sf::FloatRect calculateViewPort();
         std::vector<Button> buttons_, removeButtons_;

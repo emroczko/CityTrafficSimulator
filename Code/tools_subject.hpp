@@ -1,9 +1,17 @@
+/**
+ * tools_subject.hpp
+ * Header of ToolsSubject class.
+ */
 #pragma once
 #include "tools_observer.hpp"
 #include <vector>
 #include <memory>
 
 namespace zpr {
+
+    /**
+     * Class responsible for notifying the observers.
+     */
 	class ToolsSubject
 	{
 	public:
