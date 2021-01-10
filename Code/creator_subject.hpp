@@ -26,7 +26,6 @@ namespace zpr {
         void notifyCameraAdded(int which_camera, int row, int col);
         void notifyIsDeletingCamera(int which_camera);
         void notifyIsDeletingRoad(bool is_deleting_road);
-        void notifyIsSimulating(bool is_simulating);
 		virtual ~CreatorSubject() {}
         
 	private:
