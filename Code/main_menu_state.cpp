@@ -135,6 +135,7 @@ namespace zpr{
         }
         my_file.close();
         //std::cout<<how_many<<std::endl;
+        this->cells_.at(4).isStartingCell_ = true;
         this->data_->machine_.addState(StateRef(new CreatorState(this->data_, this->gridSize_, this->cells_)), false);
         }
         else{

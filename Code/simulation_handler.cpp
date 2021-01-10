@@ -23,7 +23,6 @@ namespace zpr {
      */
     void SimulationHandler::init()
     {
-        this->timer_ = Timer();
         this->cellSize_ = (SCREEN_HEIGHT / this->gridSize_);
         this->sidewalkSize_ = round(SIDEWALK_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
         this->roadSize_ = round(ROAD_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
@@ -46,19 +45,24 @@ namespace zpr {
         if (isSimulating_){
             this->separateRoadsFromCells();
             this->separateCamerasFromCells();
-            this->timer_.setInterval([&]() {
+            this->startSimulationTimer_.setInterval([&]() {
                 this->addCarsToSimulate();
                 this->moveVehicles();
                 this->deleteVehicles();
                 this->notifyVehicles(this->vehicles_);
+                
             }, 17);
         }
         else{
-            this->timer_.stopTimer();
-            this->vehicles_.clear();
-            this->roads_.clear();
-            this->cameras_.clear();
-            this->notifyVehicles(this->vehicles_);
+            this->startSimulationTimer_.stopTimer();
+            this->clearDataTimer_.setTimeout([&]() {
+                this->vehicles_.clear();
+                this->roads_.clear();
+                this->cameras_.clear();
+                this->notifyVehicles(this->vehicles_);
+            }, 5);
+            
+            
         }
         this->notifyIsSimulating(this->isSimulating_);
 

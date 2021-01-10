@@ -26,7 +26,7 @@ namespace zpr{
     void Simulator::run(){
     
         float new_time, frame_time, interpolation;
-        float current_time = this-> clock_.getElapsedTime().asSeconds();
+        float current_time = this->clock_.getElapsedTime().asSeconds();
         float accumulator = 0.0f;
     
         while(this->data_->window_.isOpen()){

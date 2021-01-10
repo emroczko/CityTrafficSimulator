@@ -35,7 +35,7 @@ namespace zpr {
         void updateIsDeletingCamera(int which_camera) {}
         void handleInput();
     private:
-        Timer timer_;
+        Timer startSimulationTimer_, clearDataTimer_;
         int calculatePrefix();
         void addCarsToSimulate();
         void addStartingRoad();
