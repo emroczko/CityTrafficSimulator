@@ -1,67 +1,109 @@
+/**
+ * creator_subject.cpp
+ * Implementation of CreatorSubject class.
+ */
+
 
 #include "creator_subject.hpp" 
 
 namespace zpr {
-	/*Dodaje obserwatora*/
-	void CreatorSubject::add(std::shared_ptr<CreatorObserver> obs)
+
+    /**
+     * Method which adds observers to vector.
+     * @param observer - CreatorHandler class observer.
+     */
+	void CreatorSubject::add(std::shared_ptr<CreatorObserver> observer)
 	{
-		this->observers_.push_back(obs);
+		this->observers_.push_back(observer);
 	}
-	/*Powiadamia obserwatorów o zmianie koordynatów obecnie wybranek komórki*/
+
+    /**
+     * Method which notifies observers about changed coordinates of currently chosen cell.
+     * @param coords - New coordinates of cell.
+     */
 	void CreatorSubject::notifySelectedCell(sf::Vector2i coords)
 	{
-		for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
-			obs->updateSelectedCell(coords);
+		for (std::shared_ptr<CreatorObserver> observer : this->observers_) {
+			observer->updateSelectedCell(coords);
 		}
 	}
-	/*Powiadamia obserwatoró o zmianie stanu kontenera zawieraj¹cego komórki*/
+
+    /**
+     * Method which notifies observers when vector of cells has changed.
+     * @param cells - Vector of new cells.
+     */
 	void CreatorSubject::notifyCells(std::vector<Cell> cells)
 	{
-		for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
-			obs->updateCells(cells);
-
+		for (std::shared_ptr<CreatorObserver> observer : this->observers_) {
+			observer->updateCells(cells);
 		}
 	}
    
-	/*Powiadamia obserwatorów o zmianie stanu rysowania drogi (w³¹czony/wy³¹czony)*/
-	void CreatorSubject::notifyIsDrawingRoad(bool isDrawingRoad)
+    /**
+     * Method which notifies observers when user is drawing road or not.
+     * @param is_drawing_road - True when user is drawing road.
+     */
+	void CreatorSubject::notifyIsDrawingRoad(bool is_drawing_road)
 	{
-		for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
-			obs->updateIsDrawingRoad(isDrawingRoad);
+		for (std::shared_ptr<CreatorObserver> observer : this->observers_) {
+			observer->updateIsDrawingRoad(is_drawing_road);
 		}
 	}
-	/*Powiadamia obserwatorów o zmianie stanu usuwania drogi (w³¹czony/wy³¹czony)*/
-    void CreatorSubject::notifyIsDeletingRoad(bool isDeletingRoad)
+
+    /**
+     * Method which notifies observers when user is deleting road or not.
+     * @param is_deleting_road - True when user is deleting road, false otherwise.
+     */
+    void CreatorSubject::notifyIsDeletingRoad(bool is_deleting_road)
     {
-        for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
-            obs->updateIsDeletingRoad(isDeletingRoad);
+        for (std::shared_ptr<CreatorObserver> observer : this->observers_) {
+            observer->updateIsDeletingRoad(is_deleting_road);
         }
     }
 
-    void CreatorSubject::notifyIsAddingCamera(bool isAddingCamera, int whichCamera)
+    /**
+     * Method which notifies observers when user is adding camera or not.
+     * @param is_adding_camera - True when user is adding camera, false otherwise.
+     * @param which_camera - Being added camera's number.
+     */
+    void CreatorSubject::notifyIsAddingCamera(bool is_adding_camera, int which_camera)
     {
-        for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
-            obs->updateIsAddingCamera(isAddingCamera, whichCamera);
+        for (std::shared_ptr<CreatorObserver> observer : this->observers_) {
+            observer->updateIsAddingCamera(is_adding_camera, which_camera);
         }
     }
     
-   
-	void CreatorSubject::notifyCameraAdded(int whichCamera, int row, int col)
+    /**
+     * Method which notifies observers when user added the camera and where user placed it.
+     * @param which_camera - Being added camera's number.
+     * @param row - Row in which camera was placed.
+     * @param col - Column in which camera was placed.
+     */
+	void CreatorSubject::notifyCameraAdded(int which_camera, int row, int col)
 	{
-		for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
-			obs->updateCameraAdded(whichCamera, row, col);
+		for (std::shared_ptr<CreatorObserver> observer : this->observers_) {
+			observer->updateCameraAdded(which_camera, row, col);
 		}
 	}
-    void CreatorSubject::notifyIsDeletingCamera(int whichCamera)
+
+    /**
+     * Method which notifies observers when user is deleting certain camera.
+     * @param which_camera - Deleted camera's number.
+     */
+    void CreatorSubject::notifyIsDeletingCamera(int which_camera)
     {
-        for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
-            obs->updateIsDeletingCamera(whichCamera);
+        for (std::shared_ptr<CreatorObserver> observer : this->observers_) {
+            observer->updateIsDeletingCamera(which_camera);
         }
     }
+
+    /**
+     * Method which notifies observers when user is saving map to file.
+     */
     void CreatorSubject::notifySave()
     {
-        for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
-            obs->saveToFile();
+        for (std::shared_ptr<CreatorObserver> observer : this->observers_) {
+            observer->saveToFile();
         }
     }
     

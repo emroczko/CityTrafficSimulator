@@ -1,7 +1,16 @@
+/**
+ * simulation_observer.hpp
+ * Header of SimulatonObserver virtual class.
+ */
+
 #pragma once
 #include "Vehicles/vehicle.hpp"
 
 namespace zpr {
+
+    /**
+     * Virtual class responsible for being an observer for SimulationHandler class.
+     */
     class SimulationObserver
     {
     public:

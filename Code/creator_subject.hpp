@@ -1,9 +1,19 @@
+/**
+ * creator_subject.hpp
+ * Header of CreatorSubject class.
+ */
+
+
 #pragma once
 #include "creator_observer.hpp"
 #include "cell.hpp"
 #include <vector>
 
 namespace zpr {
+
+    /**
+     * Class responsible for notifying the observers.
+     */
 	class CreatorSubject
 	{
 	public:
