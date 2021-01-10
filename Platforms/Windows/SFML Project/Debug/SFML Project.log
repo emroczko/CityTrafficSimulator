@@ -1,4 +1,12 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (Project1.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
+  creator_state.cpp
+  init_create_state.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\init_create_state.cpp(31,40): warning C4305: "argument": obcięcie z "double" do "float"
+  load_demo.cpp
+  load_state.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\load_state.cpp(39,40): warning C4305: "argument": obcięcie z "double" do "float"
+  main_menu_state.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\main_menu_state.cpp(41,40): warning C4305: "argument": obcięcie z "double" do "float"
   map_view.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(144,63): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
@@ -121,4 +129,7 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(384,76): warning
           ]
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(415,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(416,11): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+  save_state.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\save_state.cpp(18,40): warning C4305: "argument": obcięcie z "double" do "float"
+  Generowanie kodu...
   SFML Project.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe
