@@ -57,12 +57,10 @@ namespace zpr {
             this->startSimulationTimer_.stopTimer();
             this->clearDataTimer_.setTimeout([&]() {
                 this->vehicles_.clear();
+                this->notifyVehicles(this->vehicles_);
                 this->roads_.clear();
                 this->cameras_.clear();
-                this->notifyVehicles(this->vehicles_);
             }, 5);
-            
-            
         }
         this->notifyIsSimulating(this->isSimulating_);
 

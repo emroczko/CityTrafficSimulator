@@ -27,7 +27,6 @@ namespace zpr {
         sf::View getView();
         void handleInput();
         void updateIsSimulating(bool is_simulating);
-        void updateIsAddingCameras(bool is_adding_camera);
 		void updateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
         void updateCarsLabel(int which_label){}
         void updateTrucksLabel(int which_label){}

@@ -4,13 +4,10 @@
  */
 
 #pragma once
-
 #include <SFML/Graphics.hpp>
 #include "state.hpp"
 #include "simulator.hpp"
 #include "button.hpp"
-
-
 
 namespace zpr {
 
@@ -20,13 +17,10 @@ namespace zpr {
 	class InitCreateState : public State{
 	public:
 		InitCreateState(SimulatorDataRef data);
-
 		void init();
 		void handleInput();
 		void update(float dt);
 		void draw(float dt);
-        
-
 	private:
         void initializeButtons();
 		int getGridSizeFromButton(Button);

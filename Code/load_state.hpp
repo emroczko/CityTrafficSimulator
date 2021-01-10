@@ -32,7 +32,6 @@ namespace zpr{
         
     private:
         void checkSlots();
-        void checkIfFileExist(int number);
         void initializeButtons();
         bool isDemo_;
         SimulatorDataRef data_;
