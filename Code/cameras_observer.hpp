@@ -1,12 +1,12 @@
 #pragma once
 
-namespace ZPR {
+namespace zpr {
     class CamerasObserver
     {
     public:
-        virtual void UpdateIsSimulating() = 0;
-        virtual void UpdateIsAddingCamera(int whichCamera) = 0;
-        virtual void UpdateIsDeletingCamera(int whichCamera) = 0;
+        virtual void updateIsSimulating() = 0;
+        virtual void updateIsAddingCamera(int which_camera) = 0;
+        virtual void updateIsDeletingCamera(int which_camera) = 0;
         virtual ~CamerasObserver() {}
     };
 }

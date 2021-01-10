@@ -3,11 +3,11 @@
 #include "SFML/Graphics.hpp"
 #include "vehicle.hpp"
 
-namespace ZPR {
+namespace zpr {
 	class Truck : public Vehicle
 	{
 	public:
-		Truck(int x, int y, int cellSize, std::vector<sf::RectangleShape> roads);
+		Truck(int x, int y, int cell_size, std::vector<sf::RectangleShape> roads);
 	};
 
 }

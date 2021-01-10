@@ -7,34 +7,35 @@
 #include "creator_observer.hpp"
 
 
-namespace ZPR {
+namespace zpr {
     class ToolsView : public ToolsSubject, public SimulationObserver, public CreatorObserver{
 	public:
 		ToolsView(SimulatorDataRef data);
-		void Draw();
-        bool isClicked(sf::Vector2i mousePosition);
-        sf::View GetView();
-        void HandleInput();
-        void UpdateIsSimulating(bool isSimulating);
-        void UpdateIsAddingCameras(bool isAddingCamera);
-		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
-        void UpdateCarsLabel(int whichLabel){}
-        void UpdateTrucksLabel(int whichLabel){}
-        void UpdateSelectedCell(sf::Vector2i coords) {}
-        void UpdateCells(std::vector<Cell> cells) {}
-        void SaveToFile() {}
-        void UpdateIsDrawingRoad(bool isDrawingRoad) {}
-        void UpdateIsDeletingRoad(bool isDeletingRoad) {}
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col);
-        void UpdateIsDeletingCamera(int whichCamera) {}
+		void draw();
+        bool isClicked(sf::Vector2i mouse_position);
+        sf::View getView();
+        void handleInput();
+        void updateIsSimulating(bool is_simulating);
+        void updateIsAddingCameras(bool is_adding_camera);
+		void updateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
+        void updateCarsLabel(int which_label){}
+        void updateTrucksLabel(int which_label){}
+        void updateSelectedCell(sf::Vector2i coords) {}
+        void updateCells(std::vector<Cell> cells) {}
+        void saveToFile() {}
+        void updateIsDrawingRoad(bool is_drawing_road) {}
+        void updateIsDeletingRoad(bool is_deleting_road) {}
+        void updateIsAddingCamera(bool is_adding_camera, int which_camera, int row, int col);
+        void updateIsDeletingCamera(int which_camera) {}
 	private:
-		sf::FloatRect CalculateViewPort();
-		void DrawButtons();
-		SimulatorDataRef _data;
-		std::vector<Button> _buttons;
-		sf::RectangleShape _background;
-		sf::View _toolsView;
-        bool isSimulating, isAddingCameras;
+		sf::FloatRect calculateViewPort();
+		void drawButtons();
+        void buttonInitializer();
+		SimulatorDataRef data_;
+		std::vector<Button> buttons_;
+		sf::RectangleShape background_;
+		sf::View toolsView_;
+        bool isSimulating_, isAddingCameras_;
 	};
 
 }

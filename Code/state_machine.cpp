@@ -1,59 +1,70 @@
+/**
+ * state_machine.cpp
+ * Implementation of StateMachine class.
+ */
+
 #include "state_machine.hpp"
 
-namespace ZPR
+namespace zpr
 {
-/**
- Metoda odpowiadająca za dodanie stanu programu
- */
-    void StateMachine::AddState(StateRef newState, bool isReplacing){
-        this->_isAdding = true;
-        this->_isReplacing = isReplacing;
-    
-        this->_newState = std::move(newState);
+    /**
+     * Method responsible for setting the adding state status.
+     * @param new_state - New state of application.
+     * @param is_replacing - Information about is new state replacing previous. ,
+     */
+    void StateMachine::addState(StateRef new_state, bool is_replacing){
+        this->isAdding_ = true;
+        this->isReplacing_ = is_replacing;
+        this->newState_ = std::move(new_state);
     }
-/**
- Metoda odpowiadająca za usunięcie stanu programu
- */
-    void StateMachine::RemoveState(){
-        this -> _isRemoving = true;
+    /**
+     * Methods responsible for setting the deleting state status.
+     */
+    void StateMachine::removeState(){
+        this -> isRemoving_ = true;
     }
-/**
- Metoda realizująca przechodzenie pomiędzy stanami programu
- */
-    void StateMachine::ProcessStateChanges(){
-        if (this-> _isRemoving && !this-> _states.empty()){
-            this->_states.pop();
+    /**
+     * Method responsible for handling states (adding, removing)
+     */
+    void StateMachine::processStateChanges(){
+        if (this-> isRemoving_ && !this-> states_.empty()){
+            this->states_.pop();
         
-            if (!this-> _states.empty()){
-                this->_states.top()-> Resume();
-            }
-            this-> _isRemoving = false;
-        
+            if (!this-> states_.empty())
+                this->states_.top()-> resume();
+            
+            this-> isRemoving_ = false;
         }
-        if(this ->_isAdding)
+        if(this ->isAdding_)
         {
-            if(!this -> _states.empty())
+            if(!this -> states_.empty())
             {
-                if(this-> _isReplacing){
-                    this->_states.pop();
-                }
-                else{
-                    this-> _states.top()->Pause();
-                }
+                if(this-> isReplacing_)
+                    this->states_.pop();
+                
+                else
+                    this-> states_.top()->pause();
+                
             }
-            this-> _states.push(std::move(this-> _newState));
-            this-> _states.top() -> Init();
-            this-> _isAdding = false;
-        
+            this-> states_.push(std::move(this-> newState_));
+            this-> states_.top() -> init();
+            this-> isAdding_ = false;
         }
     }
-    StateRef &StateMachine::GetActiveState()
+    /**
+     * Method responsible for getting active state.
+     * @return - Returns active state.
+     */
+    StateRef &StateMachine::getActiveState()
     {
-        return this-> _states.top();
+        return this-> states_.top();
     }
-
+    /**
+     * Method which returns true if state is being added or false otherwise.
+     * @return - Bool value, true if state is being added or false otherwise
+     */
     bool& StateMachine::getIsAdding() {
-        return this->_isAdding;
+        return this->isAdding_;
     }
 
     

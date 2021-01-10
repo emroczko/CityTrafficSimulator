@@ -1,48 +1,60 @@
+/**
+ * splash_state.cpp
+ * Implementation of SplashState class.
+ */
+
 #include <sstream>
 #include <iostream>
-
 #include "definitions.hpp"
 #include "splash_state.hpp"
 #include "main_menu_state.hpp"
 
-namespace ZPR{
+namespace zpr{
 
-    SplashState::SplashState(SimulatorDataRef data) : _data(data) {}
+    /**
+     * Parametrized constructor of SplashState class.
+     * @param data - Struct containing data of current application. (eg. window, assets)
+     */
+    SplashState::SplashState(SimulatorDataRef data) : data_(data) {}
 
-/**
- Metoda odpowiadająca za załadowanie tekstury tła
- */
-    void SplashState::Init(){
-        this->_data->assets.LoadTexture("Splash State Background", SPLASH_SCENE_BACKGROUND_FILEPATH);
-        _background.setTexture(this -> _data->assets.GetTexture("Splash State Background"));
+    /**
+     * Methods which initializes all elements in the current state to display it properly.
+     */
+    void SplashState::init(){
+        this->data_->assets_.loadTexture("Splash State Background", SPLASH_SCENE_BACKGROUND_FILEPATH);
+        background_.setTexture(this -> data_->assets_.getTexture("Splash State Background"));
     }
 
-/**
- Metoda odpowiadająca za obsługę użytkownika
- */
-    void SplashState::HandleInput(){
+    /**
+     Method which handles user input in the current state.
+     */
+    void SplashState::handleInput(){
         sf::Event event;
-        while (this->_data->window.pollEvent(event)){
+        while (this->data_->window_.pollEvent(event)){
             if(sf::Event::Closed ==event.type)
             {
-                this->_data->window.close();
+                this->data_->window_.close();
             }
         }
     }
-    
-    void SplashState::Update(float dt){
-        if (this->_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME){
-            this->_data->machine.AddState(StateRef(new MainMenuState(_data)), true);
+    /**
+     * Method which updates the window.
+     * @param dt - Frequency of updating.
+     */
+    void SplashState::update(float dt){
+        if (this->clock_.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME){
+            this->data_->machine_.addState(StateRef(new MainMenuState(data_)), true);
         }
     }
 
-/**
- Metoda rysująca obiekty na ekranie
- */
-    void SplashState::Draw(float dt){
-        this->_data->window.clear(sf::Color::Red);
-        this->_data->window.draw(this->_background);
-        this->_data->window.display();
+    /**
+     * Methods which draws elements of state on the screen.
+     * @param dt - Frequency of drawing.
+     */
+    void SplashState::draw(float dt){
+        this->data_->window_.clear(sf::Color::Red);
+        this->data_->window_.draw(this->background_);
+        this->data_->window_.display();
     }
 
 

@@ -1,64 +1,67 @@
 #include "cameras_view.hpp"
 #include <iostream>
-namespace ZPR {
-CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(false), _isAddingCamera(false)
+
+
+namespace zpr {
+
+    CamerasView::CamerasView(SimulatorDataRef data) : data_(data), isSimulating_(false), isAddingCamera_(false)
     {
-        this->_camerasView = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
-        this->_camerasView.setViewport(CalculateViewPort());
-        this->_background.setPosition(0, 0);
-        this->_background.setSize(this->_camerasView.getSize());
-        this->_background.setFillColor(sf::Color(80, 80, 80));
+        this->camerasView_ = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
+        this->camerasView_.setViewport(this->calculateViewPort());
+        this->background_.setPosition(0, 0);
+        this->background_.setSize(this->camerasView_.getSize());
+        this->background_.setFillColor(sf::Color(80, 80, 80));
         
 
-        this->AddButtons();
-        this->CamerasLabels("Camera 1: Disabled", 50);
-        this->CamerasLabels("Camera 2: Disabled", 280);
-        this->CamerasLabels("Camera 3: Disabled", 510);
-        this->CamerasLabels("Cars passed: 0", 100);
-        this->CamerasLabels("Cars passed: 0", 330);
-        this->CamerasLabels("Cars passed: 0", 560);
-        this->CamerasLabels("Trucks passed: 0", 150);
-        this->CamerasLabels("Trucks passed: 0", 380);
-        this->CamerasLabels("Trucks passed: 0", 610);
+        this->addButtons();
+        this->camerasLabels("Camera 1: Disabled", 50);
+        this->camerasLabels("Camera 2: Disabled", 280);
+        this->camerasLabels("Camera 3: Disabled", 510);
+        this->camerasLabels("Cars passed: 0", 100);
+        this->camerasLabels("Cars passed: 0", 330);
+        this->camerasLabels("Cars passed: 0", 560);
+        this->camerasLabels("Trucks passed: 0", 150);
+        this->camerasLabels("Trucks passed: 0", 380);
+        this->camerasLabels("Trucks passed: 0", 610);
         
 
         for (int i = 0; i < 3; i++) {
-            this->_camerasOn.push_back(false);
+            this->camerasOn_.push_back(false);
         }
         
-        this->InitializeVehiclesCounters();
+        this->initializeVehiclesCounters();
     }
 
-    void CamerasView::InitializeVehiclesCounters(){
+    void CamerasView::initializeVehiclesCounters(){
         for (int i = 0; i < 3; i++) {
-            _numberOfCars[i] = 0;
-            _numberOfTrucks[i] = 0;
+            numberOfCars_[i] = 0;
+            numberOfTrucks_[i] = 0;
         }
     }
-    void CamerasView::AddButtons() {
+    void CamerasView::addButtons() {
         sf::Vector2f buttonSize(150, 66);
         int fontSize = 30;
         for (int i = 1; i < 4; i++) {
-            this->_buttons.push_back(Button(sf::Vector2f(2*_camerasView.getSize().x / 8, 230 * i), buttonSize, "Add camera " + std::to_string(i),
-                this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-            this->_removeButtons.push_back(Button(sf::Vector2f(6*_camerasView.getSize().x / 8, 230 * i), buttonSize, "Remove camera " + std::to_string(i),
-                this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+            this->buttons_.push_back(Button(sf::Vector2f(2*camerasView_.getSize().x / 8, 230 * i), buttonSize, "Add camera " + std::to_string(i),
+                this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
+            this->removeButtons_.push_back(Button(sf::Vector2f(6*camerasView_.getSize().x / 8, 230 * i), buttonSize, "Remove camera " + std::to_string(i),
+                this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
         }
         
 
-        this->_buttons.push_back(Button(sf::Vector2f(_camerasView.getSize().x / 2, 900), buttonSize, "Start simulation",
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+        this->buttons_.push_back(Button(sf::Vector2f(camerasView_.getSize().x / 2, 900), buttonSize, "Start simulation",
+            this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
     }
-    void CamerasView::CamerasLabels(std::string text, int yPosition) {
+    void CamerasView::camerasLabels(std::string text, int yPosition) {
         sf::Text tempLabel;
-        tempLabel.setFont(this->_data->assets.GetFont("Text font"));
+        tempLabel.setFont(this->data_->assets_.getFont("Text font"));
         tempLabel.setCharacterSize(30);
         tempLabel.setString(text);
-        tempLabel.setPosition(_camerasView.getSize().x / 6, yPosition);
-        this->_camerasLabels.push_back(tempLabel);
+        tempLabel.setPosition(camerasView_.getSize().x / 6, yPosition);
+        this->camerasLabels_.push_back(tempLabel);
 
     }
-    sf::FloatRect CamerasView::CalculateViewPort()
+    sf::FloatRect CamerasView::calculateViewPort()
     {
         float rectWidth = (1.f - (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH) / 2;
         float rectLeft = 0.f;
@@ -68,133 +71,132 @@ CamerasView::CamerasView(SimulatorDataRef data) : _data(data), _isSimulating(fal
 
     bool CamerasView::isClicked(sf::Vector2i& mousePosition) {
 
-        if (_camerasView.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT))
+        if (camerasView_.getViewport().contains(static_cast<float>(mousePosition.x) / SCREEN_WIDTH, static_cast<float>(mousePosition.y) / SCREEN_HEIGHT))
             return true;
         else
             return false;
     }
-    void CamerasView::Draw()
+    void CamerasView::draw()
     {
-        this->_data->window.setView(this->_camerasView);
-        this->_data->window.draw(this->_background);
-        DrawButtons();
+        this->data_->window_.setView(this->camerasView_);
+        this->data_->window_.draw(this->background_);
+        this->drawButtons();
     }
-    void CamerasView::DrawButtons()
+    void CamerasView::drawButtons()
     {
         for (int i = 0; i<3; i++)
         {
-            if(!_camerasOn.at(i)){
-                this->_data->window.draw(_buttons.at(i));
+            if(!camerasOn_.at(i)){
+                this->data_->window_.draw(buttons_.at(i));
             }
         }
         
         for (int i = 0; i<3; i++)
         {
-            if(_camerasOn.at(i) && !_isAddingCamera){
-                this->_data->window.draw(_removeButtons.at(i));
+            if(camerasOn_.at(i) && !isAddingCamera_){
+                this->data_->window_.draw(removeButtons_.at(i));
             }
         }
-        this->_data->window.draw(_buttons.at(3));
+        this->data_->window_.draw(buttons_.at(3));
         
         
         for (int i = 0; i<3; i++)
         {
-            this->_data->window.draw(_camerasLabels.at(i));
+            this->data_->window_.draw(camerasLabels_.at(i));
         }
         for (int i = 3; i<6; i++)
         {
-            if(_camerasOn.at(i-3)){
-                this->_data->window.draw(_camerasLabels.at(i));
-                this->_data->window.draw(_camerasLabels.at(i+3));
+            if(camerasOn_.at(i-3)){
+                this->data_->window_.draw(camerasLabels_.at(i));
+                this->data_->window_.draw(camerasLabels_.at(i+3));
             }
         }
     }
 
-    void CamerasView::UpdateCarsLabel(int whichLabel){
-        ++_numberOfCars[whichLabel];
-        this->_camerasLabels.at(whichLabel+2).setString("Cars passed: "+std::to_string(_numberOfCars[whichLabel]));
+    void CamerasView::updateCarsLabel(int whichLabel){
+        ++numberOfCars_[whichLabel];
+        this->camerasLabels_.at(whichLabel+2).setString("Cars passed: "+std::to_string(numberOfCars_[whichLabel]));
     }
     
-    void CamerasView::UpdateTrucksLabel(int whichLabel){
-        ++_numberOfTrucks[whichLabel];
-        this->_camerasLabels.at(whichLabel+3).setString("Trucks passed: "+std::to_string(_numberOfTrucks[whichLabel]));
+    void CamerasView::updateTrucksLabel(int whichLabel){
+        ++numberOfTrucks_[whichLabel];
+        this->camerasLabels_.at(whichLabel+3).setString("Trucks passed: "+std::to_string(numberOfTrucks_[whichLabel]));
     }
-    void CamerasView::UpdateIsSimulating(bool isSimulating){
+    void CamerasView::updateIsSimulating(bool isSimulating){
         if(!isSimulating){
-            this->InitializeVehiclesCounters();
+            this->initializeVehiclesCounters();
         }
     }
-    void CamerasView::UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col) {
-        this->_isAddingCamera = isAddingCamera;
+    void CamerasView::updateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col) {
+        this->isAddingCamera_ = isAddingCamera;
         if (!isAddingCamera) {
             
-            this->_camerasOn.at(whichCamera - 1) = true;
+            this->camerasOn_.at(whichCamera - 1) = true;
             
-            this->_buttons.at(whichCamera - 1).setBackground(this->_data->assets.GetTexture("Button"));
-            _camerasLabels.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Row: "+ std::to_string(col+1)+" Col: "+std::to_string(row+1));
+            this->buttons_.at(whichCamera - 1).setBackground(this->data_->assets_.getTexture("Button"));
+            camerasLabels_.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Row: "+ std::to_string(col+1)+" Col: "+std::to_string(row+1));
         }
         else {
-            this->_buttons.at(whichCamera - 1).setBackground(this->_data->assets.GetTexture("Button_pressed"));
+            this->buttons_.at(whichCamera - 1).setBackground(this->data_->assets_.getTexture("Button_pressed"));
         }
     }
-    void CamerasView::UpdateIsDeletingCamera(int whichCamera) {
-        this->_camerasOn.at(whichCamera - 1) = false;
-        this->_buttons.at(whichCamera - 1).setText("Add camera " + std::to_string(whichCamera));
-        this->_buttons.at(whichCamera - 1).setBackground(this->_data->assets.GetTexture("Button"));
-        _camerasLabels.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Disabled");
+    void CamerasView::updateIsDeletingCamera(int whichCamera) {
+        this->camerasOn_.at(whichCamera - 1) = false;
+        this->buttons_.at(whichCamera - 1).setText("Add camera " + std::to_string(whichCamera));
+        this->buttons_.at(whichCamera - 1).setBackground(this->data_->assets_.getTexture("Button"));
+        camerasLabels_.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Disabled");
     }
 
     
-    void CamerasView::HandleInput(){
-        for (Button& button : this->_buttons){
-            if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_camerasView)){
+    void CamerasView::handleInput(){
+        for (Button& button : this->buttons_){
+            if (button.isClicked(sf::Mouse::Left, this->data_->window_, this->camerasView_)){
                 if (button.getText() == "Start simulation" || button.getText() == "Stop simulation"  ) {
-                    if (this->_buttons.at(3).isPressed) {
-                        this->_buttons.at(3).setBackground(this->_data->assets.GetTexture("Button"));
+                    if (this->buttons_.at(3).isPressed_) {
+                        this->buttons_.at(3).setBackground(this->data_->assets_.getTexture("Button"));
                         button.setText("Start simulation");
                     }
                     else{
-                        this->_buttons.at(3).setBackground(this->_data->assets.GetTexture("Button_pressed"));
+                        this->buttons_.at(3).setBackground(this->data_->assets_.getTexture("Button_pressed"));
 
                         button.setText("Stop simulation");
                     }
-                    this->NotifyIsSimulating();
+                    this->notifyIsSimulating();
                 }
                 if (button.getText() == "Add camera 1") {
                     //this->ButtonsHandler(button, "Camera 1: ", 0, 0);
-                    this->NotifyIsAddingCamera(1);
+                    this->notifyIsAddingCamera(1);
 
                 }
                 if (button.getText() == "Add camera 2") {
                     // this->ButtonsHandler(button, "Camera 2: ", 1, 1);
-                    this->NotifyIsAddingCamera(2);
+                    this->notifyIsAddingCamera(2);
                 }
                 if (button.getText() == "Add camera 3") {
                     //this->ButtonsHandler(button, "Camera 3: ", 2, 2);
-                    this->NotifyIsAddingCamera(3);
+                    this->notifyIsAddingCamera(3);
                 }
-                button.isPressed = !button.isPressed;
-
+                button.isPressed_ = !button.isPressed_;
             }
         }
     
-        for (Button& button : this->_removeButtons){
-            if (button.isClicked(sf::Mouse::Left, this->_data->window, this->_camerasView)){
+        for (Button& button : this->removeButtons_){
+            if (button.isClicked(sf::Mouse::Left, this->data_->window_, this->camerasView_)){
                 
                 if (button.getText() == "Remove camera 1") {
                     //this->ButtonsHandler(button, "Camera 1: ", 0, 0);
-                    this->NotifyIsDeletingCamera(1);
+                    this->notifyIsDeletingCamera(1);
 
                 }
                 if (button.getText() == "Remove camera 2") {
                     // this->ButtonsHandler(button, "Camera 2: ", 1, 1);
-                    this->NotifyIsDeletingCamera(2);
+                    this->notifyIsDeletingCamera(2);
                 }
                 if (button.getText() == "Remove camera 3") {
                     //this->ButtonsHandler(button, "Camera 3: ", 2, 2);
-                    this->NotifyIsDeletingCamera(3);
+                    this->notifyIsDeletingCamera(3);
                 }
-                button.isPressed = !button.isPressed;
+                button.isPressed_ = !button.isPressed_;
 
             }
         }

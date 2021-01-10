@@ -4,15 +4,15 @@
 #include <vector>
 #include "Vehicles/vehicle.hpp"
 
-namespace ZPR {
+namespace zpr {
     class SimulationSubject
     {
     public:
         void add(std::shared_ptr<SimulationObserver> obs);
-        void NotifyVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
-        void NotifyIsSimulating(bool isSimulating);
-        void NotifyCarsLabel(int whichLabel);
-        void NotifyTrucksLabel(int whichLabel);
+        void notifyVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
+        void notifyIsSimulating(bool is_simulating);
+        void notifyCarsLabel(int which_label);
+        void notifyTrucksLabel(int which_label);
         virtual ~SimulationSubject() {}
     private:
         std::vector<std::shared_ptr<SimulationObserver> > _observers;

@@ -8,27 +8,28 @@
 #include "file_finder.hpp"
 #include "cell.hpp"
 
-namespace ZPR {
+namespace zpr {
 
     class SaveState : public State{
-        public:
-        SaveState(SimulatorDataRef data, std::vector<Cell> cells, int gridsize);
+    public:
+        SaveState(SimulatorDataRef data, std::vector<Cell> cells, int grid_size);
 
-        void Init();
+        void init();
+        void handleInput();
+        void update(float dt);
+        void draw(float dt);
         
-        void HandleInput();
-        void Update(float dt);
-        void Draw(float dt);
-        private:
-        void CheckSlots();
-        void ButtonsInit();
-        void SaveToFile(int number);
-        SimulatorDataRef _data;
-        sf::Sprite _background;
-        std::vector<Button> _buttons;
-        std::vector<Cell> _cells;
-        std::string _slots[4];
-        FileFinder _fileFinder;
-        int _gridsize;
+    private:
+        void checkSlots();
+        void buttonsInit();
+        void saveToFile(int number);
+        SimulatorDataRef data_;
+        sf::Sprite background_;
+        std::vector<Button> buttons_;
+        std::vector<Cell> cells_;
+        std::string slots_[4];
+        FileFinder fileFinder_;
+        int gridsize_;
+    
     };
 }

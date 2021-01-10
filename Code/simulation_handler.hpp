@@ -9,43 +9,43 @@
 #include "camera.hpp"
 
 
-namespace ZPR {
+namespace zpr {
     class SimulationHandler : public SimulationSubject, public CamerasObserver, public CreatorObserver{
     public:
         SimulationHandler(int gridSize, std::vector<Cell> cells);
         void init();
-        void UpdateIsSimulating();
-        void UpdateSelectedCell(sf::Vector2i coords) {};
-        void UpdateCells(std::vector<Cell> cells);
-        void SaveToFile();
-        void UpdateIsDrawingRoad(bool isDrawingRoad) {};
-        void UpdateIsDeletingRoad(bool isDeletingRoad) {};
-        void UpdateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col) {};
-        void UpdateIsAddingCamera(int whichCamera) {}
-        void UpdateIsDeletingCamera(int whichCamera) {}
-        void HandleInput();
+        void updateIsSimulating();
+        void updateSelectedCell(sf::Vector2i coords) {};
+        void updateCells(std::vector<Cell> cells);
+        void saveToFile();
+        void updateIsDrawingRoad(bool is_drawing_road) {};
+        void updateIsDeletingRoad(bool is_deleting_road) {};
+        void updateIsAddingCamera(bool is_adding_camera, int which_camera, int row, int col) {};
+        void updateIsAddingCamera(int which_camera) {}
+        void updateIsDeletingCamera(int which_camera) {}
+        void handleInput();
     private:
-        Timer timer;
-        int CalculatePrefix();
-        void AddCarsToSimulate();
-        void AddStartingRoad();
-        void MoveVehicles();
-        void VehilcesColision();
-        void CheckCameraVision();
-        void CheckCameraColision(Camera camera);
-        void CheckVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int cameraNumber);
-        bool StartingCellFree();
-        void DeleteVehicles();
-        void SeparateRoadsFromCells();
-        void SeparateCamerasFromCells();
-        sf::RectangleShape ConvertCellToCenteredRectShape(Cell cell);
-        bool isSimulating;
-        int _gridSize, _cellSize;
-        int _roadSize, _sidewalkSize, _roadStripesSize;
-        sf::RectangleShape _cityExitSite;
-        std::vector<Cell> _cells;
-        std::vector<sf::RectangleShape> _roads;
-        std::vector<Camera> _cameras;
-        std::vector<std::shared_ptr<Vehicle>> _vehicles;
+        Timer timer_;
+        int calculatePrefix();
+        void addCarsToSimulate();
+        void addStartingRoad();
+        void moveVehicles();
+        void vehilcesColision();
+        void checkCameraVision();
+        void checkCameraColision(Camera camera);
+        void checkVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int camera_number);
+        bool startingCellFree();
+        void deleteVehicles();
+        void separateRoadsFromCells();
+        void separateCamerasFromCells();
+        sf::RectangleShape convertCellToCenteredRectShape(Cell cell);
+        bool isSimulating_;
+        int gridSize_, cellSize_;
+        int roadSize_, sidewalkSize_, roadStripesSize_;
+        sf::RectangleShape cityExitSite_;
+        std::vector<Cell> cells_;
+        std::vector<sf::RectangleShape> roads_;
+        std::vector<Camera> cameras_;
+        std::vector<std::shared_ptr<Vehicle>> vehicles_;
     };
 }

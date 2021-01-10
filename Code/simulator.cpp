@@ -1,44 +1,54 @@
+/**
+ * simulator.cpp
+ * Implementation of Simulator class.
+ */
+
 #include "simulator.hpp"
 #include "splash_state.hpp"
 
-namespace ZPR{
+namespace zpr{
 
+    /**
+     * Parametrized constructor of Simulator class.
+     * @param width - Width of the window_.
+     * @param height - Height of the window_.
+     * @param title - Title of the window_.
+     */
     Simulator::Simulator(int width, int height, std::string title){
     
-        _data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
-        _data->machine.AddState(StateRef(new SplashState(this->_data)));
-        this-> Run();
+        data_->window_.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
+        data_->machine_.addState(StateRef(new SplashState(this->data_)));
+        this->run();
     }
-/**
- Metoda odpowiadająca za pętle programu oraz przechodzenie między stanami programu
- */
-    void Simulator::Run(){
+    /**
+     * Method resposible for application loop, executes drawing, updating and handling input.
+     */
+    void Simulator::run(){
     
-        float newTime, frameTime, interpolation;
-        float currentTime = this-> _clock.getElapsedTime().asSeconds();
+        float new_time, frame_time, interpolation;
+        float current_time = this-> clock_.getElapsedTime().asSeconds();
         float accumulator = 0.0f;
     
-        while(this->_data->window.isOpen()){
-            this->_data->machine.ProcessStateChanges();
+        while(this->data_->window_.isOpen()){
+            this->data_->machine_.processStateChanges();
         
-            newTime = this-> _clock.getElapsedTime().asSeconds();
-            frameTime = newTime - currentTime;
+            new_time = this-> clock_.getElapsedTime().asSeconds();
+            frame_time = new_time - current_time;
         
-            if (frameTime > 0.25f){
-                frameTime = 0.25f;
+            if (frame_time > 0.25f){
+                frame_time = 0.25f;
             }
-            currentTime = newTime;
-            accumulator += frameTime;
+            current_time = new_time;
+            accumulator += frame_time;
         
-            while (accumulator >= dt)
+            while (accumulator >= dt_)
             {
-                this->_data->machine.GetActiveState()-> HandleInput();
-                this->_data->machine.GetActiveState()->Update(dt);
-            
-                accumulator -= dt;
+                this->data_->machine_.getActiveState()->handleInput();
+                this->data_->machine_.getActiveState()->update(dt_);
+                accumulator -= dt_;
             }
-            interpolation = accumulator / dt;
-            this->_data->machine.GetActiveState()->Draw(interpolation);
+            interpolation = accumulator / dt_;
+            this->data_->machine_.getActiveState()->draw(interpolation);
         }
     }
 

@@ -1,29 +1,29 @@
 #include "tools_subject.hpp"
 
-namespace ZPR {
+namespace zpr {
 	/*Dodaje obserwatora*/
-	void ToolsSubject::add(std::shared_ptr<ToolsObserver> obs)
+	void ToolsSubject::add(std::shared_ptr<ToolsObserver> observer)
 	{
-		this->_observers.push_back(obs);
+		this->observers_.push_back(observer);
 	}
 	/*Powiadamia obserwatorów o przyciœniêciu przycisku zmieniaj¹cego stanu rysowania drogi (w³¹czony/wy³¹czony)*/
-	void ToolsSubject::NotifyIsDrawingRoad()
+	void ToolsSubject::notifyIsDrawingRoad()
 	{
-		for (std::shared_ptr<ToolsObserver> obs : this->_observers) {
-			obs->UpdateIsDrawingRoad();
+		for (std::shared_ptr<ToolsObserver> obs : this->observers_) {
+			obs->updateIsDrawingRoad();
 		}
 	}
 	/*Powiadamia obserwatorów o przyciœniêciu przycisku zmieniaj¹cego stanu usuwania drogi (w³¹czony/wy³¹czony)*/
-    void ToolsSubject::NotifyIsDeletingRoad()
+    void ToolsSubject::notifyIsDeletingRoad()
     {
-        for (std::shared_ptr<ToolsObserver> obs : this->_observers) {
-            obs->UpdateIsDeletingRoad();
+        for (std::shared_ptr<ToolsObserver> obs : this->observers_) {
+            obs->updateIsDeletingRoad();
         }
     }
-    void ToolsSubject::NotifySave()
+    void ToolsSubject::notifySave()
     {
-        for (std::shared_ptr<ToolsObserver> obs : this->_observers) {
-            obs->SaveToFile();
+        for (std::shared_ptr<ToolsObserver> obs : this->observers_) {
+            obs->saveToFile();
         }
     }
 }

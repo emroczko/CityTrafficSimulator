@@ -1,24 +1,29 @@
+/**
+ * splash_state.hpp
+ * Header of SplashState class.
+ */
+
 #pragma once
 
 #include <SFML/Graphics.hpp>
 #include "state.hpp"
 #include "simulator.hpp"
 
-namespace ZPR {
+namespace zpr {
 
-/**
- Klasa odpowiadająca za ekran startowy (launch screen)
- */
+    /**
+     * Class responsible for launch screen of application.
+     */
     class SplashState : public State{
     public:
         SplashState(SimulatorDataRef data);
-        void Init();
-        void HandleInput();
-        void Update(float dt);
-        void Draw(float dt);
+        void init();
+        void handleInput();
+        void update(float dt);
+        void draw(float dt);
     private:
-        SimulatorDataRef _data;
-        sf::Clock _clock;
-        sf::Sprite _background;
+        SimulatorDataRef data_;
+        sf::Clock clock_;
+        sf::Sprite background_;
     };
 }

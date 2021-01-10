@@ -3,15 +3,15 @@
 #include "Vehicles/truck.hpp"
 #include "Vehicles/car.hpp"
 
-namespace ZPR {
+namespace zpr {
 	class Camera
 	{
 	public:
-		Camera(int cameraNumber, sf::RectangleShape detectionBox);
-		bool CheckColision(std::shared_ptr<Vehicle> vehicle);
-		int _cameraNumber;
+		Camera(int camera_number, sf::RectangleShape detection_box);
+		bool checkColision(std::shared_ptr<Vehicle> vehicle);
+		int cameraNumber_;
 	private:
-		sf::RectangleShape _cameraDetectionBox;
+		sf::RectangleShape cameraDetectionBox_;
 	};
 }
 

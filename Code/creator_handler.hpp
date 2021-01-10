@@ -7,34 +7,34 @@
 #include <memory>
 #include "Vehicles/vehicle.hpp"
 
-namespace ZPR {
+namespace zpr {
 	class CreatorHandler : public CamerasObserver, public CreatorSubject, public ToolsObserver
 	{
 	public:
-		CreatorHandler(int gridSize);
-        CreatorHandler(int gridSize, std::vector<Cell> cells);
+		CreatorHandler(int grid_size);
+        CreatorHandler(int grid_size, std::vector<Cell> cells);
 		void init();
-		void GenerateBoard();
-        void ClearRoads();
-		void UpdateIsDrawingRoad();
-        void UpdateIsDeletingRoad();
-        void UpdateIsSimulating();
-        void UpdateIsAddingCamera(int whichCamera);
-        void UpdateIsDeletingCamera(int whichCamera);
-        void SaveToFile();
-		void HandleInput(sf::Vector2i possibleSelectedCell);
-		void UpdateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
+		void generateBoard();
+        void clearRoads();
+		void updateIsDrawingRoad();
+        void updateIsDeletingRoad();
+        void updateIsSimulating();
+        void updateIsAddingCamera(int which_camera);
+        void updateIsDeletingCamera(int which_camera);
+        void saveToFile();
+		void handleInput(sf::Vector2i possible_selected_cell);
+		void updateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
 	private:
-		std::unique_ptr<Grid> _grid;
-        std::vector<Cell> _cells;
-		int _row, _col;
-		int _gridSize;
-        int _enterGridHeight;
-        int _whichCamera;
-		bool _isDrawingRoad;
-        bool _isDeletingRoad;
-        bool _isSimulating;
-        bool _isAddingCameras;
+		std::unique_ptr<Grid> grid_;
+        std::vector<Cell> cells_;
+		int row_, col_;
+		int gridSize_;
+        int enterGridHeight_;
+        int whichCamera_;
+		bool isDrawingRoad_;
+        bool isDeletingRoad_;
+        bool isSimulating_;
+        bool isAddingCameras_;
         
 	};
 }

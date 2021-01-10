@@ -3,36 +3,37 @@
 #include "../definitions.hpp"
 #include "../cell.hpp"
 #include <chrono>
-namespace ZPR {
+namespace zpr {
 	class Vehicle : public sf::Drawable
 	{
 	public:
 		virtual ~Vehicle() {};
 		sf::RectangleShape getShape();
 		void move();
-		void CheckOnWhichCell(int drawPrefix);
-		void CheckTurn();
-		void StopVehicle();
-		void NoColision();
-		bool CheckColision(std::shared_ptr<Vehicle> vehicle);
+		void checkOnWhichCell(int drawPrefix);
+		void checkTurn();
+		void stopVehicle();
+		void noColision();
+		bool checkColision(std::shared_ptr<Vehicle> vehicle);
 		virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
-		int _x, _y, _speed;
-		int _roadSize, _sidewalkSize, _roadStripesSize;
-		int _cellSize;
-		bool _seenByCamera;
-		std::vector<sf::RectangleShape> _roads;
-		std::string _direction, _previousDirection;
-		sf::RectangleShape _shape, _colisionBox;
-		std::shared_ptr<sf::RectangleShape> _currentRoad, _previousRoad;
+        
+		int x_, y_, speed_;
+		int roadSize_, sidewalkSize_, roadStripesSize_;
+		int cellSize_;
+		bool seenByCamera_;
+		std::vector<sf::RectangleShape> roads_;
+		std::string direction_, previousDirection_;
+		sf::RectangleShape shape_, colisionBox_;
+		std::shared_ptr<sf::RectangleShape> currentRoad_, previousRoad_;
 	private:
-		void UpdatePosition();
-		void UpdateColisionBoxPosition();
-		void CheckIfSeenByCamera();
-		void TurnBack();
-		void ChoseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
-		void ChoseFromTwoRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
-		void ChoseFromThreeRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
-		void UpdateDirection(std::string direction);
+		void updatePosition();
+		void updateColisionBoxPosition();
+		void checkIfSeenByCamera();
+		void turnBack();
+		void choseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
+		void choseFromTwoRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
+		void choseFromThreeRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
+		void updateDirection(std::string direction);
 	};
 }
 

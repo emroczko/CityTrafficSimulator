@@ -3,16 +3,16 @@
 #include <vector>
 #include <memory>
 
-namespace ZPR {
+namespace zpr {
     class CamerasSubject
     {
     public:
-        void add(std::shared_ptr<CamerasObserver> obs);
-        void NotifyIsSimulating();
-        void NotifyIsAddingCamera(int whichCamera);
-        void NotifyIsDeletingCamera(int whichCamera);
+        void add(std::shared_ptr<CamerasObserver> observer);
+        void notifyIsSimulating();
+        void notifyIsAddingCamera(int which_camera);
+        void notifyIsDeletingCamera(int which_camera);
         virtual ~CamerasSubject() {};
     private:
-        std::vector<std::shared_ptr<CamerasObserver>> _observers;
+        std::vector<std::shared_ptr<CamerasObserver>> observers_;
     };
 }

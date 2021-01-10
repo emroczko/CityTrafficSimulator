@@ -1,3 +1,8 @@
+/**
+ * load_state.hpp
+ * Header of LoadState class.
+ */
+
 #pragma once
 
 #include "SFML/Graphics.hpp"
@@ -10,33 +15,33 @@
 #include "cell.hpp"
 
 
-namespace ZPR{
+namespace zpr{
 
+    /**
+     *  Class responsible for loading from files state. In this state we can choose from which slot we want to load our map. 
+     */
     class LoadState: public State{
-        public:
-    
-        LoadState(SimulatorDataRef data);        
+    public:
+        LoadState(SimulatorDataRef data);
+        void init();
+        void handleInput();
+        void update(float dt);
+        void draw(float dt);
+        void loadHandler(int number);
+        void loadFromFile(int number);
         
-        void Init();
-        
-        void HandleInput();
-        void Update(float dt);
-        void Draw(float dt);
-        
-        void CheckSlots();
-        void LoadHandler(int number);
-        void LoadFromFile(int number);
-        
-        private:
-        bool _isDemo;
-        void CheckIfFileExist(int number);
-        SimulatorDataRef _data;
-        sf::Sprite _background;
-        std::vector<Button> _buttons;
-        std::vector<Cell> _cells;
-        int _gridSize;
-        std::string _slots[4];
-        FileFinder _fileFinder;
-        Cell _tempCell;
+    private:
+        void checkSlots();
+        void checkIfFileExist(int number);
+        void initializeButtons();
+        bool isDemo_;
+        SimulatorDataRef data_;
+        sf::Sprite background_;
+        std::vector<Button> buttons_;
+        std::vector<Cell> cells_;
+        int gridSize_;
+        std::string slots_[4];
+        FileFinder fileFinder_;
+        Cell tempCell_;
     };
 }

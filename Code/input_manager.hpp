@@ -1,12 +1,16 @@
+/**
+ * input_manager.hpp
+ * Header for InputManager class.
+ */
 #pragma once
 
 #include <SFML/Graphics.hpp>
 
-namespace ZPR{
+namespace zpr{
 
-/**
- Klasa realizująca obsługę użytkownika
- */
+    /**
+     Class responsible for handling user clicks. 
+     */
     class InputManager {
     public:
         InputManager() { }
@@ -14,7 +18,7 @@ namespace ZPR{
     
         bool isSpriteClicked(sf::Sprite object, sf::Mouse::Button button, sf::RenderWindow &window);
         bool isSquareClicked(sf::RectangleShape object, sf::Mouse::Button button, sf::RenderWindow& window);
-        sf::Vector2i GetMousePosition(sf::RenderWindow &window);
+        sf::Vector2i getMousePosition(sf::RenderWindow &window);
     
     };
 

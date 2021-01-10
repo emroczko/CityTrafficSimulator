@@ -1,11 +1,11 @@
 #include "camera.hpp"
 
-namespace ZPR {
-    Camera::Camera(int cameraNumber, sf::RectangleShape detectionBox) : _cameraNumber(cameraNumber), _cameraDetectionBox(detectionBox) {}
+namespace zpr {
+    Camera::Camera(int camera_number, sf::RectangleShape detection_box) : cameraNumber_(camera_number), cameraDetectionBox_(detection_box) {}
 
-    bool Camera::CheckColision(std::shared_ptr<Vehicle> vehicle)
+    bool Camera::checkColision(std::shared_ptr<Vehicle> vehicle)
     {
-        if (this->_cameraDetectionBox.getGlobalBounds().contains(vehicle->getShape().getPosition()) && vehicle->_seenByCamera == false) {
+        if (this->cameraDetectionBox_.getGlobalBounds().contains(vehicle->getShape().getPosition()) && vehicle->seenByCamera_ == false) {
             return true;
         }
         else {

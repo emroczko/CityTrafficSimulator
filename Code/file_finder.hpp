@@ -1,3 +1,8 @@
+/**
+ * file_finder.hpp
+ * Header of FileFinder class.
+ */
+
 #pragma once
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -8,15 +13,18 @@
 #ifdef WIN32
 #define stat _stat
 #endif
-#include "slots_enum.hpp"
+
 #include <iostream>
 
-namespace ZPR {
+namespace zpr {
+
+    /**
+     * Class responsible for finding files to load project from.
+     */
     class FileFinder{
     public:
         FileFinder();
-        std::string CheckIfFileExist(const std::string& name, int number);
-        bool CheckIfFileExist(const std::string& name);
-    private:
+        std::string checkIfFileExist(const std::string& name, int number);
+        bool checkIfFileExist(const std::string& name);
     };
 }

@@ -1,3 +1,7 @@
+/**
+ * main_menu_state.hpp
+ * Header of MainMenuState class.
+ */
 #pragma once
 
 #include <SFML/Graphics.hpp>
@@ -9,7 +13,7 @@
 
 
 
-namespace ZPR{
+namespace zpr{
 
 /**
  Klasa odpowiadająca za menu główne programu
@@ -18,21 +22,22 @@ namespace ZPR{
         
     public:
         MainMenuState (SimulatorDataRef data);
-        void Init();
-        void HandleInput();
-        void Update(float dt);
-        void Draw(float dt);
-        unsigned long GetButtonsAmount();
-        void LoadDemo();
+        void init();
+        void handleInput();
+        void update(float dt);
+        void draw(float dt);
+        unsigned long getButtonsAmount();
+        void loadDemo();
         
     private:
-        SimulatorDataRef _data;
-        sf::Sprite _background;
-        std::vector<Button> _buttons;
-        std::vector<Cell> _cells;
-        int _gridSize;
-        FileFinder _fileFinder;
-        Cell _tempCell;
+        void initializeButtons();
+        SimulatorDataRef data_;
+        sf::Sprite background_;
+        std::vector<Button> buttons_;
+        std::vector<Cell> cells_;
+        int gridSize_;
+        FileFinder fileFinder_;
+        Cell tempCell_;
     };
 
 }

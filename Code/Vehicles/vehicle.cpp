@@ -1,119 +1,119 @@
 #include "vehicle.hpp"
 #include <random>
-namespace ZPR {
+namespace zpr {
 	sf::RectangleShape Vehicle::getShape()
 	{
-		return this->_shape;
+		return this->shape_;
 	}
 	void Vehicle::move()
 	{
-		if (_direction == "North") {
-			this->_shape.setRotation(0);
-			this->_x = this->_currentRoad->getPosition().x + this->_roadSize / 2 + this->_roadStripesSize;
-			this->_y -= this->_speed;
+		if (direction_ == "North") {
+			this->shape_.setRotation(0);
+			this->x_ = this->currentRoad_->getPosition().x + this->roadSize_ / 2 + this->roadStripesSize_;
+			this->y_ -= this->speed_;
 		}
-		else if (_direction == "South") {
-			this->_shape.setRotation(0);
-			this->_x = this->_currentRoad->getPosition().x - this->_roadSize / 2 - this->_roadStripesSize;
-			this->_y += this->_speed;
+		else if (direction_ == "South") {
+			this->shape_.setRotation(0);
+			this->x_ = this->currentRoad_->getPosition().x - this->roadSize_ / 2 - this->roadStripesSize_;
+			this->y_ += this->speed_;
 		}
-		else if (_direction == "East") {
-			this->_shape.setRotation(90);
-			this->_y = this->_currentRoad->getPosition().y + this->_roadSize / 2 + this->_roadStripesSize;
-			this->_x += this->_speed;
+		else if (direction_ == "East") {
+			this->shape_.setRotation(90);
+			this->y_ = this->currentRoad_->getPosition().y + this->roadSize_ / 2 + this->roadStripesSize_;
+			this->x_ += this->speed_;
 		}
-		else if (_direction == "West") {
-			this->_shape.setRotation(90);
-			this->_y = this->_currentRoad->getPosition().y - this->_roadSize / 2 - this->_roadStripesSize;
-			this->_x -= this->_speed;
+		else if (direction_ == "West") {
+			this->shape_.setRotation(90);
+			this->y_ = this->currentRoad_->getPosition().y - this->roadSize_ / 2 - this->roadStripesSize_;
+			this->x_ -= this->speed_;
 		}
-		else if (_direction == "Stop") {
+		else if (direction_ == "Stop") {
 
 		}
-		UpdatePosition();
-		UpdateColisionBoxPosition();
+		this->updatePosition();
+		this->updateColisionBoxPosition();
 	}
-	void Vehicle::UpdatePosition() {
-		this->_shape.setPosition(sf::Vector2f(_x, _y));
+	void Vehicle::updatePosition() {
+		this->shape_.setPosition(sf::Vector2f(x_, y_));
 	}
-	void Vehicle::UpdateColisionBoxPosition() {
-		if (this->_direction == "South") {
-			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y + (this->_colisionBox.getSize().y / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize)));
+	void Vehicle::updateColisionBoxPosition() {
+		if (this->direction_ == "South") {
+			this->colisionBox_.setPosition(sf::Vector2f(this->shape_.getPosition().x, this->shape_.getPosition().y + (this->colisionBox_.getSize().y / 2 + this->shape_.getSize().y / 2 + this->roadStripesSize_)));
 		}
-		else if (this->_direction == "North") {
-			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x, this->_shape.getPosition().y - (this->_colisionBox.getSize().y / 2 + this->_shape.getSize().y / 2 + this->_roadStripesSize)));
+		else if (this->direction_ == "North") {
+			this->colisionBox_.setPosition(sf::Vector2f(this->shape_.getPosition().x, this->shape_.getPosition().y - (this->colisionBox_.getSize().y / 2 + this->shape_.getSize().y / 2 + this->roadStripesSize_)));
 		}
-		else if (this->_direction == "East"){
-			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x + (this->_colisionBox.getSize().x / 2 + ceil(this->_shape.getSize().x / 2) + this->_roadStripesSize), this->_shape.getPosition().y));
+		else if (this->direction_ == "East"){
+			this->colisionBox_.setPosition(sf::Vector2f(this->shape_.getPosition().x + (this->colisionBox_.getSize().x / 2 + ceil(this->shape_.getSize().x / 2) + this->roadStripesSize_), this->shape_.getPosition().y));
 		}
 		else {
-			this->_colisionBox.setPosition(sf::Vector2f(this->_shape.getPosition().x - (this->_colisionBox.getSize().x / 2 + ceil(this->_shape.getSize().y / 2) + this->_roadStripesSize), this->_shape.getPosition().y));
+			this->colisionBox_.setPosition(sf::Vector2f(this->shape_.getPosition().x - (this->colisionBox_.getSize().x / 2 + ceil(this->shape_.getSize().y / 2) + this->roadStripesSize_), this->shape_.getPosition().y));
 		}
 	}
 
-	void Vehicle::CheckOnWhichCell(int drawPrefix)
+	void Vehicle::checkOnWhichCell(int drawPrefix)
 	{
 		std::shared_ptr<sf::RectangleShape> tempCell = nullptr;
-		if (this->_roads.size() != 0) {
-			if (!_previousRoad || this->_currentRoad->getPosition() == this->_previousRoad->getPosition()) {
-				for (sf::RectangleShape road : this->_roads) {
-					if (road.getGlobalBounds().contains(this->_shape.getPosition())) {
+		if (this->roads_.size() != 0) {
+			if (!previousRoad_ || this->currentRoad_->getPosition() == this->previousRoad_->getPosition()) {
+				for (sf::RectangleShape road : this->roads_) {
+					if (road.getGlobalBounds().contains(this->shape_.getPosition())) {
 						tempCell = std::make_shared<sf::RectangleShape>(road);
-						this->_previousRoad = this->_currentRoad;
-						this->_currentRoad = tempCell;
+						this->previousRoad_ = this->currentRoad_;
+						this->currentRoad_ = tempCell;
 					}
 				}
 			}
 		}
-		CheckIfSeenByCamera();
+		this->checkIfSeenByCamera();
 	}
 	//Sprawdza czy przed pojadem znajduje siê inny pojazd i je¿eli tak sie stanie to zatrzymuje go w miejscu					//
-	bool Vehicle::CheckColision(std::shared_ptr<Vehicle> vehicle){
-		bool colision = this->_colisionBox.getGlobalBounds().intersects(vehicle->getShape().getGlobalBounds());
+	bool Vehicle::checkColision(std::shared_ptr<Vehicle> vehicle){
+		bool colision = this->colisionBox_.getGlobalBounds().intersects(vehicle->getShape().getGlobalBounds());
 		if (colision){
 			return true;
 		}
 		return false;
 	}
 
-	void Vehicle::CheckIfSeenByCamera()
+	void Vehicle::checkIfSeenByCamera()
 	{
-		if (this->_currentRoad == this->_previousRoad) {
-			this->_seenByCamera = true;
+		if (this->currentRoad_ == this->previousRoad_) {
+			this->seenByCamera_ = true;
 		}
 		else {
-			this->_seenByCamera = false;
+			this->seenByCamera_ = false;
 		}
 	}
 
-	void Vehicle::CheckTurn()
+	void Vehicle::checkTurn()
 	{
-		if (_previousRoad) {
-			if (this->_currentRoad->getPosition() != this->_previousRoad->getPosition())
+		if (previousRoad_) {
+			if (this->currentRoad_->getPosition() != this->previousRoad_->getPosition())
 			{
 				std::shared_ptr<sf::RectangleShape> north = nullptr;
 				std::shared_ptr<sf::RectangleShape> south = nullptr;
 				std::shared_ptr<sf::RectangleShape> east = nullptr;
 				std::shared_ptr<sf::RectangleShape> west = nullptr;
 				std::vector<std::shared_ptr<sf::RectangleShape>> neighbouringRoads;
-				for (sf::RectangleShape road : this->_roads) {
-					if (road.getGlobalBounds() != this->_previousRoad->getGlobalBounds()) {
-						if (road.getPosition().y == this->_currentRoad->getPosition().y) {
-							if (road.getPosition().x == this->_currentRoad->getPosition().x + this->_cellSize) {
+				for (sf::RectangleShape road : this->roads_) {
+					if (road.getGlobalBounds() != this->previousRoad_->getGlobalBounds()) {
+						if (road.getPosition().y == this->currentRoad_->getPosition().y) {
+							if (road.getPosition().x == this->currentRoad_->getPosition().x + this->cellSize_) {
 								east = std::make_shared<sf::RectangleShape>(road);
 								neighbouringRoads.push_back(east);
 							}
-							else if (road.getPosition().x == this->_currentRoad->getPosition().x - this->_cellSize) {
+							else if (road.getPosition().x == this->currentRoad_->getPosition().x - this->cellSize_) {
 								west = std::make_shared<sf::RectangleShape>(road);
 								neighbouringRoads.push_back(west);
 							}
 						}
-						else if (road.getPosition().x == this->_currentRoad->getPosition().x) {
-							if (road.getPosition().y == this->_currentRoad->getPosition().y + this->_cellSize) {
+						else if (road.getPosition().x == this->currentRoad_->getPosition().x) {
+							if (road.getPosition().y == this->currentRoad_->getPosition().y + this->cellSize_) {
 								south = std::make_shared<sf::RectangleShape>(road);
 								neighbouringRoads.push_back(south);
 							}
-							else if (road.getPosition().y == this->_currentRoad->getPosition().y - this->_cellSize) {
+							else if (road.getPosition().y == this->currentRoad_->getPosition().y - this->cellSize_) {
 								north = std::make_shared<sf::RectangleShape>(road);
 								neighbouringRoads.push_back(north);
 							}
@@ -121,55 +121,55 @@ namespace ZPR {
 					}
 				}
 				switch (neighbouringRoads.size()) {
-				case 0: TurnBack(); break;
-				case 1: ChoseFromOneRoads(north, south, east, west); break;
-				case 2: ChoseFromTwoRoads(north, south, east, west); break;
-				case 3: ChoseFromThreeRoads(north, south, east, west); break;
+				case 0: this->turnBack(); break;
+				case 1: this->choseFromOneRoads(north, south, east, west); break;
+				case 2: this->choseFromTwoRoads(north, south, east, west); break;
+				case 3: this->choseFromThreeRoads(north, south, east, west); break;
 				}
-				this->_previousRoad = this->_currentRoad;
+				this->previousRoad_ = this->currentRoad_;
 			}
 		}
 	}
-	void Vehicle::StopVehicle()
+	void Vehicle::stopVehicle()
 	{
-		this->_speed = 0;
+		this->speed_ = 0;
 	}
-	void Vehicle::NoColision()
+	void Vehicle::noColision()
 	{
-		this->_speed = 3;
+		this->speed_ = 3;
 	}
-	void Vehicle::TurnBack() {
-		if (this->_direction == "North") {
-			this->_direction = "South";
+	void Vehicle::turnBack() {
+		if (this->direction_ == "North") {
+			this->direction_ = "South";
 		}
-		else if (this->_direction == "South") {
-			this->_direction = "North";
+		else if (this->direction_ == "South") {
+			this->direction_ = "North";
 		}
-		else if (this->_direction == "East") {
-			this->_direction = "West";
+		else if (this->direction_ == "East") {
+			this->direction_ = "West";
 		}
-		else if (this->_direction == "West") {
-			this->_direction = "East";
+		else if (this->direction_ == "West") {
+			this->direction_ = "East";
 		}
 	}
-	void Vehicle::ChoseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
+	void Vehicle::choseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 
 		if (north) {
-			this->UpdateDirection("North");
+			this->updateDirection("North");
 		}
 		else if (south) {
-			this->UpdateDirection("South");
+			this->updateDirection("South");
 		}
 		else if (east) {
-			this->UpdateDirection("East");
+			this->updateDirection("East");
 		}
 		else if (west) {
-			this->UpdateDirection("West");
+			this->updateDirection("West");
 		}
 	}
 
-	void Vehicle::ChoseFromTwoRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
+	void Vehicle::choseFromTwoRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		std::random_device rng;
 		std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
@@ -178,48 +178,48 @@ namespace ZPR {
 		if (north && south) {
 			switch (num)
 			{
-			case 1: this->UpdateDirection("North"); break;
-			case 2: this->UpdateDirection("South"); break;
+			case 1: this->updateDirection("North"); break;
+			case 2: this->updateDirection("South"); break;
 			}
 		}
 		else if (north && east) {
 			switch (num)
 			{
-			case 1: this->UpdateDirection("North"); break;
-			case 2: this->UpdateDirection("East"); break;
+			case 1: this->updateDirection("North"); break;
+			case 2: this->updateDirection("East"); break;
 			}
 		}
 		else if (north && west) {
 			switch (num)
 			{
-			case 1: this->UpdateDirection("North"); break;
-			case 2: this->UpdateDirection("West"); break;
+			case 1: this->updateDirection("North"); break;
+			case 2: this->updateDirection("West"); break;
 			}
 		}
 		else if (south && east) {
 			switch (num)
 			{
-			case 1: this->UpdateDirection("South"); break;
-			case 2: this->UpdateDirection("East"); break;
-			}
+			case 1: this->updateDirection("South"); break;
+			case 2: this->updateDirection("East"); break;
+            }
 		}
 		else if (south && west) {
 			switch (num)
 			{
-			case 1: this->UpdateDirection("South"); break;
-			case 2: this->UpdateDirection("West"); break;
+			case 1: this->updateDirection("South"); break;
+			case 2: this->updateDirection("West"); break;
 			}
 		}
 		else if (east && west) {
 			switch (num)
 			{
-			case 1: this->UpdateDirection("East"); break;
-			case 2: this->UpdateDirection("West"); break;
+			case 1: this->updateDirection("East"); break;
+			case 2: this->updateDirection("West"); break;
 			}
 		}
 	}
 
-	void Vehicle::ChoseFromThreeRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
+	void Vehicle::choseFromThreeRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		std::random_device rng;
 		std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
@@ -227,41 +227,41 @@ namespace ZPR {
 		int num = dist(eng);
 		if (north && south && east) {
 			switch (num) {
-			case 1: this->UpdateDirection("North"); break;
-			case 2: this->UpdateDirection("South"); break;
-			case 3: this->UpdateDirection("East"); break;
+			case 1: this->updateDirection("North"); break;
+			case 2: this->updateDirection("South"); break;
+			case 3: this->updateDirection("East"); break;
 			}
 		}
 		else if (north && south && west) {
 			switch (num) {
-			case 1: this->UpdateDirection("North"); break;
-			case 2: this->UpdateDirection("South"); break;
-			case 3: this->UpdateDirection("West"); break;
+			case 1: this->updateDirection("North"); break;
+			case 2: this->updateDirection("South"); break;
+			case 3: this->updateDirection("West"); break;
 			}
 		}
 		else if (north && east && west) {
 			switch (num) {
-			case 1: this->UpdateDirection("North"); break;
-			case 2: this->UpdateDirection("East"); break;
-			case 3: this->UpdateDirection("West"); break;
+			case 1: this->updateDirection("North"); break;
+			case 2: this->updateDirection("East"); break;
+			case 3: this->updateDirection("West"); break;
 			}
 		}
 		else if (south && east && west) {
 			switch (num) {
-			case 1: this->UpdateDirection("South"); break;
-			case 2: this->UpdateDirection("East"); break;
-			case 3: this->UpdateDirection("West"); break;
+			case 1: this->updateDirection("South"); break;
+			case 2: this->updateDirection("East"); break;
+			case 3: this->updateDirection("West"); break;
 			}
 		}
 	}
 
-	void Vehicle::UpdateDirection(std::string direction)
+	void Vehicle::updateDirection(std::string direction)
 	{
-		this->_direction = direction;
+		this->direction_ = direction;
 	}
 	void Vehicle::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	{
-		target.draw(this->_shape, states);
-		target.draw(this->_colisionBox, states);
+		target.draw(this->shape_, states);
+		target.draw(this->colisionBox_, states);
 	}
 }

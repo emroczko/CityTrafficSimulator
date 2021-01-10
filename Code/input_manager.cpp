@@ -1,23 +1,34 @@
+/**
+ * input_manager.cpp
+ * Implementation of InputManager class.
+ */
+
 #include "input_manager.hpp"
 
-namespace ZPR{
+namespace zpr{
 
-/**
- Metoda sprawdzająca czy  za pomocą myszki został kliknięty obiekt
- */
+    /**
+     * Methods responsible for checking if Sprite object was clicked.
+     * @param object - Sprite object which was/wasn't clicked.
+     * @param button - Mouse button.
+     * @param window - Application window.
+     * @return - True when sprite is clicked or false when not.
+     */
     bool InputManager::isSpriteClicked(sf::Sprite object, sf::Mouse::Button button, sf::RenderWindow &window){
         if (sf::Mouse::isButtonPressed(button)){
-            sf::IntRect tempRect(object.getPosition().x, object.getPosition().y,
+            sf::IntRect temp_rect(object.getPosition().x, object.getPosition().y,
                                  object.getGlobalBounds().width, object.getGlobalBounds().height );
-            if (tempRect.contains(sf::Mouse::getPosition(window))){
+            if (temp_rect.contains(sf::Mouse::getPosition(window))){
                 return true;
             }
         }
         return false;
     }
-/**
- Metoda pobierająca położenie myszki
- */
+    /**
+     * Method responsible for getting mouse position.
+     * @param window - Application window.
+     * @return - Position of mouse.
+     */
     sf::Vector2i GetMousePosition(sf::RenderWindow &window){
         return sf::Mouse::getPosition(window);
     }

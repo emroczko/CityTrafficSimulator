@@ -1,121 +1,141 @@
+/**
+ * main_menu_state.cpp
+ * Implementation of MainMenuState class.
+ */
+
+
 #include <sstream>
 #include <iostream>
-
 #include "main_menu_state.hpp"
-#include "Definitions.hpp"
+#include "definitions.hpp"
 #include "input_manager.hpp"
 #include "init_create_state.hpp"
 #include "load_state.hpp"
 #include "creator_state.hpp"
 
-namespace ZPR{
+namespace zpr{
 
-    MainMenuState::MainMenuState(SimulatorDataRef data) : _data(data){
+    /**
+     * Parametrized constructor of MainMenuState.
+     * @param data - Struct containing data of current application. (eg. window, assets)
+     */
+    MainMenuState::MainMenuState(SimulatorDataRef data) : data_(data){
     }
-/**
- Metoda inicjalizująca obecny stan, załadowanie czcionek, przycisków, tekstur tła
- */
-    void MainMenuState::Init(){
-        this->_data->assets.LoadTexture("Background", MENU_BACKGROUND_FILEPATH);
-        this->_background.setTexture(this->_data->assets.GetTexture("Background"));
-        this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
-        this->_data->assets.LoadTexture("Button", BUTTON_FILEPATH);
+    /**
+     * Methods which initializes all elements in the current state to display it properly.
+     */
+    void MainMenuState::init(){
+        this->data_->assets_.loadTexture("Background", MENU_BACKGROUND_FILEPATH);
+        this->background_.setTexture(this->data_->assets_.getTexture("Background"));
+        this->data_->assets_.loadFont("Text font", TEXT_FONT_FILEPATH);
+        this->data_->assets_.loadTexture("Button", BUTTON_FILEPATH);
 
-        sf::Vector2f buttonSize(150, 66);
-        int fontSize = 30;
-        
-        
-        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * buttonSize.y), buttonSize, "Create new city",
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-        
-        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 1 * buttonSize.y), buttonSize, "Load city from file",
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-        
-        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 3 * buttonSize.y), buttonSize, "Open demo project",
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-    
-        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * buttonSize.y), buttonSize, "Exit",
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-
-        
-        this->_background.scale(2.35, 2);
+        this->initializeButtons();
+        this->background_.scale(2.35, 2);
        
-}
-
-/**
- Metoda odpowiadająca za obsługę użytkownika
- */
-    void MainMenuState::HandleInput(){
+    }
+    /**
+     * Method which initializes every button in the window.
+     */
+    void MainMenuState::initializeButtons(){
+        sf::Vector2f button_size(150, 66);
+        int font_size = 30;
+        
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * button_size.y), button_size, "Create new city",
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 1 * button_size.y), button_size, "Load city from file",
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 3 * button_size.y), button_size, "Open demo project",
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+    
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * button_size.y), button_size, "Exit",
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        
+    }
+    /**
+     Method which handles user input in the current state.
+     */
+    void MainMenuState::handleInput(){
         sf::Event event;
     
-        while ( this->_data->window.pollEvent(event))
+        while ( this->data_->window_.pollEvent(event))
         {
             if(sf::Event::Closed == event.type)
             {
-                this->_data->window.close();
+                this->data_->window_.close();
             }
             
-            for (Button button : this->_buttons)
+            for (Button button : this->buttons_)
             {
-                if (button.isClicked(sf::Mouse::Left, this->_data->window))
+                if (button.isClicked(sf::Mouse::Left, this->data_->window_))
                 {
                     if (button.getText() == "Create new city")
                     {
-                        this->_data->machine.AddState(StateRef(new InitCreateState(this->_data)), false);
+                        this->data_->machine_.addState(StateRef(new InitCreateState(this->data_)), false);
                     }
                     if (button.getText() == "Load city from file")
                     {
-                        this->_data->machine.AddState(StateRef(new LoadState(this->_data)), false);
+                        this->data_->machine_.addState(StateRef(new LoadState(this->data_)), false);
                     }
                     if (button.getText() == "Open demo project")
                     {
-                        LoadDemo();
-                        
+                        this->loadDemo();
                     }
                     if (button.getText() == "Exit")
                     {
-                        this->_data->window.close();
-                    }
-                    else{
-                        
+                        this->data_->window_.close();
                     }
                 }
             }
             
         }
     }
-    void MainMenuState::Update(float dt){}
+    /**
+     * Method which updates the window.
+     * @param dt - Frequency of updating.
+     */
+    void MainMenuState::update(float dt){}
 
     /**
-    Metoda odpowiadająca za rysowanie obiektów na ekranie
-    */
-    void MainMenuState::Draw(float dt){
-        this->_data->window.clear();
-        this->_data->window.draw(this -> _background);
-        for (Button button : this->_buttons) {
-            this->_data->window.draw(button);
+     * Methods which draws elements of state on the screen.
+     * @param dt - Frequency of drawing.
+     */
+    void MainMenuState::draw(float dt){
+        this->data_->window_.clear();
+        this->data_->window_.draw(this -> background_);
+        for (Button button : this->buttons_) {
+            this->data_->window_.draw(button);
         }
-        this->_data->window.display();
+        this->data_->window_.display();
     }
-    unsigned long MainMenuState::GetButtonsAmount(){
-        return this->_buttons.size();
+    
+    /**
+     * Method which returns amount of buttons.
+     * @return - Amount of buttons.
+     */
+    unsigned long MainMenuState::getButtonsAmount(){
+        return this->buttons_.size();
     }
-
-    void MainMenuState::LoadDemo(){
-        std::string fileName = "Demo.txt";
-        std::ifstream myfile;
-        if (_fileFinder.CheckIfFileExist(fileName)){
-        myfile.open ("Demo.txt");
-        myfile >> _gridSize;
-        int howMany = 0;
-        while (myfile >> this->_tempCell)
+    /**
+     * Method which loads demo project from disk.
+     */
+    void MainMenuState::loadDemo(){
+        std::string file_name = "Demo.txt";
+        std::ifstream my_file;
+        if (fileFinder_.checkIfFileExist(file_name)){
+        my_file.open ("Demo.txt");
+        my_file >> gridSize_;
+        int how_many = 0;
+        while (my_file >> this->tempCell_)
         {
-            _cells.emplace_back(_tempCell);
-            howMany++;
+            cells_.emplace_back(tempCell_);
+            how_many++;
         }
-        myfile.close();
-        std::cout<<howMany<<std::endl;
-        this->_data->machine.AddState(StateRef(new CreatorState(this->_data, this->_gridSize, this->_cells)), false);
+        my_file.close();
+        //std::cout<<how_many<<std::endl;
+        this->data_->machine_.addState(StateRef(new CreatorState(this->data_, this->gridSize_, this->cells_)), false);
         }
         else{
             std::cout<<"Can't open demo file"<<std::endl;

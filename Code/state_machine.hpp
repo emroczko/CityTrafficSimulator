@@ -1,31 +1,39 @@
+/**
+ * state_machine.hpp
+ * Header of StateMachine class.
+ */
+
 #pragma once
 
 #include <memory>
 #include <stack>
-
 #include "state.hpp"
 
-namespace ZPR {
+namespace zpr {
+
+    /**
+     * Assigning StateRef as a name to std::unique_ptr<State> type.
+     */
     typedef std::unique_ptr<State> StateRef;
 
-/**
- Klasa odpowiadająca za obłsugę stanów programu
- */
+    /**
+     * Class responsible for handling application states.
+     */
     class StateMachine{
-        public:
-            StateMachine(){}
-            ~StateMachine(){}
-            void AddState( StateRef newState, bool isReplacing = true);
-            void RemoveState();
-            void ProcessStateChanges();
-            bool& getIsAdding();
-            StateRef &GetActiveState();
-        private:
-            std::stack<StateRef> _states;
-            StateRef _newState;
-            bool _isRemoving;
-            bool _isAdding;
-            bool _isReplacing;
+    public:
+        StateMachine(){}
+        ~StateMachine(){}
+        void addState( StateRef new_state, bool is_replacing = true);
+        void removeState();
+        void processStateChanges();
+        bool& getIsAdding();
+        StateRef &getActiveState();
+    private:
+        std::stack<StateRef> states_;
+        StateRef newState_;
+        bool isRemoving_;
+        bool isAdding_;
+        bool isReplacing_;
     };
 }
 

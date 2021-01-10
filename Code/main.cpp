@@ -5,10 +5,12 @@
 /**
 Main function which executes program.
  */
+
+
 int main()
 {
-    ZPR::Simulator simulator(SCREEN_WIDTH, SCREEN_HEIGHT, "CityTrafficSimulator");
-	return EXIT_SUCCESS;
+    zpr::Simulator simulator(SCREEN_WIDTH, SCREEN_HEIGHT, "CityTrafficSimulator");
+    return EXIT_SUCCESS;
 }
 
 

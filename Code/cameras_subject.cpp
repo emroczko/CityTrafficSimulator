@@ -1,27 +1,27 @@
 #include "cameras_subject.hpp"
 
-namespace ZPR {
+namespace zpr {
     /*Dodaje obserwatora*/
-    void CamerasSubject::add(std::shared_ptr<CamerasObserver> obs)
+    void CamerasSubject::add(std::shared_ptr<CamerasObserver> observer)
     {
-        this->_observers.push_back(obs);
+        this->observers_.push_back(observer);
     }
-    void CamerasSubject::NotifyIsSimulating()
+    void CamerasSubject::notifyIsSimulating()
     {
-        for (std::shared_ptr<CamerasObserver> obs : this->_observers) {
-            obs->UpdateIsSimulating();
+        for (std::shared_ptr<CamerasObserver> observer : this->observers_) {
+            observer->updateIsSimulating();
         }
     }
-    void CamerasSubject::NotifyIsAddingCamera(int whichCamera)
+    void CamerasSubject::notifyIsAddingCamera(int which_camera)
     {
-        for (std::shared_ptr<CamerasObserver> obs : this->_observers) {
-            obs->UpdateIsAddingCamera(whichCamera);
+        for (std::shared_ptr<CamerasObserver> observer : this->observers_) {
+            observer->updateIsAddingCamera(which_camera);
         }
     }
-    void CamerasSubject::NotifyIsDeletingCamera(int whichCamera)
+    void CamerasSubject::notifyIsDeletingCamera(int which_camera)
     {
-        for (std::shared_ptr<CamerasObserver> obs : this->_observers) {
-            obs->UpdateIsDeletingCamera(whichCamera);
+        for (std::shared_ptr<CamerasObserver> observer : this->observers_) {
+            observer->updateIsDeletingCamera(which_camera);
         }
     }
    

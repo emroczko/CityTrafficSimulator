@@ -1,3 +1,8 @@
+/**
+ * simulator.hpp
+ * Header of Simulator class and SimulatorData structure.
+ */
+
 #pragma once
 
 #include <memory>
@@ -8,31 +13,33 @@
 #include "asset_manager.hpp"
 #include "input_manager.hpp"
 
-namespace ZPR{
+namespace zpr{
 
-/**
- Struktura zawierająca zmienne odpowiadające za stan programu
- */
+    /**
+     * Structure containing data responsible for an application state.
+     */
     struct SimulatorData {
-        StateMachine machine;
-        sf::RenderWindow window;
-        AssetManager assets;
-        InputManager input;
+        StateMachine machine_;
+        sf::RenderWindow window_;
+        AssetManager assets_;
+        InputManager input_;
     };
-
+    /**
+     * Assigning SimulatorDataRef as a name to std::shared_ptr<SimulatorData> type.
+     */
     typedef std::shared_ptr<SimulatorData> SimulatorDataRef;
 
-/**
- Klasa odpowiadająca za uruchomienie okna programu oraz pętle programu
- */
+    /**
+     * Class responsible for launching the window and application loop.
+     */
     class Simulator{
     public:
         Simulator(int width, int height, std::string title);
     private:
-        const float dt = 1.0f / 60.0f;
-        sf::Clock _clock;
-        SimulatorDataRef _data = std::make_shared<SimulatorData>();
-        void Run();
+        const float dt_ = 1.0f / 60.0f;
+        sf::Clock clock_;
+        SimulatorDataRef data_ = std::make_shared<SimulatorData>();
+        void run();
     };
  
 }

@@ -1,19 +1,24 @@
+/**
+ * state.hpp
+ * Header of virtual class State.
+ */
+
 #pragma once
 
-namespace ZPR
+namespace zpr
 {
-/**
- Wirtualna klasa, dziedziczą po niej klasy odpowiadające za poszczególne stany gry
- */
+    /**
+     * Virtual class, from which every state of application inherits.
+     */
     class State{
     public:
         virtual ~State() = default;
-        virtual void Init() = 0;
-        virtual void HandleInput() = 0;
-        virtual void Update(float dt) = 0;
-        virtual void Draw(float dt) = 0;
-        virtual void Pause()  { }
-        virtual void Resume()  { }
+        virtual void init() = 0;
+        virtual void handleInput() = 0;
+        virtual void update(float dt) = 0;
+        virtual void draw(float dt) = 0;
+        virtual void pause()  { }
+        virtual void resume()  { }
     };
 
 }

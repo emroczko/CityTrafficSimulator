@@ -1,119 +1,121 @@
 #include "creator_handler.hpp"
 
-namespace ZPR {
-	CreatorHandler::CreatorHandler(int gridSize): _gridSize(gridSize), _row(-1), _col(-1), _isDrawingRoad(false), _isDeletingRoad(false), _isAddingCameras(false), _enterGridHeight(2) {}
-    CreatorHandler::CreatorHandler(int gridSize, std::vector<Cell> cells): _gridSize(gridSize), _cells(cells), _row(-1), _col(-1), _isDrawingRoad(false), _isDeletingRoad(false), _isAddingCameras(false), _enterGridHeight(2) {}
+namespace zpr {
+	CreatorHandler::CreatorHandler(int gridSize_): gridSize_(gridSize_), row_(-1), col_(-1), isDrawingRoad_(false), isDeletingRoad_(false), isAddingCameras_(false), enterGridHeight_(2) {}
+
+    
+    CreatorHandler::CreatorHandler(int grid_size, std::vector<Cell> cells): gridSize_(grid_size), cells_(cells), row_(-1), col_(-1), isDrawingRoad_(false), isDeletingRoad_(false), isAddingCameras_(false), enterGridHeight_(2) {}
 
 	void CreatorHandler::init()
 	{
-        if (_cells.empty())
-            this->GenerateBoard();
+        if (cells_.empty())
+            this->generateBoard();
         
         else
-            this->ClearRoads();
+            this->clearRoads();
         
-		this->NotifyCells(_grid->_cells);
-		this->NotifyIsDrawingRoad(this->_isDrawingRoad);
-        this->NotifyIsDeletingRoad(this->_isDeletingRoad);
+		this->notifyCells(grid_->cells_);
+		this->notifyIsDrawingRoad(this->isDrawingRoad_);
+        this->notifyIsDeletingRoad(this->isDeletingRoad_);
 	}
 	/*Generuje siatkê zawierajac¹ komórki o wybranej wielkoœci*/
-	void CreatorHandler::GenerateBoard()
+	void CreatorHandler::generateBoard()
 	{
 		std::vector<Cell> cells;
-		for (int i = 0; i < this->_gridSize * this->_gridSize; i++)
+		for (int i = 0; i < this->gridSize_ * this->gridSize_; i++)
 		{
-			cells.push_back(Cell(i / _gridSize, i % _gridSize));
+			cells.push_back(Cell(i / gridSize_, i % gridSize_));
 		}
-		cells.at(4).isStartingCell = true;
-        this->_grid = std::make_unique<Grid>(cells, _gridSize);
+		cells.at(4).isStartingCell_ = true;
+        this->grid_ = std::make_unique<Grid>(cells, gridSize_);
 	}
-    void CreatorHandler::ClearRoads(){
-        for (Cell& cell: _cells){
-            cell._roadDrawn = false;
+    void CreatorHandler::clearRoads(){
+        for (Cell& cell: cells_){
+            cell.roadDrawn_ = false;
         }
-        this->_grid = std::make_unique<Grid>(_cells, _gridSize);
+        this->grid_ = std::make_unique<Grid>(cells_, gridSize_);
     }
 	/*Ustawia tryb rysowania drogi na w³¹czony lub wy³¹czony*/
-	void CreatorHandler::UpdateIsDrawingRoad()
+	void CreatorHandler::updateIsDrawingRoad()
 	{
-        this->_isDrawingRoad = !this->_isDrawingRoad;
-        this->_isDeletingRoad = false;
-        this->_isAddingCameras = false;
-		this->NotifyIsDrawingRoad(this->_isDrawingRoad);
+        this->isDrawingRoad_ = !this->isDrawingRoad_;
+        this->isDeletingRoad_ = false;
+        this->isAddingCameras_ = false;
+		this->notifyIsDrawingRoad(this->isDrawingRoad_);
 	}
 	/*Ustawia tryb usuwania drogi na w³¹czony lub wy³¹czony w zale¿noœci od obecnego stanu*/
-    void CreatorHandler::UpdateIsDeletingRoad()
+    void CreatorHandler::updateIsDeletingRoad()
     {
-        this->_isDeletingRoad = !this->_isDeletingRoad;
-        this->_isDrawingRoad = false;
-        this->_isAddingCameras = false;
-        this->NotifyIsDeletingRoad(this->_isDeletingRoad);
+        this->isDeletingRoad_ = !this->isDeletingRoad_;
+        this->isDrawingRoad_ = false;
+        this->isAddingCameras_ = false;
+        this->notifyIsDeletingRoad(this->isDeletingRoad_);
     }
-    void CreatorHandler::UpdateIsAddingCamera(int whichCamera)
+    void CreatorHandler::updateIsAddingCamera(int whichCamera)
     {
-        this->_whichCamera = whichCamera;
-        this->_isAddingCameras = !this->_isAddingCameras;
-        this->_isDeletingRoad = false;
-        this->_isDrawingRoad = false;
-        this->NotifyIsAddingCamera(this->_isAddingCameras, this->_whichCamera, this->_row, this->_col);
+        this->whichCamera_ = whichCamera;
+        this->isAddingCameras_ = !this->isAddingCameras_;
+        this->isDeletingRoad_ = false;
+        this->isDrawingRoad_ = false;
+        this->notifyIsAddingCamera(this->isAddingCameras_, this->whichCamera_, this->row_, this->col_);
     }
-    void CreatorHandler::UpdateIsDeletingCamera(int whichCamera)
+    void CreatorHandler::updateIsDeletingCamera(int whichCamera)
     {
         int row, col;
-        //this->_isAddingCameras = false;
-        this->_whichCamera = whichCamera;
-        this->NotifyIsDeletingCamera(this->_whichCamera);
-        for (Cell& cell : _grid->_cells){
-            if (cell._containsCamera == true && cell._whichCamera == whichCamera){
-                row = cell.GetPosition().x;
-                col = cell.GetPosition().y;
-                this->_grid->GetCell(_row, _col)._containsCamera = false;
-                this->_grid->GetCell(_row, _col)._whichCamera = 0;
-                this->_grid->GetCell(_row, _col)._cameraToDelete = false;
-                this->NotifyCells(_grid->_cells);
-                this->NotifySelectedCell(sf::Vector2i(row, col));
+        //this->isAddingCameras_ = false;
+        this->whichCamera_ = whichCamera;
+        this->notifyIsDeletingCamera(this->whichCamera_);
+        for (Cell& cell : grid_->cells_){
+            if (cell.containsCamera_ == true && cell.whichCamera_ == whichCamera){
+                row = cell.getPosition().x;
+                col = cell.getPosition().y;
+                this->grid_->getCell(row_, col_).containsCamera_ = false;
+                this->grid_->getCell(row_, col_).whichCamera_ = 0;
+                this->grid_->getCell(row_, col_).cameraToDelete_ = false;
+                this->notifyCells(grid_->cells_);
+                this->notifySelectedCell(sf::Vector2i(row, col));
             }
         }
         
         
         
     }
-    void CreatorHandler::SaveToFile(){
-        this->NotifySave();
+    void CreatorHandler::saveToFile(){
+        this->notifySave();
     }
 	/*Ustawia tryb symulacji*/
-    void CreatorHandler::UpdateIsSimulating()
+    void CreatorHandler::updateIsSimulating()
     {
-        this->_isDeletingRoad = false;
-        this->_isDrawingRoad = false;
-		this->NotifyCells(_grid->_cells);
+        this->isDeletingRoad_ = false;
+        this->isDrawingRoad_ = false;
+		this->notifyCells(grid_->cells_);
     }
 	/*Zajmuje sie obs³ug¹ zdarzeñ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie dróg)*/
-	void CreatorHandler::HandleInput(sf::Vector2i possibleSelectedCell)
+	void CreatorHandler::handleInput(sf::Vector2i possibleSelectedCell)
 	{
 		if (possibleSelectedCell.x == -1 || possibleSelectedCell.y ==-1) { return; }
-		else if (possibleSelectedCell.x > this->_gridSize-1 || possibleSelectedCell.y > this->_gridSize-1) { return; }
-		this->_row = possibleSelectedCell.y;
-		this->_col = possibleSelectedCell.x;
-		if (_isDrawingRoad) {
-            this->_grid->GetCell(_row, _col)._toDelete = false;
-			this->_grid->GetCell(_row, _col)._containsRoad = true;
-            this->NotifyCells(_grid->_cells);
-            this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
+		else if (possibleSelectedCell.x > this->gridSize_-1 || possibleSelectedCell.y > this->gridSize_-1) { return; }
+		this->row_ = possibleSelectedCell.y;
+		this->col_ = possibleSelectedCell.x;
+		if (isDrawingRoad_) {
+            this->grid_->getCell(row_, col_).toDelete_ = false;
+			this->grid_->getCell(row_, col_).containsRoad_ = true;
+            this->notifyCells(grid_->cells_);
+            this->notifySelectedCell(sf::Vector2i(this->row_, this->col_));
 		}
-        if (_isDeletingRoad) {
-            this->_grid->GetCell(_row, _col)._containsRoad = false;
-            this->_grid->GetCell(_row, _col)._toDelete = true;
-            this->NotifyCells(_grid->_cells);
-            this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
+        if (isDeletingRoad_) {
+            this->grid_->getCell(row_, col_).containsRoad_ = false;
+            this->grid_->getCell(row_, col_).toDelete_ = true;
+            this->notifyCells(grid_->cells_);
+            this->notifySelectedCell(sf::Vector2i(this->row_, this->col_));
         }
-        if (_isAddingCameras && this->_grid->GetCell(_row, _col)._toDelete == false && this->_grid->GetCell(_row, _col)._containsRoad == true){
-            this->_grid->GetCell(_row, _col)._containsCamera = true;
-            this->_grid->GetCell(_row, _col)._whichCamera = this->_whichCamera;
-            this->NotifyCells(_grid->_cells);
-            this->NotifySelectedCell(sf::Vector2i(this->_row, this->_col));
-            this->_isAddingCameras = false;
-            this->NotifyIsAddingCamera(_isAddingCameras, _whichCamera, this->_row, this->_col);
+        if (isAddingCameras_ && this->grid_->getCell(row_, col_).toDelete_ == false && this->grid_->getCell(row_, col_).containsRoad_ == true){
+            this->grid_->getCell(row_, col_).containsCamera_ = true;
+            this->grid_->getCell(row_, col_).whichCamera_ = this->whichCamera_;
+            this->notifyCells(grid_->cells_);
+            this->notifySelectedCell(sf::Vector2i(this->row_, this->col_));
+            this->isAddingCameras_ = false;
+            this->notifyIsAddingCamera(isAddingCameras_, whichCamera_, this->row_, this->col_);
         }
         
 		

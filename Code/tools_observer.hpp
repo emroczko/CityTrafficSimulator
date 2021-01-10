@@ -1,12 +1,12 @@
 #pragma once
 
-namespace ZPR {
+namespace zpr {
     class ToolsObserver
     {
     public:
-        virtual void UpdateIsDrawingRoad() = 0;
-        virtual void UpdateIsDeletingRoad() = 0;
-        virtual void SaveToFile() = 0;
+        virtual void updateIsDrawingRoad() = 0;
+        virtual void updateIsDeletingRoad() = 0;
+        virtual void saveToFile() = 0;
         virtual ~ToolsObserver() {}
     };
 }

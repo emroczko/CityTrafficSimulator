@@ -1,3 +1,7 @@
+/**
+ * keys_enum.hpp
+ * Enum with directions of keyboard arrows
+ */
 #pragma once
 
 

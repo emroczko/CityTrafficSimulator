@@ -1,3 +1,8 @@
+/**
+ * load_state.cpp
+ * Implementation of LoadState class.
+ */
+
 #include "load_state.hpp"
 #include "definitions.hpp"
 #include "creator_state.hpp"
@@ -6,116 +11,148 @@
 #include <memory>
 #include <string>
 
-namespace ZPR {
-    LoadState::LoadState(SimulatorDataRef data) : _data(data){}
+namespace zpr {
+
+    /**
+     * LoadState parametrized constructor.
+     * @param data - Struct containing data of current application. (eg. window, assets)
+     */
+    LoadState::LoadState(SimulatorDataRef data) : data_(data){}
 
     
-    /*Metoda inicjujπca wszystkie elementy potrzebne do poprawnego dzia≥ania obiektu*/
-    void LoadState::Init() {
-        this->_data->assets.LoadTexture("Background", MENU_BACKGROUND_FILEPATH);
-        this->_data->assets.LoadTexture("Button", BUTTON_FILEPATH);
-        this->_data->assets.LoadFont("Text font", TEXT_FONT_FILEPATH);
+    
+    /**
+     * Methods which initializes all elements in the current state to display it properly.
+     */
+    void LoadState::init() {
+        this->data_->assets_.loadTexture("Background", MENU_BACKGROUND_FILEPATH);
+        this->data_->assets_.loadTexture("Button", BUTTON_FILEPATH);
+        this->data_->assets_.loadFont("Text font", TEXT_FONT_FILEPATH);
 
-        this->CheckSlots();
-        sf::Vector2f buttonSize(150, 66);
-        int fontSize = 30;
-        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 5 * buttonSize.y), buttonSize, _slots[0],
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+        this->checkSlots();
+        this->initializeButtons();
         
-        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 3 * buttonSize.y), buttonSize, _slots[1],
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
+        this->background_.setTexture(this->data_->assets_.getTexture("Background"));
+        this->background_.scale(2.35, 2);
         
-        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * buttonSize.y), buttonSize, _slots[2],
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 1 * buttonSize.y), buttonSize, _slots[3],
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-        
-        this->_buttons.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * buttonSize.y), buttonSize, "Back",
-            this->_data->assets.GetFont("Text font"), fontSize, sf::Color::White, this->_data->assets.GetTexture("Button")));
-        
-        
-
-        this->_background.setTexture(this->_data->assets.GetTexture("Background"));
-        this->_background.scale(2.35, 2);
-        
-        this->_data->window.setView(sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_WIDTH), (float)(SCREEN_HEIGHT))));
+        this->data_->window_.setView(sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_WIDTH), (float)(SCREEN_HEIGHT))));
     }
-
-    void LoadState::CheckSlots(){
+    /**
+     * Method which initializes every button in the window.
+     */
+    void LoadState::initializeButtons(){
+        sf::Vector2f button_size(150, 66);
+        int font_size = 30;
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 5 * button_size.y), button_size, slots_[0],
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 3 * button_size.y), button_size, slots_[1],
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * button_size.y), button_size, slots_[2],
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 1 * button_size.y), button_size, slots_[3],
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * button_size.y), button_size, "Back",
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+    }
+    /**
+     * Method whick checks if there is any data on the slot by searching previous saves and passing action to FileFinder class.
+     */
+    void LoadState::checkSlots(){
         for (int i = 0; i < 4; i++){
-            _slots[i] = _fileFinder.CheckIfFileExist("Map"+std::to_string(i+1)+".txt", i+1);
+            slots_[i] = fileFinder_.checkIfFileExist("Map"+std::to_string(i+1)+".txt", i+1);
         }
     }
-    /*Obs≥uga zdarzeÒ w oknie*/
-    void LoadState::HandleInput() {
+    
+    /**
+     Method which handles user input in the current state.
+     */
+    void LoadState::handleInput() {
         sf::Event event;
-        while (this->_data->window.pollEvent(event))
+        while (this->data_->window_.pollEvent(event))
         {
             if (sf::Event::Closed == event.type)
             {
-                this->_data->window.close();
+                this->data_->window_.close();
             }
-            for (Button button : this->_buttons)
+            for (Button button : this->buttons_)
             {
-                if (button.isClicked(sf::Mouse::Left, this->_data->window))
+                if (button.isClicked(sf::Mouse::Left, this->data_->window_))
                 {
                     if (button.getText() == "Back")
                     {
-                        this->_data->machine.AddState(StateRef(new MainMenuState(this->_data)), false);
+                        this->data_->machine_.addState(StateRef(new MainMenuState(this->data_)), false);
                     }
-                    if (button.getText() == _slots[0])
+                    if (button.getText() == slots_[0])
                     {
-                        LoadHandler(1);
+                        loadHandler(1);
                     }
-                    if (button.getText() == _slots[1])
+                    if (button.getText() == slots_[1])
                     {
-                        LoadHandler(2);
+                        loadHandler(2);
                     }
-                    if (button.getText() == _slots[2])
+                    if (button.getText() == slots_[2])
                     {
-                        LoadHandler(3);
+                        loadHandler(3);
                     }
-                    if (button.getText() == _slots[3])
+                    if (button.getText() == slots_[3])
                     {
-                        LoadHandler(4);
+                        loadHandler(4);
                     }
                 }
             }
         }
     }
-    void LoadState::LoadHandler(int number){
-        if (_slots[number-1] == "Slot 1"){
+    /**
+     * Methods which handles user input on slots button.
+     * @param number - Number of a slot.
+     */
+    void LoadState::loadHandler(int number){
+        if (slots_[number-1] == "Slot 1"){
             std::cout<<"File doesnt exist!"<<std::endl;
         }
         else{
-            LoadFromFile(number);
+            loadFromFile(number);
         }
     }
-    void LoadState::LoadFromFile(int number){
-        std::ifstream myfile;
-        myfile.open (_slots[number-1]);
-        myfile >> _gridSize;
-        int howMany = 0;
-        while (myfile >> _tempCell)
+    /**
+     * Method which loads data from previous saved files.
+     * @param number - Number of a slot.
+     */
+    void LoadState::loadFromFile(int number){
+        std::ifstream my_file;
+        my_file.open (slots_[number-1]);
+        my_file >> gridSize_;
+        int how_many = 0;
+        while (my_file >> tempCell_)
         {
-            _cells.emplace_back(_tempCell);
-            howMany++;
+            cells_.emplace_back(tempCell_);
+            how_many++;
         }
-        myfile.close();
-        std::cout<<howMany<<std::endl;
-        this->_data->machine.AddState(StateRef(new CreatorState(this->_data, this->_gridSize, this->_cells)), false);
+        my_file.close();
+        std::cout<<how_many<<std::endl;
+        this->data_->machine_.addState(StateRef(new CreatorState(this->data_, this->gridSize_, this->cells_)), false);
     }
-    void LoadState::Update(float dt) {
+    /**
+     * Method which updates the window.
+     * @param dt - Frequency of updating. 
+     */
+    void LoadState::update(float dt) {
 
     }
-    /*Rysuje elementy okna*/
-    void LoadState::Draw(float dt) {
-        this->_data->window.clear(sf::Color::Black);
-        this->_data->window.draw(this->_background);
-        for (Button button : this->_buttons) {
-            this->_data->window.draw(button);
+    /**
+     * Methods which draws elements of state on the screen.
+     * @param dt - Frequency of drawing.
+     */
+    void LoadState::draw(float dt) {
+        this->data_->window_.clear(sf::Color::Black);
+        this->data_->window_.draw(this->background_);
+        for (Button button : this->buttons_) {
+            this->data_->window_.draw(button);
         }
-        this->_data->window.display();
+        this->data_->window_.display();
     }
 
     

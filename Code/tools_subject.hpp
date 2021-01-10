@@ -3,17 +3,17 @@
 #include <vector>
 #include <memory>
 
-namespace ZPR {
+namespace zpr {
 	class ToolsSubject
 	{
 	public:
-		void add(std::shared_ptr<ToolsObserver> obs);
-		void NotifyIsDrawingRoad();
-        void NotifyIsDeletingRoad();
-        void NotifySave();
+		void add(std::shared_ptr<ToolsObserver> observer);
+		void notifyIsDrawingRoad();
+        void notifyIsDeletingRoad();
+        void notifySave();
 		virtual ~ToolsSubject() {};
 	private:
-		std::vector<std::shared_ptr<ToolsObserver>> _observers;
+		std::vector<std::shared_ptr<ToolsObserver>> observers_;
 	};
 }
 
