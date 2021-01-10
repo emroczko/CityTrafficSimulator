@@ -198,6 +198,7 @@ namespace zpr {
 	void MapView::drawVehicles()
 	{
 		for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
+            std::cout << vehicle->getShape().getGlobalBounds().width << std::endl;
 			this->data_->window_.draw(*vehicle);
 		}
 	}
@@ -497,7 +498,6 @@ namespace zpr {
 		for (sf::RectangleShape road : roads_) {
 			if (road.getPosition().x - this->cellSize_ / 2 == position.x && road.getPosition().y - this->cellSize_ / 2 == position.y){
 				roads_.erase(roads_.begin() + i);
-				//road.setTexture(NULL);
 			}
 			i++;
 		}
@@ -739,7 +739,6 @@ namespace zpr {
         }
         else{
             this->vehicles_ = vehicles;
-            std::cout << vehicles.size()<<std::endl;
         }
 	}
 
