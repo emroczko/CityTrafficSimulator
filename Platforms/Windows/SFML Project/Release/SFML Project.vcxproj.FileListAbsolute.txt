@@ -1,1 +1,0 @@
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\SFML Project\Release\SFML Project.vcxproj.CopyComplete

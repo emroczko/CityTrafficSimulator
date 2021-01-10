@@ -39,7 +39,7 @@ namespace zpr {
 	private:
 		void updatePosition();
 		void updateColisionBoxPosition();
-		void checkIfSeenByCamera();
+		//void checkIfSeenByCamera();
 		void turnBack();
 		void choseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
 		void choseFromTwoRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);

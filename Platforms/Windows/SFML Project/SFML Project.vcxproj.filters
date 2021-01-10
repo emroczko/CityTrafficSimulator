@@ -117,9 +117,6 @@
     <ClInclude Include="..\..\..\Code\simulation_subject.hpp">
       <Filter>Header Files\ZPR namespace\Subjects</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\slots_enum.hpp">
-      <Filter>Header Files\ZPR namespace\Macros</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Code\splash_state.hpp">
       <Filter>Header Files\ZPR namespace\States</Filter>
     </ClInclude>
