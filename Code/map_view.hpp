@@ -33,7 +33,7 @@ namespace zpr {
         void updateIsSimulating(bool is_simulating);
         void updateIsAddingCamera(bool is_adding_camera, int which_camera);
         void updateCameraAdded(int which_camera, int row, int col);
-        void UpdateIsAddingCamera(int which_camera);
+        //void UpdateIsAddingCamera(int which_camera);
         void updateIsDeletingCamera(int which_camera);
         void updateCarsLabel(int which_label){}
         void updateTrucksLabel(int which_label){}
@@ -51,7 +51,7 @@ namespace zpr {
         std::vector<Cell> getCells();
         void zoomViewAt(float zoom);
         friend std::ofstream& operator<< (std::ofstream& ,const MapView&);
-        friend std::ostream& operator<< (std::ostream& ,const MapView&);
+        //friend std::ostream& operator<< (std::ostream& ,const MapView&);
 	private:
         
         

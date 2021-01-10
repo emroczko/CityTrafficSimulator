@@ -44,7 +44,6 @@
     <ClInclude Include="..\..\..\Code\simulation_observer.hpp" />
     <ClInclude Include="..\..\..\Code\simulation_subject.hpp" />
     <ClInclude Include="..\..\..\Code\simulator.hpp" />
-    <ClInclude Include="..\..\..\Code\slots_enum.hpp" />
     <ClInclude Include="..\..\..\Code\splash_state.hpp" />
     <ClInclude Include="..\..\..\Code\state.hpp" />
     <ClInclude Include="..\..\..\Code\state_machine.hpp" />

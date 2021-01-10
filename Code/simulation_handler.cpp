@@ -57,9 +57,9 @@ namespace zpr {
         }
         else{
             this->timer_.stopTimer();
+            this->vehicles_.clear();
             this->roads_.clear();
             this->cameras_.clear();
-            this->vehicles_.clear();
             this->notifyVehicles(this->vehicles_);
         }
         this->notifyIsSimulating(this->isSimulating_);
