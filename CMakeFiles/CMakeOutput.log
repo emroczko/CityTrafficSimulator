@@ -1,0 +1,135 @@
+The system is: Windows - 10.0.19042 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
+Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+Kompilacja rozpoczęła się 2021-01-10 04:13:29.
+Projekt "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdC\CompilerIdC.vcxproj" w węźle 1 (domyślne elementy docelowe).
+PrepareForBuild:
+  Tworzenie katalogu "Debug\".
+  Tworzenie katalogu "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Trwa tworzenie "Debug\CompilerIdC.tlog\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+VcpkgTripletSelection:
+  Using triplet "x86-windows" from "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\"
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX64\x86\CL.exe /c /I"H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib" /LIBPATH:"H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdC\CompilerIdC.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdC\CompilerIdC.exe" "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
+  Polecenie "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdC\CompilerIdC.exe" "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"" zostało zakończone przez kod 9009.
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdC\CompilerIdC.exe" "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x86\cl.exe
+FinalizeBuildStatus:
+  Usuwanie pliku "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Modyfikowanie "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Kompilowanie projektu "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdC\CompilerIdC.vcxproj" wykonane (domyślne elementy docelowe).
+
+Kompilacja powiodła się.
+    Ostrzeżenia: 0
+    Liczba błędów: 0
+
+Czas, który upłynął: 00:00:00.95
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/3.19.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
+Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+Kompilacja rozpoczęła się 2021-01-10 04:13:30.
+Projekt "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdCXX\CompilerIdCXX.vcxproj" w węźle 1 (domyślne elementy docelowe).
+PrepareForBuild:
+  Tworzenie katalogu "Debug\".
+  Tworzenie katalogu "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Trwa tworzenie "Debug\CompilerIdCXX.tlog\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+VcpkgTripletSelection:
+  Using triplet "x86-windows" from "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\"
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX64\x86\CL.exe /c /I"H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib" /LIBPATH:"H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdCXX\CompilerIdCXX.exe
+AppLocalFromInstalled:
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdCXX\CompilerIdCXX.exe" "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\bin" "Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" "Debug\vcpkg.applocal.log"
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
+  Polecenie "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdCXX\CompilerIdCXX.exe" "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\bin" "Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" "Debug\vcpkg.applocal.log"" zostało zakończone przez kod 9009.
+  "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdCXX\CompilerIdCXX.exe" "H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\debug\bin" "Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" "Debug\vcpkg.applocal.log"
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x86\cl.exe
+FinalizeBuildStatus:
+  Usuwanie pliku "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Modyfikowanie "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Kompilowanie projektu "H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\3.19.2\CompilerIdCXX\CompilerIdCXX.vcxproj" wykonane (domyślne elementy docelowe).
+
+Kompilacja powiodła się.
+    Ostrzeżenia: 0
+    Liczba błędów: 0
+
+Czas, który upłynął: 00:00:00.85
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/3.19.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_a11e4.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
+Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+  Microsoft (R) Kompilator optymalizujący C/C++, wersja 19.28.29335 dla architektury x86
+  Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
+  CMakeCCompilerABI.c
+  cl /c /I"H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a11e4.dir\Debug\\" /Fd"cmTC_a11e4.dir\Debug\vc142.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCCompilerABI.c"
+  cmTC_a11e4.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeTmp\Debug\cmTC_a11e4.exe
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_7b70e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine 16.8.2+25e4d540b dla platformy .NET Framework
+Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeżone.
+
+  Microsoft (R) Kompilator optymalizujący C/C++, wersja 19.28.29335 dla architektury x86
+  Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
+  CMakeCXXCompilerABI.cpp
+  cl /c /I"H:\Programowanie\C++\vcpkg\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x86-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7b70e.dir\Debug\\" /Fd"cmTC_7b70e.dir\Debug\vc142.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_7b70e.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeTmp\Debug\cmTC_7b70e.exe
+
+
+

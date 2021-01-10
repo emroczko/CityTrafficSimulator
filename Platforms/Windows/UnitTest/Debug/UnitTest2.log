@@ -1,3 +1,7 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (UnitTest2.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (Project1.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
   MapViewTest.cpp
-  UnitTest2.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\UnitTest.exe
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Tests\BoostTest\MapViewTest.cpp(3,10): fatal error C1083: Nie można otworzyć pliku dołącz: '../../MapView.h': No such file or directory
+  VehicleTest.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Tests\BoostTest\VehicleTest.cpp(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: '../../Vehicles/vehicle.h': No such file or directory
+  Generowanie kodu...
