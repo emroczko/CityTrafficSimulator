@@ -127,7 +127,7 @@ namespace zpr {
     void SimulationHandler::moveVehicles()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
-            vehicle->checkOnWhichCell(this->calculatePrefix());
+            vehicle->checkOnWhichCell();
             this->vehilcesColision();
             vehicle->move();
             vehicle->checkTurn();

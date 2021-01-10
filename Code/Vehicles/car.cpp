@@ -8,13 +8,13 @@
 
 namespace zpr {
 
-/**
- * Parametrized constructor of Car class.
- * @param x -
- * @param y -
- * @param cell_size -
- * @param roads -
- */
+    /**
+     * Parametrized constructor of Car class.
+     * @param x - Position x of the car.
+     * @param y - Position y of the car.
+     * @param cell_size - Size of a cell.
+     * @param roads - Vector of available roads.
+     */
 	Car::Car(int x, int y, int cell_size, std::vector<sf::RectangleShape> roads) {
 		this->x_ = x;
 		this->y_ = y;

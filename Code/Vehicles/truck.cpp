@@ -1,6 +1,19 @@
+/**
+ * truck.cpp
+ * Implementation of Truck class.
+ */
+
 #include "truck.hpp"
 
 namespace zpr {
+
+    /**
+     * Parametrized constructor of Truck class.
+     * @param x - Position x of the truck.
+     * @param y - Position y of the truck.
+     * @param cell_size - Size of a cell.
+     * @param roads - Vector of available roads.
+     */
 	Truck::Truck(int x, int y, int cell_size, std::vector<sf::RectangleShape> roads) {
 		this->x_ = x;
 		this->y_ = y;

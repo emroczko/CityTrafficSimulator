@@ -1,3 +1,9 @@
+/**
+ * save_state.hpp
+ * Header of SaveState class.
+ */
+
+
 #pragma once
 #include "SFML/Graphics.hpp"
 #include <iostream>
@@ -10,6 +16,9 @@
 
 namespace zpr {
 
+    /**
+     *  Class responsible for saving to file state. In this state we can save our map to file.
+     */
     class SaveState : public State{
     public:
         SaveState(SimulatorDataRef data, std::vector<Cell> cells, int grid_size);
@@ -21,7 +30,7 @@ namespace zpr {
         
     private:
         void checkSlots();
-        void buttonsInit();
+        void buttonsInitializer();
         void saveToFile(int number);
         SimulatorDataRef data_;
         sf::Sprite background_;

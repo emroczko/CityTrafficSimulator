@@ -1,4 +1,7 @@
-
+/**
+ * vehicle_factory.hpp
+ * Header of VehicleFactory class.
+ */
 #pragma once
 #include "vehicle.hpp"
 #include <memory>
@@ -6,6 +9,10 @@
 #include "truck.hpp"
 
 namespace zpr {
+
+    /**
+     * Class responsible for being a vehicle factory. It creates cars and trucks.
+     */
 	class VehicleFactory
 	{
 	public:

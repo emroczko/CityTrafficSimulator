@@ -1,3 +1,8 @@
+/**
+ * save_state.cpp
+ * Implementation of SaveState class.
+ */
+
 #include "save_state.hpp"
 #include "definitions.hpp"
 #include "creator_state.hpp"
@@ -7,19 +12,31 @@
 
 
 namespace zpr {
+
+    /**
+     * Parametrized constructor of SaveState class.
+     * @param data - Struct containing data of current application. (eg. window, assets)
+     * @param cells - Vector of cells containing roads.
+     * @param grid_size - Size of the grid to save.
+     */
     SaveState::SaveState(SimulatorDataRef data, std::vector<Cell> cells, int grid_size) : data_(data), cells_(cells), gridsize_(grid_size){}
-    /*Metoda inicjujπca wszystkie elementy potrzebne do poprawnego dzia≥ania obiektu*/
+
+    /**
+     * Methods which initializes all elements in the current state to display it properly.
+     */
     void SaveState::init() {
         this->data_->assets_.loadTexture("Background", MENU_BACKGROUND_FILEPATH);
         this->data_->assets_.loadTexture("Button", BUTTON_FILEPATH);
         this->data_->assets_.loadFont("Text font", TEXT_FONT_FILEPATH);
-        this->buttonsInit();
+        this->buttonsInitializer();
         this->background_.setTexture(this->data_->assets_.getTexture("Background"));
         this->background_.scale(2.35, 2);
         this->data_->window_.setView(sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_WIDTH), (float)(SCREEN_HEIGHT))));
     }
     
-    /*Obs≥uga zdarzeÒ w oknie*/
+    /**
+     Method which handles user input in the current state.
+     */
     void SaveState::handleInput() {
         sf::Event event;
         while (this->data_->window_.pollEvent(event))
@@ -57,31 +74,42 @@ namespace zpr {
         }
     }
                                                       
-                                                      
-    void SaveState::buttonsInit(){
+    /**
+     * Method which initializes every button in the window.
+     */
+    void SaveState::buttonsInitializer(){
         this->checkSlots();
-        sf::Vector2f buttonSize(150, 66);
-        int fontSize = 30;
-        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 5 * buttonSize.y), buttonSize, slots_[0],
-            this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        sf::Vector2f buttons_size(150, 66);
+        int font_size = 30;
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 5 * buttons_size.y), buttons_size, slots_[0],
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
         
-        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 3 * buttonSize.y), buttonSize, slots_[1],
-            this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 3 * buttons_size.y), buttons_size, slots_[1],
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
         
-        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * buttonSize.y), buttonSize, slots_[2],
-            this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
-        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 1 * buttonSize.y), buttonSize, slots_[3],
-            this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * buttons_size.y), buttons_size, slots_[2],
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 1 * buttons_size.y), buttons_size, slots_[3],
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
         
-        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * buttonSize.y), buttonSize, "Back",
-            this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * buttons_size.y), buttons_size, "Back",
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
         
     }
+
+    /**
+     * Method which checks if there is any data on the slot by searching previous saves and passing action to FileFinder class.
+     */
     void SaveState::checkSlots(){
         for (int i = 0; i < 4; i++){
             slots_[i] = fileFinder_.checkIfFileExist("Map"+std::to_string(i+1)+".txt", i+1);
         }
     }
+
+    /**
+     * Method which saves data to specified file.
+     * @param number - Number of slot to save.
+     */
     void SaveState::saveToFile(int number){
         std::ofstream file;
         file.open("Map"+std::to_string(number)+".txt");
@@ -90,12 +118,21 @@ namespace zpr {
             file << cell;
         }
         file.close();
-        this->buttonsInit();
+        this->buttonsInitializer();
     }
+
+    /**
+     * Method which updates the window.
+     * @param dt - Frequency of updating.
+     */
     void SaveState::update(float dt) {
 
     }
-    /*Rysuje elementy okna*/
+
+    /**
+     * Methods which draws elements of state on the screen.
+     * @param dt - Frequency of drawing.
+     */
     void SaveState::draw(float dt) {
         this->data_->window_.clear(sf::Color::Black);
         this->data_->window_.draw(this->background_);
