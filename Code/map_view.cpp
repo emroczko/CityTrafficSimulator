@@ -461,15 +461,14 @@ namespace zpr {
 		}
 	}
 
-/**
- * Method responsible for setting correct texture for road in case when road has three connected roads.
- * @param road - Road whose texture will be set.
- * @param north - RectangleShape object representing road above our chosen road.
- * @param south - RectangleShape object representing road under our chosen road.
- * @param east - RectangleShape object representing road next to our chosen road (right cell).
- * @param west - RectangleShape object representing road next to our chosen road (left cell).
- */
-	/*Ustawia drodze odpowiedni¹ teksturê w przypadku w którym droga ma trzy s¹siaduj¹ce drogi*/
+    /**
+     * Method responsible for setting correct texture for road in case when road has three connected roads.
+     * @param road - Road whose texture will be set.
+     * @param north - RectangleShape object representing road above our chosen road.
+     * @param south - RectangleShape object representing road under our chosen road.
+     * @param east - RectangleShape object representing road next to our chosen road (right cell).
+     * @param west - RectangleShape object representing road next to our chosen road (left cell).
+     */
 	void MapView::choseRoadWithThreeNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west)
 	{
 		road.setTexture(&this->data_->assets_.getTexture("T_Intersection"));
@@ -703,12 +702,12 @@ namespace zpr {
         this->isDeletingRoad_ = false;
     }
 
-/**
- * Method responsible for updating
- * @param which_camera - Number of which camera we are adding.
- * @param row - Row where should camera be placed.
- * @param col - Column where should camera be placed.
-     */
+    /**
+     * Method responsible for updating mapView wheteher camera is added.
+     * @param which_camera - Number of which camera we added.
+     * @param row - Row where should camera is placed.
+     * @param col - Column where should camera is placed.
+         */
     void MapView::updateCameraAdded(int which_camera, int row, int col)
     {
         this->whichCamera_ = which_camera;

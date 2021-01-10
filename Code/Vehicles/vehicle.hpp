@@ -1,16 +1,27 @@
+/**
+ * vehicle.hpp
+ * Header of Vehicle class.
+ */
+
 #pragma once
 #include "SFML/Graphics.hpp"
 #include "../definitions.hpp"
 #include "../cell.hpp"
 #include <chrono>
+
+
 namespace zpr {
+
+    /**
+     * Class responsible for handling vehicles actions eg. moving, stopping, checking collisions. It is base class for Car and Truck. 
+     */
 	class Vehicle : public sf::Drawable
 	{
 	public:
 		virtual ~Vehicle() {};
 		sf::RectangleShape getShape();
 		void move();
-		void checkOnWhichCell(int drawPrefix);
+		void checkOnWhichCell();
 		void checkTurn();
 		void stopVehicle();
 		void noColision();

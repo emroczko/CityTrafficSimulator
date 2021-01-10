@@ -1,9 +1,18 @@
+/**
+ * camera.hpp
+ * Header of Camera class.
+ */
+
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Vehicles/truck.hpp"
 #include "Vehicles/car.hpp"
 
 namespace zpr {
+
+    /**
+     * Class responsible for being a camera and handle its actions.
+     */
 	class Camera
 	{
 	public:
