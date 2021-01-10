@@ -123,6 +123,7 @@ namespace zpr {
      */
     void LoadState::loadFromFile(int number){
         std::ifstream my_file;
+        if (fileFinder_.checkIfFileExist(slots_[number-1])){
         my_file.open (slots_[number-1]);
         my_file >> gridSize_;
         int how_many = 0;
@@ -133,8 +134,14 @@ namespace zpr {
         }
         my_file.close();
         std::cout<<how_many<<std::endl;
+        this->cells_.at(4).isStartingCell_ = true;
         this->data_->machine_.addState(StateRef(new CreatorState(this->data_, this->gridSize_, this->cells_)), false);
+        }
+        else{
+            std::cout<<"Slot "+std::to_string(number)+" doesn't exist"<<std::endl;
+        }
     }
+        
     /**
      * Method which updates the window.
      * @param dt - Frequency of updating. 
