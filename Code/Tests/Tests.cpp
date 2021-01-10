@@ -1,10 +1,10 @@
 #define CATCH_CONFIG_MAIN 
 #include "catch_amalgamated.hpp"
 
-#include "../Simulator.h"
-#include "../MapView.h"
-#include "../Definitions.h"
-#include "../MainMenuState.h"
+#include "../simulator.hpp"
+#include "../map_view.hpp"
+#include "../definitions.hpp"
+#include "../main_menu_state.hpp"
 #include <iostream>
 
 ZPR::Simulator sim(SCREEN_WIDTH, SCREEN_HEIGHT, "CityTrafficSimulator");
@@ -31,9 +31,9 @@ namespace ZPR {
         SimulatorDataRef data = std::make_shared<SimulatorData>();
         unsigned long buttons = 2;
         MainMenuState menuButtonsTest(data);
-        menuButtonsTest.Init();
+        menuButtonsTest.init();
         SECTION("Testing Buttons in menu state" ){
-            REQUIRE(buttons == menuButtonsTest.GetButtonsAmount());
+            REQUIRE(buttons == menuButtonsTest.getButtonsAmount());
         }
     };
 

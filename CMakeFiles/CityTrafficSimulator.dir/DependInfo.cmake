@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/MapViewTest.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o"
+  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/VehicleTest.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/car.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/truck.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/vehicle.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.o"
@@ -22,7 +24,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/init_create_state.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/input_manager.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/load_state.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o"
-  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/main.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/main_menu_state.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/map_view.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/save_state.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o"
@@ -39,6 +40,8 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "Code"
+  "Code/Tests"
+  "Resources"
   "/Library/Frameworks/SFML.framework"
   )
 
