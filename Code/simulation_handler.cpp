@@ -36,9 +36,9 @@ namespace zpr {
                 this->notifyVehicles(this->vehicles_);
                 this->notifyIsSimulating(this->isSimulating_);
             }, 50);
-           
         }
         else{
+            this->timer_.stopTimer();
             this->roads_.clear();
             this->cameras_.clear();
             this->vehicles_.clear();
@@ -110,19 +110,14 @@ namespace zpr {
         std::uniform_int_distribution<> dist(1, 100);
         int num = dist(eng);
         
-        if (this->startingCellFree() && num > 0 && num < 7 && vehicles_.size()<10) {
+        if (this->startingCellFree() && num > 0 && num < 7 && this->vehicles_.size()<this->roads_.size()/2) {
             if (num > 4) {
             this->vehicles_.push_back(VehicleFactory::createTruck(x_start, y_start, this->cellSize_, this->roads_));
             }
             else {
                 this->vehicles_.push_back(VehicleFactory::createCar(x_start, y_start, this->cellSize_, this->roads_));
             }
-        }
-        if(!isSimulating_){
-            timer_.stopTimer();
-        }
-
-        
+        }  
     }
     void SimulationHandler::moveVehicles()
     {
