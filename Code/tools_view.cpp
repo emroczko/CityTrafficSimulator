@@ -20,7 +20,7 @@ namespace zpr {
         
 	}
     void ToolsView::buttonInitializer(){
-        sf::Vector2f button_size(150, 66);
+        sf::Vector2f button_size(210, 66);
         int font_size = 30;
         this->buttons_.push_back(Button(sf::Vector2f(toolsView_.getSize().x/2, 100), button_size, "Create new street",
             this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));

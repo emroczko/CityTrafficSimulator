@@ -162,9 +162,6 @@
     <ClInclude Include="..\..\..\Code\input_manager.hpp">
       <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\load_demo.hpp">
-      <Filter>Header Files\ZPR namespace</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Code\simulation_handler.hpp">
       <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
@@ -249,9 +246,6 @@
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\input_manager.cpp">
-      <Filter>Source Files\ZPR namespace</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\load_demo.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\main.cpp">

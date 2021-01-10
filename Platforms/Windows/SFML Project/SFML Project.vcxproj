@@ -36,7 +36,6 @@
     <ClInclude Include="..\..\..\Code\init_create_state.hpp" />
     <ClInclude Include="..\..\..\Code\input_manager.hpp" />
     <ClInclude Include="..\..\..\Code\keys_enum.hpp" />
-    <ClInclude Include="..\..\..\Code\load_demo.hpp" />
     <ClInclude Include="..\..\..\Code\load_state.hpp" />
     <ClInclude Include="..\..\..\Code\main_menu_state.hpp" />
     <ClInclude Include="..\..\..\Code\map_view.hpp" />
@@ -72,7 +71,6 @@
     <ClCompile Include="..\..\..\Code\grid.cpp" />
     <ClCompile Include="..\..\..\Code\init_create_state.cpp" />
     <ClCompile Include="..\..\..\Code\input_manager.cpp" />
-    <ClCompile Include="..\..\..\Code\load_demo.cpp" />
     <ClCompile Include="..\..\..\Code\load_state.cpp" />
     <ClCompile Include="..\..\..\Code\main.cpp" />
     <ClCompile Include="..\..\..\Code\main_menu_state.cpp" />

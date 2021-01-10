@@ -44,17 +44,17 @@ namespace zpr {
         }
     }
     void CamerasView::addButtons() {
-        sf::Vector2f buttonSize(150, 66);
+        sf::Vector2f buttonSize(160, 66);
+        sf::Vector2f removeButtonsSize(180, 66);
+        sf::Vector2f startSimulationButtonSize(200, 66);
         int fontSize = 30;
         for (int i = 1; i < 4; i++) {
             this->buttons_.push_back(Button(sf::Vector2f(2*camerasView_.getSize().x / 8, 230 * i), buttonSize, "Add camera " + std::to_string(i),
                 this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
-            this->removeButtons_.push_back(Button(sf::Vector2f(6*camerasView_.getSize().x / 8, 230 * i), buttonSize, "Remove camera " + std::to_string(i),
+            this->removeButtons_.push_back(Button(sf::Vector2f(6*camerasView_.getSize().x / 8 - 5, 230 * i), removeButtonsSize, "Remove camera " + std::to_string(i),
                 this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
         }
-        
-
-        this->buttons_.push_back(Button(sf::Vector2f(camerasView_.getSize().x / 2, 900), buttonSize, "Start simulation",
+        this->buttons_.push_back(Button(sf::Vector2f(camerasView_.getSize().x / 2, 900), startSimulationButtonSize, "Start simulation",
             this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
     }
     void CamerasView::camerasLabels(std::string text, int yPosition) {

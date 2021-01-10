@@ -38,7 +38,7 @@ namespace zpr{
      * Method which initializes every button in the window.
      */
     void MainMenuState::initializeButtons(){
-        sf::Vector2f button_size(150, 66);
+        sf::Vector2f button_size(200, 66);
         int font_size = 30;
         
         this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 1 * button_size.y), button_size, "Create new city",
