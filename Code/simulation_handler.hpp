@@ -1,3 +1,8 @@
+/**
+ * simulation_handler.hpp
+ * Header of SimulatonHandler class.
+ */
+
 #pragma once
 #include "simulation_subject.hpp"
 #include "cameras_observer.hpp"
@@ -10,9 +15,13 @@
 
 
 namespace zpr {
+
+    /**
+     * Class responsible for handling simulation of traffic in the application.
+     */
     class SimulationHandler : public SimulationSubject, public CamerasObserver, public CreatorObserver{
     public:
-        SimulationHandler(int gridSize, std::vector<Cell> cells);
+        SimulationHandler(int grid_size, std::vector<Cell> cells);
         void init();
         void updateIsSimulating();
         void updateSelectedCell(sf::Vector2i coords) {};
@@ -31,7 +40,7 @@ namespace zpr {
         void addCarsToSimulate();
         void addStartingRoad();
         void moveVehicles();
-        void vehilcesColision();
+        void vehiclesColision();
         void checkCameraVision();
         void checkCameraColision(Camera camera);
         void checkVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int camera_number);

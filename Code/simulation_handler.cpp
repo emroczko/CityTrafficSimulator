@@ -1,10 +1,28 @@
+/**
+ * simulation_handler.cpp
+ * Implementation of SimulatonHandler class.
+ */
+
 #include "simulation_handler.hpp"
 #include <random>
 #include "definitions.hpp"
 
 namespace zpr {
-    SimulationHandler::SimulationHandler(int gridSize, std::vector<Cell> cells) : isSimulating_(false), gridSize_(gridSize), cells_(cells) { init(); }
 
+    /**
+     * Parametrized constructor of SimulationHandler class.
+     * @param grid_size - Size of current grid.
+     * @param cells - Vector of cells containg information about roads.
+     */
+    SimulationHandler::SimulationHandler(int grid_size, std::vector<Cell> cells) : isSimulating_(false), gridSize_(grid_size), cells_(cells)
+    {
+        init();
+    }
+
+
+    /**
+     * Method which initializes elements of this class.
+     */
     void SimulationHandler::init()
     {
         this->timer_ = Timer();
@@ -15,14 +33,15 @@ namespace zpr {
   
         this->cityExitSite_.setSize(sf::Vector2f((SCREEN_HEIGHT / this->gridSize_) / 2, SCREEN_HEIGHT / this->gridSize_));
         this->cityExitSite_.setOrigin(sf::Vector2f(this->cityExitSite_.getSize().x / 2, this->cityExitSite_.getSize().y / 2));
-        sf::Vector2f centeredPositionInPixels = sf::Vector2f(STARTING_CELL_COL * this->cellSize_ + this->calculatePrefix() + this->cellSize_ / 2 , STARTING_CELL_ROW * this->cellSize_ + this->calculatePrefix());
-        centeredPositionInPixels.x = centeredPositionInPixels.x + this->cellSize_ / 4;
-        centeredPositionInPixels.y = centeredPositionInPixels.y + this->cellSize_ / 2;
-        this->cityExitSite_.setPosition(centeredPositionInPixels);
+        sf::Vector2f centered_position_in_pixels = sf::Vector2f(STARTING_CELL_COL * this->cellSize_ + this->calculatePrefix() + this->cellSize_ / 2 , STARTING_CELL_ROW * this->cellSize_ + this->calculatePrefix());
+        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 4;
+        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
+        this->cityExitSite_.setPosition(centered_position_in_pixels);
     }
+
     /**
-    Ustawia tryb symulacji
-    */
+     * Method which starts simulation. It also launches timer (new thread) to handle simulation.
+     */
     void SimulationHandler::updateIsSimulating()
     {
         this->isSimulating_ = !this->isSimulating_;
@@ -44,13 +63,22 @@ namespace zpr {
             this->notifyVehicles(this->vehicles_);
         }
         this->notifyIsSimulating(this->isSimulating_);
+
     }
+
+    /**
+     * Method which update cells of object of this class.
+     * @param cells - Updated cells.
+     */
     void SimulationHandler::updateCells(std::vector<Cell> cells)
     {
         this->cells_ = cells;
         this->separateCamerasFromCells();
     }
 
+    /**
+     * Method which gets roads from vector of cells.
+     */
     void SimulationHandler::separateRoadsFromCells()
     {
         for (Cell& cell : cells_) {
@@ -60,6 +88,10 @@ namespace zpr {
         }
         this->addStartingRoad();
     }
+
+    /**
+     * Method which gets cameras from vector of cells.
+     */
     void SimulationHandler::separateCamerasFromCells()
     {
 
@@ -70,35 +102,52 @@ namespace zpr {
             }
         }
     }
+
+    /**
+     * Method which converts Cell object to sf::RectangleShape object.
+     * @param cell - Cell to convert.
+     * @return - Converted sf::RectangleShape object.
+     */
     sf::RectangleShape SimulationHandler::convertCellToCenteredRectShape(Cell cell)
     {
-        sf::RectangleShape rectShape;
-        rectShape.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
-        rectShape.setOrigin(sf::Vector2f(rectShape.getSize().x / 2, rectShape.getSize().y / 2));
-        sf::Vector2f centeredPositionInPixels = sf::Vector2f(cell.getPosition().x * this->cellSize_ + this->calculatePrefix(), cell.getPosition().y * this->cellSize_ + this->calculatePrefix());
-        centeredPositionInPixels.x = centeredPositionInPixels.x + this->cellSize_ / 2;
-        centeredPositionInPixels.y = centeredPositionInPixels.y + this->cellSize_ / 2;
-        rectShape.setPosition(centeredPositionInPixels);
-        return rectShape;
+        sf::RectangleShape rect_shape;
+        rect_shape.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
+        rect_shape.setOrigin(sf::Vector2f(rect_shape.getSize().x / 2, rect_shape.getSize().y / 2));
+        sf::Vector2f centered_position_in_pixels = sf::Vector2f(cell.getPosition().x * this->cellSize_ + this->calculatePrefix(), cell.getPosition().y * this->cellSize_ + this->calculatePrefix());
+        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
+        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
+        rect_shape.setPosition(centered_position_in_pixels);
+        return rect_shape;
     }
+
+    /**
+     * Method which adds starting road to roads vector.
+     */
     void SimulationHandler::addStartingRoad() {
         sf::RectangleShape road;
         road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
         road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
-        sf::Vector2f centeredPositionInPixels = sf::Vector2f(STARTING_CELL_COL * this->cellSize_ + this->calculatePrefix(), STARTING_CELL_ROW * this->cellSize_ + this->calculatePrefix());
-        centeredPositionInPixels.x = centeredPositionInPixels.x + this->cellSize_ / 2;
-        centeredPositionInPixels.y = centeredPositionInPixels.y + this->cellSize_ / 2;
-        road.setPosition(centeredPositionInPixels);
+        sf::Vector2f centered_position_in_pixels = sf::Vector2f(STARTING_CELL_COL * this->cellSize_ + this->calculatePrefix(), STARTING_CELL_ROW * this->cellSize_ + this->calculatePrefix());
+        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
+        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
+        road.setPosition(centered_position_in_pixels);
         this->roads_.push_back(road);
     }
 
+    /**
+     * Method responsible for calculating prefix - to drawing grid in the center of view.
+     * @return - Calculated prefix.
+     */
     int SimulationHandler::calculatePrefix() {
-        double cellSizeWithPoint = (double)SCREEN_HEIGHT / gridSize_;
-        double theRest = cellSizeWithPoint - this->cellSize_;
-        int drawPrefix = theRest * gridSize_ / 2;
-        return drawPrefix;
+        double cell_size_with_point = (double)SCREEN_HEIGHT / gridSize_;
+        double the_rest = cell_size_with_point - this->cellSize_;
+        int draw_prefix = the_rest * gridSize_ / 2;
+        return draw_prefix;
     }
    
+    /**
+     * Method which add cars to simulation.
+     */
     void SimulationHandler::addCarsToSimulate()
     {
         int x_start =this->calculatePrefix() + cellSize_ * STARTING_CELL_COL + this->sidewalkSize_ + this->roadSize_/4;
@@ -118,26 +167,34 @@ namespace zpr {
             }
         }  
     }
+
+    /**
+     * Method responsible for moving vehicles - triggering certain methods to properly move the vehicle.
+     */
     void SimulationHandler::moveVehicles()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
             vehicle->checkOnWhichCell();
-            this->vehilcesColision();
+            this->vehiclesColision();
             vehicle->move();
             vehicle->checkTurn();
             this->checkCameraVision();
         }
     }
-    void SimulationHandler::vehilcesColision()
+
+    /**
+     * Method responsible for checking vehicles colisions with other vehicles.
+     */
+    void SimulationHandler::vehiclesColision()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
-            int colisionCounter = 0;
+            int colision_counter = 0;
             for (std::shared_ptr<Vehicle> colider : this->vehicles_) {
                 if (vehicle->checkColision(colider)) {
-                    colisionCounter++;
+                    colision_counter++;
                 }
             }
-            if (colisionCounter > 0) {
+            if (colision_counter > 0) {
                 vehicle->stopVehicle();
             }
             else {
@@ -145,6 +202,10 @@ namespace zpr {
             }
         }
     }
+
+    /**
+     * Method responsible for checking what do cameras see.
+     */
     void SimulationHandler::checkCameraVision()
     {
         for (Camera camera : this->cameras_) {
@@ -152,6 +213,10 @@ namespace zpr {
         }
     }
 
+    /**
+     * Method responsible for checking if camera sees the car.
+     * @param camera - Camera object which the method is checking.s
+     */
     void SimulationHandler::checkCameraColision(Camera camera)
     {
 
@@ -166,20 +231,27 @@ namespace zpr {
         }
     }
 
-
-    void SimulationHandler::checkVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int cameraNumber)
+    /**
+     * Method responsible for checking if vehicle is a car or truck and notify proper labels.
+     * @param vehicle - Vehicle to check.
+     * @param camera_label_number - Label number to update.
+     */
+    void SimulationHandler::checkVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int camera_label_number)
     {
-        if (!vehicle->seenByCamera_[cameraNumber-1]) {
+        if (!vehicle->seenByCamera_[camera_label_number-1]) {
             if (vehicle->getShape().getSize().x == vehicle->getShape().getSize().y)
-                this->notifyCarsLabel(cameraNumber);
+                this->notifyCarsLabel(camera_label_number);
             
             else
-                this->notifyTrucksLabel(cameraNumber);
+                this->notifyTrucksLabel(camera_label_number);
             
         }
     }
 
-
+    /**
+     * Method responsible for checking if starting cell is free. (not to spawn vehicle on vehicle)
+     * @return - True if starting cell is free, false otherwise.
+     */
     bool SimulationHandler::startingCellFree()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
@@ -189,6 +261,10 @@ namespace zpr {
         }
         return true;
     }
+
+    /**
+     * Method responsible for deleting the vehicles.
+     */
     void SimulationHandler::deleteVehicles()
     {
         int i = 0;
@@ -200,12 +276,18 @@ namespace zpr {
             i++;
         }
     }
-
-    /*Zajmuje sie obs≥ugπ zdarzeÒ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie drÛg)*/
+    
+    /**
+     * Method responsible for handle input.
+     */
     void SimulationHandler::handleInput()
     {
     
     }
+
+    /**
+     * Method responsible for saving to file.
+     */
     void SimulationHandler::saveToFile(){
     
     }

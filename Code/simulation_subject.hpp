@@ -1,3 +1,8 @@
+/**
+ * simulation_subject.hpp
+ * Header of SimulatonSubject class.
+ */
+
 #pragma once
 #include "simulation_observer.hpp"
 #include <memory>
@@ -5,6 +10,10 @@
 #include "Vehicles/vehicle.hpp"
 
 namespace zpr {
+
+    /**
+     * Class responsible for notifying the observers.
+     */
     class SimulationSubject
     {
     public:

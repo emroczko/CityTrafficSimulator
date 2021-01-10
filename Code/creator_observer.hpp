@@ -1,7 +1,17 @@
+/**
+ * creator_observer.hpp
+ * Header of CreatorObserver virtual class.
+ */
+
+
 #pragma once
 #include "cell.hpp"
 #include "Vehicles/vehicle.hpp"
 namespace zpr {
+
+    /**
+     * Virtual class responsible for being an observer for CreatorHandler class.
+     */
 	class CreatorObserver
 	{
 	public:

@@ -1,3 +1,9 @@
+/**
+ * creator_handler.hpp
+ * Header of CreatorHandler class.
+ */
+
+
 #pragma once
 #include "creator_subject.hpp"
 #include "grid.hpp"
@@ -8,6 +14,10 @@
 #include "Vehicles/vehicle.hpp"
 
 namespace zpr {
+
+    /**
+     * Class responsible for handle creating and deleting roads. Also it handles save button. 
+     */
 	class CreatorHandler : public CamerasObserver, public CreatorSubject, public ToolsObserver
 	{
 	public:
