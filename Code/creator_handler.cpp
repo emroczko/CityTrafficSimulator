@@ -57,28 +57,21 @@ namespace zpr {
         this->isAddingCameras_ = !this->isAddingCameras_;
         this->isDeletingRoad_ = false;
         this->isDrawingRoad_ = false;
-        this->notifyIsAddingCamera(this->isAddingCameras_, this->whichCamera_, this->row_, this->col_);
+        this->notifyIsAddingCamera(this->isAddingCameras_, this->whichCamera_);
     }
     void CreatorHandler::updateIsDeletingCamera(int whichCamera)
     {
         int row, col;
-        //this->isAddingCameras_ = false;
         this->whichCamera_ = whichCamera;
         this->notifyIsDeletingCamera(this->whichCamera_);
         for (Cell& cell : grid_->cells_){
             if (cell.containsCamera_ == true && cell.whichCamera_ == whichCamera){
-                row = cell.getPosition().x;
-                col = cell.getPosition().y;
-                this->grid_->getCell(row_, col_).containsCamera_ = false;
-                this->grid_->getCell(row_, col_).whichCamera_ = 0;
-                this->grid_->getCell(row_, col_).cameraToDelete_ = false;
+                cell.containsCamera_ = false;
+                cell.whichCamera_ = 0;
+                cell.cameraToDelete_ = false;
                 this->notifyCells(grid_->cells_);
-                this->notifySelectedCell(sf::Vector2i(row, col));
             }
         }
-        
-        
-        
     }
     void CreatorHandler::saveToFile(){
         this->notifySave();
@@ -115,7 +108,8 @@ namespace zpr {
             this->notifyCells(grid_->cells_);
             this->notifySelectedCell(sf::Vector2i(this->row_, this->col_));
             this->isAddingCameras_ = false;
-            this->notifyIsAddingCamera(isAddingCameras_, whichCamera_, this->row_, this->col_);
+            this->notifyIsAddingCamera(isAddingCameras_, whichCamera_);
+            this->notifyCameraAdded(whichCamera_, row_, col_);
         }
         
 		

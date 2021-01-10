@@ -16,15 +16,15 @@ namespace zpr {
 		void noColision();
 		bool checkColision(std::shared_ptr<Vehicle> vehicle);
 		virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
-        
 		int x_, y_, speed_;
 		int roadSize_, sidewalkSize_, roadStripesSize_;
 		int cellSize_;
-		bool seenByCamera_;
+		bool seenByCamera_[3];
 		std::vector<sf::RectangleShape> roads_;
 		std::string direction_, previousDirection_;
 		sf::RectangleShape shape_, colisionBox_;
 		std::shared_ptr<sf::RectangleShape> currentRoad_, previousRoad_;
+
 	private:
 		void updatePosition();
 		void updateColisionBoxPosition();

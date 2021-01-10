@@ -33,7 +33,7 @@ namespace zpr {
 	void MapView::init() {
         this->clicked_ = false;
         this->loadAssets();
-		this->setupSelectedCellRect();
+		//this->setupSelectedCellRect();
 		this->backgroundTexture_.setTexture(this->data_->assets_.getTexture("Background"));
 		this->backgroundTexture_.setOrigin(sf::Vector2f(800, 800));
 		this->backgroundTexture_.setPosition(this->mapView_.getCenter());
@@ -42,9 +42,9 @@ namespace zpr {
 		this->col_ = -1;
         this->enterGridWidth_ = this->gridSize_;
         this->enterGridHeight_ = 2;
-		this->selectedCellRect_.setTexture(&this->data_->assets_.getTexture("Selected Cell"));
+		//this->selectedCellRect_.setTexture(&this->data_->assets_.getTexture("Selected Cell"));
 		this->mapView_ = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
-		this->mapView_.setViewport(calculateViewPort());
+		this->mapView_.setViewport(this->calculateViewPort());
 		this->generateGridLines();
         this->generateEnterBoard();
         this->mapView_.zoom(1.4f);
@@ -273,7 +273,6 @@ namespace zpr {
                 this->deleteRoad(this->transformRowColToPixels(sf::Vector2i(row, col)));
 				cell.toDelete_ = false;
             }
-
 		}
 	}
 
@@ -493,13 +492,13 @@ namespace zpr {
     void MapView::deleteRoad(sf::Vector2f position)
     {
 		int i = 0;
+
 		if (this->checkRoadExists(this->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
         
 		for (sf::RectangleShape road : roads_) {
 			if (road.getPosition().x - this->cellSize_ / 2 == position.x && road.getPosition().y - this->cellSize_ / 2 == position.y){
-                
 				roads_.erase(roads_.begin() + i);
-				road.setTexture(NULL);
+				//road.setTexture(NULL);
 			}
 			i++;
 		}
@@ -530,7 +529,7 @@ namespace zpr {
         for (sf::RectangleShape camera : camerasT_) {
             if (camera.getPosition().x == position.x && camera.getPosition().y == position.y){
                 camerasT_[whichCamera_-1] = temp;
-                camera.setTexture(NULL);
+                //camera.setTexture(NULL);
             }
             i++;
         }
@@ -697,13 +696,21 @@ namespace zpr {
      * Method responsible for updating variable which tells MapView whether we are in adding camera mode.
      * @param is_adding_camera - True if we are simulating, false otherwise.
      * @param which_camera - Number of which camera we are adding.
-     * @param row - Row where should camera be placed.
-     * @param col - Column where should camera be placed.
-     */
-    void MapView::updateIsAddingCamera(bool is_adding_camera, int which_camera, int row, int col){
+    */
+    void MapView::updateIsAddingCamera(bool is_adding_camera, int which_camera){
         this->isAddingCamera_ = is_adding_camera;
         this->isDrawingRoad_ = false;
         this->isDeletingRoad_ = false;
+    }
+
+/**
+ * Method responsible for updating
+ * @param which_camera - Number of which camera we are adding.
+ * @param row - Row where should camera be placed.
+ * @param col - Column where should camera be placed.
+     */
+    void MapView::updateCameraAdded(int which_camera, int row, int col)
+    {
         this->whichCamera_ = which_camera;
         for (Cell& cell : this->cells_) {
             int row = cell.getPosition().x;

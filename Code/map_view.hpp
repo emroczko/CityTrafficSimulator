@@ -31,7 +31,9 @@ namespace zpr {
 		void updateIsDrawingRoad(bool is_drawing_road);
         void updateIsDeletingRoad(bool is_deleting_road);
         void updateIsSimulating(bool is_simulating);
-        void updateIsAddingCamera(bool is_adding_camera, int which_camera, int row, int col);
+        void updateIsAddingCamera(bool is_adding_camera, int which_camera);
+        void updateCameraAdded(int which_camera, int row, int col);
+        void UpdateIsAddingCamera(int which_camera);
         void updateIsDeletingCamera(int which_camera);
         void updateCarsLabel(int which_label){}
         void updateTrucksLabel(int which_label){}
@@ -39,7 +41,7 @@ namespace zpr {
 		void updateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
 		void draw();
 		sf::Vector2i handleInput(sf::Vector2f mousePosition);
-		sf::View getView();
+        sf::View getView();
 		void init();
 		sf::Vector2i getRowCol();
 		bool isClicked(sf::Vector2i mousePosition);
@@ -114,8 +116,6 @@ namespace zpr {
 		std::vector<Cell> cells_;
         std::vector<Cell> enterCells_;
 		std::vector<std::shared_ptr<Vehicle>> vehicles_;
-        
-        
 	};
 }
 

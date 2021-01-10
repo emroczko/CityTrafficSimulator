@@ -16,7 +16,8 @@ namespace zpr{
         void updateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {}
         void updateIsSimulating(bool is_simulating);
         void updateIsDeletingCamera(int which_camera);
-        void updateIsAddingCamera(bool is_adding_camera, int which_camera, int row, int col);
+        void updateIsAddingCamera(bool is_adding_camera, int which_camera);
+        void updateCameraAdded(int which_camera, int row, int col);
         void updateSelectedCell(sf::Vector2i coords) {}
         void updateCells(std::vector<Cell> cells) {}
         void saveToFile()  {}
@@ -28,10 +29,9 @@ namespace zpr{
         void initializeVehiclesCounters();
         void addButtons();
         void camerasLabels(std::string text, int y_position);
-        void buttonsHandler(Button button, std::string label, int position, int label_position);
+        //void buttonsHandler(Button button, std::string label, int position, int label_position);
         void drawButtons();
         sf::FloatRect calculateViewPort();
-        
         std::vector<Button> buttons_, removeButtons_;
 		SimulatorDataRef data_;
 		sf::RectangleShape background_;
@@ -40,6 +40,7 @@ namespace zpr{
         bool isSimulating_, isAddingCamera_;
         std::vector<bool> camerasOn_;
         int numberOfCars_[3], numberOfTrucks_[3];
+
 	};
 };
 

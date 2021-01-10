@@ -15,7 +15,8 @@ namespace zpr {
         this->data_->assets_.loadTexture("Button", BUTTON_FILEPATH);
         this->data_->assets_.loadTexture("Button_pressed", BUTTON_PRESSED_FILEPATH);
         this->data_->assets_.loadFont("Text font", TEXT_FONT_FILEPATH);
-
+        
+        this->buttonInitializer();
         
 	}
     void ToolsView::buttonInitializer(){
@@ -98,11 +99,9 @@ namespace zpr {
         this->isSimulating_ = is_simulating;
         this->handleInput();
     }
-    
-    void ToolsView::updateIsAddingCamera(bool is_adding_camera, int which_camera, int row, int col){
-        this->isAddingCameras_ = is_adding_camera;
+    void ToolsView::updateIsAddingCamera(bool isAddingCamera, int whichCamera){
+        this->isAddingCameras_ = isAddingCamera;
         this->handleInput();
-        
     }
 
 	void ToolsView::drawButtons()

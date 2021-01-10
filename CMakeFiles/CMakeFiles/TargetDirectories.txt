@@ -1,0 +1,3 @@
+H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/CMakeFiles/CityTrafficSimulator.dir
+H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/CMakeFiles/ALL_BUILD.dir
+H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/CMakeFiles/ZERO_CHECK.dir

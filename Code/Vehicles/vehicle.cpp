@@ -65,7 +65,6 @@ namespace zpr {
 				}
 			}
 		}
-		this->checkIfSeenByCamera();
 	}
 	//Sprawdza czy przed pojadem znajduje siê inny pojazd i je¿eli tak sie stanie to zatrzymuje go w miejscu					//
 	bool Vehicle::checkColision(std::shared_ptr<Vehicle> vehicle){
@@ -76,15 +75,6 @@ namespace zpr {
 		return false;
 	}
 
-	void Vehicle::checkIfSeenByCamera()
-	{
-		if (this->currentRoad_ == this->previousRoad_) {
-			this->seenByCamera_ = true;
-		}
-		else {
-			this->seenByCamera_ = false;
-		}
-	}
 
 	void Vehicle::checkTurn()
 	{
@@ -262,6 +252,5 @@ namespace zpr {
 	void Vehicle::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	{
 		target.draw(this->shape_, states);
-		target.draw(this->colisionBox_, states);
 	}
 }

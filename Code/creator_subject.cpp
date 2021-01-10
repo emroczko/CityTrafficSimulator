@@ -37,12 +37,21 @@ namespace zpr {
             obs->updateIsDeletingRoad(isDeletingRoad);
         }
     }
-    void CreatorSubject::notifyIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col)
+
+    void CreatorSubject::notifyIsAddingCamera(bool isAddingCamera, int whichCamera)
     {
         for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
-            obs->updateIsAddingCamera(isAddingCamera, whichCamera, row, col);
+            obs->updateIsAddingCamera(isAddingCamera, whichCamera);
         }
     }
+    
+   
+	void CreatorSubject::notifyCameraAdded(int whichCamera, int row, int col)
+	{
+		for (std::shared_ptr<CreatorObserver> obs : this->observers_) {
+			obs->updateCameraAdded(whichCamera, row, col);
+		}
+	}
     void CreatorSubject::notifyIsDeletingCamera(int whichCamera)
     {
         for (std::shared_ptr<CreatorObserver> obs : this->observers_) {

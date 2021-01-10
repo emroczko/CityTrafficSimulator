@@ -34,8 +34,13 @@ namespace zpr {
 
     void CamerasView::initializeVehiclesCounters(){
         for (int i = 0; i < 3; i++) {
+
             numberOfCars_[i] = 0;
             numberOfTrucks_[i] = 0;
+
+            this->camerasLabels_.at(i + 3).setString("Cars passed: " + std::to_string(this->numberOfCars_[i]));
+            this->camerasLabels_.at(i + 6).setString("Trucks passed: " + std::to_string(this->numberOfTrucks_[i]));
+
         }
     }
     void CamerasView::addButtons() {
@@ -66,7 +71,6 @@ namespace zpr {
         float rectWidth = (1.f - (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH) / 2;
         float rectLeft = 0.f;
         return sf::FloatRect(rectLeft, 0.f, rectWidth, 1.f);
-
     }
 
     bool CamerasView::isClicked(sf::Vector2i& mousePosition) {
@@ -89,56 +93,52 @@ namespace zpr {
             if(!camerasOn_.at(i)){
                 this->data_->window_.draw(buttons_.at(i));
             }
-        }
-        
-        for (int i = 0; i<3; i++)
-        {
             if(camerasOn_.at(i) && !isAddingCamera_){
                 this->data_->window_.draw(removeButtons_.at(i));
             }
-        }
-        this->data_->window_.draw(buttons_.at(3));
-        
-        
-        for (int i = 0; i<3; i++)
-        {
             this->data_->window_.draw(camerasLabels_.at(i));
-        }
-        for (int i = 3; i<6; i++)
+        } 
+        
+        this->data_->window_.draw(buttons_.at(3));
+            
+        for (int i = 3; i < 6; i++)
         {
-            if(camerasOn_.at(i-3)){
+            if (camerasOn_.at(i - 3)) {
                 this->data_->window_.draw(camerasLabels_.at(i));
-                this->data_->window_.draw(camerasLabels_.at(i+3));
+                this->data_->window_.draw(camerasLabels_.at(i + 3));
             }
         }
     }
 
     void CamerasView::updateCarsLabel(int whichLabel){
-        ++numberOfCars_[whichLabel];
-        this->camerasLabels_.at(whichLabel+2).setString("Cars passed: "+std::to_string(numberOfCars_[whichLabel]));
+        ++numberOfCars_[whichLabel-1];
+        this->camerasLabels_.at(whichLabel+2).setString("Cars passed: "+std::to_string(numberOfCars_[whichLabel-1]));
     }
     
     void CamerasView::updateTrucksLabel(int whichLabel){
-        ++numberOfTrucks_[whichLabel];
-        this->camerasLabels_.at(whichLabel+3).setString("Trucks passed: "+std::to_string(numberOfTrucks_[whichLabel]));
+        ++numberOfTrucks_[whichLabel-1];
+        this->camerasLabels_.at(whichLabel+5).setString("Trucks passed: "+std::to_string(numberOfTrucks_[whichLabel-1]));
     }
     void CamerasView::updateIsSimulating(bool isSimulating){
         if(!isSimulating){
             this->initializeVehiclesCounters();
         }
     }
-    void CamerasView::updateIsAddingCamera(bool isAddingCamera, int whichCamera, int row, int col) {
+
+    void CamerasView::updateIsAddingCamera(bool isAddingCamera, int whichCamera) {
         this->isAddingCamera_ = isAddingCamera;
         if (!isAddingCamera) {
-            
-            this->camerasOn_.at(whichCamera - 1) = true;
-            
             this->buttons_.at(whichCamera - 1).setBackground(this->data_->assets_.getTexture("Button"));
-            camerasLabels_.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Row: "+ std::to_string(col+1)+" Col: "+std::to_string(row+1));
         }
         else {
             this->buttons_.at(whichCamera - 1).setBackground(this->data_->assets_.getTexture("Button_pressed"));
         }
+    }
+
+    void CamerasView::updateCameraAdded(int whichCamera, int row, int col)
+    {
+        this->camerasOn_.at(whichCamera - 1) = true;
+        camerasLabels_.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Row: " + std::to_string(col + 1) + " Col: " + std::to_string(row + 1));
     }
     void CamerasView::updateIsDeletingCamera(int whichCamera) {
         this->camerasOn_.at(whichCamera - 1) = false;
@@ -164,17 +164,26 @@ namespace zpr {
                     this->notifyIsSimulating();
                 }
                 if (button.getText() == "Add camera 1") {
-                    //this->ButtonsHandler(button, "Camera 1: ", 0, 0);
                     this->notifyIsAddingCamera(1);
-
+                    this->numberOfCars_[0] = 0;
+                    this->numberOfTrucks_[0] = 0;
+                    this->camerasLabels_.at(3).setString("Cars passed: " + std::to_string(numberOfCars_[0]));
+                    this->camerasLabels_.at(6).setString("Trucks passed: " + std::to_string(numberOfTrucks_[0]));
                 }
                 if (button.getText() == "Add camera 2") {
-                    // this->ButtonsHandler(button, "Camera 2: ", 1, 1);
                     this->notifyIsAddingCamera(2);
+                    this->numberOfCars_[1] = 0;
+                    this->numberOfTrucks_[1] = 0;
+                    this->camerasLabels_.at(4).setString("Cars passed: " + std::to_string(numberOfCars_[1]));
+                    this->camerasLabels_.at(7).setString("Trucks passed: " + std::to_string(numberOfTrucks_[1]));
+                    
                 }
                 if (button.getText() == "Add camera 3") {
-                    //this->ButtonsHandler(button, "Camera 3: ", 2, 2);
                     this->notifyIsAddingCamera(3);
+                    this->numberOfCars_[2] = 0;
+                    this->numberOfTrucks_[2] = 0;
+                    this->camerasLabels_.at(5).setString("Cars passed: " + std::to_string(numberOfCars_[2]));
+                    this->camerasLabels_.at(8).setString("Trucks passed: " + std::to_string(numberOfTrucks_[2]));
                 }
                 button.isPressed_ = !button.isPressed_;
             }

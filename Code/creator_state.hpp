@@ -10,6 +10,7 @@
 #include "state.hpp"
 #include "simulator.hpp"
 #include "button.hpp"
+#include <vector>
 #include "map_view.hpp"
 #include "tools_view.hpp"
 #include "cameras_view.hpp"
@@ -22,6 +23,7 @@ namespace zpr{
     /**
      * Class responsible for state with creating and simulating. It launches all observers and helper classes.
      */
+
     class CreatorState: public State{
     public:
         CreatorState (SimulatorDataRef data, int grid_size);

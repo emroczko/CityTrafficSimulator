@@ -1,9 +1,9 @@
 #define BOOST_TEST_DYN_LINK
 #include <boost/test/unit_test.hpp>
 #include <SFML/Graphics.hpp>
-#include "../../Vehicles/Vehicle.h"
-#include "../../Vehicles/Car.h"
-#include "../../Vehicles/Truck.h"
+#include "../../Vehicles/vehicle.h"
+#include "../../Vehicles/car.h"
+#include "../../Vehicles/truck.h"
 
 
 struct VehicleTestFixture {

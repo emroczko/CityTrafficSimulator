@@ -40,6 +40,7 @@ namespace zpr {
         }
         else{
             this->roads_.clear();
+            this->cameras_.clear();
             this->vehicles_.clear();
             this->notifyVehicles(this->vehicles_);
         }
@@ -48,6 +49,7 @@ namespace zpr {
     void SimulationHandler::updateCells(std::vector<Cell> cells)
     {
         this->cells_ = cells;
+        this->separateCamerasFromCells();
     }
 
     void SimulationHandler::separateRoadsFromCells()
@@ -61,6 +63,8 @@ namespace zpr {
     }
     void SimulationHandler::separateCamerasFromCells()
     {
+
+        this->cameras_.clear();
         for (Cell& cell : this->cells_) {
             if (cell.containsCamera_) {
                 this->cameras_.push_back(Camera(cell.whichCamera_, this->convertCellToCenteredRectShape(cell)));
@@ -123,8 +127,6 @@ namespace zpr {
     void SimulationHandler::moveVehicles()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
-            
-            
             vehicle->checkOnWhichCell(this->calculatePrefix());
             this->vehilcesColision();
             vehicle->move();
@@ -158,22 +160,31 @@ namespace zpr {
 
     void SimulationHandler::checkCameraColision(Camera camera)
     {
-        for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
+
+        for (std::shared_ptr<Vehicle>& vehicle : this->vehicles_) {
             if (camera.checkColision(vehicle)) {
                 this->checkVehicleTypeAndNotify(vehicle, camera.cameraNumber_);
+                vehicle->seenByCamera_[camera.cameraNumber_-1] = true;
+            }
+            else {
+                vehicle->seenByCamera_[camera.cameraNumber_-1] = false;
             }
         }
     }
 
+
     void SimulationHandler::checkVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int cameraNumber)
-        {
-            if (vehicle->getShape().getSize().x == vehicle->getShape().getSize().y) {
+    {
+        if (!vehicle->seenByCamera_[cameraNumber-1]) {
+            if (vehicle->getShape().getSize().x == vehicle->getShape().getSize().y)
                 this->notifyCarsLabel(cameraNumber);
-            }
-            else {
+            
+            else
                 this->notifyTrucksLabel(cameraNumber);
-            }
+            
         }
+    }
+
 
     bool SimulationHandler::startingCellFree()
     {
@@ -195,6 +206,7 @@ namespace zpr {
             i++;
         }
     }
+
     /*Zajmuje sie obs≥ugπ zdarzeÒ (zmiana obecnie zanzczonego pola, dodawanie i usuwanie drÛg)*/
     void SimulationHandler::handleInput()
     {

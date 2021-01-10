@@ -1,4 +1,5 @@
 #include "truck.hpp"
+
 namespace zpr {
 	Truck::Truck(int x, int y, int cell_size, std::vector<sf::RectangleShape> roads) {
 		this->x_ = x;
@@ -6,6 +7,9 @@ namespace zpr {
 		this->speed_ = 3;
 		this->roads_ = roads;
 		this->cellSize_ = cell_size;
+        for (int i = 0; i < 3; i++) {
+            this->seenByCamera_[i] = false;
+        }
 		this->sidewalkSize_ = round(SIDEWALK_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
 		this->roadSize_ = round(ROAD_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
 		this->roadStripesSize_ = round(ROAD_STRIPES_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
