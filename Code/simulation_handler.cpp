@@ -34,8 +34,7 @@ namespace zpr {
                 this->moveVehicles();
                 this->deleteVehicles();
                 this->notifyVehicles(this->vehicles_);
-                this->notifyIsSimulating(this->isSimulating_);
-            }, 50);
+            }, 17);
         }
         else{
             this->timer_.stopTimer();
@@ -44,7 +43,7 @@ namespace zpr {
             this->vehicles_.clear();
             this->notifyVehicles(this->vehicles_);
         }
-        
+        this->notifyIsSimulating(this->isSimulating_);
     }
     void SimulationHandler::updateCells(std::vector<Cell> cells)
     {

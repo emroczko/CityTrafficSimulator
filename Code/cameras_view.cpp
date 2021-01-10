@@ -137,6 +137,7 @@ namespace zpr {
         ++numberOfTrucks_[whichLabel-1];
         this->camerasLabels_.at(whichLabel+5).setString("Trucks passed: "+std::to_string(numberOfTrucks_[whichLabel-1]));
     }
+    
     void CamerasView::updateIsSimulating(bool isSimulating){
         if(!isSimulating){
             this->initializeVehiclesCounters();

@@ -734,6 +734,7 @@ namespace zpr {
      */
 	void MapView::updateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)
 	{
+        std::cout << vehicles.size() << std::endl;
 		this->vehicles_ = vehicles;
 	}
 
