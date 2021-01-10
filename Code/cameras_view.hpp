@@ -19,7 +19,7 @@ namespace zpr{
         void updateIsAddingCamera(bool is_adding_camera, int which_camera);
         void updateCameraAdded(int which_camera, int row, int col);
         void updateSelectedCell(sf::Vector2i coords) {}
-        void updateCells(std::vector<Cell> cells) {}
+        void updateCells(std::vector<Cell> cells);
         void saveToFile()  {}
         void updateIsDrawingRoad(bool is_drawing_road) {}
         void updateIsDeletingRoad(bool is_deleting_road) {}
@@ -28,15 +28,20 @@ namespace zpr{
 	private:
         void initializeVehiclesCounters();
         void addButtons();
-        void camerasLabels(std::string text, int y_position);
+        sf::Text createLabel(std::string text, int y_position);
         //void buttonsHandler(Button button, std::string label, int position, int label_position);
         void drawButtons();
+        void drawLabels();
+        bool startingRoadConnected();
+        void resetCameraCounter(int which_camera);
         sf::FloatRect calculateViewPort();
         std::vector<Button> buttons_, removeButtons_;
 		SimulatorDataRef data_;
 		sf::RectangleShape background_;
 		sf::View camerasView_;
+        std::vector<Cell> cells_;
         std::vector<sf::Text> camerasLabels_;
+        sf::Text startSimulationLabel_;
         bool isSimulating_, isAddingCamera_;
         std::vector<bool> camerasOn_;
         int numberOfCars_[3], numberOfTrucks_[3];

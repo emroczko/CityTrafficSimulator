@@ -14,16 +14,16 @@ namespace zpr {
         
 
         this->addButtons();
-        this->camerasLabels("Camera 1: Disabled", 50);
-        this->camerasLabels("Camera 2: Disabled", 280);
-        this->camerasLabels("Camera 3: Disabled", 510);
-        this->camerasLabels("Cars passed: 0", 100);
-        this->camerasLabels("Cars passed: 0", 330);
-        this->camerasLabels("Cars passed: 0", 560);
-        this->camerasLabels("Trucks passed: 0", 150);
-        this->camerasLabels("Trucks passed: 0", 380);
-        this->camerasLabels("Trucks passed: 0", 610);
-        
+        this->camerasLabels_.push_back(this->createLabel("Camera 1: Disabled", 50));
+        this->camerasLabels_.push_back(this->createLabel("Camera 2: Disabled", 280));
+        this->camerasLabels_.push_back(this->createLabel("Camera 3: Disabled", 510));
+        this->camerasLabels_.push_back(this->createLabel("Cars passed: 0", 100));
+        this->camerasLabels_.push_back(this->createLabel("Cars passed: 0", 330));
+        this->camerasLabels_.push_back(this->createLabel("Cars passed: 0", 560));
+        this->camerasLabels_.push_back(this->createLabel("Trucks passed: 0", 150));
+        this->camerasLabels_.push_back(this->createLabel("Trucks passed: 0", 380));
+        this->camerasLabels_.push_back(this->createLabel("Trucks passed: 0", 610));
+        this->startSimulationLabel_ = this->createLabel("", 815);
 
         for (int i = 0; i < 3; i++) {
             this->camerasOn_.push_back(false);
@@ -57,14 +57,13 @@ namespace zpr {
         this->buttons_.push_back(Button(sf::Vector2f(camerasView_.getSize().x / 2, 900), startSimulationButtonSize, "Start simulation",
             this->data_->assets_.getFont("Text font"), fontSize, sf::Color::White, this->data_->assets_.getTexture("Button")));
     }
-    void CamerasView::camerasLabels(std::string text, int yPosition) {
+    sf::Text CamerasView::createLabel(std::string text, int yPosition) {
         sf::Text tempLabel;
         tempLabel.setFont(this->data_->assets_.getFont("Text font"));
         tempLabel.setCharacterSize(30);
         tempLabel.setString(text);
         tempLabel.setPosition(camerasView_.getSize().x / 6, yPosition);
-        this->camerasLabels_.push_back(tempLabel);
-
+        return tempLabel;
     }
     sf::FloatRect CamerasView::calculateViewPort()
     {
@@ -85,6 +84,7 @@ namespace zpr {
         this->data_->window_.setView(this->camerasView_);
         this->data_->window_.draw(this->background_);
         this->drawButtons();
+        this->drawLabels();
     }
     void CamerasView::drawButtons()
     {
@@ -96,18 +96,36 @@ namespace zpr {
             if(camerasOn_.at(i) && !isAddingCamera_){
                 this->data_->window_.draw(removeButtons_.at(i));
             }
-            this->data_->window_.draw(camerasLabels_.at(i));
         } 
-        
-        this->data_->window_.draw(buttons_.at(3));
-            
-        for (int i = 3; i < 6; i++)
+        this->data_->window_.draw(buttons_.at(3));        
+    }
+
+    void CamerasView::drawLabels() {
+        for (int i = 0; i < 3; i++)
         {
-            if (camerasOn_.at(i - 3)) {
-                this->data_->window_.draw(camerasLabels_.at(i));
-                this->data_->window_.draw(camerasLabels_.at(i + 3));
+            if (camerasOn_.at(i)) {
+                this->data_->window_.draw(camerasLabels_.at(i+3));
+                this->data_->window_.draw(camerasLabels_.at(i + 6));
             }
+            this->data_->window_.draw(camerasLabels_.at(i));
+            this->data_->window_.draw(startSimulationLabel_);
         }
+    }
+
+    bool CamerasView::startingRoadConnected()
+    {
+        if (this->cells_.at(sqrt(this->cells_.size())*STARTING_CELL_COL).containsRoad_) 
+            return true;
+        else
+            return false;
+    }
+
+    void CamerasView::resetCameraCounter(int which_camera)
+    {
+        this->numberOfCars_[which_camera-1] = 0;
+        this->numberOfTrucks_[which_camera-1] = 0;
+        this->camerasLabels_.at(which_camera+2).setString("Cars passed: " + std::to_string(numberOfCars_[which_camera-1]));
+        this->camerasLabels_.at(which_camera +5).setString("Trucks passed: " + std::to_string(numberOfTrucks_[which_camera-1]));
     }
 
     void CamerasView::updateCarsLabel(int whichLabel){
@@ -140,6 +158,10 @@ namespace zpr {
         this->camerasOn_.at(whichCamera - 1) = true;
         camerasLabels_.at(whichCamera - 1).setString("Camera " + std::to_string(whichCamera) + ": Row: " + std::to_string(col + 1) + " Col: " + std::to_string(row + 1));
     }
+    void CamerasView::updateCells(std::vector<Cell> cells)
+    {
+        this->cells_ = cells;
+    }
     void CamerasView::updateIsDeletingCamera(int whichCamera) {
         this->camerasOn_.at(whichCamera - 1) = false;
         this->buttons_.at(whichCamera - 1).setText("Add camera " + std::to_string(whichCamera));
@@ -152,38 +174,33 @@ namespace zpr {
         for (Button& button : this->buttons_){
             if (button.isClicked(sf::Mouse::Left, this->data_->window_, this->camerasView_)){
                 if (button.getText() == "Start simulation" || button.getText() == "Stop simulation"  ) {
-                    if (this->buttons_.at(3).isPressed_) {
+                    if (this->buttons_.at(3).getText() == "Stop simulation") {
                         this->buttons_.at(3).setBackground(this->data_->assets_.getTexture("Button"));
                         button.setText("Start simulation");
+                        this->notifyIsSimulating();
                     }
-                    else{
+                    else if(this->startingRoadConnected()){
                         this->buttons_.at(3).setBackground(this->data_->assets_.getTexture("Button_pressed"));
-
                         button.setText("Stop simulation");
+                        this->startSimulationLabel_.setString("");
+                        this->notifyIsSimulating();
                     }
-                    this->notifyIsSimulating();
+                    else {
+                        this->startSimulationLabel_.setString("Entry road not connected");
+                    }
                 }
                 if (button.getText() == "Add camera 1") {
                     this->notifyIsAddingCamera(1);
-                    this->numberOfCars_[0] = 0;
-                    this->numberOfTrucks_[0] = 0;
-                    this->camerasLabels_.at(3).setString("Cars passed: " + std::to_string(numberOfCars_[0]));
-                    this->camerasLabels_.at(6).setString("Trucks passed: " + std::to_string(numberOfTrucks_[0]));
+                    this->resetCameraCounter(1);
                 }
                 if (button.getText() == "Add camera 2") {
                     this->notifyIsAddingCamera(2);
-                    this->numberOfCars_[1] = 0;
-                    this->numberOfTrucks_[1] = 0;
-                    this->camerasLabels_.at(4).setString("Cars passed: " + std::to_string(numberOfCars_[1]));
-                    this->camerasLabels_.at(7).setString("Trucks passed: " + std::to_string(numberOfTrucks_[1]));
+                    this->resetCameraCounter(2);
                     
                 }
                 if (button.getText() == "Add camera 3") {
                     this->notifyIsAddingCamera(3);
-                    this->numberOfCars_[2] = 0;
-                    this->numberOfTrucks_[2] = 0;
-                    this->camerasLabels_.at(5).setString("Cars passed: " + std::to_string(numberOfCars_[2]));
-                    this->camerasLabels_.at(8).setString("Trucks passed: " + std::to_string(numberOfTrucks_[2]));
+                    this->resetCameraCounter(3);
                 }
                 button.isPressed_ = !button.isPressed_;
             }
