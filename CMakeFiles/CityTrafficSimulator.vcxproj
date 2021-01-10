@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{974A05FD-6FD6-3A73-9FB1-3B2880EC23AD}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>CityTrafficSimulator</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CityTrafficSimulator.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CityTrafficSimulator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CityTrafficSimulator.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CityTrafficSimulator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CityTrafficSimulator.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CityTrafficSimulator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CityTrafficSimulator.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CityTrafficSimulator</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SFML_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SFML_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\External Libraries\Windows\SFML\lib\sfml-graphics-s-d.lib;..\External Libraries\Windows\SFML\lib\sfml-window-s-d.lib;..\External Libraries\Windows\SFML\lib\sfml-system-s-d.lib;winmm.lib;gdi32.lib;OpenGL32.lib;..\External Libraries\Windows\SFML\lib\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/Debug/CityTrafficSimulator.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/Debug/CityTrafficSimulator.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\External Libraries\Windows\SFML\lib\sfml-graphics-s.lib;..\External Libraries\Windows\SFML\lib\sfml-window-s.lib;..\External Libraries\Windows\SFML\lib\sfml-system-s.lib;winmm.lib;gdi32.lib;OpenGL32.lib;..\External Libraries\Windows\SFML\lib\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/Release/CityTrafficSimulator.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/Release/CityTrafficSimulator.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\External Libraries\Windows\SFML\lib\sfml-graphics-s-d.lib;..\External Libraries\Windows\SFML\lib\sfml-window-s-d.lib;..\External Libraries\Windows\SFML\lib\sfml-system-s-d.lib;winmm.lib;gdi32.lib;OpenGL32.lib;..\External Libraries\Windows\SFML\lib\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/MinSizeRel/CityTrafficSimulator.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/MinSizeRel/CityTrafficSimulator.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\External Libraries\Windows\SFML\lib\sfml-graphics-s-d.lib;..\External Libraries\Windows\SFML\lib\sfml-window-s-d.lib;..\External Libraries\Windows\SFML\lib\sfml-system-s-d.lib;winmm.lib;gdi32.lib;OpenGL32.lib;..\External Libraries\Windows\SFML\lib\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/RelWithDebInfo/CityTrafficSimulator.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/RelWithDebInfo/CityTrafficSimulator.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SH:/Programowanie/C++/CityTrafficSimulator_ZPR -BH:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles --check-stamp-file H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeCCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeSystem.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfig.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfigDependencies.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfigVersion.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets-debug.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets-release.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\cmakeRun.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SH:/Programowanie/C++/CityTrafficSimulator_ZPR -BH:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles --check-stamp-file H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeCCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeSystem.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfig.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfigDependencies.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfigVersion.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets-debug.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets-release.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\cmakeRun.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SH:/Programowanie/C++/CityTrafficSimulator_ZPR -BH:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles --check-stamp-file H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeCCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeSystem.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfig.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfigDependencies.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfigVersion.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets-debug.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets-release.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\cmakeRun.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SH:/Programowanie/C++/CityTrafficSimulator_ZPR -BH:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles --check-stamp-file H:/Programowanie/C++/CityTrafficSimulator_ZPR/CMakeFiles/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeCCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\3.19.2\CMakeSystem.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfig.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfigDependencies.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLConfigVersion.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets-debug.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets-release.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\External Libraries\Windows\SFML\lib\cmake\SFML\SFMLStaticTargets.cmake;H:\Programowanie\C++\CityTrafficSimulator_ZPR\cmakeRun.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\car.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\truck.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle_factory.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\asset_manager.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\button.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\camera.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\cameras_subject.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\cameras_view.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\cell.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\creator_handler.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\creator_state.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\creator_subject.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\file_finder.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\grid.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\init_create_state.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\input_manager.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\load_demo.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\load_state.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\main.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\main_menu_state.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\save_state.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_subject.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulator.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\splash_state.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\state_machine.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\tools_subject.cpp" />
+    <ClCompile Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\tools_view.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:\Programowanie\C++\CityTrafficSimulator_ZPR\CMakeFiles\ZERO_CHECK.vcxproj">
+      <Project>{FC357649-A010-31FE-BBC5-1FC59651AA15}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
