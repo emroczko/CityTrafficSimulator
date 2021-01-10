@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o"
+  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.o"
@@ -17,7 +19,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o"
-  "CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o"

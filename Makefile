@@ -142,6 +142,60 @@ CityTrafficSimulator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/build
 .PHONY : CityTrafficSimulator/fast
 
+Code/Tests/BoostTest/MapViewTest.o: Code/Tests/BoostTest/MapViewTest.cpp.o
+
+.PHONY : Code/Tests/BoostTest/MapViewTest.o
+
+# target to build an object file
+Code/Tests/BoostTest/MapViewTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o
+.PHONY : Code/Tests/BoostTest/MapViewTest.cpp.o
+
+Code/Tests/BoostTest/MapViewTest.i: Code/Tests/BoostTest/MapViewTest.cpp.i
+
+.PHONY : Code/Tests/BoostTest/MapViewTest.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/MapViewTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.i
+.PHONY : Code/Tests/BoostTest/MapViewTest.cpp.i
+
+Code/Tests/BoostTest/MapViewTest.s: Code/Tests/BoostTest/MapViewTest.cpp.s
+
+.PHONY : Code/Tests/BoostTest/MapViewTest.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/MapViewTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.s
+.PHONY : Code/Tests/BoostTest/MapViewTest.cpp.s
+
+Code/Tests/BoostTest/VehicleTest.o: Code/Tests/BoostTest/VehicleTest.cpp.o
+
+.PHONY : Code/Tests/BoostTest/VehicleTest.o
+
+# target to build an object file
+Code/Tests/BoostTest/VehicleTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o
+.PHONY : Code/Tests/BoostTest/VehicleTest.cpp.o
+
+Code/Tests/BoostTest/VehicleTest.i: Code/Tests/BoostTest/VehicleTest.cpp.i
+
+.PHONY : Code/Tests/BoostTest/VehicleTest.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/VehicleTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.i
+.PHONY : Code/Tests/BoostTest/VehicleTest.cpp.i
+
+Code/Tests/BoostTest/VehicleTest.s: Code/Tests/BoostTest/VehicleTest.cpp.s
+
+.PHONY : Code/Tests/BoostTest/VehicleTest.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/VehicleTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.s
+.PHONY : Code/Tests/BoostTest/VehicleTest.cpp.s
+
 Code/Vehicles/car.o: Code/Vehicles/car.cpp.o
 
 .PHONY : Code/Vehicles/car.o
@@ -628,33 +682,6 @@ Code/load_state.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.s
 .PHONY : Code/load_state.cpp.s
 
-Code/main.o: Code/main.cpp.o
-
-.PHONY : Code/main.o
-
-# target to build an object file
-Code/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o
-.PHONY : Code/main.cpp.o
-
-Code/main.i: Code/main.cpp.i
-
-.PHONY : Code/main.i
-
-# target to preprocess a source file
-Code/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.i
-.PHONY : Code/main.cpp.i
-
-Code/main.s: Code/main.cpp.s
-
-.PHONY : Code/main.s
-
-# target to generate assembly for a file
-Code/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.s
-.PHONY : Code/main.cpp.s
-
 Code/main_menu_state.o: Code/main_menu_state.cpp.o
 
 .PHONY : Code/main_menu_state.o
@@ -934,6 +961,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CityTrafficSimulator"
+	@echo "... Code/Tests/BoostTest/MapViewTest.o"
+	@echo "... Code/Tests/BoostTest/MapViewTest.i"
+	@echo "... Code/Tests/BoostTest/MapViewTest.s"
+	@echo "... Code/Tests/BoostTest/VehicleTest.o"
+	@echo "... Code/Tests/BoostTest/VehicleTest.i"
+	@echo "... Code/Tests/BoostTest/VehicleTest.s"
 	@echo "... Code/Vehicles/car.o"
 	@echo "... Code/Vehicles/car.i"
 	@echo "... Code/Vehicles/car.s"
@@ -988,9 +1021,6 @@ help:
 	@echo "... Code/load_state.o"
 	@echo "... Code/load_state.i"
 	@echo "... Code/load_state.s"
-	@echo "... Code/main.o"
-	@echo "... Code/main.i"
-	@echo "... Code/main.s"
 	@echo "... Code/main_menu_state.o"
 	@echo "... Code/main_menu_state.i"
 	@echo "... Code/main_menu_state.s"
