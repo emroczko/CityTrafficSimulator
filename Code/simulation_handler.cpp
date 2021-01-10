@@ -18,8 +18,6 @@ namespace zpr {
     {
         init();
     }
-
-
     /**
      * Method which initializes elements of this class.
      */
