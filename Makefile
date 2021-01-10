@@ -142,788 +142,788 @@ CityTrafficSimulator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/build
 .PHONY : CityTrafficSimulator/fast
 
-Code/AssetManager.o: Code/AssetManager.cpp.o
+Code/Vehicles/car.o: Code/Vehicles/car.cpp.o
 
-.PHONY : Code/AssetManager.o
-
-# target to build an object file
-Code/AssetManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/AssetManager.cpp.o
-.PHONY : Code/AssetManager.cpp.o
-
-Code/AssetManager.i: Code/AssetManager.cpp.i
-
-.PHONY : Code/AssetManager.i
-
-# target to preprocess a source file
-Code/AssetManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/AssetManager.cpp.i
-.PHONY : Code/AssetManager.cpp.i
-
-Code/AssetManager.s: Code/AssetManager.cpp.s
-
-.PHONY : Code/AssetManager.s
-
-# target to generate assembly for a file
-Code/AssetManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/AssetManager.cpp.s
-.PHONY : Code/AssetManager.cpp.s
-
-Code/Button.o: Code/Button.cpp.o
-
-.PHONY : Code/Button.o
+.PHONY : Code/Vehicles/car.o
 
 # target to build an object file
-Code/Button.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Button.cpp.o
-.PHONY : Code/Button.cpp.o
+Code/Vehicles/car.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o
+.PHONY : Code/Vehicles/car.cpp.o
 
-Code/Button.i: Code/Button.cpp.i
+Code/Vehicles/car.i: Code/Vehicles/car.cpp.i
 
-.PHONY : Code/Button.i
+.PHONY : Code/Vehicles/car.i
 
 # target to preprocess a source file
-Code/Button.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Button.cpp.i
-.PHONY : Code/Button.cpp.i
+Code/Vehicles/car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.i
+.PHONY : Code/Vehicles/car.cpp.i
 
-Code/Button.s: Code/Button.cpp.s
+Code/Vehicles/car.s: Code/Vehicles/car.cpp.s
 
-.PHONY : Code/Button.s
+.PHONY : Code/Vehicles/car.s
 
 # target to generate assembly for a file
-Code/Button.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Button.cpp.s
-.PHONY : Code/Button.cpp.s
+Code/Vehicles/car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.s
+.PHONY : Code/Vehicles/car.cpp.s
 
-Code/CamerasSubject.o: Code/CamerasSubject.cpp.o
+Code/Vehicles/truck.o: Code/Vehicles/truck.cpp.o
 
-.PHONY : Code/CamerasSubject.o
+.PHONY : Code/Vehicles/truck.o
 
 # target to build an object file
-Code/CamerasSubject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CamerasSubject.cpp.o
-.PHONY : Code/CamerasSubject.cpp.o
+Code/Vehicles/truck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.o
+.PHONY : Code/Vehicles/truck.cpp.o
 
-Code/CamerasSubject.i: Code/CamerasSubject.cpp.i
+Code/Vehicles/truck.i: Code/Vehicles/truck.cpp.i
 
-.PHONY : Code/CamerasSubject.i
+.PHONY : Code/Vehicles/truck.i
 
 # target to preprocess a source file
-Code/CamerasSubject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CamerasSubject.cpp.i
-.PHONY : Code/CamerasSubject.cpp.i
+Code/Vehicles/truck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.i
+.PHONY : Code/Vehicles/truck.cpp.i
 
-Code/CamerasSubject.s: Code/CamerasSubject.cpp.s
+Code/Vehicles/truck.s: Code/Vehicles/truck.cpp.s
 
-.PHONY : Code/CamerasSubject.s
+.PHONY : Code/Vehicles/truck.s
 
 # target to generate assembly for a file
-Code/CamerasSubject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CamerasSubject.cpp.s
-.PHONY : Code/CamerasSubject.cpp.s
+Code/Vehicles/truck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.s
+.PHONY : Code/Vehicles/truck.cpp.s
 
-Code/CamerasView.o: Code/CamerasView.cpp.o
+Code/Vehicles/vehicle.o: Code/Vehicles/vehicle.cpp.o
 
-.PHONY : Code/CamerasView.o
+.PHONY : Code/Vehicles/vehicle.o
 
 # target to build an object file
-Code/CamerasView.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CamerasView.cpp.o
-.PHONY : Code/CamerasView.cpp.o
+Code/Vehicles/vehicle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.o
+.PHONY : Code/Vehicles/vehicle.cpp.o
 
-Code/CamerasView.i: Code/CamerasView.cpp.i
+Code/Vehicles/vehicle.i: Code/Vehicles/vehicle.cpp.i
 
-.PHONY : Code/CamerasView.i
+.PHONY : Code/Vehicles/vehicle.i
 
 # target to preprocess a source file
-Code/CamerasView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CamerasView.cpp.i
-.PHONY : Code/CamerasView.cpp.i
+Code/Vehicles/vehicle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.i
+.PHONY : Code/Vehicles/vehicle.cpp.i
 
-Code/CamerasView.s: Code/CamerasView.cpp.s
+Code/Vehicles/vehicle.s: Code/Vehicles/vehicle.cpp.s
 
-.PHONY : Code/CamerasView.s
+.PHONY : Code/Vehicles/vehicle.s
 
 # target to generate assembly for a file
-Code/CamerasView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CamerasView.cpp.s
-.PHONY : Code/CamerasView.cpp.s
+Code/Vehicles/vehicle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.s
+.PHONY : Code/Vehicles/vehicle.cpp.s
 
-Code/Cell.o: Code/Cell.cpp.o
+Code/Vehicles/vehicle_factory.o: Code/Vehicles/vehicle_factory.cpp.o
 
-.PHONY : Code/Cell.o
+.PHONY : Code/Vehicles/vehicle_factory.o
 
 # target to build an object file
-Code/Cell.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Cell.cpp.o
-.PHONY : Code/Cell.cpp.o
+Code/Vehicles/vehicle_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.o
+.PHONY : Code/Vehicles/vehicle_factory.cpp.o
 
-Code/Cell.i: Code/Cell.cpp.i
+Code/Vehicles/vehicle_factory.i: Code/Vehicles/vehicle_factory.cpp.i
 
-.PHONY : Code/Cell.i
+.PHONY : Code/Vehicles/vehicle_factory.i
 
 # target to preprocess a source file
-Code/Cell.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Cell.cpp.i
-.PHONY : Code/Cell.cpp.i
+Code/Vehicles/vehicle_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.i
+.PHONY : Code/Vehicles/vehicle_factory.cpp.i
 
-Code/Cell.s: Code/Cell.cpp.s
+Code/Vehicles/vehicle_factory.s: Code/Vehicles/vehicle_factory.cpp.s
 
-.PHONY : Code/Cell.s
+.PHONY : Code/Vehicles/vehicle_factory.s
 
 # target to generate assembly for a file
-Code/Cell.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Cell.cpp.s
-.PHONY : Code/Cell.cpp.s
+Code/Vehicles/vehicle_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.s
+.PHONY : Code/Vehicles/vehicle_factory.cpp.s
 
-Code/CreatorHandler.o: Code/CreatorHandler.cpp.o
+Code/asset_manager.o: Code/asset_manager.cpp.o
 
-.PHONY : Code/CreatorHandler.o
+.PHONY : Code/asset_manager.o
 
 # target to build an object file
-Code/CreatorHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CreatorHandler.cpp.o
-.PHONY : Code/CreatorHandler.cpp.o
+Code/asset_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o
+.PHONY : Code/asset_manager.cpp.o
 
-Code/CreatorHandler.i: Code/CreatorHandler.cpp.i
+Code/asset_manager.i: Code/asset_manager.cpp.i
 
-.PHONY : Code/CreatorHandler.i
+.PHONY : Code/asset_manager.i
 
 # target to preprocess a source file
-Code/CreatorHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CreatorHandler.cpp.i
-.PHONY : Code/CreatorHandler.cpp.i
+Code/asset_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.i
+.PHONY : Code/asset_manager.cpp.i
 
-Code/CreatorHandler.s: Code/CreatorHandler.cpp.s
+Code/asset_manager.s: Code/asset_manager.cpp.s
 
-.PHONY : Code/CreatorHandler.s
+.PHONY : Code/asset_manager.s
 
 # target to generate assembly for a file
-Code/CreatorHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CreatorHandler.cpp.s
-.PHONY : Code/CreatorHandler.cpp.s
+Code/asset_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.s
+.PHONY : Code/asset_manager.cpp.s
 
-Code/CreatorState.o: Code/CreatorState.cpp.o
+Code/button.o: Code/button.cpp.o
 
-.PHONY : Code/CreatorState.o
+.PHONY : Code/button.o
 
 # target to build an object file
-Code/CreatorState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CreatorState.cpp.o
-.PHONY : Code/CreatorState.cpp.o
+Code/button.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.o
+.PHONY : Code/button.cpp.o
 
-Code/CreatorState.i: Code/CreatorState.cpp.i
+Code/button.i: Code/button.cpp.i
 
-.PHONY : Code/CreatorState.i
+.PHONY : Code/button.i
 
 # target to preprocess a source file
-Code/CreatorState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CreatorState.cpp.i
-.PHONY : Code/CreatorState.cpp.i
+Code/button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.i
+.PHONY : Code/button.cpp.i
 
-Code/CreatorState.s: Code/CreatorState.cpp.s
+Code/button.s: Code/button.cpp.s
 
-.PHONY : Code/CreatorState.s
+.PHONY : Code/button.s
 
 # target to generate assembly for a file
-Code/CreatorState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CreatorState.cpp.s
-.PHONY : Code/CreatorState.cpp.s
+Code/button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.s
+.PHONY : Code/button.cpp.s
 
-Code/CreatorSubject.o: Code/CreatorSubject.cpp.o
+Code/camera.o: Code/camera.cpp.o
 
-.PHONY : Code/CreatorSubject.o
+.PHONY : Code/camera.o
 
 # target to build an object file
-Code/CreatorSubject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CreatorSubject.cpp.o
-.PHONY : Code/CreatorSubject.cpp.o
+Code/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.o
+.PHONY : Code/camera.cpp.o
 
-Code/CreatorSubject.i: Code/CreatorSubject.cpp.i
+Code/camera.i: Code/camera.cpp.i
 
-.PHONY : Code/CreatorSubject.i
+.PHONY : Code/camera.i
 
 # target to preprocess a source file
-Code/CreatorSubject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CreatorSubject.cpp.i
-.PHONY : Code/CreatorSubject.cpp.i
+Code/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.i
+.PHONY : Code/camera.cpp.i
 
-Code/CreatorSubject.s: Code/CreatorSubject.cpp.s
+Code/camera.s: Code/camera.cpp.s
 
-.PHONY : Code/CreatorSubject.s
+.PHONY : Code/camera.s
 
 # target to generate assembly for a file
-Code/CreatorSubject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/CreatorSubject.cpp.s
-.PHONY : Code/CreatorSubject.cpp.s
+Code/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.s
+.PHONY : Code/camera.cpp.s
 
-Code/FileFinder.o: Code/FileFinder.cpp.o
+Code/cameras_subject.o: Code/cameras_subject.cpp.o
 
-.PHONY : Code/FileFinder.o
+.PHONY : Code/cameras_subject.o
 
 # target to build an object file
-Code/FileFinder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/FileFinder.cpp.o
-.PHONY : Code/FileFinder.cpp.o
+Code/cameras_subject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.o
+.PHONY : Code/cameras_subject.cpp.o
 
-Code/FileFinder.i: Code/FileFinder.cpp.i
+Code/cameras_subject.i: Code/cameras_subject.cpp.i
 
-.PHONY : Code/FileFinder.i
+.PHONY : Code/cameras_subject.i
 
 # target to preprocess a source file
-Code/FileFinder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/FileFinder.cpp.i
-.PHONY : Code/FileFinder.cpp.i
+Code/cameras_subject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.i
+.PHONY : Code/cameras_subject.cpp.i
 
-Code/FileFinder.s: Code/FileFinder.cpp.s
+Code/cameras_subject.s: Code/cameras_subject.cpp.s
 
-.PHONY : Code/FileFinder.s
+.PHONY : Code/cameras_subject.s
 
 # target to generate assembly for a file
-Code/FileFinder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/FileFinder.cpp.s
-.PHONY : Code/FileFinder.cpp.s
+Code/cameras_subject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.s
+.PHONY : Code/cameras_subject.cpp.s
 
-Code/Grid.o: Code/Grid.cpp.o
+Code/cameras_view.o: Code/cameras_view.cpp.o
 
-.PHONY : Code/Grid.o
+.PHONY : Code/cameras_view.o
 
 # target to build an object file
-Code/Grid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Grid.cpp.o
-.PHONY : Code/Grid.cpp.o
+Code/cameras_view.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o
+.PHONY : Code/cameras_view.cpp.o
 
-Code/Grid.i: Code/Grid.cpp.i
+Code/cameras_view.i: Code/cameras_view.cpp.i
 
-.PHONY : Code/Grid.i
+.PHONY : Code/cameras_view.i
 
 # target to preprocess a source file
-Code/Grid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Grid.cpp.i
-.PHONY : Code/Grid.cpp.i
+Code/cameras_view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.i
+.PHONY : Code/cameras_view.cpp.i
 
-Code/Grid.s: Code/Grid.cpp.s
+Code/cameras_view.s: Code/cameras_view.cpp.s
 
-.PHONY : Code/Grid.s
+.PHONY : Code/cameras_view.s
 
 # target to generate assembly for a file
-Code/Grid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Grid.cpp.s
-.PHONY : Code/Grid.cpp.s
+Code/cameras_view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.s
+.PHONY : Code/cameras_view.cpp.s
 
-Code/InitCreateState.o: Code/InitCreateState.cpp.o
+Code/cell.o: Code/cell.cpp.o
 
-.PHONY : Code/InitCreateState.o
+.PHONY : Code/cell.o
 
 # target to build an object file
-Code/InitCreateState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/InitCreateState.cpp.o
-.PHONY : Code/InitCreateState.cpp.o
+Code/cell.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o
+.PHONY : Code/cell.cpp.o
 
-Code/InitCreateState.i: Code/InitCreateState.cpp.i
+Code/cell.i: Code/cell.cpp.i
 
-.PHONY : Code/InitCreateState.i
+.PHONY : Code/cell.i
 
 # target to preprocess a source file
-Code/InitCreateState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/InitCreateState.cpp.i
-.PHONY : Code/InitCreateState.cpp.i
+Code/cell.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.i
+.PHONY : Code/cell.cpp.i
 
-Code/InitCreateState.s: Code/InitCreateState.cpp.s
+Code/cell.s: Code/cell.cpp.s
 
-.PHONY : Code/InitCreateState.s
+.PHONY : Code/cell.s
 
 # target to generate assembly for a file
-Code/InitCreateState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/InitCreateState.cpp.s
-.PHONY : Code/InitCreateState.cpp.s
+Code/cell.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.s
+.PHONY : Code/cell.cpp.s
 
-Code/InputManager.o: Code/InputManager.cpp.o
+Code/creator_handler.o: Code/creator_handler.cpp.o
 
-.PHONY : Code/InputManager.o
+.PHONY : Code/creator_handler.o
 
 # target to build an object file
-Code/InputManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/InputManager.cpp.o
-.PHONY : Code/InputManager.cpp.o
+Code/creator_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.o
+.PHONY : Code/creator_handler.cpp.o
 
-Code/InputManager.i: Code/InputManager.cpp.i
+Code/creator_handler.i: Code/creator_handler.cpp.i
 
-.PHONY : Code/InputManager.i
+.PHONY : Code/creator_handler.i
 
 # target to preprocess a source file
-Code/InputManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/InputManager.cpp.i
-.PHONY : Code/InputManager.cpp.i
+Code/creator_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.i
+.PHONY : Code/creator_handler.cpp.i
 
-Code/InputManager.s: Code/InputManager.cpp.s
+Code/creator_handler.s: Code/creator_handler.cpp.s
 
-.PHONY : Code/InputManager.s
+.PHONY : Code/creator_handler.s
 
 # target to generate assembly for a file
-Code/InputManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/InputManager.cpp.s
-.PHONY : Code/InputManager.cpp.s
+Code/creator_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.s
+.PHONY : Code/creator_handler.cpp.s
 
-Code/LoadDemo.o: Code/LoadDemo.cpp.o
+Code/creator_state.o: Code/creator_state.cpp.o
 
-.PHONY : Code/LoadDemo.o
+.PHONY : Code/creator_state.o
 
 # target to build an object file
-Code/LoadDemo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/LoadDemo.cpp.o
-.PHONY : Code/LoadDemo.cpp.o
+Code/creator_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o
+.PHONY : Code/creator_state.cpp.o
 
-Code/LoadDemo.i: Code/LoadDemo.cpp.i
+Code/creator_state.i: Code/creator_state.cpp.i
 
-.PHONY : Code/LoadDemo.i
+.PHONY : Code/creator_state.i
 
 # target to preprocess a source file
-Code/LoadDemo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/LoadDemo.cpp.i
-.PHONY : Code/LoadDemo.cpp.i
+Code/creator_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.i
+.PHONY : Code/creator_state.cpp.i
 
-Code/LoadDemo.s: Code/LoadDemo.cpp.s
+Code/creator_state.s: Code/creator_state.cpp.s
 
-.PHONY : Code/LoadDemo.s
+.PHONY : Code/creator_state.s
 
 # target to generate assembly for a file
-Code/LoadDemo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/LoadDemo.cpp.s
-.PHONY : Code/LoadDemo.cpp.s
+Code/creator_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.s
+.PHONY : Code/creator_state.cpp.s
 
-Code/LoadState.o: Code/LoadState.cpp.o
+Code/creator_subject.o: Code/creator_subject.cpp.o
 
-.PHONY : Code/LoadState.o
+.PHONY : Code/creator_subject.o
 
 # target to build an object file
-Code/LoadState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/LoadState.cpp.o
-.PHONY : Code/LoadState.cpp.o
+Code/creator_subject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o
+.PHONY : Code/creator_subject.cpp.o
 
-Code/LoadState.i: Code/LoadState.cpp.i
+Code/creator_subject.i: Code/creator_subject.cpp.i
 
-.PHONY : Code/LoadState.i
+.PHONY : Code/creator_subject.i
 
 # target to preprocess a source file
-Code/LoadState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/LoadState.cpp.i
-.PHONY : Code/LoadState.cpp.i
+Code/creator_subject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.i
+.PHONY : Code/creator_subject.cpp.i
 
-Code/LoadState.s: Code/LoadState.cpp.s
+Code/creator_subject.s: Code/creator_subject.cpp.s
 
-.PHONY : Code/LoadState.s
+.PHONY : Code/creator_subject.s
 
 # target to generate assembly for a file
-Code/LoadState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/LoadState.cpp.s
-.PHONY : Code/LoadState.cpp.s
+Code/creator_subject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.s
+.PHONY : Code/creator_subject.cpp.s
 
-Code/Main.o: Code/Main.cpp.o
+Code/file_finder.o: Code/file_finder.cpp.o
 
-.PHONY : Code/Main.o
+.PHONY : Code/file_finder.o
 
 # target to build an object file
-Code/Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Main.cpp.o
-.PHONY : Code/Main.cpp.o
+Code/file_finder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.o
+.PHONY : Code/file_finder.cpp.o
 
-Code/Main.i: Code/Main.cpp.i
+Code/file_finder.i: Code/file_finder.cpp.i
 
-.PHONY : Code/Main.i
+.PHONY : Code/file_finder.i
 
 # target to preprocess a source file
-Code/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Main.cpp.i
-.PHONY : Code/Main.cpp.i
+Code/file_finder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.i
+.PHONY : Code/file_finder.cpp.i
 
-Code/Main.s: Code/Main.cpp.s
+Code/file_finder.s: Code/file_finder.cpp.s
 
-.PHONY : Code/Main.s
+.PHONY : Code/file_finder.s
 
 # target to generate assembly for a file
-Code/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Main.cpp.s
-.PHONY : Code/Main.cpp.s
+Code/file_finder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.s
+.PHONY : Code/file_finder.cpp.s
 
-Code/MainMenuState.o: Code/MainMenuState.cpp.o
+Code/grid.o: Code/grid.cpp.o
 
-.PHONY : Code/MainMenuState.o
+.PHONY : Code/grid.o
 
 # target to build an object file
-Code/MainMenuState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/MainMenuState.cpp.o
-.PHONY : Code/MainMenuState.cpp.o
+Code/grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.o
+.PHONY : Code/grid.cpp.o
 
-Code/MainMenuState.i: Code/MainMenuState.cpp.i
+Code/grid.i: Code/grid.cpp.i
 
-.PHONY : Code/MainMenuState.i
+.PHONY : Code/grid.i
 
 # target to preprocess a source file
-Code/MainMenuState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/MainMenuState.cpp.i
-.PHONY : Code/MainMenuState.cpp.i
+Code/grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.i
+.PHONY : Code/grid.cpp.i
 
-Code/MainMenuState.s: Code/MainMenuState.cpp.s
+Code/grid.s: Code/grid.cpp.s
 
-.PHONY : Code/MainMenuState.s
+.PHONY : Code/grid.s
 
 # target to generate assembly for a file
-Code/MainMenuState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/MainMenuState.cpp.s
-.PHONY : Code/MainMenuState.cpp.s
+Code/grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.s
+.PHONY : Code/grid.cpp.s
 
-Code/MapView.o: Code/MapView.cpp.o
+Code/init_create_state.o: Code/init_create_state.cpp.o
 
-.PHONY : Code/MapView.o
+.PHONY : Code/init_create_state.o
 
 # target to build an object file
-Code/MapView.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/MapView.cpp.o
-.PHONY : Code/MapView.cpp.o
+Code/init_create_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o
+.PHONY : Code/init_create_state.cpp.o
 
-Code/MapView.i: Code/MapView.cpp.i
+Code/init_create_state.i: Code/init_create_state.cpp.i
 
-.PHONY : Code/MapView.i
+.PHONY : Code/init_create_state.i
 
 # target to preprocess a source file
-Code/MapView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/MapView.cpp.i
-.PHONY : Code/MapView.cpp.i
+Code/init_create_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.i
+.PHONY : Code/init_create_state.cpp.i
 
-Code/MapView.s: Code/MapView.cpp.s
+Code/init_create_state.s: Code/init_create_state.cpp.s
 
-.PHONY : Code/MapView.s
+.PHONY : Code/init_create_state.s
 
 # target to generate assembly for a file
-Code/MapView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/MapView.cpp.s
-.PHONY : Code/MapView.cpp.s
+Code/init_create_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.s
+.PHONY : Code/init_create_state.cpp.s
 
-Code/SaveState.o: Code/SaveState.cpp.o
+Code/input_manager.o: Code/input_manager.cpp.o
 
-.PHONY : Code/SaveState.o
+.PHONY : Code/input_manager.o
 
 # target to build an object file
-Code/SaveState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SaveState.cpp.o
-.PHONY : Code/SaveState.cpp.o
+Code/input_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.o
+.PHONY : Code/input_manager.cpp.o
 
-Code/SaveState.i: Code/SaveState.cpp.i
+Code/input_manager.i: Code/input_manager.cpp.i
 
-.PHONY : Code/SaveState.i
+.PHONY : Code/input_manager.i
 
 # target to preprocess a source file
-Code/SaveState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SaveState.cpp.i
-.PHONY : Code/SaveState.cpp.i
+Code/input_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.i
+.PHONY : Code/input_manager.cpp.i
 
-Code/SaveState.s: Code/SaveState.cpp.s
+Code/input_manager.s: Code/input_manager.cpp.s
 
-.PHONY : Code/SaveState.s
+.PHONY : Code/input_manager.s
 
 # target to generate assembly for a file
-Code/SaveState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SaveState.cpp.s
-.PHONY : Code/SaveState.cpp.s
+Code/input_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.s
+.PHONY : Code/input_manager.cpp.s
 
-Code/SimulationHandler.o: Code/SimulationHandler.cpp.o
+Code/load_state.o: Code/load_state.cpp.o
 
-.PHONY : Code/SimulationHandler.o
+.PHONY : Code/load_state.o
 
 # target to build an object file
-Code/SimulationHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SimulationHandler.cpp.o
-.PHONY : Code/SimulationHandler.cpp.o
+Code/load_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o
+.PHONY : Code/load_state.cpp.o
 
-Code/SimulationHandler.i: Code/SimulationHandler.cpp.i
+Code/load_state.i: Code/load_state.cpp.i
 
-.PHONY : Code/SimulationHandler.i
+.PHONY : Code/load_state.i
 
 # target to preprocess a source file
-Code/SimulationHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SimulationHandler.cpp.i
-.PHONY : Code/SimulationHandler.cpp.i
+Code/load_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.i
+.PHONY : Code/load_state.cpp.i
 
-Code/SimulationHandler.s: Code/SimulationHandler.cpp.s
+Code/load_state.s: Code/load_state.cpp.s
 
-.PHONY : Code/SimulationHandler.s
+.PHONY : Code/load_state.s
 
 # target to generate assembly for a file
-Code/SimulationHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SimulationHandler.cpp.s
-.PHONY : Code/SimulationHandler.cpp.s
+Code/load_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.s
+.PHONY : Code/load_state.cpp.s
 
-Code/SimulationSubject.o: Code/SimulationSubject.cpp.o
+Code/main.o: Code/main.cpp.o
 
-.PHONY : Code/SimulationSubject.o
+.PHONY : Code/main.o
 
 # target to build an object file
-Code/SimulationSubject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SimulationSubject.cpp.o
-.PHONY : Code/SimulationSubject.cpp.o
+Code/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.o
+.PHONY : Code/main.cpp.o
 
-Code/SimulationSubject.i: Code/SimulationSubject.cpp.i
+Code/main.i: Code/main.cpp.i
 
-.PHONY : Code/SimulationSubject.i
+.PHONY : Code/main.i
 
 # target to preprocess a source file
-Code/SimulationSubject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SimulationSubject.cpp.i
-.PHONY : Code/SimulationSubject.cpp.i
+Code/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.i
+.PHONY : Code/main.cpp.i
 
-Code/SimulationSubject.s: Code/SimulationSubject.cpp.s
+Code/main.s: Code/main.cpp.s
 
-.PHONY : Code/SimulationSubject.s
+.PHONY : Code/main.s
 
 # target to generate assembly for a file
-Code/SimulationSubject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SimulationSubject.cpp.s
-.PHONY : Code/SimulationSubject.cpp.s
+Code/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/main.cpp.s
+.PHONY : Code/main.cpp.s
 
-Code/Simulator.o: Code/Simulator.cpp.o
+Code/main_menu_state.o: Code/main_menu_state.cpp.o
 
-.PHONY : Code/Simulator.o
+.PHONY : Code/main_menu_state.o
 
 # target to build an object file
-Code/Simulator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Simulator.cpp.o
-.PHONY : Code/Simulator.cpp.o
+Code/main_menu_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o
+.PHONY : Code/main_menu_state.cpp.o
 
-Code/Simulator.i: Code/Simulator.cpp.i
+Code/main_menu_state.i: Code/main_menu_state.cpp.i
 
-.PHONY : Code/Simulator.i
+.PHONY : Code/main_menu_state.i
 
 # target to preprocess a source file
-Code/Simulator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Simulator.cpp.i
-.PHONY : Code/Simulator.cpp.i
+Code/main_menu_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.i
+.PHONY : Code/main_menu_state.cpp.i
 
-Code/Simulator.s: Code/Simulator.cpp.s
+Code/main_menu_state.s: Code/main_menu_state.cpp.s
 
-.PHONY : Code/Simulator.s
+.PHONY : Code/main_menu_state.s
 
 # target to generate assembly for a file
-Code/Simulator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Simulator.cpp.s
-.PHONY : Code/Simulator.cpp.s
+Code/main_menu_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.s
+.PHONY : Code/main_menu_state.cpp.s
 
-Code/SplashState.o: Code/SplashState.cpp.o
+Code/map_view.o: Code/map_view.cpp.o
 
-.PHONY : Code/SplashState.o
+.PHONY : Code/map_view.o
 
 # target to build an object file
-Code/SplashState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SplashState.cpp.o
-.PHONY : Code/SplashState.cpp.o
+Code/map_view.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o
+.PHONY : Code/map_view.cpp.o
 
-Code/SplashState.i: Code/SplashState.cpp.i
+Code/map_view.i: Code/map_view.cpp.i
 
-.PHONY : Code/SplashState.i
+.PHONY : Code/map_view.i
 
 # target to preprocess a source file
-Code/SplashState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SplashState.cpp.i
-.PHONY : Code/SplashState.cpp.i
+Code/map_view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.i
+.PHONY : Code/map_view.cpp.i
 
-Code/SplashState.s: Code/SplashState.cpp.s
+Code/map_view.s: Code/map_view.cpp.s
 
-.PHONY : Code/SplashState.s
+.PHONY : Code/map_view.s
 
 # target to generate assembly for a file
-Code/SplashState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/SplashState.cpp.s
-.PHONY : Code/SplashState.cpp.s
+Code/map_view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.s
+.PHONY : Code/map_view.cpp.s
 
-Code/StateMachine.o: Code/StateMachine.cpp.o
+Code/save_state.o: Code/save_state.cpp.o
 
-.PHONY : Code/StateMachine.o
+.PHONY : Code/save_state.o
 
 # target to build an object file
-Code/StateMachine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.o
-.PHONY : Code/StateMachine.cpp.o
+Code/save_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o
+.PHONY : Code/save_state.cpp.o
 
-Code/StateMachine.i: Code/StateMachine.cpp.i
+Code/save_state.i: Code/save_state.cpp.i
 
-.PHONY : Code/StateMachine.i
+.PHONY : Code/save_state.i
 
 # target to preprocess a source file
-Code/StateMachine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.i
-.PHONY : Code/StateMachine.cpp.i
+Code/save_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.i
+.PHONY : Code/save_state.cpp.i
 
-Code/StateMachine.s: Code/StateMachine.cpp.s
+Code/save_state.s: Code/save_state.cpp.s
 
-.PHONY : Code/StateMachine.s
+.PHONY : Code/save_state.s
 
 # target to generate assembly for a file
-Code/StateMachine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/StateMachine.cpp.s
-.PHONY : Code/StateMachine.cpp.s
+Code/save_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.s
+.PHONY : Code/save_state.cpp.s
 
-Code/ToolsSubject.o: Code/ToolsSubject.cpp.o
+Code/simulation_handler.o: Code/simulation_handler.cpp.o
 
-.PHONY : Code/ToolsSubject.o
+.PHONY : Code/simulation_handler.o
 
 # target to build an object file
-Code/ToolsSubject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/ToolsSubject.cpp.o
-.PHONY : Code/ToolsSubject.cpp.o
+Code/simulation_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o
+.PHONY : Code/simulation_handler.cpp.o
 
-Code/ToolsSubject.i: Code/ToolsSubject.cpp.i
+Code/simulation_handler.i: Code/simulation_handler.cpp.i
 
-.PHONY : Code/ToolsSubject.i
+.PHONY : Code/simulation_handler.i
 
 # target to preprocess a source file
-Code/ToolsSubject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/ToolsSubject.cpp.i
-.PHONY : Code/ToolsSubject.cpp.i
+Code/simulation_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.i
+.PHONY : Code/simulation_handler.cpp.i
 
-Code/ToolsSubject.s: Code/ToolsSubject.cpp.s
+Code/simulation_handler.s: Code/simulation_handler.cpp.s
 
-.PHONY : Code/ToolsSubject.s
+.PHONY : Code/simulation_handler.s
 
 # target to generate assembly for a file
-Code/ToolsSubject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/ToolsSubject.cpp.s
-.PHONY : Code/ToolsSubject.cpp.s
+Code/simulation_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.s
+.PHONY : Code/simulation_handler.cpp.s
 
-Code/ToolsView.o: Code/ToolsView.cpp.o
+Code/simulation_subject.o: Code/simulation_subject.cpp.o
 
-.PHONY : Code/ToolsView.o
+.PHONY : Code/simulation_subject.o
 
 # target to build an object file
-Code/ToolsView.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.o
-.PHONY : Code/ToolsView.cpp.o
+Code/simulation_subject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.o
+.PHONY : Code/simulation_subject.cpp.o
 
-Code/ToolsView.i: Code/ToolsView.cpp.i
+Code/simulation_subject.i: Code/simulation_subject.cpp.i
 
-.PHONY : Code/ToolsView.i
+.PHONY : Code/simulation_subject.i
 
 # target to preprocess a source file
-Code/ToolsView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.i
-.PHONY : Code/ToolsView.cpp.i
+Code/simulation_subject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.i
+.PHONY : Code/simulation_subject.cpp.i
 
-Code/ToolsView.s: Code/ToolsView.cpp.s
+Code/simulation_subject.s: Code/simulation_subject.cpp.s
 
-.PHONY : Code/ToolsView.s
+.PHONY : Code/simulation_subject.s
 
 # target to generate assembly for a file
-Code/ToolsView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/ToolsView.cpp.s
-.PHONY : Code/ToolsView.cpp.s
+Code/simulation_subject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.s
+.PHONY : Code/simulation_subject.cpp.s
 
-Code/Vehicles/Car.o: Code/Vehicles/Car.cpp.o
+Code/simulator.o: Code/simulator.cpp.o
 
-.PHONY : Code/Vehicles/Car.o
+.PHONY : Code/simulator.o
 
 # target to build an object file
-Code/Vehicles/Car.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/Car.cpp.o
-.PHONY : Code/Vehicles/Car.cpp.o
+Code/simulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.o
+.PHONY : Code/simulator.cpp.o
 
-Code/Vehicles/Car.i: Code/Vehicles/Car.cpp.i
+Code/simulator.i: Code/simulator.cpp.i
 
-.PHONY : Code/Vehicles/Car.i
+.PHONY : Code/simulator.i
 
 # target to preprocess a source file
-Code/Vehicles/Car.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/Car.cpp.i
-.PHONY : Code/Vehicles/Car.cpp.i
+Code/simulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.i
+.PHONY : Code/simulator.cpp.i
 
-Code/Vehicles/Car.s: Code/Vehicles/Car.cpp.s
+Code/simulator.s: Code/simulator.cpp.s
 
-.PHONY : Code/Vehicles/Car.s
+.PHONY : Code/simulator.s
 
 # target to generate assembly for a file
-Code/Vehicles/Car.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/Car.cpp.s
-.PHONY : Code/Vehicles/Car.cpp.s
+Code/simulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.s
+.PHONY : Code/simulator.cpp.s
 
-Code/Vehicles/Truck.o: Code/Vehicles/Truck.cpp.o
+Code/splash_state.o: Code/splash_state.cpp.o
 
-.PHONY : Code/Vehicles/Truck.o
+.PHONY : Code/splash_state.o
 
 # target to build an object file
-Code/Vehicles/Truck.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/Truck.cpp.o
-.PHONY : Code/Vehicles/Truck.cpp.o
+Code/splash_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.o
+.PHONY : Code/splash_state.cpp.o
 
-Code/Vehicles/Truck.i: Code/Vehicles/Truck.cpp.i
+Code/splash_state.i: Code/splash_state.cpp.i
 
-.PHONY : Code/Vehicles/Truck.i
+.PHONY : Code/splash_state.i
 
 # target to preprocess a source file
-Code/Vehicles/Truck.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/Truck.cpp.i
-.PHONY : Code/Vehicles/Truck.cpp.i
+Code/splash_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.i
+.PHONY : Code/splash_state.cpp.i
 
-Code/Vehicles/Truck.s: Code/Vehicles/Truck.cpp.s
+Code/splash_state.s: Code/splash_state.cpp.s
 
-.PHONY : Code/Vehicles/Truck.s
+.PHONY : Code/splash_state.s
 
 # target to generate assembly for a file
-Code/Vehicles/Truck.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/Truck.cpp.s
-.PHONY : Code/Vehicles/Truck.cpp.s
+Code/splash_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.s
+.PHONY : Code/splash_state.cpp.s
 
-Code/Vehicles/Vehicle.o: Code/Vehicles/Vehicle.cpp.o
+Code/state_machine.o: Code/state_machine.cpp.o
 
-.PHONY : Code/Vehicles/Vehicle.o
+.PHONY : Code/state_machine.o
 
 # target to build an object file
-Code/Vehicles/Vehicle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/Vehicle.cpp.o
-.PHONY : Code/Vehicles/Vehicle.cpp.o
+Code/state_machine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.o
+.PHONY : Code/state_machine.cpp.o
 
-Code/Vehicles/Vehicle.i: Code/Vehicles/Vehicle.cpp.i
+Code/state_machine.i: Code/state_machine.cpp.i
 
-.PHONY : Code/Vehicles/Vehicle.i
+.PHONY : Code/state_machine.i
 
 # target to preprocess a source file
-Code/Vehicles/Vehicle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/Vehicle.cpp.i
-.PHONY : Code/Vehicles/Vehicle.cpp.i
+Code/state_machine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.i
+.PHONY : Code/state_machine.cpp.i
 
-Code/Vehicles/Vehicle.s: Code/Vehicles/Vehicle.cpp.s
+Code/state_machine.s: Code/state_machine.cpp.s
 
-.PHONY : Code/Vehicles/Vehicle.s
+.PHONY : Code/state_machine.s
 
 # target to generate assembly for a file
-Code/Vehicles/Vehicle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/Vehicle.cpp.s
-.PHONY : Code/Vehicles/Vehicle.cpp.s
+Code/state_machine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.s
+.PHONY : Code/state_machine.cpp.s
 
-Code/Vehicles/VehicleFactory.o: Code/Vehicles/VehicleFactory.cpp.o
+Code/tools_subject.o: Code/tools_subject.cpp.o
 
-.PHONY : Code/Vehicles/VehicleFactory.o
+.PHONY : Code/tools_subject.o
 
 # target to build an object file
-Code/Vehicles/VehicleFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/VehicleFactory.cpp.o
-.PHONY : Code/Vehicles/VehicleFactory.cpp.o
+Code/tools_subject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.o
+.PHONY : Code/tools_subject.cpp.o
 
-Code/Vehicles/VehicleFactory.i: Code/Vehicles/VehicleFactory.cpp.i
+Code/tools_subject.i: Code/tools_subject.cpp.i
 
-.PHONY : Code/Vehicles/VehicleFactory.i
+.PHONY : Code/tools_subject.i
 
 # target to preprocess a source file
-Code/Vehicles/VehicleFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/VehicleFactory.cpp.i
-.PHONY : Code/Vehicles/VehicleFactory.cpp.i
+Code/tools_subject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.i
+.PHONY : Code/tools_subject.cpp.i
 
-Code/Vehicles/VehicleFactory.s: Code/Vehicles/VehicleFactory.cpp.s
+Code/tools_subject.s: Code/tools_subject.cpp.s
 
-.PHONY : Code/Vehicles/VehicleFactory.s
+.PHONY : Code/tools_subject.s
 
 # target to generate assembly for a file
-Code/Vehicles/VehicleFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/VehicleFactory.cpp.s
-.PHONY : Code/Vehicles/VehicleFactory.cpp.s
+Code/tools_subject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.s
+.PHONY : Code/tools_subject.cpp.s
+
+Code/tools_view.o: Code/tools_view.cpp.o
+
+.PHONY : Code/tools_view.o
+
+# target to build an object file
+Code/tools_view.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o
+.PHONY : Code/tools_view.cpp.o
+
+Code/tools_view.i: Code/tools_view.cpp.i
+
+.PHONY : Code/tools_view.i
+
+# target to preprocess a source file
+Code/tools_view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.i
+.PHONY : Code/tools_view.cpp.i
+
+Code/tools_view.s: Code/tools_view.cpp.s
+
+.PHONY : Code/tools_view.s
+
+# target to generate assembly for a file
+Code/tools_view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.s
+.PHONY : Code/tools_view.cpp.s
 
 # Help Target
 help:
@@ -934,93 +934,93 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CityTrafficSimulator"
-	@echo "... Code/AssetManager.o"
-	@echo "... Code/AssetManager.i"
-	@echo "... Code/AssetManager.s"
-	@echo "... Code/Button.o"
-	@echo "... Code/Button.i"
-	@echo "... Code/Button.s"
-	@echo "... Code/CamerasSubject.o"
-	@echo "... Code/CamerasSubject.i"
-	@echo "... Code/CamerasSubject.s"
-	@echo "... Code/CamerasView.o"
-	@echo "... Code/CamerasView.i"
-	@echo "... Code/CamerasView.s"
-	@echo "... Code/Cell.o"
-	@echo "... Code/Cell.i"
-	@echo "... Code/Cell.s"
-	@echo "... Code/CreatorHandler.o"
-	@echo "... Code/CreatorHandler.i"
-	@echo "... Code/CreatorHandler.s"
-	@echo "... Code/CreatorState.o"
-	@echo "... Code/CreatorState.i"
-	@echo "... Code/CreatorState.s"
-	@echo "... Code/CreatorSubject.o"
-	@echo "... Code/CreatorSubject.i"
-	@echo "... Code/CreatorSubject.s"
-	@echo "... Code/FileFinder.o"
-	@echo "... Code/FileFinder.i"
-	@echo "... Code/FileFinder.s"
-	@echo "... Code/Grid.o"
-	@echo "... Code/Grid.i"
-	@echo "... Code/Grid.s"
-	@echo "... Code/InitCreateState.o"
-	@echo "... Code/InitCreateState.i"
-	@echo "... Code/InitCreateState.s"
-	@echo "... Code/InputManager.o"
-	@echo "... Code/InputManager.i"
-	@echo "... Code/InputManager.s"
-	@echo "... Code/LoadDemo.o"
-	@echo "... Code/LoadDemo.i"
-	@echo "... Code/LoadDemo.s"
-	@echo "... Code/LoadState.o"
-	@echo "... Code/LoadState.i"
-	@echo "... Code/LoadState.s"
-	@echo "... Code/Main.o"
-	@echo "... Code/Main.i"
-	@echo "... Code/Main.s"
-	@echo "... Code/MainMenuState.o"
-	@echo "... Code/MainMenuState.i"
-	@echo "... Code/MainMenuState.s"
-	@echo "... Code/MapView.o"
-	@echo "... Code/MapView.i"
-	@echo "... Code/MapView.s"
-	@echo "... Code/SaveState.o"
-	@echo "... Code/SaveState.i"
-	@echo "... Code/SaveState.s"
-	@echo "... Code/SimulationHandler.o"
-	@echo "... Code/SimulationHandler.i"
-	@echo "... Code/SimulationHandler.s"
-	@echo "... Code/SimulationSubject.o"
-	@echo "... Code/SimulationSubject.i"
-	@echo "... Code/SimulationSubject.s"
-	@echo "... Code/Simulator.o"
-	@echo "... Code/Simulator.i"
-	@echo "... Code/Simulator.s"
-	@echo "... Code/SplashState.o"
-	@echo "... Code/SplashState.i"
-	@echo "... Code/SplashState.s"
-	@echo "... Code/StateMachine.o"
-	@echo "... Code/StateMachine.i"
-	@echo "... Code/StateMachine.s"
-	@echo "... Code/ToolsSubject.o"
-	@echo "... Code/ToolsSubject.i"
-	@echo "... Code/ToolsSubject.s"
-	@echo "... Code/ToolsView.o"
-	@echo "... Code/ToolsView.i"
-	@echo "... Code/ToolsView.s"
-	@echo "... Code/Vehicles/Car.o"
-	@echo "... Code/Vehicles/Car.i"
-	@echo "... Code/Vehicles/Car.s"
-	@echo "... Code/Vehicles/Truck.o"
-	@echo "... Code/Vehicles/Truck.i"
-	@echo "... Code/Vehicles/Truck.s"
-	@echo "... Code/Vehicles/Vehicle.o"
-	@echo "... Code/Vehicles/Vehicle.i"
-	@echo "... Code/Vehicles/Vehicle.s"
-	@echo "... Code/Vehicles/VehicleFactory.o"
-	@echo "... Code/Vehicles/VehicleFactory.i"
-	@echo "... Code/Vehicles/VehicleFactory.s"
+	@echo "... Code/Vehicles/car.o"
+	@echo "... Code/Vehicles/car.i"
+	@echo "... Code/Vehicles/car.s"
+	@echo "... Code/Vehicles/truck.o"
+	@echo "... Code/Vehicles/truck.i"
+	@echo "... Code/Vehicles/truck.s"
+	@echo "... Code/Vehicles/vehicle.o"
+	@echo "... Code/Vehicles/vehicle.i"
+	@echo "... Code/Vehicles/vehicle.s"
+	@echo "... Code/Vehicles/vehicle_factory.o"
+	@echo "... Code/Vehicles/vehicle_factory.i"
+	@echo "... Code/Vehicles/vehicle_factory.s"
+	@echo "... Code/asset_manager.o"
+	@echo "... Code/asset_manager.i"
+	@echo "... Code/asset_manager.s"
+	@echo "... Code/button.o"
+	@echo "... Code/button.i"
+	@echo "... Code/button.s"
+	@echo "... Code/camera.o"
+	@echo "... Code/camera.i"
+	@echo "... Code/camera.s"
+	@echo "... Code/cameras_subject.o"
+	@echo "... Code/cameras_subject.i"
+	@echo "... Code/cameras_subject.s"
+	@echo "... Code/cameras_view.o"
+	@echo "... Code/cameras_view.i"
+	@echo "... Code/cameras_view.s"
+	@echo "... Code/cell.o"
+	@echo "... Code/cell.i"
+	@echo "... Code/cell.s"
+	@echo "... Code/creator_handler.o"
+	@echo "... Code/creator_handler.i"
+	@echo "... Code/creator_handler.s"
+	@echo "... Code/creator_state.o"
+	@echo "... Code/creator_state.i"
+	@echo "... Code/creator_state.s"
+	@echo "... Code/creator_subject.o"
+	@echo "... Code/creator_subject.i"
+	@echo "... Code/creator_subject.s"
+	@echo "... Code/file_finder.o"
+	@echo "... Code/file_finder.i"
+	@echo "... Code/file_finder.s"
+	@echo "... Code/grid.o"
+	@echo "... Code/grid.i"
+	@echo "... Code/grid.s"
+	@echo "... Code/init_create_state.o"
+	@echo "... Code/init_create_state.i"
+	@echo "... Code/init_create_state.s"
+	@echo "... Code/input_manager.o"
+	@echo "... Code/input_manager.i"
+	@echo "... Code/input_manager.s"
+	@echo "... Code/load_state.o"
+	@echo "... Code/load_state.i"
+	@echo "... Code/load_state.s"
+	@echo "... Code/main.o"
+	@echo "... Code/main.i"
+	@echo "... Code/main.s"
+	@echo "... Code/main_menu_state.o"
+	@echo "... Code/main_menu_state.i"
+	@echo "... Code/main_menu_state.s"
+	@echo "... Code/map_view.o"
+	@echo "... Code/map_view.i"
+	@echo "... Code/map_view.s"
+	@echo "... Code/save_state.o"
+	@echo "... Code/save_state.i"
+	@echo "... Code/save_state.s"
+	@echo "... Code/simulation_handler.o"
+	@echo "... Code/simulation_handler.i"
+	@echo "... Code/simulation_handler.s"
+	@echo "... Code/simulation_subject.o"
+	@echo "... Code/simulation_subject.i"
+	@echo "... Code/simulation_subject.s"
+	@echo "... Code/simulator.o"
+	@echo "... Code/simulator.i"
+	@echo "... Code/simulator.s"
+	@echo "... Code/splash_state.o"
+	@echo "... Code/splash_state.i"
+	@echo "... Code/splash_state.s"
+	@echo "... Code/state_machine.o"
+	@echo "... Code/state_machine.i"
+	@echo "... Code/state_machine.s"
+	@echo "... Code/tools_subject.o"
+	@echo "... Code/tools_subject.i"
+	@echo "... Code/tools_subject.s"
+	@echo "... Code/tools_view.o"
+	@echo "... Code/tools_view.i"
+	@echo "... Code/tools_view.s"
 .PHONY : help
 
 

@@ -20,7 +20,6 @@ namespace zpr{
     
         void loadTexture(std::string name, std::string file_name);
         sf::Texture &getTexture(std::string name);
-    
         void loadFont(std::string name, std::string file_name);
         sf::Font &getFont(std::string name);
     private:
