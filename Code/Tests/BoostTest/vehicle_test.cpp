@@ -108,10 +108,10 @@ BOOST_AUTO_TEST_CASE(Vehicle_GoFromStopTest) {
 }
 
 BOOST_AUTO_TEST_CASE(Vehicle_ConstructorCurrntPreviousRoad) {
-	BOOST_CHECK_EQUAL(nullptr, car_->currentRoad_);
-	BOOST_CHECK_EQUAL(nullptr, car_->previousRoad_);
-	BOOST_CHECK_EQUAL(nullptr, truck_->currentRoad_);
-	BOOST_CHECK_EQUAL(nullptr, truck_->previousRoad_);
+	BOOST_TEST(car_->currentRoad_);
+	BOOST_TEST(!car_->previousRoad_);
+	BOOST_TEST(truck_->currentRoad_);
+	BOOST_TEST(!truck_->previousRoad_);
 }
 
 BOOST_AUTO_TEST_SUITE(Vehicle_MoveTest)
@@ -126,7 +126,38 @@ BOOST_AUTO_TEST_CASE(Vhicle_MoveSouthTest) {
 	
 }
 
-BOOST_AUTO
+BOOST_AUTO_TEST_CASE(Vehicle_MoveNorthTest) {
+	car_->direction_ = "North";
+	truck_->direction_ = "North";
+	car_->move();
+	truck_->move();
+	BOOST_CHECK_EQUAL(car_->currentRoad_->getPosition().x + car_->roadSize_ / 2 + car_->roadStripesSize_, car_->x_);
+	BOOST_CHECK_EQUAL(17, car_->y_);
+	BOOST_CHECK_EQUAL(truck_->currentRoad_->getPosition().x + truck_->roadSize_ / 2 + truck_->roadStripesSize_, truck_->x_);
+	BOOST_CHECK_EQUAL(17, truck_->y_);
+}
+
+BOOST_AUTO_TEST_CASE(Vehicle_MoveEastTest) {
+	car_->direction_ = "East";
+	truck_->direction_ = "East";
+	car_->move();
+	truck_->move();
+	BOOST_CHECK_EQUAL(23, car_->x_);
+	BOOST_CHECK_EQUAL(car_->currentRoad_->getPosition().y + car_->roadSize_ / 2 + car_->roadStripesSize_, car_->y_);
+	BOOST_CHECK_EQUAL(23, truck_->x_);
+	BOOST_CHECK_EQUAL(truck_->currentRoad_->getPosition().y + truck_->roadSize_ / 2 + truck_->roadStripesSize_, truck_->y_);
+}
+
+BOOST_AUTO_TEST_CASE(Vehicle_MoveWestTest) {
+	car_->direction_ = "West";
+	truck_->direction_ = "West";
+	car_->move();
+	truck_->move();
+	BOOST_CHECK_EQUAL(17, car_->x_);
+	BOOST_CHECK_EQUAL(car_->currentRoad_->getPosition().y - car_->roadSize_ / 2 - car_->roadStripesSize_, car_->y_);
+	BOOST_CHECK_EQUAL(17, truck_->x_);
+	BOOST_CHECK_EQUAL(truck_->currentRoad_->getPosition().y - truck_->roadSize_ / 2 - truck_->roadStripesSize_, truck_->y_);
+}
 
 BOOST_AUTO_TEST_CASE(Vehicle_DontMoveWhenStopped) {
 	car_->stopVehicle();
@@ -134,9 +165,14 @@ BOOST_AUTO_TEST_CASE(Vehicle_DontMoveWhenStopped) {
 	BOOST_CHECK_EQUAL(car_->currentRoad_->getPosition().x - car_->roadSize_ / 2 - car_->roadStripesSize_, car_->x_);
 	BOOST_CHECK_EQUAL(20, car_->y_);
 }
-
-
-
 BOOST_AUTO_TEST_SUITE_END()
 
+BOOST_AUTO_TEST_CASE(Vehicle_checkVehicleStoppedTest) {
+	BOOST_CHECK_EQUAL(0, car_->stopCounter_);
+	car_->checkVehicleStopped();
+	BOOST_CHECK_EQUAL(0, car_->stopCounter_);
+	car_->stopVehicle();
+	car_->checkVehicleStopped();
+	BOOST_CHECK_EQUAL(1, car_->stopCounter_);
+}
 BOOST_AUTO_TEST_SUITE_END()
