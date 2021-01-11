@@ -11,6 +11,7 @@
 		52190ADE25AC7C7E00663216 /* drawing_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190ADC25AC7C7E00663216 /* drawing_helper.cpp */; };
 		52190AE325AC87D300663216 /* converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AE125AC87D300663216 /* converter.cpp */; };
 		52190AE825AC929600663216 /* init_create_state_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AE625AC929600663216 /* init_create_state_helper.cpp */; };
+		52190AEF25ACB38700663216 /* road_builder_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AED25ACB38700663216 /* road_builder_helper.cpp */; };
 		522531B6255234B40035E946 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */; };
 		522531B7255234B40035E946 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */; };
 		522531B8255234B40035E946 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B3255234B40035E946 /* libsfml-window.2.5.1.dylib */; };
@@ -78,6 +79,8 @@
 		52190AE225AC87D300663216 /* converter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = converter.hpp; sourceTree = "<group>"; };
 		52190AE625AC929600663216 /* init_create_state_helper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = init_create_state_helper.cpp; sourceTree = "<group>"; };
 		52190AE725AC929600663216 /* init_create_state_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = init_create_state_helper.hpp; sourceTree = "<group>"; };
+		52190AED25ACB38700663216 /* road_builder_helper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = road_builder_helper.cpp; sourceTree = "<group>"; };
+		52190AEE25ACB38700663216 /* road_builder_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = road_builder_helper.hpp; sourceTree = "<group>"; };
 		522531A9255232C10035E946 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = ../../../Resources; sourceTree = "<group>"; };
 		522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				52190ADD25AC7C7E00663216 /* drawing_helper.hpp */,
 				522FCDAB25A169620006A5AB /* keys_enum.hpp */,
 				5230E7932565EB3500F84CF2 /* map_view.cpp */,
+				52190AED25ACB38700663216 /* road_builder_helper.cpp */,
+				52190AEE25ACB38700663216 /* road_builder_helper.hpp */,
 				5230E7962565EB3500F84CF2 /* map_view.hpp */,
 				52190AE125AC87D300663216 /* converter.cpp */,
 				52190AE225AC87D300663216 /* converter.hpp */,
@@ -384,6 +389,7 @@
 				52D3BCF625540A9A0093D5DF /* state_machine.cpp in Sources */,
 				52A1CEA32599F4450014C907 /* tools_subject.cpp in Sources */,
 				5230E7992565EB3500F84CF2 /* tools_view.cpp in Sources */,
+				52190AEF25ACB38700663216 /* road_builder_helper.cpp in Sources */,
 				52D0C277259B9C4A000871D0 /* simulation_handler.cpp in Sources */,
 				5230E79A2565EB3500F84CF2 /* grid.cpp in Sources */,
 				52F5565D259D17DD00ECEED3 /* vehicle_factory.cpp in Sources */,
