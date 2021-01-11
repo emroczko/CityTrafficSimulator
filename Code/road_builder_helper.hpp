@@ -4,6 +4,7 @@
 //
 //  Created by Eryk Mroczko on 11/01/2021.
 //
+#pragma once
 
 #include "SFML/Graphics.hpp"
 #include "simulator.hpp"

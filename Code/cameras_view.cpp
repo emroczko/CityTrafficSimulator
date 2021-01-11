@@ -167,7 +167,7 @@ namespace zpr {
      */
     bool CamerasView::startingRoadConnected()
     {
-        if (this->cells_.size()>0 && this->cells_.at(sqrt(this->cells_.size())*STARTING_CELL_COL).containsRoad_) 
+        if (this->cells_.size()>0 && this->cells_.at(sqrt(this->cells_.size())*STARTING_CELL_COL).containsRoad_)
             return true;
         else
             return false;

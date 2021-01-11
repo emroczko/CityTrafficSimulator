@@ -34,6 +34,8 @@ namespace zpr {
         this->drawingHelper_ = std::make_unique<DrawingHelper>(this->data_);
         this->converter_ = std::make_unique<Converter>(this->gridSize_);
         this->roadBuilderHelper_ = std::make_unique<RoadBuilderHelper>(this->data_, this->gridSize_);
+        this->addingRoadsHelper_ = std::make_unique<AddingHelper>(this->data_, this->gridSize_);
+        this->deletingRoadsHelper_ = std::make_unique<DeletingHelper>(this->data_, this->gridSize_);
         
         this->clicked_ = false;
         this->loadAssets();
@@ -171,10 +173,11 @@ namespace zpr {
 			int col = cell.getPosition().y;
 			if (cell.containsRoad_ && !cell.roadDrawn_) {
 				cell.roadDrawn_ = true;
-				this->addUserRoad(sf::Vector2i(row, col));
+                this->addingRoadsHelper_->addUserRoad(sf::Vector2i(row, col), roads_);
 			}
             if (cell.toDelete_) {
-                this->deleteRoad(this->converter_->transformRowColToPixels(sf::Vector2i(row, col)));
+                this->deletingRoadsHelper_->deleteRoad(this->converter_->transformRowColToPixels(sf::Vector2i(row, col)), this->roads_);
+                //this->deleteRoad(this->converter_->transformRowColToPixels(sf::Vector2i(row, col)));
 				cell.toDelete_ = false;
             }
 		}
@@ -190,30 +193,16 @@ namespace zpr {
             int col = cell.getPosition().x;
             if (cell.containsRoad_ && !cell.roadDrawn_) {
                 cell.roadDrawn_ = true;
-                this->addEnterRoad(sf::Vector2i(row, col));
+                this->addingRoadsHelper_->addEnterRoad(sf::Vector2i(row, col), roads_);
             }
 		}
-        this->addGarage(sf::Vector2i(0, -2));
-        this->addGarage(sf::Vector2i(gridSize_-1, -2));
+    
+        this->addingRoadsHelper_->addGarage(sf::Vector2i(0, -2), roads_);
+        this->addingRoadsHelper_->addGarage(sf::Vector2i(gridSize_-1, -2), roads_);
+        
 	}
 
-    /**
-     * Method responsible for adding roads.
-     * @param texture_name - Name of texture which should be added to road.
-     * @param position - Position of road in row and column.
-     */
-    void MapView::addRoad(std::string texture_name, sf::Vector2i position){
-        sf::RectangleShape road;
-        road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
-        road.setTexture(&this->data_->assets_.getTexture(texture_name));
-        road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
-        sf::Vector2f centered_position_in_pixels = this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y));
-        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2 ;
-        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2 ;
-        road.setPosition(centered_position_in_pixels);
-        this->roads_.push_back(road);
-    }
-
+    
     /**
      * Method responsible for adding cameras.
      * @param position - Position of camera in row and column.
@@ -231,55 +220,6 @@ namespace zpr {
         camera.setPosition(centered_position_in_pixels);
         this->cameras_[whichCamera_-1] = camera;
     }
-    
-    /**
-     * Method responsible for adding entry roads.
-     * @param position - Position of road in row and column.
-     */
-    void MapView::addEnterRoad(sf::Vector2i position){
-        this->addRoad("Road", position);
-        this->roadBuilderHelper_->checkRoadsTexture(this->roads_);
-    }
-
-    /**
-     * Method responsible for adding garages (two entry points).
-     * @param position - Position of garage in row and column.
-     */
-    void MapView::addGarage(sf::Vector2i position){
-        this->addRoad("Entry", position);
-    }
-
-    
-    /**
-     * Method responsible for adding user roads.
-     * @param position - Position of road in row and column.
-     */
-    void MapView::addUserRoad(sf::Vector2i position)
-    {
-        if(this->checkRoadExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-        this->addRoad("Road", position);
-        //this->checkRoadsTexture();
-        this->roadBuilderHelper_->checkRoadsTexture(this->roads_);
-    }
-
-    /**
-     * Method responsible for deleting roads from the map.
-     * @param position - Position of the road in row and column.
-     */
-    void MapView::deleteRoad(sf::Vector2f position)
-    {
-		int i = 0;
-
-		if (this->checkRoadExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-        
-		for (sf::RectangleShape road : roads_) {
-			if (road.getPosition().x - this->cellSize_ / 2 == position.x && road.getPosition().y - this->cellSize_ / 2 == position.y){
-				roads_.erase(roads_.begin() + i);
-			}
-			i++;
-		}
-        this->roadBuilderHelper_->checkRoadsTexture(this->roads_);
-	}
 
     /**
      * Inherited method responsible for handling actions when camera is deleting.
@@ -310,19 +250,6 @@ namespace zpr {
             i++;
         }
     }
-
-    /**
-     * Method responsible for checking if road exists on given position.
-     * @param position - Position where road can exist.
-     * @return - True when road exists, false otherwise.
-     */
-	bool MapView::checkRoadExists(sf::Vector2f position) {
-		for (sf::RectangleShape road : this->roads_) {
-			if (road.getPosition().x - this->cellSize_/2 == position.x && road.getPosition().y - this->cellSize_/2 == position.y) {return true;}
-		}
-		return false;
-	}
-    
 
     /**
      * Method responsible for checking if camera exists on given position.
@@ -417,28 +344,6 @@ namespace zpr {
     void MapView::updateRoads(std::vector<sf::RectangleShape> roads)
     {
         this->roads_ = roads;
-    }
-
-    /**
-     * Method responsible for updating variable which tells MapView whether we are in drawing road mode.
-     * @param is_drawing_road - True if we are drawing road, false otherwise.
-     */
-	void MapView::updateIsDrawingRoad(bool is_drawing_road)
-	{
-		this->isDrawingRoad_ = is_drawing_road;
-        this->isDeletingRoad_ = false;
-        this->isSimulating_ = false;
-	}
-
-    /**
-     * Method responsible for updating variable which tells MapView whether we are in deleting road mode.
-     * @param is_deleting_road - True if we are deleting road, false otherwise.
-     */
-    void MapView::updateIsDeletingRoad(bool is_deleting_road)
-    {
-        this->isDeletingRoad_ = is_deleting_road;
-        this->isDrawingRoad_ = false;
-        this->isSimulating_ = false;
     }
 
     /**
