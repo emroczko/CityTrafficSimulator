@@ -30,7 +30,7 @@ namespace zpr {
         if (cells_.empty())
             this->generateBoard();
         else
-            this->grid_->cells_ = this->cells_;
+            this->grid_ = std::make_unique<Grid>(cells_, gridSize_);
         
         this->generateEnterBoard();
         

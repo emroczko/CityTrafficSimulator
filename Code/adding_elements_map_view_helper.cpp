@@ -17,6 +17,7 @@ namespace zpr{
         this->cellSize_ = this->converter_->getCellSize();
         this->camerasHelper_ = std::make_unique<CamerasHelper>(this->cellSize_);
     }
+
     /**
      * Method responsible for adding roads.
      * @param texture_name - Name of texture which should be added to road.

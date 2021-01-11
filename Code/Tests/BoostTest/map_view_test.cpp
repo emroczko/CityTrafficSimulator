@@ -1,5 +1,5 @@
 #define BOOST_TEST_DYN_LINK
-#define BOOST_TEST_MODULE MapView test
+#define BOOST_TEST_MODULE CityTrafficSimulator test
 #include "../../map_view.hpp"
 #include "../../simulator.hpp"
 #include "../../definitions.hpp"

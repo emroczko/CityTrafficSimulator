@@ -10,6 +10,7 @@
 #include "converter.hpp"
 #include "road_builder_helper.hpp"
 #include "cameras_map_view_helper.hpp"
+#include "definitions.hpp"
 
 namespace zpr {
 

@@ -142,6 +142,33 @@ CityTrafficSimulator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/build
 .PHONY : CityTrafficSimulator/fast
 
+Code/Tests/BoostTest/adding_elements_map_view_test.o: Code/Tests/BoostTest/adding_elements_map_view_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/adding_elements_map_view_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/adding_elements_map_view_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/adding_elements_map_view_test.cpp.o
+.PHONY : Code/Tests/BoostTest/adding_elements_map_view_test.cpp.o
+
+Code/Tests/BoostTest/adding_elements_map_view_test.i: Code/Tests/BoostTest/adding_elements_map_view_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/adding_elements_map_view_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/adding_elements_map_view_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/adding_elements_map_view_test.cpp.i
+.PHONY : Code/Tests/BoostTest/adding_elements_map_view_test.cpp.i
+
+Code/Tests/BoostTest/adding_elements_map_view_test.s: Code/Tests/BoostTest/adding_elements_map_view_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/adding_elements_map_view_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/adding_elements_map_view_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/adding_elements_map_view_test.cpp.s
+.PHONY : Code/Tests/BoostTest/adding_elements_map_view_test.cpp.s
+
 Code/Tests/BoostTest/converter_test.o: Code/Tests/BoostTest/converter_test.cpp.o
 
 .PHONY : Code/Tests/BoostTest/converter_test.o
@@ -412,32 +439,32 @@ Code/Vehicles/vehicle_factory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.s
 .PHONY : Code/Vehicles/vehicle_factory.cpp.s
 
-Code/adding_helper.o: Code/adding_helper.cpp.o
+Code/adding_elements_map_view_helper.o: Code/adding_elements_map_view_helper.cpp.o
 
-.PHONY : Code/adding_helper.o
+.PHONY : Code/adding_elements_map_view_helper.o
 
 # target to build an object file
-Code/adding_helper.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o
-.PHONY : Code/adding_helper.cpp.o
+Code/adding_elements_map_view_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/adding_elements_map_view_helper.cpp.o
+.PHONY : Code/adding_elements_map_view_helper.cpp.o
 
-Code/adding_helper.i: Code/adding_helper.cpp.i
+Code/adding_elements_map_view_helper.i: Code/adding_elements_map_view_helper.cpp.i
 
-.PHONY : Code/adding_helper.i
+.PHONY : Code/adding_elements_map_view_helper.i
 
 # target to preprocess a source file
-Code/adding_helper.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.i
-.PHONY : Code/adding_helper.cpp.i
+Code/adding_elements_map_view_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/adding_elements_map_view_helper.cpp.i
+.PHONY : Code/adding_elements_map_view_helper.cpp.i
 
-Code/adding_helper.s: Code/adding_helper.cpp.s
+Code/adding_elements_map_view_helper.s: Code/adding_elements_map_view_helper.cpp.s
 
-.PHONY : Code/adding_helper.s
+.PHONY : Code/adding_elements_map_view_helper.s
 
 # target to generate assembly for a file
-Code/adding_helper.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.s
-.PHONY : Code/adding_helper.cpp.s
+Code/adding_elements_map_view_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/adding_elements_map_view_helper.cpp.s
+.PHONY : Code/adding_elements_map_view_helper.cpp.s
 
 Code/asset_manager.o: Code/asset_manager.cpp.o
 
@@ -519,6 +546,33 @@ Code/camera.s: Code/camera.cpp.s
 Code/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.s
 .PHONY : Code/camera.cpp.s
+
+Code/cameras_map_view_helper.o: Code/cameras_map_view_helper.cpp.o
+
+.PHONY : Code/cameras_map_view_helper.o
+
+# target to build an object file
+Code/cameras_map_view_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cameras_map_view_helper.cpp.o
+.PHONY : Code/cameras_map_view_helper.cpp.o
+
+Code/cameras_map_view_helper.i: Code/cameras_map_view_helper.cpp.i
+
+.PHONY : Code/cameras_map_view_helper.i
+
+# target to preprocess a source file
+Code/cameras_map_view_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cameras_map_view_helper.cpp.i
+.PHONY : Code/cameras_map_view_helper.cpp.i
+
+Code/cameras_map_view_helper.s: Code/cameras_map_view_helper.cpp.s
+
+.PHONY : Code/cameras_map_view_helper.s
+
+# target to generate assembly for a file
+Code/cameras_map_view_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cameras_map_view_helper.cpp.s
+.PHONY : Code/cameras_map_view_helper.cpp.s
 
 Code/cameras_subject.o: Code/cameras_subject.cpp.o
 
@@ -708,6 +762,33 @@ Code/creator_subject.s: Code/creator_subject.cpp.s
 Code/creator_subject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.s
 .PHONY : Code/creator_subject.cpp.s
+
+Code/deleting_elements_helper.o: Code/deleting_elements_helper.cpp.o
+
+.PHONY : Code/deleting_elements_helper.o
+
+# target to build an object file
+Code/deleting_elements_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/deleting_elements_helper.cpp.o
+.PHONY : Code/deleting_elements_helper.cpp.o
+
+Code/deleting_elements_helper.i: Code/deleting_elements_helper.cpp.i
+
+.PHONY : Code/deleting_elements_helper.i
+
+# target to preprocess a source file
+Code/deleting_elements_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/deleting_elements_helper.cpp.i
+.PHONY : Code/deleting_elements_helper.cpp.i
+
+Code/deleting_elements_helper.s: Code/deleting_elements_helper.cpp.s
+
+.PHONY : Code/deleting_elements_helper.s
+
+# target to generate assembly for a file
+Code/deleting_elements_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/deleting_elements_helper.cpp.s
+.PHONY : Code/deleting_elements_helper.cpp.s
 
 Code/drawing_helper.o: Code/drawing_helper.cpp.o
 
@@ -1204,6 +1285,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CityTrafficSimulator"
+	@echo "... Code/Tests/BoostTest/adding_elements_map_view_test.o"
+	@echo "... Code/Tests/BoostTest/adding_elements_map_view_test.i"
+	@echo "... Code/Tests/BoostTest/adding_elements_map_view_test.s"
 	@echo "... Code/Tests/BoostTest/converter_test.o"
 	@echo "... Code/Tests/BoostTest/converter_test.i"
 	@echo "... Code/Tests/BoostTest/converter_test.s"
@@ -1234,9 +1318,9 @@ help:
 	@echo "... Code/Vehicles/vehicle_factory.o"
 	@echo "... Code/Vehicles/vehicle_factory.i"
 	@echo "... Code/Vehicles/vehicle_factory.s"
-	@echo "... Code/adding_helper.o"
-	@echo "... Code/adding_helper.i"
-	@echo "... Code/adding_helper.s"
+	@echo "... Code/adding_elements_map_view_helper.o"
+	@echo "... Code/adding_elements_map_view_helper.i"
+	@echo "... Code/adding_elements_map_view_helper.s"
 	@echo "... Code/asset_manager.o"
 	@echo "... Code/asset_manager.i"
 	@echo "... Code/asset_manager.s"
@@ -1246,6 +1330,9 @@ help:
 	@echo "... Code/camera.o"
 	@echo "... Code/camera.i"
 	@echo "... Code/camera.s"
+	@echo "... Code/cameras_map_view_helper.o"
+	@echo "... Code/cameras_map_view_helper.i"
+	@echo "... Code/cameras_map_view_helper.s"
 	@echo "... Code/cameras_subject.o"
 	@echo "... Code/cameras_subject.i"
 	@echo "... Code/cameras_subject.s"
@@ -1267,6 +1354,9 @@ help:
 	@echo "... Code/creator_subject.o"
 	@echo "... Code/creator_subject.i"
 	@echo "... Code/creator_subject.s"
+	@echo "... Code/deleting_elements_helper.o"
+	@echo "... Code/deleting_elements_helper.i"
+	@echo "... Code/deleting_elements_helper.s"
 	@echo "... Code/drawing_helper.o"
 	@echo "... Code/drawing_helper.i"
 	@echo "... Code/drawing_helper.s"

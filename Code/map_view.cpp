@@ -17,7 +17,9 @@ namespace zpr {
      */
 	MapView::MapView(SimulatorDataRef data, int grid_size): data_(data), gridSize_(grid_size){
 		init();
+        
 	}
+
     
     /**
      * Parametrized constructor of MapView class.
