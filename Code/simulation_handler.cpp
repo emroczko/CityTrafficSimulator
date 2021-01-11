@@ -55,13 +55,20 @@ namespace zpr {
         }
         else{
             this->startSimulationTimer_.stopTimer();
+            std::this_thread::sleep_for(std::chrono::milliseconds(5));
+            this->vehicles_.clear();
+            this->notifyVehicles(this->vehicles_);
+            this->roads_.clear();
+            this->cameras_.clear();
+            
             this->clearDataTimer_.setTimeout([&]() {
                 this->vehicles_.clear();
                 this->notifyVehicles(this->vehicles_);
                 //this->roads_.clear();
                 this->roads_.erase(roads_.begin()+15, roads_.end());
                 this->cameras_.clear();
-            }, 5);
+                this->notifyVehicles(this->vehicles_);
+            }, 10);
         }
         this->notifyIsSimulating(this->isSimulating_);
 
