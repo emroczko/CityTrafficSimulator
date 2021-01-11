@@ -174,10 +174,10 @@ namespace zpr {
 			int col = cell.getPosition().y;
 			if (cell.containsRoad_ && !cell.roadDrawn_) {
 				cell.roadDrawn_ = true;
-                this->addingRectangleShapesHelper_->addUserRoad(sf::Vector2i(row, col), roads_);
+                this->addingRectangleShapesHelper_->addUserRoad(sf::Vector2i(row, col), this->roads_);
 			}
             if (cell.toDelete_) {
-                this->deletingRectangleShapesHelper_->deleteRoad(this->converter_->transformRowColToPixels(sf::Vector2i(row, col)), this->roads_);
+                this->deletingRectangleShapesHelper_->deleteRoad(sf::Vector2i(row, col), this->roads_);
 				cell.toDelete_ = false;
             }
 		}

@@ -24,14 +24,15 @@ namespace zpr {
      * @param position - Position of the road in row and column.
      * @param roads - Vector of roads existing in the map view.
      */
-    void DeletingHelper::deleteRoad(sf::Vector2f position, std::vector<sf::RectangleShape> &roads){
+    void DeletingHelper::deleteRoad(sf::Vector2i position, std::vector<sf::RectangleShape> &roads){
 
             int i = 0;
+            sf::Vector2f position_in_pixels = this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y));
 
-            if(this->roadBuilderHelper_->checkRoadExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)), roads)) { return; }
+            if(this->roadBuilderHelper_->checkRoadExists(this->converter_->transformRowColToPixels(sf::Vector2i(position_in_pixels.x, position_in_pixels.y)), roads)) { return; }
             
             for (sf::RectangleShape road : roads) {
-                if (road.getPosition().x - this->cellSize_ / 2 == position.x && road.getPosition().y - this->cellSize_ / 2 == position.y){
+                if (road.getPosition().x - this->cellSize_ / 2 == position_in_pixels.x && road.getPosition().y - this->cellSize_ / 2 == position_in_pixels.y){
                     roads.erase(roads.begin() + i);
                 }
                 i++;
@@ -50,6 +51,7 @@ namespace zpr {
     void DeletingHelper::deleteCamera(sf::Vector2f position, sf::RectangleShape *cameras, int which_camera){
         sf::RectangleShape temp;
 
+        
         if(this->camerasHelper_->checkCameraExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)), cameras)) { return; }
 
         for(int i = 0; i < 3; i++)

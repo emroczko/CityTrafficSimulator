@@ -6,15 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/deleting_elements_helper.cpp
-../../deleting_elements_helper.hpp
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/deleting_elements_helper.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/adding_elements_map_view_test.cpp
+../../adding_elements_map_view_helper.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/adding_elements_map_view_helper.hpp
 ../../definitions.hpp
 /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
 SFML/Graphics.hpp
 /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/SFML/Graphics.hpp
 boost/test/unit_test.hpp
 -
+
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/adding_elements_map_view_helper.hpp
+SFML/Graphics.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/SFML/Graphics.hpp
+simulator.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulator.hpp
+converter.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/converter.hpp
+road_builder_helper.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/road_builder_helper.hpp
+cameras_map_view_helper.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cameras_map_view_helper.hpp
+definitions.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
 
 /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/asset_manager.hpp
 map
@@ -37,18 +51,6 @@ definitions.hpp
 /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
 
 /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
-
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/deleting_elements_helper.hpp
-SFML/Graphics.hpp
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/SFML/Graphics.hpp
-simulator.hpp
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulator.hpp
-converter.hpp
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/converter.hpp
-road_builder_helper.hpp
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/road_builder_helper.hpp
-cameras_map_view_helper.hpp
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cameras_map_view_helper.hpp
 
 /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/input_manager.hpp
 SFML/Graphics.hpp
