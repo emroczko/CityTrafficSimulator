@@ -24,12 +24,15 @@ namespace zpr {
 		void checkOnWhichCell();
 		void checkTurn();
 		void stopVehicle();
+		void checkVehicleStopped();
+		void unblockVehicle();
 		void noColision();
 		bool checkColision(std::shared_ptr<Vehicle> vehicle);
 		virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 		int x_, y_, speed_;
 		int roadSize_, sidewalkSize_, roadStripesSize_;
 		int cellSize_;
+		int stopCounter_;
 		bool seenByCamera_[3];
 		std::vector<sf::RectangleShape> roads_;
 		std::string direction_, previousDirection_;
@@ -39,6 +42,7 @@ namespace zpr {
 	private:
 		void updatePosition();
 		void updateColisionBoxPosition();
+		bool canTurnBack();
 		void turnBack();
 		void choseFromOneRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
 		void choseFromTwoRoads(std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south, std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);

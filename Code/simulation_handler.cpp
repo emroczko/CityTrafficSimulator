@@ -270,6 +270,8 @@ namespace zpr {
             vehicle->checkOnWhichCell();
             this->vehiclesColision();
             vehicle->move();
+            vehicle->checkVehicleStopped();
+            vehicle->unblockVehicle();
             vehicle->checkTurn();
             this->checkCameraVision();
         }

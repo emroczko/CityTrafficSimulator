@@ -18,10 +18,22 @@
     <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Code\Tests\BoostTest\MapViewTest.cpp">
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\converter_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\Tests\BoostTest\VehicleTest.cpp">
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\file_finder_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\init_create_state_helper_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\main_menu_state_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\map_view_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\vehicle_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
