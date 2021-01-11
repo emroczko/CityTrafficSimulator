@@ -29,14 +29,13 @@ namespace zpr {
 	{
         if (cells_.empty())
             this->generateBoard();
-        
-//        else
-//            this->clearRoads();
+        else
+            this->grid_->cells_ = this->cells_;
         
         this->generateEnterBoard();
         
-        this->notifyEnterCells(enterCells_);
-		this->notifyCells(cells_);
+        this->notifyEnterCells(this->enterGrid_->cells_);
+		this->notifyCells(this->grid_->cells_);
 		this->notifyIsDrawingRoad(this->isDrawingRoad_);
         this->notifyIsDeletingRoad(this->isDeletingRoad_);
 	}
@@ -64,9 +63,9 @@ namespace zpr {
         std::vector<Cell> enterCells;
         for (int i = 0; i < this->enterGridHeight_ * this->gridSize_; i++)
         {
-            enterCells_.push_back(Cell(((i / gridSize_)-2), i % gridSize_));
+            enterCells.push_back(Cell(((i / gridSize_)-2), i % gridSize_));
         }
-        for (Cell& cell : enterCells_){
+        for (Cell& cell : enterCells){
             int row = cell.getPosition().x;
             int col = cell.getPosition().y;
             if(row == -2 && col != 0 && col != gridSize_-1){
@@ -76,16 +75,17 @@ namespace zpr {
                 cell.containsRoad_ = true;
             }
         }
+        this->enterGrid_= std::make_unique<Grid>(enterCells, gridSize_);
     }
 
     /**
      * Method which clears the vector of cells from drawn roads.
      */
     void CreatorHandler::clearRoads(){
-        for (Cell& cell: cells_){
+        for (Cell& cell: this->grid_->cells_){
             cell.roadDrawn_ = false;
         }
-        this->grid_ = std::make_unique<Grid>(cells_, gridSize_);
+        //this->grid_ = std::make_unique<Grid>(this->grid_->cells_, gridSize_);
     }
 
     /**
@@ -155,7 +155,7 @@ namespace zpr {
     {
         this->isDeletingRoad_ = false;
         this->isDrawingRoad_ = false;
-		this->notifyCells(cells_);
+		this->notifyCells(this->grid_->cells_);
     }
     
 

@@ -37,7 +37,7 @@ namespace zpr {
 		void updateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
 	private:
 		std::unique_ptr<Grid> grid_, enterGrid_;
-        std::vector<Cell> cells_, enterCells_;
+        std::vector<Cell> cells_;
 		int row_, col_;
 		int gridSize_;
         int enterGridHeight_;

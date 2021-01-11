@@ -1,2 +1,26 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  cameras_view.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\cameras_view.cpp(73,94): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\cameras_view.cpp(75,104): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\cameras_view.cpp(93,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\cameras_view.cpp(170,54): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+  creator_handler.cpp
+  creator_state.cpp
+  init_create_state.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\init_create_state.cpp(34,40): warning C4305: 'argument': truncation from 'double' to 'float'
+  load_state.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\load_state.cpp(36,40): warning C4305: 'argument': truncation from 'double' to 'float'
+  main_menu_state.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\main_menu_state.cpp(34,40): warning C4305: 'argument': truncation from 'double' to 'float'
+  save_state.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\save_state.cpp(33,40): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
   SFML Project.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe
