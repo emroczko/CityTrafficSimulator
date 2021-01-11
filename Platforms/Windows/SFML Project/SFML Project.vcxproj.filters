@@ -171,13 +171,16 @@
     <ClInclude Include="..\..\..\Code\converter.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\adding_helper.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Code\road_builder_helper.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\init_create_state_helper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\adding_road_helper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\deleting_road_helper.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -248,9 +251,6 @@
     <ClCompile Include="..\..\..\Code\asset_manager.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\cameras_subject.cpp">
-      <Filter>Source Files\ZPR namespace</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Code\creator_handler.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
@@ -275,13 +275,19 @@
     <ClCompile Include="..\..\..\Code\converter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\adding_helper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Code\road_builder_helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\init_create_state_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\cameras_subject.cpp">
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\adding_road_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\deleting_road_helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -377,10 +377,7 @@ namespace zpr {
             this->vehicles_.clear();
         }
         else{
-            //this->vehicles_.clear();
-            
             this->vehicles_ = vehicles;
-            std::cout <<vehicles.size() << "   " << vehicles.capacity() << "   this->vehicles_" << this->vehicles_.size() << "    " <<this->vehicles_.capacity() << std::endl;
         }
 	}
 
