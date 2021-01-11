@@ -46,10 +46,10 @@ namespace zpr {
 		this->mapView_ = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
 		this->mapView_.setViewport(this->calculateViewPort());
 		this->generateGridLines();
-        this->generateEnterBoard();
+        //this->generateEnterBoard();
         this->mapView_.zoom(1.4f);
         this->initializeCameras();
-        this->fillEnterCells();
+        
 	}
 
     /**
@@ -140,19 +140,19 @@ namespace zpr {
 		return sf::FloatRect(rect_left, 0.f, rect_width, 1.f);
 	}
 
-    /**
-     * Method responsible for generating grid containing enter road.
-     */
-    void MapView::generateEnterBoard()
-    {
-        std::vector<Cell> enterCells;
-        for (int i = 0; i < this->enterGridHeight_ * this->gridSize_; i++)
-        {
-            enterCells_.push_back(Cell(((i / gridSize_)-2), i % gridSize_));
-        }
-        this->enterGrid_ = std::make_unique<Grid>(enterCells_, gridSize_, enterGridHeight_);
-        this->enterCells_ = enterGrid_->cells_;
-    }
+//    /**
+//     * Method responsible for generating grid containing enter road.
+//     */
+//    void MapView::generateEnterBoard()
+//    {
+//        std::vector<Cell> enterCells;
+//        for (int i = 0; i < this->enterGridHeight_ * this->gridSize_; i++)
+//        {
+//            enterCells_.push_back(Cell(((i / gridSize_)-2), i % gridSize_));
+//        }
+//        this->enterGrid_ = std::make_unique<Grid>(enterCells_, gridSize_, enterGridHeight_);
+//        this->enterCells_ = enterGrid_->cells_;
+//    }
 	
     /**
      * Method responsible for drawing grid on the map.
@@ -282,13 +282,11 @@ namespace zpr {
     void MapView::fillEnterCells()
     {
         for (Cell& cell : this->enterCells_) {
-            int row = cell.getPosition().x;
-            int col = cell.getPosition().y;
-            if(row == -2 && col != 0 && col != gridSize_-1){
-                this->addEnterRoad(sf::Vector2i(col, row));
-            }
-            else if(row == -1 && col == 4){
-                this->addEnterRoad(sf::Vector2i(col, row));
+            int row = cell.getPosition().y;
+            int col = cell.getPosition().x;
+            if (cell.containsRoad_ && !cell.roadDrawn_) {
+                cell.roadDrawn_ = true;
+                this->addEnterRoad(sf::Vector2i(row, col));
             }
 		}
         this->addGarage(sf::Vector2i(0, -2));
@@ -648,6 +646,16 @@ namespace zpr {
 	{
         this->cells_ = cells;
 	}
+
+    /**
+     * Method responsible for update vector of enter cells on the map.
+     * @param enter_cells - Vector of new enter cells.
+     */
+    void MapView::updateEnterCells(std::vector<Cell> enter_cells)
+    {
+        this->enterCells_ = enter_cells;
+        this->fillEnterCells();
+    }
 
     /**
      * Method responsible for update vector of roads on the map.

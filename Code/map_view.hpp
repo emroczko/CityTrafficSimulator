@@ -27,6 +27,7 @@ namespace zpr {
         MapView(const MapView& map_view);
 		void updateSelectedCell(sf::Vector2i coords);
 		void updateCells(std::vector<Cell> cells);
+        void updateEnterCells(std::vector<Cell> enter_cells);
         void updateRoads(std::vector<sf::RectangleShape> roads);
 		void updateIsDrawingRoad(bool is_drawing_road);
         void updateIsDeletingRoad(bool is_deleting_road);

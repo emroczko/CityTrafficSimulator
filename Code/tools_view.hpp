@@ -32,6 +32,7 @@ namespace zpr {
         void updateTrucksLabel(int which_label){}
         void updateSelectedCell(sf::Vector2i coords) {}
         void updateCells(std::vector<Cell> cells) {}
+        void updateEnterCells(std::vector<Cell> enter_cells) {}
         void saveToFile() {}
         void updateIsDrawingRoad(bool is_drawing_road) {}
         void updateIsDeletingRoad(bool is_deleting_road) {}

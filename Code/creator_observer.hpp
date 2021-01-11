@@ -17,6 +17,7 @@ namespace zpr {
 	public:
 		virtual void updateSelectedCell(sf::Vector2i coords) = 0;
 		virtual void updateCells(std::vector<Cell> cells) = 0;
+        virtual void updateEnterCells(std::vector<Cell> enter_cells) = 0;
         virtual void saveToFile() = 0;
 		virtual void updateIsDrawingRoad(bool is_drawing_road) = 0;
         virtual void updateIsDeletingRoad(bool is_deleting_road) = 0;

@@ -26,6 +26,7 @@ namespace zpr {
         void updateIsSimulating();
         void updateSelectedCell(sf::Vector2i coords) {};
         void updateCells(std::vector<Cell> cells);
+        void updateEnterCells(std::vector<Cell> enter_cells);
         void saveToFile();
         void updateIsDrawingRoad(bool is_drawing_road) {};
         void updateIsDeletingRoad(bool is_deleting_road) {};
@@ -46,14 +47,16 @@ namespace zpr {
         void checkVehicleTypeAndNotify(std::shared_ptr<Vehicle> vehicle, int camera_number);
         bool startingCellFree();
         void deleteVehicles();
-        void separateRoadsFromCells();
+        void separateUserRoadsFromCells();
+        void separateRoadsFromCells(Cell& cell);
+        void separateEnterRoadsFromCells();
         void separateCamerasFromCells();
         sf::RectangleShape convertCellToCenteredRectShape(Cell cell);
         bool isSimulating_;
         int gridSize_, cellSize_;
         int roadSize_, sidewalkSize_, roadStripesSize_;
         sf::RectangleShape cityExitSite_;
-        std::vector<Cell> cells_;
+        std::vector<Cell> cells_, enterCells_;
         std::vector<sf::RectangleShape> roads_;
         std::vector<Camera> cameras_;
         std::vector<std::shared_ptr<Vehicle>> vehicles_;

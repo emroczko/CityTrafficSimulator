@@ -43,8 +43,9 @@ namespace zpr {
     {
     
         this->isSimulating_ = !this->isSimulating_;
-        if (isSimulating_) {
-            this->separateRoadsFromCells();
+        
+        if (isSimulating_){
+            this->separateUserRoadsFromCells();
             this->separateCamerasFromCells();
             this->startSimulationTimer_.setInterval([&]() {
                 this->addCarsToSimulate();
@@ -57,18 +58,11 @@ namespace zpr {
             this->startSimulationTimer_.stopTimer();
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
             this->vehicles_.clear();
-            this->roads_.clear();
+            this->roads_.erase(roads_.begin() + 15, roads_.end());
             this->cameras_.clear();
             this->notifyVehicles(this->vehicles_);
-                /*
-                this->clearDataTimer_.setTimeout([&]() {
-                    this->vehicles_.clear();
-                    this->roads_.clear();
-                    this->cameras_.clear();
-                    this->notifyVehicles(this->vehicles_);
-                }, 10);*/
             }
-            this->notifyIsSimulating(this->isSimulating_);
+        this->notifyIsSimulating(this->isSimulating_);
 
     }
 
@@ -81,18 +75,46 @@ namespace zpr {
         this->cells_ = cells;
         this->separateCamerasFromCells();
     }
+    /**
+     * Method which update enter cells of object of this class.
+     * @param enter_cells - Updated enter cells.
+     */
+    void SimulationHandler::updateEnterCells(std::vector<Cell> enter_cells)
+    {
+        this->enterCells_ = enter_cells;
+        this->separateEnterRoadsFromCells();
+    }
 
     /**
      * Method which gets roads from vector of cells.
      */
-    void SimulationHandler::separateRoadsFromCells()
+    void SimulationHandler::separateUserRoadsFromCells()
     {
         for (Cell& cell : cells_) {
-            if (cell.containsRoad_) {
-                this->roads_.push_back(this->convertCellToCenteredRectShape(cell));
-            }    
+            this->separateRoadsFromCells(cell);
         }
         this->addStartingRoad();
+    }
+
+    /**
+     * Method which gets roads from vector of enter cells.
+     */
+    void SimulationHandler::separateEnterRoadsFromCells()
+    {
+        for (Cell& cell : enterCells_) {
+            this->separateRoadsFromCells(cell);
+        }
+        
+    }
+    /**
+     * Method which checks if cell contains road and if yes, it adds this cell to vector of roads.
+     * @param cell - Cell we are currently checking.
+     */
+    void SimulationHandler::separateRoadsFromCells(Cell& cell)
+    {
+        if (cell.containsRoad_) {
+            this->roads_.push_back(this->convertCellToCenteredRectShape(cell));
+        }
     }
 
     /**
@@ -108,6 +130,7 @@ namespace zpr {
             }
         }
     }
+    
 
     /**
      * Method which converts Cell object to sf::RectangleShape object.

@@ -35,18 +35,17 @@ namespace zpr {
 		this->toolsView_ = std::make_unique<ToolsView>(this->data_);
         this->camerasView_ = std::make_unique<CamerasView>(this->data_);
         this->creatorHandler_ = std::make_unique<CreatorHandler>(this->gridSize_, this->cells_);
+        this->simulationHandler_ = std::make_unique<SimulationHandler>(this->gridSize_, this->cells_);
         this->creatorHandler_->add(this->mapView_);
         this->creatorHandler_->add(this->camerasView_);
         this->creatorHandler_->add(this->toolsView_);
-        
+        this->creatorHandler_->add(this->simulationHandler_);
         this->creatorHandler_->init();
-        
-        this->simulationHandler_ = std::make_unique<SimulationHandler>(this->gridSize_, this->cells_);
         this->simulationHandler_->add(this->mapView_);
         this->simulationHandler_->add(this->toolsView_);
         this->simulationHandler_->add(this->camerasView_);
+        
         this->simulationHandler_->init();
-        this->creatorHandler_->add(this->simulationHandler_);
         this->toolsView_->add(this->creatorHandler_);
         this->camerasView_->add(this->simulationHandler_);
         this->camerasView_->add(this->creatorHandler_);
