@@ -68,8 +68,8 @@ namespace zpr {
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
                 
                 if(this->mapView_->isClicked(mouse_position)){
-                    sf::Vector2f mouse_position_relative_to_tools_view = this->data_->window_.mapPixelToCoords(mouse_position, this->mapView_->getView());
-                    this->creatorHandler_->handleInput(this->mapView_->handleInput(mouse_position_relative_to_tools_view));
+                    sf::Vector2f mouse_position_relative_to_map_view = this->data_->window_.mapPixelToCoords(mouse_position, this->mapView_->getView());
+                    this->creatorHandler_->handleInput(this->mapView_->handleInput(mouse_position_relative_to_map_view));
                 }
                 else if (this->toolsView_->isClicked(mouse_position)) {
                     this->toolsView_->handleInput();
