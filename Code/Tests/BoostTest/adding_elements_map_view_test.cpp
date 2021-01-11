@@ -11,6 +11,7 @@ struct AddingHelperFixture {
 	{
         data = std::make_shared<zpr::SimulatorData>();
         roads_.clear();
+        data->assets_.loadTexture("Road", STREET_TEXTURE);
         addingHelper_ = std::make_unique<zpr::AddingHelper>(data, gridSize_);
         roads_.push_back(addingHelper_->addElement(roadName_, sf::Vector2i(2, 2)));
 	}
@@ -27,7 +28,7 @@ BOOST_FIXTURE_TEST_SUITE(AddingHelperTest, AddingHelperFixture)
 
 BOOST_AUTO_TEST_CASE(AddingHelperTest_sizeOfRoads)
 {
-	BOOST_CHECK_EQUAL(0, roads_.size());
+	BOOST_CHECK_EQUAL(1, roads_.size());
 }
 
 BOOST_AUTO_TEST_SUITE_END()
