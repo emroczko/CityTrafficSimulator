@@ -283,13 +283,11 @@ namespace zpr {
     void MapView::fillEnterCells()
     {
         for (Cell& cell : this->enterCells_) {
-            int row = cell.getPosition().x;
-            int col = cell.getPosition().y;
-            if(row == -2 && col != 0 && col != gridSize_-1){
-                this->addEnterRoad(sf::Vector2i(col, row));
-            }
-            else if(row == -1 && col == 4){
-                this->addEnterRoad(sf::Vector2i(col, row));
+            int row = cell.getPosition().y;
+            int col = cell.getPosition().x;
+            if (cell.containsRoad_ && !cell.roadDrawn_) {
+                cell.roadDrawn_ = true;
+                this->addEnterRoad(sf::Vector2i(row, col));
             }
 		}
         this->addGarage(sf::Vector2i(0, -2));
