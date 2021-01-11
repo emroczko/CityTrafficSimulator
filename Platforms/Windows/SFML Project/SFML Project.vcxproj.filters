@@ -165,6 +165,12 @@
     <ClInclude Include="..\..\..\Code\simulator.hpp">
       <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Code\drawing_helper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\converter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\button.cpp">
@@ -253,6 +259,12 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Code\simulator.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\drawing_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\converter.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

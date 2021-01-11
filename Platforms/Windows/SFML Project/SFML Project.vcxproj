@@ -26,11 +26,13 @@
     <ClInclude Include="..\..\..\Code\cameras_subject.hpp" />
     <ClInclude Include="..\..\..\Code\cameras_view.hpp" />
     <ClInclude Include="..\..\..\Code\cell.hpp" />
+    <ClInclude Include="..\..\..\Code\converter.hpp" />
     <ClInclude Include="..\..\..\Code\creator_handler.hpp" />
     <ClInclude Include="..\..\..\Code\creator_observer.hpp" />
     <ClInclude Include="..\..\..\Code\creator_state.hpp" />
     <ClInclude Include="..\..\..\Code\creator_subject.hpp" />
     <ClInclude Include="..\..\..\Code\definitions.hpp" />
+    <ClInclude Include="..\..\..\Code\drawing_helper.hpp" />
     <ClInclude Include="..\..\..\Code\file_finder.hpp" />
     <ClInclude Include="..\..\..\Code\grid.hpp" />
     <ClInclude Include="..\..\..\Code\init_create_state.hpp" />
@@ -63,9 +65,11 @@
     <ClCompile Include="..\..\..\Code\cameras_subject.cpp" />
     <ClCompile Include="..\..\..\Code\cameras_view.cpp" />
     <ClCompile Include="..\..\..\Code\cell.cpp" />
+    <ClCompile Include="..\..\..\Code\converter.cpp" />
     <ClCompile Include="..\..\..\Code\creator_handler.cpp" />
     <ClCompile Include="..\..\..\Code\creator_state.cpp" />
     <ClCompile Include="..\..\..\Code\creator_subject.cpp" />
+    <ClCompile Include="..\..\..\Code\drawing_helper.cpp" />
     <ClCompile Include="..\..\..\Code\file_finder.cpp" />
     <ClCompile Include="..\..\..\Code\grid.cpp" />
     <ClCompile Include="..\..\..\Code\init_create_state.cpp" />

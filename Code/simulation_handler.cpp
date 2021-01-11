@@ -27,12 +27,7 @@ namespace zpr {
         this->roadSize_ = round(ROAD_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
         this->roadStripesSize_ = round(ROAD_STRIPES_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
   
-        this->cityExitSite_.setSize(sf::Vector2f((SCREEN_HEIGHT / this->gridSize_) / 2, SCREEN_HEIGHT / this->gridSize_));
-        this->cityExitSite_.setOrigin(sf::Vector2f(this->cityExitSite_.getSize().x / 2, this->cityExitSite_.getSize().y / 2));
-        sf::Vector2f centered_position_in_pixels = sf::Vector2f(STARTING_CELL_COL * this->cellSize_ + this->calculatePrefix() + this->cellSize_ / 2 , STARTING_CELL_ROW * this->cellSize_ + this->calculatePrefix());
-        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 4;
-        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
-        this->cityExitSite_.setPosition(centered_position_in_pixels);
+        
     }
 
     /**
@@ -46,6 +41,7 @@ namespace zpr {
         if (isSimulating_){
             this->separateUserRoadsFromCells();
             this->separateCamerasFromCells();
+            this->setupExitSites();
             this->startSimulationTimer_.setInterval([&]() {
                 this->addCarsToSimulate();
                 this->moveVehicles();
@@ -58,9 +54,9 @@ namespace zpr {
             std::this_thread::sleep_for(std::chrono::milliseconds(400));
             this->vehicles_.clear();
             this->notifyVehicles(this->vehicles_);
-            //this->roads_.clear();
             this->roads_.erase(roads_.begin()+15, roads_.end());
             this->cameras_.clear();
+            this->cityExitSite_.clear();
             
 //            this->clearDataTimer_.setTimeout([&]() {
 //                this->vehicles_.clear();
@@ -182,14 +178,37 @@ namespace zpr {
      */
     
     void SimulationHandler::addStartingRoad() {
-        sf::RectangleShape road;
-        road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
-        road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
-        sf::Vector2f centered_position_in_pixels = sf::Vector2f(STARTING_CELL_COL2 * this->cellSize_ + this->calculatePrefix(), STARTING_CELL_ROW2 * this->cellSize_ + this->calculatePrefix());
-        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
-        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
-        road.setPosition(centered_position_in_pixels);
-        this->roads_.push_back(road);
+        int starting_cell_x[2];
+        starting_cell_x[0] = 0;
+        starting_cell_x[1] = sqrt(this->cells_.size()) - 1;
+        for (int i = 0; i < 2; i++) {
+            sf::RectangleShape road;
+            road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
+            road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
+            sf::Vector2f centered_position_in_pixels = sf::Vector2f(starting_cell_x[i] * this->cellSize_ + this->calculatePrefix(), -2 * this->cellSize_ + this->calculatePrefix());
+            centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
+            centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
+            road.setPosition(centered_position_in_pixels);
+            this->roads_.push_back(road);
+        }
+    }
+
+
+    void SimulationHandler::setupExitSites()
+    {
+        int exit_cell_x[2];
+        exit_cell_x[0] = 0;
+        exit_cell_x[1] = sqrt(this->cells_.size()) - 1;
+        for (int i = 0; i < 2; i++) {
+            sf::RectangleShape exit_site;
+            exit_site.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, (SCREEN_HEIGHT / this->gridSize_) / 2));
+            exit_site.setOrigin(sf::Vector2f(exit_site.getSize().x / 2, exit_site.getSize().y / 2));
+            sf::Vector2f centered_position_in_pixels = sf::Vector2f(exit_cell_x[i] * this->cellSize_ + this->calculatePrefix(), -2 * this->cellSize_ + this->calculatePrefix());
+            centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
+            centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ * (2 * i + 1) / 4;
+            exit_site.setPosition(centered_position_in_pixels);
+            this->cityExitSite_.push_back(exit_site);
+        }
     }
 
     /**
@@ -210,10 +229,12 @@ namespace zpr {
     {
 
         if (this->startingCellFree() && this->vehicles_.size() < this->roads_.size() / 2) {
-            int x_start =this->calculatePrefix() + cellSize_ * STARTING_CELL_COL2 +  ROAD_IMAGE_SIZE / 2;
-            int y_start = this->calculatePrefix() + cellSize_ * STARTING_CELL_ROW2 + this->sidewalkSize_ + this->roadSize_/4;
+            
+            int x_start_1 =this->calculatePrefix() + cellSize_ * STARTING_CELL_COL +  ROAD_IMAGE_SIZE / 2;
+            int y_start_1 = this->calculatePrefix() + cellSize_ * STARTING_CELL_ROW + this->sidewalkSize_ + this->roadSize_/4;
+            int x_start_2 = this->calculatePrefix() + cellSize_ * STARTING_CELL_COL2 + ROAD_IMAGE_SIZE / 2;
+            int y_start_2 = this->calculatePrefix() + cellSize_ * STARTING_CELL_ROW2 + this->sidewalkSize_ + this->roadSize_ / 4;
         
-
             std::random_device rng;
             std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
             std::uniform_int_distribution<> dist(1, 100);
@@ -221,10 +242,20 @@ namespace zpr {
 
             if (num > 0 && num < 7) {
                 if (num > 4) {
-                    this->vehicles_.push_back(VehicleFactory::createTruck(x_start, y_start, this->cellSize_, this->roads_));
+                    if (num == 5) {
+                        this->vehicles_.push_back(VehicleFactory::createTruck(x_start_1, y_start_1, this->cellSize_, this->roads_, "East"));
+                    }
+                    else {
+                        this->vehicles_.push_back(VehicleFactory::createTruck(x_start_2, y_start_2, this->cellSize_, this->roads_, "West"));
+                    }
                 }
                 else {
-                    this->vehicles_.push_back(VehicleFactory::createCar(x_start, y_start, this->cellSize_, this->roads_));
+                    if (num <= 2) {
+                        this->vehicles_.push_back(VehicleFactory::createCar(x_start_1, y_start_1, this->cellSize_, this->roads_, "East"));
+                    }
+                    else {
+                        this->vehicles_.push_back(VehicleFactory::createCar(x_start_2, y_start_2, this->cellSize_, this->roads_, "West"));
+                    }
                 }
             }
         }
@@ -317,7 +348,7 @@ namespace zpr {
     bool SimulationHandler::startingCellFree()
     {
         for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
-            if (this->roads_.back().getGlobalBounds().contains(vehicle->getShape().getPosition())) {
+            if (this->roads_.back().getGlobalBounds().contains(vehicle->getShape().getPosition()) || this->roads_.at(this->roads_.size()-2).getGlobalBounds().contains(vehicle->getShape().getPosition())) {
                 return false;
             }   
         }
@@ -331,9 +362,11 @@ namespace zpr {
     {
         int i = 0;
         for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
-            if (this->cityExitSite_.getGlobalBounds().contains(vehicle->getShape().getPosition())) {
-                this->vehicles_.erase(vehicles_.begin() + i);
-                return;
+            for (sf::RectangleShape exit_site : this->cityExitSite_) {
+                if (exit_site.getGlobalBounds().contains(vehicle->getShape().getPosition())) {
+                    this->vehicles_.erase(vehicles_.begin() + i);
+                    return;
+                }
             }
             i++;
         }
