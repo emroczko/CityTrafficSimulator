@@ -14,6 +14,8 @@
 #include "simulation_observer.hpp"
 #include "simulation_handler.hpp"
 #include "keys_enum.hpp"
+#include "drawing_helper.hpp"
+#include "converter.hpp"
 
 
 namespace zpr {
@@ -54,16 +56,13 @@ namespace zpr {
 	private:
 		void loadAssets();
 		sf::FloatRect calculateViewPort();
-		void drawGrid();
-        void drawEnterGrid();
-		void drawRoads();
-        void drawEntryRoads();
+
+        void drawGrid();
+        void drawRoads();
 		void drawVehicles();
         void drawCameras();
+        
 		void generateGridLines();
-        void generateEnterGridLines();
-        void generateEnterBoard();
-		int calculatePrefix();
 		void fillCells();
         void fillEnterCells();
         void addRoad(std::string fileName, sf::Vector2i position);
@@ -82,8 +81,6 @@ namespace zpr {
         void deleteCamera(sf::Vector2f position);
 		bool checkRoadExists(sf::Vector2f position);
         bool checkCameraExists(sf::Vector2f position);
-		sf::Vector2f transformRowColToPixels(sf::Vector2i rowcol);
-        int transformPixelsToRowCol(double pixels);
         void setupSelectedCellRect();
         void initializeCameras();
         
@@ -108,11 +105,13 @@ namespace zpr {
         std::vector<sf::RectangleShape> enterGridLines_;
 		sf::Sprite backgroundTexture_;
 		sf::View mapView_;
-        std::vector<sf::RectangleShape> roads_, entryRoad_, cameras_;
-        sf::RectangleShape camerasT_[3];
+        std::vector<sf::RectangleShape> roads_, entryRoad_;
+        sf::RectangleShape cameras_[3];
 		std::vector<Cell> cells_;
         std::vector<Cell> enterCells_;
 		std::vector<std::shared_ptr<Vehicle>> vehicles_;
+        std::unique_ptr<DrawingHelper> drawingHelper_;
+        std::unique_ptr<Converter> converter_;
 	};
 }
 

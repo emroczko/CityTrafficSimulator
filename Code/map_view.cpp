@@ -31,6 +31,10 @@ namespace zpr {
      * Method which initializes all elements in the current state to display it properly.
      */
 	void MapView::init() {
+        this->drawingHelper_ = std::make_unique<DrawingHelper>(this->data_);
+        this->converter_ = std::make_unique<Converter>(this->gridSize_);
+        
+        
         this->clicked_ = false;
         this->loadAssets();
 		//this->setupSelectedCellRect();
@@ -50,6 +54,7 @@ namespace zpr {
         this->mapView_.zoom(1.4f);
         this->initializeCameras();
         
+        
 	}
 
     /**
@@ -58,7 +63,7 @@ namespace zpr {
     void MapView::initializeCameras(){
             sf::RectangleShape temp;
             for(int i = 0; i < 2; i++){
-                camerasT_[i] = temp;
+                cameras_[i] = temp;
             }
     }
 
@@ -164,15 +169,6 @@ namespace zpr {
             }
         }
 	}
-    
-    /**
-     * Method responsible for drawing grid containing enter road on the map.
-     */
-    void MapView::drawEnterGrid() {
-            for (sf::RectangleShape line : enterGridLines_) {
-                this->data_->window_.draw(line);
-            }
-    }
 
     /**
      * Method responsible for drawing roads made by user.
@@ -182,15 +178,6 @@ namespace zpr {
 			this->data_->window_.draw(road);
 		}
 	}
-
-    /**
-     * Method responsible for drawing entry roads.
-     */
-    void MapView::drawEntryRoads(){
-        for (sf::RectangleShape road : this->entryRoad_) {
-            this->data_->window_.draw(road);
-        }
-    }
 
     /**
      * Method responsible for drawing vehicles.
@@ -209,16 +196,16 @@ namespace zpr {
      * Method responsible for drawing cameras.
      */
     void MapView::drawCameras(){
-        for (sf::RectangleShape camera : this->camerasT_) {
+        for (sf::RectangleShape camera : this->cameras_) {
             this->data_->window_.draw(camera);
         }
     }
-    
+
     /**
      * Method responsible for generating grid lines representing map.
      */
 	void MapView::generateGridLines() {
-		int draw_prefix = this->calculatePrefix();
+		int draw_prefix = this->converter_->calculatePrefix();
 		for (int i = 0; i <= gridSize_; i++)
 		{
 			sf::RectangleShape vertical_line(sf::Vector2f(2, (gridSize_)*this->cellSize_));
@@ -228,36 +215,6 @@ namespace zpr {
 			this->gridLines_.push_back(vertical_line);
 			this->gridLines_.push_back(horizontal_line);
 		}
-	}
-
-    /**
-     * Method responsible for generating enter grid lines representing map.
-     */
-    void MapView::generateEnterGridLines() {
-        int draw_prefix = this->calculatePrefix();
-        for (int i = 0; i <= enterGridWidth_; i++){
-            
-            sf::RectangleShape vertical_line(sf::Vector2f(2, (enterGridHeight_)*this->cellSize_));
-            vertical_line.setPosition(sf::Vector2f(i * this->cellSize_ + draw_prefix, draw_prefix- 2*this->cellSize_));
-            this->enterGridLines_.push_back(vertical_line);
-        }
-        for (int i = 1; i <= enterGridHeight_; i++){
-            
-            sf::RectangleShape horizontal_line(sf::Vector2f((enterGridWidth_)*this->cellSize_, 2));
-            horizontal_line.setPosition(sf::Vector2f(draw_prefix, -i * this->cellSize_ + draw_prefix));
-            this->enterGridLines_.push_back(horizontal_line);
-        }
-    }
-
-    /**
-     * Method responsible for calculating prefix - to drawing grid in the center of view.
-     * @return - Calculated prefix.
-     */
-	int MapView::calculatePrefix() {
-		double cell_size_with_point = (double)SCREEN_HEIGHT / gridSize_;
-        double the_rest = cell_size_with_point - this->cellSize_;
-		int draw_prefix = the_rest * gridSize_ / 2;
-		return draw_prefix;
 	}
 
     /**
@@ -273,7 +230,7 @@ namespace zpr {
 				this->addUserRoad(sf::Vector2i(row, col));
 			}
             if (cell.toDelete_) {
-                this->deleteRoad(this->transformRowColToPixels(sf::Vector2i(row, col)));
+                this->deleteRoad(this->converter_->transformRowColToPixels(sf::Vector2i(row, col)));
 				cell.toDelete_ = false;
             }
 		}
@@ -306,7 +263,7 @@ namespace zpr {
         road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
         road.setTexture(&this->data_->assets_.getTexture(texture_name));
         road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
-        sf::Vector2f centered_position_in_pixels = this->transformRowColToPixels(sf::Vector2i(position.x, position.y));
+        sf::Vector2f centered_position_in_pixels = this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y));
         centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2 ;
         centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2 ;
         road.setPosition(centered_position_in_pixels);
@@ -318,17 +275,17 @@ namespace zpr {
      * @param position - Position of camera in row and column.
      */
     void MapView::addCamera(sf::Vector2i position){
-        if (this->checkCameraExists(this->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+        if (this->checkCameraExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
         
         sf::RectangleShape camera;
         camera.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
         camera.setTexture(&this->data_->assets_.getTexture("Camera"));
         camera.setOrigin(sf::Vector2f(camera.getSize().x / 2, camera.getSize().y / 2));
-        sf::Vector2f centered_position_in_pixels = this->transformRowColToPixels(sf::Vector2i(position.x, position.y));
+        sf::Vector2f centered_position_in_pixels = this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y));
         centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2 ;
         centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2 ;
         camera.setPosition(centered_position_in_pixels);
-        this->camerasT_[whichCamera_-1] = camera;
+        this->cameras_[whichCamera_-1] = camera;
     }
     
     /**
@@ -355,7 +312,7 @@ namespace zpr {
      */
     void MapView::addUserRoad(sf::Vector2i position)
     {
-        if (this->checkRoadExists(this->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+        if(this->checkRoadExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
         this->addRoad("Road", position);
         this->checkRoadsTexture();
     }
@@ -370,11 +327,11 @@ namespace zpr {
 			std::shared_ptr<sf::RectangleShape> east = nullptr;
 			std::shared_ptr<sf::RectangleShape> west = nullptr;
 			std::vector<std::shared_ptr<sf::RectangleShape>> neighbouring_roads_ptr;
-            int row = this->transformPixelsToRowCol(road.getPosition().y);
-            int col = this->transformPixelsToRowCol(road.getPosition().x);
+            int row = this->converter_->transformPixelsToRowCol(road.getPosition().y);
+            int col = this->converter_->transformPixelsToRowCol(road.getPosition().x);
 			for (sf::RectangleShape& neighbouring_road : this->roads_) {
-                int neighbouring_row = this->transformPixelsToRowCol(neighbouring_road.getPosition().y);
-                int neighbouring_col = this->transformPixelsToRowCol(neighbouring_road.getPosition().x);
+                int neighbouring_row = this->converter_->transformPixelsToRowCol(neighbouring_road.getPosition().y);
+                int neighbouring_col = this->converter_->transformPixelsToRowCol(neighbouring_road.getPosition().x);
 				if (row == neighbouring_row) {
 					if (col + 1 == neighbouring_col) {
 						east = std::make_shared<sf::RectangleShape>(neighbouring_road);
@@ -493,7 +450,7 @@ namespace zpr {
     {
 		int i = 0;
 
-		if (this->checkRoadExists(this->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+		if (this->checkRoadExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
         
 		for (sf::RectangleShape road : roads_) {
 			if (road.getPosition().x - this->cellSize_ / 2 == position.x && road.getPosition().y - this->cellSize_ / 2 == position.y){
@@ -511,7 +468,7 @@ namespace zpr {
     void MapView::updateIsDeletingCamera(int which_camera){
         this->whichCamera_ = which_camera;
         
-        this->deleteCamera(sf::Vector2f(camerasT_[which_camera-1].getPosition().x, camerasT_[which_camera-1].getPosition().y));
+        this->deleteCamera(sf::Vector2f(cameras_[which_camera-1].getPosition().x, cameras_[which_camera-1].getPosition().y));
         
         this->isAddingCamera_ = false;
     }
@@ -524,10 +481,10 @@ namespace zpr {
         int i = 0;
         sf::RectangleShape temp;
         
-        if (this->checkCameraExists(this->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-        for (sf::RectangleShape camera : camerasT_) {
+        if(this->checkCameraExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+        for(sf::RectangleShape camera : cameras_) {
             if (camera.getPosition().x == position.x && camera.getPosition().y == position.y){
-                camerasT_[whichCamera_-1] = temp;
+                cameras_[whichCamera_-1] = temp;
                 //camera.setTexture(NULL);
             }
             i++;
@@ -553,40 +510,11 @@ namespace zpr {
      * @return - True when camera exists, false otherwise.
      */
     bool MapView::checkCameraExists(sf::Vector2f position) {
-        for (sf::RectangleShape camera : this->camerasT_) {
+        for (sf::RectangleShape camera : this->cameras_) {
             if (camera.getPosition().x -this->cellSize_/2 == position.x && camera.getPosition().y - this->cellSize_/2 == position.y) {return true;}
         }
         return false;
     }
-
-    /**
-     * Method responsible for converting pixels to rows or columns.
-     * @param pixels - Value in pixels to convert.
-     * @return - Converted value in rows or columns.
-     */
-    int MapView::transformPixelsToRowCol(double pixels){
-        int result;
-        
-        if(pixels < 0)
-            result = floor(pixels / this->cellSize_);
-        else
-            result = pixels / this->cellSize_;
-        
-        return result;
-    }
-
-    /**
-     * Method responsible for converting coordinates from rows or columns to pixels.
-     * @param rowcol - Row or column to convert.
-     * @return - Converted value in pixels.
-     */
-	sf::Vector2f MapView::transformRowColToPixels(sf::Vector2i rowcol)
-	{
-		float x = rowcol.x * this->cellSize_ + this->calculatePrefix();
-		float y = rowcol.y * this->cellSize_ + this->calculatePrefix();
-		return sf::Vector2f(x, y);
-	}
-
     
     /**
      * Method which draws elements of map on the screen.
@@ -596,10 +524,15 @@ namespace zpr {
 		this->data_->window_.setView(this->mapView_);
 		this->data_->window_.draw(this->backgroundTexture_);
 		this->fillCells();
-        this->drawRoads();
-        this->drawGrid();
-        this->drawVehicles();
-        this->drawCameras();
+
+//        this->drawGrid();
+//        this->drawRoads();
+//        this->drawCameras();
+//        this->drawVehicles();
+        this->drawingHelper_->drawRoads(this->roads_);
+        this->drawingHelper_->drawGrid(this->isSimulating_, gridLines_);
+        this->drawingHelper_->drawCameras(this->cameras_);
+        this->drawingHelper_->drawVehicles(this->vehicles_);
 	}
     
     
