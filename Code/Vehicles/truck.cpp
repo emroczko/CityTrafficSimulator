@@ -20,6 +20,7 @@ namespace zpr {
 		this->speed_ = 3;
 		this->roads_ = roads;
 		this->cellSize_ = cell_size;
+		this->stopCounter_ = 0;
         for (int i = 0; i < 3; i++) {
             this->seenByCamera_[i] = false;
         }

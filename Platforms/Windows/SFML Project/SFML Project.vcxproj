@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Code\adding_road_helper.hpp" />
+    <ClInclude Include="..\..\..\Code\adding_elements_map_view_helper.hpp" />
     <ClInclude Include="..\..\..\Code\asset_manager.hpp" />
     <ClInclude Include="..\..\..\Code\button.hpp" />
     <ClInclude Include="..\..\..\Code\camera.hpp" />
+    <ClInclude Include="..\..\..\Code\cameras_map_view_helper.hpp" />
     <ClInclude Include="..\..\..\Code\cameras_observer.hpp" />
     <ClInclude Include="..\..\..\Code\cameras_subject.hpp" />
     <ClInclude Include="..\..\..\Code\cameras_view.hpp" />
@@ -33,7 +34,7 @@
     <ClInclude Include="..\..\..\Code\creator_state.hpp" />
     <ClInclude Include="..\..\..\Code\creator_subject.hpp" />
     <ClInclude Include="..\..\..\Code\definitions.hpp" />
-    <ClInclude Include="..\..\..\Code\deleting_road_helper.hpp" />
+    <ClInclude Include="..\..\..\Code\deleting_elements_helper.hpp" />
     <ClInclude Include="..\..\..\Code\drawing_helper.hpp" />
     <ClInclude Include="..\..\..\Code\file_finder.hpp" />
     <ClInclude Include="..\..\..\Code\grid.hpp" />
@@ -63,10 +64,11 @@
     <ClInclude Include="..\..\..\Code\Vehicles\vehicle_factory.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Code\adding_road_helper.cpp" />
+    <ClCompile Include="..\..\..\Code\adding_elements_map_view_helper.cpp" />
     <ClCompile Include="..\..\..\Code\asset_manager.cpp" />
     <ClCompile Include="..\..\..\Code\button.cpp" />
     <ClCompile Include="..\..\..\Code\camera.cpp" />
+    <ClCompile Include="..\..\..\Code\cameras_map_view_helper.cpp" />
     <ClCompile Include="..\..\..\Code\cameras_subject.cpp" />
     <ClCompile Include="..\..\..\Code\cameras_view.cpp" />
     <ClCompile Include="..\..\..\Code\cell.cpp" />
@@ -74,7 +76,7 @@
     <ClCompile Include="..\..\..\Code\creator_handler.cpp" />
     <ClCompile Include="..\..\..\Code\creator_state.cpp" />
     <ClCompile Include="..\..\..\Code\creator_subject.cpp" />
-    <ClCompile Include="..\..\..\Code\deleting_road_helper.cpp" />
+    <ClCompile Include="..\..\..\Code\deleting_elements_helper.cpp" />
     <ClCompile Include="..\..\..\Code\drawing_helper.cpp" />
     <ClCompile Include="..\..\..\Code\file_finder.cpp" />
     <ClCompile Include="..\..\..\Code\grid.cpp" />

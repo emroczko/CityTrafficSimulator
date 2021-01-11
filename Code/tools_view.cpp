@@ -63,7 +63,9 @@ namespace zpr {
 	{
 		this->data_->window_.setView(this->toolsView_);
 		this->data_->window_.draw(this->background_);
-		this->drawButtons();
+        if (!isSimulating_) {
+            this->drawButtons();
+        }
 	}
 
     /**
@@ -84,43 +86,39 @@ namespace zpr {
      */
     void ToolsView::handleInput(){
         for (Button& button : this->buttons_){
-                if (isSimulating_ || isAddingCameras_){
-                    button.isPressed_ = false;
-                    button.setBackground(this->data_->assets_.getTexture("Button"));
-                }
-            if (button.isClicked(sf::Mouse::Left, this->data_->window_, this->toolsView_)){
-                
-                if (button.getText() == "Create new street" && !isSimulating_) {
-                    if (this->buttons_.at(1).isPressed_) {
-                        this->buttons_.at(1).setBackground(this->data_->assets_.getTexture("Button"));
-                    }
-                    this->buttons_.at(1).isPressed_ = false;
-                    this->notifyIsDrawingRoad();
-                }
+            if (!isSimulating_ || !isAddingCameras_) {
+                if (button.isClicked(sf::Mouse::Left, this->data_->window_, this->toolsView_)) {
 
-                if (button.getText() == "Delete streets" && !isSimulating_) {
-                    if (this->buttons_.at(0).isPressed_) {
-                        this->buttons_.at(0).setBackground(this->data_->assets_.getTexture("Button"));
+                    if (button.getText() == "Create new street" && !isSimulating_) {
+                        if (this->buttons_.at(1).isPressed_) {
+                            this->buttons_.at(1).setBackground(this->data_->assets_.getTexture("Button"));
+                        }
+                        this->buttons_.at(1).isPressed_ = false;
+                        this->notifyIsDrawingRoad();
                     }
-                    this->buttons_.at(0).isPressed_ = false;
-                    this->notifyIsDeletingRoad();
-                }
-                if (button.getText() == "Save to file" && !isSimulating_) {
-                    if (this->buttons_.at(0).isPressed_) {
-                        this->buttons_.at(0).setBackground(this->data_->assets_.getTexture("Button"));
-                    }
-                    this->buttons_.at(0).isPressed_ = false;
-                    this->notifySave();
-                }
 
-                button.isPressed_ = !button.isPressed_;
-                if (button.isPressed_) {
-                    button.setBackground(this->data_->assets_.getTexture("Button_pressed"));
+                    if (button.getText() == "Delete streets" && !isSimulating_) {
+                        if (this->buttons_.at(0).isPressed_) {
+                            this->buttons_.at(0).setBackground(this->data_->assets_.getTexture("Button"));
+                        }
+                        this->buttons_.at(0).isPressed_ = false;
+                        this->notifyIsDeletingRoad();
+                    }
+                    if (button.getText() == "Save to file" && !isSimulating_) {
+                        if (this->buttons_.at(0).isPressed_) {
+                            this->buttons_.at(0).setBackground(this->data_->assets_.getTexture("Button"));
+                        }
+                        this->buttons_.at(0).isPressed_ = false;
+                        this->notifySave();
+                    }
+                    button.isPressed_ = !button.isPressed_;
+                    if (button.isPressed_) {
+                        button.setBackground(this->data_->assets_.getTexture("Button_pressed"));
+                    }
+                    else {
+                        button.setBackground(this->data_->assets_.getTexture("Button"));
+                    }
                 }
-                else {
-                    button.setBackground(this->data_->assets_.getTexture("Button"));
-                }
-               
             }
         }
     }

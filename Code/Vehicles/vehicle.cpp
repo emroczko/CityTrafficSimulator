@@ -74,6 +74,25 @@ namespace zpr {
         }
     }
 
+	bool Vehicle::canTurnBack()
+	{
+		for (sf::RectangleShape road : this->roads_) {
+			if (this->direction_ == "South" && road.getPosition().x == this->currentRoad_->getPosition().x && road.getPosition().y == this->currentRoad_->getPosition().y-this->cellSize_) {
+				return true;
+			}
+			if (this->direction_ == "North" && road.getPosition().x == this->currentRoad_->getPosition().x && road.getPosition().y == this->currentRoad_->getPosition().y + this->cellSize_) {
+				return true;
+			}
+			if (this->direction_ == "East" && road.getPosition().x == this->currentRoad_->getPosition().x - this->cellSize_ && road.getPosition().y == this->currentRoad_->getPosition().y) {
+				return true;
+			}
+			if (this->direction_ == "West" && road.getPosition().x == this->currentRoad_->getPosition().x + this->cellSize_ && road.getPosition().y == this->currentRoad_->getPosition().y) {
+				return true;
+			}
+		}
+		return false;
+	}
+
     /**
      * Method responsible for checking on which cell Vehicle is.
      */
@@ -161,6 +180,24 @@ namespace zpr {
     {
         this->speed_ = 0;
     }
+
+	void Vehicle::checkVehicleStopped()
+	{
+		if (this->speed_ == 0) {
+			this->stopCounter_++;
+		}
+		else {
+			this->stopCounter_ = 0;
+		}
+	}
+
+	void Vehicle::unblockVehicle()
+	{
+		if (this->stopCounter_ > 100 && this->canTurnBack()) {
+			this->turnBack();
+			this->stopCounter_ = 0;
+		}
+	}
 
     /**
      * Method responsible for setting the speed of vehicle if there is no colision.

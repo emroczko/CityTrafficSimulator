@@ -1,7 +1,14 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (UnitTest2.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: Katalog pośredni (Debug\) zawiera pliki udostępnione z innego projektu (Project1.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
-  MapViewTest.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Tests\BoostTest\MapViewTest.cpp(3,10): fatal error C1083: Nie można otworzyć pliku dołącz: '../../MapView.h': No such file or directory
-  VehicleTest.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Tests\BoostTest\VehicleTest.cpp(4,10): fatal error C1083: Nie można otworzyć pliku dołącz: '../../Vehicles/vehicle.h': No such file or directory
-  Generowanie kodu...
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (UnitTest2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  vehicle_test.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Tests\BoostTest\vehicle_test.cpp(21,52): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Tests\BoostTest\vehicle_test.cpp(21,40): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  UnitTest2.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\UnitTest.exe
