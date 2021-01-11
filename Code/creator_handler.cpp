@@ -33,6 +33,9 @@ namespace zpr {
         else
             this->clearRoads();
         
+        this->generateEnterBoard();
+        
+        this->notifyEnterCells(enterCells_);
 		this->notifyCells(grid_->cells_);
 		this->notifyIsDrawingRoad(this->isDrawingRoad_);
         this->notifyIsDeletingRoad(this->isDeletingRoad_);
@@ -52,6 +55,28 @@ namespace zpr {
 		cells.at(4).isStartingCell_ = true;
         this->grid_ = std::make_unique<Grid>(cells, gridSize_);
 	}
+
+    /**
+     * Method responsible for generating grid containing enter road.
+     */
+    void CreatorHandler::generateEnterBoard()
+    {
+        std::vector<Cell> enterCells;
+        for (int i = 0; i < this->enterGridHeight_ * this->gridSize_; i++)
+        {
+            enterCells_.push_back(Cell(((i / gridSize_)-2), i % gridSize_));
+        }
+        for (Cell& cell : enterCells_){
+            int row = cell.getPosition().x;
+            int col = cell.getPosition().y;
+            if(row == -2 && col != 0 && col != gridSize_-1){
+                cell.containsRoad_ = true;
+            }
+            else if(row == -1 && col == 4){
+                cell.containsRoad_ = true;
+            }
+        }
+    }
 
     /**
      * Method which clears the vector of cells from drawn roads.

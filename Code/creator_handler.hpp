@@ -25,6 +25,7 @@ namespace zpr {
         CreatorHandler(int grid_size, std::vector<Cell> cells);
 		void init();
 		void generateBoard();
+        void generateEnterBoard();
         void clearRoads();
 		void updateIsDrawingRoad();
         void updateIsDeletingRoad();
@@ -35,8 +36,8 @@ namespace zpr {
 		void handleInput(sf::Vector2i possible_selected_cell);
 		void updateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
 	private:
-		std::unique_ptr<Grid> grid_;
-        std::vector<Cell> cells_;
+		std::unique_ptr<Grid> grid_, enterGrid_;
+        std::vector<Cell> cells_, enterCells_;
 		int row_, col_;
 		int gridSize_;
         int enterGridHeight_;

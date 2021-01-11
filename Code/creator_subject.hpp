@@ -20,6 +20,7 @@ namespace zpr {
 		void add(std::shared_ptr<CreatorObserver> observer);
 		void notifySelectedCell(sf::Vector2i coords);
 		void notifyCells(std::vector<Cell> cells);
+        void notifyEnterCells(std::vector<Cell> enter_cells);
         void notifySave();
 		void notifyIsDrawingRoad(bool is_drawing_road);
         void notifyIsAddingCamera(bool is_adding_camera, int which_camera);

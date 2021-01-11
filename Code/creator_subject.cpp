@@ -38,6 +38,17 @@ namespace zpr {
 			observer->updateCells(cells);
 		}
 	}
+
+    /**
+     * Method which notifies observers when vector of enter cells has changed.
+     * @param enter_cells - Vector of new enter cells.
+     */
+    void CreatorSubject::notifyEnterCells(std::vector<Cell> enter_cells)
+    {
+        for (std::shared_ptr<CreatorObserver> observer : this->observers_) {
+            observer->updateEnterCells(enter_cells);
+        }
+    }
    
     /**
      * Method which notifies observers when user is drawing road or not.
