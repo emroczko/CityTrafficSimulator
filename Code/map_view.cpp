@@ -195,12 +195,14 @@ namespace zpr {
     /**
      * Method responsible for drawing vehicles.
      */
+
 	void MapView::drawVehicles()
 	{
 		for (std::shared_ptr<Vehicle>& vehicle : this->vehicles_) {
             std::cout << vehicle->getShape().getGlobalBounds().width << std::endl;
 			this->data_->window_.draw(*vehicle);
 		}
+
 	}
 
     /**
@@ -747,7 +749,10 @@ namespace zpr {
             this->vehicles_.clear();
         }
         else{
+            //this->vehicles_.clear();
+            
             this->vehicles_ = vehicles;
+            std::cout <<vehicles.size() << "   " << vehicles.capacity() << "   this->vehicles_" << this->vehicles_.size() << "    " <<this->vehicles_.capacity() << std::endl;
         }
 	}
 

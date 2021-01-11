@@ -47,15 +47,15 @@ namespace zpr {
             this->separateUserRoadsFromCells();
             this->separateCamerasFromCells();
             this->startSimulationTimer_.setInterval([&]() {
-            this->addCarsToSimulate();
-            this->moveVehicles();
-            this->deleteVehicles();
-            this->notifyVehicles(this->vehicles_);
+                this->addCarsToSimulate();
+                this->moveVehicles();
+                this->deleteVehicles();
+                this->notifyVehicles(this->vehicles_);
             }, 17);
         }
         else {
             this->startSimulationTimer_.stopTimer();
-            std::this_thread::sleep_for(std::chrono::milliseconds(17));
+            std::this_thread::sleep_for(std::chrono::milliseconds(400));
             this->vehicles_.clear();
             this->notifyVehicles(this->vehicles_);
             //this->roads_.clear();
@@ -72,6 +72,7 @@ namespace zpr {
 //            }, 5);
         }
         this->notifyIsSimulating(this->isSimulating_);
+
     }
 
     /**
@@ -207,22 +208,26 @@ namespace zpr {
      */
     void SimulationHandler::addCarsToSimulate()
     {
-        int x_start =this->calculatePrefix() + cellSize_ * STARTING_CELL_COL2 +  ROAD_IMAGE_SIZE / 2;
-        int y_start = this->calculatePrefix() + cellSize_ * STARTING_CELL_ROW2 + this->sidewalkSize_ + this->roadSize_/4;
 
-        std::random_device rng;
-        std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
-        std::uniform_int_distribution<> dist(1, 100);
-        int num = dist(eng);
+        if (this->startingCellFree() && this->vehicles_.size() < this->roads_.size() / 2) {
+            int x_start =this->calculatePrefix() + cellSize_ * STARTING_CELL_COL2 +  ROAD_IMAGE_SIZE / 2;
+            int y_start = this->calculatePrefix() + cellSize_ * STARTING_CELL_ROW2 + this->sidewalkSize_ + this->roadSize_/4;
         
-        if (this->startingCellFree() && num > 0 && num < 7 && this->vehicles_.size()<this->roads_.size()/2) {
-            if (num > 4) {
-            this->vehicles_.push_back(VehicleFactory::createTruck(x_start, y_start, this->cellSize_, this->roads_));
+
+            std::random_device rng;
+            std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
+            std::uniform_int_distribution<> dist(1, 100);
+            int num = dist(eng);
+
+            if (num > 0 && num < 7) {
+                if (num > 4) {
+                    this->vehicles_.push_back(VehicleFactory::createTruck(x_start, y_start, this->cellSize_, this->roads_));
+                }
+                else {
+                    this->vehicles_.push_back(VehicleFactory::createCar(x_start, y_start, this->cellSize_, this->roads_));
+                }
             }
-            else {
-                this->vehicles_.push_back(VehicleFactory::createCar(x_start, y_start, this->cellSize_, this->roads_));
-            }
-        }  
+        }
     }
 
     /**

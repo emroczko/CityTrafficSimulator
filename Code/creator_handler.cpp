@@ -165,7 +165,7 @@ namespace zpr {
      */
 	void CreatorHandler::handleInput(sf::Vector2i possible_selected_cell)
 	{
-		if (possible_selected_cell.x == -1 || possible_selected_cell.y ==-1) { return; }
+		if (possible_selected_cell.x < 0 || possible_selected_cell.y < 0) { return; }
 		else if (possible_selected_cell.x > this->gridSize_-1 || possible_selected_cell.y > this->gridSize_-1) { return; }
 		this->row_ = possible_selected_cell.y;
 		this->col_ = possible_selected_cell.x;
