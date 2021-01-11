@@ -86,29 +86,20 @@ namespace zpr {
      */
     void ToolsView::handleInput(){
         for (Button& button : this->buttons_){
-            if (!isSimulating_ || !isAddingCameras_) {
+            if (!isSimulating_ && !isAddingCameras_) {
                 if (button.isClicked(sf::Mouse::Left, this->data_->window_, this->toolsView_)) {
 
                     if (button.getText() == "Create new street" && !isSimulating_) {
-                        if (this->buttons_.at(1).isPressed_) {
-                            this->buttons_.at(1).setBackground(this->data_->assets_.getTexture("Button"));
-                        }
-                        this->buttons_.at(1).isPressed_ = false;
+                        this->resetButtons(1, 2);
                         this->notifyIsDrawingRoad();
                     }
 
                     if (button.getText() == "Delete streets" && !isSimulating_) {
-                        if (this->buttons_.at(0).isPressed_) {
-                            this->buttons_.at(0).setBackground(this->data_->assets_.getTexture("Button"));
-                        }
-                        this->buttons_.at(0).isPressed_ = false;
+                        this->resetButtons(0, 2);
                         this->notifyIsDeletingRoad();
                     }
                     if (button.getText() == "Save to file" && !isSimulating_) {
-                        if (this->buttons_.at(0).isPressed_) {
-                            this->buttons_.at(0).setBackground(this->data_->assets_.getTexture("Button"));
-                        }
-                        this->buttons_.at(0).isPressed_ = false;
+                        this->resetButtons(0, 1);
                         this->notifySave();
                     }
                     button.isPressed_ = !button.isPressed_;
@@ -119,6 +110,10 @@ namespace zpr {
                         button.setBackground(this->data_->assets_.getTexture("Button"));
                     }
                 }
+            }
+            else {
+                button.isPressed_ = false;
+                button.setBackground(this->data_->assets_.getTexture("Button"));
             }
         }
     }
@@ -154,6 +149,19 @@ namespace zpr {
             }
         }
 	}
+
+    /**
+     * Method which resets buttons to default state (not clicked)
+     * @param button_number_1 - number of button to reset
+     * @param button_number_2 - number of second button to reset
+     */
+    void ToolsView::resetButtons(int button_number_1, int button_number_2)
+    {
+        this->buttons_.at(button_number_1).setBackground(this->data_->assets_.getTexture("Button"));
+        this->buttons_.at(button_number_2).setBackground(this->data_->assets_.getTexture("Button"));
+        this->buttons_.at(button_number_1).isPressed_ = false;
+        this->buttons_.at(button_number_2).isPressed_ = false;
+    }
 
     /**
      * Method which returns current view.

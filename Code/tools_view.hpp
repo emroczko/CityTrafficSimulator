@@ -43,6 +43,7 @@ namespace zpr {
 	private:
 		sf::FloatRect calculateViewPort();
 		void drawButtons();
+        void resetButtons(int button_number_1, int button_number_2);
         void buttonInitializer();
 		SimulatorDataRef data_;
 		std::vector<Button> buttons_;
