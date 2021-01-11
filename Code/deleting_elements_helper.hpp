@@ -18,7 +18,7 @@ namespace zpr {
     class DeletingHelper{
     public:
         DeletingHelper(SimulatorDataRef data, int grid_size);
-        void deleteRoad(sf::Vector2f position, std::vector<sf::RectangleShape>& roads);
+        void deleteRoad(sf::Vector2i position, std::vector<sf::RectangleShape>& roads);
         void deleteCamera(sf::Vector2f position, sf::RectangleShape *cameras, int which_camera);
     private:
         SimulatorDataRef data_;

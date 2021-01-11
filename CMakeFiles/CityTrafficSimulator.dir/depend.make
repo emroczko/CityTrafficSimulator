@@ -17,6 +17,18 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o: C
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o: Code/converter.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o: Code/definitions.hpp
 
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/Tests/BoostTest/deleting_elements_helper.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/asset_manager.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/cameras_map_view_helper.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/converter.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/definitions.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/deleting_elements_helper.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/input_manager.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/road_builder_helper.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/simulator.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/state.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o: Code/state_machine.hpp
+
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o: Code/Tests/BoostTest/file_finder_test.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o: Code/file_finder.hpp
 
@@ -68,6 +80,11 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Co
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/timer.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/Tests/BoostTest/vehicle_test.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/Vehicles/car.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/Vehicles/truck.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/Vehicles/vehicle.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/cell.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/definitions.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o: Code/Vehicles/car.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o: Code/Vehicles/car.hpp
