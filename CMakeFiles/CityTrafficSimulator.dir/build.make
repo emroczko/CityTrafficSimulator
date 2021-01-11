@@ -128,9 +128,22 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/vehicle_factory.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.s
 
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/adding_helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/adding_helper.cpp
+
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/adding_helper.cpp > CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.i
+
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/adding_helper.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.s
+
 CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o: Code/asset_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/asset_manager.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.i: cmake_force
@@ -143,7 +156,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.o: Code/button.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/button.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.i: cmake_force
@@ -156,7 +169,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.o: Code/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/camera.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.i: cmake_force
@@ -169,7 +182,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.o: Code/cameras_subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cameras_subject.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.i: cmake_force
@@ -182,7 +195,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o: Code/cameras_view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cameras_view.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.i: cmake_force
@@ -195,7 +208,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o: Code/cell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cell.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.i: cmake_force
@@ -208,7 +221,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.o: Code/converter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/converter.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.i: cmake_force
@@ -221,7 +234,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.o: Code/creator_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/creator_handler.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.i: cmake_force
@@ -234,7 +247,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/creator_state.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/creator_state.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.i: cmake_force
@@ -247,7 +260,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o: Code/creator_subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/creator_subject.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.i: cmake_force
@@ -260,7 +273,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.o: Code/drawing_helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/drawing_helper.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.i: cmake_force
@@ -273,7 +286,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.o: Code/file_finder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/file_finder.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.i: cmake_force
@@ -286,7 +299,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.o: Code/grid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/grid.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.i: cmake_force
@@ -299,7 +312,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/init_create_state.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/init_create_state.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.i: cmake_force
@@ -312,7 +325,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.o: Code/init_create_state_helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/init_create_state_helper.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.i: cmake_force
@@ -325,7 +338,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.s: cmake_f
 
 CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.o: Code/input_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/input_manager.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.i: cmake_force
@@ -338,7 +351,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/load_state.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/load_state.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.i: cmake_force
@@ -351,7 +364,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/main_menu_state.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/main_menu_state.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.i: cmake_force
@@ -364,7 +377,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/map_view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/map_view.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.i: cmake_force
@@ -375,9 +388,22 @@ CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/map_view.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.s
 
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/road_builder_helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/road_builder_helper.cpp
+
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/road_builder_helper.cpp > CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.i
+
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/road_builder_helper.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.s
+
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/save_state.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/save_state.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.i: cmake_force
@@ -390,7 +416,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/simulation_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulation_handler.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.i: cmake_force
@@ -403,7 +429,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.o: Code/simulation_subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulation_subject.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.i: cmake_force
@@ -416,7 +442,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.o: Code/simulator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulator.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.i: cmake_force
@@ -429,7 +455,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.o: Code/splash_state.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/splash_state.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.i: cmake_force
@@ -442,7 +468,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.o: Code/state_machine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state_machine.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.i: cmake_force
@@ -455,7 +481,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.o: Code/tools_subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_subject.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.i: cmake_force
@@ -468,7 +494,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/tools_view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_view.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.i: cmake_force
@@ -481,7 +507,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.s: cmake_force
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o: Code/Tests/BoostTest/converter_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/converter_test.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.i: cmake_force
@@ -494,7 +520,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.s: c
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o: Code/Tests/BoostTest/file_finder_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/file_finder_test.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.i: cmake_force
@@ -507,7 +533,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.s:
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o: Code/Tests/BoostTest/init_create_state_helper_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/init_create_state_helper_test.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.i: cmake_force
@@ -520,7 +546,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helpe
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o: Code/Tests/BoostTest/main_menu_state_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/main_menu_state_test.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.i: cmake_force
@@ -533,7 +559,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/Tests/BoostTest/map_view_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/map_view_test.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.i: cmake_force
@@ -546,7 +572,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.s: cm
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/Tests/BoostTest/vehicle_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/vehicle_test.cpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.i: cmake_force
@@ -563,6 +589,7 @@ CityTrafficSimulator_OBJECTS = \
 "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.o" \
+"CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.o" \
@@ -582,6 +609,7 @@ CityTrafficSimulator_OBJECTS = \
 "CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o" \
+"CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.o" \
@@ -604,6 +632,7 @@ CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.o
+CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.o
@@ -623,6 +652,7 @@ CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/input_manager.cpp
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o
+CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/simulation_subject.cpp.o
@@ -643,7 +673,7 @@ CityTrafficSimulator: /opt/local/lib/libboost_unit_test_framework-mt.dylib
 CityTrafficSimulator: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 CityTrafficSimulator: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable CityTrafficSimulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX executable CityTrafficSimulator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CityTrafficSimulator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

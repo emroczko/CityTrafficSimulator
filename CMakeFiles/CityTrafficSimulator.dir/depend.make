@@ -43,6 +43,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Co
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/input_manager.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/keys_enum.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/map_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/road_builder_helper.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/simulation_handler.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/simulation_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/simulation_subject.hpp
@@ -77,6 +78,17 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.o: Code/Ve
 CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.o: Code/Vehicles/vehicle_factory.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.o: Code/cell.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.o: Code/definitions.hpp
+
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/adding_helper.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/adding_helper.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/asset_manager.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/converter.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/definitions.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/input_manager.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/road_builder_helper.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/simulator.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/state.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o: Code/state_machine.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o: Code/asset_manager.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o: Code/asset_manager.hpp
@@ -155,6 +167,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/grid.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/input_manager.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/keys_enum.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/map_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/road_builder_helper.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/simulation_handler.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/simulation_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/simulation_subject.hpp
@@ -218,6 +231,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/input_man
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/keys_enum.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/main_menu_state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/map_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/road_builder_helper.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/simulation_handler.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/simulation_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/simulation_subject.hpp
@@ -262,6 +276,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/load_state.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/load_state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/main_menu_state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/map_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/road_builder_helper.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/simulation_handler.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/simulation_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/simulation_subject.hpp
@@ -301,6 +316,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/load_state.
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/main_menu_state.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/main_menu_state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/map_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/road_builder_helper.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/simulation_handler.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/simulation_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/simulation_subject.hpp
@@ -331,6 +347,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/input_manager.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/keys_enum.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/map_view.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/map_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/road_builder_helper.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/save_state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/simulation_handler.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/simulation_observer.hpp
@@ -339,6 +356,16 @@ CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/simulator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/state_machine.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/timer.hpp
+
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/asset_manager.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/converter.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/definitions.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/input_manager.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/road_builder_helper.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/road_builder_helper.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/simulator.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/state.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/state_machine.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/Vehicles/car.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/Vehicles/truck.hpp
@@ -363,6 +390,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/grid.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/input_manager.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/keys_enum.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/map_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/road_builder_helper.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/save_state.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/save_state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/simulation_handler.hpp
