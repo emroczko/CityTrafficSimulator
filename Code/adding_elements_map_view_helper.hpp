@@ -28,6 +28,6 @@ namespace zpr {
         int gridSize_, cellSize_;
         std::unique_ptr<Converter> converter_;
         std::unique_ptr<RoadBuilderHelper> roadBuilderHelper_;
-        std::shared_ptr<CamerasHelper> camerasHelper_;
+        std::unique_ptr<CamerasHelper> camerasHelper_;
     };
 }

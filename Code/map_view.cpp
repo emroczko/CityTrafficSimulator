@@ -202,23 +202,6 @@ namespace zpr {
 	}
 
     
-//    /**
-//     * Method responsible for adding cameras.
-//     * @param position - Position of camera in row and column.
-//     */
-//    void MapView::addCamera(sf::Vector2i position){
-//        if (this->checkCameraExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-//
-//        sf::RectangleShape camera;
-//        camera.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
-//        camera.setTexture(&this->data_->assets_.getTexture("Camera"));
-//        camera.setOrigin(sf::Vector2f(camera.getSize().x / 2, camera.getSize().y / 2));
-//        sf::Vector2f centered_position_in_pixels = this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y));
-//        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2 ;
-//        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2 ;
-//        camera.setPosition(centered_position_in_pixels);
-//        this->cameras_[whichCamera_-1] = camera;
-//    }
 
     /**
      * Inherited method responsible for handling actions when camera is deleting.
@@ -231,24 +214,7 @@ namespace zpr {
         this->deletingRoadsHelper_->deleteCamera(sf::Vector2f(cameras_[which_camera-1].getPosition().x, cameras_[which_camera-1].getPosition().y), this->cameras_, this->whichCamera_);
         this->isAddingCamera_ = false;
     }
-
-//    /**
-//     * Method responsible for deleting cameras from the map.
-//     * @param position - Position of camera to delete.
-//     */
-//    void MapView::deleteCamera(sf::Vector2f position){
-//        int i = 0;
-//        sf::RectangleShape temp;
-//
-//        if(this->checkCameraExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-//        for(sf::RectangleShape camera : cameras_) {
-//            if (camera.getPosition().x == position.x && camera.getPosition().y == position.y){
-//                cameras_[whichCamera_-1] = temp;
-//            }
-//            i++;
-//        }
-//    }
-//    
+ 
     /**
      * Method which draws elements of map on the screen.
      */

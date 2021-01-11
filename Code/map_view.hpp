@@ -63,8 +63,6 @@ namespace zpr {
 		void generateGridLines();
 		void fillCells();
         void fillEnterCells();
-
-        void deleteCamera(sf::Vector2f position);
         
         void setupSelectedCellRect();
         void initializeCameras();

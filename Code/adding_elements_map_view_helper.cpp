@@ -11,7 +11,7 @@ namespace zpr{
         this->roadBuilderHelper_ = std::make_unique<RoadBuilderHelper>(this->data_, this->gridSize_);
         this->converter_ = std::make_unique<Converter>(this->gridSize_);
         this->cellSize_ = this->converter_->getCellSize();
-        this->camerasHelper_ = std::make_shared<CamerasHelper>(this->cellSize_);
+        this->camerasHelper_ = std::make_unique<CamerasHelper>(this->cellSize_);
     }
     /**
      * Method responsible for adding roads.
