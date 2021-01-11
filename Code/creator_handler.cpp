@@ -155,7 +155,7 @@ namespace zpr {
     {
         this->isDeletingRoad_ = false;
         this->isDrawingRoad_ = false;
-		this->notifyCells(grid_->cells_);
+		this->notifyCells(cells_);
     }
     
 
