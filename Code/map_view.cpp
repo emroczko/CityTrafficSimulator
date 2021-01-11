@@ -33,9 +33,8 @@ namespace zpr {
 	void MapView::init() {
         this->drawingHelper_ = std::make_unique<DrawingHelper>(this->data_);
         this->converter_ = std::make_unique<Converter>(this->gridSize_);
-        this->roadBuilderHelper_ = std::make_unique<RoadBuilderHelper>(this->data_, this->gridSize_);
-        this->addingRoadsHelper_ = std::make_unique<AddingHelper>(this->data_, this->gridSize_);
-        this->deletingRoadsHelper_ = std::make_unique<DeletingHelper>(this->data_, this->gridSize_);
+        this->addingRectangleShapesHelper_ = std::make_unique<AddingHelper>(this->data_, this->gridSize_);
+        this->deletingRectangleShapesHelper_ = std::make_unique<DeletingHelper>(this->data_, this->gridSize_);
         
         this->clicked_ = false;
         this->loadAssets();
@@ -173,10 +172,10 @@ namespace zpr {
 			int col = cell.getPosition().y;
 			if (cell.containsRoad_ && !cell.roadDrawn_) {
 				cell.roadDrawn_ = true;
-                this->addingRoadsHelper_->addUserRoad(sf::Vector2i(row, col), roads_);
+                this->addingRectangleShapesHelper_->addUserRoad(sf::Vector2i(row, col), roads_);
 			}
             if (cell.toDelete_) {
-                this->deletingRoadsHelper_->deleteRoad(this->converter_->transformRowColToPixels(sf::Vector2i(row, col)), this->roads_);
+                this->deletingRectangleShapesHelper_->deleteRoad(this->converter_->transformRowColToPixels(sf::Vector2i(row, col)), this->roads_);
 				cell.toDelete_ = false;
             }
 		}
@@ -192,12 +191,12 @@ namespace zpr {
             int col = cell.getPosition().x;
             if (cell.containsRoad_ && !cell.roadDrawn_) {
                 cell.roadDrawn_ = true;
-                this->addingRoadsHelper_->addEnterRoad(sf::Vector2i(row, col), roads_);
+                this->addingRectangleShapesHelper_->addEnterRoad(sf::Vector2i(row, col), roads_);
             }
 		}
     
-        this->addingRoadsHelper_->addGarage(sf::Vector2i(0, -2), roads_);
-        this->addingRoadsHelper_->addGarage(sf::Vector2i(gridSize_-1, -2), roads_);
+        this->addingRectangleShapesHelper_->addGarage(sf::Vector2i(0, -2), roads_);
+        this->addingRectangleShapesHelper_->addGarage(sf::Vector2i(gridSize_-1, -2), roads_);
         
 	}
 
@@ -209,9 +208,7 @@ namespace zpr {
      */
     void MapView::updateIsDeletingCamera(int which_camera){
         this->whichCamera_ = which_camera;
-        
-        //this->deleteCamera(sf::Vector2f(cameras_[which_camera-1].getPosition().x, cameras_[which_camera-1].getPosition().y));
-        this->deletingRoadsHelper_->deleteCamera(sf::Vector2f(cameras_[which_camera-1].getPosition().x, cameras_[which_camera-1].getPosition().y), this->cameras_, this->whichCamera_);
+        this->deletingRectangleShapesHelper_->deleteCamera(sf::Vector2f(cameras_[which_camera-1].getPosition().x, cameras_[which_camera-1].getPosition().y), this->cameras_, this->whichCamera_);
         this->isAddingCamera_ = false;
     }
  
@@ -265,6 +262,30 @@ namespace zpr {
      */
     void MapView::updateIsSimulating(bool is_simulating){
         this->isSimulating_ = is_simulating;
+        this->isDeletingRoad_ = false;
+        this->isDrawingRoad_ = false;
+    }
+
+    /**
+        * Method responsible for updating variable which tells MapView whether we are in drawing road mode.
+        * @param is_drawing_road - True if we are drawing road, false otherwise.
+        */
+       void MapView::updateIsDrawingRoad(bool is_drawing_road)
+       {
+           this->isDrawingRoad_ = is_drawing_road;
+           this->isDeletingRoad_ = false;
+           this->isSimulating_ = false;
+       }
+
+    /**
+     * Method responsible for updating variable which tells MapView whether we are in deleting road mode.
+     * @param is_deleting_road - True if we are deleting road, false otherwise.
+     */
+    void MapView::updateIsDeletingRoad(bool is_deleting_road)
+    {
+        this->isDeletingRoad_ = is_deleting_road;
+        this->isDrawingRoad_ = false;
+        this->isSimulating_ = false;
     }
 
     /**
@@ -319,9 +340,7 @@ namespace zpr {
             int col = cell.getPosition().y;
             if (cell.containsCamera_ && !cell.cameraDrawn_) {
                 cell.cameraDrawn_ = true;
-                //this->addCamera((sf::Vector2i(row, col)));
-                this->addingRoadsHelper_->addCamera(sf::Vector2i(row, col), this->cameras_, this->whichCamera_);
-                //this->cameras_[whichCamera_-1] = camera;
+                this->addingRectangleShapesHelper_->addCamera(sf::Vector2i(row, col), this->cameras_, this->whichCamera_);
             }
         }
     }

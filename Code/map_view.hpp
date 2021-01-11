@@ -16,9 +16,8 @@
 #include "keys_enum.hpp"
 #include "drawing_helper.hpp"
 #include "converter.hpp"
-#include "road_builder_helper.hpp"
 #include "adding_elements_map_view_helper.hpp"
-#include "deleting_road_helper.hpp"
+#include "deleting_elements_helper.hpp"
 
 
 namespace zpr {
@@ -34,8 +33,8 @@ namespace zpr {
 		void updateCells(std::vector<Cell> cells);
         void updateEnterCells(std::vector<Cell> enter_cells);
         void updateRoads(std::vector<sf::RectangleShape> roads);
-        void updateIsDrawingRoad(bool is_drawing_road) {};
-        void updateIsDeletingRoad(bool is_deleting_road) {};
+        void updateIsDrawingRoad(bool is_drawing_road);
+        void updateIsDeletingRoad(bool is_deleting_road);
         void updateIsSimulating(bool is_simulating);
         void updateIsAddingCamera(bool is_adding_camera, int which_camera) {}
         void updateCameraAdded(int which_camera, int row, int col);
@@ -59,11 +58,9 @@ namespace zpr {
 	private:
 		void loadAssets();
         sf::FloatRect calculateViewPort();
-        
 		void generateGridLines();
 		void fillCells();
         void fillEnterCells();
-        
         void setupSelectedCellRect();
         void initializeCameras();
         
@@ -95,9 +92,8 @@ namespace zpr {
 		std::vector<std::shared_ptr<Vehicle>> vehicles_;
         std::unique_ptr<DrawingHelper> drawingHelper_;
         std::unique_ptr<Converter> converter_;
-        std::unique_ptr<RoadBuilderHelper> roadBuilderHelper_;
-        std::unique_ptr<AddingHelper> addingRoadsHelper_;
-        std::unique_ptr<DeletingHelper> deletingRoadsHelper_;
+        std::unique_ptr<AddingHelper> addingRectangleShapesHelper_;
+        std::unique_ptr<DeletingHelper> deletingRectangleShapesHelper_;
 	};
 }
 

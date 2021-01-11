@@ -18,7 +18,7 @@ namespace zpr {
      */
     bool CamerasHelper::checkCameraExists(sf::Vector2f position, sf::RectangleShape *cameras) {
        
-        for(int i = 0; i < 2; i++){
+        for(int i = 0; i < 3; i++){
             if (cameras[i].getPosition().x -this->cellSize_/2 == position.x && cameras[i].getPosition().y - this->cellSize_/2 == position.y) {
                 return true;
             }

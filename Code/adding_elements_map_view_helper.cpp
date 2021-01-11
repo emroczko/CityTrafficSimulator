@@ -19,15 +19,15 @@ namespace zpr{
      * @param position - Position of road in row and column.
      */
     sf::RectangleShape AddingHelper::addElement(std::string texture_name, sf::Vector2i position){
-        sf::RectangleShape road;
-        road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
-        road.setTexture(&this->data_->assets_.getTexture(texture_name));
-        road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
+        sf::RectangleShape element;
+        element.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
+        element.setTexture(&this->data_->assets_.getTexture(texture_name));
+        element.setOrigin(sf::Vector2f(element.getSize().x / 2, element.getSize().y / 2));
         sf::Vector2f centered_position_in_pixels = this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y));
         centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2 ;
         centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2 ;
-        road.setPosition(centered_position_in_pixels);
-        return road;
+        element.setPosition(centered_position_in_pixels);
+        return element;
     }
 
     /**

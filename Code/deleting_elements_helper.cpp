@@ -5,7 +5,7 @@
 //  Created by Eryk Mroczko on 11/01/2021.
 //
 
-#include "deleting_road_helper.hpp"
+#include "deleting_elements_helper.hpp"
 
 namespace zpr {
 
