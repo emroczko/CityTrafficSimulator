@@ -10,6 +10,7 @@
 		52166DD82561796400A1AE4E /* button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52166DD72561796400A1AE4E /* button.cpp */; };
 		52190ADE25AC7C7E00663216 /* drawing_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190ADC25AC7C7E00663216 /* drawing_helper.cpp */; };
 		52190AE325AC87D300663216 /* converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AE125AC87D300663216 /* converter.cpp */; };
+		52190AE825AC929600663216 /* init_create_state_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AE625AC929600663216 /* init_create_state_helper.cpp */; };
 		522531B6255234B40035E946 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */; };
 		522531B7255234B40035E946 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */; };
 		522531B8255234B40035E946 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B3255234B40035E946 /* libsfml-window.2.5.1.dylib */; };
@@ -75,6 +76,8 @@
 		52190ADD25AC7C7E00663216 /* drawing_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = drawing_helper.hpp; sourceTree = "<group>"; };
 		52190AE125AC87D300663216 /* converter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = converter.cpp; sourceTree = "<group>"; };
 		52190AE225AC87D300663216 /* converter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = converter.hpp; sourceTree = "<group>"; };
+		52190AE625AC929600663216 /* init_create_state_helper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = init_create_state_helper.cpp; sourceTree = "<group>"; };
+		52190AE725AC929600663216 /* init_create_state_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = init_create_state_helper.hpp; sourceTree = "<group>"; };
 		522531A9255232C10035E946 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = ../../../Resources; sourceTree = "<group>"; };
 		522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				52166DD62561796400A1AE4E /* button.hpp */,
 				52EDDC39255A055800CD5101 /* init_create_state.cpp */,
 				52EDDC3A255A055800CD5101 /* init_create_state.hpp */,
+				52190AE625AC929600663216 /* init_create_state_helper.cpp */,
+				52190AE725AC929600663216 /* init_create_state_helper.hpp */,
 				52804F6425537553002A59AD /* car.cpp */,
 				52804F6525537553002A59AD /* car.hpp */,
 				52D3BD0D255440E00093D5DF /* splash_state.hpp */,
@@ -386,6 +391,7 @@
 				52D3BD01255421B90093D5DF /* input_manager.cpp in Sources */,
 				5230E79C2565EB3500F84CF2 /* cell.cpp in Sources */,
 				523F9D2F2575D4BF00279564 /* main.cpp in Sources */,
+				52190AE825AC929600663216 /* init_create_state_helper.cpp in Sources */,
 				52EDDC3B255A055800CD5101 /* init_create_state.cpp in Sources */,
 				52D3BD0925542D450093D5DF /* simulator.cpp in Sources */,
 				52190AE325AC87D300663216 /* converter.cpp in Sources */,

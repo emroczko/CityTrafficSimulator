@@ -15,6 +15,7 @@ namespace zpr {
 	{
 	public:
 		Button();
+        Button(sf::String text);
 		Button(sf::Vector2f position);
 		Button(sf::Vector2f position, sf::Vector2f size, sf::Texture& background);
 		Button(sf::Vector2f position, sf::Vector2f size, sf::String text, sf::Font& font, unsigned int font_size, sf::Color text_color, sf::Texture& background);

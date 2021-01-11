@@ -8,6 +8,7 @@
 #include "state.hpp"
 #include "simulator.hpp"
 #include "button.hpp"
+#include "init_create_state_helper.hpp"
 
 namespace zpr {
 
@@ -23,11 +24,10 @@ namespace zpr {
 		void draw(float dt);
 	private:
         void initializeButtons();
-		int getGridSizeFromButton(Button);
-		int changeTextToInt(std::string);
 		SimulatorDataRef data_;
 		sf::Sprite background_;
 		std::vector<Button> buttons_;
+        InitCreateStateHelper helper_;
 	};
 
 }

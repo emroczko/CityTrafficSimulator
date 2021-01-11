@@ -14,6 +14,15 @@ namespace zpr {
 	Button::Button() {
         this->isPressed_ = false;
     }
+
+    /**
+     * Parametrized constructor of Button class.
+     * @param text - Text which should be on the button.
+     */
+    Button::Button(sf::String text) : isPressed_(false)
+    {
+        this->text_.setString(text);
+    }
     /**
      * Parametrized constructor of Button class.
      * @param position - Position of where button should be placed.
@@ -36,6 +45,7 @@ namespace zpr {
 		this->rectangle_.setTexture(&background);
 		this->isPressed_ = false;
 	}
+ 
     /**
      * Parametrized constructor of Button class.
      * @param position - Position of where button should be placed.
