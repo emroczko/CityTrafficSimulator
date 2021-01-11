@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\Code\adding_helper.hpp" />
     <ClInclude Include="..\..\..\Code\asset_manager.hpp" />
     <ClInclude Include="..\..\..\Code\button.hpp" />
     <ClInclude Include="..\..\..\Code\camera.hpp" />
@@ -36,11 +37,13 @@
     <ClInclude Include="..\..\..\Code\file_finder.hpp" />
     <ClInclude Include="..\..\..\Code\grid.hpp" />
     <ClInclude Include="..\..\..\Code\init_create_state.hpp" />
+    <ClInclude Include="..\..\..\Code\init_create_state_helper.hpp" />
     <ClInclude Include="..\..\..\Code\input_manager.hpp" />
     <ClInclude Include="..\..\..\Code\keys_enum.hpp" />
     <ClInclude Include="..\..\..\Code\load_state.hpp" />
     <ClInclude Include="..\..\..\Code\main_menu_state.hpp" />
     <ClInclude Include="..\..\..\Code\map_view.hpp" />
+    <ClInclude Include="..\..\..\Code\road_builder_helper.hpp" />
     <ClInclude Include="..\..\..\Code\save_state.hpp" />
     <ClInclude Include="..\..\..\Code\simulation_handler.hpp" />
     <ClInclude Include="..\..\..\Code\simulation_observer.hpp" />
@@ -59,6 +62,7 @@
     <ClInclude Include="..\..\..\Code\Vehicles\vehicle_factory.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Code\adding_helper.cpp" />
     <ClCompile Include="..\..\..\Code\asset_manager.cpp" />
     <ClCompile Include="..\..\..\Code\button.cpp" />
     <ClCompile Include="..\..\..\Code\camera.cpp" />
@@ -73,11 +77,13 @@
     <ClCompile Include="..\..\..\Code\file_finder.cpp" />
     <ClCompile Include="..\..\..\Code\grid.cpp" />
     <ClCompile Include="..\..\..\Code\init_create_state.cpp" />
+    <ClCompile Include="..\..\..\Code\init_create_state_helper.cpp" />
     <ClCompile Include="..\..\..\Code\input_manager.cpp" />
     <ClCompile Include="..\..\..\Code\load_state.cpp" />
     <ClCompile Include="..\..\..\Code\main.cpp" />
     <ClCompile Include="..\..\..\Code\main_menu_state.cpp" />
     <ClCompile Include="..\..\..\Code\map_view.cpp" />
+    <ClCompile Include="..\..\..\Code\road_builder_helper.cpp" />
     <ClCompile Include="..\..\..\Code\save_state.cpp" />
     <ClCompile Include="..\..\..\Code\simulation_handler.cpp" />
     <ClCompile Include="..\..\..\Code\simulation_subject.cpp" />
