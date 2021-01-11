@@ -34,7 +34,7 @@
     <ClInclude Include="..\..\..\Code\creator_state.hpp" />
     <ClInclude Include="..\..\..\Code\creator_subject.hpp" />
     <ClInclude Include="..\..\..\Code\definitions.hpp" />
-    <ClInclude Include="..\..\..\Code\deleting_road_helper.hpp" />
+    <ClInclude Include="..\..\..\Code\deleting_elements_helper.hpp" />
     <ClInclude Include="..\..\..\Code\drawing_helper.hpp" />
     <ClInclude Include="..\..\..\Code\file_finder.hpp" />
     <ClInclude Include="..\..\..\Code\grid.hpp" />
@@ -76,7 +76,7 @@
     <ClCompile Include="..\..\..\Code\creator_handler.cpp" />
     <ClCompile Include="..\..\..\Code\creator_state.cpp" />
     <ClCompile Include="..\..\..\Code\creator_subject.cpp" />
-    <ClCompile Include="..\..\..\Code\deleting_road_helper.cpp" />
+    <ClCompile Include="..\..\..\Code\deleting_elements_helper.cpp" />
     <ClCompile Include="..\..\..\Code\drawing_helper.cpp" />
     <ClCompile Include="..\..\..\Code\file_finder.cpp" />
     <ClCompile Include="..\..\..\Code\grid.cpp" />

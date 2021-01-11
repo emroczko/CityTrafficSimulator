@@ -168,9 +168,6 @@
     <ClInclude Include="..\..\..\Code\cameras_map_view_helper.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\deleting_road_helper.hpp">
-      <Filter>Header Files\ZPR namespace\Helpers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Code\init_create_state_helper.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
@@ -190,6 +187,9 @@
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\input_manager.hpp">
+      <Filter>Header Files\ZPR namespace\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\deleting_elements_helper.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
   </ItemGroup>
@@ -278,9 +278,6 @@
     <ClCompile Include="..\..\..\Code\cameras_map_view_helper.cpp">
       <Filter>Source Files\ZPR namespace\Helpers</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\deleting_road_helper.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Code\converter.cpp">
       <Filter>Source Files\ZPR namespace\Helpers</Filter>
     </ClCompile>
@@ -300,6 +297,9 @@
       <Filter>Source Files\ZPR namespace\Helpers</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\input_manager.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\deleting_elements_helper.cpp">
       <Filter>Source Files\ZPR namespace\Helpers</Filter>
     </ClCompile>
   </ItemGroup>
