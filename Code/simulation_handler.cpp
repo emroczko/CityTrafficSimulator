@@ -56,7 +56,7 @@ namespace zpr {
         }
         else {
             this->startSimulationTimer_.stopTimer();
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
             this->vehicles_.clear();
             this->roads_.erase(roads_.begin() + 15, roads_.end());
             this->cameras_.clear();

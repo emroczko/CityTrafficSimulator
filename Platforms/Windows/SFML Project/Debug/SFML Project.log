@@ -23,48 +23,48 @@ H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(33,127
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(120,88): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(143,88): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(120,55): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(143,55): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(122,170): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(145,170): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(122,104): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(145,104): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(135,82): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(158,82): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(135,49): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(158,49): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(137,164): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(160,164): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(137,101): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(160,101): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(151,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(165,96): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(174,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\simulation_handler.cpp(188,96): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
           with
           [
               _Rep=__int64

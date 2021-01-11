@@ -197,7 +197,7 @@ namespace zpr {
      */
     void MapView::drawVehicles()
     {
-        for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
+        for (std::shared_ptr<Vehicle>& vehicle : this->vehicles_) {
             this->data_->window_.draw(*vehicle);
         }
 	}
@@ -746,9 +746,9 @@ namespace zpr {
         }
         else{
             //this->vehicles_.clear();
-            std::cout <<vehicles.size() << "        " << vehicles.capacity() << std::endl;
-            this->vehicles_ = vehicles;
             
+            this->vehicles_ = vehicles;
+            std::cout <<vehicles.size() << "   " << vehicles.capacity() << "   this->vehicles_" << this->vehicles_.size() << "    " <<this->vehicles_.capacity() << std::endl;
         }
 	}
 
