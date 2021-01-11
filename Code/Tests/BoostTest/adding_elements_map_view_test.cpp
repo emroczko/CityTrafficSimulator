@@ -79,6 +79,17 @@ BOOST_AUTO_TEST_CASE(AddingHelperTest_addingCamera)
     BOOST_CHECK_EQUAL(camera_.getTexture(), cameras_[0].getTexture());
 }
 
+BOOST_AUTO_TEST_CASE(AddingHelperTest_addingSameCameras)
+{
+    addingHelper_->addCamera(sf::Vector2i(4, 4), cameras_, 1);
+    addingHelper_->addCamera(sf::Vector2i(4, 4), cameras_, 2);
+    camera_ = addingHelper_->addElement("Camera", sf::Vector2i(4, 4));
+    sf::RectangleShape temp;
+    BOOST_CHECK(camera_.getPosition().x == cameras_[0].getPosition().x);
+    BOOST_CHECK(camera_.getPosition().x != cameras_[1].getPosition().x);
+    BOOST_CHECK(temp.getPosition().x == cameras_[1].getPosition().x);
+}
+
 BOOST_AUTO_TEST_CASE(AddingHelperTest_addingTwoSameRoads)
 {
     addingHelper_->addUserRoad(sf::Vector2i(2, 3), roads_);
