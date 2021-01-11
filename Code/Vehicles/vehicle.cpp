@@ -74,6 +74,9 @@ namespace zpr {
         }
     }
 
+    /**
+    *  Method that chcks if car can turn back from the road that it's on
+    */
 	bool Vehicle::canTurnBack()
 	{
 		for (sf::RectangleShape road : this->roads_) {
@@ -180,7 +183,9 @@ namespace zpr {
     {
         this->speed_ = 0;
     }
-
+    /**
+    *  Method which counts how long vehicle stays in one place
+    */
 	void Vehicle::checkVehicleStopped()
 	{
 		if (this->speed_ == 0) {
@@ -190,7 +195,9 @@ namespace zpr {
 			this->stopCounter_ = 0;
 		}
 	}
-
+    /**
+    * Method responsible for unblocking vehicle if it stays in one place gor too long
+    */
 	void Vehicle::unblockVehicle()
 	{
 		if (this->stopCounter_ > 100 && this->canTurnBack()) {
