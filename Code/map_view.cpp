@@ -331,7 +331,7 @@ namespace zpr {
      * @param which_camera - Number of which camera we added.
      * @param row - Row where should camera is placed.
      * @param col - Column where should camera is placed.
-         */
+    */
     void MapView::updateCameraAdded(int which_camera, int row, int col)
     {
         this->whichCamera_ = which_camera;

@@ -1,9 +1,7 @@
-//
-//  adding_helper.hpp
-//  CityTrafficSimulator
-//
-//  Created by Eryk Mroczko on 11/01/2021.
-//
+/**
+ * adding_elements_map_view_helper.hpp
+ * Header of AddingHelper class.
+ */
 
 #pragma once
 
@@ -15,6 +13,9 @@
 
 namespace zpr {
 
+    /**
+     * Class responsible for adding sf::RectangleShape objects to map view (roads and cameras).
+     */
     class AddingHelper{
     public:
         AddingHelper(SimulatorDataRef data, int grid_size);

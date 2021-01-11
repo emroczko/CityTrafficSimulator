@@ -1,10 +1,7 @@
-//
-//  delete_road_helper.hpp
-//  CityTrafficSimulator
-//
-//  Created by Eryk Mroczko on 11/01/2021.
-//
-
+/**
+ * deleting_elements_helper.hpp
+ * Header of DeletingHelper class.
+ */
 #pragma once
 
 #include "SFML/Graphics.hpp"
@@ -15,6 +12,9 @@
 
 namespace zpr {
 
+    /**
+     * Class responsible for deleting sf::RectangleShapes from mapView (cameras and roads).
+     */
     class DeletingHelper{
     public:
         DeletingHelper(SimulatorDataRef data, int grid_size);

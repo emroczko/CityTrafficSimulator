@@ -1,9 +1,9 @@
-//
-//  road_builder_helper.hpp
-//  CityTrafficSimulator
-//
-//  Created by Eryk Mroczko on 11/01/2021.
-//
+/**
+ * road_builder_helper.hpp
+ * Header of RoadBuilderHelper class.
+ */
+
+
 #pragma once
 
 #include "SFML/Graphics.hpp"
@@ -13,6 +13,9 @@
 
 namespace zpr {
 
+    /**
+     * Class responsible for helping adding textures for roads in map view and checking if certain roads exist.
+     */
     class RoadBuilderHelper{
     public:
         RoadBuilderHelper(SimulatorDataRef data, int grid_size);

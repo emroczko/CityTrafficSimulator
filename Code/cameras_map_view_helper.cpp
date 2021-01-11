@@ -1,19 +1,23 @@
-//
-//  cameras_map_view_helper.cpp
-//  CityTrafficSimulator
-//
-//  Created by Eryk Mroczko on 11/01/2021.
-//
+/**
+ * cameras_map_view_helper.hpp
+ * Implementation of CamerasHelper class.
+ */
 
 #include "cameras_map_view_helper.hpp"
 
 
 namespace zpr {
+
+    /**
+     * Parametrized constructor of CamerasHelper class.
+     * @param cell_size - Size of a cell in map view.
+     */
     CamerasHelper::CamerasHelper(int cell_size): cellSize_(cell_size){}
 
     /**
      * Method responsible for checking if camera exists on given position.
      * @param position - Position where road can exist.
+     * @param cameras - Table of cameras existing in map view.
      * @return - True when camera exists, false otherwise.
      */
     bool CamerasHelper::checkCameraExists(sf::Vector2f position, sf::RectangleShape *cameras) {

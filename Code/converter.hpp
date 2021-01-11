@@ -9,7 +9,7 @@
 namespace zpr{
 
     /**
-     * Class responsible for helper transforming values.
+     * Class responsible for helping transforming values.
      */
     class Converter{
     public:

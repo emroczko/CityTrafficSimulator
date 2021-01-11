@@ -2,6 +2,7 @@
  * converter.cpp
  * Implementation of Converter class.
  */
+
 #include "converter.hpp"
 
 

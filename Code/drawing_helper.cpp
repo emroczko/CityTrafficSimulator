@@ -16,6 +16,8 @@ namespace zpr{
     }
     /**
      * Method responsible for drawing grid on the map.
+     * @param is_simulating - Value telling if simulation is taking place.
+     * @param grid_lines - sf::RectangleShape objects representing lines of grid.
      */
     void DrawingHelper::drawGrid(bool is_simulating, std::vector<sf::RectangleShape> grid_lines) {
         if(!is_simulating){
@@ -27,6 +29,7 @@ namespace zpr{
 
     /**
      * Method responsible for drawing roads made by user.
+     * @param roads - Vector of roads existing in map view.
      */
     void DrawingHelper::drawRoads(std::vector<sf::RectangleShape> roads){
         for (sf::RectangleShape road : roads) {
@@ -36,6 +39,7 @@ namespace zpr{
 
     /**
      * Method responsible for drawing vehicles.
+     * @param vehicles - Vector of vehicles existing in map view.
      */
 
     void DrawingHelper::drawVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles)
@@ -48,6 +52,7 @@ namespace zpr{
 
     /**
      * Method responsible for drawing cameras.
+     * @param cameras - Table of cameras existing in map view.
      */
     void DrawingHelper::drawCameras(sf::RectangleShape *cameras){
         for (int i = 0; i<3; i++) {

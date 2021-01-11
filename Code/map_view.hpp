@@ -64,7 +64,6 @@ namespace zpr {
         void setupSelectedCellRect();
         void initializeCameras();
         
-        
         bool clicked_;
         std::unique_ptr<Grid> enterGrid_;
         int maximumZoom_;
