@@ -1,5 +1,7 @@
 #define BOOST_TEST_DYN_LINK
 #include "../../converter.hpp"
+#include "../../definitions.hpp"
+
 #include "SFML/Graphics.hpp"
 
 #include <boost/test/unit_test.hpp>
@@ -15,6 +17,7 @@ struct ConverterFixture {
     sf::Vector2i rowcol_ = sf::Vector2i(1, -2);
     double pixelsDouble_ = -89;
     int rowcolInt_ = -2;
+    int cellSize_ = (SCREEN_HEIGHT / gridSize_);
 	~ConverterFixture() = default;
     
 };
@@ -36,9 +39,14 @@ BOOST_AUTO_TEST_CASE(ConverterTest_transformingRowColToPixelsYpos)
     BOOST_CHECK_EQUAL(pixels_.y, converter_->transformRowColToPixels(rowcol_).y);
 }
 
-
 BOOST_AUTO_TEST_CASE(ConverterTest_transformingPixelsToRowCol)
 {
     BOOST_CHECK_EQUAL(rowcolInt_, converter_->transformPixelsToRowCol(pixelsDouble_));
 }
+
+BOOST_AUTO_TEST_CASE(ConverterTest_getCellSize)
+{
+    BOOST_CHECK_EQUAL(cellSize_, converter_->getCellSize());
+}
+
 BOOST_AUTO_TEST_SUITE_END()

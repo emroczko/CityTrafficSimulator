@@ -412,6 +412,33 @@ Code/Vehicles/vehicle_factory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.s
 .PHONY : Code/Vehicles/vehicle_factory.cpp.s
 
+Code/adding_helper.o: Code/adding_helper.cpp.o
+
+.PHONY : Code/adding_helper.o
+
+# target to build an object file
+Code/adding_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o
+.PHONY : Code/adding_helper.cpp.o
+
+Code/adding_helper.i: Code/adding_helper.cpp.i
+
+.PHONY : Code/adding_helper.i
+
+# target to preprocess a source file
+Code/adding_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.i
+.PHONY : Code/adding_helper.cpp.i
+
+Code/adding_helper.s: Code/adding_helper.cpp.s
+
+.PHONY : Code/adding_helper.s
+
+# target to generate assembly for a file
+Code/adding_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.s
+.PHONY : Code/adding_helper.cpp.s
+
 Code/asset_manager.o: Code/asset_manager.cpp.o
 
 .PHONY : Code/asset_manager.o
@@ -925,6 +952,33 @@ Code/map_view.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.s
 .PHONY : Code/map_view.cpp.s
 
+Code/road_builder_helper.o: Code/road_builder_helper.cpp.o
+
+.PHONY : Code/road_builder_helper.o
+
+# target to build an object file
+Code/road_builder_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o
+.PHONY : Code/road_builder_helper.cpp.o
+
+Code/road_builder_helper.i: Code/road_builder_helper.cpp.i
+
+.PHONY : Code/road_builder_helper.i
+
+# target to preprocess a source file
+Code/road_builder_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.i
+.PHONY : Code/road_builder_helper.cpp.i
+
+Code/road_builder_helper.s: Code/road_builder_helper.cpp.s
+
+.PHONY : Code/road_builder_helper.s
+
+# target to generate assembly for a file
+Code/road_builder_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.s
+.PHONY : Code/road_builder_helper.cpp.s
+
 Code/save_state.o: Code/save_state.cpp.o
 
 .PHONY : Code/save_state.o
@@ -1180,6 +1234,9 @@ help:
 	@echo "... Code/Vehicles/vehicle_factory.o"
 	@echo "... Code/Vehicles/vehicle_factory.i"
 	@echo "... Code/Vehicles/vehicle_factory.s"
+	@echo "... Code/adding_helper.o"
+	@echo "... Code/adding_helper.i"
+	@echo "... Code/adding_helper.s"
 	@echo "... Code/asset_manager.o"
 	@echo "... Code/asset_manager.i"
 	@echo "... Code/asset_manager.s"
@@ -1237,6 +1294,9 @@ help:
 	@echo "... Code/map_view.o"
 	@echo "... Code/map_view.i"
 	@echo "... Code/map_view.s"
+	@echo "... Code/road_builder_helper.o"
+	@echo "... Code/road_builder_helper.i"
+	@echo "... Code/road_builder_helper.s"
 	@echo "... Code/save_state.o"
 	@echo "... Code/save_state.i"
 	@echo "... Code/save_state.s"
