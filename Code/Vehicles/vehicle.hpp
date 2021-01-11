@@ -13,8 +13,9 @@
 namespace zpr {
 
     /**
-     * Class responsible for handling vehicles actions eg. moving, stopping, checking collisions. It is base class for Car and Truck. 
+     * Class responsible for handling vehicles actions eg. moving, stopping, checking collisions. It is base class for Car and Truck.
      */
+
 	class Vehicle : public sf::Drawable
 	{
 	public:
@@ -50,4 +51,3 @@ namespace zpr {
 		void updateDirection(std::string direction);
 	};
 }
-

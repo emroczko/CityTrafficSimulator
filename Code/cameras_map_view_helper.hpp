@@ -1,9 +1,8 @@
-//
-//  cameras_map_view_helper.hpp
-//  CityTrafficSimulator
-//
-//  Created by Eryk Mroczko on 11/01/2021.
-//
+/**
+ * cameras_map_view_helper.hpp
+ * Header of CamerasHelper class.
+ */
+
 
 #pragma once
 
@@ -14,6 +13,9 @@
 
 namespace zpr {
 
+    /**
+     * Class responsible for helping handling cameras in map view.
+     */
     class CamerasHelper{
     public:
         CamerasHelper(int cell_size);

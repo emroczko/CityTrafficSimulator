@@ -100,4 +100,4 @@ namespace zpr {
 		this->data_->window_.display();
 	}
 
-	}
+}

@@ -13,7 +13,7 @@
 		52190AE825AC929600663216 /* init_create_state_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AE625AC929600663216 /* init_create_state_helper.cpp */; };
 		52190AEF25ACB38700663216 /* road_builder_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AED25ACB38700663216 /* road_builder_helper.cpp */; };
 		52190AF325ACB7F200663216 /* adding_elements_map_view_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AF125ACB7F200663216 /* adding_elements_map_view_helper.cpp */; };
-		52190AF925ACD24A00663216 /* deleting_road_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AF725ACD24A00663216 /* deleting_road_helper.cpp */; };
+		52190AF925ACD24A00663216 /* deleting_elements_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AF725ACD24A00663216 /* deleting_elements_helper.cpp */; };
 		52190AFF25ACD6AE00663216 /* cameras_map_view_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AFD25ACD6AE00663216 /* cameras_map_view_helper.cpp */; };
 		522531B6255234B40035E946 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */; };
 		522531B7255234B40035E946 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */; };
@@ -86,8 +86,8 @@
 		52190AEE25ACB38700663216 /* road_builder_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = road_builder_helper.hpp; sourceTree = "<group>"; };
 		52190AF125ACB7F200663216 /* adding_elements_map_view_helper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = adding_elements_map_view_helper.cpp; sourceTree = "<group>"; };
 		52190AF225ACB7F200663216 /* adding_elements_map_view_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = adding_elements_map_view_helper.hpp; sourceTree = "<group>"; };
-		52190AF725ACD24A00663216 /* deleting_road_helper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deleting_road_helper.cpp; sourceTree = "<group>"; };
-		52190AF825ACD24A00663216 /* deleting_road_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = deleting_road_helper.hpp; sourceTree = "<group>"; };
+		52190AF725ACD24A00663216 /* deleting_elements_helper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deleting_elements_helper.cpp; sourceTree = "<group>"; };
+		52190AF825ACD24A00663216 /* deleting_elements_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = deleting_elements_helper.hpp; sourceTree = "<group>"; };
 		52190AFD25ACD6AE00663216 /* cameras_map_view_helper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cameras_map_view_helper.cpp; sourceTree = "<group>"; };
 		52190AFE25ACD6AE00663216 /* cameras_map_view_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cameras_map_view_helper.hpp; sourceTree = "<group>"; };
 		522531A9255232C10035E946 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = ../../../Resources; sourceTree = "<group>"; };
@@ -221,8 +221,8 @@
 				52190AE725AC929600663216 /* init_create_state_helper.hpp */,
 				52190AF125ACB7F200663216 /* adding_elements_map_view_helper.cpp */,
 				52190AF225ACB7F200663216 /* adding_elements_map_view_helper.hpp */,
-				52190AF725ACD24A00663216 /* deleting_road_helper.cpp */,
-				52190AF825ACD24A00663216 /* deleting_road_helper.hpp */,
+				52190AF725ACD24A00663216 /* deleting_elements_helper.cpp */,
+				52190AF825ACD24A00663216 /* deleting_elements_helper.hpp */,
 				52804F6425537553002A59AD /* car.cpp */,
 				52804F6525537553002A59AD /* car.hpp */,
 				52D3BD0D255440E00093D5DF /* splash_state.hpp */,
@@ -420,7 +420,7 @@
 				522F8FB125AA103E00210D3A /* camera.cpp in Sources */,
 				52D5673F256F034F0017A7C6 /* creator_handler.cpp in Sources */,
 				52190AF325ACB7F200663216 /* adding_elements_map_view_helper.cpp in Sources */,
-				52190AF925ACD24A00663216 /* deleting_road_helper.cpp in Sources */,
+				52190AF925ACD24A00663216 /* deleting_elements_helper.cpp in Sources */,
 				52D0C284259C072C000871D0 /* simulation_subject.cpp in Sources */,
 				5225663D255EA24500C9BB3C /* creator_state.cpp in Sources */,
 				52166DD82561796400A1AE4E /* button.cpp in Sources */,

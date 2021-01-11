@@ -1,14 +1,17 @@
-//
-//  delete_road_helper.cpp
-//  CityTrafficSimulator
-//
-//  Created by Eryk Mroczko on 11/01/2021.
-//
+/**
+ * deleting_elements_helper.cpp
+ * Implementation of DeletingHelper class.
+ */
 
-#include "deleting_road_helper.hpp"
+#include "deleting_elements_helper.hpp"
 
 namespace zpr {
 
+    /**
+     * Parametrized constructor of DeletingHelper class.
+     * @param data - Struct containing data of current application. (eg. window, assets).
+     * @param grid_size - Size of the grid in map view.
+     */
     DeletingHelper::DeletingHelper(SimulatorDataRef data, int grid_size): data_(data), gridSize_(grid_size){
         this->roadBuilderHelper_ = std::make_unique<RoadBuilderHelper>(this->data_, this->gridSize_);
         this->converter_ = std::make_unique<Converter>(this->gridSize_);
@@ -19,6 +22,7 @@ namespace zpr {
     /**
      * Method responsible for deleting roads from the map.
      * @param position - Position of the road in row and column.
+     * @param roads - Vector of roads existing in the map view.
      */
     void DeletingHelper::deleteRoad(sf::Vector2f position, std::vector<sf::RectangleShape> &roads){
 
@@ -40,6 +44,8 @@ namespace zpr {
     /**
      * Method responsible for deleting cameras from the map.
      * @param position - Position of camera to delete.
+     * @param cameras - Table of cameras existing in the map view.
+     * @param which_camera - Camera's to delete number.
      */
     void DeletingHelper::deleteCamera(sf::Vector2f position, sf::RectangleShape *cameras, int which_camera){
         sf::RectangleShape temp;

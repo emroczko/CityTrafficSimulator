@@ -1,15 +1,19 @@
-//
-//  road_builder_helper.cpp
-//  CityTrafficSimulator
-//
-//  Created by Eryk Mroczko on 11/01/2021.
-//
+/**
+ * road_builder_helper.cpp
+ * Implementation of RoadBuilderHelper class.
+ */
+
 
 #include "road_builder_helper.hpp"
 
 
 namespace zpr {
 
+    /**
+     * Parametrized constructor of RoadBuilderHelper class.
+     * @param data - Struct containing data of current application. (eg. window, assets)
+     * @param grid_size - Size of grid in map view.
+     */
     RoadBuilderHelper::RoadBuilderHelper(SimulatorDataRef data, int grid_size): data_(data), gridSize_(grid_size){
         this->converter_ = std::make_unique<Converter>(this->gridSize_);
         this->cellSize_ = this->converter_->getCellSize();
@@ -17,6 +21,7 @@ namespace zpr {
 
     /**
      * Method responsible for checking wheter roads are set with correct textures in order to make drawn road look correct and properly.
+     * @param roads - Vector of roads existing in map view.
      */
     void RoadBuilderHelper::checkRoadsTexture(std::vector<sf::RectangleShape>& roads) {
         for (sf::RectangleShape& road : roads) {
@@ -144,6 +149,7 @@ namespace zpr {
     /**
      * Method responsible for checking if road exists on given position.
      * @param position - Position where road can exist.
+     * @param roads - Vector of roads existing in map view.
      * @return - True when road exists, false otherwise.
      */
     bool RoadBuilderHelper::checkRoadExists(sf::Vector2f position, std::vector<sf::RectangleShape>& roads) {

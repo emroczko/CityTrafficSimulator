@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/adding_elements_map_view_test.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/adding_elements_map_view_test.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/converter_test.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/file_finder_test.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/init_create_state_helper_test.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o"
@@ -14,10 +15,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/truck.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/vehicle.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/vehicle_factory.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle_factory.cpp.o"
-  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/adding_helper.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/adding_helper.cpp.o"
+  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/adding_elements_map_view_helper.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/adding_elements_map_view_helper.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/asset_manager.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/asset_manager.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/button.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/button.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/camera.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/camera.cpp.o"
+  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cameras_map_view_helper.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/cameras_map_view_helper.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cameras_subject.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/cameras_subject.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cameras_view.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cell.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o"
@@ -25,6 +27,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/creator_handler.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/creator_handler.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/creator_state.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/creator_subject.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o"
+  "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/deleting_elements_helper.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/deleting_elements_helper.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/drawing_helper.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/file_finder.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/file_finder.cpp.o"
   "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/grid.cpp" "/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles/CityTrafficSimulator.dir/Code/grid.cpp.o"
