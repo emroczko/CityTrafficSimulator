@@ -16,7 +16,7 @@ namespace zpr {
 	class Truck : public Vehicle
 	{
 	public:
-		Truck(int x, int y, int cell_size, std::vector<sf::RectangleShape> roads);
+		Truck(int x, int y, int cell_size, std::vector<sf::RectangleShape> roads, std::string direction);
 	};
 
 }

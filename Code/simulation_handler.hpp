@@ -37,6 +37,7 @@ namespace zpr {
         void handleInput();
     private:
         Timer startSimulationTimer_, clearDataTimer_;
+        void setupExitSites();
         int calculatePrefix();
         void addCarsToSimulate();
         void addStartingRoad();
@@ -56,7 +57,7 @@ namespace zpr {
         bool isSimulating_;
         int gridSize_, cellSize_;
         int roadSize_, sidewalkSize_, roadStripesSize_;
-        sf::RectangleShape cityExitSite_;
+        std::vector<sf::RectangleShape> cityExitSite_;
         std::vector<Cell> cells_, enterCells_;
         std::vector<sf::RectangleShape> roads_;
         std::vector<Camera> cameras_;

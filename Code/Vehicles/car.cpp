@@ -15,7 +15,7 @@ namespace zpr {
      * @param cell_size - Size of a cell.
      * @param roads - Vector of available roads.
      */
-	Car::Car(int x, int y, int cell_size, std::vector<sf::RectangleShape> roads) {
+	Car::Car(int x, int y, int cell_size, std::vector<sf::RectangleShape> roads, std::string direction) {
 		this->x_ = x;
 		this->y_ = y;
 		this->speed_ = 3;
@@ -27,7 +27,7 @@ namespace zpr {
 		this->sidewalkSize_ = round(SIDEWALK_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
 		this->roadSize_ = round(ROAD_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
 		this->roadStripesSize_ = round(ROAD_STRIPES_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
-		this->direction_ = "East";
+		this->direction_ = direction;
 		this->previousDirection_ = "";
 		this->currentRoad_ = nullptr;
 		this->previousRoad_ = nullptr;
