@@ -177,7 +177,6 @@ namespace zpr {
 			}
             if (cell.toDelete_) {
                 this->deletingRoadsHelper_->deleteRoad(this->converter_->transformRowColToPixels(sf::Vector2i(row, col)), this->roads_);
-                //this->deleteRoad(this->converter_->transformRowColToPixels(sf::Vector2i(row, col)));
 				cell.toDelete_ = false;
             }
 		}
@@ -203,23 +202,23 @@ namespace zpr {
 	}
 
     
-    /**
-     * Method responsible for adding cameras.
-     * @param position - Position of camera in row and column.
-     */
-    void MapView::addCamera(sf::Vector2i position){
-        if (this->checkCameraExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-        
-        sf::RectangleShape camera;
-        camera.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
-        camera.setTexture(&this->data_->assets_.getTexture("Camera"));
-        camera.setOrigin(sf::Vector2f(camera.getSize().x / 2, camera.getSize().y / 2));
-        sf::Vector2f centered_position_in_pixels = this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y));
-        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2 ;
-        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2 ;
-        camera.setPosition(centered_position_in_pixels);
-        this->cameras_[whichCamera_-1] = camera;
-    }
+//    /**
+//     * Method responsible for adding cameras.
+//     * @param position - Position of camera in row and column.
+//     */
+//    void MapView::addCamera(sf::Vector2i position){
+//        if (this->checkCameraExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+//
+//        sf::RectangleShape camera;
+//        camera.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
+//        camera.setTexture(&this->data_->assets_.getTexture("Camera"));
+//        camera.setOrigin(sf::Vector2f(camera.getSize().x / 2, camera.getSize().y / 2));
+//        sf::Vector2f centered_position_in_pixels = this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y));
+//        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2 ;
+//        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2 ;
+//        camera.setPosition(centered_position_in_pixels);
+//        this->cameras_[whichCamera_-1] = camera;
+//    }
 
     /**
      * Inherited method responsible for handling actions when camera is deleting.
@@ -228,41 +227,28 @@ namespace zpr {
     void MapView::updateIsDeletingCamera(int which_camera){
         this->whichCamera_ = which_camera;
         
-        this->deleteCamera(sf::Vector2f(cameras_[which_camera-1].getPosition().x, cameras_[which_camera-1].getPosition().y));
-        
+        //this->deleteCamera(sf::Vector2f(cameras_[which_camera-1].getPosition().x, cameras_[which_camera-1].getPosition().y));
+        this->deletingRoadsHelper_->deleteCamera(sf::Vector2f(cameras_[which_camera-1].getPosition().x, cameras_[which_camera-1].getPosition().y), this->cameras_, this->whichCamera_);
         this->isAddingCamera_ = false;
     }
 
-    /**
-     * Method responsible for deleting cameras from the map.
-     * @param position - Position of camera to delete.
-     */
-    void MapView::deleteCamera(sf::Vector2f position){
-        int i = 0;
-        sf::RectangleShape temp;
-        
-        if(this->checkCameraExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
-        for(sf::RectangleShape camera : cameras_) {
-            if (camera.getPosition().x == position.x && camera.getPosition().y == position.y){
-                cameras_[whichCamera_-1] = temp;
-                //camera.setTexture(NULL);
-            }
-            i++;
-        }
-    }
-
-    /**
-     * Method responsible for checking if camera exists on given position.
-     * @param position - Position where road can exist.
-     * @return - True when camera exists, false otherwise.
-     */
-    bool MapView::checkCameraExists(sf::Vector2f position) {
-        for (sf::RectangleShape camera : this->cameras_) {
-            if (camera.getPosition().x -this->cellSize_/2 == position.x && camera.getPosition().y - this->cellSize_/2 == position.y) {return true;}
-        }
-        return false;
-    }
-    
+//    /**
+//     * Method responsible for deleting cameras from the map.
+//     * @param position - Position of camera to delete.
+//     */
+//    void MapView::deleteCamera(sf::Vector2f position){
+//        int i = 0;
+//        sf::RectangleShape temp;
+//
+//        if(this->checkCameraExists(this->converter_->transformRowColToPixels(sf::Vector2i(position.x, position.y)))) { return; }
+//        for(sf::RectangleShape camera : cameras_) {
+//            if (camera.getPosition().x == position.x && camera.getPosition().y == position.y){
+//                cameras_[whichCamera_-1] = temp;
+//            }
+//            i++;
+//        }
+//    }
+//    
     /**
      * Method which draws elements of map on the screen.
      */
@@ -271,7 +257,6 @@ namespace zpr {
 		this->data_->window_.setView(this->mapView_);
 		this->data_->window_.draw(this->backgroundTexture_);
 		this->fillCells();
-
         this->drawingHelper_->drawRoads(this->roads_);
         this->drawingHelper_->drawGrid(this->isSimulating_, gridLines_);
         this->drawingHelper_->drawCameras(this->cameras_);
@@ -306,6 +291,14 @@ namespace zpr {
         case DOWN: this->mapView_.move(0, 90.f);
             break;
         }
+    }
+
+    /**
+     * Method responsible for updating variable which tells MapView whether we are in simulating mode.
+     * @param is_simulating - True if we are simulating, false otherwise.
+     */
+    void MapView::updateIsSimulating(bool is_simulating){
+        this->isSimulating_ = is_simulating;
     }
 
     /**
@@ -347,27 +340,6 @@ namespace zpr {
     }
 
     /**
-     * Method responsible for updating variable which tells MapView whether we are in simulating mode.
-     * @param is_simulating - True if we are simulating, false otherwise.
-     */
-    void MapView::updateIsSimulating(bool is_simulating){
-        this->isSimulating_ = is_simulating;
-        this->isDrawingRoad_ = false;
-        this->isDeletingRoad_ = false;
-    }
-
-    /**
-     * Method responsible for updating variable which tells MapView whether we are in adding camera mode.
-     * @param is_adding_camera - True if we are simulating, false otherwise.
-     * @param which_camera - Number of which camera we are adding.
-    */
-    void MapView::updateIsAddingCamera(bool is_adding_camera, int which_camera){
-        this->isAddingCamera_ = is_adding_camera;
-        this->isDrawingRoad_ = false;
-        this->isDeletingRoad_ = false;
-    }
-
-    /**
      * Method responsible for updating mapView wheteher camera is added.
      * @param which_camera - Number of which camera we added.
      * @param row - Row where should camera is placed.
@@ -381,7 +353,9 @@ namespace zpr {
             int col = cell.getPosition().y;
             if (cell.containsCamera_ && !cell.cameraDrawn_) {
                 cell.cameraDrawn_ = true;
-                this->addCamera((sf::Vector2i(row, col)));
+                //this->addCamera((sf::Vector2i(row, col)));
+                this->addingRoadsHelper_->addCamera(sf::Vector2i(row, col), this->cameras_, this->whichCamera_);
+                //this->cameras_[whichCamera_-1] = camera;
             }
         }
     }

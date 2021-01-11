@@ -11,6 +11,7 @@
 #include "simulator.hpp"
 #include "converter.hpp"
 #include "road_builder_helper.hpp"
+#include "cameras_map_view_helper.hpp"
 
 namespace zpr {
 
@@ -18,11 +19,13 @@ namespace zpr {
     public:
         DeletingHelper(SimulatorDataRef data, int grid_size);
         void deleteRoad(sf::Vector2f position, std::vector<sf::RectangleShape>& roads);
+        void deleteCamera(sf::Vector2f position, sf::RectangleShape *cameras, int which_camera);
     private:
         SimulatorDataRef data_;
         int gridSize_, cellSize_;
         std::unique_ptr<Converter> converter_;
         std::unique_ptr<RoadBuilderHelper> roadBuilderHelper_;
+        std::shared_ptr<CamerasHelper> camerasHelper_;
     };
 }
 

@@ -17,7 +17,7 @@
 #include "drawing_helper.hpp"
 #include "converter.hpp"
 #include "road_builder_helper.hpp"
-#include "adding_road_helper.hpp"
+#include "adding_elements_map_view_helper.hpp"
 #include "deleting_road_helper.hpp"
 
 
@@ -37,7 +37,7 @@ namespace zpr {
         void updateIsDrawingRoad(bool is_drawing_road) {};
         void updateIsDeletingRoad(bool is_deleting_road) {};
         void updateIsSimulating(bool is_simulating);
-        void updateIsAddingCamera(bool is_adding_camera, int which_camera);
+        void updateIsAddingCamera(bool is_adding_camera, int which_camera) {}
         void updateCameraAdded(int which_camera, int row, int col);
         void updateIsDeletingCamera(int which_camera);
         void updateCarsLabel(int which_label){}
@@ -63,11 +63,9 @@ namespace zpr {
 		void generateGridLines();
 		void fillCells();
         void fillEnterCells();
-        
-        void addCamera(sf::Vector2i position);
+
         void deleteCamera(sf::Vector2f position);
         
-        bool checkCameraExists(sf::Vector2f position);
         void setupSelectedCellRect();
         void initializeCameras();
         

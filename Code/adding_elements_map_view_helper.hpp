@@ -11,21 +11,23 @@
 #include "simulator.hpp"
 #include "converter.hpp"
 #include "road_builder_helper.hpp"
+#include "cameras_map_view_helper.hpp"
 
 namespace zpr {
 
     class AddingHelper{
     public:
         AddingHelper(SimulatorDataRef data, int grid_size);
-        sf::RectangleShape addRoad(std::string fileName, sf::Vector2i position);
+        sf::RectangleShape addElement(std::string fileName, sf::Vector2i position);
         void addUserRoad(sf::Vector2i position, std::vector<sf::RectangleShape>& roads);
         void addGarage(sf::Vector2i position, std::vector<sf::RectangleShape>& roads);
         void addEnterRoad(sf::Vector2i position, std::vector<sf::RectangleShape>& roads);
-        //void addCamera(sf::Vector2i position);
+        void addCamera(sf::Vector2i position, sf::RectangleShape *cameras, int which_camera);
     private:
         SimulatorDataRef data_;
         int gridSize_, cellSize_;
         std::unique_ptr<Converter> converter_;
         std::unique_ptr<RoadBuilderHelper> roadBuilderHelper_;
+        std::shared_ptr<CamerasHelper> camerasHelper_;
     };
 }
