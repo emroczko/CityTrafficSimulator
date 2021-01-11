@@ -230,10 +230,10 @@ namespace zpr {
 
         if (this->startingCellFree() && this->vehicles_.size() < this->roads_.size() / 2) {
             
-            int x_start_1 =this->calculatePrefix() + cellSize_ * STARTING_CELL_COL +  ROAD_IMAGE_SIZE / 2;
-            int y_start_1 = this->calculatePrefix() + cellSize_ * STARTING_CELL_ROW + this->sidewalkSize_ + this->roadSize_/4;
-            int x_start_2 = this->calculatePrefix() + cellSize_ * STARTING_CELL_COL2 + ROAD_IMAGE_SIZE / 2;
-            int y_start_2 = this->calculatePrefix() + cellSize_ * STARTING_CELL_ROW2 + this->sidewalkSize_ + this->roadSize_ / 4;
+            int x_start_1 =this->calculatePrefix() + cellSize_ * 0 +  ROAD_IMAGE_SIZE / 2;
+            int y_start_1 = this->calculatePrefix() + cellSize_ * -2 + this->sidewalkSize_ + this->roadSize_/4;
+            int x_start_2 = this->calculatePrefix() + cellSize_ * (sqrt(this->cells_.size())-1) + ROAD_IMAGE_SIZE / 2;
+            int y_start_2 = this->calculatePrefix() + cellSize_ * -2 + this->sidewalkSize_ + this->roadSize_ / 4;
         
             std::random_device rng;
             std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());

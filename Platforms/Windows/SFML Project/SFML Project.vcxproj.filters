@@ -248,9 +248,6 @@
     <ClCompile Include="..\..\..\Code\asset_manager.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\cameras_subject.cpp">
-      <Filter>Source Files\ZPR namespace</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Code\creator_handler.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
@@ -283,6 +280,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Code\init_create_state_helper.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\cameras_subject.cpp">
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
