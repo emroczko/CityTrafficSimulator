@@ -142,6 +142,87 @@ CityTrafficSimulator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/build
 .PHONY : CityTrafficSimulator/fast
 
+Code/Tests/BoostTest/converter_test.o: Code/Tests/BoostTest/converter_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/converter_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/converter_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o
+.PHONY : Code/Tests/BoostTest/converter_test.cpp.o
+
+Code/Tests/BoostTest/converter_test.i: Code/Tests/BoostTest/converter_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/converter_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/converter_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.i
+.PHONY : Code/Tests/BoostTest/converter_test.cpp.i
+
+Code/Tests/BoostTest/converter_test.s: Code/Tests/BoostTest/converter_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/converter_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/converter_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.s
+.PHONY : Code/Tests/BoostTest/converter_test.cpp.s
+
+Code/Tests/BoostTest/file_finder_test.o: Code/Tests/BoostTest/file_finder_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/file_finder_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/file_finder_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o
+.PHONY : Code/Tests/BoostTest/file_finder_test.cpp.o
+
+Code/Tests/BoostTest/file_finder_test.i: Code/Tests/BoostTest/file_finder_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/file_finder_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/file_finder_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.i
+.PHONY : Code/Tests/BoostTest/file_finder_test.cpp.i
+
+Code/Tests/BoostTest/file_finder_test.s: Code/Tests/BoostTest/file_finder_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/file_finder_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/file_finder_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.s
+.PHONY : Code/Tests/BoostTest/file_finder_test.cpp.s
+
+Code/Tests/BoostTest/init_create_state_helper_test.o: Code/Tests/BoostTest/init_create_state_helper_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/init_create_state_helper_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/init_create_state_helper_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o
+.PHONY : Code/Tests/BoostTest/init_create_state_helper_test.cpp.o
+
+Code/Tests/BoostTest/init_create_state_helper_test.i: Code/Tests/BoostTest/init_create_state_helper_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/init_create_state_helper_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/init_create_state_helper_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.i
+.PHONY : Code/Tests/BoostTest/init_create_state_helper_test.cpp.i
+
+Code/Tests/BoostTest/init_create_state_helper_test.s: Code/Tests/BoostTest/init_create_state_helper_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/init_create_state_helper_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/init_create_state_helper_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.s
+.PHONY : Code/Tests/BoostTest/init_create_state_helper_test.cpp.s
+
 Code/Tests/BoostTest/main_menu_state_test.o: Code/Tests/BoostTest/main_menu_state_test.cpp.o
 
 .PHONY : Code/Tests/BoostTest/main_menu_state_test.o
@@ -195,6 +276,33 @@ Code/Tests/BoostTest/map_view_test.s: Code/Tests/BoostTest/map_view_test.cpp.s
 Code/Tests/BoostTest/map_view_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.s
 .PHONY : Code/Tests/BoostTest/map_view_test.cpp.s
+
+Code/Tests/BoostTest/vehicle_test.o: Code/Tests/BoostTest/vehicle_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/vehicle_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/vehicle_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o
+.PHONY : Code/Tests/BoostTest/vehicle_test.cpp.o
+
+Code/Tests/BoostTest/vehicle_test.i: Code/Tests/BoostTest/vehicle_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/vehicle_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/vehicle_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.i
+.PHONY : Code/Tests/BoostTest/vehicle_test.cpp.i
+
+Code/Tests/BoostTest/vehicle_test.s: Code/Tests/BoostTest/vehicle_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/vehicle_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/vehicle_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.s
+.PHONY : Code/Tests/BoostTest/vehicle_test.cpp.s
 
 Code/Vehicles/car.o: Code/Vehicles/car.cpp.o
 
@@ -466,6 +574,33 @@ Code/cell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.s
 .PHONY : Code/cell.cpp.s
 
+Code/converter.o: Code/converter.cpp.o
+
+.PHONY : Code/converter.o
+
+# target to build an object file
+Code/converter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.o
+.PHONY : Code/converter.cpp.o
+
+Code/converter.i: Code/converter.cpp.i
+
+.PHONY : Code/converter.i
+
+# target to preprocess a source file
+Code/converter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.i
+.PHONY : Code/converter.cpp.i
+
+Code/converter.s: Code/converter.cpp.s
+
+.PHONY : Code/converter.s
+
+# target to generate assembly for a file
+Code/converter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/converter.cpp.s
+.PHONY : Code/converter.cpp.s
+
 Code/creator_handler.o: Code/creator_handler.cpp.o
 
 .PHONY : Code/creator_handler.o
@@ -547,6 +682,33 @@ Code/creator_subject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.s
 .PHONY : Code/creator_subject.cpp.s
 
+Code/drawing_helper.o: Code/drawing_helper.cpp.o
+
+.PHONY : Code/drawing_helper.o
+
+# target to build an object file
+Code/drawing_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.o
+.PHONY : Code/drawing_helper.cpp.o
+
+Code/drawing_helper.i: Code/drawing_helper.cpp.i
+
+.PHONY : Code/drawing_helper.i
+
+# target to preprocess a source file
+Code/drawing_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.i
+.PHONY : Code/drawing_helper.cpp.i
+
+Code/drawing_helper.s: Code/drawing_helper.cpp.s
+
+.PHONY : Code/drawing_helper.s
+
+# target to generate assembly for a file
+Code/drawing_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/drawing_helper.cpp.s
+.PHONY : Code/drawing_helper.cpp.s
+
 Code/file_finder.o: Code/file_finder.cpp.o
 
 .PHONY : Code/file_finder.o
@@ -627,6 +789,33 @@ Code/init_create_state.s: Code/init_create_state.cpp.s
 Code/init_create_state.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.s
 .PHONY : Code/init_create_state.cpp.s
+
+Code/init_create_state_helper.o: Code/init_create_state_helper.cpp.o
+
+.PHONY : Code/init_create_state_helper.o
+
+# target to build an object file
+Code/init_create_state_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.o
+.PHONY : Code/init_create_state_helper.cpp.o
+
+Code/init_create_state_helper.i: Code/init_create_state_helper.cpp.i
+
+.PHONY : Code/init_create_state_helper.i
+
+# target to preprocess a source file
+Code/init_create_state_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.i
+.PHONY : Code/init_create_state_helper.cpp.i
+
+Code/init_create_state_helper.s: Code/init_create_state_helper.cpp.s
+
+.PHONY : Code/init_create_state_helper.s
+
+# target to generate assembly for a file
+Code/init_create_state_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.s
+.PHONY : Code/init_create_state_helper.cpp.s
 
 Code/input_manager.o: Code/input_manager.cpp.o
 
@@ -961,12 +1150,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CityTrafficSimulator"
+	@echo "... Code/Tests/BoostTest/converter_test.o"
+	@echo "... Code/Tests/BoostTest/converter_test.i"
+	@echo "... Code/Tests/BoostTest/converter_test.s"
+	@echo "... Code/Tests/BoostTest/file_finder_test.o"
+	@echo "... Code/Tests/BoostTest/file_finder_test.i"
+	@echo "... Code/Tests/BoostTest/file_finder_test.s"
+	@echo "... Code/Tests/BoostTest/init_create_state_helper_test.o"
+	@echo "... Code/Tests/BoostTest/init_create_state_helper_test.i"
+	@echo "... Code/Tests/BoostTest/init_create_state_helper_test.s"
 	@echo "... Code/Tests/BoostTest/main_menu_state_test.o"
 	@echo "... Code/Tests/BoostTest/main_menu_state_test.i"
 	@echo "... Code/Tests/BoostTest/main_menu_state_test.s"
 	@echo "... Code/Tests/BoostTest/map_view_test.o"
 	@echo "... Code/Tests/BoostTest/map_view_test.i"
 	@echo "... Code/Tests/BoostTest/map_view_test.s"
+	@echo "... Code/Tests/BoostTest/vehicle_test.o"
+	@echo "... Code/Tests/BoostTest/vehicle_test.i"
+	@echo "... Code/Tests/BoostTest/vehicle_test.s"
 	@echo "... Code/Vehicles/car.o"
 	@echo "... Code/Vehicles/car.i"
 	@echo "... Code/Vehicles/car.s"
@@ -997,6 +1198,9 @@ help:
 	@echo "... Code/cell.o"
 	@echo "... Code/cell.i"
 	@echo "... Code/cell.s"
+	@echo "... Code/converter.o"
+	@echo "... Code/converter.i"
+	@echo "... Code/converter.s"
 	@echo "... Code/creator_handler.o"
 	@echo "... Code/creator_handler.i"
 	@echo "... Code/creator_handler.s"
@@ -1006,6 +1210,9 @@ help:
 	@echo "... Code/creator_subject.o"
 	@echo "... Code/creator_subject.i"
 	@echo "... Code/creator_subject.s"
+	@echo "... Code/drawing_helper.o"
+	@echo "... Code/drawing_helper.i"
+	@echo "... Code/drawing_helper.s"
 	@echo "... Code/file_finder.o"
 	@echo "... Code/file_finder.i"
 	@echo "... Code/file_finder.s"
@@ -1015,6 +1222,9 @@ help:
 	@echo "... Code/init_create_state.o"
 	@echo "... Code/init_create_state.i"
 	@echo "... Code/init_create_state.s"
+	@echo "... Code/init_create_state_helper.o"
+	@echo "... Code/init_create_state_helper.i"
+	@echo "... Code/init_create_state_helper.s"
 	@echo "... Code/input_manager.o"
 	@echo "... Code/input_manager.i"
 	@echo "... Code/input_manager.s"

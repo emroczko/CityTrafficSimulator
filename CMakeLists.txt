@@ -2,15 +2,15 @@ cmake_minimum_required(VERSION 3.1)
 
 project(CityTrafficSimulator)
 
-option(BUILD_TESTS "Build tests" OFF)
+option(BUILD_RUN "Build run" OFF)
 
-if(BUILD_TESTS)
-include("cmakeTest.txt")
-else()
+if(BUILD_RUN)
 include("cmakeRun.txt")
+else()
+include("cmakeTest.txt")
 
-endif(BUILD_TESTS)
+endif(BUILD_RUN)
 
-unset(BUILD_TESTS)
+unset(BUILD_RUN)
 
 

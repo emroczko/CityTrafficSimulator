@@ -16,6 +16,7 @@
 #include "keys_enum.hpp"
 #include "drawing_helper.hpp"
 #include "converter.hpp"
+#include "road_builder_helper.hpp"
 
 
 namespace zpr {
@@ -55,28 +56,20 @@ namespace zpr {
         friend std::ofstream& operator<< (std::ofstream& ,const MapView&);
 	private:
 		void loadAssets();
-		sf::FloatRect calculateViewPort();
-
-        void drawGrid();
-        void drawRoads();
-		void drawVehicles();
-        void drawCameras();
+        sf::FloatRect calculateViewPort();
         
 		void generateGridLines();
 		void fillCells();
         void fillEnterCells();
+        
+        
         void addRoad(std::string fileName, sf::Vector2i position);
 		void addUserRoad(sf::Vector2i position);
         void addGarage(sf::Vector2i position);
         void addEnterRoad(sf::Vector2i position);
         void addCamera(sf::Vector2i position);
-		void checkRoadsTexture();
-		void choseRoadWithOneNeighbour(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
-			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west, int row, int col);
-		void choseRoadWithTwoNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
-			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
-		void choseRoadWithThreeNeighbours(sf::RectangleShape& road, std::shared_ptr<sf::RectangleShape> north, std::shared_ptr<sf::RectangleShape> south,
-			std::shared_ptr<sf::RectangleShape> east, std::shared_ptr<sf::RectangleShape> west);
+        
+        
         void deleteRoad(sf::Vector2f position);
         void deleteCamera(sf::Vector2f position);
 		bool checkRoadExists(sf::Vector2f position);
@@ -112,6 +105,7 @@ namespace zpr {
 		std::vector<std::shared_ptr<Vehicle>> vehicles_;
         std::unique_ptr<DrawingHelper> drawingHelper_;
         std::unique_ptr<Converter> converter_;
+        std::unique_ptr<RoadBuilderHelper> roadBuilderHelper_;
 	};
 }
 

@@ -17,6 +17,7 @@ namespace zpr{
         sf::Vector2f transformRowColToPixels(sf::Vector2i rowcol);
         int transformPixelsToRowCol(double pixels);
         int calculatePrefix();
+        int getCellSize();
     private:
         int cellSize_;
         int gridSize_;

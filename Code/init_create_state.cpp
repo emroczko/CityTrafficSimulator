@@ -16,7 +16,9 @@ namespace zpr {
      * Parametrized constructor of InitCreateState class.
      * @param data - Struct containing data of current application. (eg. window, assets)
      */
-	InitCreateState::InitCreateState(SimulatorDataRef data) : data_(data){}
+	InitCreateState::InitCreateState(SimulatorDataRef data) : data_(data){
+        
+    }
 
     /**
      * Methods which initializes all elements in the current state to display it properly.
@@ -65,7 +67,7 @@ namespace zpr {
 				{
 					if (button.getText() != "Back")
 					{
-						int grid_size = getGridSizeFromButton(button);
+						int grid_size = helper_.getGridSizeFromButton(button);
 						this->data_->machine_.addState(StateRef(new CreatorState(this->data_, grid_size)), false);
 					}
 					else
@@ -76,26 +78,7 @@ namespace zpr {
 			}
         }          
 	}
-    /**
-     * Method returning size of grid depending from which button was clicked.
-     * @param button - Clicked button.
-     * @return - Grid size.
-     */
-	int InitCreateState::getGridSizeFromButton(Button button)
-	{
-		std::string button_text = button.getText();
-		std::string text_to_change = button_text.substr(0, 2);
-        return changeTextToInt(button_text);
-	}
-    /**
-     * Method returning size of grid from button text
-     * @param text_to_change - Text which should be converted to int
-     * @return - Grid size.
-     */
-	int InitCreateState::changeTextToInt(std::string text_to_change)
-	{
-		return std::stoi(text_to_change, nullptr);
-	}
+    
 
     /**
      * Method which updates the window.
