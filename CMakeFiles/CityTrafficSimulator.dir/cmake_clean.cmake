@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o"
-  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o"
+  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o"
+  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.o"

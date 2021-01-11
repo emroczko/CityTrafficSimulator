@@ -17,6 +17,9 @@
 //Build run
 BUILD_RUN:BOOL=OFF
 
+//Build tests
+BUILD_TESTS:BOOL=ON
+
 //The directory containing a CMake configuration file for Boost.
 Boost_DIR:PATH=Boost_DIR-NOTFOUND
 

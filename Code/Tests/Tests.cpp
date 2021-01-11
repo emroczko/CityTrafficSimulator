@@ -30,7 +30,7 @@ namespace ZPR {
     TEST_CASE( "Testing Main menu state" ) {
         SimulatorDataRef data = std::make_shared<SimulatorData>();
         unsigned long buttons = 2;
-        MainMenuState menuButtonsTest(data);
+        MainMenuState menuButtonsTest(data)
         menuButtonsTest.init();
         SECTION("Testing Buttons in menu state" ){
             REQUIRE(buttons == menuButtonsTest.getButtonsAmount());

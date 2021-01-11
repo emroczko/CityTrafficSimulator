@@ -21,7 +21,7 @@ namespace zpr {
      */
     class SimulationHandler : public SimulationSubject, public CamerasObserver, public CreatorObserver{
     public:
-        SimulationHandler(int grid_size, std::vector<Cell> cells);
+        SimulationHandler(int grid_size);
         void init();
         void updateIsSimulating();
         void updateSelectedCell(sf::Vector2i coords) {};
@@ -52,6 +52,7 @@ namespace zpr {
         void separateEnterRoadsFromCells();
         void separateCamerasFromCells();
         sf::RectangleShape convertCellToCenteredRectShape(Cell cell);
+        sf::RectangleShape convertCellToCenteredRectShape2(Cell cell);
         bool isSimulating_;
         int gridSize_, cellSize_;
         int roadSize_, sidewalkSize_, roadStripesSize_;

@@ -19,7 +19,7 @@ include_directories(Resources)
 
 file(GLOB SOURCES "Code/*.cpp" "Code/Vehicles/*.cpp")
 list(FILTER SOURCES EXCLUDE REGEX ".*main.cpp$")
-file(GLOB TESTS "Code/Tests/BoostTest/MapViewTest.cpp" "Code/Tests/BoostTest/VehicleTest.cpp")
+file(GLOB TESTS "Code/Tests/BoostTest/map_view_test.cpp" "Code/Tests/BoostTest/main_menu_state_test.cpp")
 
 
 add_executable(CityTrafficSimulator ${SOURCES} ${TESTS})

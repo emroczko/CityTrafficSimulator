@@ -30,13 +30,13 @@ namespace zpr {
         if (cells_.empty())
             this->generateBoard();
         
-        else
-            this->clearRoads();
+//        else
+//            this->clearRoads();
         
         this->generateEnterBoard();
         
         this->notifyEnterCells(enterCells_);
-		this->notifyCells(grid_->cells_);
+		this->notifyCells(cells_);
 		this->notifyIsDrawingRoad(this->isDrawingRoad_);
         this->notifyIsDeletingRoad(this->isDeletingRoad_);
 	}

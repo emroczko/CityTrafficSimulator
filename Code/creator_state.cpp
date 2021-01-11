@@ -35,7 +35,7 @@ namespace zpr {
 		this->toolsView_ = std::make_unique<ToolsView>(this->data_);
         this->camerasView_ = std::make_unique<CamerasView>(this->data_);
         this->creatorHandler_ = std::make_unique<CreatorHandler>(this->gridSize_, this->cells_);
-        this->simulationHandler_ = std::make_unique<SimulationHandler>(this->gridSize_, this->cells_);
+        this->simulationHandler_ = std::make_unique<SimulationHandler>(this->gridSize_);
         this->creatorHandler_->add(this->mapView_);
         this->creatorHandler_->add(this->camerasView_);
         this->creatorHandler_->add(this->toolsView_);
@@ -116,6 +116,7 @@ namespace zpr {
      * @param dt - Frequency of updating.
      */
     void CreatorState::update(float dt){
+        
     }
 
     /**

@@ -440,31 +440,31 @@ CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_view.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.s
 
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o: Code/Tests/BoostTest/MapViewTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/MapViewTest.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o: Code/Tests/BoostTest/main_menu_state_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/main_menu_state_test.cpp
 
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/MapViewTest.cpp > CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.i
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/main_menu_state_test.cpp > CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.i
 
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/MapViewTest.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.s
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/main_menu_state_test.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.s
 
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o: Code/Tests/BoostTest/VehicleTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/VehicleTest.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: CMakeFiles/CityTrafficSimulator.dir/flags.make
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/Tests/BoostTest/map_view_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o -c /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/map_view_test.cpp
 
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/VehicleTest.cpp > CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.i
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/map_view_test.cpp > CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.i
 
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/VehicleTest.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.s
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/map_view_test.cpp -o CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.s
 
 # Object files for target CityTrafficSimulator
 CityTrafficSimulator_OBJECTS = \
@@ -496,8 +496,8 @@ CityTrafficSimulator_OBJECTS = \
 "CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.o" \
 "CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o" \
-"CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o" \
-"CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o"
+"CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o" \
+"CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o"
 
 # External object files for target CityTrafficSimulator
 CityTrafficSimulator_EXTERNAL_OBJECTS =
@@ -530,8 +530,8 @@ CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/splash_state.cpp.
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o
-CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o
-CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o
+CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o
+CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o
 CityTrafficSimulator: CMakeFiles/CityTrafficSimulator.dir/build.make
 CityTrafficSimulator: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 CityTrafficSimulator: /opt/local/lib/libboost_unit_test_framework-mt.dylib

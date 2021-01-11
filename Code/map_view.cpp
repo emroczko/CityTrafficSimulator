@@ -197,7 +197,7 @@ namespace zpr {
      */
 	void MapView::drawVehicles()
 	{
-		for (std::shared_ptr<Vehicle> vehicle : this->vehicles_) {
+		for (std::shared_ptr<Vehicle>& vehicle : this->vehicles_) {
             std::cout << vehicle->getShape().getGlobalBounds().width << std::endl;
 			this->data_->window_.draw(*vehicle);
 		}
@@ -599,7 +599,8 @@ namespace zpr {
         this->drawVehicles();
         this->drawCameras();
 	}
-
+    
+    
     /**
      * Method which handles zooming.
      * @param zoom - Value of zoom.

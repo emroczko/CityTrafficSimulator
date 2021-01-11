@@ -27,7 +27,7 @@ namespace zpr {
 		this->sidewalkSize_ = round(SIDEWALK_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
 		this->roadSize_ = round(ROAD_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
 		this->roadStripesSize_ = round(ROAD_STRIPES_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
-		this->direction_ = "South";
+		this->direction_ = "East";
 		this->previousDirection_ = "";
 		this->currentRoad_ = nullptr;
 		this->previousRoad_ = nullptr;

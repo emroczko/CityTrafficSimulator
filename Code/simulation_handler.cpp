@@ -12,9 +12,8 @@ namespace zpr {
     /**
      * Parametrized constructor of SimulationHandler class.
      * @param grid_size - Size of current grid.
-     * @param cells - Vector of cells containg information about roads.
      */
-    SimulationHandler::SimulationHandler(int grid_size, std::vector<Cell> cells) : isSimulating_(false), gridSize_(grid_size), cells_(cells)
+    SimulationHandler::SimulationHandler(int grid_size) : isSimulating_(false), gridSize_(grid_size)
     {
         init();
     }
@@ -56,23 +55,23 @@ namespace zpr {
         }
         else {
             this->startSimulationTimer_.stopTimer();
-            std::this_thread::sleep_for(std::chrono::milliseconds(5));
+            std::this_thread::sleep_for(std::chrono::milliseconds(17));
             this->vehicles_.clear();
             this->notifyVehicles(this->vehicles_);
-            this->roads_.clear();
+            //this->roads_.clear();
+            this->roads_.erase(roads_.begin()+15, roads_.end());
             this->cameras_.clear();
-            this->clearDataTimer_.setTimeout([&]() {
-                this->vehicles_.clear();
-                this->notifyVehicles(this->vehicles_);
-                //this->roads_.clear();
-                this->roads_.erase(roads_.begin()+15, roads_.end());
-                this->cameras_.clear();
-                this->notifyVehicles(this->vehicles_);
-            }, 10);
+            
+//            this->clearDataTimer_.setTimeout([&]() {
+//                this->vehicles_.clear();
+//                this->notifyVehicles(this->vehicles_);
+//                //this->roads_.clear();
+//                this->roads_.erase(roads_.begin()+15, roads_.end());
+//                this->cameras_.clear();
+//                this->notifyVehicles(this->vehicles_);
+//            }, 5);
         }
         this->notifyIsSimulating(this->isSimulating_);
-
-
     }
 
     /**
@@ -111,7 +110,9 @@ namespace zpr {
     void SimulationHandler::separateEnterRoadsFromCells()
     {
         for (Cell& cell : enterCells_) {
-            this->separateRoadsFromCells(cell);
+            if (cell.containsRoad_) {
+                this->roads_.push_back(this->convertCellToCenteredRectShape2(cell));
+            }
         }
         
     }
@@ -159,6 +160,23 @@ namespace zpr {
     }
 
     /**
+     * Method which converts Cell object to sf::RectangleShape object.
+     * @param cell - Cell to convert.
+     * @return - Converted sf::RectangleShape object.
+     */
+    sf::RectangleShape SimulationHandler::convertCellToCenteredRectShape2(Cell cell)
+    {
+        sf::RectangleShape rect_shape;
+        rect_shape.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
+        rect_shape.setOrigin(sf::Vector2f(rect_shape.getSize().y / 2, rect_shape.getSize().x / 2));
+        sf::Vector2f centered_position_in_pixels = sf::Vector2f(cell.getPosition().y * this->cellSize_ + this->calculatePrefix(), cell.getPosition().x * this->cellSize_ + this->calculatePrefix());
+        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
+        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
+        rect_shape.setPosition(centered_position_in_pixels);
+        return rect_shape;
+    }
+
+    /**
      * Method which adds starting road to roads vector.
      */
     
@@ -166,7 +184,7 @@ namespace zpr {
         sf::RectangleShape road;
         road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
         road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
-        sf::Vector2f centered_position_in_pixels = sf::Vector2f(STARTING_CELL_COL * this->cellSize_ + this->calculatePrefix(), STARTING_CELL_ROW * this->cellSize_ + this->calculatePrefix());
+        sf::Vector2f centered_position_in_pixels = sf::Vector2f(STARTING_CELL_COL2 * this->cellSize_ + this->calculatePrefix(), STARTING_CELL_ROW2 * this->cellSize_ + this->calculatePrefix());
         centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
         centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
         road.setPosition(centered_position_in_pixels);
@@ -189,8 +207,8 @@ namespace zpr {
      */
     void SimulationHandler::addCarsToSimulate()
     {
-        int x_start =this->calculatePrefix() + cellSize_ * STARTING_CELL_COL + this->sidewalkSize_ + this->roadSize_/4;
-        int y_start = this->calculatePrefix() + cellSize_ * STARTING_CELL_ROW + ROAD_IMAGE_SIZE / 2;
+        int x_start =this->calculatePrefix() + cellSize_ * STARTING_CELL_COL2 +  ROAD_IMAGE_SIZE / 2;
+        int y_start = this->calculatePrefix() + cellSize_ * STARTING_CELL_ROW2 + this->sidewalkSize_ + this->roadSize_/4;
 
         std::random_device rng;
         std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());

@@ -142,59 +142,59 @@ CityTrafficSimulator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/build
 .PHONY : CityTrafficSimulator/fast
 
-Code/Tests/BoostTest/MapViewTest.o: Code/Tests/BoostTest/MapViewTest.cpp.o
+Code/Tests/BoostTest/main_menu_state_test.o: Code/Tests/BoostTest/main_menu_state_test.cpp.o
 
-.PHONY : Code/Tests/BoostTest/MapViewTest.o
-
-# target to build an object file
-Code/Tests/BoostTest/MapViewTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.o
-.PHONY : Code/Tests/BoostTest/MapViewTest.cpp.o
-
-Code/Tests/BoostTest/MapViewTest.i: Code/Tests/BoostTest/MapViewTest.cpp.i
-
-.PHONY : Code/Tests/BoostTest/MapViewTest.i
-
-# target to preprocess a source file
-Code/Tests/BoostTest/MapViewTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.i
-.PHONY : Code/Tests/BoostTest/MapViewTest.cpp.i
-
-Code/Tests/BoostTest/MapViewTest.s: Code/Tests/BoostTest/MapViewTest.cpp.s
-
-.PHONY : Code/Tests/BoostTest/MapViewTest.s
-
-# target to generate assembly for a file
-Code/Tests/BoostTest/MapViewTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/MapViewTest.cpp.s
-.PHONY : Code/Tests/BoostTest/MapViewTest.cpp.s
-
-Code/Tests/BoostTest/VehicleTest.o: Code/Tests/BoostTest/VehicleTest.cpp.o
-
-.PHONY : Code/Tests/BoostTest/VehicleTest.o
+.PHONY : Code/Tests/BoostTest/main_menu_state_test.o
 
 # target to build an object file
-Code/Tests/BoostTest/VehicleTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.o
-.PHONY : Code/Tests/BoostTest/VehicleTest.cpp.o
+Code/Tests/BoostTest/main_menu_state_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o
+.PHONY : Code/Tests/BoostTest/main_menu_state_test.cpp.o
 
-Code/Tests/BoostTest/VehicleTest.i: Code/Tests/BoostTest/VehicleTest.cpp.i
+Code/Tests/BoostTest/main_menu_state_test.i: Code/Tests/BoostTest/main_menu_state_test.cpp.i
 
-.PHONY : Code/Tests/BoostTest/VehicleTest.i
+.PHONY : Code/Tests/BoostTest/main_menu_state_test.i
 
 # target to preprocess a source file
-Code/Tests/BoostTest/VehicleTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.i
-.PHONY : Code/Tests/BoostTest/VehicleTest.cpp.i
+Code/Tests/BoostTest/main_menu_state_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.i
+.PHONY : Code/Tests/BoostTest/main_menu_state_test.cpp.i
 
-Code/Tests/BoostTest/VehicleTest.s: Code/Tests/BoostTest/VehicleTest.cpp.s
+Code/Tests/BoostTest/main_menu_state_test.s: Code/Tests/BoostTest/main_menu_state_test.cpp.s
 
-.PHONY : Code/Tests/BoostTest/VehicleTest.s
+.PHONY : Code/Tests/BoostTest/main_menu_state_test.s
 
 # target to generate assembly for a file
-Code/Tests/BoostTest/VehicleTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/VehicleTest.cpp.s
-.PHONY : Code/Tests/BoostTest/VehicleTest.cpp.s
+Code/Tests/BoostTest/main_menu_state_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.s
+.PHONY : Code/Tests/BoostTest/main_menu_state_test.cpp.s
+
+Code/Tests/BoostTest/map_view_test.o: Code/Tests/BoostTest/map_view_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/map_view_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/map_view_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o
+.PHONY : Code/Tests/BoostTest/map_view_test.cpp.o
+
+Code/Tests/BoostTest/map_view_test.i: Code/Tests/BoostTest/map_view_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/map_view_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/map_view_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.i
+.PHONY : Code/Tests/BoostTest/map_view_test.cpp.i
+
+Code/Tests/BoostTest/map_view_test.s: Code/Tests/BoostTest/map_view_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/map_view_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/map_view_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.s
+.PHONY : Code/Tests/BoostTest/map_view_test.cpp.s
 
 Code/Vehicles/car.o: Code/Vehicles/car.cpp.o
 
@@ -961,12 +961,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CityTrafficSimulator"
-	@echo "... Code/Tests/BoostTest/MapViewTest.o"
-	@echo "... Code/Tests/BoostTest/MapViewTest.i"
-	@echo "... Code/Tests/BoostTest/MapViewTest.s"
-	@echo "... Code/Tests/BoostTest/VehicleTest.o"
-	@echo "... Code/Tests/BoostTest/VehicleTest.i"
-	@echo "... Code/Tests/BoostTest/VehicleTest.s"
+	@echo "... Code/Tests/BoostTest/main_menu_state_test.o"
+	@echo "... Code/Tests/BoostTest/main_menu_state_test.i"
+	@echo "... Code/Tests/BoostTest/main_menu_state_test.s"
+	@echo "... Code/Tests/BoostTest/map_view_test.o"
+	@echo "... Code/Tests/BoostTest/map_view_test.i"
+	@echo "... Code/Tests/BoostTest/map_view_test.s"
 	@echo "... Code/Vehicles/car.o"
 	@echo "... Code/Vehicles/car.i"
 	@echo "... Code/Vehicles/car.s"
