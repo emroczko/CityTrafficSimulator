@@ -61,11 +61,15 @@ namespace zpr {
 		void generateGridLines();
 		void fillCells();
         void fillEnterCells();
+        
+        
         void addRoad(std::string fileName, sf::Vector2i position);
 		void addUserRoad(sf::Vector2i position);
         void addGarage(sf::Vector2i position);
         void addEnterRoad(sf::Vector2i position);
         void addCamera(sf::Vector2i position);
+        
+        
         void deleteRoad(sf::Vector2f position);
         void deleteCamera(sf::Vector2f position);
 		bool checkRoadExists(sf::Vector2f position);

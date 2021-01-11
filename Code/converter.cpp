@@ -54,4 +54,12 @@ namespace zpr {
        return draw_prefix;
    }
 
+    /**
+     * Method responsible for returning cell size.
+     * @return - Cell size.
+     */
+    int Converter::getCellSize(){
+        return this->cellSize_;
+    }
+
 }

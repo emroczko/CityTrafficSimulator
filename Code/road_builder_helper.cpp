@@ -12,6 +12,7 @@ namespace zpr {
 
     RoadBuilderHelper::RoadBuilderHelper(SimulatorDataRef data, int grid_size): data_(data), gridSize_(grid_size){
         this->converter_ = std::make_unique<Converter>(this->gridSize_);
+        this->cellSize_ = this->converter_->getCellSize();
     }
 
     /**
@@ -139,5 +140,17 @@ namespace zpr {
             road.setRotation(90.f);
     }
 
+
+    /**
+     * Method responsible for checking if road exists on given position.
+     * @param position - Position where road can exist.
+     * @return - True when road exists, false otherwise.
+     */
+    bool RoadBuilderHelper::checkRoadExists(sf::Vector2f position, std::vector<sf::RectangleShape>& roads) {
+        for (sf::RectangleShape road : roads) {
+            if (road.getPosition().x - this->cellSize_/2 == position.x && road.getPosition().y - this->cellSize_/2 == position.y) {return true;}
+        }
+        return false;
+    }
 
 }
