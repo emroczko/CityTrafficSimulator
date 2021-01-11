@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/adding_elements_map_view_test.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o"
+  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helper.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/main_menu_state_test.cpp.o"
