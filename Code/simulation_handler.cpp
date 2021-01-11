@@ -41,34 +41,34 @@ namespace zpr {
      */
     void SimulationHandler::updateIsSimulating()
     {
+    
         this->isSimulating_ = !this->isSimulating_;
-        if (isSimulating_){
+        if (isSimulating_) {
             this->separateRoadsFromCells();
             this->separateCamerasFromCells();
             this->startSimulationTimer_.setInterval([&]() {
-                this->addCarsToSimulate();
-                this->moveVehicles();
-                this->deleteVehicles();
-                this->notifyVehicles(this->vehicles_);
-                
+            this->addCarsToSimulate();
+            this->moveVehicles();
+            this->deleteVehicles();
+            this->notifyVehicles(this->vehicles_);
             }, 17);
         }
-        else{
+        else {
             this->startSimulationTimer_.stopTimer();
             std::this_thread::sleep_for(std::chrono::milliseconds(5));
             this->vehicles_.clear();
             this->notifyVehicles(this->vehicles_);
             this->roads_.clear();
             this->cameras_.clear();
-            /*
-            this->clearDataTimer_.setTimeout([&]() {
-                this->vehicles_.clear();
-                this->roads_.clear();
-                this->cameras_.clear();
-                this->notifyVehicles(this->vehicles_);
-            }, 10);*/
-        }
-        this->notifyIsSimulating(this->isSimulating_);
+                /*
+                this->clearDataTimer_.setTimeout([&]() {
+                    this->vehicles_.clear();
+                    this->roads_.clear();
+                    this->cameras_.clear();
+                    this->notifyVehicles(this->vehicles_);
+                }, 10);*/
+            }
+            this->notifyIsSimulating(this->isSimulating_);
 
     }
 
@@ -129,6 +129,7 @@ namespace zpr {
     /**
      * Method which adds starting road to roads vector.
      */
+    
     void SimulationHandler::addStartingRoad() {
         sf::RectangleShape road;
         road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
