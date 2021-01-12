@@ -13,6 +13,16 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/adding_elements_map_vie
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulator.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state_machine.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cameras_map_view_helper.cpp.o
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/cameras_map_view_helper.cpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/asset_manager.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cameras_map_view_helper.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/converter.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/input_manager.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulator.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state_machine.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/converter_test.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/converter.hpp
@@ -79,6 +89,16 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state_machine.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/timer.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/road_builder_helper.cpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/asset_manager.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/converter.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/input_manager.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/road_builder_helper.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulator.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state_machine.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/vehicle_test.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/car.hpp

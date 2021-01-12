@@ -169,6 +169,33 @@ Code/Tests/BoostTest/adding_elements_map_view_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/adding_elements_map_view_test.cpp.s
 .PHONY : Code/Tests/BoostTest/adding_elements_map_view_test.cpp.s
 
+Code/Tests/BoostTest/cameras_map_view_helper.o: Code/Tests/BoostTest/cameras_map_view_helper.cpp.o
+
+.PHONY : Code/Tests/BoostTest/cameras_map_view_helper.o
+
+# target to build an object file
+Code/Tests/BoostTest/cameras_map_view_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cameras_map_view_helper.cpp.o
+.PHONY : Code/Tests/BoostTest/cameras_map_view_helper.cpp.o
+
+Code/Tests/BoostTest/cameras_map_view_helper.i: Code/Tests/BoostTest/cameras_map_view_helper.cpp.i
+
+.PHONY : Code/Tests/BoostTest/cameras_map_view_helper.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/cameras_map_view_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cameras_map_view_helper.cpp.i
+.PHONY : Code/Tests/BoostTest/cameras_map_view_helper.cpp.i
+
+Code/Tests/BoostTest/cameras_map_view_helper.s: Code/Tests/BoostTest/cameras_map_view_helper.cpp.s
+
+.PHONY : Code/Tests/BoostTest/cameras_map_view_helper.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/cameras_map_view_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cameras_map_view_helper.cpp.s
+.PHONY : Code/Tests/BoostTest/cameras_map_view_helper.cpp.s
+
 Code/Tests/BoostTest/converter_test.o: Code/Tests/BoostTest/converter_test.cpp.o
 
 .PHONY : Code/Tests/BoostTest/converter_test.o
@@ -330,6 +357,33 @@ Code/Tests/BoostTest/map_view_test.s: Code/Tests/BoostTest/map_view_test.cpp.s
 Code/Tests/BoostTest/map_view_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.s
 .PHONY : Code/Tests/BoostTest/map_view_test.cpp.s
+
+Code/Tests/BoostTest/road_builder_helper.o: Code/Tests/BoostTest/road_builder_helper.cpp.o
+
+.PHONY : Code/Tests/BoostTest/road_builder_helper.o
+
+# target to build an object file
+Code/Tests/BoostTest/road_builder_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o
+.PHONY : Code/Tests/BoostTest/road_builder_helper.cpp.o
+
+Code/Tests/BoostTest/road_builder_helper.i: Code/Tests/BoostTest/road_builder_helper.cpp.i
+
+.PHONY : Code/Tests/BoostTest/road_builder_helper.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/road_builder_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.i
+.PHONY : Code/Tests/BoostTest/road_builder_helper.cpp.i
+
+Code/Tests/BoostTest/road_builder_helper.s: Code/Tests/BoostTest/road_builder_helper.cpp.s
+
+.PHONY : Code/Tests/BoostTest/road_builder_helper.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/road_builder_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.s
+.PHONY : Code/Tests/BoostTest/road_builder_helper.cpp.s
 
 Code/Tests/BoostTest/vehicle_test.o: Code/Tests/BoostTest/vehicle_test.cpp.o
 
@@ -1315,6 +1369,9 @@ help:
 	@echo "... Code/Tests/BoostTest/adding_elements_map_view_test.o"
 	@echo "... Code/Tests/BoostTest/adding_elements_map_view_test.i"
 	@echo "... Code/Tests/BoostTest/adding_elements_map_view_test.s"
+	@echo "... Code/Tests/BoostTest/cameras_map_view_helper.o"
+	@echo "... Code/Tests/BoostTest/cameras_map_view_helper.i"
+	@echo "... Code/Tests/BoostTest/cameras_map_view_helper.s"
 	@echo "... Code/Tests/BoostTest/converter_test.o"
 	@echo "... Code/Tests/BoostTest/converter_test.i"
 	@echo "... Code/Tests/BoostTest/converter_test.s"
@@ -1333,6 +1390,9 @@ help:
 	@echo "... Code/Tests/BoostTest/map_view_test.o"
 	@echo "... Code/Tests/BoostTest/map_view_test.i"
 	@echo "... Code/Tests/BoostTest/map_view_test.s"
+	@echo "... Code/Tests/BoostTest/road_builder_helper.o"
+	@echo "... Code/Tests/BoostTest/road_builder_helper.i"
+	@echo "... Code/Tests/BoostTest/road_builder_helper.s"
 	@echo "... Code/Tests/BoostTest/vehicle_test.o"
 	@echo "... Code/Tests/BoostTest/vehicle_test.i"
 	@echo "... Code/Tests/BoostTest/vehicle_test.s"
