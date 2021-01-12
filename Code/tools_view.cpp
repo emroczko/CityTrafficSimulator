@@ -5,6 +5,7 @@
 
 #include "tools_view.hpp"
 #include "save_state.hpp"
+#include "init_create_state.hpp"
 
 namespace zpr {
 
@@ -42,6 +43,9 @@ namespace zpr {
             this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
         
         this->buttons_.push_back(Button(sf::Vector2f(toolsView_.getSize().x/2, 800), button_size, "Save to file",
+            this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
+        
+        this->buttons_.push_back(Button(sf::Vector2f(toolsView_.getSize().x/2, 900), button_size, "Back",
             this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
     }
 
@@ -91,6 +95,9 @@ namespace zpr {
                     if (button.getText() == "Save to file" && !isSimulating_) {
                         this->resetButtons(0, 1);
                         this->notifySave();
+                    }
+                    if (button.getText() == "Back") {
+                        this->data_->machine_.addState(StateRef(new InitCreateState(this->data_)), false);
                     }
                     button.isPressed_ = !button.isPressed_;
                     if (button.isPressed_) {

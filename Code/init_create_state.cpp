@@ -32,6 +32,7 @@ namespace zpr {
 
 		this->background_.setTexture(this->data_->assets_.getTexture("Background"));
         this->background_.scale(2.35, 2);
+        this->data_->window_.setView(sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_WIDTH), (float)(SCREEN_HEIGHT))));
 	}
 
     /**
