@@ -1,6 +1,7 @@
 #define BOOST_TEST_DYN_LINK
 #include "../../converter.hpp"
 #include "../../definitions.hpp"
+#include "../../cell.hpp"
 
 #include "SFML/Graphics.hpp"
 
@@ -18,6 +19,8 @@ struct ConverterFixture {
     double pixelsDouble_ = -89;
     int rowcolInt_ = -2;
     int cellSize_ = (SCREEN_HEIGHT / gridSize_);
+    zpr::Cell cell_;
+    sf::RectangleShape tempCell_;
 	~ConverterFixture() = default;
     
 };
@@ -49,4 +52,18 @@ BOOST_AUTO_TEST_CASE(ConverterTest_getCellSize)
     BOOST_CHECK_EQUAL(cellSize_, converter_->getCellSize());
 }
 
+BOOST_AUTO_TEST_CASE(ConverterTest_convertingEnterCell)
+{
+    cell_ = zpr::Cell(-2,1);
+    tempCell_ = converter_->convertCellToCenteredRectShape(cell_, "Enter");
+    BOOST_CHECK_EQUAL(97, tempCell_.getPosition().x);
+    BOOST_CHECK_EQUAL(-89, tempCell_.getPosition().y);
+}
+BOOST_AUTO_TEST_CASE(ConverterTest_convertingUserCell)
+{
+    cell_ = zpr::Cell(4,0);
+    tempCell_ = converter_->convertCellToCenteredRectShape(cell_, "User");
+    BOOST_CHECK_EQUAL(283, tempCell_.getPosition().x);
+    BOOST_CHECK_EQUAL(35, tempCell_.getPosition().y);
+}
 BOOST_AUTO_TEST_SUITE_END()

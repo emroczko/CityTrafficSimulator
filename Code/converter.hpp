@@ -5,6 +5,7 @@
 #pragma once
 #include "SFML/Graphics.hpp"
 #include "definitions.hpp"
+#include "cell.hpp"
 
 namespace zpr{
 
@@ -18,6 +19,7 @@ namespace zpr{
         int transformPixelsToRowCol(double pixels);
         int calculatePrefix();
         int getCellSize();
+        sf::RectangleShape convertCellToCenteredRectShape(Cell cell, std::string whichRoad);
     private:
         int cellSize_;
         int gridSize_;

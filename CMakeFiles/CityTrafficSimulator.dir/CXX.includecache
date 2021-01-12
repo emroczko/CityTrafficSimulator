@@ -6,17 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/viewport_calculator_test.cpp
-../../viewport_calculator.hpp
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/spawn_points_test.cpp
+../../spawn_points.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/spawn_points.hpp
+../../definitions.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+SFML/Graphics.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/SFML/Graphics.hpp
 boost/test/unit_test.hpp
 -
 
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cell.hpp
+iostream
+-
+SFML/Graphics.hpp
+-
 
-/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/converter.hpp
 SFML/Graphics.hpp
 /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/SFML/Graphics.hpp
 definitions.hpp
 /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+cell.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cell.hpp
+
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/spawn_points.hpp
+SFML/Graphics.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/SFML/Graphics.hpp
+definitions.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+converter.hpp
+/Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/converter.hpp
 

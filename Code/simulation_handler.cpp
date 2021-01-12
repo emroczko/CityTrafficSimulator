@@ -23,6 +23,7 @@ namespace zpr {
     void SimulationHandler::init()
     {
         this->converter_ = std::make_unique<Converter>(this->gridSize_);
+        this->spawnPoints_ = std::make_unique<SpawnPoints>(this->gridSize_);
         this->cellSize_ = (SCREEN_HEIGHT / this->gridSize_);
         this->sidewalkSize_ = round(SIDEWALK_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
         this->roadSize_ = round(ROAD_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
@@ -40,7 +41,7 @@ namespace zpr {
         if (isSimulating_){
             this->separateUserRoadsFromCells();
             this->separateCamerasFromCells();
-            this->setupExitSites();
+            this->spawnPoints_->setupExitSites(this->cityExitSite_);
             this->startSimulationTimer_.setInterval([&]() {
                 this->addCarsToSimulate();
                 this->moveVehicles();
@@ -87,7 +88,7 @@ namespace zpr {
         for (Cell& cell : cells_) {
             this->separateRoadsFromCells(cell);
         }
-        this->addStartingRoad();
+        this->spawnPoints_->addStartingRoad(this->roads_);
     }
 
     /**
@@ -97,7 +98,7 @@ namespace zpr {
     {
         for (Cell& cell : enterCells_) {
             if (cell.containsRoad_) {
-                this->roads_.push_back(this->convertCellToCenteredRectShape2(cell));
+                this->roads_.push_back(this->converter_->convertCellToCenteredRectShape(cell, "Enter"));
             }
         }
         
@@ -109,7 +110,7 @@ namespace zpr {
     void SimulationHandler::separateRoadsFromCells(Cell& cell)
     {
         if (cell.containsRoad_) {
-            this->roads_.push_back(this->convertCellToCenteredRectShape(cell));
+            this->roads_.push_back(this->converter_->convertCellToCenteredRectShape(cell, "User"));
         }
     }
 
@@ -122,96 +123,11 @@ namespace zpr {
         this->cameras_.clear();
         for (Cell& cell : this->cells_) {
             if (cell.containsCamera_) {
-                this->cameras_.push_back(Camera(cell.whichCamera_, this->convertCellToCenteredRectShape(cell)));
+                this->cameras_.push_back(Camera(cell.whichCamera_, this->converter_->convertCellToCenteredRectShape(cell, "User")));
             }
         }
     }
-    
 
-    /**
-     * Method which converts Cell object to sf::RectangleShape object.
-     * @param cell - Cell to convert.
-     * @return - Converted sf::RectangleShape object.
-     */
-    sf::RectangleShape SimulationHandler::convertCellToCenteredRectShape(Cell cell)
-    {
-        sf::RectangleShape rect_shape;
-        rect_shape.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
-        rect_shape.setOrigin(sf::Vector2f(rect_shape.getSize().x / 2, rect_shape.getSize().y / 2));
-        sf::Vector2f centered_position_in_pixels = sf::Vector2f(cell.getPosition().x * this->cellSize_ + this->converter_->calculatePrefix(), cell.getPosition().y * this->cellSize_ + this->converter_->calculatePrefix());
-        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
-        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
-        rect_shape.setPosition(centered_position_in_pixels);
-        return rect_shape;
-    }
-
-    /**
-     * Method which converts Cell object to sf::RectangleShape object.
-     * @param cell - Cell to convert.
-     * @return - Converted sf::RectangleShape object.
-     */
-    sf::RectangleShape SimulationHandler::convertCellToCenteredRectShape2(Cell cell)
-    {
-        sf::RectangleShape rect_shape;
-        rect_shape.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
-        rect_shape.setOrigin(sf::Vector2f(rect_shape.getSize().y / 2, rect_shape.getSize().x / 2));
-        sf::Vector2f centered_position_in_pixels = sf::Vector2f(cell.getPosition().y * this->cellSize_ + this->converter_->calculatePrefix(), cell.getPosition().x * this->cellSize_ + this->converter_->calculatePrefix());
-        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
-        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
-        rect_shape.setPosition(centered_position_in_pixels);
-        return rect_shape;
-    }
-
-    /**
-     * Method which adds starting road to roads vector.
-     */
-    
-    void SimulationHandler::addStartingRoad() {
-        int starting_cell_x[2];
-        starting_cell_x[0] = 0;
-        starting_cell_x[1] = sqrt(this->cells_.size()) - 1;
-        for (int i = 0; i < 2; i++) {
-            sf::RectangleShape road;
-            road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
-            road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
-            sf::Vector2f centered_position_in_pixels = sf::Vector2f(starting_cell_x[i] * this->cellSize_ + this->converter_->calculatePrefix(), -2 * this->cellSize_ + this->converter_->calculatePrefix());
-            centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
-            centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
-            road.setPosition(centered_position_in_pixels);
-            this->roads_.push_back(road);
-        }
-    }
-
-    /***
-    * Method which creates exit sites (for cars to leave city) in correct position
-    */
-    void SimulationHandler::setupExitSites()
-    {
-        int exit_cell_x[2];
-        exit_cell_x[0] = 0;
-        exit_cell_x[1] = sqrt(this->cells_.size()) - 1;
-        for (int i = 0; i < 2; i++) {
-            sf::RectangleShape exit_site;
-            exit_site.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, (SCREEN_HEIGHT / this->gridSize_) / 2));
-            exit_site.setOrigin(sf::Vector2f(exit_site.getSize().x / 2, exit_site.getSize().y / 2));
-            sf::Vector2f centered_position_in_pixels = sf::Vector2f(exit_cell_x[i] * this->cellSize_ + this->converter_->calculatePrefix(), -2 * this->cellSize_ + this->converter_->calculatePrefix());
-            centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
-            centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ * (2 * i + 1) / 4;
-            exit_site.setPosition(centered_position_in_pixels);
-            this->cityExitSite_.push_back(exit_site);
-        }
-    }
-
-    /**
-     * Method responsible for calculating prefix - to drawing grid in the center of view.
-     * @return - Calculated prefix.
-     */
-    int SimulationHandler::calculatePrefix() {
-        double cell_size_with_point = (double)SCREEN_HEIGHT / gridSize_;
-        double the_rest = cell_size_with_point - this->cellSize_;
-        int draw_prefix = the_rest * gridSize_ / 2;
-        return draw_prefix;
-    }
    
     /**
      * Method which add cars to simulation.

@@ -63,4 +63,30 @@ namespace zpr {
         return this->cellSize_;
     }
 
+
+    /**
+     * Method which converts Cell object to sf::RectangleShape object.
+     * @param cell - Cell to convert.
+     * @param which_road - Information if we are converting enter cells or user cells. 
+     * @return - Converted sf::RectangleShape object.
+     */
+    sf::RectangleShape Converter::convertCellToCenteredRectShape(Cell cell, std::string which_road)
+    {
+        sf::RectangleShape rect_shape;
+        rect_shape.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
+        rect_shape.setOrigin(sf::Vector2f(rect_shape.getSize().x / 2, rect_shape.getSize().y / 2));
+        sf::Vector2f centered_position_in_pixels;
+        if(which_road == "User" ){
+            centered_position_in_pixels = sf::Vector2f(cell.getPosition().x * this->cellSize_ + this->calculatePrefix(), cell.getPosition().y * this->cellSize_ + this->calculatePrefix());
+        }
+        else{
+            centered_position_in_pixels = sf::Vector2f(cell.getPosition().y * this->cellSize_ + this->calculatePrefix(), cell.getPosition().x * this->cellSize_ + this->calculatePrefix());
+        }
+                                     
+        centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
+        centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
+        rect_shape.setPosition(centered_position_in_pixels);
+        return rect_shape;
+    }
+
 }
