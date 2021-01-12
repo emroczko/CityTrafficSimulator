@@ -19,7 +19,6 @@ namespace zpr {
         DrawingHelper(SimulatorDataRef data);
         void drawGrid(bool is_simulating, std::vector<sf::RectangleShape> grid_lines);
         void drawRoads(std::vector<sf::RectangleShape> roads);
-        void drawEntryRoads(std::vector<sf::RectangleShape> enter_roads);
         void drawVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles);
         void drawCameras(sf::RectangleShape *cameras);
         

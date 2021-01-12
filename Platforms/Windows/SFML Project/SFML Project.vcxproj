@@ -51,6 +51,7 @@
     <ClInclude Include="..\..\..\Code\simulation_observer.hpp" />
     <ClInclude Include="..\..\..\Code\simulation_subject.hpp" />
     <ClInclude Include="..\..\..\Code\simulator.hpp" />
+    <ClInclude Include="..\..\..\Code\spawn_points.hpp" />
     <ClInclude Include="..\..\..\Code\splash_state.hpp" />
     <ClInclude Include="..\..\..\Code\state.hpp" />
     <ClInclude Include="..\..\..\Code\state_machine.hpp" />
@@ -93,6 +94,7 @@
     <ClCompile Include="..\..\..\Code\simulation_handler.cpp" />
     <ClCompile Include="..\..\..\Code\simulation_subject.cpp" />
     <ClCompile Include="..\..\..\Code\simulator.cpp" />
+    <ClCompile Include="..\..\..\Code\spawn_points.cpp" />
     <ClCompile Include="..\..\..\Code\splash_state.cpp" />
     <ClCompile Include="..\..\..\Code\state_machine.cpp" />
     <ClCompile Include="..\..\..\Code\tools_subject.cpp" />

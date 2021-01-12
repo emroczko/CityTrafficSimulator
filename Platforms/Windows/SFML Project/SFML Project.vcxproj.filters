@@ -195,6 +195,9 @@
     <ClInclude Include="..\..\..\Code\viewport_calculator.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Code\spawn_points.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\button.cpp">
@@ -307,6 +310,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Code\viewport_calculator.cpp">
       <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\spawn_points.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
