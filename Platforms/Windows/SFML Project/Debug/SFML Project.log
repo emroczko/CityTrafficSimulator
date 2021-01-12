@@ -1,54 +1,90 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  vehicle.cpp
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(27,82): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
-          with
-          [
-              T=float
-          ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(32,82): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
-          with
-          [
-              T=float
-          ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(37,82): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
-          with
-          [
-              T=float
-          ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(42,82): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
-          with
-          [
-              T=float
-          ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(56,51): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(56,47): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(268,92): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
-          with
-          [
-              _Rep=__int64
-          ]
-H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(325,92): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
-          with
-          [
-              _Rep=__int64
-          ]
   creator_state.cpp
+  deleting_elements_helper.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\deleting_elements_helper.cpp(32,153): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\deleting_elements_helper.cpp(32,131): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\deleting_elements_helper.cpp(55,127): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\deleting_elements_helper.cpp(55,115): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
   init_create_state.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\init_create_state.cpp(34,40): warning C4305: 'argument': truncation from 'double' to 'float'
   load_state.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\load_state.cpp(36,40): warning C4305: 'argument': truncation from 'double' to 'float'
   main_menu_state.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\main_menu_state.cpp(34,40): warning C4305: 'argument': truncation from 'double' to 'float'
+  map_view.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(136,95): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(136,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(158,64): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(159,78): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(159,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(160,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(161,78): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\map_view.cpp(161,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
   save_state.cpp
 H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\save_state.cpp(33,40): warning C4305: 'argument': truncation from 'double' to 'float'
-  tools_view.cpp
   Generating Code...
   SFML Project.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe

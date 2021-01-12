@@ -231,7 +231,9 @@
     <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\adding_elements_map_view_test.cpp" />
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\converter_test.cpp" />
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\deleting_elements_helper.cpp" />
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\file_finder_test.cpp" />
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\init_create_state_helper_test.cpp" />
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\main_menu_state_test.cpp" />

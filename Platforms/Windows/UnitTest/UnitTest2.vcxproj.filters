@@ -36,5 +36,11 @@
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\vehicle_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\adding_elements_map_view_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\deleting_elements_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
