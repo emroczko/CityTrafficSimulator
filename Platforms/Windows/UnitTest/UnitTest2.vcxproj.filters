@@ -42,5 +42,11 @@
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\deleting_elements_helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\cell_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\grid_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
