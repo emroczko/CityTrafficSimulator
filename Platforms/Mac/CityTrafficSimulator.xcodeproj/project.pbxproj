@@ -37,7 +37,6 @@
 		52D3BCF22553FE0C0093D5DF /* main_menu_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF12553FE0C0093D5DF /* main_menu_state.cpp */; };
 		52D3BCF625540A9A0093D5DF /* state_machine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCF525540A9A0093D5DF /* state_machine.cpp */; };
 		52D3BCFD25541DEE0093D5DF /* asset_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BCFC25541DEE0093D5DF /* asset_manager.cpp */; };
-		52D3BD01255421B90093D5DF /* input_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD00255421B90093D5DF /* input_manager.cpp */; };
 		52D3BD0925542D450093D5DF /* simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0825542D450093D5DF /* simulator.cpp */; };
 		52D3BD10255442410093D5DF /* splash_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D3BD0F255442410093D5DF /* splash_state.cpp */; };
 		52D4E57825A5D8EB00102FB0 /* save_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E57725A5D8EB00102FB0 /* save_state.cpp */; };
@@ -138,8 +137,6 @@
 		52D3BCF925540AB00093D5DF /* state_machine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = state_machine.hpp; sourceTree = "<group>"; };
 		52D3BCFB25541DDF0093D5DF /* asset_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = asset_manager.hpp; sourceTree = "<group>"; };
 		52D3BCFC25541DEE0093D5DF /* asset_manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = asset_manager.cpp; sourceTree = "<group>"; };
-		52D3BD00255421B90093D5DF /* input_manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = input_manager.cpp; sourceTree = "<group>"; };
-		52D3BD04255421DD0093D5DF /* input_manager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = input_manager.hpp; sourceTree = "<group>"; };
 		52D3BD0825542D450093D5DF /* simulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulator.cpp; sourceTree = "<group>"; };
 		52D3BD0B25542DB40093D5DF /* simulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simulator.hpp; sourceTree = "<group>"; };
 		52D3BD0D255440E00093D5DF /* splash_state.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = splash_state.hpp; sourceTree = "<group>"; };
@@ -237,8 +234,6 @@
 				52D3BCF925540AB00093D5DF /* state_machine.hpp */,
 				52D3BCFB25541DDF0093D5DF /* asset_manager.hpp */,
 				52D3BCFC25541DEE0093D5DF /* asset_manager.cpp */,
-				52D3BD00255421B90093D5DF /* input_manager.cpp */,
-				52D3BD04255421DD0093D5DF /* input_manager.hpp */,
 				52D3BCF02553FDF40093D5DF /* main_menu_state.hpp */,
 				52D3BCF12553FE0C0093D5DF /* main_menu_state.cpp */,
 				5244338325A3796B00CD4055 /* timer.hpp */,
@@ -422,7 +417,6 @@
 				5230E79A2565EB3500F84CF2 /* grid.cpp in Sources */,
 				52F5565D259D17DD00ECEED3 /* vehicle_factory.cpp in Sources */,
 				52804F6625537553002A59AD /* car.cpp in Sources */,
-				52D3BD01255421B90093D5DF /* input_manager.cpp in Sources */,
 				5230E79C2565EB3500F84CF2 /* cell.cpp in Sources */,
 				523F9D2F2575D4BF00279564 /* main.cpp in Sources */,
 				52190AE825AC929600663216 /* init_create_state_helper.cpp in Sources */,

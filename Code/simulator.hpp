@@ -11,7 +11,6 @@
 
 #include "state_machine.hpp"
 #include "asset_manager.hpp"
-#include "input_manager.hpp"
 
 namespace zpr{
 
@@ -22,7 +21,6 @@ namespace zpr{
         StateMachine machine_;
         sf::RenderWindow window_;
         AssetManager assets_;
-        InputManager input_;
     };
     /**
      * Assigning SimulatorDataRef as a name to std::shared_ptr<SimulatorData> type.

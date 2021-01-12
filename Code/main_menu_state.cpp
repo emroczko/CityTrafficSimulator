@@ -8,7 +8,6 @@
 #include <iostream>
 #include "main_menu_state.hpp"
 #include "definitions.hpp"
-#include "input_manager.hpp"
 #include "init_create_state.hpp"
 #include "load_state.hpp"
 #include "creator_state.hpp"
