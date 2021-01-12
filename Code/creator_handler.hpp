@@ -5,11 +5,11 @@
 
 
 #pragma once
-#include "creator_subject.hpp"
-#include "grid.hpp"
-#include "tools_observer.hpp"
-#include "simulation_observer.hpp"
-#include "cameras_observer.hpp"
+#include "Subjects/creator_subject.hpp"
+#include "Components/grid.hpp"
+#include "Observers/tools_observer.hpp"
+#include "Observers/simulation_observer.hpp"
+#include "Observers/cameras_observer.hpp"
 #include <memory>
 #include "Vehicles/vehicle.hpp"
 
@@ -34,7 +34,6 @@ namespace zpr {
         void updateIsDeletingCamera(int which_camera);
         void saveToFile();
 		void handleInput(sf::Vector2i possible_selected_cell);
-		void updateVehicles(std::vector<std::shared_ptr<Vehicle>> vehicles) {};
 	private:
 		std::unique_ptr<Grid> grid_, enterGrid_;
         std::vector<Cell> cells_;

@@ -22,23 +22,8 @@
     <Filter Include="Source Files\ZPR namespace\States">
       <UniqueIdentifier>{9708645a-954a-46ed-8c5b-3cd6cf54e950}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\ZPR namespace\States">
-      <UniqueIdentifier>{319ebf1f-03e0-4fd9-bcdf-c6cdcb733259}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ZPR namespace\Views">
-      <UniqueIdentifier>{cb00fbc6-2155-44db-ba98-d183c0137779}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ZPR namespace\Views">
       <UniqueIdentifier>{ed9fd230-45b2-4cdb-bb89-9e30251f6f19}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ZPR namespace\Observers">
-      <UniqueIdentifier>{ced71712-6796-48d7-b208-1caa040bec78}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ZPR namespace\Subjects">
-      <UniqueIdentifier>{cf9a57f8-c321-414c-a0e4-e49b76e06e29}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ZPR namespace\Components">
-      <UniqueIdentifier>{de020e12-1dea-412a-b3f3-974acc9f0cc3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\ZPR namespace\Subjects">
       <UniqueIdentifier>{5ae82641-2b3a-4ce9-8bc7-7720390469a6}</UniqueIdentifier>
@@ -46,112 +31,40 @@
     <Filter Include="Source Files\ZPR namespace\Components">
       <UniqueIdentifier>{8a8e89f7-a508-4f5f-b7be-02ff0ec4698a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\ZPR namespace\Vehicles">
-      <UniqueIdentifier>{81b81de2-5ea3-4d9c-8d25-459ae998a579}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ZPR namespace\Vehicles">
       <UniqueIdentifier>{ad614e12-a1f7-45c7-929b-ba7ac3aecc12}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ZPR namespace\Macros">
-      <UniqueIdentifier>{968c4253-b541-4c84-8d31-021d4c14d5bc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ZPR namespace\Helpers">
-      <UniqueIdentifier>{5f9d86e6-c4f2-42d8-b6f7-8c0502ae4592}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\ZPR namespace\Helpers">
       <UniqueIdentifier>{742991f4-c55f-468c-9f77-8836aacfa559}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ZPR namespace\Components">
+      <UniqueIdentifier>{47f513b7-38a3-45c9-a436-92c9d78df194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\Helpers">
+      <UniqueIdentifier>{5f2a4d00-37da-475f-a59a-5a4fa2a2772f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\Observers">
+      <UniqueIdentifier>{e5e4f1a7-de62-44e9-a832-ecaedd1e6c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\States">
+      <UniqueIdentifier>{dbdd9b21-7453-4997-8acd-5c9f8df07632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\Subjects">
+      <UniqueIdentifier>{02afd1bd-08dc-4032-93e1-3546eefd4563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\Views">
+      <UniqueIdentifier>{ba19faf4-f6c0-4777-8aa4-aafb84676759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\Vehicles">
+      <UniqueIdentifier>{945909e4-58e2-46bb-90fb-e3971c5b40f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ZPR namespace\Macros">
+      <UniqueIdentifier>{3f115642-9023-453b-890c-03e78f47fa48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Code\button.hpp">
-      <Filter>Header Files\ZPR namespace\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\camera.hpp">
-      <Filter>Header Files\ZPR namespace\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\cell.hpp">
-      <Filter>Header Files\ZPR namespace\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\grid.hpp">
-      <Filter>Header Files\ZPR namespace\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\cameras_observer.hpp">
-      <Filter>Header Files\ZPR namespace\Observers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\cameras_subject.hpp">
-      <Filter>Header Files\ZPR namespace\Subjects</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\cameras_view.hpp">
-      <Filter>Header Files\ZPR namespace\Views</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\creator_observer.hpp">
-      <Filter>Header Files\ZPR namespace\Observers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\creator_state.hpp">
-      <Filter>Header Files\ZPR namespace\States</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\creator_subject.hpp">
-      <Filter>Header Files\ZPR namespace\Subjects</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\definitions.hpp">
-      <Filter>Header Files\ZPR namespace\Macros</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\init_create_state.hpp">
-      <Filter>Header Files\ZPR namespace\States</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\keys_enum.hpp">
-      <Filter>Header Files\ZPR namespace\Macros</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\load_state.hpp">
-      <Filter>Header Files\ZPR namespace\States</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\main_menu_state.hpp">
-      <Filter>Header Files\ZPR namespace\States</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\map_view.hpp">
-      <Filter>Header Files\ZPR namespace\Views</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Vehicles\car.hpp">
-      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\save_state.hpp">
-      <Filter>Header Files\ZPR namespace\States</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\simulation_observer.hpp">
-      <Filter>Header Files\ZPR namespace\Observers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\simulation_subject.hpp">
-      <Filter>Header Files\ZPR namespace\Subjects</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\splash_state.hpp">
-      <Filter>Header Files\ZPR namespace\States</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\state.hpp">
-      <Filter>Header Files\ZPR namespace\States</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\state_machine.hpp">
-      <Filter>Header Files\ZPR namespace\States</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\timer.hpp">
-      <Filter>Header Files\ZPR namespace\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\tools_observer.hpp">
-      <Filter>Header Files\ZPR namespace\Observers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\tools_subject.hpp">
-      <Filter>Header Files\ZPR namespace\Subjects</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\tools_view.hpp">
-      <Filter>Header Files\ZPR namespace\Views</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Vehicles\vehicle.hpp">
-      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Vehicles\truck.hpp">
-      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Code\Vehicles\vehicle_factory.hpp">
-      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
+    <ClInclude Include="..\..\..\Code\asset_manager.hpp">
+      <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Code\creator_handler.hpp">
       <Filter>Header Files\ZPR namespace</Filter>
@@ -162,97 +75,205 @@
     <ClInclude Include="..\..\..\Code\simulator.hpp">
       <Filter>Header Files\ZPR namespace</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\adding_elements_map_view_helper.hpp">
+    <ClInclude Include="..\..\..\Code\Components\button.hpp">
+      <Filter>Header Files\ZPR namespace\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Components\camera.hpp">
+      <Filter>Header Files\ZPR namespace\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Components\grid.hpp">
+      <Filter>Header Files\ZPR namespace\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Components\cell.hpp">
+      <Filter>Header Files\ZPR namespace\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Components\timer.hpp">
+      <Filter>Header Files\ZPR namespace\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Helpers\adding_elements_map_view_helper.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\cameras_map_view_helper.hpp">
+    <ClInclude Include="..\..\..\Code\Helpers\cameras_map_view_helper.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\init_create_state_helper.hpp">
+    <ClInclude Include="..\..\..\Code\Helpers\converter.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\road_builder_helper.hpp">
+    <ClInclude Include="..\..\..\Code\Helpers\deleting_elements_helper.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\converter.hpp">
+    <ClInclude Include="..\..\..\Code\Helpers\drawing_helper.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\drawing_helper.hpp">
+    <ClInclude Include="..\..\..\Code\Helpers\file_finder.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\file_finder.hpp">
+    <ClInclude Include="..\..\..\Code\Helpers\road_builder_helper.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\asset_manager.hpp">
+    <ClInclude Include="..\..\..\Code\Helpers\spawn_points.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\input_manager.hpp">
+    <ClInclude Include="..\..\..\Code\Helpers\viewport_calculator.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\deleting_elements_helper.hpp">
+    <ClInclude Include="..\..\..\Code\Helpers\init_create_state_helper.hpp">
       <Filter>Header Files\ZPR namespace\Helpers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\viewport_calculator.hpp">
-      <Filter>Header Files\ZPR namespace\Helpers</Filter>
+    <ClInclude Include="..\..\..\Code\Observers\cameras_observer.hpp">
+      <Filter>Header Files\ZPR namespace\Observers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Code\spawn_points.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\..\Code\Observers\creator_observer.hpp">
+      <Filter>Header Files\ZPR namespace\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Observers\simulation_observer.hpp">
+      <Filter>Header Files\ZPR namespace\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Observers\tools_observer.hpp">
+      <Filter>Header Files\ZPR namespace\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\States\creator_state.hpp">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\States\init_create_state.hpp">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\States\main_menu_state.hpp">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\States\save_state.hpp">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\States\splash_state.hpp">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\States\state.hpp">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\States\state_machine.hpp">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Subjects\cameras_subject.hpp">
+      <Filter>Header Files\ZPR namespace\Subjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Subjects\creator_subject.hpp">
+      <Filter>Header Files\ZPR namespace\Subjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Subjects\simulation_subject.hpp">
+      <Filter>Header Files\ZPR namespace\Subjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Subjects\tools_subject.hpp">
+      <Filter>Header Files\ZPR namespace\Subjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Views\cameras_view.hpp">
+      <Filter>Header Files\ZPR namespace\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Views\map_view.hpp">
+      <Filter>Header Files\ZPR namespace\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Vehicles\vehicle_factory.hpp">
+      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Vehicles\vehicle.hpp">
+      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Vehicles\truck.hpp">
+      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Vehicles\car.hpp">
+      <Filter>Header Files\ZPR namespace\Vehicles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\States\load_state.hpp">
+      <Filter>Header Files\ZPR namespace\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\definitions.hpp">
+      <Filter>Header Files\ZPR namespace\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\keys_enum.hpp">
+      <Filter>Header Files\ZPR namespace\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Views\tools_view.hpp">
+      <Filter>Header Files\ZPR namespace\Views</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Code\button.cpp">
+    <ClCompile Include="..\..\..\Code\Components\button.cpp">
       <Filter>Source Files\ZPR namespace\Components</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\camera.cpp">
+    <ClCompile Include="..\..\..\Code\Components\camera.cpp">
       <Filter>Source Files\ZPR namespace\Components</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Code\cell.cpp">
+    <ClCompile Include="..\..\..\Code\Components\cell.cpp">
       <Filter>Source Files\ZPR namespace\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Components\grid.cpp">
+      <Filter>Source Files\ZPR namespace\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\adding_elements_map_view_helper.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\converter.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\cameras_map_view_helper.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\deleting_elements_helper.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\drawing_helper.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\file_finder.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\init_create_state_helper.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\road_builder_helper.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\spawn_points.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Helpers\viewport_calculator.cpp">
+      <Filter>Source Files\ZPR namespace\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\States\creator_state.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\States\init_create_state.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\States\load_state.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\States\main_menu_state.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\States\save_state.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\States\splash_state.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\States\state_machine.cpp">
+      <Filter>Source Files\ZPR namespace\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Subjects\cameras_subject.cpp">
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Subjects\creator_subject.cpp">
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Subjects\simulation_subject.cpp">
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Subjects\tools_subject.cpp">
+      <Filter>Source Files\ZPR namespace\Subjects</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\Vehicles\car.cpp">
       <Filter>Source Files\ZPR namespace\Vehicles</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\cameras_view.cpp">
-      <Filter>Source Files\ZPR namespace\Views</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\creator_state.cpp">
-      <Filter>Source Files\ZPR namespace\States</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\creator_subject.cpp">
-      <Filter>Source Files\ZPR namespace\Subjects</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\grid.cpp">
-      <Filter>Source Files\ZPR namespace\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\init_create_state.cpp">
-      <Filter>Source Files\ZPR namespace\States</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\load_state.cpp">
-      <Filter>Source Files\ZPR namespace\States</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\main_menu_state.cpp">
-      <Filter>Source Files\ZPR namespace\States</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\map_view.cpp">
-      <Filter>Source Files\ZPR namespace\Views</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\save_state.cpp">
-      <Filter>Source Files\ZPR namespace\States</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\simulation_subject.cpp">
-      <Filter>Source Files\ZPR namespace\Subjects</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\splash_state.cpp">
-      <Filter>Source Files\ZPR namespace\States</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\state_machine.cpp">
-      <Filter>Source Files\ZPR namespace\States</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\tools_subject.cpp">
-      <Filter>Source Files\ZPR namespace\Subjects</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\tools_view.cpp">
-      <Filter>Source Files\ZPR namespace\Views</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\Vehicles\truck.cpp">
       <Filter>Source Files\ZPR namespace\Vehicles</Filter>
@@ -262,6 +283,18 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Code\Vehicles\vehicle_factory.cpp">
       <Filter>Source Files\ZPR namespace\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Views\cameras_view.cpp">
+      <Filter>Source Files\ZPR namespace\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Views\map_view.cpp">
+      <Filter>Source Files\ZPR namespace\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Views\tools_view.cpp">
+      <Filter>Source Files\ZPR namespace\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\asset_manager.cpp">
+      <Filter>Source Files\ZPR namespace</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Code\creator_handler.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
@@ -274,45 +307,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Code\simulator.cpp">
       <Filter>Source Files\ZPR namespace</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\cameras_subject.cpp">
-      <Filter>Source Files\ZPR namespace\Subjects</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\adding_elements_map_view_helper.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\cameras_map_view_helper.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\converter.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\drawing_helper.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\init_create_state_helper.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\road_builder_helper.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\file_finder.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\asset_manager.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\input_manager.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\deleting_elements_helper.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\viewport_calculator.cpp">
-      <Filter>Source Files\ZPR namespace\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Code\spawn_points.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

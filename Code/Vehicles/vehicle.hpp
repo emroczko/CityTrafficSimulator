@@ -6,7 +6,7 @@
 #pragma once
 #include "SFML/Graphics.hpp"
 #include "../definitions.hpp"
-#include "../cell.hpp"
+#include "../Components/cell.hpp"
 #include <chrono>
 
 

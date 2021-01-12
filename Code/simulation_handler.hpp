@@ -4,16 +4,16 @@
  */
 
 #pragma once
-#include "simulation_subject.hpp"
-#include "cameras_observer.hpp"
-#include "creator_observer.hpp"
+#include "Subjects/simulation_subject.hpp"
+#include "Observers/cameras_observer.hpp"
+#include "Observers/creator_observer.hpp"
 #include "Vehicles/vehicle_factory.hpp"
 #include <memory>
-#include "timer.hpp"
-#include "cell.hpp"
-#include "camera.hpp"
-#include "converter.hpp"
-#include "spawn_points.hpp"
+#include "Components/timer.hpp"
+#include "Components/cell.hpp"
+#include "Components/camera.hpp"
+#include "Helpers/converter.hpp"
+#include "Helpers/spawn_points.hpp"
 
 
 namespace zpr {
@@ -26,16 +26,9 @@ namespace zpr {
         SimulationHandler(int grid_size);
         void init();
         void updateIsSimulating();
-        void updateSelectedCell(sf::Vector2i coords) {};
         void updateCells(std::vector<Cell> cells);
         void updateEnterCells(std::vector<Cell> enter_cells);
         void saveToFile();
-        void updateIsDrawingRoad(bool is_drawing_road) {};
-        void updateIsDeletingRoad(bool is_deleting_road) {};
-        void updateIsAddingCamera(bool is_adding_camera, int which_camera) {};
-        void updateIsAddingCamera(int which_camera) {}
-        void updateCameraAdded(int which_camera, int row, int col) {}
-        void updateIsDeletingCamera(int which_camera) {}
         void handleInput();
     private:
         Timer startSimulationTimer_, clearDataTimer_;

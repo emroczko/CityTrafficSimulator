@@ -3,7 +3,6 @@
  * Header of VehicleFactory class.
  */
 #pragma once
-#include "vehicle.hpp"
 #include <memory>
 #include "car.hpp"
 #include "truck.hpp"
