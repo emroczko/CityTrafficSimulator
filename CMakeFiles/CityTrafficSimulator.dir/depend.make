@@ -102,17 +102,6 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Co
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/timer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/viewport_calculator.hpp
 
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/Tests/BoostTest/road_builder_helper.cpp
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/asset_manager.hpp
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/cell.hpp
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/converter.hpp
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/definitions.hpp
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/input_manager.hpp
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/road_builder_helper.hpp
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/simulator.hpp
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/state.hpp
-CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/state_machine.hpp
-
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/spawn_points_test.cpp.o: Code/Tests/BoostTest/spawn_points_test.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/spawn_points_test.cpp.o: Code/cell.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/spawn_points_test.cpp.o: Code/converter.hpp
