@@ -1,5 +1,5 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../deleting_elements_helper.hpp"
+#include "../../Helpers/deleting_elements_helper.hpp"
 #include "../../definitions.hpp"
 
 #include "SFML/Graphics.hpp"

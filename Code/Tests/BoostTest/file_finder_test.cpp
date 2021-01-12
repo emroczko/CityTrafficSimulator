@@ -1,5 +1,5 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../file_finder.hpp"
+#include "../../Helpers/file_finder.hpp"
 
 #include <boost/test/unit_test.hpp>
 

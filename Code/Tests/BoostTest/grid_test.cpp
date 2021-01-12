@@ -1,6 +1,6 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../cell.hpp"
-#include "../../grid.hpp"
+#include "../../Components/cell.hpp"
+#include "../../Components/grid.hpp"
 #include <boost/test/unit_test.hpp>
 
 

@@ -1,5 +1,5 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../viewport_calculator.hpp"
+#include "../../Helpers/viewport_calculator.hpp"
 
 #include <boost/test/unit_test.hpp>
 

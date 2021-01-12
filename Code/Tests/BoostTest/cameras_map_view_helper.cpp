@@ -1,5 +1,5 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../cameras_map_view_helper.hpp"
+#include "../../Helpers/cameras_map_view_helper.hpp"
 #include "../../definitions.hpp"
 
 #include "SFML/Graphics.hpp"

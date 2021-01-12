@@ -1,7 +1,7 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../init_create_state_helper.hpp"
+#include "../../Helpers/init_create_state_helper.hpp"
 #include "../../definitions.hpp"
-#include "../../button.hpp"
+#include "../../Components/button.hpp"
 #include <SFML/Graphics.hpp>
 #include <boost/test/unit_test.hpp>
 

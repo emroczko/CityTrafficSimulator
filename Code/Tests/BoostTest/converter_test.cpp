@@ -1,7 +1,7 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../converter.hpp"
+#include "../../Helpers/converter.hpp"
 #include "../../definitions.hpp"
-#include "../../cell.hpp"
+#include "../../Components/cell.hpp"
 
 #include "SFML/Graphics.hpp"
 

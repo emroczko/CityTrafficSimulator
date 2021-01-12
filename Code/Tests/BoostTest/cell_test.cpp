@@ -1,5 +1,5 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../cell.hpp"
+#include "../../Components/cell.hpp"
 #include <boost/test/unit_test.hpp>
 
 BOOST_AUTO_TEST_CASE(Cell_positionTest)

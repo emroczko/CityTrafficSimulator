@@ -1,5 +1,5 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../main_menu_state.hpp"
+#include "../../States/main_menu_state.hpp"
 #include "../../simulator.hpp"
 #include "../../definitions.hpp"
 #include <SFML/Graphics.hpp>

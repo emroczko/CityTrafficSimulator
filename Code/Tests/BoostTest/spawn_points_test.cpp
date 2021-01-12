@@ -1,5 +1,5 @@
 #define BOOST_TEST_DYN_LINK
-#include "../../spawn_points.hpp"
+#include "../../Helpers/spawn_points.hpp"
 #include "../../definitions.hpp"
 
 
