@@ -439,6 +439,33 @@ Code/Tests/BoostTest/road_builder_helper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.s
 .PHONY : Code/Tests/BoostTest/road_builder_helper.cpp.s
 
+Code/Tests/BoostTest/spawn_points_test.o: Code/Tests/BoostTest/spawn_points_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/spawn_points_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/spawn_points_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/spawn_points_test.cpp.o
+.PHONY : Code/Tests/BoostTest/spawn_points_test.cpp.o
+
+Code/Tests/BoostTest/spawn_points_test.i: Code/Tests/BoostTest/spawn_points_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/spawn_points_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/spawn_points_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/spawn_points_test.cpp.i
+.PHONY : Code/Tests/BoostTest/spawn_points_test.cpp.i
+
+Code/Tests/BoostTest/spawn_points_test.s: Code/Tests/BoostTest/spawn_points_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/spawn_points_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/spawn_points_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/spawn_points_test.cpp.s
+.PHONY : Code/Tests/BoostTest/spawn_points_test.cpp.s
+
 Code/Tests/BoostTest/vehicle_test.o: Code/Tests/BoostTest/vehicle_test.cpp.o
 
 .PHONY : Code/Tests/BoostTest/vehicle_test.o
@@ -1330,6 +1357,33 @@ Code/simulator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/simulator.cpp.s
 .PHONY : Code/simulator.cpp.s
 
+Code/spawn_points.o: Code/spawn_points.cpp.o
+
+.PHONY : Code/spawn_points.o
+
+# target to build an object file
+Code/spawn_points.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/spawn_points.cpp.o
+.PHONY : Code/spawn_points.cpp.o
+
+Code/spawn_points.i: Code/spawn_points.cpp.i
+
+.PHONY : Code/spawn_points.i
+
+# target to preprocess a source file
+Code/spawn_points.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/spawn_points.cpp.i
+.PHONY : Code/spawn_points.cpp.i
+
+Code/spawn_points.s: Code/spawn_points.cpp.s
+
+.PHONY : Code/spawn_points.s
+
+# target to generate assembly for a file
+Code/spawn_points.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/spawn_points.cpp.s
+.PHONY : Code/spawn_points.cpp.s
+
 Code/splash_state.o: Code/splash_state.cpp.o
 
 .PHONY : Code/splash_state.o
@@ -1507,6 +1561,9 @@ help:
 	@echo "... Code/Tests/BoostTest/road_builder_helper.o"
 	@echo "... Code/Tests/BoostTest/road_builder_helper.i"
 	@echo "... Code/Tests/BoostTest/road_builder_helper.s"
+	@echo "... Code/Tests/BoostTest/spawn_points_test.o"
+	@echo "... Code/Tests/BoostTest/spawn_points_test.i"
+	@echo "... Code/Tests/BoostTest/spawn_points_test.s"
 	@echo "... Code/Tests/BoostTest/vehicle_test.o"
 	@echo "... Code/Tests/BoostTest/vehicle_test.i"
 	@echo "... Code/Tests/BoostTest/vehicle_test.s"
@@ -1606,6 +1663,9 @@ help:
 	@echo "... Code/simulator.o"
 	@echo "... Code/simulator.i"
 	@echo "... Code/simulator.s"
+	@echo "... Code/spawn_points.o"
+	@echo "... Code/spawn_points.i"
+	@echo "... Code/spawn_points.s"
 	@echo "... Code/splash_state.o"
 	@echo "... Code/splash_state.i"
 	@echo "... Code/splash_state.s"
