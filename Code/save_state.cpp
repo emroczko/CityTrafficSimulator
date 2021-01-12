@@ -78,7 +78,7 @@ namespace zpr {
      * Method which initializes every button in the window.
      */
     void SaveState::buttonsInitializer(){
-        this->checkSlots();
+        this->fileFinder_.checkSlots(this->slots_);
         sf::Vector2f buttons_size(150, 66);
         int font_size = 30;
         this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - 5 * buttons_size.y), buttons_size, slots_[0],
@@ -97,14 +97,7 @@ namespace zpr {
         
     }
 
-    /**
-     * Method which checks if there is any data on the slot by searching previous saves and passing action to FileFinder class.
-     */
-    void SaveState::checkSlots(){
-        for (int i = 0; i < 4; i++){
-            slots_[i] = fileFinder_.checkIfFileExist("Map"+std::to_string(i+1)+".txt", i+1);
-        }
-    }
+   
 
     /**
      * Method which saves data to specified file.

@@ -42,4 +42,12 @@ namespace zpr{
         else
             return false;
     }
+    /**
+     * Method which checks if there is any data on the slot by searching previous saves.
+     */
+    void FileFinder::checkSlots(std::string *slots){
+        for (int i = 0; i < 4; i++){
+            slots[i] = this->checkIfFileExist("Map"+std::to_string(i+1)+".txt", i+1);
+        }
+    }
 }

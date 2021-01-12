@@ -29,7 +29,7 @@ namespace zpr {
         void draw(float dt);
         
     private:
-        void checkSlots();
+        
         void buttonsInitializer();
         void saveToFile(int number);
         SimulatorDataRef data_;
