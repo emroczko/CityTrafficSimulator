@@ -412,6 +412,33 @@ Code/Tests/BoostTest/vehicle_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.s
 .PHONY : Code/Tests/BoostTest/vehicle_test.cpp.s
 
+Code/Tests/BoostTest/viewport_calculator_test.o: Code/Tests/BoostTest/viewport_calculator_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/viewport_calculator_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/viewport_calculator_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/viewport_calculator_test.cpp.o
+.PHONY : Code/Tests/BoostTest/viewport_calculator_test.cpp.o
+
+Code/Tests/BoostTest/viewport_calculator_test.i: Code/Tests/BoostTest/viewport_calculator_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/viewport_calculator_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/viewport_calculator_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/viewport_calculator_test.cpp.i
+.PHONY : Code/Tests/BoostTest/viewport_calculator_test.cpp.i
+
+Code/Tests/BoostTest/viewport_calculator_test.s: Code/Tests/BoostTest/viewport_calculator_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/viewport_calculator_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/viewport_calculator_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/viewport_calculator_test.cpp.s
+.PHONY : Code/Tests/BoostTest/viewport_calculator_test.cpp.s
+
 Code/Vehicles/car.o: Code/Vehicles/car.cpp.o
 
 .PHONY : Code/Vehicles/car.o
@@ -1357,6 +1384,33 @@ Code/tools_view.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.s
 .PHONY : Code/tools_view.cpp.s
 
+Code/viewport_calculator.o: Code/viewport_calculator.cpp.o
+
+.PHONY : Code/viewport_calculator.o
+
+# target to build an object file
+Code/viewport_calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/viewport_calculator.cpp.o
+.PHONY : Code/viewport_calculator.cpp.o
+
+Code/viewport_calculator.i: Code/viewport_calculator.cpp.i
+
+.PHONY : Code/viewport_calculator.i
+
+# target to preprocess a source file
+Code/viewport_calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/viewport_calculator.cpp.i
+.PHONY : Code/viewport_calculator.cpp.i
+
+Code/viewport_calculator.s: Code/viewport_calculator.cpp.s
+
+.PHONY : Code/viewport_calculator.s
+
+# target to generate assembly for a file
+Code/viewport_calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/viewport_calculator.cpp.s
+.PHONY : Code/viewport_calculator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1396,6 +1450,9 @@ help:
 	@echo "... Code/Tests/BoostTest/vehicle_test.o"
 	@echo "... Code/Tests/BoostTest/vehicle_test.i"
 	@echo "... Code/Tests/BoostTest/vehicle_test.s"
+	@echo "... Code/Tests/BoostTest/viewport_calculator_test.o"
+	@echo "... Code/Tests/BoostTest/viewport_calculator_test.i"
+	@echo "... Code/Tests/BoostTest/viewport_calculator_test.s"
 	@echo "... Code/Vehicles/car.o"
 	@echo "... Code/Vehicles/car.i"
 	@echo "... Code/Vehicles/car.s"
@@ -1501,6 +1558,9 @@ help:
 	@echo "... Code/tools_view.o"
 	@echo "... Code/tools_view.i"
 	@echo "... Code/tools_view.s"
+	@echo "... Code/viewport_calculator.o"
+	@echo "... Code/viewport_calculator.i"
+	@echo "... Code/viewport_calculator.s"
 .PHONY : help
 
 

@@ -15,6 +15,7 @@
 		52190AF325ACB7F200663216 /* adding_elements_map_view_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AF125ACB7F200663216 /* adding_elements_map_view_helper.cpp */; };
 		52190AF925ACD24A00663216 /* deleting_elements_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AF725ACD24A00663216 /* deleting_elements_helper.cpp */; };
 		52190AFF25ACD6AE00663216 /* cameras_map_view_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190AFD25ACD6AE00663216 /* cameras_map_view_helper.cpp */; };
+		52190B1F25AD320400663216 /* viewport_calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52190B1D25AD320400663216 /* viewport_calculator.cpp */; };
 		522531B6255234B40035E946 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */; };
 		522531B7255234B40035E946 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */; };
 		522531B8255234B40035E946 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 522531B3255234B40035E946 /* libsfml-window.2.5.1.dylib */; };
@@ -90,6 +91,8 @@
 		52190AF825ACD24A00663216 /* deleting_elements_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = deleting_elements_helper.hpp; sourceTree = "<group>"; };
 		52190AFD25ACD6AE00663216 /* cameras_map_view_helper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cameras_map_view_helper.cpp; sourceTree = "<group>"; };
 		52190AFE25ACD6AE00663216 /* cameras_map_view_helper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cameras_map_view_helper.hpp; sourceTree = "<group>"; };
+		52190B1D25AD320400663216 /* viewport_calculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = viewport_calculator.cpp; sourceTree = "<group>"; };
+		52190B1E25AD320400663216 /* viewport_calculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = viewport_calculator.hpp; sourceTree = "<group>"; };
 		522531A9255232C10035E946 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = ../../../Resources; sourceTree = "<group>"; };
 		522531B1255234B40035E946 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		522531B2255234B40035E946 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../../External Libraries/Mac/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -306,6 +309,8 @@
 				5230E7922565EB3500F84CF2 /* cameras_view.hpp */,
 				52D0C273259B981B000871D0 /* cameras_subject.hpp */,
 				5230E78E2565EB3500F84CF2 /* cameras_view.cpp */,
+				52190B1D25AD320400663216 /* viewport_calculator.cpp */,
+				52190B1E25AD320400663216 /* viewport_calculator.hpp */,
 				52D0C274259B9A95000871D0 /* cameras_observer.hpp */,
 			);
 			name = Cameras;
@@ -404,6 +409,7 @@
 				52D3BD10255442410093D5DF /* splash_state.cpp in Sources */,
 				52D3BCF625540A9A0093D5DF /* state_machine.cpp in Sources */,
 				52A1CEA32599F4450014C907 /* tools_subject.cpp in Sources */,
+				52190B1F25AD320400663216 /* viewport_calculator.cpp in Sources */,
 				5230E7992565EB3500F84CF2 /* tools_view.cpp in Sources */,
 				52190AEF25ACB38700663216 /* road_builder_helper.cpp in Sources */,
 				52D0C277259B9C4A000871D0 /* simulation_handler.cpp in Sources */,

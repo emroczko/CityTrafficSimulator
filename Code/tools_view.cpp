@@ -17,7 +17,7 @@ namespace zpr {
         this->isSimulating_ = false;
         this->isAddingCameras_ = false;
 		this->toolsView_ = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
-		this->toolsView_.setViewport(this->calculateViewPort());
+		this->toolsView_.setViewport(this->viewportCalculator_.calculateToolsViewport());
 		this->background_.setPosition(0, 0);
 		this->background_.setSize(this->toolsView_.getSize());
 		this->background_.setFillColor(sf::Color(80, 80, 80));
@@ -44,17 +44,7 @@ namespace zpr {
         this->buttons_.push_back(Button(sf::Vector2f(toolsView_.getSize().x/2, 800), button_size, "Save to file",
             this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
     }
-    
-    /**
-     * Method responsible for calculating viewport of this view.
-     * @return - Calculated viewport.
-     */
-	sf::FloatRect ToolsView::calculateViewPort()
-	{
-        float rect_width = (1.f - (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH) / 2;
-        float rect_left = rect_width + (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH;
-        return sf::FloatRect(rect_left, 0.f, rect_width, 1.f);
-	}
+
 
     /**
      * Method which draws elements of tools view in the window.

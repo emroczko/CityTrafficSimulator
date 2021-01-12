@@ -11,6 +11,7 @@
 #include "tools_subject.hpp"
 #include "simulation_observer.hpp"
 #include "creator_observer.hpp"
+#include "viewport_calculator.hpp"
 
 
 namespace zpr {
@@ -41,7 +42,6 @@ namespace zpr {
         void updateCameraAdded(int which_camera, int row, int col) {}
 
 	private:
-		sf::FloatRect calculateViewPort();
 		void drawButtons();
         void resetButtons(int button_number_1, int button_number_2);
         void buttonInitializer();
@@ -50,6 +50,7 @@ namespace zpr {
 		sf::RectangleShape background_;
 		sf::View toolsView_;
         bool isSimulating_, isAddingCameras_;
+        ViewportCalculator viewportCalculator_;
 	};
 
 }

@@ -18,6 +18,7 @@
 #include "converter.hpp"
 #include "adding_elements_map_view_helper.hpp"
 #include "deleting_elements_helper.hpp"
+#include "viewport_calculator.hpp"
 
 
 namespace zpr {
@@ -57,7 +58,6 @@ namespace zpr {
         friend std::ofstream& operator<< (std::ofstream& ,const MapView&);
 	private:
 		void loadAssets();
-        sf::FloatRect calculateViewPort();
 		void generateGridLines();
 		void fillCells();
         void fillEnterCells();
@@ -93,6 +93,7 @@ namespace zpr {
         std::unique_ptr<Converter> converter_;
         std::unique_ptr<AddingHelper> addingRectangleShapesHelper_;
         std::unique_ptr<DeletingHelper> deletingRectangleShapesHelper_;
+        ViewportCalculator viewportCalculator_;
 	};
 }
 
