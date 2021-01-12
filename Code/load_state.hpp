@@ -15,6 +15,7 @@
 #include "cell.hpp"
 
 
+
 namespace zpr{
 
     /**
@@ -31,7 +32,6 @@ namespace zpr{
         void loadFromFile(int number);
         
     private:
-        void checkSlots();
         void initializeButtons();
         bool isDemo_;
         SimulatorDataRef data_;

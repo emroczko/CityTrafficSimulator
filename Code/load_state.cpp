@@ -29,7 +29,7 @@ namespace zpr {
         this->data_->assets_.loadTexture("Button", BUTTON_FILEPATH);
         this->data_->assets_.loadFont("Text font", TEXT_FONT_FILEPATH);
 
-        this->checkSlots();
+        this->fileFinder_.checkSlots(this->slots_);
         this->initializeButtons();
         
         this->background_.setTexture(this->data_->assets_.getTexture("Background"));
@@ -57,14 +57,7 @@ namespace zpr {
         this->buttons_.push_back(Button(sf::Vector2f(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + 5 * button_size.y), button_size, "Back",
             this->data_->assets_.getFont("Text font"), font_size, sf::Color::White, this->data_->assets_.getTexture("Button")));
     }
-    /**
-     * Method whick checks if there is any data on the slot by searching previous saves and passing action to FileFinder class.
-     */
-    void LoadState::checkSlots(){
-        for (int i = 0; i < 4; i++){
-            slots_[i] = fileFinder_.checkIfFileExist("Map"+std::to_string(i+1)+".txt", i+1);
-        }
-    }
+    
     
     /**
      Method which handles user input in the current state.

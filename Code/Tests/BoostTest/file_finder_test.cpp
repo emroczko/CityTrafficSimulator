@@ -21,13 +21,8 @@ BOOST_AUTO_TEST_CASE(FileFinderTest_FindDemo)
 {
 	BOOST_CHECK_EQUAL(true, fileFinder_.checkIfFileExist(fileName_));
 }
-//BOOST_AUTO_TEST_CASE(FileFinderTest_FindEmptySlot)
-//{
-//    BOOST_CHECK_EQUAL("Slot1", fileFinder_.checkIfFileExist(mapName_,1));
-//}
-//BOOST_AUTO_TEST_CASE(FileFinderTest_FindContainingSlot)
-//{
-//    BOOST_CHECK_EQUAL("Map1.txt", fileFinder_.checkIfFileExist(mapName_,1));
-//}
+
+
+
 
 BOOST_AUTO_TEST_SUITE_END()
