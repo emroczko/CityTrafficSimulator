@@ -42,11 +42,9 @@ namespace zpr {
             this->y_ = this->currentRoad_->getPosition().y - this->roadSize_ / 2 - this->roadStripesSize_;
             this->x_ -= this->speed_;
         }
-        else if (direction_ == "Stop") {
-
-        }
-        this->updatePosition();
         this->updateColisionBoxPosition();
+        this->updatePosition();
+        
     }
 
     /**
@@ -67,10 +65,10 @@ namespace zpr {
             this->colisionBox_.setPosition(sf::Vector2f(this->shape_.getPosition().x, this->shape_.getPosition().y - (this->colisionBox_.getSize().y / 2 + this->shape_.getSize().y / 2 + this->roadStripesSize_)));
         }
         else if (this->direction_ == "East"){
-            this->colisionBox_.setPosition(sf::Vector2f(this->shape_.getPosition().x + (this->colisionBox_.getSize().x / 2 + ceil(this->shape_.getSize().x / 2) + this->roadStripesSize_), this->shape_.getPosition().y));
+            this->colisionBox_.setPosition(sf::Vector2f(this->shape_.getPosition().x + (ceil(this->colisionBox_.getSize().x / 2) + ceil(this->shape_.getSize().x / 2) + this->roadStripesSize_), this->shape_.getPosition().y));
         }
         else {
-            this->colisionBox_.setPosition(sf::Vector2f(this->shape_.getPosition().x - (this->colisionBox_.getSize().x / 2 + ceil(this->shape_.getSize().y / 2) + this->roadStripesSize_), this->shape_.getPosition().y));
+            this->colisionBox_.setPosition(sf::Vector2f(this->shape_.getPosition().x - (ceil(this->colisionBox_.getSize().x / 2) + ceil(this->shape_.getSize().y / 2) + this->roadStripesSize_), this->shape_.getPosition().y));
         }
     }
 
@@ -121,9 +119,11 @@ namespace zpr {
      * @return - True if there is a collision, false otherwise.
      */
     bool Vehicle::checkColision(std::shared_ptr<Vehicle> vehicle){
-        bool colision = this->colisionBox_.getGlobalBounds().intersects(vehicle->getShape().getGlobalBounds());
-        if (colision){
-            return true;
+        if (vehicle->getShape().getPosition() != this->getShape().getPosition()) {
+            bool colision = this->colisionBox_.getGlobalBounds().intersects(vehicle->getShape().getGlobalBounds());
+            if (colision) {
+                return true;
+            }
         }
         return false;
     }
@@ -143,25 +143,21 @@ namespace zpr {
                 std::vector<std::shared_ptr<sf::RectangleShape>> neighbouring_roads;
                 for (sf::RectangleShape road : this->roads_) {
                     if (road.getGlobalBounds() != this->previousRoad_->getGlobalBounds()) {
-                        if (road.getPosition().y == this->currentRoad_->getPosition().y) {
-                            if (road.getPosition().x == this->currentRoad_->getPosition().x + this->cellSize_) {
-                                east = std::make_shared<sf::RectangleShape>(road);
-                                neighbouring_roads.push_back(east);
-                            }
-                            else if (road.getPosition().x == this->currentRoad_->getPosition().x - this->cellSize_) {
-                                west = std::make_shared<sf::RectangleShape>(road);
-                                neighbouring_roads.push_back(west);
-                            }
+                        if (road.getGlobalBounds().contains(sf::Vector2f(this->currentRoad_->getPosition().x + this->cellSize_, this->currentRoad_->getPosition().y))) {
+                            east = std::make_shared<sf::RectangleShape>(road);
+                            neighbouring_roads.push_back(east);
                         }
-                        else if (road.getPosition().x == this->currentRoad_->getPosition().x) {
-                            if (road.getPosition().y == this->currentRoad_->getPosition().y + this->cellSize_) {
-                                south = std::make_shared<sf::RectangleShape>(road);
-                                neighbouring_roads.push_back(south);
-                            }
-                            else if (road.getPosition().y == this->currentRoad_->getPosition().y - this->cellSize_) {
-                                north = std::make_shared<sf::RectangleShape>(road);
-                                neighbouring_roads.push_back(north);
-                            }
+                        else if (road.getGlobalBounds().contains(sf::Vector2f(this->currentRoad_->getPosition().x - this->cellSize_, this->currentRoad_->getPosition().y))) {
+                            west = std::make_shared<sf::RectangleShape>(road);
+                            neighbouring_roads.push_back(west);
+                        }
+                        if (road.getGlobalBounds().contains(sf::Vector2f(this->currentRoad_->getPosition().x , this->currentRoad_->getPosition().y + this->cellSize_))) {
+                            south = std::make_shared<sf::RectangleShape>(road);
+                            neighbouring_roads.push_back(south);
+                        }
+                        else if (road.getGlobalBounds().contains(sf::Vector2f(this->currentRoad_->getPosition().x, this->currentRoad_->getPosition().y - this->cellSize_))) {
+                            north = std::make_shared<sf::RectangleShape>(road);
+                            neighbouring_roads.push_back(north);
                         }
                     }
                 }
@@ -372,5 +368,6 @@ namespace zpr {
     void Vehicle::draw(sf::RenderTarget& target, sf::RenderStates states) const
     {
         target.draw(this->shape_, states);
+        //target.draw(this->colisionBox_, states);
     }
 }

@@ -37,10 +37,8 @@ namespace zpr {
         this->converter_ = std::make_unique<Converter>(this->gridSize_);
         this->addingRectangleShapesHelper_ = std::make_unique<AddingHelper>(this->data_, this->gridSize_);
         this->deletingRectangleShapesHelper_ = std::make_unique<DeletingHelper>(this->data_, this->gridSize_);
-        
         this->clicked_ = false;
         this->loadAssets();
-		//this->setupSelectedCellRect();
 		this->backgroundTexture_.setTexture(this->data_->assets_.getTexture("Background"));
 		this->backgroundTexture_.setOrigin(sf::Vector2f(800, 800));
 		this->backgroundTexture_.setPosition(this->mapView_.getCenter());
@@ -49,11 +47,9 @@ namespace zpr {
 		this->col_ = -1;
         this->enterGridWidth_ = this->gridSize_;
         this->enterGridHeight_ = 2;
-		//this->selectedCellRect_.setTexture(&this->data_->assets_.getTexture("Selected Cell"));
 		this->mapView_ = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
 		this->mapView_.setViewport(this->calculateViewPort());
 		this->generateGridLines();
-        //this->generateEnterBoard();
         this->mapView_.zoom(1.4f);
         this->initializeCameras();
         

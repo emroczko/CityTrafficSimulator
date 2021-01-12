@@ -1,3 +1,43 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  grid.cpp
+  vehicle.cpp
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(27,82): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(32,82): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(37,82): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(42,82): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(54,51): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(54,47): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(264,92): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+H:\Programowanie\C++\CityTrafficSimulator_ZPR\Code\Vehicles\vehicle.cpp(321,92): warning C4244: 'argument': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
   SFML Project.vcxproj -> H:\Programowanie\C++\CityTrafficSimulator_ZPR\Platforms\Windows\Debug\SFML Project.exe

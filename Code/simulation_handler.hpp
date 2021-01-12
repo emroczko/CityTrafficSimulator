@@ -12,6 +12,7 @@
 #include "timer.hpp"
 #include "cell.hpp"
 #include "camera.hpp"
+#include "converter.hpp"
 
 
 namespace zpr {
@@ -62,5 +63,6 @@ namespace zpr {
         std::vector<sf::RectangleShape> roads_;
         std::vector<Camera> cameras_;
         std::vector<std::shared_ptr<Vehicle>> vehicles_;
+        std::unique_ptr<Converter> converter_;
     };
 }

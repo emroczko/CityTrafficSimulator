@@ -22,12 +22,11 @@ namespace zpr {
      */
     void SimulationHandler::init()
     {
+        this->converter_ = std::make_unique<Converter>(this->gridSize_);
         this->cellSize_ = (SCREEN_HEIGHT / this->gridSize_);
         this->sidewalkSize_ = round(SIDEWALK_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
         this->roadSize_ = round(ROAD_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
         this->roadStripesSize_ = round(ROAD_STRIPES_SIZE * cellSize_ / ROAD_IMAGE_SIZE);
-  
-        
     }
 
     /**
@@ -46,7 +45,6 @@ namespace zpr {
                 this->addCarsToSimulate();
                 this->moveVehicles();
                 this->deleteVehicles();
-                this->notifyVehicles(this->vehicles_);
             }, 17);
         }
         else {
@@ -57,15 +55,6 @@ namespace zpr {
             this->roads_.erase(roads_.begin()+15, roads_.end());
             this->cameras_.clear();
             this->cityExitSite_.clear();
-            
-//            this->clearDataTimer_.setTimeout([&]() {
-//                this->vehicles_.clear();
-//                this->notifyVehicles(this->vehicles_);
-//                //this->roads_.clear();
-//                this->roads_.erase(roads_.begin()+15, roads_.end());
-//                this->cameras_.clear();
-//                this->notifyVehicles(this->vehicles_);
-//            }, 5);
         }
         this->notifyIsSimulating(this->isSimulating_);
 
@@ -193,7 +182,9 @@ namespace zpr {
         }
     }
 
-
+    /***
+    * Method which creates exit sites (for cars to leave city) in correct position
+    */
     void SimulationHandler::setupExitSites()
     {
         int exit_cell_x[2];
@@ -203,7 +194,7 @@ namespace zpr {
             sf::RectangleShape exit_site;
             exit_site.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, (SCREEN_HEIGHT / this->gridSize_) / 2));
             exit_site.setOrigin(sf::Vector2f(exit_site.getSize().x / 2, exit_site.getSize().y / 2));
-            sf::Vector2f centered_position_in_pixels = sf::Vector2f(exit_cell_x[i] * this->cellSize_ + this->calculatePrefix(), -2 * this->cellSize_ + this->calculatePrefix());
+            sf::Vector2f centered_position_in_pixels = sf::Vector2f(exit_cell_x[i] * this->cellSize_ + this->converter_->calculatePrefix(), -2 * this->cellSize_ + this->converter_->calculatePrefix());
             centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
             centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ * (2 * i + 1) / 4;
             exit_site.setPosition(centered_position_in_pixels);
@@ -372,6 +363,7 @@ namespace zpr {
             }
             i++;
         }
+        this->notifyVehicles(this->vehicles_);
     }
     
     /**
