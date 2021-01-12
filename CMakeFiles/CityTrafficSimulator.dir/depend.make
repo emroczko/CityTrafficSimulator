@@ -23,6 +23,9 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cameras_map_view_helper
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cameras_map_view_helper.cpp.o: Code/state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cameras_map_view_helper.cpp.o: Code/state_machine.hpp
 
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cell_test.cpp.o: Code/Tests/BoostTest/cell_test.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cell_test.cpp.o: Code/cell.hpp
+
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o: Code/Tests/BoostTest/converter_test.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o: Code/converter.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/converter_test.cpp.o: Code/definitions.hpp
@@ -41,6 +44,10 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/deleting_elements_helpe
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o: Code/Tests/BoostTest/file_finder_test.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.o: Code/file_finder.hpp
+
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/grid_test.cpp.o: Code/Tests/BoostTest/grid_test.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/grid_test.cpp.o: Code/cell.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/grid_test.cpp.o: Code/grid.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o: Code/Tests/BoostTest/init_create_state_helper_test.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/init_create_state_helper_test.cpp.o: Code/button.hpp
@@ -516,6 +523,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/Vehicles
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/camera.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/cameras_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/cell.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/converter.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/creator_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/definitions.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/simulation_handler.cpp
@@ -567,6 +575,8 @@ CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/cell.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/creator_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/definitions.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/file_finder.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/init_create_state.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/init_create_state_helper.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/input_manager.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/save_state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/simulation_observer.hpp

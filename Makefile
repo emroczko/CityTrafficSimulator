@@ -196,6 +196,33 @@ Code/Tests/BoostTest/cameras_map_view_helper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cameras_map_view_helper.cpp.s
 .PHONY : Code/Tests/BoostTest/cameras_map_view_helper.cpp.s
 
+Code/Tests/BoostTest/cell_test.o: Code/Tests/BoostTest/cell_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/cell_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/cell_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cell_test.cpp.o
+.PHONY : Code/Tests/BoostTest/cell_test.cpp.o
+
+Code/Tests/BoostTest/cell_test.i: Code/Tests/BoostTest/cell_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/cell_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/cell_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cell_test.cpp.i
+.PHONY : Code/Tests/BoostTest/cell_test.cpp.i
+
+Code/Tests/BoostTest/cell_test.s: Code/Tests/BoostTest/cell_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/cell_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/cell_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/cell_test.cpp.s
+.PHONY : Code/Tests/BoostTest/cell_test.cpp.s
+
 Code/Tests/BoostTest/converter_test.o: Code/Tests/BoostTest/converter_test.cpp.o
 
 .PHONY : Code/Tests/BoostTest/converter_test.o
@@ -276,6 +303,33 @@ Code/Tests/BoostTest/file_finder_test.s: Code/Tests/BoostTest/file_finder_test.c
 Code/Tests/BoostTest/file_finder_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/file_finder_test.cpp.s
 .PHONY : Code/Tests/BoostTest/file_finder_test.cpp.s
+
+Code/Tests/BoostTest/grid_test.o: Code/Tests/BoostTest/grid_test.cpp.o
+
+.PHONY : Code/Tests/BoostTest/grid_test.o
+
+# target to build an object file
+Code/Tests/BoostTest/grid_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/grid_test.cpp.o
+.PHONY : Code/Tests/BoostTest/grid_test.cpp.o
+
+Code/Tests/BoostTest/grid_test.i: Code/Tests/BoostTest/grid_test.cpp.i
+
+.PHONY : Code/Tests/BoostTest/grid_test.i
+
+# target to preprocess a source file
+Code/Tests/BoostTest/grid_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/grid_test.cpp.i
+.PHONY : Code/Tests/BoostTest/grid_test.cpp.i
+
+Code/Tests/BoostTest/grid_test.s: Code/Tests/BoostTest/grid_test.cpp.s
+
+.PHONY : Code/Tests/BoostTest/grid_test.s
+
+# target to generate assembly for a file
+Code/Tests/BoostTest/grid_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CityTrafficSimulator.dir/build.make CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/grid_test.cpp.s
+.PHONY : Code/Tests/BoostTest/grid_test.cpp.s
 
 Code/Tests/BoostTest/init_create_state_helper_test.o: Code/Tests/BoostTest/init_create_state_helper_test.cpp.o
 
@@ -1426,6 +1480,9 @@ help:
 	@echo "... Code/Tests/BoostTest/cameras_map_view_helper.o"
 	@echo "... Code/Tests/BoostTest/cameras_map_view_helper.i"
 	@echo "... Code/Tests/BoostTest/cameras_map_view_helper.s"
+	@echo "... Code/Tests/BoostTest/cell_test.o"
+	@echo "... Code/Tests/BoostTest/cell_test.i"
+	@echo "... Code/Tests/BoostTest/cell_test.s"
 	@echo "... Code/Tests/BoostTest/converter_test.o"
 	@echo "... Code/Tests/BoostTest/converter_test.i"
 	@echo "... Code/Tests/BoostTest/converter_test.s"
@@ -1435,6 +1492,9 @@ help:
 	@echo "... Code/Tests/BoostTest/file_finder_test.o"
 	@echo "... Code/Tests/BoostTest/file_finder_test.i"
 	@echo "... Code/Tests/BoostTest/file_finder_test.s"
+	@echo "... Code/Tests/BoostTest/grid_test.o"
+	@echo "... Code/Tests/BoostTest/grid_test.i"
+	@echo "... Code/Tests/BoostTest/grid_test.s"
 	@echo "... Code/Tests/BoostTest/init_create_state_helper_test.o"
 	@echo "... Code/Tests/BoostTest/init_create_state_helper_test.i"
 	@echo "... Code/Tests/BoostTest/init_create_state_helper_test.s"

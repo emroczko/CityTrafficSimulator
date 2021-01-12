@@ -14,8 +14,8 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "SimulationHandler::updateIsSimulating()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "SimulationHandler::updateIsSimulating()"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,10 +110,10 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "SimulationHandler::updateIsSimulating()"
-            landmarkType = "7">
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -238,9 +238,9 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "274"
-            endingLineNumber = "274"
-            landmarkName = "SimulationHandler::moveVehicles()"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "SimulationHandler::addCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -254,9 +254,9 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "273"
-            endingLineNumber = "273"
-            landmarkName = "SimulationHandler::moveVehicles()"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "SimulationHandler::addCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -270,9 +270,9 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "288"
-            endingLineNumber = "288"
-            landmarkName = "SimulationHandler::vehiclesColision()"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "SimulationHandler::addCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -286,9 +286,9 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "291"
-            endingLineNumber = "291"
-            landmarkName = "SimulationHandler::vehiclesColision()"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "SimulationHandler::addCarsToSimulate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -302,42 +302,10 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
-            landmarkName = "SimulationHandler::vehiclesColision()"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "SimulationHandler::addCarsToSimulate()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0A551F2F-6901-4B40-B957-01A90F72FF0D - 8accf08fe91236df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "zpr::SimulationHandler::vehiclesColision()"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulation_handler.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "287"
-                  endingLineNumber = "287"
-                  offsetFromSymbolStart = "127">
-               </Location>
-               <Location
-                  uuid = "0A551F2F-6901-4B40-B957-01A90F72FF0D - 8accf08fe91236df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "zpr::SimulationHandler::vehiclesColision()"
-                  moduleName = "CityTrafficSimulator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulation_handler.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "287"
-                  endingLineNumber = "287"
-                  offsetFromSymbolStart = "193">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -350,9 +318,9 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "305"
-            endingLineNumber = "305"
-            landmarkName = "SimulationHandler::checkCameraVision()"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "SimulationHandler::moveVehicles()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -366,10 +334,42 @@
             filePath = "../../Code/simulation_handler.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "308"
-            endingLineNumber = "308"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "unknown"
             landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "F10EF0B8-5E74-49D5-A681-BD2D9EE842AF - 9320321e34a4ce6c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zpr::SimulationHandler::checkCameraColision(zpr::Camera)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulation_handler.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "297"
+                  endingLineNumber = "297"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  uuid = "F10EF0B8-5E74-49D5-A681-BD2D9EE842AF - 9320321e34a4ce6c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zpr::SimulationHandler::checkCameraColision(zpr::Camera)"
+                  moduleName = "CityTrafficSimulator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulation_handler.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "297"
+                  endingLineNumber = "297"
+                  offsetFromSymbolStart = "97">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -504,7 +504,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0C71E76F-2287-45B9-A378-CAA419AA2CE8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/cameras_view.cpp"
@@ -560,15 +560,15 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "215"
             endingLineNumber = "215"
-            landmarkName = "MapView::draw()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "776A954F-259C-4733-95F5-87EA9F007DF8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/map_view.cpp"
@@ -576,8 +576,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "255"
             endingLineNumber = "255"
-            landmarkName = "MapView::updateIsSimulating(is_simulating)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -600,7 +600,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EAD9DB97-48B8-40CC-954C-4AF847DEC882"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/adding_elements_map_view_helper.cpp"
@@ -616,7 +616,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "177768B3-B28F-45D9-9FD2-FA69483CBC60"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/adding_elements_map_view_helper.cpp"
@@ -632,7 +632,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5679026E-AD73-491D-B703-7403B02EC957"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/adding_elements_map_view_helper.cpp"
@@ -648,7 +648,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D78411F3-DD7D-425F-82F3-560881A373E8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/deleting_elements_helper.cpp"
@@ -664,7 +664,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EF81CB1E-E457-4BA4-8319-89110B1E2214"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Code/adding_elements_map_view_helper.cpp"
@@ -704,8 +704,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "334"
             endingLineNumber = "334"
-            landmarkName = "MapView::updateCameraAdded(which_camera, row, col)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -785,6 +785,38 @@
             startingLineNumber = "27"
             endingLineNumber = "27"
             landmarkName = "CamerasHelper::checkCameraExists(position, cameras)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E2DE8B1-149C-4AEC-8FAC-720FFADB948B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/map_view.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "MapView::updateIsSimulating(is_simulating)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CA4963A-1DF2-4E8F-9488-2B8D6E097092"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Code/adding_elements_map_view_helper.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "AddingHelper::addElement(texture_name, position)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

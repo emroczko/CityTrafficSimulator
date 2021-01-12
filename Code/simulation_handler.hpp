@@ -13,6 +13,7 @@
 #include "cell.hpp"
 #include "camera.hpp"
 #include "converter.hpp"
+#include "spawn_points.hpp"
 
 
 namespace zpr {
@@ -38,10 +39,7 @@ namespace zpr {
         void handleInput();
     private:
         Timer startSimulationTimer_, clearDataTimer_;
-        void setupExitSites();
-        int calculatePrefix();
         void addCarsToSimulate();
-        void addStartingRoad();
         void moveVehicles();
         void vehiclesColision();
         void checkCameraVision();
@@ -53,8 +51,6 @@ namespace zpr {
         void separateRoadsFromCells(Cell& cell);
         void separateEnterRoadsFromCells();
         void separateCamerasFromCells();
-        sf::RectangleShape convertCellToCenteredRectShape(Cell cell);
-        sf::RectangleShape convertCellToCenteredRectShape2(Cell cell);
         bool isSimulating_;
         int gridSize_, cellSize_;
         int roadSize_, sidewalkSize_, roadStripesSize_;
@@ -64,5 +60,6 @@ namespace zpr {
         std::vector<Camera> cameras_;
         std::vector<std::shared_ptr<Vehicle>> vehicles_;
         std::unique_ptr<Converter> converter_;
+        std::unique_ptr<SpawnPoints> spawnPoints_;
     };
 }
