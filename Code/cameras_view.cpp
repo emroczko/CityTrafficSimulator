@@ -15,7 +15,7 @@ namespace zpr {
     CamerasView::CamerasView(SimulatorDataRef data) : data_(data), isSimulating_(false), isAddingCamera_(false)
     {
         this->camerasView_ = sf::View(sf::FloatRect(0.f, 0.f, (float)((SCREEN_WIDTH - SCREEN_HEIGHT) / 2), (float)(SCREEN_HEIGHT)));
-        this->camerasView_.setViewport(this->calculateViewPort());
+        this->camerasView_.setViewport(this->viewportCalculator_.calculateCamerasViewport());
         this->background_.setPosition(0, 0);
         this->background_.setSize(this->camerasView_.getSize());
         this->background_.setFillColor(sf::Color(80, 80, 80));
@@ -92,17 +92,6 @@ namespace zpr {
         tempLabel.setString(text);
         tempLabel.setPosition(camerasView_.getSize().x / 6, y_position);
         return tempLabel;
-    }
-
-    /**
-     * Method responsible for calculating viewport of this view.
-     * @return - Calculated viewport.
-     */
-    sf::FloatRect CamerasView::calculateViewPort()
-    {
-        float rectWidth = (1.f - (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH) / 2;
-        float rectLeft = 0.f;
-        return sf::FloatRect(rectLeft, 0.f, rectWidth, 1.f);
     }
 
     /**

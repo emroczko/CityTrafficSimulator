@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o"
+  "CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/viewport_calculator_test.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/truck.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/vehicle.cpp.o"
@@ -44,6 +45,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CityTrafficSimulator.dir/Code/state_machine.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/tools_subject.cpp.o"
   "CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o"
+  "CMakeFiles/CityTrafficSimulator.dir/Code/viewport_calculator.cpp.o"
   "CityTrafficSimulator"
   "CityTrafficSimulator.pdb"
 )

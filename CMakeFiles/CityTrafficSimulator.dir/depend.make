@@ -88,6 +88,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Co
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/state_machine.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/timer.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o: Code/viewport_calculator.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/Tests/BoostTest/road_builder_helper.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o: Code/asset_manager.hpp
@@ -105,6 +106,10 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Cod
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/Vehicles/vehicle.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/cell.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o: Code/definitions.hpp
+
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/viewport_calculator_test.cpp.o: Code/Tests/BoostTest/viewport_calculator_test.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/viewport_calculator_test.cpp.o: Code/definitions.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/viewport_calculator_test.cpp.o: Code/viewport_calculator.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o: Code/Vehicles/car.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o: Code/Vehicles/car.hpp
@@ -187,6 +192,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o: Code/simulation_obs
 CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o: Code/simulator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o: Code/state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o: Code/state_machine.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o: Code/viewport_calculator.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o: Code/cell.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o: Code/cell.hpp
@@ -244,6 +250,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/timer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/tools_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/tools_subject.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/tools_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o: Code/viewport_calculator.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o: Code/Vehicles/vehicle.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o: Code/cell.hpp
@@ -323,6 +330,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/timer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/tools_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/tools_subject.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/tools_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o: Code/viewport_calculator.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.o: Code/button.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.o: Code/init_create_state_helper.cpp
@@ -371,6 +379,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/timer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/tools_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/tools_subject.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/tools_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o: Code/viewport_calculator.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/Vehicles/car.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/Vehicles/truck.hpp
@@ -414,6 +423,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/timer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/tools_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/tools_subject.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/tools_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o: Code/viewport_calculator.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/Vehicles/car.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/Vehicles/truck.hpp
@@ -446,6 +456,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/simulator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/state.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/state_machine.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/timer.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o: Code/viewport_calculator.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/asset_manager.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o: Code/converter.hpp
@@ -496,6 +507,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/timer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/tools_observer.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/tools_subject.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/tools_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o: Code/viewport_calculator.hpp
 
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/Vehicles/car.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o: Code/Vehicles/truck.hpp
@@ -565,4 +577,9 @@ CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/tools_observer.h
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/tools_subject.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/tools_view.cpp
 CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/tools_view.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o: Code/viewport_calculator.hpp
+
+CMakeFiles/CityTrafficSimulator.dir/Code/viewport_calculator.cpp.o: Code/definitions.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/viewport_calculator.cpp.o: Code/viewport_calculator.cpp
+CMakeFiles/CityTrafficSimulator.dir/Code/viewport_calculator.cpp.o: Code/viewport_calculator.hpp
 

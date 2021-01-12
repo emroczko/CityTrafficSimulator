@@ -9,6 +9,7 @@
 #include "cameras_subject.hpp"
 #include "simulation_observer.hpp"
 #include "creator_observer.hpp"
+#include "viewport_calculator.hpp"
 
 namespace zpr{
 
@@ -44,7 +45,6 @@ namespace zpr{
         void drawLabels();
         bool startingRoadConnected();
         void resetCameraCounter(int which_camera);
-        sf::FloatRect calculateViewPort();
         std::vector<Button> buttons_, removeButtons_;
 		SimulatorDataRef data_;
 		sf::RectangleShape background_;
@@ -55,6 +55,7 @@ namespace zpr{
         bool isSimulating_, isAddingCamera_;
         std::vector<bool> camerasOn_;
         int numberOfCars_[3], numberOfTrucks_[3];
+        ViewportCalculator viewportCalculator_;
 
 	};
 };

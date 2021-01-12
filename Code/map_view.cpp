@@ -48,7 +48,7 @@ namespace zpr {
         this->enterGridWidth_ = this->gridSize_;
         this->enterGridHeight_ = 2;
 		this->mapView_ = sf::View(sf::FloatRect(0.f, 0.f, (float)(SCREEN_HEIGHT), (float)(SCREEN_HEIGHT)));
-		this->mapView_.setViewport(this->calculateViewPort());
+		this->mapView_.setViewport(this->viewportCalculator_.calculateMapViewport());
 		this->generateGridLines();
         this->mapView_.zoom(1.4f);
         this->initializeCameras();
@@ -133,17 +133,6 @@ namespace zpr {
 		this->selectedCellRect_.setTexture(&this->data_->assets_.getTexture("Selected Cell"));
 	}
     
-    /**
-     * Method responsible for calculating viewport of this view.
-     * @return - Calculated viewport.
-     */
-	sf::FloatRect MapView::calculateViewPort()
-	{
-        float rect_width = (float)SCREEN_HEIGHT / (float)SCREEN_WIDTH;
-		float rect_left = (1.f - rect_width)/2;
-		return sf::FloatRect(rect_left, 0.f, rect_width, 1.f);
-	}
-
     /**
      * Method responsible for generating grid lines representing map.
      */

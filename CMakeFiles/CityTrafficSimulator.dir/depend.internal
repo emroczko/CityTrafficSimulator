@@ -89,6 +89,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/map_view_test.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state_machine.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/timer.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/road_builder_helper.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/road_builder_helper.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/asset_manager.hpp
@@ -106,6 +107,10 @@ CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/vehicle_test.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/vehicle.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cell.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/Tests/BoostTest/viewport_calculator_test.cpp.o
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Tests/BoostTest/viewport_calculator_test.cpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/Vehicles/car.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/car.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/car.hpp
@@ -188,6 +193,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/cameras_view.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/simulator.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state_machine.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/cell.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cell.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cell.hpp
@@ -245,6 +251,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/creator_state.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_observer.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_subject.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_view.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/creator_subject.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/vehicle.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/cell.hpp
@@ -324,6 +331,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_observer.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_subject.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_view.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/init_create_state_helper.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/button.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/init_create_state_helper.cpp
@@ -372,6 +380,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/load_state.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_observer.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_subject.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_view.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/car.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/truck.hpp
@@ -415,6 +424,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/main_menu_state.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_observer.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_subject.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_view.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/car.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/truck.hpp
@@ -447,6 +457,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/map_view.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/state_machine.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/timer.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/road_builder_helper.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/asset_manager.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/converter.hpp
@@ -497,6 +508,7 @@ CMakeFiles/CityTrafficSimulator.dir/Code/save_state.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_observer.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_subject.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_view.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
 CMakeFiles/CityTrafficSimulator.dir/Code/simulation_handler.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/car.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/Vehicles/truck.hpp
@@ -566,3 +578,8 @@ CMakeFiles/CityTrafficSimulator.dir/Code/tools_view.cpp.o
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_subject.hpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_view.cpp
  /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/tools_view.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
+CMakeFiles/CityTrafficSimulator.dir/Code/viewport_calculator.cpp.o
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/definitions.hpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.cpp
+ /Users/erykmroczko/Documents/Studia/ZPR/CityTrafficSimulator_ZPR/Code/viewport_calculator.hpp
