@@ -62,6 +62,7 @@
     <ClInclude Include="..\..\..\Code\Vehicles\truck.hpp" />
     <ClInclude Include="..\..\..\Code\Vehicles\vehicle.hpp" />
     <ClInclude Include="..\..\..\Code\Vehicles\vehicle_factory.hpp" />
+    <ClInclude Include="..\..\..\Code\viewport_calculator.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\adding_elements_map_view_helper.cpp" />
@@ -100,6 +101,7 @@
     <ClCompile Include="..\..\..\Code\Vehicles\truck.cpp" />
     <ClCompile Include="..\..\..\Code\Vehicles\vehicle.cpp" />
     <ClCompile Include="..\..\..\Code\Vehicles\vehicle_factory.cpp" />
+    <ClCompile Include="..\..\..\Code\viewport_calculator.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

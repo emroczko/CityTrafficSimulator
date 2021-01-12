@@ -232,6 +232,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\adding_elements_map_view_test.cpp" />
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\cameras_map_view_helper.cpp" />
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\cell_test.cpp" />
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\converter_test.cpp" />
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\deleting_elements_helper.cpp" />
@@ -241,6 +242,7 @@
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\main_menu_state_test.cpp" />
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\map_view_test.cpp" />
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\vehicle_test.cpp" />
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\viewport_calculator_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

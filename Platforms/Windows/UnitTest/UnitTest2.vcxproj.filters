@@ -48,5 +48,11 @@
     <ClCompile Include="..\..\..\Code\Tests\BoostTest\grid_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\cameras_map_view_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Tests\BoostTest\viewport_calculator_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

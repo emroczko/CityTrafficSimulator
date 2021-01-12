@@ -138,7 +138,7 @@ namespace zpr {
         sf::RectangleShape rect_shape;
         rect_shape.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
         rect_shape.setOrigin(sf::Vector2f(rect_shape.getSize().x / 2, rect_shape.getSize().y / 2));
-        sf::Vector2f centered_position_in_pixels = sf::Vector2f(cell.getPosition().x * this->cellSize_ + this->calculatePrefix(), cell.getPosition().y * this->cellSize_ + this->calculatePrefix());
+        sf::Vector2f centered_position_in_pixels = sf::Vector2f(cell.getPosition().x * this->cellSize_ + this->converter_->calculatePrefix(), cell.getPosition().y * this->cellSize_ + this->converter_->calculatePrefix());
         centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
         centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
         rect_shape.setPosition(centered_position_in_pixels);
@@ -155,7 +155,7 @@ namespace zpr {
         sf::RectangleShape rect_shape;
         rect_shape.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
         rect_shape.setOrigin(sf::Vector2f(rect_shape.getSize().y / 2, rect_shape.getSize().x / 2));
-        sf::Vector2f centered_position_in_pixels = sf::Vector2f(cell.getPosition().y * this->cellSize_ + this->calculatePrefix(), cell.getPosition().x * this->cellSize_ + this->calculatePrefix());
+        sf::Vector2f centered_position_in_pixels = sf::Vector2f(cell.getPosition().y * this->cellSize_ + this->converter_->calculatePrefix(), cell.getPosition().x * this->cellSize_ + this->converter_->calculatePrefix());
         centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
         centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
         rect_shape.setPosition(centered_position_in_pixels);
@@ -174,7 +174,7 @@ namespace zpr {
             sf::RectangleShape road;
             road.setSize(sf::Vector2f(SCREEN_HEIGHT / this->gridSize_, SCREEN_HEIGHT / this->gridSize_));
             road.setOrigin(sf::Vector2f(road.getSize().x / 2, road.getSize().y / 2));
-            sf::Vector2f centered_position_in_pixels = sf::Vector2f(starting_cell_x[i] * this->cellSize_ + this->calculatePrefix(), -2 * this->cellSize_ + this->calculatePrefix());
+            sf::Vector2f centered_position_in_pixels = sf::Vector2f(starting_cell_x[i] * this->cellSize_ + this->converter_->calculatePrefix(), -2 * this->cellSize_ + this->converter_->calculatePrefix());
             centered_position_in_pixels.x = centered_position_in_pixels.x + this->cellSize_ / 2;
             centered_position_in_pixels.y = centered_position_in_pixels.y + this->cellSize_ / 2;
             road.setPosition(centered_position_in_pixels);
@@ -221,10 +221,10 @@ namespace zpr {
 
         if (this->startingCellFree() && this->vehicles_.size() < this->roads_.size() / 2) {
             
-            int x_start_1 =this->calculatePrefix() + cellSize_ * 0 +  ROAD_IMAGE_SIZE / 2;
-            int y_start_1 = this->calculatePrefix() + cellSize_ * -2 + this->sidewalkSize_ + this->roadSize_/4;
-            int x_start_2 = this->calculatePrefix() + cellSize_ * (sqrt(this->cells_.size())-1) + ROAD_IMAGE_SIZE / 2;
-            int y_start_2 = this->calculatePrefix() + cellSize_ * -2 + this->sidewalkSize_ + this->roadSize_ / 4;
+            int x_start_1 = this->converter_->calculatePrefix() + cellSize_ * 0 +  ROAD_IMAGE_SIZE / 2;
+            int y_start_1 = this->converter_->calculatePrefix() + cellSize_ * -2 + this->sidewalkSize_ + this->roadSize_/4;
+            int x_start_2 = this->converter_->calculatePrefix() + cellSize_ * (sqrt(this->cells_.size())-1) + ROAD_IMAGE_SIZE / 2;
+            int y_start_2 = this->converter_->calculatePrefix() + cellSize_ * -2 + this->sidewalkSize_ + this->roadSize_ / 4;
         
             std::random_device rng;
             std::mt19937 eng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
