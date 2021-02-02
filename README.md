@@ -15,6 +15,13 @@
 City traffic simulator implemented by me and my friend [@Jan Szewczyński](https://github.com/lulek1410) for a university subject. 
 
 ## Screenshots
+![Main menu screenshot](Resources/Screenshots/Screenshot1.png)
+![Empty grid screenshot](Resources/Screenshots/Screenshot2.png)
+![Many streets screenshot](Resources/Screenshots/Screenshot3.png)
+![Simulation screenshot](Resources/Screenshots/Screenshot4.png)
+![Zoom simulation screenshot](Resources/Screenshots/Screenshot6.png)
+![Bigger zoom simulation screenshot](Resources/Screenshots/Screenshot7.png)
+![Save/load state screenshot](Resources/Screenshots/Screenshot8.png)
 
 
 ## Setup
