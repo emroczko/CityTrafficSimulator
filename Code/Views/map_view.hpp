@@ -5,20 +5,20 @@
 
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "../Components/grid.hpp"
+#include "../components/grid.hpp"
 #include "../simulator.hpp"
-#include "../Components/button.hpp"
+#include "../components/button.hpp"
 #include "../definitions.hpp"
 #include <vector>
-#include "../Observers/creator_observer.hpp"
-#include "../Observers/simulation_observer.hpp"
+#include "../observers/creator_observer.hpp"
+#include "../observers/simulation_observer.hpp"
 #include "../simulation_handler.hpp"
 #include "../keys_enum.hpp"
-#include "../Helpers/drawing_helper.hpp"
-#include "../Helpers/converter.hpp"
-#include "../Helpers/adding_elements_map_view_helper.hpp"
-#include "../Helpers/deleting_elements_helper.hpp"
-#include "../Helpers/viewport_calculator.hpp"
+#include "../helpers/drawing_helper.hpp"
+#include "../helpers/converter.hpp"
+#include "../helpers/adding_elements_map_view_helper.hpp"
+#include "../helpers/deleting_elements_helper.hpp"
+#include "../helpers/viewport_calculator.hpp"
 
 
 namespace zpr {

@@ -5,13 +5,13 @@
 
 
 #pragma once
-#include "Subjects/creator_subject.hpp"
-#include "Components/grid.hpp"
-#include "Observers/tools_observer.hpp"
-#include "Observers/simulation_observer.hpp"
-#include "Observers/cameras_observer.hpp"
+#include "subjects/creator_subject.hpp"
+#include "components/grid.hpp"
+#include "observers/tools_observer.hpp"
+#include "observers/simulation_observer.hpp"
+#include "observers/cameras_observer.hpp"
 #include <memory>
-#include "Vehicles/vehicle.hpp"
+#include "vehicles/vehicle.hpp"
 
 namespace zpr {
 

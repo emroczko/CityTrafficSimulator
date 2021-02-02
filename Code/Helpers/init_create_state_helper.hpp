@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include "../Components/button.hpp"
+#include "../components/button.hpp"
 
 
 namespace zpr{

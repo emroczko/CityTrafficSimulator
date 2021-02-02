@@ -9,15 +9,14 @@
 #include <vector>
 #include "state.hpp"
 #include "../simulator.hpp"
-#include "../Components/button.hpp"
-#include <vector>
-#include "../Views/map_view.hpp"
-#include "../Views/tools_view.hpp"
-#include "../Views/cameras_view.hpp"
+#include "../components/button.hpp"
+#include "../views/map_view.hpp"
+#include "../views/tools_view.hpp"
+#include "../views/cameras_view.hpp"
 #include "../creator_handler.hpp"
 #include "../keys_enum.hpp"
 #include "../simulation_handler.hpp"
-#include "../Components/cell.hpp"
+#include "../components/cell.hpp"
 
 namespace zpr{
     /**

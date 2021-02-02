@@ -9,7 +9,7 @@
 #include <string>
 #include <SFML/Graphics.hpp>
 
-#include "States/state_machine.hpp"
+#include "states/state_machine.hpp"
 #include "asset_manager.hpp"
 
 namespace zpr{

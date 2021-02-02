@@ -5,8 +5,8 @@
 
 
 #pragma once
-#include "../Components/cell.hpp"
-#include "../Vehicles/vehicle.hpp"
+#include "../components/cell.hpp"
+#include "../vehicles/vehicle.hpp"
 namespace zpr {
 
     /**

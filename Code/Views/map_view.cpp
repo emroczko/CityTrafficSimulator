@@ -6,7 +6,7 @@
 #include "map_view.hpp"
 #include <iostream>
 #include <random>
-#include "../States/save_state.hpp"
+#include "../states/save_state.hpp"
 
 namespace zpr {
 

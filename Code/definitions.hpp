@@ -16,7 +16,7 @@
 #define STARTING_CELL_ROW 0
 #define STARTING_CELL_COL 4
 
-#define SPLASH_STATE_SHOW_TIME 0.1
+#define SPLASH_STATE_SHOW_TIME 1
 #define SPLASH_SCENE_BACKGROUND_FILEPATH "Resources/background_splash.jpeg"
 
 #define MENU_BACKGROUND_FILEPATH "Resources/background_menu.jpeg"

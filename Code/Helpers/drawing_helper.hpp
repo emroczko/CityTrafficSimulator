@@ -7,7 +7,7 @@
 
 #include "SFML/Graphics.hpp"
 #include "../simulator.hpp"
-#include "../Vehicles/vehicle.hpp"
+#include "../vehicles/vehicle.hpp"
 
 namespace zpr {
 

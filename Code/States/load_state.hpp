@@ -10,9 +10,9 @@
 #include <fstream>
 #include "state.hpp"
 #include "../simulator.hpp"
-#include "../Components/button.hpp"
-#include "../Helpers/file_finder.hpp"
-#include "../Components/cell.hpp"
+#include "../components/button.hpp"
+#include "../helpers/file_finder.hpp"
+#include "../components/cell.hpp"
 
 
 

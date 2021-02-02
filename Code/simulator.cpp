@@ -4,7 +4,7 @@
  */
 
 #include "simulator.hpp"
-#include "States/splash_state.hpp"
+#include "states/splash_state.hpp"
 
 namespace zpr{
 

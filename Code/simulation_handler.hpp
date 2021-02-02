@@ -4,16 +4,16 @@
  */
 
 #pragma once
-#include "Subjects/simulation_subject.hpp"
-#include "Observers/cameras_observer.hpp"
-#include "Observers/creator_observer.hpp"
-#include "Vehicles/vehicle_factory.hpp"
+#include "subjects/simulation_subject.hpp"
+#include "observers/cameras_observer.hpp"
+#include "observers/creator_observer.hpp"
+#include "vehicles/vehicle_factory.hpp"
 #include <memory>
-#include "Components/timer.hpp"
-#include "Components/cell.hpp"
-#include "Components/camera.hpp"
-#include "Helpers/converter.hpp"
-#include "Helpers/spawn_points.hpp"
+#include "components/timer.hpp"
+#include "components/cell.hpp"
+#include "components/camera.hpp"
+#include "helpers/converter.hpp"
+#include "helpers/spawn_points.hpp"
 
 
 namespace zpr {

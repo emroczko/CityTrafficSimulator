@@ -5,8 +5,8 @@
 
 
 #pragma once
-#include "../Observers/creator_observer.hpp"
-#include "../Components/cell.hpp"
+#include "../observers/creator_observer.hpp"
+#include "../components/cell.hpp"
 #include <vector>
 
 namespace zpr {

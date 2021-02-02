@@ -6,12 +6,12 @@
 
 #pragma once
 #include "../simulator.hpp"
-#include "../Components/button.hpp"
+#include "../components/button.hpp"
 #include "../definitions.hpp"
-#include "../Subjects/tools_subject.hpp"
-#include "../Observers/simulation_observer.hpp"
-#include "../Observers/creator_observer.hpp"
-#include "../Helpers/viewport_calculator.hpp"
+#include "../subjects/tools_subject.hpp"
+#include "../observers/simulation_observer.hpp"
+#include "../observers/creator_observer.hpp"
+#include "../helpers/viewport_calculator.hpp"
 
 
 namespace zpr {

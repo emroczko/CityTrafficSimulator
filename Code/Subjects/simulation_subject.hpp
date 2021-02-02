@@ -4,10 +4,10 @@
  */
 
 #pragma once
-#include "../Observers/simulation_observer.hpp"
+#include "../observers/simulation_observer.hpp"
 #include <memory>
 #include <vector>
-#include "../Vehicles/vehicle.hpp"
+#include "../vehicles/vehicle.hpp"
 
 namespace zpr {
 

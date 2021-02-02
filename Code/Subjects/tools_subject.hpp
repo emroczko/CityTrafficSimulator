@@ -3,7 +3,7 @@
  * Header of ToolsSubject class.
  */
 #pragma once
-#include "../Observers/tools_observer.hpp"
+#include "../observers/tools_observer.hpp"
 #include <vector>
 #include <memory>
 

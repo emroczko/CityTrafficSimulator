@@ -5,13 +5,13 @@
 #pragma once
 #include "../simulator.hpp"
 #include "../definitions.hpp"
-#include "../Components/button.hpp"
-#include "../Subjects/cameras_subject.hpp"
-#include "../Observers/simulation_observer.hpp"
-#include "../Observers/creator_observer.hpp"
-#include "../Helpers/viewport_calculator.hpp"
-#include "../Vehicles/vehicle.hpp"
-#include "../Components/cell.hpp"
+#include "../components/button.hpp"
+#include "../subjects/cameras_subject.hpp"
+#include "../observers/simulation_observer.hpp"
+#include "../observers/creator_observer.hpp"
+#include "../helpers/viewport_calculator.hpp"
+#include "../vehicles/vehicle.hpp"
+#include "../components/cell.hpp"
 
 namespace zpr{
 

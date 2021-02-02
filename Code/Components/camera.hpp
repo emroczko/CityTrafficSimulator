@@ -5,8 +5,8 @@
 
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "../Vehicles/truck.hpp"
-#include "../Vehicles/car.hpp"
+#include "../vehicles/truck.hpp"
+#include "../vehicles/car.hpp"
 
 namespace zpr {
 

@@ -4,8 +4,8 @@
  */
 
 #include "tools_view.hpp"
-#include "../States/save_state.hpp"
-#include "../States/init_create_state.hpp"
+#include "../states/save_state.hpp"
+#include "../states/init_create_state.hpp"
 
 namespace zpr {
 

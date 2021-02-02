@@ -4,7 +4,7 @@
  */
 
 #pragma once
-#include "../Observers/cameras_observer.hpp"
+#include "../observers/cameras_observer.hpp"
 #include <vector>
 #include <memory>
 

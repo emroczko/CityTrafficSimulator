@@ -7,8 +7,8 @@
 #include <SFML/Graphics.hpp>
 #include "state.hpp"
 #include "../simulator.hpp"
-#include "../Components/button.hpp"
-#include "../Helpers/init_create_state_helper.hpp"
+#include "../components/button.hpp"
+#include "../helpers/init_create_state_helper.hpp"
 
 namespace zpr {
 

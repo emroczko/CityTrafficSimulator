@@ -23,6 +23,7 @@ namespace zpr{
     void SplashState::init(){
         this->data_->assets_.loadTexture("Splash State Background", SPLASH_SCENE_BACKGROUND_FILEPATH);
         this->background_.setTexture(this -> data_->assets_.getTexture("Splash State Background"));
+        this->background_.scale(1.6, 1.5);
     }
 
     /**

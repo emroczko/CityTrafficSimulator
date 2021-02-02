@@ -7,9 +7,9 @@
 #include <SFML/Graphics.hpp>
 #include "state.hpp"
 #include "../simulator.hpp"
-#include "../Components/button.hpp"
-#include "../Components/cell.hpp"
-#include "../Helpers/file_finder.hpp"
+#include "../components/button.hpp"
+#include "../components/cell.hpp"
+#include "../helpers/file_finder.hpp"
 
 
 

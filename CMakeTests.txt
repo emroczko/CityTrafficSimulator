@@ -1,0 +1,34 @@
+cmake_minimum_required(VERSION 3.1)
+
+project(CityTrafficSimulatorTests)
+
+
+set(CMAKE_CXX_STANDARD 17)
+
+find_package(SFML 2.5.1 COMPONENTS graphics REQUIRED)
+find_package( Boost REQUIRED COMPONENTS unit_test_framework )
+
+include_directories( ${Boost_INCLUDE_DIR} )
+
+include_directories(Code)
+include_directories(Code/Tests)
+include_directories(Resources)
+
+
+file(GLOB SOURCES "Code/*.cpp" "Code/vehicles/*.cpp" "Code/components/*.cpp" "Code/helpers/*.cpp" "Code/observers/*.cpp" "Code/states/*.cpp" "Code/subjects/*.cpp" "Code/views/*.cpp")
+
+list(FILTER SOURCES EXCLUDE REGEX ".*main.cpp$")
+
+file(GLOB TESTS "Code/tests/boost_test/*.cpp")
+
+
+
+add_executable(CityTrafficSimulator ${SOURCES} ${TESTS})
+
+target_link_libraries(CityTrafficSimulator sfml-graphics)
+
+target_link_libraries(CityTrafficSimulator ${Boost_LIBRARIES} )
+
+
+
+
