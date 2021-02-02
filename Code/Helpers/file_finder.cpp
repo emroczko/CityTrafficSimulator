@@ -21,8 +21,9 @@ namespace zpr{
      */
     std::string FileFinder::checkIfFileExist(const std::string& name, int number){
         
+        std::string temp = "SavedMaps/"+name;
         struct stat buffer;
-        if (stat (name.c_str(), &buffer) == 0){
+        if (stat (temp.c_str(), &buffer) == 0){
             //auto mod_time = buffer.st_mtime;
             return name;
         }
@@ -47,7 +48,7 @@ namespace zpr{
      */
     void FileFinder::checkSlots(std::string *slots){
         for (int i = 0; i < 4; i++){
-            slots[i] = this->checkIfFileExist("SavedMaps/Map"+std::to_string(i+1)+".txt", i+1);
+            slots[i] = this->checkIfFileExist("Map"+std::to_string(i+1)+".txt", i+1);
         }
     }
 }
