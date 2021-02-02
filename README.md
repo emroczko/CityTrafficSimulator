@@ -13,6 +13,12 @@
 
 ## General info
 City traffic simulator implemented by me and my friend [@Jan Szewczyński](https://github.com/lulek1410) for a university subject. 
+App allows to create and delete streets, add and delete cameras and simply to simulate traffic on builded streets. 
+Crossings and turns texture are checked and added/changed by the app, so user doesn't have to think about them. 
+User can choose one demo project or load previously saved projects from the disk. 
+Data is written to txt file. 
+This application is not perfect, yet is very big, and a lot of features can be added. 
+When we were starting writing the code, we didn't think how big will it be. 
 
 ## Screenshots
 ![Main menu screenshot](Resources/Screenshots/Screenshot1.png)
@@ -25,6 +31,24 @@ City traffic simulator implemented by me and my friend [@Jan Szewczyński](https
 
 
 ## Setup
+In order to make it work you need:
+* C++17 Compiler
+* SFML Library (You can download it from here: https://www.sfml-dev.org/download.php)
+* CMake (You can download it from here: https://cmake.org/download/)
+
+In order to make the tests work you also need BoostTest (You can download it from here: https://www.boost.org/users/download/)
+
+If you have downloaded/installed all the things above on macOS or Linux you have to open terminal in the base folder of downloaded repo. 
+Then, to run the application, type into terminal following commands: 
+`cmake .`
+`make`
+`./CityTrafficSimulator`
+And the app should start. 
+
+If you want to run tests, type into terminal following commands: 
+`cmake BUILD_TESTS=ON .`
+`make`
+`./CityTrafficSimulatorTests`
 
 
 ## Technologies
