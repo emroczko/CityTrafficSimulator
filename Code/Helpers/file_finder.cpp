@@ -47,7 +47,7 @@ namespace zpr{
      */
     void FileFinder::checkSlots(std::string *slots){
         for (int i = 0; i < 4; i++){
-            slots[i] = this->checkIfFileExist("Map"+std::to_string(i+1)+".txt", i+1);
+            slots[i] = this->checkIfFileExist("SavedMaps/Map"+std::to_string(i+1)+".txt", i+1);
         }
     }
 }

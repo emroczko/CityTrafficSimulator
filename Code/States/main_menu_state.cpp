@@ -121,10 +121,10 @@ namespace zpr{
      * Method which loads demo project from disk.
      */
     void MainMenuState::loadDemo(){
-        std::string file_name = "Demo.txt";
+        std::string file_name = "SavedMaps/Demo.txt";
         std::ifstream my_file;
         if (fileFinder_.checkIfFileExist(file_name)){
-        my_file.open ("Demo.txt");
+        my_file.open ("SavedMaps/Demo.txt");
         my_file >> gridSize_;
         int how_many = 0;
         while (my_file >> this->tempCell_)

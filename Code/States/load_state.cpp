@@ -116,8 +116,8 @@ namespace zpr {
      */
     void LoadState::loadFromFile(int number){
         std::ifstream my_file;
-        if (fileFinder_.checkIfFileExist(slots_[number-1])){
-        my_file.open (slots_[number-1]);
+        if (fileFinder_.checkIfFileExist("SavedMaps/"+slots_[number-1])){
+        my_file.open ("SavedMaps/"+slots_[number-1]);
         my_file >> gridSize_;
         int how_many = 0;
         while (my_file >> tempCell_)
