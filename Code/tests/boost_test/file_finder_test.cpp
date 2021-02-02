@@ -9,8 +9,8 @@ struct FileFinderFixture {
         
 	}
     zpr::FileFinder fileFinder_;
-    std::string fileName_ = "Demo.txt";
-    std::string mapName_ = "Map1.txt";
+    std::string fileName_ = "SavedMaps/Demo.txt";
+    std::string mapName_ = "SavedMaps/Map1.txt";
 	~FileFinderFixture() = default;
     
 };
