@@ -1,14 +1,44 @@
-# CityTrafficSimulator_ZPR
+# City Traffic Simulator
+> Application allowing to build roads and simulate traffic on them. 
 
-Aplikacja pisana na potrzeby zaliczenia przedmiotu ZPR. 
-Używamy na razie tylko języka C++, biblioteki SFML oraz testów Catch2. 
-Jest to graficzny projekt symulacji miasta w 2D, widzianej z góry.
+## Table of contents
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Technologies](#technologies)
+* [Instruction](#instruction)
+* [Tests](#tests)
+* [Graphics](#graphics)
+* [Contact](#contact)
 
-Docelowymi funkcjonalnościami mają być tworzenie i usuwanie ulic, dodawanie pojazdów, 
-skrzyżowań, sygnalizacji świetlnych i kilka innych rzeczy. 
+## General info
+City traffic simulator implemented by me and my friend [@Jan Szewczyński](https://github.com/lulek1410) for a university subject. 
 
-Aby skompilować aplikację, należy wpisać w terminal cmake . ,a następnie make. 
-Aby uruchomić aplikację, po skompilowaniu, należy wpisać ./CityTrafficSimulator. 
+## Screenshots
 
-Obecnie, skompilowana i uruchomiona zostanie wersja z włączonymi testami Catch2. 
+
+## Setup
+
+
+## Technologies
+* C++17
+* SFML
+* BoostTest
+
+## Instruction
+
+## Tests
+
+## Graphics
+All the street graphics and buttons graphics was made by [@Jan](https://github.com/lulek1410). Excellent work!
+
+## Status
+Project is: _finished_
+
+## Contact
+Created by [@Eryk Mroczko](https://www.erykmroczko.pl/) and [@Jan Szewczyński](https://github.com/lulek1410).
+Feel free to contact us!
+
+## License
+We don't have any rights to the background picture in the main menu of application :)
 
